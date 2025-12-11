@@ -24,7 +24,7 @@
 
 ## Authors
 
-* [Ilia I. Ohotin](mailto:ilia.ohotin@yandex.ru)
+* [Ilia I. Okhotin](mailto:ilia.ohotin@yandex.ru)
 * [Nikita O. Dorodnykh](mailto:tualatin32@mail.ru)
 
 ## References
