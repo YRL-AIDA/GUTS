@@ -1,0 +1,38 @@
+@prefix hl: <http://example.org/health#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+hl:HealthAndSocialEmployment a rdfs:Class ;
+    rdfs:label "Занятость в сфере здравоохранения и социального обеспечения"@ru ;
+    rdfs:comment "Запись о доле врачей определённой категории в стране за конкретный год"@ru .
+
+hl:timePeriod a rdf:Property ;
+    rdfs:domain hl:HealthAndSocialEmployment ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Год"@ru ;
+    rdfs:comment "Календарный год наблюдения"@ru .
+
+hl:referenceArea a rdf:Property ;
+    rdfs:domain hl:HealthAndSocialEmployment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Страна"@ru ;
+    rdfs:comment "Наименование страны"@ru .
+
+hl:typeArea a rdf:Property ;
+    rdfs:domain hl:HealthAndSocialEmployment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Тип эканомики страны"@ru ;
+    rdfs:comment "Экономики стран, входящие в организацию экономического сотрудничества и развития (ОЭСР)"@ru .
+
+hl:healthProfession a rdf:Property ;
+    rdfs:domain hl:HealthAndSocialEmployment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Медицинская профессия"@ru ;
+    rdfs:comment "Категория медицинских работников (например, Generalist medical practitioners)"@ru .
+
+hl:physicianProportion a rdf:Property ;
+    rdfs:domain hl:HealthAndSocialEmployment ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Значение"@ru ;
+    rdfs:comment "Доля врачей на 1000 жителей"@ru .

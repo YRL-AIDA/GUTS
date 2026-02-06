@@ -1,0 +1,50 @@
+@prefix hl: <http://example.org/health#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+hl:SurveyResult a rdfs:Class ;
+    rdfs:label "Результат опроса"@ru ;
+    rdfs:comment "Результат опроса пациентов определенного отделения по категории за определённый период"@ru .
+
+hl:departmentHealth a rdf:Property ;
+    rdfs:domain hl:AccidentEmergencyDepartmentSurvey ;
+    rdfs:range xsd:string ;
+    rdfs:label "Отделение здравоохранения"@ru ;
+    rdfs:comment "Отделение здравоохранения в рамках которого проводился опрос пациентов (например, Accident and emergency или Outpatient)"@ru .
+
+hl:category a rdf:Property ;
+    rdfs:domain hl:AccidentEmergencyDepartmentSurvey ;
+    rdfs:range xsd:string ;
+    rdfs:label "Категория"@ru ;
+    rdfs:comment "Категория оценки качества услуг"@ru .
+
+hl:timePeriod a rdf:Property ;
+    rdfs:domain hl:AccidentEmergencyDepartmentSurvey ;
+    rdfs:range xsd:date ;
+    rdfs:label "Временной период"@ru ;
+    rdfs:comment "Временной период опроса (например, 2004-05)"@ru .
+
+hl:nationalScore a rdf:Property ;
+    rdfs:domain hl:AccidentEmergencyDepartmentSurvey ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Национальный показатель"@ru ;
+    rdfs:comment "Национальный показатель (оценка) опроса по шкале (0-100)"@ru .
+
+hl:adjustedScore a rdf:Property ;
+    rdfs:domain hl:AccidentEmergencyDepartmentSurvey ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Скорректированный показатель"@ru ;
+    rdfs:comment "Скорректированный показатель (оценка) опроса по шкале (0-100)"@ru .
+
+hl:confidenceInterval a rdf:Property ;
+    rdfs:domain hl:AccidentEmergencyDepartmentSurvey ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Доверительный интервал"@ru ;
+    rdfs:comment "95% доверительный интервал"@ru .
+
+hl:statisticallySignificantChange a rdf:Property ;
+    rdfs:domain hl:AccidentEmergencyDepartmentSurvey ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Статистически значимое изменение"@ru ;
+    rdfs:comment "Статистически значимое изменение по сравнению с предыдущим временным периодом"@ru .
