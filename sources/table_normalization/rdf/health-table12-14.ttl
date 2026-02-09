@@ -1,0 +1,206 @@
+@prefix hl: <http://example.org/health#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+hl:Nutrition a rdfs:Class ;
+    rdfs:label "Nutrition"@en, "Питание"@ru ;
+    rdfs:comment "Daily tracker with records of food or drink consumed"@en, "Ежедневный трекер с записями о потреблённой пище или напитке"@ru .
+
+hl:PhysicalActivity a rdfs:Class ;
+    rdfs:label "Physical activity"@en, "Физическая активность"@ru ;
+    rdfs:comment "Daily tracker with records of physical activity performed"@en, "Ежедневный трекер с записями о выполненной физической активности (нагрузке)"@ru .
+
+hl:WeightMeasurement a rdfs:Class ;
+    rdfs:label "Weight measurement"@en, "Измерение веса"@ru ;
+    rdfs:comment "Daily tracker with body weight measurement records"@en, "Ежедневный трекер с записями об измерении массы тела"@ru .
+
+hl:DailySummary a rdfs:Class ;
+    rdfs:label "Daily summary"@en, "Ежедневная сводка"@ru ;
+    rdfs:comment "Aggregated summary of daily indicators"@en, "Агрегированная сводка показателей за день"@ru .
+
+hl:date a rdf:Property ;
+    rdfs:domain hl:Nutrition ;
+    rdfs:range xsd:date ;
+    rdfs:label "date"@en, "Дата"@ru ;
+    rdfs:comment "Date of event (record)"@en, "Дата события (записи)"@ru .
+
+hl:timeOfDay a rdf:Property ;
+    rdfs:domain hl:Nutrition ;
+    rdfs:range xsd:string ;
+    rdfs:label "Time of day"@en, "Время суток"@ru ;
+    rdfs:comment "Time of day: MORNING, AFTERNOON, EVENING"@en, "Период суток: УТРО, ДЕНЬ, ВЕЧЕР"@ru .
+
+hl:type a rdf:Property ;
+    rdfs:domain :Nutrition ;
+    rdfs:range xsd:string ;
+    rdfs:label "Type of nutrition"@en, "Тип питания"@ru ;
+    rdfs:comment "Type of nutrition (e.g., FOOD, DRINK)"@en, "Тип питания (например, ЕДА, НАПИТОК)"@ru .
+
+hl:foodCategory a rdf:Property ;
+    rdfs:domain hl:Nutrition ;
+    rdfs:range xsd:string ;
+    rdfs:label "Food category"@en, "Категория пищи"@ru ;
+    rdfs:comment "Food category (e.g., FRUITS, GRAINS, MEATS, POULTRY)"@en, "Категория продукта (например, ФРУКТЫ, ЗЕРНОВЫЕ, МЯСО)"@ru .
+
+hl:description a rdf:Property ;
+    rdfs:domain hl:Nutrition ;
+    rdfs:range xsd:string ;
+    rdfs:label "Description"@en, "Описание"@ru ;
+    rdfs:comment "Text description of event (record)"@en, "Текстовое описание события (записи)"@ru .
+
+hl:servingUnit a rdf:Property ;
+    rdfs:domain hl:Nutrition ;
+    rdfs:range xsd:string ;
+    rdfs:label "Serving unit"@en, "Единица порции"@ru ;
+    rdfs:comment "Unit of measurement for a serving (e.g., cups, oz, tbsp)"@en, "Единица измерения порции (например, чашки, унции, ст. ложка)"@ru .
+
+hl:kcal a rdf:Property ;
+    rdfs:domain hl:Nutrition ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Kcal"@en, "Калории"@ru ;
+    rdfs:comment "Energy value in kilocalories"@en, "Энергетическая ценность в килокалориях"@ru .
+
+hl:fat a rdf:Property ;
+    rdfs:domain hl:Nutrition ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Fat"@en, "жиры"@ru ;
+    rdfs:comment "Fat content in grams"@en, "Содержание жиров в граммах"@ru .
+
+hl:carb a rdf:Property ;
+    rdfs:domain hl:Nutrition ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Carb"@en, "углеводы"@ru ;
+    rdfs:comment "Carbohydrate content in grams"@en, "Содержание углеводов в граммах"@ru .
+
+hl:prot a rdf:Property ;
+    rdfs:domain hl:Nutrition ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Prot"@en, "белки"@ru ;
+    rdfs:comment "Protein content in grams"@en, "Содержание белков в граммах"@ru .
+
+hl:date a rdf:Property ;
+    rdfs:domain hl:PhysicalActivity ;
+    rdfs:range xsd:date ;
+    rdfs:label "date"@en, "Дата"@ru ;
+    rdfs:comment "Date of event (record)"@en, "Дата события (записи)"@ru .
+
+hl:timeOfDay a rdf:Property ;
+    rdfs:domain hl:PhysicalActivity ;
+    rdfs:range xsd:string ;
+    rdfs:label "Time of day"@en, "Время суток"@ru ;
+    rdfs:comment "Time of day: MORNING, AFTERNOON, EVENING"@en, "Период суток: УТРО, ДЕНЬ, ВЕЧЕР"@ru .
+
+hl:activityType a rdf:Property ;
+    rdfs:domain hl:PhysicalActivity ;
+    rdfs:range xsd:string ;
+    rdfs:label "Activity type"@en, "Тип активности"@ru ;
+    rdfs:comment "Activity type (e.g., RUNNING, WEIGHTLIFTING, YOGA)"@en, "Вид активности (например, БЕГ, СИЛОВЫЕ ТРЕНИРОВКИ, ЙОГА)"@ru .
+
+hl:durationMin a rdf:Property ;
+    rdfs:domain hl:PhysicalActivity ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Duration in minutes"@en, "Длительность в минутах"@ru ;
+    rdfs:comment "Activity duration in minutes"@en, "Продолжительность активности в минутах"@ru .
+
+hl:distanceMiles a rdf:Property ;
+    rdfs:domain hl:PhysicalActivity ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Distance in miles"@en, "Дистанция в милях"@ru ;
+    rdfs:comment "Distance traveled in miles"@en, "Пройденная дистанция в милях"@ru .
+
+hl:weightLbs a rdf:Property ;
+    rdfs:domain hl:PhysicalActivity ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Weight lbs"@en, "Вес в фунтах"@ru ;
+    rdfs:comment "Working weight in pounds (for strength exercises)"@en, "Рабочий вес в фунтах (для силовых упражнений)"@ru .
+
+hl:reps a rdf:Property ;
+    rdfs:domain hl:PhysicalActivity ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Repetitions"@en, "Повторения"@ru ;
+    rdfs:comment "Number of repetitions per set"@en, "Количество повторений в подходе"@ru .
+
+hl:sets a rdf:Property ;
+    rdfs:domain hl:PhysicalActivity ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Sets"@en, "Подходы"@ru ;
+    rdfs:comment "Number of sets"@en, "Количество подходов"@ru .
+
+hl:date a rdf:Property ;
+    rdfs:domain hl:WeightMeasurement ;
+    rdfs:range xsd:date ;
+    rdfs:label "date"@en, "Дата"@ru ;
+    rdfs:comment "Weighing date"@en, "Дата взвешивания"@ru .
+
+hl:timeOfDay a rdf:Property ;
+    rdfs:domain hl:WeightMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Time of day"@en, "Время суток"@ru ;
+    rdfs:comment "Time of day: MORNING, AFTERNOON, EVENING"@en, "Период суток: УТРО, ДЕНЬ, ВЕЧЕР"@ru .
+
+hl:bodyWeightLbs a rdf:Property ;
+    rdfs:domain hl:WeightMeasurement ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Body weight lbs"@en, "Вес тела в фунтах"@ru ;
+    rdfs:comment "Body weight in pounds"@en, "Масса тела в фунтах"@ru .
+
+hl:date a rdf:Property ;
+    rdfs:domain hl:DailySummary ;
+    rdfs:range xsd:date ;
+    rdfs:label "date"@en, "Дата"@ru ;
+    rdfs:comment "Summary date"@en, "Дата суммарной сводки"@ru .
+
+hl:totalKcal a rdf:Property ;
+    rdfs:domain hl:DailySummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total kcal"@en, "Всего калорий"@ru ;
+    rdfs:comment "Total energy value in kilocalories per day"@en, "Суммарная энергетическая ценность за день"@ru .
+
+hl:totalFat a rdf:Property ;
+    rdfs:domain hl:DailySummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total fat"@en, "Всего жиров"@ru ;
+    rdfs:comment "Total daily fat intake in grams"@en, "Суммарное содержание жиров за день в граммах"@ru .
+
+hl:totalCarb a rdf:Property ;
+    rdfs:domain hl:DailySummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total carb"@en, "Всего углеводов"@ru ;
+    rdfs:comment "Total carbohydrate intake per day in grams"@en, "Суммарное содержание углеводов за день в граммах"@ru .
+
+hl:totalProt a rdf:Property ;
+    rdfs:domain hl:DailySummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total prot"@en, "Всего белков"@ru ;
+    rdfs:comment "Total daily protein intake in grams"@en, "Суммарное содержание белков за день в граммах"@ru .
+
+hl:totalActivityMin a rdf:Property ;
+    rdfs:domain hl:DailySummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total activity in minutes"@en, "Всего минут активности"@ru ;
+    rdfs:comment "Суммарная длительность активности за день в минутах"@en, "Суммарная длительность активности за день в минутах"@ru .
+
+hl:totalDistanceMiles a rdf:Property ;
+    rdfs:domain hl:DailySummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total distance in miles"@en, "Всего миль"@ru ;
+    rdfs:comment "Суммарная дистанция за день в милях"@en, "Суммарная дистанция за день в милях"@ru .
+
+hl:totalWeightLbs a rdf:Property ;
+    rdfs:domain hl:DailySummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total weight lbs"@en, "Общий вес в фунтах"@ru ;
+    rdfs:comment "Total working weight in pounds per day (for strength exercises)"@en, "Суммарный рабочий вес в фунтах за день (для силовых упражнений)"@ru .
+
+hl:totalReps a rdf:Property ;
+    rdfs:domain hl:DailySummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total repetitions"@en, "Всего повторений"@ru ;
+    rdfs:comment "Total number of repetitions per set per day"@en, "Суммарное количество повторений в подходе за день"@ru .
+
+hl:totalSets a rdf:Property ;
+    rdfs:domain hl:DailySummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total sets"@en, "Всего подходов"@ru ;
+    rdfs:comment "Total number of sets per day"@en, "Суммарное количество подходов за день"@ru .
