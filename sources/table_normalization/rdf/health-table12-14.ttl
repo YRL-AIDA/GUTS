@@ -3,6 +3,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+# ==================== Classes ====================
+
 hl:Nutrition a rdfs:Class ;
     rdfs:label "Nutrition"@en, "Питание"@ru ;
     rdfs:comment "Daily tracker with records of food or drink consumed"@en, "Ежедневный трекер с записями о потреблённой пище или напитке"@ru .
@@ -18,6 +20,8 @@ hl:WeightMeasurement a rdfs:Class ;
 hl:DailySummary a rdfs:Class ;
     rdfs:label "Daily summary"@en, "Ежедневная сводка"@ru ;
     rdfs:comment "Aggregated summary of daily indicators"@en, "Агрегированная сводка показателей за день"@ru .
+
+# ==================== Datatype Properties ====================
 
 hl:date a rdf:Property ;
     rdfs:domain hl:Nutrition ;

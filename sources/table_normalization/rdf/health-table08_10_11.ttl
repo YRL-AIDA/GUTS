@@ -3,9 +3,13 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+# ==================== Classes ====================
+
 hl:SurveyResult a rdfs:Class ;
     rdfs:label "Survey result"@en, "Результат опроса"@ru ;
     rdfs:comment "The results of a survey of patients of a certain department by category for a certain period"@en, "Результат опроса пациентов определенного отделения по категории за определённый период"@ru .
+
+# ==================== Datatype Properties ====================
 
 hl:departmentHealth a rdf:Property ;
     rdfs:domain hl:AccidentEmergencyDepartmentSurvey ;

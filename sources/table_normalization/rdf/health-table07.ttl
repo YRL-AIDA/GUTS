@@ -3,9 +3,13 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+# ==================== Classes ====================
+
 hl:HealthAndSocialEmployment a rdfs:Class ;
     rdfs:label "Health and social employment"@en, "Занятость в сфере здравоохранения и социального обеспечения"@ru ;
     rdfs:comment "A record of the proportion of doctors of a particular category in a country for a particular year"@en, "Запись о доле врачей определённой категории в стране за конкретный год"@ru .
+
+# ==================== Datatype Properties ====================
 
 hl:timePeriod a rdf:Property ;
     rdfs:domain hl:HealthAndSocialEmployment ;
