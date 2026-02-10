@@ -1,0 +1,68 @@
+@prefix hl: <http://example.org/health#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+hl:RecoveryTest a rdfs:Class ;
+    rdfs:label "Recovery test"@en, "Тест восстановления"@ru ;
+    rdfs:comment "Experimental test measuring microbial recovery efficiency"@en, "Экспериментальный тест для измерения эффективности восстановления микроорганизмов"@ru .
+
+hl:SpongeType a rdfs:Class ;
+    rdfs:label "Sponge type"@en, "Тип губки"@ru ;
+    rdfs:comment "Type of sampling sponge used in microbial recovery test"@en, "Тип губки для отбора проб, используемой в тесте на восстановление микроорганизмов"@ru .
+
+hl:TestOrganism a rdfs:Class ;
+    rdfs:label "Test organism"@en, "Тестируемый организм"@ru ;
+    rdfs:comment "The type of microorganism involved in the experiment"@en, "Вид микроорганизма, участвующего в эксперименте"@ru .
+
+hl:TestMaterial a rdfs:Class ;
+    rdfs:label "Tested surface material"@en, "Тестируемый материал поверхности"@ru ;
+    rdfs:comment "The type of surface on which the efficiency of microorganism recovery is being studied"@en, "Тип поверхности, на котором исследуется эффективность восстановления микроорганизмов"@ru .
+
+# ==================== Object Properties ====================
+
+hl:hasSpongeType a rdf:Property ;
+    rdfs:domain hl:RecoveryTest ;
+    rdfs:range hl:SpongeType ;
+    rdfs:label "Tested sponge type"@en, "Тестируемый тип губки"@ru ;
+    rdfs:comment "The type of sampling sponge being tested"@en, "Тип губки для отбора проб, для которого проводится тестирование"@ru .
+
+hl:hasTestOrganism a rdf:Property ;
+    rdfs:domain hl:RecoveryTest ;
+    rdfs:range hl:TestOrganism ;
+    rdfs:label "Test organism"@en, "Тестируемый организм"@ru ;
+    rdfs:comment "The microorganism being tested for"@en, "Микроорганизм, для которого проводится тестирование"@ru .
+
+hl:hasTestMaterial a rdf:Property ;
+    rdfs:domain hl:RecoveryTest ;
+    rdfs:range hl:TestMaterial ;
+    rdfs:label "Tested surface material"@en, "Тестируемый материал поверхности"@ru ;
+    rdfs:comment "The surface on which testing is carried out"@en, "Поверхность, на которой проводится тестирование"@ru .
+
+# ==================== Datatype Properties ====================
+
+hl:log10RecoveryInoculationControl a rdf:Property ;
+    rdfs:domain hl:RecoveryTest ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Log10 recovery (inoculation control)"@en, "Логарифм восстановления по основанию 10 (контрольный образец после инокуляции)"@ru .
+	rdfs:comment "The numerical value of microbial recovery on a decimal logarithmic scale for the control sample after inoculation"@en, "Числовое значение восстановления микроорганизмов в десятичном логарифмическом масштабе для контрольного образца после инокуляции"@ru .
+
+hl:log10RecoveryStandardDeviationInoculationControl a rdf:Property ;
+    rdfs:domain hl:RecoveryTest ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation of log10 recovery (inoculation control)"@en, "Стандартное отклонение логарифма восстановления по основанию 10 (контрольный образец после инокуляции)"@ru .
+	rdfs:comment "Standard deviation of the numerical value of microbial recovery on a logarithmic scale for the control sample after inoculation"@en, "Стандартное отклонение числового значения восстановления микроорганизмов в десятичном логарифмическом масштабе для контрольного образца после инокуляции"@ru .
+
+hl:log10RecoveryTestSample a rdf:Property ;
+    rdfs:domain hl:RecoveryTest ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Log10 recovery (test sample)"@en, "Логарифм восстановления по основанию 10 (тестовый образец)"@ru .
+	rdfs:comment "The numerical value of microbial recovery on a decimal logarithmic scale for a test sample"@en, "Числовое значение восстановления микроорганизмов в десятичном логарифмическом масштабе для тестового образца"@ru .
+
+hl:log10RecoveryStandardDeviationTestSample a rdf:Property ;
+    rdfs:domain hl:RecoveryTest ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation of log10 recovery (test sample)"@en, "Стандартное отклонение логарифма восстановления по основанию 10 (тестовый образец)"@ru .
+	rdfs:comment "Standard deviation of the numerical value of microbial recovery on a logarithmic scale for a test sample"@en, "Стандартное отклонение числового значения восстановления микроорганизмов в десятичном логарифмическом масштабе для тестового образца"@ru .

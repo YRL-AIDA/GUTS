@@ -1,0 +1,90 @@
+@prefix hl: <http://example.org/health#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+hl:RecoveryTest a rdfs:Class ;
+    rdfs:label "Recovery test"@en, "Тест восстановления"@ru ;
+    rdfs:comment "Experimental test measuring microbial recovery efficiency"@en, "Экспериментальный тест для измерения эффективности восстановления микроорганизмов"@ru .
+
+hl:AggregatedMetric a rdfs:Class ;
+    rdfs:label "Aggregated metric"@en, "Агрегированная метрика"@ru ;
+    rdfs:comment "Aggregated sampling efficiency metric for the combination (organism + material)"@en, "Агрегированная метрика эффективности отбора проб для комбинации (организм + материал)"@ru .
+
+hl:Sampler a rdfs:Class ;
+    rdfs:label "Sampler"@en, "Метод отбора проб"@ru ;
+    rdfs:comment "A device or method used to collect samples of microorganisms"@en, "Устройство или метод, используемый для сбора образцов микроорганизмов"@ru .
+
+hl:TestOrganism a rdfs:Class ;
+    rdfs:label "Test organism"@en, "Тестируемый организм"@ru ;
+    rdfs:comment "The type of microorganism involved in the experiment"@en, "Вид микроорганизма, участвующего в эксперименте"@ru .
+
+hl:TestMaterial a rdfs:Class ;
+    rdfs:label "Tested surface material"@en, "Тестируемый материал поверхности"@ru ;
+    rdfs:comment "The type of surface on which the efficiency of microorganism recovery is being studied"@en, "Тип поверхности, на котором исследуется эффективность восстановления микроорганизмов"@ru .
+
+# ==================== Object Properties ====================
+
+hl:hasSampler a rdf:Property ;
+    rdfs:domain hl:RecoveryTest ;
+    rdfs:range hl:Sampler ;
+    rdfs:label "Tested sampler"@en, "Тестируемый метод проб"@ru ;
+    rdfs:comment "The sampler being tested"@en, "Метод для отбора проб, для которого проводится тестирование"@ru .
+
+hl:hasTestOrganism a rdf:Property ;
+    rdfs:domain hl:RecoveryTest ;
+    rdfs:range hl:TestOrganism ;
+    rdfs:label "Test organism"@en, "Тестируемый организм"@ru ;
+    rdfs:comment "The microorganism being tested for"@en, "Микроорганизм, для которого проводится тестирование"@ru .
+
+hl:hasTestMaterial a rdf:Property ;
+    rdfs:domain hl:RecoveryTest ;
+    rdfs:range hl:TestMaterial ;
+    rdfs:label "Tested surface material"@en, "Тестируемый материал поверхности"@ru ;
+    rdfs:comment "The surface on which testing is carried out"@en, "Поверхность, на которой проводится тестирование"@ru .
+
+hl:forTestOrganism a rdf:Property ;
+    rdfs:domain hl:AggregatedMetric ;
+    rdfs:range hl:TestOrganism ;
+    rdfs:label "Test organism"@en, "Тестируемый организм"@ru ;
+    rdfs:comment "Aggregated sampling efficiency metric for a test organism"@en, "Агрегированная метрика эффективности отбора проб для тестируемого организма"@ru .
+
+hl:forTestMaterial a rdf:Property ;
+    rdfs:domain hl:AggregatedMetric ;
+    rdfs:range hl:TestMaterial ;
+    rdfs:label "Tested surface material"@en, "Тестируемый материал поверхности"@ru ;
+    rdfs:comment "Aggregated sampling efficiency metric for the surface material being tested"@en, "Агрегированная метрика эффективности отбора проб для тестируемого материала поверхности"@ru .
+
+# ==================== Datatype Properties ====================
+
+hl:log10RecoveryInoculationControl a rdf:Property ;
+    rdfs:domain hl:RecoveryTest ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Log10 recovery (inoculation control)"@en, "Логарифм восстановления по основанию 10 (контрольный образец после инокуляции)"@ru .
+	rdfs:comment "The numerical value of microbial recovery on a decimal logarithmic scale for the control sample after inoculation"@en, "Числовое значение восстановления микроорганизмов в десятичном логарифмическом масштабе для контрольного образца после инокуляции"@ru .
+
+hl:log10RecoveryTestSample a rdf:Property ;
+    rdfs:domain hl:RecoveryTest ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Log10 recovery (test sample)"@en, "Логарифм восстановления по основанию 10 (тестовый образец)"@ru .
+	rdfs:comment "The numerical value of microbial recovery on a decimal logarithmic scale for a test sample"@en, "Числовое значение восстановления микроорганизмов в десятичном логарифмическом масштабе для тестового образца"@ru .
+
+hl:deltaLogRecovery a rdf:Property ;
+    rdfs:domain hl:RecoveryTest ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Delta log recovery"@en, "Дельта логарифма восстановления"@ru ;
+    rdfs:comment "The difference between the logarithms of the control and test samples"@en, "Разница между логарифмами контрольного и тестового образцов"@ru .
+
+hl:meanDeltaLogRecovery a rdf:Property ;
+    rdfs:domain hl:AggregatedMetric ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Mean delta log recovery"@en, "Средняя дельта логарифма восстановления"@ru ;
+    rdfs:comment "Mean delta logarithm of microbial recovery"@en, "Среднее значение дельты логарифма восстановления микроорганизмов"@ru .
+
+hl:standardDeviationDeltaLogRecovery a rdf:Property ;
+    rdfs:domain hl:AggregatedMetric ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation delta log recovery"@en, "Стандартное отклонение дельты логарифма восстановления"@ru ;
+    rdfs:comment "Standard deviation of the delta logarithm of microbial recovery"@en, "Стандартное отклонение дельты логарифма восстановления микроорганизмов"@ru .
