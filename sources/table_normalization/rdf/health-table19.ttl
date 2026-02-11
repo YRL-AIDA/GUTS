@@ -1,0 +1,30 @@
+@prefix hl: <http://example.org/health#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+hl:DataDictionary a rdfs:Class ;
+    rdfs:label "Data dictionary"@en, "Словарь данных"@ru ;
+    rdfs:comment ""@en, ""@ru .
+
+# ==================== Datatype Properties ====================
+
+hl:field a rdf:Property ;
+    rdfs:domain hl:DataDictionary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Field"@en, "Поле"@ru ;
+    rdfs:comment "Unique identifier of the attribute in the data dictionary"@en, "Уникальный идентификатор атрибута в словаре данных"@ru .
+
+hl:format a rdf:Property ;
+    rdfs:domain hl:DataDictionary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Format"@en, "Формат"@ru ;
+    rdfs:comment "Data type and rules for representing values ​​in the field"@en, "Тип данных и правила представления значения в поле"@ru .
+
+hl:definition a rdf:Property ;
+    rdfs:domain hl:DataDictionary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Definition"@en, "Определение"@ru ;
+    rdfs:comment "Semantic description of the field"@en, "Семантическое описание поля"@ru .

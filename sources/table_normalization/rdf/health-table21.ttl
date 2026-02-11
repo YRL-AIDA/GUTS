@@ -1,0 +1,30 @@
+@prefix hl: <http://example.org/health#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+hl:PriceIndex a rdfs:Class ;
+    rdfs:label "Price index"@en, "Индекс цен"@ru ;
+    rdfs:comment "Record of the health care price index for a specific year and category"@en, "Запись об индексе цен на здравоохранение за конкретный год и категорию"@ru .
+
+# ==================== Datatype Properties ====================
+
+hl:year a rdf:Property ;
+    rdfs:domain hl:BlendedExpenditure ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of price index observation"@en, "Календарный год наблюдения индекса цен"@ru .
+
+hl:blendedAccount a rdf:Property ;
+    rdfs:domain hl:BlendedExpenditure ;
+    rdfs:range xsd:string ;
+    rdfs:label "Blended account"@en, "Смешанный счет"@ru ;
+    rdfs:comment "Category of medical services or goods for calculating the price index"@en, "Категория медицинских услуг или товаров для расчёта индекса цен"@ru .
+
+hl:indexValue a rdf:Property ;
+    rdfs:domain hl:BlendedExpenditure ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Index value"@en, "Значение индекса"@ru ;
+    rdfs:comment "The value of the price index"@en, "Значение индекса цен"@ru .
