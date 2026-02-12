@@ -1,0 +1,66 @@
+@prefix hl: <http://example.org/health#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+hl:Variable a rdfs:Class ;
+    rdfs:label "Research variable"@en, "Переменная исследования"@ru ;
+    rdfs:comment "Demographic or clinical variable in the study"@en, "Демографическая или клиническая переменная исследования"@ru .
+
+# ==================== Datatype Properties ====================
+
+hl:variableСategory a rdf:Property ;
+    rdfs:domain hl:Variable ;
+    rdfs:range xsd:string ;
+    rdfs:label "Research variable category"@en, "Категория переменной исследования"@ru ;
+    rdfs:comment "Research variable category (e.g., age group, gender)"@en, "Категория переменной исследования (например, возрастная группа, пол)"@ru .
+
+hl:variableValue a rdf:Property ;
+    rdfs:domain hl:Variable ;
+    rdfs:range xsd:string ;
+    rdfs:label "Research variable value"@en, "Значение переменной исследования"@ru ;
+    rdfs:comment "Research variable value (e.g. 60–64 years, male)"@en, "Значение (именование) переменной исследования (например, 60–64 лет, мужчина)"@ru .
+
+hl:totalNumber a rdf:Property ;
+    rdfs:domain hl:Variable ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total number"@en , "Общее количество"@ru ;
+    rdfs:comment "Total number of observations in the category value"@en, "Общее количество наблюдений в значении данной категории"@ru .
+
+hl:totalPercentage a rdf:Property ;
+    rdfs:domain hl:Variable ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total percentage"@en , "Общий процент"@ru ;
+    rdfs:comment "Percentage of observations in the category value from the total number"@en, "Процент наблюдений в значении данной категории от общего числа"@ru .
+
+hl:optimalCTNumber a rdf:Property ;
+    rdfs:domain hl:Variable ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Optimal CT number"@en , "Количество оптимальных показателей КТ"@ru ;
+    rdfs:comment "Number of observations with optimal CT result"@en, "Количество наблюдений с оптимальным показателем КТ"@ru .
+
+hl:optimalCTpercentage a rdf:Property ;
+    rdfs:domain hl:Variable ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Optimal CT percentage"@en , "Процент оптимальных показателей КТ"@ru ;
+    rdfs:comment "Percentage of optimal CT results within the category value"@en, "Процент наблюдений с оптимальным КТ в значении данной категории"@ru .
+
+hl:oddsRatio a rdf:Property ;
+    rdfs:domain hl:Variable ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Odds ratio"@en , "Отношение шансов"@ru ;
+    rdfs:comment "Univariate odds ratio analysis for a given category value"@en, "Одномерный анализ отношения шансов для определенного значения категории"@ru .
+
+hl:confidenceInterval95 a rdf:Property ;
+    rdfs:domain hl:Variable ;
+    rdfs:range xsd:string ;
+    rdfs:label "Сonfidence interval 95"@en , "95-й доверительный интервал"@ru ;
+    rdfs:comment "Univariate analysis for 95% confidence interval"@en, "Одномерный анализ 95% доверительного интервала"@ru .
+
+hl:pValue a rdf:Property ;
+    rdfs:domain hl:Variable ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "P value"@en , "P-значение"@ru ;
+    rdfs:comment "Univariate analysis for statistical p-value"@en, "Одномерный анализ cтатистического p-значения"@ru .
