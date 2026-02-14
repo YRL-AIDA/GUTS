@@ -1,0 +1,54 @@
+@prefix hl: <http://example.org/health#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+hl:SurveyResult a rdfs:Class ;
+    rdfs:label "Survey result"@en, "Результат опроса"@ru ;
+    rdfs:comment "The results of a survey of patients of a certain department by category for a certain period"@en, "Результат опроса пациентов определенного отделения по категории за определённый период"@ru .
+
+# ==================== Datatype Properties ====================
+
+hl:departmentHealth a rdf:Property ;
+    rdfs:domain hl:AccidentEmergencyDepartmentSurvey ;
+    rdfs:range xsd:string ;
+    rdfs:label "Department health "@en, "Отделение здравоохранения"@ru ;
+    rdfs:comment "The health department within which the patient survey was conducted (e.g., Accident and emergency or Outpatient)"@en, "Отделение здравоохранения в рамках которого проводился опрос пациентов (например, Accident and emergency или Outpatient)"@ru .
+
+hl:category a rdf:Property ;
+    rdfs:domain hl:AccidentEmergencyDepartmentSurvey ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en, "Категория"@ru ;
+    rdfs:comment "Service quality assessment category"@en, "Категория оценки качества услуг"@ru .
+
+hl:timePeriod a rdf:Property ;
+    rdfs:domain hl:AccidentEmergencyDepartmentSurvey ;
+    rdfs:range xsd:date ;
+    rdfs:label "Time period"@en, "Временной период"@ru ;
+    rdfs:comment "Survey time period (e.g. 2004-05)"@en, "Временной период опроса (например, 2004-05)"@ru .
+
+hl:nationalScore a rdf:Property ;
+    rdfs:domain hl:AccidentEmergencyDepartmentSurvey ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "National score"@en, "Национальный показатель"@ru ;
+    rdfs:comment "National survey score (evaluation) on a scale (0-100)"@en, "Национальный показатель (оценка) опроса по шкале (0-100)"@ru .
+
+hl:adjustedScore a rdf:Property ;
+    rdfs:domain hl:AccidentEmergencyDepartmentSurvey ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Adjusted score"@en, "Скорректированный показатель"@ru ;
+    rdfs:comment "Adjusted survey score (evaluation) on a scale (0-100)"@en, "Скорректированный показатель (оценка) опроса по шкале (0-100)"@ru .
+
+hl:confidenceInterval a rdf:Property ;
+    rdfs:domain hl:AccidentEmergencyDepartmentSurvey ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Confidence interval"@en, "Доверительный интервал"@ru ;
+    rdfs:comment "95% confidence interval"@en, "95% доверительный интервал"@ru .
+
+hl:statisticallySignificantChange a rdf:Property ;
+    rdfs:domain hl:AccidentEmergencyDepartmentSurvey ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Statistically significant change"@en, "Статистически значимое изменение"@ru ;
+    rdfs:comment "Statistically significant change compared to the previous time period"@en, "Статистически значимое изменение по сравнению с предыдущим временным периодом"@ru .
