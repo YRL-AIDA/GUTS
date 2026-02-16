@@ -1,0 +1,48 @@
+@prefix rel: <http://example.org/religion#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+rel:EmploymentReligion a rdfs:Class ;
+    rdfs:label "Employment religion"@en , "Занятость по религиозному признаку"@ru ;
+    rdfs:comment "Statistics on the level of employment in the religious sector in a given year"@en, "Статистика уровня занятости религиозной сфере в определенном году"@ru .
+
+# ==================== Datatype Properties ====================
+
+rel:religionName a rdf:Property ;
+    rdfs:domain rel:EmploymentReligion ;
+    rdfs:range xsd:string ;
+    rdfs:label "Religion name"@en , "Название религии"@ru ;
+    rdfs:comment "Name of religious group (e.g., Christian, Muslim)"@en, "Название религиозной группы (например, Christian, Muslim)"@ru .
+
+rel:year a rdf:Property ;
+    rdfs:domain rel:EmploymentReligion ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "year"@en , "Год"@ru ;
+    rdfs:comment "Survey year"@en, "Год проведения опроса"@ru .
+
+rel:educationLevel a rdf:Property ;
+    rdfs:domain rel:EmploymentReligion ;
+    rdfs:range xsd:string ;
+    rdfs:label "Education level"@ru , "Уровень образования"@en ;
+    rdfs:comment "Education level by religious affiliation"@en, "Уровень образования по религиозной принадлежности"@ru .
+
+rel:estimate a rdf:Property ;
+    rdfs:domain rel:EmploymentReligion ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Estimate"@en , "Оценка"@ru ;
+    rdfs:comment "Estimated employment rate in percent"@en, "Оценка уровня занятости в процентах"@ru .
+
+rel:lowerConfidenceLimit a rdf:Property ;
+    rdfs:domain rel:EmploymentReligion ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Lower confidence limit"@en , "Нижний доверительный предел"@ru ;
+    rdfs:comment "Lower bound of 95% confidence interval"@en, "Нижняя граница 95% доверительного интервала"@ru .
+
+rel:upperConfidenceLimit a rdf:Property ;
+    rdfs:domain rel:EmploymentReligion ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Upper confidence limit"@en , "Верхний доверительный предел"@ru ;
+    rdfs:comment "Upper bound of 95% confidence interval"@en, "Верхняя граница 95% доверительного интервала"@ru .
