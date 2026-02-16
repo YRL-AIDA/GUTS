@@ -20,7 +20,7 @@ rel:religionName a rdf:Property ;
 rel:year a rdf:Property ;
     rdfs:domain rel:EmploymentReligion ;
     rdfs:range xsd:gYear ;
-    rdfs:label "year"@ru , "year"@en ;
+    rdfs:label "year"@en , "Год"@ru ;
     rdfs:comment "Survey year"@en, "Год проведения опроса"@ru .
 
 rel:estimate a rdf:Property ;
