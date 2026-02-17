@@ -1,0 +1,36 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:TaxSupport a rdfs:Class ;
+    rdfs:label "Income-based tax support"@en , "Налоговая поддержка, основанная на доходах"@ru ;
+    rdfs:comment "Income-based tax support for R&D and innovation"@en , "Налоговая поддержка НИОКР и инноваций на основе дохода"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:timePeriod a rdf:Property ;
+    rdfs:domain scn:TaxSupport ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en , "Год"@ru ;
+    rdfs:comment "Calendar year"@en , "Календарный год"@ru .
+
+scn:referenceArea a rdf:Property ;
+    rdfs:domain scn:TaxSupport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Country"@en , "Страна"@ru ;
+    rdfs:comment "Country name"@en , "Наименование страны"@ru .
+
+scn:typeArea a rdf:Property ;
+    rdfs:domain scn:TaxSupport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Type of country's economy"@en , "Тип экономики страны"@ru ;
+    rdfs:comment "Economies of countries that are members of the Organisation for Economic Co-operation and Development (OECD)"@en , "Экономики стран, входящие в организацию экономического сотрудничества и развития (ОЭСР)"@ru .
+
+scn:gdpPercentage a rdf:Property ;
+    rdfs:domain scn:TaxSupport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percentage of GDP"@en , "Процент от ВВП"@ru ;
+    rdfs:comment "Volume of income-based tax support for R&D as percentage of GDP"@en , "Объём налоговой поддержки НИОКР в процентах от ВВП"@ru .

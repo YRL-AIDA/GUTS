@@ -1,0 +1,30 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:Measurement a rdfs:Class ;
+    rdfs:label "Measurement"@en , "Измерение"@ru ;
+    rdfs:comment "Measurement of oxygen consumption rate at a given malathion concentration and time point"@en , "Измерение скорости потребления кислорода при заданной концентрации малатиона и времени"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:malathionConcentration a rdf:Property ;
+    rdfs:domain scn:Measurement ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Malathion concentration"@en, "Концентрация малатиона"@ru ;
+    rdfs:comment "Malathion concentration in milligrams per liter (mg/L)"@en, "Концентрация малатиона в миллиграммах на литр (мг/л)"@ru .
+
+scn:timeHours a rdf:Property ;
+    rdfs:domain scn:Measurement ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Time hours"@en, "Время в часах"@ru ;
+    rdfs:comment "Measurement time in hours"@en, "Время измерения в часах"@ru .
+
+scn:oxygenRate a rdf:Property ;
+    rdfs:domain scn:Measurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Oxygen rate"@en, "Уровень кислорода"@ru ;
+    rdfs:comment "Oxygen consumption rate in micrograms per minute (ug/min)"@en, "Скорость потребления кислорода в микрограммах в минуту (мкг/мин)"@ru .
