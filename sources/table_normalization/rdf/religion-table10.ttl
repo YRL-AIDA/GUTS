@@ -1,0 +1,106 @@
+@prefix rel: <http://example.org/religion#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+rel:ContractBreakdown a rdfs:Class ;
+    rdfs:label "Contract breakdown"@en , "Разрыв контракта"@ru ;
+    rdfs:comment "Breakdown by presence of zero-hours contract"@en , "Детализация по наличию контракта с нулевыми часами работы"@ru .
+
+rel:AdjustmentFactor a rdfs:Class ;
+    rdfs:label "Adjustment factor"@en , "Поправочный коэффициент"@ru ;
+    rdfs:comment "Survey sample adjustment factor"@en , "Коэффициент корректировки выборки"@ru .
+
+rel:ReligionSummary a rdfs:Class ;
+    rdfs:label "Religion summary"@en , "ReligionSummary"@ru ;
+    rdfs:comment "Summary statistics for religious group, taking into account the sampling adjustment factor and the final zero-hours percentage"@en , "Сводная статистика по религиозной группе, учитывающая коэффициент корректировки выборки и итоговый процент контрактов"@ru .
+
+# ==================== Object Properties ====================
+
+rel:hasContractBreakdown a rdf:Property ;
+    rdfs:domain hl:ReligionSummary ;
+    rdfs:range hl:ContractBreakdown ;
+    rdfs:label "Contract breakdown"@en , "Детализация контракта"@ru ;
+    rdfs:comment "Relationship between contract breakdown and religion summary"@en , "Взаимосвязь детализации контракта со сводной статистикой религии"@ru .
+
+rel:hasAdjustmentFactor a rdf:Property ;
+    rdfs:domain hl:ReligionSummary ;
+    rdfs:range hl:AdjustmentFactor ;
+    rdfs:label "Adjustment factor"@en , "Поправочный коэффициент"@ru ;
+    rdfs:comment "Relationship between adjustment factor and religion summary"@en , "Взаимосвязь коэффициента корректировки выборки со сводной статистикой религии"@ru .
+
+# ==================== Datatype Properties ====================
+
+rel:regionName a rdf:Property ;
+    rdfs:domain rel:ReligionSummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region name"@en , "Название региона"@ru ;
+    rdfs:comment "Name of the region in which the observation was conducted"@en , "Наименование региона в котором проводилось наблюдение"@ru .
+
+rel:religionName a rdf:Property ;
+    rdfs:domain rel:ReligionSummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Religion name"@en , "Название религии"@ru ;
+    rdfs:comment "Name of religious group (e.g., Christian, Muslim)"@en , "Название религиозной группы (например, Христианин, Мусульманин)"@ru .
+
+rel:adjustmentFactor a rdf:Property ;
+    rdfs:domain rel:ReligionSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Adjustment factor"@en , "Поправочный коэффициент"@ru ;
+    rdfs:comment "Survey sample adjustment factor"@en , "Коэффициент корректировки выборки"@ru .
+
+rel:zeroHoursPercentage a rdf:Property ;
+    rdfs:domain rel:ReligionSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Zero hours percentage"@en , "Процент с нулевыми часами"@ru ;
+    rdfs:comment "Percentage of workers with zero-hours contract"@en , "Процент работников с контрактом нулевых часов"@ru .
+
+rel:totalEmployedWeighted a rdf:Property ;
+    rdfs:domain rel:ReligionSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total employed weighted"@en , "Взвешенная общая численность занятых"@ru ;
+    rdfs:comment "Total weighted count of employed persons"@en , "Общее взвешенное количество занятых"@ru .
+
+rel:zeroHours a rdf:Property ;
+    rdfs:domain rel:ContractBreakdown ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Zero hours contract"@en , "Контракт с нулевым количеством рабочих часов"@ru ;
+    rdfs:comment "Presence of zero-hours contract"@en , "Наличие контракта с нулевым количеством часов работы"@ru .
+
+rel:countWeighted a rdf:Property ;
+    rdfs:domain rel:ContractBreakdown ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Count weighted"@en , "Взвешенное количество"@ru ;
+    rdfs:comment "Weighted count of observations"@en , "Взвешенное количество наблюдений"@ru .
+
+rel:countUnweighted a rdf:Property ;
+    rdfs:domain rel:ContractBreakdown ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Count unweighted"@en , "Невзвешенное количество"@ru ;
+    rdfs:comment "Unweighted count of observations"@en , "Невзвешенное количество наблюдений"@ru .
+
+rel:percentage a rdf:Property ;
+    rdfs:domain rel:ContractBreakdown ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percentage"@en , "Процент"@ru ;
+    rdfs:comment "Percentage of total (religious group)"@en , "Процент от общего количества (религиозной группе)"@ru .
+
+rel:individualOutcome a rdf:Property ;
+    rdfs:domain rel:AdjustmentFactor ;
+    rdfs:range xsd:string ;
+    rdfs:label "Individual outcome of workers"@en , "Индивидуальный результат работников"@ru ;
+    rdfs:comment "Individual outcome (e.g., Child under 16, Economically inactive 70+)"@en , "Индивидуальный результат (например, Ребенок младше 16 лет, Экономически неактивный человек старше 70 лет)"@ru .
+
+rel:economicActivity a rdf:Property ;
+    rdfs:domain rel:AdjustmentFactor ;
+    rdfs:range xsd:string ;
+    rdfs:label "Economic activity of workers"@en , "Экономическая активность работников"@ru ;
+    rdfs:comment "Economic activity (e.g., In employment, ILO unemployed)"@en , "Экономическая активность (например, В сфере занятости, Безработные МОТ)"@ru .
+
+rel:workerCount a rdf:Property ;
+    rdfs:domain rel:AdjustmentFactor ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Worker count"@en , "Количество работников"@ru ;
+    rdfs:comment "Worker count with a certain economic activity and individual outcome for calculating the adjustment factor"@en , "Количество работников c определенной экономической активностью и результатом для подсчета поправочного коэффициента"@ru .

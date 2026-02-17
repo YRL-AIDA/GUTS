@@ -1,0 +1,78 @@
+@prefix rel: <http://example.org/religion#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+rel:LogisticRegression a rdfs:Class ;
+    rdfs:label "Logistic regression"@en , "Логистическая регрессия"@ru ;
+    rdfs:comment "Logistic regression result of economic activity for a specific category and gender"@en , "Результат логистической регрессии экономической активности для конкретной категории и гендерной принадлежности"@ru .
+
+rel:EstimatedOddsRatio a rdfs:Class ;
+    rdfs:label "Estimated odds ratio"@en , "Расчетное отношение шансов"@ru ;
+    rdfs:comment "Estimated odds ratios from logistic regression of economic activity"@en , "Оценочные коэффициенты вероятности, полученные с помощью логистической регрессии экономической активности"@ru .
+
+# ==================== Object Properties ====================
+
+rel:hasEstimateResult a rdf:Property ;
+    rdfs:domain hl:LogisticRegression ;
+    rdfs:range hl:EstimatedOddsRatio ;
+    rdfs:label "Estimate result"@en , "Результат оценки"@ru ;
+    rdfs:comment "Logistic regression result for a specific category and model"@en , "Результат логистической регрессии для конкретной категории и модели"@ru .
+
+# ==================== Datatype Properties ====================
+
+rel:modelNumber a rdf:Property ;
+    rdfs:domain rel:LogisticRegression ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Model number"@en , "Номер модели"@ru ;
+    rdfs:comment "Logistic regression model number (1–6)"@en , "Номер модели логистической регрессии (1–6)"@ru .
+
+rel:gender a rdf:Property ;
+    rdfs:domain rel:LogisticRegression ;
+    rdfs:range xsd:string ;
+    rdfs:label "Gender restriction"@en , "Гендерные ограничения"@ru ;
+    rdfs:comment "Gender restriction (e.g., All, Male or Female)"@en , "Ограничение по полу (например, все, мужчины или женщины)"@ru .
+
+rel:observationsNumber a rdf:Property ;
+    rdfs:domain rel:LogisticRegression ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of observations"@en , "Количество наблюдений"@ru ;
+    rdfs:comment "Number of observations (thousands)"@en , "Количество наблюдений (тысячи)"@ru .
+
+rel:control a rdf:Property ;
+    rdfs:domain rel:LogisticRegression ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Additional control in the model"@en , "Дополнительный контроль в модели"@ru ;
+    rdfs:comment "Presence of additional controls in the model (age, education, region)"@en , "Наличие дополнительных контролей в модели (возраст, образование, регион)"@ru .
+
+rel:categoryType a rdf:Property ;
+    rdfs:domain rel:EstimatedOddsRatio ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category type"@en , "Тип категории"@ru ;
+    rdfs:comment "Category type (e.g., Religious affiliation, Marital status)"@en , "Тип категории (например, Религиозная принадлежность, Семейное положение)"@ru .
+
+rel:categoryValue a rdf:Property ;
+    rdfs:domain rel:EstimatedOddsRatio ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category value"@en , "Значение категории"@ru ;
+    rdfs:comment "The specific value of the category (e.g., No Religion, Buddhist)"@en , "Конкретное значение категории (например, No Без религии, буддист)"@ru .
+
+rel:coefficientValue a rdf:Property ;
+    rdfs:domain rel:EstimatedOddsRatio ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Coefficient value"@en , "значение коэффициента"@ru ;
+    rdfs:comment "Regression coefficient value (odds ratio)"@en , "Значение коэффициента регрессии (отношение шансов)"@ru .
+
+rel:standardError a rdf:Property ;
+    rdfs:domain rel:EstimatedOddsRatio ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard error"@en , "Стандартная ошибка"@ru ;
+    rdfs:comment "Standard error of the coefficient"@en , "Стандартная ошибка коэффициента"@ru .
+
+rel:significanceLevel a rdf:Property ;
+    rdfs:domain rel:EstimatedOddsRatio ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Significance level"@en , "Уровень значимости"@ru ;
+    rdfs:comment "Statistical significance level (0.01, 0.05, 0.1 or absent)"@en , "Уровень статистической значимости (0.01, 0.05, 0.1 или отсутствует)"@ru .
