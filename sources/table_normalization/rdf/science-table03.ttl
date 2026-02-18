@@ -1,0 +1,54 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:CrossSectionMeasurement a rdfs:Class ;
+    rdfs:label "Cross section measurement"@en , "Измерение поперечного сечения"@ru ;
+    rdfs:comment "Measurement of normalized differential fiducial cross-section of the jet centrality for Wjj process"@en , "Измерение нормализованного дифференциального фидуциального поперечного сечения центральности струй для процесса"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:jetCentrality a rdf:Property ;
+    rdfs:domain scn:CrossSectionMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Jet centrality"@en , "Центральность струи"@ru ;
+    rdfs:comment "Central value of jet centrality bin"@en , "Центральное значение бина центральности струй"@ru .
+
+scn:jetCentralityLow a rdf:Property ;
+    rdfs:domain scn:CrossSectionMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Jet centrality low"@en , "Центральность струи (нижняя)"@ru ;
+    rdfs:comment "Lower bound of jet centrality bin"@en , "Нижняя граница бина центральности струй"@ru .
+
+scn:jetCentralityHigh a rdf:Property ;
+    rdfs:domain scn:CrossSectionMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Jet centrality high"@en , "Центральность струи (верхняя)"@ru ;
+    rdfs:comment "Upper bound of jet centrality bin"@en , "Верхняя граница бина центральности струй"@ru .
+
+scn:crossSectionValue a rdf:Property ;
+    rdfs:domain scn:CrossSectionMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Cross section value"@en , "Значение поперечного сечения"@ru ;
+    rdfs:comment "Value of normalized differential fiducial cross-section"@en , "Значение нормализованного дифференциального фидуциального поперечного сечения"@ru .
+
+scn:uncertaintyType a rdf:Property ;
+    rdfs:domain scn:CrossSectionMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Uncertainty type"@en , "Тип неопределенности"@ru ;
+    rdfs:comment "Uncertainty type (e.g., statistical or systematic)"@en , "Тип неопределенности (например, cтатистические или систематические)"@ru .
+
+scn:uncertaintyPlus a rdf:Property ;
+    rdfs:domain scn:CrossSectionMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Uncertainty plus"@en , "Неопределенность плюс"@ru ;
+    rdfs:comment "Positive component of uncertainty (+)"@en , "Положительная компонента неопределенности (+)"@ru .
+
+scn:uncertaintyMinus a rdf:Property ;
+    rdfs:domain scn:CrossSectionMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Uncertainty minus"@en , "Неопределенность минус"@ru ;
+    rdfs:comment "Negative component of uncertainty (–)"@en , "Отрицательная компонента неопределенности (–)"@ru .

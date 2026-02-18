@@ -1,0 +1,48 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:MeasurementUnit a rdfs:Class ;
+    rdfs:label "Unit of measurement"@en , "Единица измерения"@ru ;
+    rdfs:comment "Unit conversion"@en , "Пересчет единиц измерения"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:category a rdf:Property ;
+    rdfs:domain scn:MeasurementUnit ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en , "Категория"@ru ;
+    rdfs:comment "Physical quantity category (e.g., time, energy, power)"@en , "Категория физической величины (например, время, энергия, мощность)"@ru .
+
+scn:unitSymbol a rdf:Property ;
+    rdfs:domain scn:MeasurementUnit ;
+    rdfs:range xsd:string ;
+    rdfs:label "Unit symbol"@en , "Символ единицы"@ru ;
+    rdfs:comment "Symbolic notation of unit or prefix (e.g., s, kg, km)"@en , "Символьное обозначение единицы или приставки (например, с, кг, км)"@ru .
+
+scn:unitName a rdf:Property ;
+    rdfs:domain scn:MeasurementUnit ;
+    rdfs:range xsd:string ;
+    rdfs:label "Unit name"@en , "Название единицы"@ru ;
+    rdfs:comment "Full name of measurement unit or prefix"@en , "Полное название единицы измерения или приставки"@ru .
+
+scn:referenceTerm a rdf:Property ;
+    rdfs:domain scn:MeasurementUnit ;
+    rdfs:range xsd:string ;
+    rdfs:label "Reference term"@en , "Референтный термин"@ru ;
+    rdfs:comment "Technical term for programmatic reference (e.g., second, joule)"@en , "Техническое обозначение для программной ссылки (например, секунда, джоуль)"@ru .
+
+scn:multiplier a rdf:Property ;
+    rdfs:domain scn:MeasurementUnit ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Multiplier"@en , "Множитель"@ru ;
+    rdfs:comment "Multiplier relative to the base unit of the category"@en , "Множитель относительно базовой единицы категории"@ru .
+
+scn:notes a rdf:Property ;
+    rdfs:domain scn:MeasurementUnit ;
+    rdfs:range xsd:string ;
+    rdfs:label "Notes"@en , "Примечания"@ru ;
+    rdfs:comment "Notes, data sources or special application conditions"@en , "Примечания, источники данных или особые условия применения"@ru .
