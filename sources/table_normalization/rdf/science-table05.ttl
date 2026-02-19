@@ -5,38 +5,32 @@
 
 # ==================== Classes ====================
 
-scn:MeasurementUnit a rdfs:Class ;
-    rdfs:label "Unit of measurement"@en , "Единица измерения"@ru ;
-    rdfs:comment "Unit conversion"@en , "Пересчет единиц измерения"@ru .
+scn:ConcentrationMeasurement a rdfs:Class ;
+    rdfs:label "Concentration measurement"@en , "Измерение концентрации"@ru ;
+    rdfs:comment "Measurement of antiretroviral drug concentration in biological sample using IR-MALDESI MSI"@en , "Измерение концентрации антиретровирусного препарата в биологическом образце методом ИК-МАЛДЕЗИ МСИ"@ru .
 
 # ==================== Datatype Properties ====================
 
-scn:category a rdf:Property ;
-    rdfs:domain scn:MeasurementUnit ;
-    rdfs:range xsd:decimal ;
-    rdfs:label ""@en , ""@ru ;
-    rdfs:comment ""@en , ""@ru .
-
-scn:jetCentralityLow a rdf:Property ;
-    rdfs:domain scn:MeasurementUnit ;
-    rdfs:range xsd:decimal ;
-    rdfs:label ""@en , ""@ru ;
-    rdfs:comment ""@en , ""@ru .
-
-scn:jetCentralityHigh a rdf:Property ;
-    rdfs:domain scn:MeasurementUnit ;
-    rdfs:range xsd:decimal ;
-    rdfs:label ""@en , ""@ru ;
-    rdfs:comment ""@en , ""@ru .
-
-scn:crossSectionValue a rdf:Property ;
-    rdfs:domain scn:MeasurementUnit ;
-    rdfs:range xsd:decimal ;
-    rdfs:label ""@en , ""@ru ;
-    rdfs:comment ""@en , ""@ru .
-
-scn:uncertaintyType a rdf:Property ;
-    rdfs:domain scn:MeasurementUnit ;
+scn:arvRegimen a rdf:Property ;
+    rdfs:domain scn:ConcentrationMeasurement ;
     rdfs:range xsd:string ;
-    rdfs:label ""@en , ""@ru ;
-    rdfs:comment ""@en , ""@ru .
+    rdfs:label "ARV regimen"@en , "Схема антиретровирусной терапии"@ru ;
+    rdfs:comment "ARV regimen name (e.g., FTC, TFV, EFV, RPV, 3TC)"@en , "Название схемы антиретровирусной терапии (например, FTC, TFV, EFV, RPV, 3TC)"@ru .
+
+scn:analyteConcentration a rdf:Property ;
+    rdfs:domain scn:ConcentrationMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Analyte concentration (µg/g)"@en , "Концентрация аналита (мкг/г)"@ru ;
+    rdfs:comment "Analyte concentration in micrograms per gram of tissue (µg/g)"@en , "Концентрация аналита в микрограммах на грамм ткани (µg/g)"@ru .
+
+scn:sampleSpecificLLOQ a rdf:Property ;
+    rdfs:domain scn:ConcentrationMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Sample specific LLOQ (fg/voxel)"@en , "Предел количественного определения для образца (фг/воксель)"@ru ;
+    rdfs:comment "Sample specific lower limit of quantification in femtograms per voxel (fg/voxel)"@en , "Нижний предел количественного определения для конкретного образца (LLOQ) в фемтограммах на воксель (фг/воксель)"@ru .
+
+scn:measurementStatus a rdf:Property ;
+    rdfs:domain scn:ConcentrationMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Measurement status"@en , "Состояние измерения"@ru ;
+    rdfs:comment "Measurement status (e.g., actual value (actual), below quantification limit (BLQ), not reported (NR)"@en , "Статус измерения (например, фактическое значение (actual), ниже предела количественного определения (BLQ), не определялось (NR)"@ru .

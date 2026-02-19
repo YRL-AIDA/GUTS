@@ -1,0 +1,54 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:LiverBiopsyConcentrationMeasurement a rdfs:Class ;
+    rdfs:label "Liver biopsy concentration measurement"@en , "Измерение концентрации в биопсии печени"@ru ;
+    rdfs:comment "Measurement of antiretroviral drug concentration in liver biopsy using IR-MALDESI MSI"@en , "Измерение концентрации антиретровирусного препарата в биопсии печени методом ИК-МАЛДЕЗИ МСИ"@ru .
+
+scn:PearsonCorrelation a rdfs:Class ;
+    rdfs:label "Liver/plasma pearson correlation"@en , "Корреляция Пирсона между показателями печени и плазмы"@ru ;
+    rdfs:comment "Pearson correlation between liver and plasma concentrations"@en , "Корреляция Пирсона между концентрациями в печени и плазме крови"@ru .
+
+# ==================== Object Properties ====================
+
+scn:hasPearsonCorrelation a rdf:Property ;
+    rdfs:domain scn:LiverBiopsyConcentrationMeasurement ;
+    rdfs:range scn:PearsonCorrelation ;
+    rdfs:label "Pearson correlation"@en , "Корреляция Пирсона"@ru ;
+    rdfs:comment "Pearson's correlation coefficient"@en , "Коэффициент корреляции Пирсона"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:arvRegimen a rdf:Property ;
+    rdfs:domain scn:LiverBiopsyConcentrationMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "ARV regimen"@en , "Схема антиретровирусной терапии"@ru ;
+    rdfs:comment "ARV regimen name (e.g., FTC, TFV, EFV, RPV, 3TC)"@en , "Название схемы антиретровирусной терапии (например, FTC, TFV, EFV, RPV, 3TC)"@ru .
+
+scn:concentration a rdf:Property ;
+    rdfs:domain scn:LiverBiopsyConcentrationMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Concentration (µg/g)"@en , "Концентрация (мкг/г)"@ru ;
+    rdfs:comment "Analyte concentration in micrograms per gram of liver tissue (µg/g)"@en , "Концентрация аналита в микрограммах на грамм печёночной ткани (µg/g)"@ru .
+
+scn:sampleSpecificLLOQ a rdf:Property ;
+    rdfs:domain scn:LiverBiopsyConcentrationMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Sample specific LLOQ (fg/voxel)"@en , "Предел количественного определения для образца (фг/воксель)"@ru ;
+    rdfs:comment "Sample specific lower limit of quantification in femtograms per voxel (fg/voxel)"@en , "Нижний предел количественного определения для конкретного образца (LLOQ) в фемтограммах на воксель (фг/воксель)"@ru .
+
+scn:measurementStatus a rdf:Property ;
+    rdfs:domain scn:LiverBiopsyConcentrationMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Measurement status"@en , "Состояние измерения"@ru ;
+    rdfs:comment "Measurement status (e.g., actual value (actual), below quantification limit (BLQ), not reported (NR)"@en , "Статус измерения (например, фактическое значение (actual), ниже предела количественного определения (BLQ), не определялось (NR)"@ru .
+
+scn:correlationCoefficient a rdf:Property ;
+    rdfs:domain scn:PearsonCorrelation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Correlation coefficient"@en , "Коэффициент корреляции"@ru ;
+    rdfs:comment "Pearson correlation coefficient between liver and plasma concentrations"@en , "Коэффициент корреляции Пирсона между концентрациями в печени и плазме крови"@ru .

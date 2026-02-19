@@ -1,0 +1,48 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:BiopsySample a rdfs:Class ;
+    rdfs:label "Biopsy sample"@en , "Образец биопсии"@ru ;
+    rdfs:comment "Biopsy sample with virological test results for HIV and HBV"@en , "Биопсийный образец с результатами вирусологических анализов на ВИЧ и вирус гепатита В"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:hivDNAFirstRound a rdf:Property ;
+    rdfs:domain scn:BiopsySample ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "HIV DNA first round"@en , "ДНК ВИЧ, первый раунд"@ru ;
+    rdfs:comment "HIV DNA PCR result in first round of testing"@en , "Результат ПЦР на ДНК ВИЧ в первом раунде анализа"@ru .
+
+scn:hivDNASecondRound a rdf:Property ;
+    rdfs:domain scn:BiopsySample ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "HIV DNA second round"@en , "ДНК ВИЧ, второй раунд"@ru ;
+    rdfs:comment "HIV DNA PCR result in second round of testing"@en , "Результат ПЦР на ДНК ВИЧ во втором раунде анализа"@ru .
+
+scn:hivvDNA a rdf:Property ;
+    rdfs:domain scn:BiopsySample ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "HIV viral DNA"@en , "ДНК вируса ВИЧ"@ru ;
+    rdfs:comment "HIV viral DNA assay result"@en , "Результат анализа вирусной ДНК ВИЧ"@ru .
+
+scn:hbvRNAScope a rdf:Property ;
+    rdfs:domain scn:BiopsySample ;
+    rdfs:range xsd:string ;
+    rdfs:label "HBV RNA scope"@en , "Область охвата РНК вируса гепатита В"@ru ;
+    rdfs:comment "The significance of the intensity of coverage of hepatitis B virus RNA"@en , "Значение интенсивности охвата РНК вируса гепатита В"@ru .
+
+scn:dnaPositiveQPCR a rdf:Property ;
+    rdfs:domain scn:BiopsySample ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "DNA+ by qPCR"@en , "ДНК+ методом qPCR"@ru ;
+    rdfs:comment "DNA+ by quantitative PCR (qPCR) result"@en , "ДНК+ результат количественного ПЦР-теста"@ru .
+
+scn:positiveEitherMethod a rdf:Property ;
+    rdfs:domain scn:BiopsySample ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Positive by either method"@en , "Положительный результат при любом методе"@ru ;
+    rdfs:comment "Positive result by at least one of the applied methods"@en , "Положительный результат хотя бы одним из примененных методов"@ru .
