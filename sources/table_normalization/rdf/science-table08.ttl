@@ -1,0 +1,76 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:ExcelMetadata a rdfs:Class ;
+    rdfs:label "Excel metadata"@en , "Метаданные Excel"@ru ;
+    rdfs:comment "Metadata from an Excel file containing the results of measurements of benthic (bottom) communities monitoring in Narragansett Bay (USA) for 1988, 2008, and 2018."@en , "Метаданные Excel-файла с результатами измерений мониторинга бентосных (донных) сообществ залива Наррагансетт (США) за 1988, 2008 и 2018 гг."@ru .
+
+scn:ExcelSheetMetadata a rdfs:Class ;
+    rdfs:label "Excel sheet metadata"@en , "Метаданные электронной таблицы Excel"@ru ;
+    rdfs:comment "Metadata for spreadsheets (tabs) in Excel format"@en , "Метаданные электронных таблиц (вкладок) в формате Excel"@ru .
+
+scn:ColumnMetadata a rdfs:Class ;
+    rdfs:label "Column metadata"@en , "Метаданные столбца"@ru ;
+    rdfs:comment "Column metadata in an Excel spreadsheet"@en , "Метаданные столбца в электронной таблице Excel"@ru .
+
+# ==================== Object Properties ====================
+
+scn:hasExcelSheetMetadata a rdf:Property ;
+    rdfs:domain scn:ExcelMetadata ;
+    rdfs:range scn:ExcelSheetMetadata ;
+    rdfs:label "Excel sheet metadata"@en , "Метаданные электронной таблицы Excel"@ru ;
+    rdfs:comment "Presence of spreadsheet metadata in an Excel file"@en , "Наличие метаданных электронной таблицы (листа) в файле Excel"@ru .
+
+scn:hasColumnMetadata a rdf:Property ;
+    rdfs:domain scn:ExcelSheetMetadata ;
+    rdfs:range scn:ColumnMetadata ;
+    rdfs:label "Column metadata"@en , "Метаданные столбца"@ru ;
+    rdfs:comment "Presence of column metadata in a spreadsheet"@en , "Наличие метаданных столбца в электронной таблице (листе)"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:about a rdf:Property ;
+    rdfs:domain scn:ExcelMetadata ;
+    rdfs:range xsd:string ;
+    rdfs:label "About"@en , "Информация о"@ru ;
+    rdfs:comment "General information about the Excel file with measurement results"@en , "Общая информация о файле Excel с результатами измерений"@ru .
+
+scn:datePublished a rdf:Property ;
+    rdfs:domain scn:ExcelMetadata ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date published"@en , "Дата публикации"@ru ;
+    rdfs:comment "Excel file publication date"@en , "Дата публикации файла Excel"@ru .
+
+scn:contactPoint a rdf:Property ;
+    rdfs:domain scn:ExcelMetadata ;
+    rdfs:range xsd:string ;
+    rdfs:label "Point of contact"@en , "Контактное лицо"@ru ;
+    rdfs:comment "An individual or legal entity that can be contacted for access to information"@en , "Физическое или юридическое лицо, к которому можно обратиться за доступом к информации"@ru .
+
+scn:sheetName a rdf:Property ;
+    rdfs:domain scn:ExcelSheetMetadata ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sheet name"@en , "Название листа"@ru ;
+    rdfs:comment "Sheet name in Excel file"@en , "Название листа в файле Excel"@ru .
+
+scn:summary a rdf:Property ;
+    rdfs:domain scn:ExcelSheetMetadata ;
+    rdfs:range xsd:string ;
+    rdfs:label "Summary"@en , "Краткое содержание"@ru ;
+    rdfs:comment "Summary of the sheet"@en , "Краткое содержание листа"@ru .
+
+scn:columnHeading a rdf:Property ;
+    rdfs:domain scn:ColumnMetadata ;
+    rdfs:range xsd:string ;
+    rdfs:label "Column heading"@en , "Заголовок столбца"@ru ;
+    rdfs:comment "Column header in an Excel spreadsheet"@en , "Заголовок столбца в электронной таблице Excel"@ru .
+
+scn:columnDescription a rdf:Property ;
+    rdfs:domain scn:ColumnMetadata ;
+    rdfs:range xsd:string ;
+    rdfs:label "Column description"@en , "Описание столбца"@ru ;
+    rdfs:comment "Description of a column in an Excel spreadsheet"@en , "Описание столбца в электронной таблице Excel"@ru .

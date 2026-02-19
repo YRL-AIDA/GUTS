@@ -1,0 +1,54 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:PhagocytosisMeasurement a rdfs:Class ;
+    rdfs:label "Phagocytosis measurement"@en , "Измерение фагоцитоза"@ru ;
+    rdfs:comment "Measurement of macrophage phagocytosis under specific activation condition and time point"@en , "Измерение фагоцитоза макрофагами при заданных условиях активации и временной точке"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:time a rdf:Property ;
+    rdfs:domain scn:PhagocytosisMeasurement ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Time"@en , "Время"@ru ;
+    rdfs:comment "Incubation time in minutes (0, 30 or 75)"@en , "Время инкубации в минутах (0, 30 или 75)"@ru .
+
+scn:roi a rdf:Property ;
+    rdfs:domain scn:PhagocytosisMeasurement ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Region of interest"@en , "Область интереса"@ru ;
+    rdfs:comment "Region of interest identifier (field of view) from 1 to 6"@en , "Идентификатор региона интереса (поля зрения) от 1 до 6"@ru .
+
+scn:activationCondition a rdf:Property ;
+    rdfs:domain scn:PhagocytosisMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Activation condition"@en , "Условие активации"@ru ;
+    rdfs:comment "Macrophage activation condition, when M0 (control), IFN-y (interferon-gamma), LPS (lipopolysaccharide), M2 (alternative activation)"@en , "Условие активации макрофагов, где M0 (контроль), IFN-y (интерферон-гамма), LPS (липополисахарид), M2 (альтернативная активация)"@ru .
+
+scn:m1NumberPerFOV a rdf:Property ;
+    rdfs:domain scn:PhagocytosisMeasurement ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of M1 per FOV"@en , "Количество M1 на поле зрения"@ru ;
+    rdfs:comment "Number of M1 macrophages per field of view"@en , "Количество макрофагов M1 в поле зрения"@ru .
+
+scn:m1PhagocytosisingNumber a rdf:Property ;
+    rdfs:domain scn:PhagocytosisMeasurement ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of M1 phagocytosising"@en , "Количество фагоцитирующих M1"@ru ;
+    rdfs:comment "Number of phagocytosing M1 macrophages"@en , "Количество фагоцитирующих макрофагов M1"@ru .
+
+scn:engulfedCellsNumber a rdf:Property ;
+    rdfs:domain scn:PhagocytosisMeasurement ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of engulfed cells"@en , "Количество поглощенных клеток"@ru ;
+    rdfs:comment "Number of engulfed (phagocytosed) cells"@en , "Количество поглощенных (фагоцитированных) клеток"@ru .
+
+scn:phagocytosisPercentage a rdf:Property ;
+    rdfs:domain scn:PhagocytosisMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Phagocytosis percentage"@en , "Процент фагоцитоза"@ru ;
+    rdfs:comment "Percentage of phagocytosing macrophages among total macrophages in field of view"@en , "Процент фагоцитирующих макрофагов от общего количества макрофагов в поле зрения"@ru .
