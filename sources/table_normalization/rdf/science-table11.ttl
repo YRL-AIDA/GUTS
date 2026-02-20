@@ -1,0 +1,46 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:OpticalRedoxRatio a rdfs:Class ;
+    rdfs:label "Optical redox ratio"@en , "Оптическое окислительно-восстановительное соотношение"@ru ;
+    rdfs:comment "Measurement of optical redox ratio for a specific cell under defined co-culture conditions"@en , "Измерение оптического окислительно-восстановительного соотношения для конкретной клетки при заданных условиях кокультивирования"@ru .
+
+scn:MeasurementAggregation a rdfs:Class ;
+    rdfs:label "Measurement aggregation"@en , "Агрегирование измерений"@ru ;
+    rdfs:comment "Aggregation of optical redox ratio measurements"@en , "Агрегация измерений оптических окислительно-восстановительных соотношений"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:experimentalCondition a rdf:Property ;
+    rdfs:domain scn:OpticalRedoxRatio ;
+    rdfs:range xsd:string ;
+    rdfs:label "Experimental condition"@en , "Экспериментальное условие"@ru ;
+    rdfs:comment "Experimental condition: naive macrophages (M0) + CT26 tumor cells, classically activated macrophages (M1) + CT26, naive macrophages + 4T1 tumor cells, classically activated macrophages + 4T1"@en , "Экспериментальное условие: наивные макрофаги (M0) + опухолевые клетки линии CT26, классически активированные макрофаги (M1) + CT26, наивные макрофаги + опухолевые клетки линии 4T1, классически активированные макрофаги + 4T1"@ru .
+
+scn:redoxRatio a rdf:Property ;
+    rdfs:domain scn:OpticalRedoxRatio ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Redox ratio"@en , "Окислительно-восстановительное соотношение"@ru ;
+    rdfs:comment "Optical redox ratio (fluorescence ratio), dimensionless quantity"@en , "Оптическое окислительно-восстановительное соотношение (соотношение флуоресценции), безразмерная величина"@ru .
+
+scn:experimentalCondition a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Experimental condition"@en , "Экспериментальное условие"@ru ;
+    rdfs:comment "Experimental condition: naive macrophages (M0) + CT26 tumor cells, classically activated macrophages (M1) + CT26, naive macrophages + 4T1 tumor cells, classically activated macrophages + 4T1"@en , "Экспериментальное условие: наивные макрофаги (M0) + опухолевые клетки линии CT26, классически активированные макрофаги (M1) + CT26, наивные макрофаги + опухолевые клетки линии 4T1, классически активированные макрофаги + 4T1"@ru .
+
+scn:mean a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Mean"@en , "Среднее значение"@ru ;
+    rdfs:comment "The mean value of the optical redox ratio for a given experimental condition"@en , "Среднее значение оптического окислительно-восстановительного соотношения для определенного экспериментального условия"@ru .
+
+scn:standardDeviation  a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation"@en , "Стандартное отклонение"@ru ;
+    rdfs:comment "Standard deviation of the optical redox ratio for a given experimental condition"@en , "Стандартное отклонение оптического окислительно-восстановительного соотношения для определенного экспериментального условия"@ru .

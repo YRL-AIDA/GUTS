@@ -1,0 +1,46 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:Questionnaire a rdfs:Class ;
+    rdfs:label "Questionnaire"@en , "Анкета"@ru ;
+    rdfs:comment "Questionnaire assessing information systems performance in CPUT admission processes"@en , "Анкета по оценке информационных систем процессов приёма в университете CPUT"@ru .
+
+scn:Participant a rdfs:Class ;
+    rdfs:label "Participant"@en , "Участник"@ru ;
+    rdfs:comment "Survey participant"@en , "Участник опроса"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:questionId a rdf:Property ;
+    rdfs:domain scn:Questionnaire ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Question id"@en , "Идентификатор вопроса"@ru ;
+    rdfs:comment "Numeric identifier of survey question"@en , "Числовой идентификатор вопроса в опроснике"@ru .
+
+scn:questionText a rdf:Property ;
+    rdfs:domain scn:Questionnaire ;
+    rdfs:range xsd:string ;
+    rdfs:label "Question text"@en , "Текст вопроса"@ru ;
+    rdfs:comment "Full textual content of the survey question"@en , "Полный текст вопроса опросника"@ru .
+
+scn:responseOptionCode a rdf:Property ;
+    rdfs:domain scn:Questionnaire ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Response option code"@en , "Код варианта ответа"@ru ;
+    rdfs:comment "Numeric code of response option"@en , "Числовой код варианта ответа"@ru .
+
+scn:responseOptionText a rdf:Property ;
+    rdfs:domain scn:Questionnaire ;
+    rdfs:range xsd:string ;
+    rdfs:label "Response option text"@en , "Текст варианта ответа"@ru ;
+    rdfs:comment "Textual label of response option"@en , "Текстовое представление варианта ответа"@ru .
+
+scn:participantId a rdf:Property ;
+    rdfs:domain scn:Participant ;
+    rdfs:range xsd:string ;
+    rdfs:label "Participant id"@en , "Идентификатор участника"@ru ;
+    rdfs:comment "Identifier of survey participant"@en , "Идентификатор участника опроса"@ru .

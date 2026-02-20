@@ -1,0 +1,66 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:GeneticVariant a rdfs:Class ;
+    rdfs:label "Genetic variant"@en , "Генетический вариант"@ru ;
+    rdfs:comment "Genetic variant (mutation) in human genome with description of protein consequences"@en , "Генетический вариант (мутация) в геноме человека с описанием последствий для белка"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:inheritanceType a rdf:Property ;
+    rdfs:domain scn:GeneticVariant ;
+    rdfs:range xsd:string ;
+    rdfs:label "Inheritance type"@en , "Тип наследования"@ru ;
+    rdfs:comment "Inheritance pattern of the variant"@en , "Тип наследования варианта"@ru .
+
+scn:chromosome a rdf:Property ;
+    rdfs:domain scn:GeneticVariant ;
+    rdfs:range xsd:string ;
+    rdfs:label "Chromosome"@en , "Хромосома"@ru ;
+    rdfs:comment "Chromosome number"@en , "Номер хромосомы"@ru .
+
+scn:position a rdf:Property ;
+    rdfs:domain scn:GeneticVariant ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Position"@en , "Позиция"@ru ;
+    rdfs:comment "Genomic coordinate of the variant (position in base pairs)"@en , "Геномная координата варианта (позиция в парах оснований)"@ru .
+
+scn:referenceAllele a rdf:Property ;
+    rdfs:domain scn:GeneticVariant ;
+    rdfs:range xsd:string ;
+    rdfs:label "Reference allele"@en , "Референтный аллель"@ru ;
+    rdfs:comment "Reference allele (original DNA sequence)"@en , "Референсный аллель (оригинальная последовательность ДНК)"@ru .
+
+scn:alternateAllele a rdf:Property ;
+    rdfs:domain scn:GeneticVariant ;
+    rdfs:range xsd:string ;
+    rdfs:label "Alternate allele"@en , "Альтернативный аллель"@ru ;
+    rdfs:comment "Alternate allele (modified DNA sequence)"@en , "Альтернативный аллель (измененная последовательность ДНК)"@ru .
+
+scn:geneSymbol a rdf:Property ;
+    rdfs:domain scn:GeneticVariant ;
+    rdfs:range xsd:string ;
+    rdfs:label "Gene symbol"@en , "Символ гена"@ru ;
+    rdfs:comment "Gene symbol according to HGNC database"@en , "Символ гена согласно базе данных HGNC"@ru .
+
+scn:consequence a rdf:Property ;
+    rdfs:domain scn:GeneticVariant ;
+    rdfs:range xsd:string ;
+    rdfs:label "Consequence"@en , "Последствие"@ru ;
+    rdfs:comment "Variant consequence type for transcript"@en , "Тип последствия варианта для транскрипта"@ru .
+
+scn:hGVSNameCDNA a rdf:Property ;
+    rdfs:domain scn:GeneticVariant ;
+    rdfs:range xsd:string ;
+    rdfs:label "HGVS Name (cDNA)"@en , "Название HGVS (кДНК)"@ru ;
+    rdfs:comment "Standardized variant name according to HGVS nomenclature at cDNA level"@en , "Стандартизированное название варианта по номенклатуре HGVS на уровне кДНК"@ru .
+
+scn:hGVSNameProtein a rdf:Property ;
+    rdfs:domain scn:GeneticVariant ;
+    rdfs:range xsd:string ;
+    rdfs:label "HGVS Name (protein)"@en , "Название белка HGVS"@ru ;
+    rdfs:comment "Standardized variant name according to HGVS nomenclature at protein level"@en , "Стандартизированное название варианта по номенклатуре HGVS на уровне белка"@ru .
