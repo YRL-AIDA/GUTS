@@ -1,0 +1,64 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:CellCycleMeasurement a rdfs:Class ;
+    rdfs:label "Cell cycle measurement"@en , "Измерение клеточного цикла"@ru ;
+    rdfs:comment "Measurement of cell distribution across cell cycle phases under specific experimental conditions"@en , "Измерение распределения клеток по фазам клеточного цикла при заданных условиях эксперимента"@ru .
+
+scn:MeasurementAggregation a rdfs:Class ;
+    rdfs:label "Measurement aggregation"@en , "Агрегирование измерений"@ru ;
+    rdfs:comment "Aggregation of cell distribution measurements"@en , "Агрегирование измерений распределения клеток"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:day a rdf:Property ;
+    rdfs:domain scn:CellCycleMeasurement ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Day"@en , "День"@ru ;
+    rdfs:comment "Day of experiment relative to irradiation start"@en , "День эксперимента относительно начала облучения"@ru .
+
+scn:conditionType a rdf:Property ;
+    rdfs:domain scn:CellCycleMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Condition type"@en , "Тип состояния"@ru ;
+    rdfs:comment "Experimental condition type (e.g., Control or IR (Ionizing Radiation))"@en , "Тип экспериментального условия (например, контроль или ионизирующее облучение)"@ru .
+
+scn:sampleId a rdf:Property ;
+    rdfs:domain scn:CellCycleMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sample id"@en , "Идентификатор образца"@ru ;
+    rdfs:comment "Sample identifier (numeric for primary replicates or alphanumeric for supplementary data"@en , "Идентификатор образца (числовой для основных повторностей или буквенно-цифровой для дополнительных данных)"@ru .
+
+scn:populationType a rdf:Property ;
+    rdfs:domain scn:CellCycleMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Population type"@en , "Тип популяции"@ru ;
+    rdfs:comment "Cell population type by cell cycle phase"@en , "Тип популяции клеток по фазе клеточного цикла"@ru .
+
+scn:percentage a rdf:Property ;
+    rdfs:domain scn:CellCycleMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percentage"@en , "Процент"@ru ;
+    rdfs:comment "Percentage of cells belonging to this population in the sample"@en , "Процентное содержание клеток данной популяции в образце"@ru .
+
+scn:note a rdf:Property ;
+    rdfs:domain scn:CellCycleMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Note"@en , "Примечание"@ru ;
+    rdfs:comment "Additional textual note for the measurement"@en , "Дополнительное текстовые примечание к измерению"@ru .
+
+scn:averageValue a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average value"@en , "Среднее значение"@ru ;
+    rdfs:comment "Average value for each group"@en , "Среднее значение для каждой группы"@ru .
+
+scn:standardDeviation  a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation"@en , "Стандартное отклонение"@ru ;
+    rdfs:comment "Standard deviation for each group"@en , "Стандартное отклонение для каждой группы"@ru .
