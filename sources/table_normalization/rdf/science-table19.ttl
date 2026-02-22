@@ -1,0 +1,64 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:TransformedСlone a rdfs:Class ;
+    rdfs:label "Transformed сlone"@en , "Трансформированный клон"@ru ;
+    rdfs:comment "Measurement of individual mammary epithelial clone size in BRCA1/P53 confetti mouse model"@en , "Измерение размера отдельного клона эпителия молочной железы в модели мыши BRCA1/P53 confetti"@ru .
+
+scn:MeasurementAggregation a rdfs:Class ;
+    rdfs:label "Measurement aggregation"@en , "Агрегирование измерений"@ru ;
+    rdfs:comment "Aggregation of clone size measurements"@en , "Агрегирование измерений размеров клонов"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:timePoint a rdf:Property ;
+    rdfs:domain scn:TransformedСlone ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Time point"@en , "Временная точка"@ru ;
+    rdfs:comment "Observation time point in days post-induction (14, 64, 120 or 225 days)"@en , "Временная точка наблюдения в днях после индукции (14, 64, 120 или 225 дней)"@ru .
+
+scn:mouseName a rdf:Property ;
+    rdfs:domain scn:TransformedСlone ;
+    rdfs:range xsd:string ;
+    rdfs:label "Mouse name"@en , "Имя мыши"@ru ;
+    rdfs:comment "Name or id of the experimental mouse"@en , "Имя или идентификатор экспериментальной мыши"@ru .
+
+scn:cloneNumber a rdf:Property ;
+    rdfs:domain scn:TransformedСlone ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Clone number"@en , "Количество клонов"@ru ;
+    rdfs:comment "The number of clone cells of a particular type"@en , "Количество клеток клонов определенного типа"@ru .
+
+scn:cloneType a rdf:Property ;
+    rdfs:domain scn:TransformedСlone ;
+    rdfs:range xsd:string ;
+    rdfs:label "Clone type"@en , "Тип клона"@ru ;
+    rdfs:comment "Cell type of clone (luminal or basal)"@en , "Тип клеток клона (люминальные или базальные)"@ru .
+
+scn:cloneSize a rdf:Property ;
+    rdfs:domain scn:TransformedСlone ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Clone size"@en , "Размер клона"@ru ;
+    rdfs:comment "Number of cells within the clone"@en , "Количество клеток в клоне"@ru .
+
+scn:timePoint a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Time point"@en , "Временная точка"@ru ;
+    rdfs:comment "Observation time point in days post-induction (14, 64, 120 or 225 days)"@en , "Временная точка наблюдения в днях после индукции 14, 64, 120 или 225 дней)"@ru .
+
+scn:totalLuminal a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total luminal"@en , "Общее количество люминальных"@ru ;
+    rdfs:comment "Total number of luminal cell clones"@en , "Общее количество люминальных клеток клонов"@ru .
+
+scn:totalBasal a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total basal"@en , "Общее количество базальных"@ru ;
+    rdfs:comment "Total number of basal cell clones"@en , "Общее количество базальных клеток клонов"@ru .

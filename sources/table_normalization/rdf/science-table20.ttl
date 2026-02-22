@@ -1,0 +1,48 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:TransformedСlone a rdfs:Class ;
+    rdfs:label "Transformed сlone"@en , "Трансформированный клон"@ru ;
+    rdfs:comment "Measurement of transformed (tumorigenic) clone percentage in mammary epithelium of Brca1-/-Trp53-/- confetti mouse model"@en , "Измерение процента трансформированных (опухолевых) клонов эпителия молочной железы в модели мыши Brca1-/-Trp53-/- confetti"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:timePoint a rdf:Property ;
+    rdfs:domain scn:TransformedСlone ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Time point"@en , "Временная точка"@ru ;
+    rdfs:comment "Observation time point in days post-transformation induction (14, 64, 120 or 225 days)"@en , "Временная точка наблюдения в днях после индукции трансформации (14, 64, 120 или 225 дней)"@ru .
+
+scn:mouseName a rdf:Property ;
+    rdfs:domain scn:TransformedСlone ;
+    rdfs:range xsd:string ;
+    rdfs:label "Mouse name"@en , "Имя мыши"@ru ;
+    rdfs:comment "Name or id of the experimental mouse"@en , "Имя или идентификатор экспериментальной мыши"@ru .
+
+scn:cloneType a rdf:Property ;
+    rdfs:domain scn:TransformedСlone ;
+    rdfs:range xsd:string ;
+    rdfs:label "Clone type"@en , "Тип клона"@ru ;
+    rdfs:comment "Cell type of clone (luminal or basal)"@en , "Тип клеток клона (люминальные или базальные)"@ru .
+
+scn:totalNumber a rdf:Property ;
+    rdfs:domain scn:MeasurementUnit ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total number"@en , "Общее количество"@ru ;
+    rdfs:comment "Total number of clones of this type in the mouse"@en , "Общее количество клонов данного типа у мыши"@ru .
+
+scn:transformedNumber a rdf:Property ;
+    rdfs:domain scn:MeasurementUnit ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Transformed number"@en , "Количество трансформированных"@ru ;
+    rdfs:comment "Number of transformed (tumorigenic) clones"@en , "Количество трансформированных (опухолевых) клонов"@ru .
+
+scn:percentage a rdf:Property ;
+    rdfs:domain scn:MeasurementUnit ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Transformed percentage"@en , "Процент трансформированных"@ru ;
+    rdfs:comment "Percentage of transformed clones relative to total number"@en , "Процент трансформированных клонов от общего количества"@ru .
