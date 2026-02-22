@@ -15,7 +15,7 @@ scn:time a rdf:Property ;
     rdfs:domain scn:PhagocytosisMeasurement ;
     rdfs:range xsd:integer ;
     rdfs:label "Time"@en , "Время"@ru ;
-    rdfs:comment "Incubation time in minutes (0, 30 or 75)"@en , "Время инкубации в минутах (0, 30 или 75)"@ru .
+    rdfs:comment "Incubation time in minutes"@en , "Время инкубации в минутах"@ru .
 
 scn:roi a rdf:Property ;
     rdfs:domain scn:PhagocytosisMeasurement ;
