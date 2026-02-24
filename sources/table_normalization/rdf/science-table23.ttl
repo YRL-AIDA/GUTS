@@ -1,0 +1,30 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:CloneSizeDistribution a rdfs:Class ;
+    rdfs:label "Clone size distribution"@en , "Распределение размеров клонов"@ru ;
+    rdfs:comment "Cumulative distribution of wild-type luminal clone sizes in confetti mouse model at a specific time point"@en , "Кумулятивное распределение размеров люминальных клонов дикого типа в модели мыши confetti на заданной временной точке"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:timePoint a rdf:Property ;
+    rdfs:domain scn:CloneSizeDistribution ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Time point"@en , "Временная точка"@ru ;
+    rdfs:comment "Observation time point in days post-induction (64, 120, 225 or 550 days)"@en , "Временная точка наблюдения в днях после индукции (64, 120, 225 или 550 дней)"@ru .
+
+scn:cloneSize a rdf:Property ;
+    rdfs:domain scn:CloneSizeDistribution ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Clone size"@en , "Размер клона"@ru ;
+    rdfs:comment "Normalized clone size (dimensionless quantity, ratio to mean size)"@en , "Нормализованный размер клона (безразмерная величина, отношение к среднему размеру)"@ru .
+
+scn:cumulativeProbability a rdf:Property ;
+    rdfs:domain scn:CloneSizeDistribution ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Cumulative probability"@en , "Кумулятивная вероятность"@ru ;
+    rdfs:comment "Cumulative probability (proportion of clones with size ≤ given value)"@en , "Кумулятивная вероятность (доля клонов с размером ≤ данного значения)"@ru .

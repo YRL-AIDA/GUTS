@@ -1,0 +1,36 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:CloneSizeMeasurement a rdfs:Class ;
+    rdfs:label "Clone size measurement"@en , "Измерение размера клона"@ru ;
+    rdfs:comment "Measurement of mammary epithelial clone size/proportion in confetti mouse genetic model"@en , "Измерение размера/пропорции клона эпителия молочной железы в генетической модели мыши confetti"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:timePoint a rdf:Property ;
+    rdfs:domain scn:CloneSizeMeasurement ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Time point"@en , "Временная точка"@ru ;
+    rdfs:comment "Observation time point in days post-induction (14, 64, 120 or 225 days)"@en , "Временная точка наблюдения в днях после индукции (14, 64, 120 или 225 дней)"@ru .
+
+scn:mouseName a rdf:Property ;
+    rdfs:domain scn:CloneSizeMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Mouse name"@en , "Имя мыши"@ru ;
+    rdfs:comment "Name or id of the experimental mouse"@en , "Имя или идентификатор экспериментальной мыши"@ru .
+
+scn:cloneType a rdf:Property ;
+    rdfs:domain scn:CloneSizeMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Clone type"@en , "Тип клона"@ru ;
+    rdfs:comment "Cell type of clone"@en , "Тип клеток клона"@ru .
+
+scn:cloneSize a rdf:Property ;
+    rdfs:domain scn:CloneSizeMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Clone size"@en , "Размер клона"@ru ;
+    rdfs:comment "Measured clone size/proportion value"@en , "Измеренное значение размера/пропорции клона"@ru .
