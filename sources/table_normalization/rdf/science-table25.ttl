@@ -1,0 +1,30 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:RescaledCumulativeDistribution a rdfs:Class ;
+    rdfs:label "Rescaled clone size distribution"@en , "Масштабированное распределение размеров клонов"@ru ;
+    rdfs:comment "Rescaled cumulative distribution of logarithm of wild-type luminal clone sizes in confetti mouse model at a specific time point"@en , "Масштабированное кумулятивное распределение логарифма размеров люминальных клонов дикого типа в модели мыши confetti на заданной временной точке"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:timePoint a rdf:Property ;
+    rdfs:domain scn:RescaledCumulativeDistribution ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Time point"@en , "Временная точка"@ru ;
+    rdfs:comment "Observation time point in days post-induction (64, 120, 225 or 550 days)"@en , "Временная точка наблюдения в днях после индукции (64, 120, 225 или 550 дней)"@ru .
+
+scn:scaledCloneSize a rdf:Property ;
+    rdfs:domain scn:RescaledCumulativeDistribution ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Scaled clone size"@en , "Масштабированный размер клона"@ru ;
+    rdfs:comment "Rescaled logarithm of clone size (dimensionless quantity, centered relative to mean size)"@en , "Масштабированный логарифм размера клона (безразмерная величина, центрированная относительно среднего размера)"@ru .
+
+scn:cumulativeProbability a rdf:Property ;
+    rdfs:domain scn:RescaledCumulativeDistribution ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Cumulative probability"@en , "Кумулятивная вероятность"@ru ;
+    rdfs:comment "Cumulative probability (proportion of clones with rescaled log size ≤ given value)"@en , "Кумулятивная вероятность (доля клонов с масштабированным логарифмом размера ≤ данного значения)"@ru .

@@ -1,0 +1,36 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:EstrousCycleMeasurement a rdfs:Class ;
+    rdfs:label "Estrous cycle measurement"@en , "Измерение эстрального цикла"@ru ;
+    rdfs:comment "Measurement of estrous cycle variability in mammary gland epithelial of mouse"@en , "Измерение вариабельности эстрального цикла в эпителии молочной железы мыши"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:cellType a rdf:Property ;
+    rdfs:domain scn:EstrousCycleMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Cell type"@en , "Тип клетки"@ru ;
+    rdfs:comment "Type of mammary gland epithelial cells (luminal or basal)"@en , "Тип эпителиальных клеток молочной железы (люминальные или базальные)"@ru .
+
+scn:estrousCycleNumber a rdf:Property ;
+    rdfs:domain scn:EstrousCycleMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Estrous cycle number"@en , "Количество эстральных циклов"@ru ;
+    rdfs:comment "Quantitative measure of estrous cycle (dimensionless quantity)"@en , "Количественный показатель эстрального цикла (безразмерная величина)"@ru .
+
+scn:average a rdf:Property ;
+    rdfs:domain scn:EstrousCycleMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average value"@en , "Среднее значение"@ru ;
+    rdfs:comment "Average value of estrous cycle measurement"@en , "Среднее значение измерения эстрального цикла"@ru .
+
+scn:errorBar a rdf:Property ;
+    rdfs:domain scn:EstrousCycleMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Error bar"@en , "Погрешность"@ru ;
+    rdfs:comment "Measurement error magnitude (standard error or half-width of confidence interval)"@en , "Величина погрешности измерения (стандартная ошибка или половина ширины доверительного интервала)"@ru .

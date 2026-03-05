@@ -1,0 +1,30 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:RescaledCumulativeDistribution a rdfs:Class ;
+    rdfs:label "Rescaled clone size distribution"@en , "Масштабированное распределение размеров клонов"@ru ;
+    rdfs:comment "Rescaled cumulative distribution of logarithm of transformed (tumorigenic) luminal clone sizes in Brca1;Trp53 confetti mouse model at a specific time point"@en , "Масштабированное кумулятивное распределение логарифма размеров трансформированных (опухолевых) люминальных клонов в модели мыши Brca1;Trp53 confetti на заданной временной точке"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:timePoint a rdf:Property ;
+    rdfs:domain scn:RescaledCumulativeDistribution ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Time point"@en , "Временная точка"@ru ;
+    rdfs:comment "Observation time point in days post-induction (14, 64, 120 or 225 days)"@en , "Временная точка наблюдения в днях после индукции (14, 64, 120 или 225 дней)"@ru .
+
+scn:scaledCloneSize a rdf:Property ;
+    rdfs:domain scn:RescaledCumulativeDistribution ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Scaled clone size"@en , "Масштабированный размер клона"@ru ;
+    rdfs:comment "Rescaled logarithm of transformed clone size (dimensionless quantity, centered relative to mean size)"@en , "Масштабированный логарифм размера трансформированного клона (безразмерная величина, центрированная относительно среднего размера)"@ru .
+
+scn:cumulativeProbability a rdf:Property ;
+    rdfs:domain scn:RescaledCumulativeDistribution ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Cumulative probability"@en , "Кумулятивная вероятность"@ru ;
+    rdfs:comment "Cumulative probability (proportion of transformed clones with rescaled log size ≤ given value)"@en , "Кумулятивная вероятность (доля трансформированных клонов с масштабированным логарифмом размера ≤ данного значения)"@ru .
