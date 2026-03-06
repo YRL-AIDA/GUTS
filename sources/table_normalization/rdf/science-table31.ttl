@@ -1,0 +1,36 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:RipleyClusterAnalysis a rdfs:Class ;
+    rdfs:label "Ripley cluster analysis"@en , "Кластерный анализ Рипли"@ru ;
+    rdfs:comment "Result of Ripley's cluster analysis"@en , "Результат кластерного анализа Рипли"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:distance a rdf:Property ;
+    rdfs:domain scn:RipleyClusterAnalysis ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Distance"@en , "Расстояние"@ru ;
+    rdfs:comment "Distance from clone center in micrometers (μm)"@en , "Расстояние от центра клона в микрометрах (мкм)"@ru .
+
+scn:conditionType a rdf:Property ;
+    rdfs:domain scn:RipleyClusterAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label "Condition type"@en , "Тип состояния"@ru ;
+    rdfs:comment "Hormonal condition type (cycling or ovariectomy)"@en , "Тип гормонального условия (циклические или овариэктомия)"@ru .
+
+scn:replicateId a rdf:Property ;
+    rdfs:domain scn:RipleyClusterAnalysis ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Replicate id"@en , "Идентификатор реплики"@ru ;
+    rdfs:comment "Biological replicate identifier"@en , "Идентификатор биологической повторности"@ru .
+
+scn:ripley a rdf:Property ;
+    rdfs:domain scn:RipleyClusterAnalysis ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Ripley value"@en , "Значение Рипли"@ru ;
+    rdfs:comment "Normalized Ripley's L(r) function value"@en , "Нормализованное значение функции Рипли L(r)"@ru .
