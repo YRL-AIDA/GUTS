@@ -1,0 +1,30 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:TertiaryBranchMeasurement a rdfs:Class ;
+    rdfs:label "Tertiary branch measurement"@en , "Измерение терциарного ветвления"@ru ;
+    rdfs:comment "Measurement of tertiary (third-order) branching length in mouse mammary gland ducts"@en , "Измерение длины терциарного (третьего порядка) ветвления протоков молочной железы у мыши"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:age a rdf:Property ;
+    rdfs:domain scn:TertiaryBranchMeasurement ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Age in months"@en , "Возраст в месяцах"@ru ;
+    rdfs:comment "Age of mouse in months (3 or 6)"@en , "Возраст мыши в месяцах (3 или 6)"@ru .
+
+scn:mouse a rdf:Property ;
+    rdfs:domain scn:TertiaryBranchMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Mouse"@en , "Мышь"@ru ;
+    rdfs:comment "Name or identifier of experimental mouse"@en , "Имя или идентификатор экспериментальной мыши"@ru .
+
+scn:tertiaryBranchLength a rdf:Property ;
+    rdfs:domain scn:TertiaryBranchMeasurement ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Tertiary branch length"@en , "Длина терциарного ветвления"@ru ;
+    rdfs:comment "Length of tertiary branch in micrometers (µm)"@en , "Длина терциарного ветвления в микрометрах (мкм)"@ru .
