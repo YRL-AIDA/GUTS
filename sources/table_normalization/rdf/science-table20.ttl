@@ -21,7 +21,7 @@ scn:mouseName a rdf:Property ;
     rdfs:domain scn:TransformedСlone ;
     rdfs:range xsd:string ;
     rdfs:label "Mouse name"@en , "Имя мыши"@ru ;
-    rdfs:comment "Name or id of the experimental mouse"@en , "Имя или идентификатор экспериментальной мыши"@ru .
+    rdfs:comment "Name or identifier of the experimental mouse"@en , "Имя или идентификатор экспериментальной мыши"@ru .
 
 scn:cloneType a rdf:Property ;
     rdfs:domain scn:TransformedСlone ;
