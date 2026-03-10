@@ -1,0 +1,36 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:OvariectomySurvivalFraction a rdfs:Class ;
+    rdfs:label "Ovariectomy survival fraction"@en , "Фракция выживаемости после овариэктомии"@ru ;
+    rdfs:comment "Surviving fraction of mammary gland epithelial clones in mouse following ovariectomy (postmenopausal model)"@en , "Доля выживших клонов эпителия молочной железы мыши после овариэктомии (постменопаузальная модель)"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:days a rdf:Property ;
+    rdfs:domain scn:OvariectomySurvivalFraction ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Days"@en , "Дни"@ru ;
+    rdfs:comment "Time post-ovariectomy in days (14, 64, 120 or 225 days)"@en , "Время после овариэктомии в днях (14, 64, 120 или 225 дней)"@ru .
+
+scn:cloneType a rdf:Property ;
+    rdfs:domain scn:OvariectomySurvivalFraction ;
+    rdfs:range xsd:string ;
+    rdfs:label "Clone type"@en , "Тип клона"@ru ;
+    rdfs:comment "Epithelial cell type of clone"@en , "Тип эпителиальных клеток клона"@ru .
+
+scn:mouse a rdf:Property ;
+    rdfs:domain scn:OvariectomySurvivalFraction ;
+    rdfs:range xsd:string ;
+    rdfs:label "Mouse"@en , "Мышь"@ru ;
+    rdfs:comment "Name or identifier of the experimental mouse"@en , "Имя или идентификатор экспериментальной мыши"@ru .
+
+scn:averageSurvivingCloneFraction a rdf:Property ;
+    rdfs:domain scn:OvariectomySurvivalFraction ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average surviving clone fraction"@en , "Средняя доля выживших клонов"@ru ;
+    rdfs:comment "Average surviving clone fraction (normalized to baseline)"@en , "Средняя доля выживших клонов (нормализованная относительно исходного состояния)"@ru .
