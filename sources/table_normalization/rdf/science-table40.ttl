@@ -1,0 +1,36 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:CloneSizeQuantification a rdfs:Class ;
+    rdfs:label "Clone size quantification"@en , "Количественная оценка размера клонов"@ru ;
+    rdfs:comment "Quantification of wild-type confetti clone sizes during estrus and diestrus"@en , "Количественная оценка размеров клонов конфетти дикого типа во время эструса и диэструса"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:days a rdf:Property ;
+    rdfs:domain scn:CloneSizeQuantification ;
+    rdfs:range xsd:string ;
+    rdfs:label "Days"@en , "Дни"@ru ;
+    rdfs:comment "Time point of observation in days"@en , "Временная точка наблюдения в днях"@ru .
+
+scn:cloneType a rdf:Property ;
+    rdfs:domain scn:CloneSizeQuantification ;
+    rdfs:range xsd:string ;
+    rdfs:label "Clone type"@en , "Тип клона"@ru ;
+    rdfs:comment "Epithelial cell type of clone"@en , "Тип эпителиальных клеток клона"@ru .
+
+scn:cyclePhase a rdf:Property ;
+    rdfs:domain scn:CloneSizeQuantification ;
+    rdfs:range xsd:string ;
+    rdfs:label "Cycle phase"@en , "Фаза цикла"@ru ;
+    rdfs:comment "Estrous cycle phase"@en , "Фаза эстрального цикла"@ru .
+
+scn:cloneSize a rdf:Property ;
+    rdfs:domain scn:CloneSizeQuantification ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Clone size"@en , "Размер клона"@ru ;
+    rdfs:comment "Clone size in arbitrary units (integer)"@en , "Размер клона в условных единицах (целое число)"@ru .

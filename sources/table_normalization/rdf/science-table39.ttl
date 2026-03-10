@@ -1,0 +1,48 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:CellFractionQuantification a rdfs:Class ;
+    rdfs:label "Cell fraction quantification"@en , "Количественная оценка фракции клеток"@ru ;
+    rdfs:comment "Quantification of the confetti-positive cell fraction 14 days after tamoxifen-mediated or TAT-Cre-mediated recombination used for extended data"@en , "Количественная оценка фракции клеток, положительных по эффекту конфетти, через 14 дней после рекомбинации, опосредованной тамоксифеном или TAT-Cre, использованная для расширенных данных"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:recombinationMethod a rdf:Property ;
+    rdfs:domain scn:CellFractionQuantification ;
+    rdfs:range xsd:string ;
+    rdfs:label "Recombination method "@en , "Метод рекомбинации"@ru ;
+    rdfs:comment "Recombination induction method"@en , "Метод индукции рекомбинации"@ru .
+
+scn:cellType a rdf:Property ;
+    rdfs:domain scn:CellFractionQuantification ;
+    rdfs:range xsd:string ;
+    rdfs:label "Cell type"@en , "Тип клетки"@ru ;
+    rdfs:comment "Epithelial cell type"@en , "Тип эпителиальных клеток"@ru .
+
+scn:gland a rdf:Property ;
+    rdfs:domain scn:CellFractionQuantification ;
+    rdfs:range xsd:string ;
+    rdfs:label "Gland"@en , "Железа"@ru ;
+    rdfs:comment "Mammary gland name or identifier"@en , "Идентификатор или название молочной железы"@ru .
+
+scn:totalCells a rdf:Property ;
+    rdfs:domain scn:CellFractionQuantification ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total number of cells"@en , "Общее количество клеток"@ru ;
+    rdfs:comment "Total number of cells analyzed in the gland"@en , "Общее количество клеток, проанализированных в железе"@ru .
+
+scn:labelledCells a rdf:Property ;
+    rdfs:domain scn:CellFractionQuantification ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of labelled cells"@en , "Количество меченых клеток"@ru ;
+    rdfs:comment "Number of confetti-positive (recombination-labelled) cells"@en , "Количество конфетти-позитивных (меченых рекомбинацией) клеток"@ru .
+
+scn:labellingDensity a rdf:Property ;
+    rdfs:domain scn:CellFractionQuantification ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Labelling density"@en , "Плотность мечения"@ru ;
+    rdfs:comment "Labelling density (fraction of confetti-positive cells)"@en , "Плотность мечения (доля конфетти-позитивных клеток)"@ru .

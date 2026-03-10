@@ -1,0 +1,30 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:OrganoidMeasurement a rdfs:Class ;
+    rdfs:label "Organoid measurement"@en , "Измерение органоидов"@ru ;
+    rdfs:comment "Measurement of fraction of Ki67/CC3 cells per organoid"@en , "Измерение доли клеток Ki67/CC3 на органоид"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:organoidType a rdf:Property ;
+    rdfs:domain scn:OrganoidMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Organoid type"@en , "Органоидный тип"@ru ;
+    rdfs:comment "Type of mouse organoid"@en , "Тип органоида мыши"@ru .
+
+scn:organoidSubtype a rdf:Property ;
+    rdfs:domain scn:OrganoidMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Organoid subtype"@en , "Подтип органоидов"@ru ;
+    rdfs:comment "Subtype of mouse organoid"@en , "Подтип органоида мыши"@ru .
+
+scn:fraction a rdf:Property ;
+    rdfs:domain scn:OrganoidMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Fraction of cells"@en , "Доля клеток"@ru ;
+    rdfs:comment "Fraction of cells co-expressing proliferation (Ki67) and apoptosis (CC3) markers in organoid (dimensionless quantity)"@en , "Доля клеток с коэкспрессией маркеров пролиферации (Ki67) и апоптоза (CC3) в органоиде (безразмерная величина)"@ru .
