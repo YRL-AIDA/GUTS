@@ -5,9 +5,9 @@
 
 # ==================== Classes ====================
 
-scn:OvariectomyCloneSize a rdfs:Class ;
-    rdfs:label "Ovariectomy clone size"@en , "Размер клона овариэктомии"@ru ;
-    rdfs:comment "Clone size of mammary gland epithelium in confetti mouse model following ovariectomy (postmenopausal model)"@en , "Размер клона эпителия молочной железы мыши в модели confetti после овариэктомии (постменопаузальная модель)"@ru .
+scn:OvariectomyCloneSizeMeasurement a rdfs:Class ;
+    rdfs:label "Ovariectomy clone size measurement"@en , "Измерение размера клона овариэктомии"@ru ;
+    rdfs:comment "Measurement of clone size of mammary gland epithelium in confetti mouse model following ovariectomy (postmenopausal model)"@en , "Измерение размера эпителия молочной железы мыши в модели confetti после овариэктомии (постменопаузальная модель)"@ru .
 
 scn:MeasurementAggregation a rdfs:Class ;
     rdfs:label "Measurement aggregation"@en , "Агрегирование измерений"@ru ;
@@ -16,19 +16,19 @@ scn:MeasurementAggregation a rdfs:Class ;
 # ==================== Datatype Properties ====================
 
 scn:timePoint a rdf:Property ;
-    rdfs:domain scn:OvariectomyCloneSize ;
+    rdfs:domain scn:OvariectomyCloneSizeMeasurement ;
     rdfs:range xsd:integer ;
     rdfs:label "Time point"@en , "Временная точка"@ru ;
     rdfs:comment "Observation time point in days post-induction (14, 64, 120 or 225 days)"@en , "Временная точка наблюдения в днях после индукции (14, 64, 120 или 225 дней)"@ru .
 
 scn:cloneType a rdf:Property ;
-    rdfs:domain scn:OvariectomyCloneSize ;
+    rdfs:domain scn:OvariectomyCloneSizeMeasurement ;
     rdfs:range xsd:string ;
     rdfs:label "Clone type"@en , "Тип клона"@ru ;
     rdfs:comment "Cell type of clone"@en , "Тип клеток клона"@ru .
 
 scn:cloneSize a rdf:Property ;
-    rdfs:domain scn:OvariectomyCloneSize ;
+    rdfs:domain scn:OvariectomyCloneSizeMeasurement ;
     rdfs:range xsd:integer ;
     rdfs:label "Clone size"@en , "Размер клона"@ru ;
     rdfs:comment "Clone size in arbitrary units (integer)"@en , "Размер клона в условных единицах (целое число)"@ru .
