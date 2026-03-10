@@ -1,0 +1,58 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:CloneNumberMeasurement a rdfs:Class ;
+    rdfs:label "Clone number measurement"@en , "Измерение количества клонов"@ru ;
+    rdfs:comment "Measurement of the number of mouse clones of different types"@en , "Измерение количества клонов мышей разных типов"@ru .
+
+scn:MeasurementAggregation a rdfs:Class ;
+    rdfs:label "Measurement aggregation"@en , "Агрегирование измерений"@ru ;
+    rdfs:comment "Aggregation of measurements of the number of mouse clones"@en , "Агрегация измерений количества клонов мышей"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:timePoint a rdf:Property ;
+    rdfs:domain scn:CloneNumberMeasurement ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Time point"@en , "Временная точка"@ru ;
+    rdfs:comment "Observation time point in days post-induction (14, 64, 120 or 225 days)"@en , "Временная точка наблюдения в днях после индукции (14, 64, 120 или 225 дней)"@ru .
+
+scn:mouse a rdf:Property ;
+    rdfs:domain scn:CloneNumberMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Mouse"@en , "Мышь"@ru ;
+    rdfs:comment "Name or identifier of the experimental mouse"@en , "Имя или идентификатор экспериментальной мыши"@ru .
+
+scn:cloneType a rdf:Property ;
+    rdfs:domain scn:CloneNumberMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Clone type"@en , "Тип клона"@ru ;
+    rdfs:comment "Cell type of clone"@en , "Тип клеток клона"@ru .
+
+scn:cloneNumber a rdf:Property ;
+    rdfs:domain scn:CloneNumberMeasurement ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of clones"@en , "Количество клонов"@ru ;
+    rdfs:comment "Number of clones of this mouse type at the specified time point"@en , "Количество клонов данного типа мыши в указанную временную точку"@ru .
+
+scn:timePoint a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Time point"@en , "Временная точка"@ru ;
+    rdfs:comment "Observation time point in days post-induction (14, 64, 120 or 225 days)"@en , "Временная точка наблюдения в днях после индукции 14, 64, 120 или 225 дней)"@ru .
+
+scn:totalLuminal a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total luminal"@en , "Общее количество люминальных"@ru ;
+    rdfs:comment "Total number of luminal cell clones"@en , "Общее количество люминальных клеток клонов"@ru .
+
+scn:totalBasal a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total basal"@en , "Общее количество базальных"@ru ;
+    rdfs:comment "Total number of basal cell clones"@en , "Общее количество базальных клеток клонов"@ru .
