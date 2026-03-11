@@ -1,0 +1,30 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:СumulativeDistribution a rdfs:Class ;
+    rdfs:label "Cumulative distribution"@en , "Кумулятивное распределение"@ru ;
+    rdfs:comment "Cumulative distribution of the logarithm of clone sizes in mammary gland epithelium of confetti mouse model"@en , "Кумулятивное распределение логарифма размеров клонов эпителия молочной железы в модели мыши"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:groupColor a rdf:Property ;
+    rdfs:domain scn:MeasurementUnit ;
+    rdfs:range xsd:string ;
+    rdfs:label "Group color"@en , "Цвет группы"@ru ;
+    rdfs:comment "Color label of experimental group"@en , "Цветовая метка экспериментальной группы"@ru .
+
+scn:scaledCloneSize a rdf:Property ;
+    rdfs:domain scn:MeasurementUnit ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Scaled clone size"@en , "Масштабированный размер клона"@ru ;
+    rdfs:comment "Scaled logarithm of clone size (dimensionless quantity, centered relative to mean size)"@en , "Масштабированный логарифм размера клона (безразмерная величина, центрированная относительно среднего размера)"@ru .
+
+scn:cumulativeProbability a rdf:Property ;
+    rdfs:domain scn:MeasurementUnit ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Cumulative probability"@en , "Кумулятивная вероятность"@ru ;
+    rdfs:comment "Cumulative probability (proportion of clones with rescaled log size ≤ given value)"@en , "Кумулятивная вероятность (доля клонов с масштабированным логарифмом размера ≤ заданного значения)"@ru .

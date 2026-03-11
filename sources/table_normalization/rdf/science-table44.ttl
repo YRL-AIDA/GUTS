@@ -1,0 +1,42 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:CloneSizeQuantification a rdfs:Class ;
+    rdfs:label "Clone size quantification"@en , "Количественная оценка размера клонов"@ru ;
+    rdfs:comment "Quantification of luminal and basal wild-type confetti clones and Brca1;Trp53 confetti clones in the ducts and side branches"@en , "Количественная оценка люминальных и базальных клонов confetti дикого типа и клонов confetti Brca1;Trp53 в протоках и боковых ветвях"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:timePoint a rdf:Property ;
+    rdfs:domain scn:CloneSizeQuantification ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Time point"@en , "Временная точка"@ru ;
+    rdfs:comment "Observation time point in days"@en , "Временная точка наблюдения в днях"@ru .
+
+scn:organoidType a rdf:Property ;
+    rdfs:domain scn:CloneSizeQuantification ;
+    rdfs:range xsd:string ;
+    rdfs:label "Organoid type"@en , "Органоидный тип"@ru ;
+    rdfs:comment "Type of mouse organoid"@en , "Тип органоида мыши"@ru .
+
+scn:cloneType a rdf:Property ;
+    rdfs:domain scn:CloneSizeQuantification ;
+    rdfs:range xsd:string ;
+    rdfs:label "Clone type"@en , "Тип клона"@ru ;
+    rdfs:comment "Epithelial cell type of clone"@en , "Тип эпителиальных клеток клона"@ru .
+
+scn:duct a rdf:Property ;
+    rdfs:domain scn:CloneSizeQuantification ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Duct"@en , "Проток"@ru ;
+    rdfs:comment "Clone size in arbitrary units in the ducts"@en , "Размер клона в условных единицах в протоках"@ru .
+
+scn:sideBranch a rdf:Property ;
+    rdfs:domain scn:CloneSizeQuantification ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Side branch"@en , "Боковая ветвь"@ru ;
+    rdfs:comment "Clone size in arbitrary units in the side branches"@en , "Размер клона в условных единицах в боковых ветвях"@ru .
