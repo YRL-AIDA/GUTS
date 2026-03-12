@@ -1,0 +1,36 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:StochasticSimulationScaledCloneDistribution a rdfs:Class ;
+    rdfs:label "Stochastic simulation scaled clone distribution"@en , "Масштабированное распределение клонов в стохастическом моделировании"@ru ;
+    rdfs:comment "Scaled clone size distribution for stochastic simulation in confetti mouse model"@en , "Масштабированное распределение размеров клонов эпителия молочной железы для стохастического моделирования в модели мыши confetti"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:groupColor a rdf:Property ;
+    rdfs:domain scn:StochasticSimulationScaledCloneDistribution ;
+    rdfs:range xsd:string ;
+    rdfs:label "Group color"@en , "Цвет группы"@ru ;
+    rdfs:comment "Color label of stochastic model parameter group"@en , "Цветовая метка параметрической группы стохастической модели"@ru .
+
+scn:cloneSize a rdf:Property ;
+    rdfs:domain scn:StochasticSimulationScaledCloneDistribution ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Scaled clone size"@en , "Масштабированный размер клона"@ru ;
+    rdfs:comment "Scaled clone size (presented on logarithmic scale for visualizing distribution with extreme right skew)"@en , "Масштабированный размер клона (представлен в логарифмической шкале для визуализации распределения с экстремальным смещением вправо)"@ru .
+
+scn:cumulativeProbability a rdf:Property ;
+    rdfs:domain scn:StochasticSimulationScaledCloneDistribution ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Cumulative probability"@en , "Кумулятивная вероятность"@ru ;
+    rdfs:comment "Empirical cumulative probability (proportion of clones with size ≤ given value)"@en , "Эмпирическая кумулятивная вероятность (доля клонов с размером ≤ заданного значения)"@ru .
+
+scn:dashedLine a rdf:Property ;
+    rdfs:domain scn:StochasticSimulationScaledCloneDistribution ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Dashed line"@en , "Пунктирная линия"@ru ;
+    rdfs:comment "Theoretical cumulative probability value from stochastic model"@en , "Теоретическое значение кумулятивной вероятности из стохастической модели"@ru .

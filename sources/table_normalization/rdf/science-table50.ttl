@@ -1,0 +1,58 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:СloneSizeQuantification a rdfs:Class ;
+    rdfs:label "Сlone size quantification"@en , "Количественная оценка размера клонов"@ru ;
+    rdfs:comment "Quantification of Brca1;Trp53 confetti clone sizes in nulliparous and parous glands"@en , "Количественное определение размеров клонов конфетти Brca1;Trp53 в железах нерожавших и рожавших"@ru .
+
+scn:MeasurementAggregation a rdfs:Class ;
+    rdfs:label "Measurement aggregation"@en , "Агрегирование измерений"@ru ;
+    rdfs:comment "Aggregation of clone size measurements"@en , "Агрегирование измерений размеров клонов"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:days a rdf:Property ;
+    rdfs:domain scn:СloneSizeQuantification ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Days"@en , "Дни"@ru ;
+    rdfs:comment "Observation time point in days"@en , "Временная точка наблюдения в днях"@ru .
+
+scn:reproductiveStatus a rdf:Property ;
+    rdfs:domain scn:СloneSizeQuantification ;
+    rdfs:range xsd:string ;
+    rdfs:label "Reproductive status"@en , "Репродуктивное состояние"@ru ;
+    rdfs:comment "Reproductive status of mouse (never pregnant/lactated or post-pregnancy/lactation)"@en , "Репродуктивное состояние мыши (нерожавшая, без беременности/лактации или рожавшая, после беременности и лактации)"@ru .
+
+scn:cloneType a rdf:Property ;
+    rdfs:domain scn:СloneSizeQuantification ;
+    rdfs:range xsd:string ;
+    rdfs:label "Clone type"@en , "Тип клона"@ru ;
+    rdfs:comment "Cell type of clone"@en , "Тип клеток клона"@ru .
+
+scn:cloneSize a rdf:Property ;
+    rdfs:domain scn:СloneSizeQuantification ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Clone size"@en , "Размер клона"@ru ;
+    rdfs:comment "Clone size in arbitrary units (integer)"@en , "Размер клона в условных единицах (целое число)"@ru .
+
+scn:days a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Days"@en , "Дни"@ru ;
+    rdfs:comment "Observation time point in days"@en , "Временная точка наблюдения в днях"@ru .
+
+scn:reproductiveStatus a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Reproductive status"@en , "Репродуктивное состояние"@ru ;
+    rdfs:comment "Reproductive status of mouse (never pregnant/lactated or post-pregnancy/lactation)"@en , "Репродуктивное состояние мыши (нерожавшая, без беременности/лактации или рожавшая, после беременности и лактации)"@ru .
+
+scn:cloneNumber a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of clones"@en , "Количество клонов"@ru ;
+    rdfs:comment "Total number of clones"@en , "Общее количество клонов"@ru .

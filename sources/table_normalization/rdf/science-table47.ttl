@@ -1,0 +1,36 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:StochasticSimulationCloneDistribution a rdfs:Class ;
+    rdfs:label "Stochastic simulation clone distribution"@en , "Распределение клонов в стохастическом моделировании"@ru ;
+    rdfs:comment "Clone size distribution for stochastic simulation in confetti mouse model"@en , "Распределение размеров клонов эпителия молочной железы для стохастического моделирования в модели мыши confetti"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:groupColor a rdf:Property ;
+    rdfs:domain scn:StochasticSimulationCloneDistribution ;
+    rdfs:range xsd:string ;
+    rdfs:label "Group color"@en , "Цвет группы"@ru ;
+    rdfs:comment "Color label of stochastic model parameter group"@en , "Цветовая метка параметрической группы стохастической модели"@ru .
+
+scn:cloneSize a rdf:Property ;
+    rdfs:domain scn:StochasticSimulationCloneDistribution ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Clone size"@en , "Размер клона"@ru ;
+    rdfs:comment "Clone size in cell count"@en , "Размер клона в количестве клеток"@ru .
+
+scn:cumulativeProbability a rdf:Property ;
+    rdfs:domain scn:StochasticSimulationCloneDistribution ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Cumulative probability"@en , "Кумулятивная вероятность"@ru ;
+    rdfs:comment "Empirical cumulative probability (proportion of clones with size ≤ given value)"@en , "Эмпирическая кумулятивная вероятность (доля клонов с размером ≤ заданного значения)"@ru .
+
+scn:dashedLine a rdf:Property ;
+    rdfs:domain scn:StochasticSimulationCloneDistribution ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Dashed line"@en , "Пунктирная линия"@ru ;
+    rdfs:comment "Theoretical cumulative probability value from stochastic model"@en , "Теоретическое значение кумулятивной вероятности из стохастической модели"@ru .
