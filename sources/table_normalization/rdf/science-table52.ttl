@@ -1,0 +1,64 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:MitochondrialRedoxMeasurement a rdfs:Class ;
+    rdfs:label "Mitochondrial redox measurement"@en , "Измерение митохондриального окислительно-восстановительного потенциала"@ru ;
+    rdfs:comment "Measurement of mitochondrial redox potential under various conditions of oxidative stress and hemodialysis"@en , "Измерение окислительно-восстановительного потенциала митохондрий при различных условиях окислительного стресса и гемодиализа"@ru .
+
+scn:MeasurementAggregation a rdfs:Class ;
+    rdfs:label "Measurement aggregation"@en , "Агрегирование измерений"@ru ;
+    rdfs:comment "Aggregation of mitochondrial redox measurements"@en , "Агрегирование измерений митохондриального окислительно-восстановительного потенциала"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:measurementNumber a rdf:Property ;
+    rdfs:domain scn:MitochondrialRedoxMeasurement ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of measurements"@en , "Количество измерений"@ru ;
+    rdfs:comment "Ordinal position of measurement"@en , "Порядковый номер измерения"@ru .
+
+scn:patientStatus a rdf:Property ;
+    rdfs:domain scn:MitochondrialRedoxMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Patient status"@en , "Состояние пациента"@ru ;
+    rdfs:comment "Patient status reflects impact of renal failure and dialysis on mitochondrial function"@en , "Статус пациента, отражающий влияние почечной недостаточности и диализа на митохондриальную функцию"@ru .
+
+scn:treatmentType a rdf:Property ;
+    rdfs:domain scn:MitochondrialRedoxMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Treatment type"@en , "Тип обработки"@ru ;
+    rdfs:comment "Mitochondrial treatment type"@en , "Тип обработки митохондрий"@ru .
+
+scn:redoxPotentialValue a rdf:Property ;
+    rdfs:domain scn:MitochondrialRedoxMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Redox potential value"@en , "Значение окислительно-восстановительного потенциала"@ru ;
+    rdfs:comment "Mitochondrial redox potential value"@en , "Значение окислительно-восстановительного потенциала митохондрий"@ru .
+
+scn:patientStatus a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Patient status"@en , "Состояние пациента"@ru ;
+    rdfs:comment "Patient status reflects impact of renal failure and dialysis on mitochondrial function"@en , "Статус пациента, отражающий влияние почечной недостаточности и диализа на митохондриальную функцию"@ru .
+
+scn:treatmentType a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Treatment type"@en , "Тип обработки"@ru ;
+    rdfs:comment "Mitochondrial treatment type"@en , "Тип обработки митохондрий"@ru .
+
+scn:mean a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Mean"@en , "Среднее значение"@ru ;
+    rdfs:comment "The average value of mitochondrial redox potential"@en , "Среднее значение окислительно-восстановительного потенциала митохондрий"@ru .
+
+scn:standardDeviation a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation"@en , "Стандартное отклонение"@ru ;
+    rdfs:comment "Standard deviation of mitochondrial redox potential"@en , "Стандартное отклонение окислительно-восстановительного потенциала митохондрий"@ru .

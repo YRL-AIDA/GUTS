@@ -1,0 +1,42 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:Genotype a rdfs:Class ;
+    rdfs:label "Genotype"@en , "Генотип"@ru ;
+    rdfs:comment "Genotype call of a genetic marker in a mapping population sample"@en , "Результат генотипирования генетического маркера у образца в картировочной популяции"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:alias a rdf:Property ;
+    rdfs:domain scn:Genotype ;
+    rdfs:range xsd:string ;
+    rdfs:label "Alias"@en , "Псевдоним"@ru ;
+    rdfs:comment "Short identifier of genetic marker"@en , "Краткий идентификатор генетического маркера"@ru .
+
+scn:position a rdf:Property ;
+    rdfs:domain scn:Genotype ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Position"@en , "Позиция"@ru ;
+    rdfs:comment "Genetic position of marker relative to chromosome start"@en , "Генетическая позиция маркера относительно начала хромосомы"@ru .
+
+scn:sample a rdf:Property ;
+    rdfs:domain scn:Genotype ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sample"@en , "Образец"@ru ;
+    rdfs:comment "Identifier or name of sample in mapping population"@en , "Идентификатор или наименование образца в картировочной популяции"@ru .
+
+scn:chromosome a rdf:Property ;
+    rdfs:domain scn:Genotype ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Chromosome"@en , "Хромосома"@ru ;
+    rdfs:comment "Chromosome number"@en , "Номер хромосомы"@ru .
+
+scn:alleleVariant a rdf:Property ;
+    rdfs:domain scn:Genotype ;
+    rdfs:range xsd:string ;
+    rdfs:label "Allele variant"@en , "Вариант аллеля"@ru ;
+    rdfs:comment "Allele variant (A, B or H)"@en , "Вариант аллеля (А, В или Н)"@ru .
