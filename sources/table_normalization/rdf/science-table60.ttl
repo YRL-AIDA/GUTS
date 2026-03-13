@@ -1,0 +1,54 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:GeneExpressionAnalysis a rdfs:Class ;
+    rdfs:label "Gene expression analysis"@en , "Анализ экспрессии гена"@ru ;
+    rdfs:comment "Threshold cycle measurement of quantitative PCR for CD40 gene expression analysis in dendritic cells under various transfection and stimulation conditions"@en , "Измерение порогового цикла количественной ПЦР для анализа экспрессии гена CD40 в дендритных клетках при различных условиях трансфекции и стимуляции"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:set a rdf:Property ;
+    rdfs:domain scn:GeneExpressionAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label "Set"@en , "Набор"@ru ;
+    rdfs:comment "Identifier or name of the set"@en , "Идентификатор или название набора"@ru .
+
+scn:infectionStatus a rdf:Property ;
+    rdfs:domain scn:GeneExpressionAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label "Infection status"@en , "Инфекционный статус"@ru ;
+    rdfs:comment "Infection status (infected or uninfected)"@en , "Статус инфекции (инфицированный или неинфицированный)"@ru .
+
+scn:condition a rdf:Property ;
+    rdfs:domain scn:GeneExpressionAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label "Condition"@en , "Состояние"@ru ;
+    rdfs:comment "Experimental condition (combination of transfection and stimulation)"@en , "Экспериментальное условие (комбинация трансфекции и стимуляции)"@ru .
+
+scn:geneTarget a rdf:Property ;
+    rdfs:domain scn:GeneExpressionAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label "Gene target"@en , "Целевой ген"@ru ;
+    rdfs:comment "Target gene of quantitative PCR"@en , "Целевой ген количественной ПЦР"@ru .
+
+scn:experiment a rdf:Property ;
+    rdfs:domain scn:GeneExpressionAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label "Experiment"@en , "Эксперимент"@ru ;
+    rdfs:comment "Identifier or name of independent biological experiment"@en , "Идентификатор независимого биологического эксперимента"@ru .
+
+scn:replicate a rdf:Property ;
+    rdfs:domain scn:GeneExpressionAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label "Replicate"@en , "Воспроизводимость"@ru ;
+    rdfs:comment "Identifier or name of technical replicate within biological experiment"@en , "Идентификатор технической повторности в рамках биологического эксперимента"@ru .
+
+scn:ctValue a rdf:Property ;
+    rdfs:domain scn:GeneExpressionAnalysis ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Threshold cycle"@en , "Пороговый цикл"@ru ;
+    rdfs:comment "Threshold cycle of quantitative PCR"@en , "Пороговый цикл количественной ПЦР"@ru .

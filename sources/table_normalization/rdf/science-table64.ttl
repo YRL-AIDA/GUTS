@@ -1,0 +1,76 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:SpleenLduMeasurement a rdfs:Class ;
+    rdfs:label "Spleen LDU measurement"@en , "Измерение паразитарной нагрузки лейшмании в селезёнке"@ru ;
+    rdfs:comment "Leishmania parasite burden measurement (Leishman-Donovani Units, LDU) in mouse spleen under infection and various dendritic cell transfection conditions"@en , "Измерение паразитарной нагрузки лейшмании (единицы Лейшмании-Доновани) в селезёнке мышей при инфекции и различных условиях трансфекции дендритных клеток"@ru .
+
+scn:MeasurementAggregation a rdfs:Class ;
+    rdfs:label "Measurement aggregation"@en , "Агрегирование измерений"@ru ;
+    rdfs:comment "Aggregation of spleen LDU measurements"@en , "Агрегирование измерений паразитарной нагрузки лейшмании в селезёнке"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:set a rdf:Property ;
+    rdfs:domain scn:SpleenLduMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Set"@en , "Набор"@ru ;
+    rdfs:comment "Identifier or name of the set"@en , "Идентификатор или название набора"@ru .
+
+scn:infectionStatus a rdf:Property ;
+    rdfs:domain scn:SpleenLduMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Infection status"@en , "Инфекционный статус"@ru ;
+    rdfs:comment "Infection status (infected or uninfected) in mice"@en , "Статус инфекции (инфицированный или неинфицированный) у мышей"@ru .
+
+scn:condition a rdf:Property ;
+    rdfs:domain scn:SpleenLduMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Condition"@en , "Состояние"@ru ;
+    rdfs:comment "Experimental condition (combination of transfection and stimulation)"@en , "Экспериментальное условие (комбинация трансфекции и стимуляции)"@ru .
+
+scn:experiment a rdf:Property ;
+    rdfs:domain scn:SpleenLduMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Experiment"@en , "Эксперимент"@ru ;
+    rdfs:comment "Identifier or name of independent biological experiment"@en , "Идентификатор независимого биологического эксперимента"@ru .
+
+scn:replicate a rdf:Property ;
+    rdfs:domain scn:SpleenLduMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Replicate"@en , "Воспроизводимость"@ru ;
+    rdfs:comment "Identifier or name of technical replicate within biological experiment"@en , "Идентификатор технической повторности в рамках биологического эксперимента"@ru .
+
+scn:spleenLDU a rdf:Property ;
+    rdfs:domain scn:SpleenLduMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Spleen LDU"@en , "Паразитарная нагрузка лейшмании в селезёнке"@ru ;
+    rdfs:comment "Leishmania parasite burden in spleen (Leishman-Donovani Units, LDU)"@en , "Паразитарная нагрузка лейшмании в селезёнке (единицы Лейшмании-Доновани)"@ru .
+
+scn:set a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Set"@en , "Набор"@ru ;
+    rdfs:comment "Identifier or name of the set"@en , "Идентификатор или название набора"@ru .
+
+scn:infectionStatus a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Infection status"@en , "Инфекционный статус"@ru ;
+    rdfs:comment "Infection status (infected or uninfected) in mice"@en , "Статус инфекции (инфицированный или неинфицированный) у мышей"@ru .
+
+scn:mean a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Mean"@en , "Среднее значение"@ru ;
+    rdfs:comment "The average value of spleen LDU in mice in milligrams"@en , "Среднее значение паразитарной нагрузки лейшмании в селезёнке у мышей в миллиграммах"@ru .
+
+scn:standardDeviation a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation"@en , "Стандартное отклонение"@ru ;
+    rdfs:comment "Standard deviation of spleen LDU in mice"@en , "Стандартное отклонение паразитарной нагрузки лейшмании в селезёнке у мышей"@ru .

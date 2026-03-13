@@ -1,0 +1,76 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:SpleenWeightMeasurement a rdfs:Class ;
+    rdfs:label "Spleen weight measurement"@en , "Измерение веса селезенки"@ru ;
+    rdfs:comment "Spleen weight measurement in mice under Leishmania infection and various dendritic cell transfection conditions"@en , "Измерение веса селезёнки у мышей при инфекции лейшманией и различных условиях трансфекции дендритных клеток"@ru .
+
+scn:MeasurementAggregation a rdfs:Class ;
+    rdfs:label "Measurement aggregation"@en , "Агрегирование измерений"@ru ;
+    rdfs:comment "Aggregation of spleen weight measurements"@en , "Агрегирование измерений веса селезёнки у мышей"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:set a rdf:Property ;
+    rdfs:domain scn:SpleenWeightMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Set"@en , "Набор"@ru ;
+    rdfs:comment "Identifier or name of the set"@en , "Идентификатор или название набора"@ru .
+
+scn:infectionStatus a rdf:Property ;
+    rdfs:domain scn:SpleenWeightMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Infection status"@en , "Инфекционный статус"@ru ;
+    rdfs:comment "Infection status (infected or uninfected) in mice"@en , "Статус инфекции (инфицированный или неинфицированный) у мышей"@ru .
+
+scn:condition a rdf:Property ;
+    rdfs:domain scn:SpleenWeightMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Condition"@en , "Состояние"@ru ;
+    rdfs:comment "Experimental condition (combination of transfection and stimulation)"@en , "Экспериментальное условие (комбинация трансфекции и стимуляции)"@ru .
+
+scn:experiment a rdf:Property ;
+    rdfs:domain scn:SpleenWeightMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Experiment"@en , "Эксперимент"@ru ;
+    rdfs:comment "Identifier or name of independent biological experiment"@en , "Идентификатор независимого биологического эксперимента"@ru .
+
+scn:replicate a rdf:Property ;
+    rdfs:domain scn:SpleenWeightMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Replicate"@en , "Воспроизводимость"@ru ;
+    rdfs:comment "Identifier or name of technical replicate within biological experiment"@en , "Идентификатор технической повторности в рамках биологического эксперимента"@ru .
+
+scn:spleenWeight a rdf:Property ;
+    rdfs:domain scn:SpleenWeightMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Spleen weight"@en , "Вес селезенки"@ru ;
+    rdfs:comment "Spleen weight in milligrams"@en , "Вес селезёнки в миллиграммах"@ru .
+
+scn:set a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Set"@en , "Набор"@ru ;
+    rdfs:comment "Identifier or name of the set"@en , "Идентификатор или название набора"@ru .
+
+scn:infectionStatus a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Infection status"@en , "Инфекционный статус"@ru ;
+    rdfs:comment "Infection status (infected or uninfected) in mice"@en , "Статус инфекции (инфицированный или неинфицированный) у мышей"@ru .
+
+scn:mean a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Mean"@en , "Среднее значение"@ru ;
+    rdfs:comment "The average value of spleen weight in mice in milligrams"@en , "Среднее значение веса селезёнки у мышей в миллиграммах"@ru .
+
+scn:standardDeviation a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation"@en , "Стандартное отклонение"@ru ;
+    rdfs:comment "Standard deviation of spleen weight in mice"@en , "Стандартное отклонение веса селезёнки у мышей"@ru .
