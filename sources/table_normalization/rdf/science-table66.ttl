@@ -1,0 +1,82 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:ImmuneMarkerMeasurement a rdfs:Class ;
+    rdfs:label "Immune marker measurement"@en , "Измерение иммунных маркеров"@ru ;
+    rdfs:comment "Immune marker concentration measurement in mouse serum under Leishmania infection and various dendritic cell transfection conditions"@en , ""Измерение концентрации иммунного маркера в сыворотке крови мышей при инфекции лейшманией и различных условиях трансфекции дендритных клеток"@ru .
+
+scn:MeasurementAggregation a rdfs:Class ;
+    rdfs:label "Measurement aggregation"@en , "Агрегирование измерений"@ru ;
+    rdfs:comment "Aggregation of immune marker measurements in mice"@en , "Агрегирование измерений иммунных маркеров у мышей"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:set a rdf:Property ;
+    rdfs:domain scn:ImmuneMarkerMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Set"@en , "Набор"@ru ;
+    rdfs:comment "Identifier or name of the set"@en , "Идентификатор или название набора"@ru .
+
+scn:infectionStatus a rdf:Property ;
+    rdfs:domain scn:ImmuneMarkerMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Infection status"@en , "Инфекционный статус"@ru ;
+    rdfs:comment "Infection status (infected or uninfected) in mice"@en , "Статус инфекции (инфицированный или неинфицированный) у мышей"@ru .
+
+scn:condition a rdf:Property ;
+    rdfs:domain scn:ImmuneMarkerMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Condition"@en , "Состояние"@ru ;
+    rdfs:comment "Experimental condition (combination of transfection and stimulation)"@en , "Экспериментальное условие (комбинация трансфекции и стимуляции)"@ru .
+
+scn:experiment a rdf:Property ;
+    rdfs:domain scn:ImmuneMarkerMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Experiment"@en , "Эксперимент"@ru ;
+    rdfs:comment "Identifier or name of independent biological experiment"@en , "Идентификатор или название независимого биологического эксперимента"@ru .
+
+scn:replicate a rdf:Property ;
+    rdfs:domain scn:ImmuneMarkerMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Replicate"@en , "Воспроизводимость"@ru ;
+    rdfs:comment "Identifier or name of technical replicate within biological experiment"@en , "Идентификатор или название технической повторности в рамках биологического эксперимента"@ru .
+
+scn:measurementValue a rdf:Property ;
+    rdfs:domain scn:ImmuneMarkerMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Measurement value"@en , "Значение измерения"@ru ;
+    rdfs:comment "Immune marker concentration in arbitrary units"@en , "Концентрация иммунного маркера в условных единицах"@ru .
+
+scn:set a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Set"@en , "Набор"@ru ;
+    rdfs:comment "Identifier or name of the set"@en , "Идентификатор или название набора"@ru .
+
+scn:infectionStatus a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Infection status"@en , "Инфекционный статус"@ru ;
+    rdfs:comment "Infection status (infected or uninfected) in mice"@en , "Статус инфекции (инфицированный или неинфицированный) у мышей"@ru .
+
+scn:condition a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Condition"@en , "Состояние"@ru ;
+    rdfs:comment "Experimental condition (combination of transfection and stimulation)"@en , "Экспериментальное условие (комбинация трансфекции и стимуляции)"@ru .
+
+scn:mean a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Mean"@en , "Среднее значение"@ru ;
+    rdfs:comment "The average value of immune marker concentration in mice"@en , "Среднее значение концентрации иммунного маркера у мышей"@ru .
+
+scn:standardDeviation a rdf:Property ;
+    rdfs:domain scn:MeasurementAggregation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation"@en , "Стандартное отклонение"@ru ;
+    rdfs:comment "Standard deviation of immune marker concentration in mice"@en , "Стандартное отклонение концентрации иммунного маркера у мышей"@ru .
