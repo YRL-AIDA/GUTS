@@ -37,13 +37,13 @@ scn:experiment a rdf:Property ;
     rdfs:domain scn:SpleenLduMeasurement ;
     rdfs:range xsd:string ;
     rdfs:label "Experiment"@en , "Эксперимент"@ru ;
-    rdfs:comment "Identifier or name of independent biological experiment"@en , "Идентификатор независимого биологического эксперимента"@ru .
+    rdfs:comment "Identifier or name of independent biological experiment"@en , "Идентификатор или название независимого биологического эксперимента"@ru .
 
 scn:replicate a rdf:Property ;
     rdfs:domain scn:SpleenLduMeasurement ;
     rdfs:range xsd:string ;
     rdfs:label "Replicate"@en , "Воспроизводимость"@ru ;
-    rdfs:comment "Identifier or name of technical replicate within biological experiment"@en , "Идентификатор технической повторности в рамках биологического эксперимента"@ru .
+    rdfs:comment "Identifier or name of technical replicate within biological experiment"@en , "Идентификатор или название технической повторности в рамках биологического эксперимента"@ru .
 
 scn:spleenLDU a rdf:Property ;
     rdfs:domain scn:SpleenLduMeasurement ;
