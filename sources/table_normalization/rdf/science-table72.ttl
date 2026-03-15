@@ -1,0 +1,76 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:PromoterActivityMeasurement a rdfs:Class ;
+    rdfs:label "Promoter activity measurement"@en , "Измерение активности промотора"@ru ;
+    rdfs:comment "Measurement of promoter region activity and transcription factor in dendritic cells under lipopolysaccharide (LPS) stimulation"@en , "Измерение активности промоторных регионов и транскрипционного фактора в дендритных клетках при стимуляции липополисахаридом (ЛПС)"@ru .
+
+scn:PromoterRatio a rdfs:Class ;
+    rdfs:label "Promoter ratio"@en , "Коэффициент промотора"@ru ;
+    rdfs:comment "Calculated ratio of promoter activity to transcription factor"@en , "Рассчитанное отношение активности промотора к транскрипционному фактору"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:set a rdf:Property ;
+    rdfs:domain scn:PromoterActivityMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Set"@en , "Набор"@ru ;
+    rdfs:comment "Identifier or name of experimental set"@en , "Идентификатор или название экспериментального набора"@ru .
+
+scn:timePoint a rdf:Property ;
+    rdfs:domain scn:PromoterActivityMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Time point"@en , "Временная точка"@ru ;
+    rdfs:comment "Time post-LPS stimulation in hours"@en , "Время после стимуляции ЛПС в часах"@ru .
+
+scn:regionType a rdf:Property ;
+    rdfs:domain scn:PromoterActivityMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region type"@en , "Тип региона"@ru ;
+    rdfs:comment "Region type measured"@en , "Тип измеряемого региона"@ru .
+
+scn:area a rdf:Property ;
+    rdfs:domain scn:PromoterActivityMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Area"@en , "Площадь"@ru ;
+    rdfs:comment "Signal area in arbitrary units"@en , "Площадь сигнала в условных единицах"@ru .
+
+scn:intensity a rdf:Property ;
+    rdfs:domain scn:PromoterActivityMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Intensity"@en , "Интенсивность"@ru ;
+    rdfs:comment "Absolute signal intensity in arbitrary units"@en , "Абсолютная интенсивность сигнала в условных единицах"@ru .
+
+scn:normalizedIntensity a rdf:Property ;
+    rdfs:domain scn:PromoterActivityMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Normalized intensity"@en , "Нормализованная интенсивность"@ru ;
+    rdfs:comment "Normalized intensity (intensity per unit area)"@en , "Нормализованная интенсивность (интенсивность на единицу площади)"@ru .
+
+scn:set a rdf:Property ;
+    rdfs:domain scn:PromoterRatio ;
+    rdfs:range xsd:string ;
+    rdfs:label "Set"@en , "Набор"@ru ;
+    rdfs:comment "Identifier or name of experimental set"@en , "Идентификатор или название экспериментального набора"@ru .
+
+scn:timePoint a rdf:Property ;
+    rdfs:domain scn:PromoterRatio ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Time point"@en , "Временная точка"@ru ;
+    rdfs:comment "Time post-LPS stimulation in hours"@en , "Время после стимуляции ЛПС в часах"@ru .
+
+scn:ratioType a rdf:Property ;
+    rdfs:domain scn:PromoterRatio ;
+    rdfs:range xsd:string ;
+    rdfs:label "Ratio type"@en , "Тип отношения"@ru ;
+    rdfs:comment "The ratio of the types of regions measured"@en , "Соотношение типов измеряемых регионов"@ru .
+
+scn:ratioValue a rdf:Property ;
+    rdfs:domain scn:PromoterRatio ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Ratio value"@en , "Значение отношения"@ru ;
+    rdfs:comment "Ratio value of promoter activity to transcription factor"@en , "Значение отношения активности промотора к транскрипционному фактору"@ru .
