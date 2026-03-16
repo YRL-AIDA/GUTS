@@ -1,0 +1,94 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:MicroscopyFieldObservation a rdfs:Class ;
+    rdfs:label "Microscopy field observation"@en , "Микроскопическое полевое наблюдение"@ru ;
+    rdfs:comment "Microscopy field observation for counting Leishmania-infected dendritic cells and amastigotes"@en , "Микроскопическое наблюдение поля зрения при подсчёте инфицированных дендритных клеток и амастигот лейшмании"@ru .
+
+scn:ReplicateSummary a rdfs:Class ;
+    rdfs:label "Replicate summary"@en , "Сводка по репликатам"@ru ;
+    rdfs:comment "Aggregated infection metrics across all microscopy fields for a single biological replicate"@en , "Агрегированные показатели инфекции по всем полям микроскопии для одного биологического репликата"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:experiment a rdf:Property ;
+    rdfs:domain scn:MicroscopyFieldObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Experiment"@en , "Эксперимент"@ru ;
+    rdfs:comment "Identifier or name of independent biological experiment"@en , "Идентификатор или название независимого биологического эксперимента"@ru .
+
+scn:replicate a rdf:Property ;
+    rdfs:domain scn:MicroscopyFieldObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Replicate"@en , "Воспроизводимость"@ru ;
+    rdfs:comment "Identifier or name of technical replicate within biological experiment"@en , "Идентификатор или название технической повторности в рамках биологического эксперимента"@ru .
+
+scn:microscopicFieldNumber a rdf:Property ;
+    rdfs:domain scn:MicroscopyFieldObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Microscopic field number"@en , "Номер микроскопического поля"@ru ;
+    rdfs:comment "Microscopic field of view number"@en , "Номер микроскопического поля зрения"@ru .
+
+scn:totalDCs a rdf:Property ;
+    rdfs:domain scn:MicroscopyFieldObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total dendritic cells"@en , "Общее количество дендритных клеток"@ru ;
+    rdfs:comment "Total number of dendritic cells in the microscopic field"@en , "Общее количество дендритных клеток в поле зрения"@ru .
+
+scn:infectedDCsNumber a rdf:Property ;
+    rdfs:domain scn:MicroscopyFieldObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of infected dendritic cells"@en , "Количество инфицированных дендритных клеток"@ru ;
+    rdfs:comment "Number of infected dendritic cells in the microscopic field"@en , "Количество инфицированных дендритных клеток в поле зрения"@ru .
+
+scn:intracellularAmastgotesNumber a rdf:Property ;
+    rdfs:domain scn:MicroscopyFieldObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Intracellular amastgotes number"@en , "Внутриклеточное количество амастигот"@ru ;
+    rdfs:comment "Number of intracellular Leishmania amastigotes in the microscopic field"@en , "Количество внутриклеточных амастигот лейшмании в поле зрения"@ru .
+
+scn:experiment a rdf:Property ;
+    rdfs:domain scn:ReplicateSummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Experiment"@en , "Эксперимент"@ru ;
+    rdfs:comment "Identifier or name of independent biological experiment"@en , "Идентификатор или название независимого биологического эксперимента"@ru .
+
+scn:replicate a rdf:Property ;
+    rdfs:domain scn:ReplicateSummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Replicate"@en , "Воспроизводимость"@ru ;
+    rdfs:comment "Identifier or name of technical replicate within biological experiment"@en , "Идентификатор или название технической повторности в рамках биологического эксперимента"@ru .
+
+scn:totalDCsSum a rdf:Property ;
+    rdfs:domain scn:ReplicateSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Sum of total dendritic cells"@en , "Сумма общего количества дендритных клеток"@ru ;
+    rdfs:comment "Sum of dendritic cells across all fields of the replicate"@en , "Суммарное количество дендритных клеток по всем полям репликата"@ru .
+
+scn:infectedDCsTotalNumber a rdf:Property ;
+    rdfs:domain scn:ReplicateSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total number of infected dendritic cells"@en , "Общее количество инфицированных дендритных клеток"@ru ;
+    rdfs:comment "Sum of infected cells across all fields of the replicate"@en , "Суммарное количество инфицированных клеток по всем полям репликата"@ru .
+
+scn:intracellularAmastgotesTotalNumber a rdf:Property ;
+    rdfs:domain scn:ReplicateSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total number of intracellular amastgotes"@en , "Общее количество внутриклеточных амастигот"@ru ;
+    rdfs:comment "Sum of intracellular amastigotes across all fields of the replicate"@en , "Суммарное количество внутриклеточных амастигот по всем полям репликата"@ru .
+
+scn:percentageInfectedDCs a rdf:Property ;
+    rdfs:domain scn:ReplicateSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percentage of infected dendritic cells"@en , "Процент инфицированных дендритных клеток"@ru ;
+    rdfs:comment "Percentage of infected dendritic cells (reflects high infection efficiency)"@en , "Процент инфицированных дендритных клеток (отражает высокую эффективность инфекции)"@ru .
+
+scn:intracellularAmastigotesPer1000DCs a rdf:Property ;
+    rdfs:domain scn:ReplicateSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Intracellular amastigotes per 1000 dendritic cells"@en , "Внутриклеточные амастиготы на 1000 дендритных клеток"@ru ;
+    rdfs:comment "Intracellular amastigote density per 1000 dendritic cells (quantitative measure of parasite burden)"@en , "Плотность внутриклеточных амастигот на 1000 дендритных клеток (количественный показатель паразитной нагрузки)"@ru .
