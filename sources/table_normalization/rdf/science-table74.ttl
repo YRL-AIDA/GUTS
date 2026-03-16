@@ -1,0 +1,64 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:PromoterFoldChangeMeasurement a rdfs:Class ;
+    rdfs:label "Promoter fold change measurement"@en , "Измерение изменения кратности активности промотора"@ru ;
+    rdfs:comment ""Measurement of relative promoter Pr2 activity to Oct-1 transcription factor in dendritic cells under tumor necrosis factor stimulation"@en , "Измерение относительной активности промотора Pr2 к транскрипционному фактору Oct-1 в дендритных клетках при стимуляции фактором некроза опухолей"@ru .
+
+scn:PromoterFoldChangeSummary a rdfs:Class ;
+    rdfs:label "Promoter fold change summary"@en , "Сводка изменений в экспрессии промотора"@ru ;
+    rdfs:comment "Aggregated statistical metrics of relative promoter Pr2 activity to Oct-1 transcription factor"@en , "Агрегированные статистические показатели относительной активности промотора Pr2 к транскрипционному фактору Oct-1"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:set a rdf:Property ;
+    rdfs:domain scn:PromoterFoldChangeMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Set"@en , "Набор"@ru ;
+    rdfs:comment "Identifier or name of experimental set"@en , "Идентификатор или название экспериментального набора"@ru .
+
+scn:timePoint a rdf:Property ;
+    rdfs:domain scn:PromoterFoldChangeMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Time point"@en , "Временная точка"@ru ;
+    rdfs:comment "Time post-TNF stimulation in hours"@en , "Время после стимуляции TNF в часах"@ru .
+
+scn:experiment a rdf:Property ;
+    rdfs:domain scn:PromoterFoldChangeMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Experiment"@en , "Эксперимент"@ru ;
+    rdfs:comment "Identifier or name of independent biological experiment"@en , "Идентификатор или название независимого биологического эксперимента"@ru .
+
+scn:foldChange a rdf:Property ;
+    rdfs:domain scn:PromoterFoldChangeMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Fold change"@en , "Изменение складки"@ru ;
+    rdfs:comment "Relative promoter Pr2 activity to Oct-1 (Fold Change)"@en , "Относительная активность промотора Pr2 к Oct-1 (Изменение складки)"@ru .
+
+scn:set a rdf:Property ;
+    rdfs:domain scn:PromoterFoldChangeSummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Set"@en , "Набор"@ru ;
+    rdfs:comment "Identifier or name of experimental set"@en , "Идентификатор или название экспериментального набора"@ru .
+
+scn:timePoint a rdf:Property ;
+    rdfs:domain scn:PromoterFoldChangeSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Time point"@en , "Временная точка"@ru ;
+    rdfs:comment "Time post-TNF stimulation in hours"@en , "Время после стимуляции TNF в часах"@ru .
+
+scn:mean a rdf:Property ;
+    rdfs:domain scn:PromoterFoldChangeSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Mean"@en , "Среднее значение"@ru ;
+    rdfs:comment "Mean value of relative activity across independent experiments"@en , "Среднее значение относительной активности по независимым экспериментам"@ru .
+
+scn:standardDeviation a rdf:Property ;
+    rdfs:domain scn:PromoterFoldChangeSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation"@en , "Стандартное отклонение"@ru ;
+    rdfs:comment "Standard deviation of relative activity"@en , "Стандартное отклонение относительной активности"@ru .
