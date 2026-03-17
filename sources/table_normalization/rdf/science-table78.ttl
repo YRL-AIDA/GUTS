@@ -1,0 +1,76 @@
+@prefix scn: <http://example.org/science#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+scn:MFIFoldChangeMeasurement a rdfs:Class ;
+    rdfs:label "MFI fold change measurement"@en , "Измерение изменения кратности MFI"@ru ;
+    rdfs:comment "Measurement of mean fluorescence intensity (MFI) fold change in dendritic cells under infection and treatment"@en , "Измерение кратности изменения средней интенсивности флуоресценции на дендритных клетках при инфекции и лечении"@ru .
+
+scn:MFISummary a rdfs:Class ;
+    rdfs:label "MFI summary"@en , "Сводка по изменениям MFI"@ru ;
+    rdfs:comment "Aggregated statistical metrics of MFI fold change across independent experiments"@en , "Агрегированные статистические показатели кратности изменения MFI по независимым экспериментам"@ru .
+
+# ==================== Datatype Properties ====================
+
+scn:infectionStatus a rdf:Property ;
+    rdfs:domain scn:MFIFoldChangeMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Infection status"@en , "Инфекционный статус"@ru ;
+    rdfs:comment "Infection status (infected or uninfected)"@en , "Статус инфекции (инфицированный или неинфицированный)"@ru .
+
+scn:timeAfterInfection a rdf:Property ;
+    rdfs:domain scn:MFIFoldChangeMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Time after infection"@en , "Время после инфицирования"@ru ;
+    rdfs:comment "Time post-infection (0 for uninfected)"@en , "Время после инфекции (0 для неинфицированных)"@ru .
+
+scn:condition a rdf:Property ;
+    rdfs:domain scn:MFIFoldChangeMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Condition"@en , "Состояние"@ru ;
+    rdfs:comment "Experimental condition (combination of infection and treatment)"@en , "Экспериментальное условие (комбинация инфекции и лечения)"@ru .
+
+scn:experiment a rdf:Property ;
+    rdfs:domain scn:MFIFoldChangeMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Experiment"@en , "Эксперимент"@ru ;
+    rdfs:comment "Identifier or name of independent biological experiment"@en , "Идентификатор или название независимого биологического эксперимента"@ru .
+
+scn:mfiFoldChange a rdf:Property ;
+    rdfs:domain scn:MFIFoldChangeMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "MFI fold change"@en , "Изменение средней интенсивности флуоресценции"@ru ;
+    rdfs:comment "Fold change of mean fluorescence intensity relative to baseline"@en , "Кратность изменения средней интенсивности флуоресценции относительно базового уровня"@ru .
+
+scn:infectionStatus a rdf:Property ;
+    rdfs:domain scn:MFISummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Infection status"@en , "Инфекционный статус"@ru ;
+    rdfs:comment "Infection status (infected or uninfected)"@en , "Статус инфекции (инфицированный или неинфицированный)"@ru .
+
+scn:timeAfterInfection a rdf:Property ;
+    rdfs:domain scn:MFISummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Time after infection"@en , "Время после инфицирования"@ru ;
+    rdfs:comment "Time post-infection (0 for uninfected)"@en , "Время после инфекции (0 для неинфицированных)"@ru .
+
+scn:condition a rdf:Property ;
+    rdfs:domain scn:MFISummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Condition"@en , "Состояние"@ru ;
+    rdfs:comment "Experimental condition (combination of infection and treatment)"@en , "Экспериментальное условие (комбинация инфекции и лечения)"@ru .
+
+scn:mean a rdf:Property ;
+    rdfs:domain scn:MFISummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Mean"@en , "Среднее значение"@ru ;
+    rdfs:comment "Mean MFI fold change"@en , "Среднее значение кратности изменения MFI"@ru .
+
+scn:standardDeviation a rdf:Property ;
+    rdfs:domain scn:MFISummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation"@en , "Стандартное отклонение"@ru ;
+    rdfs:comment "Standard deviation of MFI fold change"@en , "Стандартное отклонение кратности изменения MFI"@ru .
