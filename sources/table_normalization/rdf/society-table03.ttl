@@ -1,0 +1,36 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:TemporaryMigrationObservation a rdfs:Class ;
+    rdfs:label "Temporary migration observation"@en , "Наблюдение за временной миграцией"@ru ;
+    rdfs:comment "Observation of temporary migrant inflow by country, sector and year based on standardised data"@en , "Наблюдение о притоке временных мигрантов по стране, сектору и году на основе стандартизированных данных"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:timePeriod a rdf:Property ;
+    rdfs:domain soc:TemporaryMigrationObservation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+soc:referenceArea a rdf:Property ;
+    rdfs:domain soc:TemporaryMigrationObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Reference area"@en, "Контрольная область"@ru ;
+    rdfs:comment "Name of the reference area (country)"@en, "Наименование контрольной области (страны)"@ru .
+
+soc:category a rdf:Property ;
+    rdfs:domain soc:TemporaryMigrationObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en , "Категория"@ru ;
+    rdfs:comment "Category migration sector"@en , "Категория временной миграции"@ru .
+
+soc:migrationFlow a rdf:Property ;
+    rdfs:domain soc:TemporaryMigrationObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Migration flow"@en , "Миграционный поток"@ru ;
+    rdfs:comment "Number of temporary migrants in thousands"@en , "Количество временных мигрантов в тысячах человек"@ru .

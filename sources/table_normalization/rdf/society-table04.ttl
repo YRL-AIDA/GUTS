@@ -1,0 +1,54 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:FutureWellbeingObservation a rdfs:Class ;
+    rdfs:label "Future well-being observation"@en , "Наблюдение за будущим благополучием"@ru ;
+    rdfs:comment "Observation of future well-being indicators for countries"@en , "Наблюдение об индикаторах будущего благосостояния по странам"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:timePeriod a rdf:Property ;
+    rdfs:domain soc:FutureWellbeingObservation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+soc:referenceArea a rdf:Property ;
+    rdfs:domain soc:FutureWellbeingObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Reference area"@en, "Контрольная область"@ru ;
+    rdfs:comment "Name of the reference area (country)"@en, "Наименование контрольной области (страны)"@ru .
+
+soc:typeArea a rdf:Property ;
+    rdfs:domain soc:FutureWellbeingObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Type of country's economy"@en, "Тип экономики страны"@ru ;
+    rdfs:comment "Economies of countries that are members of the Organisation for Economic Co-operation and Development (OECD)"@en, "Экономики стран, входящие в организацию экономического сотрудничества и развития (ОЭСР)"@ru .
+
+soc:domain a rdf:Property ;
+    rdfs:domain soc:FutureWellbeingObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Domain"@en , "Домен"@ru ;
+    rdfs:comment "Capital domain"@en , "Домен капитала"@ru .
+
+soc:measure a rdf:Property ;
+    rdfs:domain soc:FutureWellbeingObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Measure"@en , "Мера"@ru ;
+    rdfs:comment "Specific well-being measure (indicator)"@en , "Конкретная мера (индикатор) благосостояния"@ru .
+
+soc:measureUnit a rdf:Property ;
+    rdfs:domain soc:FutureWellbeingObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Unit of measure"@en , "Единица измерения"@ru ;
+    rdfs:comment "Unit of measure (indicator)"@en , "Единица измерения индикатора"@ru .
+
+soc:value a rdf:Property ;
+    rdfs:domain soc:FutureWellbeingObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Value"@en , "Значение"@ru ;
+    rdfs:comment "Numeric value of indicator"@en , "Числовое значение индикатора"@ru .

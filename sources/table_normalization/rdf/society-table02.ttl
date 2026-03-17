@@ -1,0 +1,76 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:DataSource a rdfs:Class ;
+    rdfs:label "Data source"@en , "Источник данных"@ru ;
+    rdfs:comment "Description of the data source"@en , "Описание источника данных"@ru .
+
+soc:VoluntaryWorkObservation a rdfs:Class ;
+    rdfs:label "Voluntary work observation"@en , "Наблюдение за волонтерской деятельности"@ru ;
+    rdfs:comment "Observation of voluntary work participation by sector, region and year based on Taking Part survey"@en , "Наблюдение об участии в волонтёрской работе по сектору, региону и году на основе опроса Taking Part"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:dataOwner a rdf:Property ;
+    rdfs:domain soc:DataSource ;
+    rdfs:range xsd:string ;
+    rdfs:label "Data owner"@en , "Владелец данных"@ru ;
+    rdfs:comment "Data source owner"@en , "Владелец источника данных"@ru .
+
+soc:linkToDataOwner a rdf:Property ;
+    rdfs:domain soc:DataSource ;
+    rdfs:range xsd:string ;
+    rdfs:label "Link to data owner"@en , "Ссылка на владельца данных"@ru ;
+    rdfs:comment "Link to the owner of the data source"@en , "Ссылка на владельца источника данных"@ru .
+
+soc:dataSourceName a rdf:Property ;
+    rdfs:domain soc:DataSource ;
+    rdfs:range xsd:string ;
+    rdfs:label "Data source name"@en , "Название источника данных"@ru ;
+    rdfs:comment "Data source name"@en , "Название источника данных"@ru .
+
+soc:linkToDataSource a rdf:Property ;
+    rdfs:domain soc:DataSource ;
+    rdfs:range xsd:string ;
+    rdfs:label "Link to data source"@en , "Ссылка на источник данных"@ru ;
+    rdfs:comment "Link to data source"@en , "Ссылка на источник данных"@ru .
+
+soc:measurementDates a rdf:Property ;
+    rdfs:domain soc:DataSource ;
+    rdfs:range xsd:string ;
+    rdfs:label "Measurement dates"@en , "Даты измерений"@ru ;
+    rdfs:comment "Dates of data measurements"@en , "Даты измерений данных"@ru .
+
+soc:updateCycle a rdf:Property ;
+    rdfs:domain soc:DataSource ;
+    rdfs:range xsd:string ;
+    rdfs:label "Update cycle"@en , "Цикл обновления"@ru ;
+    rdfs:comment "Update cycle"@en , "Цикл обновления"@ru .
+
+soc:region a rdf:Property ;
+    rdfs:domain soc:VoluntaryWorkObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region"@en , "Регион"@ru ;
+    rdfs:comment ""@en , ""@ru .
+
+soc:surveyDate a rdf:Property ;
+    rdfs:domain soc:VoluntaryWorkObservation ;
+    rdfs:range xsd:date ;
+    rdfs:label "Survey date"@en , "Дата опроса"@ru ;
+    rdfs:comment "Date of survey in format 'year/month'"@en , "Дата опроса в формате 'год/месяц'"@ru .
+
+soc:sector a rdf:Property ;
+    rdfs:domain soc:VoluntaryWorkObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sector"@en , "Сектор"@ru ;
+    rdfs:comment "Voluntary work sector"@en , "Сектор волонтёрской деятельности"@ru .
+
+soc:peopleNumber a rdf:Property ;
+    rdfs:domain soc:VoluntaryWorkObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "People number"@en , "Количество людей"@ru ;
+    rdfs:comment "Total number of people that undertook voluntary work overall (000's) by region"@en , "Общее количество людей, занимавшихся волонтерской деятельностью (тыс. человек) по регионам"@ru .
