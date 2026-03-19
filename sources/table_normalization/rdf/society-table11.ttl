@@ -1,0 +1,82 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:OASDITaxableEarningsObservation a rdfs:Class ;
+    rdfs:label "OASDI taxable earnings observation"@en , "Наблюдение за налогооблагаемой прибылью OASDI"@ru ;
+    rdfs:comment "Observation of taxable earnings and contributions to Old-Age, Survivors, and Disability Insurance (OASDI) program in the United States for 2020 by state or other area, sex, and type of earnings"@en , "Наблюдение о налогооблагаемых доходах и взносах в программу социального обеспечения (OASDI) в США за 2020 год c разбивкой по штатам или другим регионам, полу и типу заработка"@ru .
+
+soc:ObservationAggregation a rdfs:Class ;
+    rdfs:label "Observation aggregation"@en , "Агрегирование наблюдений"@ru ;
+    rdfs:comment "Observation aggregation for OASDI taxable earnings"@en , "Агрегирование наблюдений за налогооблагаемой прибылью OASDIя"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:area a rdf:Property ;
+    rdfs:domain soc:OASDITaxableEarningsObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Area"@en , "Область"@ru ;
+    rdfs:comment "The state or area of the United States in which the observation was conducted"@en , "Штат или область США в которой проводилось наблюдение"@ru .
+
+soc:sex a rdf:Property ;
+    rdfs:domain soc:OASDITaxableEarningsObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sex"@en , "Пол"@ru ;
+    rdfs:comment "Worker sex"@en , "Пол работника"@ru .
+
+soc:employmentType a rdf:Property ;
+    rdfs:domain soc:OASDITaxableEarningsObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Employment type"@en , "Тип занятости"@ru ;
+    rdfs:comment "Employment type (total number, wage and salary, self-employed)"@en , "Тип занятости (общее количество, наёмные работники, самозанятые)"@ru .
+
+soc:number a rdf:Property ;
+    rdfs:domain soc:OASDITaxableEarningsObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of persons"@en , "Количество человек"@ru ;
+    rdfs:comment "Number of persons with taxable earnings"@en , "Количество человек с налогооблагаемыми доходами"@ru .
+
+soc:taxableEarnings a rdf:Property ;
+    rdfs:domain soc:OASDITaxableEarningsObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Taxable earnings"@en , "Налогооблагаемый доход"@ru ;
+    rdfs:comment "Taxable earnings in thousands of US dollars"@en , "Налогооблагаемые доходы в тысячах долларов США"@ru .
+
+soc:oasdiContributions a rdf:Property ;
+    rdfs:domain soc:OASDITaxableEarningsObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "OASDI contributions"@en , "Взносы OASDI"@ru ;
+    rdfs:comment "OASDI contributions in thousands of US dollars"@en , "Взносы в программу социального обеспечения (OASDI) в тысячах долларов США"@ru .
+
+soc:sex a rdf:Property ;
+    rdfs:domain soc:ObservationAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sex"@en , "Пол"@ru ;
+    rdfs:comment "Worker sex"@en , "Пол работника"@ru .
+
+soc:employmentType a rdf:Property ;
+    rdfs:domain soc:ObservationAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Employment type"@en , "Тип занятости"@ru ;
+    rdfs:comment "Employment type (total number, wage and salary, self-employed)"@en , "Тип занятости (общее количество, наёмные работники, самозанятые)"@ru .
+
+soc:number a rdf:Property ;
+    rdfs:domain soc:ObservationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of persons"@en , "Количество человек"@ru ;
+    rdfs:comment "Number of persons with taxable earnings for all US states"@en , "Количество человек с налогооблагаемыми доходами для всех штатов США"@ru .
+
+soc:taxableEarnings a rdf:Property ;
+    rdfs:domain soc:ObservationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Taxable earnings"@en , "Налогооблагаемый доход"@ru ;
+    rdfs:comment "Taxable earnings in thousands of US dollars for all US states"@en , "Налогооблагаемые доходы в тысячах долларов США для всех штатов США"@ru .
+
+soc:oasdiContributions a rdf:Property ;
+    rdfs:domain soc:ObservationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "OASDI contributions"@en , "Взносы OASDI"@ru ;
+    rdfs:comment "OASDI contributions in thousands of US dollars for all US states"@en , "Взносы в программу социального обеспечения (OASDI) в тысячах долларов США для всех штатов США"@ru .

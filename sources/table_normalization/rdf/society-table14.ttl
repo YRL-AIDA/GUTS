@@ -1,0 +1,46 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:SupplementationObservation a rdfs:Class ;
+    rdfs:label "Supplementation observation"@en , "Наблюдение за выплатой дополнительного пособия"@ru ;
+    rdfs:comment "Observation of supplementation recipients in the United States by state, age category and recipient category for 2003"@en , "Наблюдение о количестве получателей дополнительного пособия в США по штату, возрастной и диагностической категории за 2003 год"@ru .
+
+soc:ObservationAggregation a rdfs:Class ;
+    rdfs:label "Observation aggregation"@en , "Агрегирование наблюдений"@ru ;
+    rdfs:comment "Observation aggregation for supplementation"@en , "Агрегирование наблюдений за выплатой дополнительного пособия"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:area a rdf:Property ;
+    rdfs:domain soc:SupplementationObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Area"@en , "Область"@ru ;
+    rdfs:comment "The state or area of the United States in which the observation was conducted"@en , "Штат или область США в которой проводилось наблюдение"@ru .
+
+soc:recipientCategory a rdf:Property ;
+    rdfs:domain soc:SupplementationObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Recipient category"@en , "Категория получателей"@ru ;
+    rdfs:comment "Recipient category (total, diagnostic, age, or status)"@en , "Категория получателей (общая, диагностическая, возрастная или статусная)"@ru .
+
+soc:number a rdf:Property ;
+    rdfs:domain soc:SupplementationObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of recipients"@en , "Количество получателей"@ru ;
+    rdfs:comment "Number of supplementation recipients in absolute figures"@en , "Количество получателей дополнительного пособия в абсолютных числах"@ru .
+
+soc:recipientCategory a rdf:Property ;
+    rdfs:domain soc:ObservationAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Recipient category"@en , "Категория получателей"@ru ;
+    rdfs:comment "Recipient category (total, diagnostic, age, or status)"@en , "Категория получателей (общая, диагностическая, возрастная или статусная)"@ru .
+
+soc:totalNumber a rdf:Property ;
+    rdfs:domain soc:ObservationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total number of recipients"@en , "Общие количество получателей"@ru ;
+    rdfs:comment "Total number of recipients in the United States"@en , "Общие количество получателей для США"@ru .

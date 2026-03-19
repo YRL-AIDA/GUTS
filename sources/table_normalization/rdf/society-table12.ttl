@@ -1,0 +1,76 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:WorkHoursObservation a rdfs:Class ;
+    rdfs:label "Work hours observation"@en , "Наблюдение за рабочим временем"@ru ;
+    rdfs:comment "Observation of planned and actual work hours by activity type for fiscal year"@en , "Наблюдение о плановых и фактических часах работы по виду деятельности за финансовый год"@ru .
+
+soc:ObservationAggregation a rdfs:Class ;
+    rdfs:label "Observation aggregation"@en , "Агрегирование наблюдений"@ru ;
+    rdfs:comment "Observation aggregation for planned and actual work hours by all activity types"@en , "Сводные данные наблюдений за запланированным и фактическим рабочим временем по всем видам деятельности"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:year a rdf:Property ;
+    rdfs:domain soc:WorkHoursObservation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en , "Год"@ru ;
+    rdfs:comment "Fiscal year of observation"@en , "Финансовый год наблюдения"@ru .
+
+soc:activity a rdf:Property ;
+    rdfs:domain soc:WorkHoursObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Activity"@en , "Деятельность"@ru ;
+    rdfs:comment "Type of employee activity"@en , "Вид деятельности работника"@ru .
+
+soc:plannedHours a rdf:Property ;
+    rdfs:domain soc:WorkHoursObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Planned hours"@en , "Запланированные часы"@ru ;
+    rdfs:comment "Planned work hours"@en , "Запланированные часы работы"@ru .
+
+soc:actualHours a rdf:Property ;
+    rdfs:domain soc:WorkHoursObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Actual hours"@en , "Фактическое количество часов"@ru ;
+    rdfs:comment "Actual work hours worked"@en , "Фактически отработанные часы"@ru .
+
+soc:variance a rdf:Property ;
+    rdfs:domain soc:WorkHoursObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Variance"@en , "Отклонение"@ru ;
+    rdfs:comment "Variance (difference between planned and actual)"@en , "Отклонение (разница между планом и фактом)"@ru .
+
+soc:percentage a rdf:Property ;
+    rdfs:domain soc:WorkHoursObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Percentage"@en , "Процент"@ru ;
+    rdfs:comment "Plan completion percentage"@en , "Процент выполнения плана"@ru .
+
+soc:year a rdf:Property ;
+    rdfs:domain soc:ObservationAggregation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en , "Год"@ru ;
+    rdfs:comment "Fiscal year of observation"@en , "Финансовый год наблюдения"@ru .
+
+soc:plannedHours a rdf:Property ;
+    rdfs:domain soc:ObservationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total planned hours"@en , "Общие запланированные часы"@ru ;
+    rdfs:comment "Total planned work hours by all activity types"@en , "Общие запланированные часы работы по всем видам деятельности"@ru .
+
+soc:actualHours a rdf:Property ;
+    rdfs:domain soc:ObservationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total actual hours"@en , "Фактическое количество часов"@ru ;
+    rdfs:comment "Total actual work hours worked by all activity types"@en , "Общие фактически отработанные часы по всем видам деятельности"@ru .
+
+soc:variance a rdf:Property ;
+    rdfs:domain soc:ObservationAggregation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total variance"@en , "Общее отклонение"@ru ;
+    rdfs:comment "Total variance (difference between planned and actual) by all activity types"@en , "Общее отклонение (разница между планом и фактом) по всем видам деятельности"@ru .

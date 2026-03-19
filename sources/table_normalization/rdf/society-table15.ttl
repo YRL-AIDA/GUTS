@@ -1,0 +1,72 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:LivesSavedIntervention a rdfs:Class ;
+    rdfs:label "Lives saved intervention"@en , ""@ru ;
+    rdfs:comment "Health intervention in maternal and child health assessed for lives saved impact"@en , "Вмешательство в области материнского и детского здоровья, оценённое на предмет спасённых жизней"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:selected a rdf:Property ;
+    rdfs:domain soc:LivesSavedIntervention ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Selected"@en , "Выбранный"@ru ;
+    rdfs:comment "Flag indicating whether intervention is selected for analysis"@en , "Флаг, указывающий, выбрано ли вмешательство для анализа"@ru .
+
+soc:interventionNumber a rdf:Property ;
+    rdfs:domain soc:LivesSavedIntervention ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Intervention number"@en , "Номер вмешательства"@ru ;
+    rdfs:comment "Unique intervention identifier"@en , "Уникальный идентификатор вмешательства"@ru .
+
+soc:listNumber a rdf:Property ;
+    rdfs:domain soc:LivesSavedIntervention ;
+    rdfs:range xsd:integer ;
+    rdfs:label "List number"@en , "Номер списка"@ru ;
+    rdfs:comment Unique list identifier""@en , "Уникальный идентификатор списка"@ru .
+
+soc:category a rdf:Property ;
+    rdfs:domain soc:LivesSavedIntervention ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en , "Категория"@ru ;
+    rdfs:comment "Intervention category"@en , "Категория вмешательства"@ru .
+
+soc:interventionName a rdf:Property ;
+    rdfs:domain soc:LivesSavedIntervention ;
+    rdfs:range xsd:string ;
+    rdfs:label "Intervention name"@en , "Название вмешательства"@ru ;
+    rdfs:comment "Specific intervention name"@en , "Конкретное название вмешательства"@ru .
+
+soc:newbornLivesSaved a rdf:Property ;
+    rdfs:domain soc:LivesSavedIntervention ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Newborn lives saved"@en , "Спасенные жизни новорожденных"@ru ;
+    rdfs:comment "Number of newborn lives saved"@en , "Количество спасённых жизней новорождённых"@ru .
+
+soc:childLivesSaved a rdf:Property ;
+    rdfs:domain soc:LivesSavedIntervention ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Child lives saved"@en , "Спасенные жизни детей"@ru ;
+    rdfs:comment "Number of child lives saved"@en , "Количество спасённых жизней детей"@ru .
+
+soc:maternalLivesSaved a rdf:Property ;
+    rdfs:domain soc:LivesSavedIntervention ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Maternal lives saved"@en , "Спасенные жизни матерей"@ru ;
+    rdfs:comment "Number of maternal lives saved"@en , "Количество спасённых жизней матерей"@ru .
+
+soc:totalLivesLost a rdf:Property ;
+    rdfs:domain soc:LivesSavedIntervention ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total lives lost"@en , "Всего погибших"@ru ;
+    rdfs:comment "Total number of child and maternal lives saved"@en , "Общее количество спасённых жизней детей и матерей"@ru .
+
+soc:note a rdf:Property ;
+    rdfs:domain soc:LivesSavedIntervention ;
+    rdfs:range xsd:string ;
+    rdfs:label "Note"@en , "Примечание"@ru ;
+    rdfs:comment "Methodological notes and explanations"@en , "Методологические примечания и пояснения"@ru .

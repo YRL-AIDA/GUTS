@@ -1,0 +1,36 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:SupplementationObservation a rdfs:Class ;
+    rdfs:label "Supplementation observation"@en , "Наблюдение за выплатой дополнительного пособия"@ru ;
+    rdfs:comment "Observation of supplementation recipients count and share in the United States by year and age category"@en , "Наблюдение о количестве и доле получателей дополнительного пособия в США по году и возрастной категории"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:year a rdf:Property ;
+    rdfs:domain soc:SupplementationObservation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en , "Год"@ru ;
+    rdfs:comment "Fiscal year of observation"@en , "Финансовый год наблюдения"@ru .
+
+soc:ageCategory a rdf:Property ;
+    rdfs:domain soc:SupplementationObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Age category"@en , "Возрастная категория"@ru ;
+    rdfs:comment "Age category of recipients"@en , "Возрастная категория получателей"@ru .
+
+soc:number a rdf:Property ;
+    rdfs:domain soc:SupplementationObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total number"@en , "Общее количество"@ru ;
+    rdfs:comment "Total number of recipients"@en , "Общее количество получателей"@ru .
+
+soc:percentage a rdf:Property ;
+    rdfs:domain soc:SupplementationObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percentage of total"@en , "Процент от общего числа"@ru ;
+    rdfs:comment "Share of age category in total recipients"@en , "Доля возрастной категории в общем числе получателей"@ru .

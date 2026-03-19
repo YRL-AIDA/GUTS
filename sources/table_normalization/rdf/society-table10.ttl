@@ -1,0 +1,64 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:SupplementationObservation a rdfs:Class ;
+    rdfs:label "Supplementation observation"@en , "Наблюдение за выплатой дополнительного пособия"@ru ;
+    rdfs:comment "Observation of supplementation recipients distribution by diagnostic group and age category among persons under 18 years"@en , "Наблюдение о распределении получателей дополнительного пособия в США по диагностическим группам и возрастным категориям среди лиц младше 18 лет"@ru .
+
+soc:ObservationAggregation a rdfs:Class ;
+    rdfs:label "Observation aggregation"@en , "Агрегирование наблюдений"@ru ;
+    rdfs:comment "Observation aggregation for supplementation"@en , "Агрегирование наблюдений за выплатой дополнительного пособия"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:diagnosticGroup a rdf:Property ;
+    rdfs:domain soc:SupplementationObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Diagnostic group"@en , "Диагностическая группа"@ru ;
+    rdfs:comment "Diagnostic group of recipients"@en , "Диагностическая группа получателей"@ru .
+
+soc:parentDiagnosticGroup a rdf:Property ;
+    rdfs:domain soc:SupplementationObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Parent diagnostic group"@en , "Родительская диагностическая группа"@ru ;
+    rdfs:comment "Parent diagnostic category for subgroups"@en , "Родительская диагностическая категория для подгрупп"@ru .
+
+soc:ageCategory a rdf:Property ;
+    rdfs:domain soc:SupplementationObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Age category"@en , "Возрастная категория"@ru ;
+    rdfs:comment "Age category of recipients"@en , "Возрастная категория получателей"@ru .
+
+soc:number a rdf:Property ;
+    rdfs:domain soc:SupplementationObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of recipients"@en , "Количество получателей"@ru ;
+    rdfs:comment "Number of supplementation recipients in absolute figures"@en , "Количество получателей дополнительного пособия в абсолютных числах"@ru .
+
+soc:percentage a rdf:Property ;
+    rdfs:domain soc:SupplementationObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percentage of recipients"@en , "Процент получателей"@ru ;
+    rdfs:comment "Percentage of supplementation recipients in diagnostic group relative to total age category"@en , "Процент получателей дополнительного пособия в диагностической группе от общей численности возрастной категории"@ru .
+
+soc:ageCategory a rdf:Property ;
+    rdfs:domain soc:ObservationAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Age category"@en , "Возрастная категория"@ru ;
+    rdfs:comment "Age category of recipients"@en , "Возрастная категория получателей"@ru .
+
+soc:number a rdf:Property ;
+    rdfs:domain soc:ObservationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total number of recipients"@en , "Общее количество получателей"@ru ;
+    rdfs:comment "Total number of recipients under 18 years of age"@en , "Общее количество получателей в возрасте до 18 лет"@ru .
+
+soc:percentage a rdf:Property ;
+    rdfs:domain soc:ObservationAggregation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percentage of recipients"@en , "Процент получателей"@ru ;
+    rdfs:comment "Percentage of supplementation recipients under the age of 18"@en , "Процент получателей дополнительного пособия в возрасте до 18 лет"@ru .
