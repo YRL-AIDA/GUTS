@@ -1,0 +1,46 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:MNCHIntervention a rdfs:Class ;
+    rdfs:label "MNCH intervention"@en , "Вмешательство в области охраны здоровья матери и ребенка"@ru ;
+    rdfs:comment "MNCH interventions by target population - As organized in this Model"@en , "Мероприятия по охране здоровья матери и ребенка в зависимости от целевой группы населения — как это организовано в данной модели"@ru .
+
+soc:ExcludedIntervention a rdfs:Class ;
+    rdfs:label "Excluded intervention"@en , "Исключенные вмешательства"@ru ;
+    rdfs:comment "Not included in this model since outside the health system"@en , "В эту модель не включено, поскольку она находится вне системы здравоохранения"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:category a rdf:Property ;
+    rdfs:domain soc:MNCHIntervention ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en , "Категория"@ru ;
+    rdfs:comment "Intervention category"@en , "Категория вмешательства"@ru .
+
+soc:interventionName a rdf:Property ;
+    rdfs:domain soc:MNCHIntervention ;
+    rdfs:range xsd:string ;
+    rdfs:label "Intervention name"@en , "Название вмешательства"@ru ;
+    rdfs:comment "Specific intervention name"@en , "Конкретное название вмешательства"@ru .
+
+soc:expect a rdf:Property ;
+    rdfs:domain soc:MNCHIntervention ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Expected LiST number"@en , "Ожидаемый номер LiST"@ru ;
+    rdfs:comment "Expected intervention number in LiST model"@en , "Ожидаемый номер вмешательства в модели LiST"@ru .
+
+soc:actual a rdf:Property ;
+    rdfs:domain soc:MNCHIntervention ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Actual LiST number"@en , "Фактический номер LiST"@ru ;
+    rdfs:comment "Actual intervention number in LiST model"@en , "Фактический номер вмешательства в модели LiST"@ru .
+
+soc:excludedCategory a rdf:Property ;
+    rdfs:domain soc:ExcludedIntervention ;
+    rdfs:range xsd:string ;
+    rdfs:label "Excluded category"@en , "Исключенная категория"@ru ;
+    rdfs:comment "Excluded intervention category"@en , "Исключенная категория вмешательства"@ru .

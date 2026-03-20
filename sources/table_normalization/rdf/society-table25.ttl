@@ -1,0 +1,42 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:ExcessRiskCalculation a rdfs:Class ;
+    rdfs:label "Excess risk calculation"@en , "Расчет избыточного риска"@ru ;
+    rdfs:comment "Additional infections/deaths  among households that are attributable to a vaccination visit/adult visit to a health facility, that  would not have occurred during the course of the epidemic if not for vaccination/adult visit to a health facility"@en , "Дополнительные случаи заражения/смерти среди домохозяйств, связанные с вакцинацией/обращением взрослых в медицинское учреждение, которые не произошли бы во время эпидемии, если бы не вакцинация/обращение взрослых в медицинское учреждение"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:category a rdf:Property ;
+    rdfs:domain soc:ExcessRiskCalculation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en , "Категория"@ru ;
+    rdfs:comment "Category of the statistic"@en , "Категория статистики"@ru .
+
+soc:variable a rdf:Property ;
+    rdfs:domain soc:ExcessRiskCalculation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Variable"@en , "Переменная"@ru ;
+    rdfs:comment "Name of the specific metric or variable"@en , "Название конкретного показателя или переменной"@ru .
+
+soc:symbol a rdf:Property ;
+    rdfs:domain soc:ExcessRiskCalculation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Symbol"@en , "Символ"@ru ;
+    rdfs:comment "Mathematical symbol or abbreviation used for the parameter in formulas"@en , "Математический символ или аббревиатура, используемая для параметра в формулах"@ru .
+
+soc:mean a rdf:Property ;
+    rdfs:domain soc:ExcessRiskCalculation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Mean"@en , "Среднее значение"@ru ;
+    rdfs:comment "Primary numeric value of the statistic"@en , "Основное числовое значение показателя"@ru .
+
+soc:comment a rdf:Property ;
+    rdfs:domain soc:ExcessRiskCalculation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Comment"@en , "Комментарий"@ru ;
+    rdfs:comment "Additional explanation or comment about the statistic or mathematical formula"@en , "Дополнительное пояснение или комментарий к показателю или математическая формула"@ru .

@@ -1,0 +1,100 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:HealthSystemContactObservation a rdfs:Class ;
+    rdfs:label "Health system contact observation"@en , "Наблюдение за контактами в системе здравоохранения"@ru ;
+    rdfs:comment "Observation of health system burden (number of visits and contacts with health care providers)"@en , "Наблюдение о нагрузке на систему здравоохранения (количество посещений и контактов с поставщиками медицинских услуг)"@ru .
+
+soc:PatientVisitsObservation a rdfs:Class ;
+    rdfs:label "Patient visits observation"@en , "Наблюдение за посещениями пациентов"@ru ;
+    rdfs:comment "Observation of patient visits in the healthcare system"@en , "Наблюдение за посещениями пациентов в системе здравоохранения"@ru .
+
+soc:HospitalStay a rdfs:Class ;
+    rdfs:label "Hospital stay"@en , "Пребывание в больнице"@ru ;
+    rdfs:comment "Hospital stay observation in days"@en , "Наблюдение за пребыванием в больнице в днях"@ru .
+
+# ==================== Object Properties ====================
+
+soc:hasPatientVisitsObservation a rdf:Property ;
+    rdfs:domain soc:HealthSystemContactObservation ;
+    rdfs:range soc:PatientVisitsObservation ;
+    rdfs:label "Patient visits observation"@en, "Наблюдение за посещениями пациентов"@ru ;
+    rdfs:comment "Observation of patient contacts in the hospital"@en, "Наблюдение за контактами пациентов в больние"@ru .
+
+soc:hasHospitalStay a rdf:Property ;
+    rdfs:domain soc:HealthSystemContactObservation ;
+    rdfs:range soc:HospitalStay ;
+    rdfs:label "Hospital stay"@en, "Пребывание в больнице"@ru ;
+    rdfs:comment "Observation of hospital stay"@en, "Наблюдение за пребыванием в больнице"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:selected a rdf:Property ;
+    rdfs:domain soc:HealthSystemContactObservation ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Selected"@en , "Выбранный"@ru ;
+    rdfs:comment "Flag indicating whether intervention is selected for analysis"@en , "Флаг, указывающий, выбрано ли вмешательство для анализа"@ru .
+
+soc:interventionNumber a rdf:Property ;
+    rdfs:domain soc:HealthSystemContactObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Intervention number"@en , "Номер вмешательства"@ru ;
+    rdfs:comment "Unique intervention identifier"@en , "Уникальный идентификатор вмешательства"@ru .
+
+soc:listNumber a rdf:Property ;
+    rdfs:domain soc:HealthSystemContactObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "LiST number"@en , "Номер в LiST"@ru ;
+    rdfs:comment "Unique number in LiST model"@en , "Уникальный номер в LiST модели"@ru .
+
+soc:category a rdf:Property ;
+    rdfs:domain soc:HealthSystemContactObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en , "Категория"@ru ;
+    rdfs:comment "Intervention category"@en , "Категория вмешательства"@ru .
+
+soc:interventionName a rdf:Property ;
+    rdfs:domain soc:HealthSystemContactObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Intervention name"@en , "Название вмешательства"@ru ;
+    rdfs:comment "Specific intervention name"@en , "Конкретное название вмешательства"@ru .
+
+soc:healthWorkerContactsNumber a rdf:Property ;
+    rdfs:domain soc:HealthSystemContactObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of health worker contacts"@en , "Количество контактов с медицинскими работниками"@ru ;
+    rdfs:comment "Number of health worker contacts per case/episode"@en , "Количество контактов с медицинскими работниками на случай/эпизод"@ru .
+
+soc:patientMetricName a rdf:Property ;
+    rdfs:domain soc:PatientVisitsObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Patient metric name"@en , "Название метрики пациента"@ru ;
+    rdfs:comment "Metric type for patient"@en , "Тип метрики нагрузки для пациента"@ru .
+
+soc:visitsNumber a rdf:Property ;
+    rdfs:domain soc:PatientVisitsObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of Visits"@en , "Количество посещений"@ru ;
+    rdfs:comment "Number of visits per patient for outpatient services"@en , "Количество визитов на пациента для амбулаторных услуг"@ru .
+
+soc:healthWorkersNumber a rdf:Property ;
+    rdfs:domain soc:PatientVisitsObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of health workers"@en , "Количество медицинских работников"@ru ;
+    rdfs:comment "Number of health workers involved in each visit"@en , "Количество медицинских работников, участвовавших в каждом посещении"@ru .
+
+soc:hospitalStayInDays a rdf:Property ;
+    rdfs:domain soc:HospitalStay ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Hospital stay in days"@en , "Пребывание в больнице в днях"@ru ;
+    rdfs:comment "Number of days the patient stays in the hospital"@en , "Количество дней пребывания пациента в больнице"@ru .
+
+soc:healthWorkersAverageNumber a rdf:Property ;
+    rdfs:domain soc:HospitalStay ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Average number of health workers"@en , "Среднее количество медицинских работников"@ru ;
+    rdfs:comment "Average number of health workers seen per day"@en , "Среднее количество медицинских работников, принимаемых в день"@ru .

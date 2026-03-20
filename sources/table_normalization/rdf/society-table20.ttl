@@ -1,0 +1,42 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:MNCHIntervention a rdfs:Class ;
+    rdfs:label "MNCH intervention"@en , "Вмешательство в области охраны здоровья матери и ребенка"@ru ;
+    rdfs:comment "MNCH Interventions as grouped in LiST model"@en , "Мероприятия по охране здоровья матери и ребенка, сгруппированные в модели LiST"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:category a rdf:Property ;
+    rdfs:domain soc:MNCHIntervention ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en , "Категория"@ru ;
+    rdfs:comment "Intervention category"@en , "Категория вмешательства"@ru .
+
+soc:subcategory a rdf:Property ;
+    rdfs:domain soc:MNCHIntervention ;
+    rdfs:range xsd:string ;
+    rdfs:label "Subcategory"@en , "Подкатегория"@ru ;
+    rdfs:comment "Intervention subcategory (if applicable)"@en , "Подкатегория вмешательства (если применимо)"@ru .
+
+soc:interventionName a rdf:Property ;
+    rdfs:domain soc:MNCHIntervention ;
+    rdfs:range xsd:string ;
+    rdfs:label "Intervention name"@en , "Название вмешательства"@ru ;
+    rdfs:comment "Specific intervention name"@en , "Конкретное название вмешательства"@ru .
+
+soc:expect a rdf:Property ;
+    rdfs:domain soc:MNCHIntervention ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Expected LiST number"@en , "Ожидаемый номер LiST"@ru ;
+    rdfs:comment "Expected intervention number in LiST model"@en , "Ожидаемый номер вмешательства в модели LiST"@ru .
+
+soc:actual a rdf:Property ;
+    rdfs:domain soc:MNCHIntervention ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Actual LiST number"@en , "Фактический номер LiST"@ru ;
+    rdfs:comment "Actual intervention number in LiST model"@en , "Фактический номер вмешательства в модели LiST"@ru .

@@ -1,0 +1,96 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:ExcessCovidDeathObservation a rdfs:Class ;
+    rdfs:label "Excess COVID death observation"@en , "Наблюдение за избыточной смертностью от COVID-19"@ru ;
+    rdfs:comment "Observation of excess COVID-19 deaths associated with maintaining essential maternal and child health services under different pandemic mitigation scenarios"@en , "Наблюдение об избыточных смертях от COVID-19, связанных с поддержанием основных услуг материнского и детского здоровья при различных сценариях смягчения последствий пандемии"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:selected a rdf:Property ;
+    rdfs:domain soc:ExcessCovidDeathObservation ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Selected"@en , "Выбранный"@ru ;
+    rdfs:comment "Flag indicating whether intervention is selected for analysis"@en , "Флаг, указывающий, выбрано ли вмешательство для анализа"@ru .
+
+soc:interventionNumber a rdf:Property ;
+    rdfs:domain soc:ExcessCovidDeathObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Intervention number"@en , "Номер вмешательства"@ru ;
+    rdfs:comment "Unique intervention identifier"@en , "Уникальный идентификатор вмешательства"@ru .
+
+soc:listNumber a rdf:Property ;
+    rdfs:domain soc:ExcessCovidDeathObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "LiST number"@en , "Номер в LiST"@ru ;
+    rdfs:comment "Unique number in LiST model"@en , "Уникальный номер в LiST модели"@ru .
+
+soc:category a rdf:Property ;
+    rdfs:domain soc:ExcessCovidDeathObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en , "Категория"@ru ;
+    rdfs:comment "Intervention category"@en , "Категория вмешательства"@ru .
+
+soc:interventionName a rdf:Property ;
+    rdfs:domain soc:ExcessCovidDeathObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Intervention name"@en , "Название вмешательства"@ru ;
+    rdfs:comment "Specific intervention name"@en , "Конкретное название вмешательства"@ru .
+
+soc:patientsNumber a rdf:Property ;
+    rdfs:domain soc:ExcessCovidDeathObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of Patients"@en , "Количество пациентов"@ru ;
+    rdfs:comment "Number of patients receiving care due to mitigation measures"@en , "Количество пациентов, получающих медицинскую помощь в связи с мерами по смягчению последствий пандемии"@ru .
+
+soc:averageContactsNumber a rdf:Property ;
+    rdfs:domain soc:ExcessCovidDeathObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average number of contacts"@en , "Среднее количество контактов"@ru ;
+    rdfs:comment "Average number of patient contacts with provider"@en , "Среднее количество контактов пациентов с медицинским работником"@ru .
+
+soc:averageContactsAfterNumber a rdf:Property ;
+    rdfs:domain soc:ExcessCovidDeathObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average number of contacts after"@en , "Среднее количество контактов после"@ru ;
+    rdfs:comment "Average number of patient contacts with provider after mitigation measures"@en , "Среднее количество контактов пациентов с медицинским работником после принятия мер по смягчению последствий"@ru .
+
+soc:transmissionRiskReduction a rdf:Property ;
+    rdfs:domain soc:ExcessCovidDeathObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Reduction in transmission risk"@en , "Снижение риска передачи инфекции"@ru ;
+    rdfs:comment "Percentage reduction in transmission risk after mitigation measures"@en , "Процент снижения риска передачи инфекции после принятия мер по смягчению последствий"@ru .
+
+soc:scenario a rdf:Property ;
+    rdfs:domain soc:ExcessCovidDeathObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Scenario"@en , "Сценарий"@ru ;
+    rdfs:comment "Pandemic mitigation scenario"@en , "Сценарий смягчения последствий пандемии"@ru .
+
+soc:sarsCov2TransmissionRisk a rdf:Property ;
+    rdfs:domain soc:ExcessCovidDeathObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Risk of SARS-Cov2 transmission"@en , "Риск передачи SARS-CoV-2"@ru ;
+    rdfs:comment "Residual SARS-CoV-2 transmission risk after mitigation measures applied"@en , "Остаточный риск передачи SARS-CoV-2 после применения мер смягчения"@ru .
+
+soc:excessRisk a rdf:Property ;
+    rdfs:domain soc:ExcessCovidDeathObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Excess risk"@en , "Избыточный риск"@ru ;
+    rdfs:comment "Excess risk of COVID-19 infection due to healthcare system contacts"@en , "Избыточный риск заражения COVID-19 из-за контактов с системой здравоохранения"@ru .
+
+soc:excessInfections a rdf:Property ;
+    rdfs:domain soc:ExcessCovidDeathObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Excess infections"@en , "Избыточное число заражений"@ru ;
+    rdfs:comment "Number of additional COVID-19 infections associated with receiving healthcare services"@en , "Количество дополнительных случаев заражения COVID-19, связанных с получением медицинских услуг"@ru .
+
+soc:excessDeaths a rdf:Property ;
+    rdfs:domain soc:ExcessCovidDeathObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Excess deaths"@en , "Избыточная смертность"@ru ;
+    rdfs:comment "Number of excess COVID-19 deaths associated with receiving healthcare services"@en , "Количество избыточных смертей от COVID-19, связанных с получением медицинских услуг"@ru .
