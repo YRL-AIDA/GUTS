@@ -6,7 +6,7 @@
 # ==================== Classes ====================
 
 soc:LivesSavedIntervention a rdfs:Class ;
-    rdfs:label "Lives saved intervention"@en , ""@ru ;
+    rdfs:label "Lives saved intervention"@en , "Спасенные жизни благодаря вмешательству"@ru ;
     rdfs:comment "Health intervention in maternal and child health assessed for lives saved impact"@en , "Вмешательство в области материнского и детского здоровья, оценённое на предмет спасённых жизней"@ru .
 
 # ==================== Datatype Properties ====================
@@ -26,8 +26,8 @@ soc:interventionNumber a rdf:Property ;
 soc:listNumber a rdf:Property ;
     rdfs:domain soc:LivesSavedIntervention ;
     rdfs:range xsd:integer ;
-    rdfs:label "List number"@en , "Номер списка"@ru ;
-    rdfs:comment Unique list identifier""@en , "Уникальный идентификатор списка"@ru .
+    rdfs:label "LiST number"@en , "Номер в LiST"@ru ;
+    rdfs:comment "Unique number in LiST model"@en , "Уникальный номер в LiST модели"@ru .
 
 soc:category a rdf:Property ;
     rdfs:domain soc:LivesSavedIntervention ;
@@ -63,7 +63,7 @@ soc:totalLivesLost a rdf:Property ;
     rdfs:domain soc:LivesSavedIntervention ;
     rdfs:range xsd:integer ;
     rdfs:label "Total lives lost"@en , "Всего погибших"@ru ;
-    rdfs:comment "Total number of child and maternal lives saved"@en , "Общее количество спасённых жизней детей и матерей"@ru .
+    rdfs:comment "Total number of child and maternal lives lost"@en , "Общее количество потерянных жизней детей и матерей"@ru .
 
 soc:note a rdf:Property ;
     rdfs:domain soc:LivesSavedIntervention ;
