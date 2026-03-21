@@ -1,0 +1,42 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:RiskBenefitResult a rdfs:Class ;
+    rdfs:label "Risk-benefit result"@en , "Результат соотношения риска и пользы"@ru ;
+    rdfs:comment "Observation of benefit-risk ratio for maternal and child health intervention when maintaining essential services during COVID-19 pandemic"@en , "Наблюдение о соотношении пользы и риска вмешательства в области материнского и детского здоровья при поддержании основных услуг во время пандемии COVID-19"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:category a rdf:Property ;
+    rdfs:domain soc:RiskBenefitResult ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en , "Категория"@ru ;
+    rdfs:comment "Intervention category"@en , "Категория вмешательства"@ru .
+
+soc:interventionName a rdf:Property ;
+    rdfs:domain soc:RiskBenefitResult ;
+    rdfs:range xsd:string ;
+    rdfs:label "Intervention name"@en , "Название вмешательства"@ru ;
+    rdfs:comment "Specific intervention name"@en , "Конкретное название вмешательства"@ru .
+
+soc:livesSaved a rdf:Property ;
+    rdfs:domain soc:RiskBenefitResult ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Lives saved"@en , "Спасенные жизни"@ru ;
+    rdfs:comment "Lives saved through mitigation measures"@en , "Спасенные жизни благодаря мерам по смягчению последствий"@ru .
+
+soc:livesLost a rdf:Property ;
+    rdfs:domain soc:RiskBenefitResult ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Lives lost"@en , "Потерянные жизни"@ru ;
+    rdfs:comment "Lives lost through added COVID infections"@en , "Потерянные жизни из-за дополнительных случаев заражения COVID"@ru .
+
+soc:benefitRiskRatio a rdf:Property ;
+    rdfs:domain soc:RiskBenefitResult ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Benefit-risk ratio"@en , "Соотношение пользы и риска"@ru ;
+    rdfs:comment "Benefit-risk ratio (dimensionless coefficient)"@en , "Соотношение пользы к риску (безразмерный коэффициент)"@ru .

@@ -1,0 +1,214 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:LivesSavedObservation a rdfs:Class ;
+    rdfs:label "Lives saved observation"@en , "Наблюдение за спасенными жизнями"@ru ;
+    rdfs:comment "Observation of number of lives saved by mitigation strategy"@en , "Наблюдение за количеством спасенных жизней благодаря стратегии смягчения последствий"@ru .
+
+soc:MitigationStrategy a rdfs:Class ;
+    rdfs:label "Mitigation strategy"@en , "Стратегия смягчения"@ru ;
+    rdfs:comment "A strategy implemented to maintain delivery of health services during crisis situations"@en , "Стратегия, реализованная для поддержания оказания медицинских услуг в кризисных ситуациях"@ru .
+
+soc:CategoryObservationAggregation a rdfs:Class ;
+    rdfs:label "Observation aggregation by category"@en , "Агрегирование наблюдений по категориям"@ru ;
+    rdfs:comment "Aggregation of observations by lives saved for each intervention category"@en , "Агрегирование наблюдений спасенным жизням для каждой категории вмешательства"@ru .
+
+soc:MitigationStrategyObservationAggregation a rdfs:Class ;
+    rdfs:label "Observation aggregation by mitigation strategy"@en , "Агрегирование наблюдений по стратегиям смягчения"@ru ;
+    rdfs:comment "Aggregation of observations by mitigation strategy for each intervention category"@en , "Агрегирование наблюдений по стратегиям смягчения для каждой категории вмешательства"@ru .
+
+soc:TotalLivesSavedObservationSummary a rdfs:Class ;
+    rdfs:label "Total lives saved observation summary"@en , "Общий отчет о наблюдении за спасенными жизнями"@ru ;
+    rdfs:comment "Total observation summary by lives saved"@en , "Общий сводный отчет по наблюдениям спасенных жизней"@ru .
+
+soc:TotalMitigationStrategySummary a rdfs:Class ;
+    rdfs:label "Total mitigation strategy summary"@en , "Общий отчет по стратегиям смягчения"@ru ;
+    rdfs:comment "Total observation summary by mitigation strategy"@en , "Общий сводный отчет о наблюдениях по стратегиям смягчения последствий"@ru .
+
+# ==================== Object Properties ====================
+
+soc:hasMitigationStrategy a rdf:Property ;
+    rdfs:domain soc:LivesSavedObservation ;
+    rdfs:range soc:MitigationStrategy ;
+    rdfs:label "Mitigation strategy"@en, "Стратегия смягчения"@ru ;
+    rdfs:comment "Links a mitigation impact record to the intervention it affects"@en, "Связывает запись о влиянии стратегии с вмешательством, на которое она влияет"@ru .
+
+soc:hasMitigationStrategyObservationAggregation a rdf:Property ;
+    rdfs:domain soc:CategoryObservationAggregation ;
+    rdfs:range soc:MitigationStrategyObservationAggregation ;
+    rdfs:label "Mitigation strategy observation aggregation"@en, "Агрегирование наблюдений по стратегиям смягчения"@ru ;
+    rdfs:comment "Links the aggregation of observations on the mitigation of the strategy to the intervention"@en, "Связывает запись агрегирования наблюдений о влиянии стратегии с вмешательством"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:selected a rdf:Property ;
+    rdfs:domain soc:LivesSavedObservation ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Selected"@en , "Выбранный"@ru ;
+    rdfs:comment "Flag indicating whether intervention is selected for analysis"@en , "Флаг, указывающий, выбрано ли вмешательство для анализа"@ru .
+
+soc:interventionNumber a rdf:Property ;
+    rdfs:domain soc:LivesSavedObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Intervention number"@en , "Номер вмешательства"@ru ;
+    rdfs:comment "Unique intervention identifier"@en , "Уникальный идентификатор вмешательства"@ru .
+
+soc:listNumber a rdf:Property ;
+    rdfs:domain soc:LivesSavedObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "LiST number"@en , "Номер в LiST"@ru ;
+    rdfs:comment "Unique number in LiST model"@en , "Уникальный номер в LiST модели"@ru .
+
+soc:category a rdf:Property ;
+    rdfs:domain soc:LivesSavedObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en , "Категория"@ru ;
+    rdfs:comment "Intervention category"@en , "Категория вмешательства"@ru .
+
+soc:interventionName a rdf:Property ;
+    rdfs:domain soc:LivesSavedObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Intervention name"@en , "Название вмешательства"@ru ;
+    rdfs:comment "Specific intervention name"@en , "Конкретное название вмешательства"@ru .
+
+soc:childrenLivesSaved a rdf:Property ;
+    rdfs:domain soc:LivesSavedObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Сhildren lives saved"@en , "Спасенные жизни детей"@ru ;
+    rdfs:comment "Number of children lives saved"@en , "Количество спасённых жизней детей"@ru .
+
+soc:maternalLivesSaved a rdf:Property ;
+    rdfs:domain soc:LivesSavedObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Maternal lives saved"@en , "Спасенные жизни матерей"@ru ;
+    rdfs:comment "Number of maternal lives saved"@en , "Количество спасённых жизней матерей"@ru .
+
+soc:totalLivesSaved a rdf:Property ;
+    rdfs:domain soc:LivesSavedObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total number of lives saved"@en , "Всего спасенных жизней"@ru ;
+    rdfs:comment "Total number of child and maternal lives lost"@en , "Общее количество спасенных жизней детей и матерей"@ru .
+
+soc:strategyCategory a rdf:Property ;
+    rdfs:domain soc:MitigationStrategy ;
+    rdfs:range xsd:string ;
+    rdfs:label "Strategy category"@en , "Категория стратегии"@ru ;
+    rdfs:comment "Mitigation strategy category"@en , "Категория стратегии смягчения"@ru .
+
+soc:strategyName a rdf:Property ;
+    rdfs:domain soc:MitigationStrategy ;
+    rdfs:range xsd:string ;
+    rdfs:label "Strategy name"@en , "Название стратегии"@ru ;
+    rdfs:comment "The name of the mitigation strategy implemented to maintain service delivery"@en , "Название стратегии смягчения, реализованной для поддержания оказания услуг"@ru .
+
+soc:percentage a rdf:Property ;
+    rdfs:domain soc:MitigationStrategy ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percentage value"@en , "Процентное значение"@ru ;
+    rdfs:comment "The percentage share of lives saved attributed to this mitigation strategy and intervention"@en , "Процентная доля спасённых жизней, приписываемая данной стратегии смягчения и вмешательства"@ru .
+
+soc:category a rdf:Property ;
+    rdfs:domain soc:CategoryObservationAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en , "Категория"@ru ;
+    rdfs:comment "Intervention category"@en , "Категория вмешательства"@ru .
+
+soc:totalChildrenLivesSaved a rdf:Property ;
+    rdfs:domain soc:CategoryObservationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total children lives saved"@en , "Все спасенные жизни детей"@ru ;
+    rdfs:comment "Total number of children lives saved for a specific intervention category"@en , "Общее количество спасённых жизней детей для определенной категории вмешательства"@ru .
+
+soc:totalMaternalLivesSaved a rdf:Property ;
+    rdfs:domain soc:CategoryObservationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total maternal lives saved"@en , "Все спасенные жизни матерей"@ru ;
+    rdfs:comment "Total number of maternal lives saved for a specific intervention category"@en , "Общее количество спасённых жизней матерей для определенной категории вмешательства"@ru .
+
+soc:totalLivesSaved a rdf:Property ;
+    rdfs:domain soc:CategoryObservationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total number of lives saved"@en , "Всего спасенных жизней"@ru ;
+    rdfs:comment "Total number of child and maternal lives saved for a specific intervention category"@en , "Общее количество спасенных жизней детей и матерей для определенной категории вмешательства"@ru .
+
+soc:strategyCategory a rdf:Property ;
+    rdfs:domain soc:MitigationStrategyObservationAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Strategy category"@en , "Категория стратегии"@ru ;
+    rdfs:comment "Mitigation strategy category"@en , "Категория стратегии смягчения"@ru .
+
+soc:strategyName a rdf:Property ;
+    rdfs:domain soc:MitigationStrategyObservationAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Strategy name"@en , "Название стратегии"@ru ;
+    rdfs:comment "The name of the mitigation strategy implemented to maintain service delivery"@en , "Название стратегии смягчения, реализованной для поддержания оказания услуг"@ru .
+
+soc:totalPercentage a rdf:Property ;
+    rdfs:domain soc:MitigationStrategyObservationAggregation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total percentage value"@en , "Общее процентное значение"@ru ;
+    rdfs:comment "Total percentage share of lives saved attributed to this mitigation strategy and intervention category"@en , "Общая процентная доля спасённых жизней, приписываемая данной стратегии смягчения и категории вмешательства"@ru .
+
+soc:totalChildrenLivesSaved a rdf:Property ;
+    rdfs:domain soc:TotalLivesSavedObservationSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total children lives saved"@en , "Все спасенные жизни детей"@ru ;
+    rdfs:comment "Total number of children lives saved"@en , "Общее количество спасённых жизней детей"@ru .
+
+soc:totalMaternalLivesSaved a rdf:Property ;
+    rdfs:domain soc:TotalLivesSavedObservationSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total maternal lives saved"@en , "Все спасенные жизни матерей"@ru ;
+    rdfs:comment "Total number of maternal lives saved"@en , "Общее количество спасённых жизней матерей"@ru .
+
+soc:totalLivesSaved a rdf:Property ;
+    rdfs:domain soc:TotalLivesSavedObservationSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total number of lives saved"@en , "Всего спасенных жизней"@ru ;
+    rdfs:comment "Total number of child and maternal lives saved"@en , "Общее количество спасенных жизней детей и матерей"@ru .
+
+soc:сhildrenLivesSavedPercentage a rdf:Property ;
+    rdfs:domain soc:TotalLivesSavedObservationSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Percentage of children lives saved"@en , "Процент спасенных жизни детей"@ru ;
+    rdfs:comment "Percentage of total number of children lives saved"@en , "Процент от общего числа спасённых жизней детей"@ru .
+
+soc:maternalLivesSavedPercentage a rdf:Property ;
+    rdfs:domain soc:TotalLivesSavedObservationSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Percentage of maternal lives saved"@en , "Процент спасенных жизни матерей"@ru ;
+    rdfs:comment "Percentage of total number of maternal lives saved"@en , "Процент от общего числа спасённых жизней матерей"@ru .
+
+soc:totalLivesSavedPercentage a rdf:Property ;
+    rdfs:domain soc:TotalLivesSavedObservationSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total percentage of lives saved"@en , "Общий процент спасенных жизней"@ru ;
+    rdfs:comment "Percentage of total number of child and maternal lives saved"@en , "Процент от общего количества спасенных жизней детей и матерей"@ru .
+
+soc:strategyCategory a rdf:Property ;
+    rdfs:domain soc:TotalMitigationStrategySummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Strategy category"@en , "Категория стратегии"@ru ;
+    rdfs:comment "Mitigation strategy category"@en , "Категория стратегии смягчения"@ru .
+
+soc:strategyName a rdf:Property ;
+    rdfs:domain soc:TotalMitigationStrategySummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Strategy name"@en , "Название стратегии"@ru ;
+    rdfs:comment "The name of the mitigation strategy implemented to maintain service delivery"@en , "Название стратегии смягчения, реализованной для поддержания оказания услуг"@ru .
+
+soc:percentage a rdf:Property ;
+    rdfs:domain soc:TotalMitigationStrategySummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percentage value"@en , "Процентное значение"@ru ;
+    rdfs:comment "Percentage share of lives saved attributed to this mitigation strategy and all intervention categories"@en , "Процентная доля спасённых жизней, приписываемая данной стратегии смягчения по всем категориям вмешательства"@ru .
+
+soc:totalPercentage a rdf:Property ;
+    rdfs:domain soc:TotalMitigationStrategySummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total percentage value"@en , "Общее процентное значение"@ru ;
+    rdfs:comment "Total percentage share of lives saved attributed to this mitigation strategy"@en , "Общая процентная доля спасённых жизней, приписываемая данной стратегии смягчения"@ru .
