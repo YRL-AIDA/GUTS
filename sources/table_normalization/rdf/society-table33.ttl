@@ -1,0 +1,54 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:LivesLostIntervention a rdfs:Class ;
+    rdfs:label "Lives lost intervention"@en , "Вмешательство, повлекшее за собой гибель людей"@ru ;
+    rdfs:comment "Maternal and child health intervention resulting in loss of life due to disruption of essential services"@en , "Вмешательство в области материнского и детского здоровья, повлекшее за собой гибель людей из-за нарушения покрытия основных услуг"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:category a rdf:Property ;
+    rdfs:domain soc:LivesLostIntervention ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en , "Категория"@ru ;
+    rdfs:comment "Intervention category"@en , "Категория вмешательства"@ru .
+
+soc:interventionName a rdf:Property ;
+    rdfs:domain soc:LivesLostIntervention ;
+    rdfs:range xsd:string ;
+    rdfs:label "Intervention name"@en , "Название вмешательства"@ru ;
+    rdfs:comment "Specific intervention name"@en , "Конкретное название вмешательства"@ru .
+
+soc:newbornLivesLost a rdf:Property ;
+    rdfs:domain soc:LivesLostIntervention ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Newborn lives lost"@en , "Потерянные жизни новорожденных"@ru ;
+    rdfs:comment "Number of newborn lives lost"@en , "Количество потерянных жизней новорождённых"@ru .
+
+soc:childLivesLost a rdf:Property ;
+    rdfs:domain soc:LivesLostIntervention ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Child lives lost"@en , "Потерянные детские жизни"@ru ;
+    rdfs:comment "Number of child lives lost"@en , "Количество потерянных жизней детей"@ru .
+
+soc:maternalLivesLost a rdf:Property ;
+    rdfs:domain soc:LivesLostIntervention ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Maternal lives lost"@en , "Потерянные жизни матерей"@ru ;
+    rdfs:comment "Number of maternal lives lost"@en , "Количество потерянных жизней матерей"@ru .
+
+soc:totalLivesLost a rdf:Property ;
+    rdfs:domain soc:LivesLostIntervention ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total lives lost"@en , "Всего погибших"@ru ;
+    rdfs:comment "Total number of child and maternal lives lost"@en , "Общее количество потерянных жизней детей и матерей"@ru .
+
+soc:note a rdf:Property ;
+    rdfs:domain soc:LivesLostIntervention ;
+    rdfs:range xsd:string ;
+    rdfs:label "Note"@en , "Примечание"@ru ;
+    rdfs:comment "Methodological notes and explanations"@en , "Методологические примечания и пояснения"@ru .

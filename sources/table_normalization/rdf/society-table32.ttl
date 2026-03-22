@@ -1,0 +1,48 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:LiSTModuleData a rdfs:Class ;
+    rdfs:label "LiST module data"@en , "Данные модуля LiST"@ru ;
+    rdfs:comment "LiST input data - MNH coverage data with mitigation measures"@en , "Входные данные LiST - Данные о охвате охраны здоровья матери и ребенка с учетом мер по смягчению последствий"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:category a rdf:Property ;
+    rdfs:domain soc:LiSTModuleData ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en , "Категория"@ru ;
+    rdfs:comment "The main grouping category of the intervention"@en , "Основная группа вмешательства"@ru .
+
+soc:subcategory a rdf:Property ;
+    rdfs:domain soc:LiSTModuleData ;
+    rdfs:range xsd:string ;
+    rdfs:label "Subcategory"@en , "Подкатегория"@ru ;
+    rdfs:comment "The specific subgroup within the main category"@en , "Конкретная подгруппа внутри основной категории"@ru .
+
+soc:interventionName a rdf:Property ;
+    rdfs:domain soc:LiSTModuleData ;
+    rdfs:range xsd:string ;
+    rdfs:label "Intervention name"@en , "Название вмешательства"@ru ;
+    rdfs:comment "The specific name or description of the health intervention"@en , "Конкретное название или описание вмешательства в области здоровья"@ru .
+
+soc:2019PreCOVID a rdf:Property ;
+    rdfs:domain soc:LiSTModuleData ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "2019 pre-COVID"@en , "2019 год до COVID-19"@ru ;
+    rdfs:comment "Coverage percentage for this intervention in 2019 (pre-pandemic baseline)"@en , "Процент покрытия для данного вмешательства в 2019 году (базовый период до пандемии)"@ru .
+
+soc:2020WithCOVID a rdf:Property ;
+    rdfs:domain soc:LiSTModuleData ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "2020 with COVID"@en , "2020 год с COVID-19"@ru ;
+    rdfs:comment "Coverage percentage for this intervention in 2020 (during pandemic, without mitigation)"@en , "Процент покрытия для данного вмешательства в 2020 году (во время пандемии, без мер смягчения)"@ru .
+
+soc:2021WithMitigation a rdf:Property ;
+    rdfs:domain soc:LiSTModuleData ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "2021 with mitigation"@en , "2021 год с мерами по смягчению последствий"@ru ;
+    rdfs:comment "Coverage percentage for this intervention in 2021 (with mitigation measures implemented)"@en , "Процент покрытия для данного вмешательства в 2021 году (при реализации мер смягчения)"@ru .

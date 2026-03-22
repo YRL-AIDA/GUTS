@@ -1,0 +1,36 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:ChildLivesSavedObservation a rdfs:Class ;
+    rdfs:label "Child lives saved observation"@en , "Наблюдение за спасенными детскими жизнями"@ru ;
+    rdfs:comment "Observation of additional child lives saved (ages 0-59 months) attributable to a specific maternal, newborn, or child health intervention across time periods"@en , "Наблюдение за дополнительно спасёнными жизнями детей (возраст 0–59 месяцев), обусловленные конкретным вмешательством в области материнского, новорожденного или детского здоровья, по временны́м периодам"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:year a rdf:Property ;
+    rdfs:domain soc:ChildLivesSavedObservation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en , "Год"@ru ;
+    rdfs:comment "Year of observation"@en , "Год наблюдения"@ru .
+
+soc:category a rdf:Property ;
+    rdfs:domain soc:ChildLivesSavedObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en , "Категория"@ru ;
+    rdfs:comment "Intervention category"@en , "Категория вмешательства"@ru .
+
+soc:interventionName a rdf:Property ;
+    rdfs:domain soc:ChildLivesSavedObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Intervention name"@en , "Название вмешательства"@ru ;
+    rdfs:comment "Specific intervention name"@en , "Конкретное название вмешательства"@ru .
+
+soc:childLivesSaved a rdf:Property ;
+    rdfs:domain soc:ChildLivesSavedObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Child lives saved"@en , "Спасенные жизни детей"@ru ;
+    rdfs:comment "Number of child lives saved"@en , "Количество спасённых жизней детей"@ru .
