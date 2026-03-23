@@ -1,0 +1,42 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:COVIDTransmissionRisk a rdfs:Class ;
+    rdfs:label "Risk of COVID transmission"@en , "Риск передачи COVID"@ru ;
+    rdfs:comment "Parameter of COVID-19 transmission and fatality risk model for essential health service delivery"@en , "Параметр модели оценки риска передачи и летальности COVID-19 при оказании основных медицинских услуг"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:category a rdf:Property ;
+    rdfs:domain soc:COVIDTransmissionRisk ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en , "Категория"@ru ;
+    rdfs:comment "Category of the statistic"@en , "Категория статистики"@ru .
+
+soc:variable a rdf:Property ;
+    rdfs:domain soc:COVIDTransmissionRisk ;
+    rdfs:range xsd:string ;
+    rdfs:label "Variable"@en , "Переменная"@ru ;
+    rdfs:comment "Name of the specific metric or variable"@en , "Название конкретного показателя или переменной"@ru .
+
+soc:mean a rdf:Property ;
+    rdfs:domain soc:COVIDTransmissionRisk ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Mean"@en , "Среднее значение"@ru ;
+    rdfs:comment "Primary numeric value of the statistic"@en , "Основное числовое значение показателя"@ru .
+
+soc:suggestedRange a rdf:Property ;
+    rdfs:domain soc:COVIDTransmissionRisk ;
+    rdfs:range xsd:string ;
+    rdfs:label "Suggested range"@en , "Рекомендуемый диапазон"@ru ;
+    rdfs:comment "Recommended range for the indicator value"@en , "Рекомендуемый диапазон для значения показателя"@ru .
+
+soc:comment a rdf:Property ;
+    rdfs:domain soc:COVIDTransmissionRisk ;
+    rdfs:range xsd:string ;
+    rdfs:label "Comment"@en , "Комментарий"@ru ;
+    rdfs:comment "Additional explanation or comment about the statistic"@en , "Дополнительное пояснение или комментарий к показателю"@ru .

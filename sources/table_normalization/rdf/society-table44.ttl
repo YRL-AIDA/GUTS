@@ -1,0 +1,42 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:CoverageCalculation a rdfs:Class ;
+    rdfs:label "Coverage calculation"@en , "Расчет страхового покрытия"@ru ;
+    rdfs:comment "Observation representing coverage rate percentages and absolute counts for a maternal, newborn, or child health intervention across multiple pandemic-related COVID-19 scenarios"@en , "Наблюдение, представляющее процентные показатели охвата и абсолютные количества для вмешательства в области материнского, новорожденного или детского здоровья по множеству сценариев, связанных с пандемией COVID-19"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:category a rdf:Property ;
+    rdfs:domain soc:CoverageCalculation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en , "Категория"@ru ;
+    rdfs:comment "Intervention category"@en , "Категория вмешательства"@ru .
+
+soc:interventionName a rdf:Property ;
+    rdfs:domain soc:CoverageCalculation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Intervention name"@en , "Название вмешательства"@ru ;
+    rdfs:comment "Specific intervention name"@en , "Конкретное название вмешательства"@ru .
+
+soc:timePeriod a rdf:Property ;
+    rdfs:domain soc:CoverageCalculation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Time period"@en , "Период времени"@ru ;
+    rdfs:comment "Time period with various influencing factors (impact of COVID on original coverage, impact of mitigation strategies)"@en , "Период времени c различными факторами влияния (влияние COVID на первоначальный охват, влияние стратегий по смягчению последствий)"@ru .
+
+soc:coverageRate a rdf:Property ;
+    rdfs:domain soc:CoverageCalculation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Coverage rate"@en , "Уровень охвата"@ru ;
+    rdfs:comment "The percentage of coverage level for a given intervention over a given period"@en , "Процентное соотношение уровня охвата для данного вмешательства за определенный период"@ru .
+
+soc:womenChildrenNumber a rdf:Property ;
+    rdfs:domain soc:CoverageCalculation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of women/children"@en , "Количество женщин/детей"@ru ;
+    rdfs:comment "Number of women/children receiving intervention"@en , "Количество женщин/детей, получающих помощь"@ru .

@@ -1,0 +1,130 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:DemographicObservation a rdfs:Class ;
+    rdfs:label "Demographic observation"@en , "Демографическое наблюдение"@ru ;
+    rdfs:comment "Observation representing demographic data in the LiST model"@en , "Наблюдение, представляющее демографические данные в модели LiST"@ru .
+
+soc:EpidemiologicalObservation a rdfs:Class ;
+    rdfs:label "Epidemiological observation"@en , "Эпидемиологическое наблюдение"@ru ;
+    rdfs:comment "Observation representing epidemiological data in the LiST model"@en , "Наблюдение, представляющее эпидемиологические данные в модели LiST"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:selected a rdf:Property ;
+    rdfs:domain soc:DemographicObservation ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Selected"@en , "Выбранный"@ru ;
+    rdfs:comment "Flag indicating whether data is selected for analysis"@en , "Флаг, указывающий, выбраны ли данные для анализа"@ru .
+
+soc:demographicCategory a rdf:Property ;
+    rdfs:domain soc:DemographicObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Demographic category"@en , "Демографическая категория"@ru ;
+    rdfs:comment "The category of demographic event"@en , "Категория демографического события"@ru .
+
+soc:nameInSpectrum a rdf:Property ;
+    rdfs:domain soc:DemographicObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Name in spectrum"@en , "Имя в спектре"@ru ;
+    rdfs:comment "Name in spectrum download"@en , "Имя в спектре загрузки"@ru .
+
+soc:source a rdf:Property ;
+    rdfs:domain soc:DemographicObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Source"@en , "Источник"@ru ;
+    rdfs:comment "Brief description of the data source"@en , "Краткое описание источника данных"@ru .
+
+soc:percentage a rdf:Property ;
+    rdfs:domain soc:DemographicObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percentage"@en , "Процент"@ru ;
+    rdfs:comment "Estimated percentage of population"@en , "Расчетный процент населения"@ru .
+
+soc:note a rdf:Property ;
+    rdfs:domain soc:DemographicObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Note"@en , "Примечание"@ru ;
+    rdfs:comment "Methodological notes and explanations"@en , "Методологические примечания и пояснения"@ru .
+
+soc:year a rdf:Property ;
+    rdfs:domain soc:DemographicObservation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en , "Год"@ru ;
+    rdfs:comment "The calendar year of observation"@en , "Календарный год наблюдения"@ru .
+
+soc:population a rdf:Property ;
+    rdfs:domain soc:DemographicObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Population"@en , "Население"@ru ;
+    rdfs:comment "Population size for demographic records"@en , "Численность населения для демографических записей"@ru .
+
+soc:listDataTable a rdf:Property ;
+    rdfs:domain soc:DemographicObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "LiST data table"@en , "Таблица данных LiST"@ru ;
+    rdfs:comment "Reference to the source table or module in LiST/Spectrum where data is stored or calculated"@en , "Ссылка на исходную таблицу или модуль в LiST/Spectrum, где хранятся или рассчитываются данные"@ru .
+
+soc:interventionNumber a rdf:Property ;
+    rdfs:domain soc:EpidemiologicalObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Intervention number"@en , "Номер вмешательства"@ru ;
+    rdfs:comment "Unique intervention identifier"@en , "Уникальный идентификатор вмешательства"@ru .
+
+soc:listNumber a rdf:Property ;
+    rdfs:domain soc:EpidemiologicalObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "LiST number"@en , "Номер в LiST"@ru ;
+    rdfs:comment "Unique number in LiST model"@en , "Уникальный номер в LiST модели"@ru .
+
+soc:epidemiologicalCategory a rdf:Property ;
+    rdfs:domain soc:EpidemiologicalObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Epidemiological category"@en , "Эпидемиологическая категория"@ru ;
+    rdfs:comment "The category of epidemiological event"@en , "Категория эпидемиологического события"@ru .
+
+soc:nameInSpectrum a rdf:Property ;
+    rdfs:domain soc:EpidemiologicalObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Name in spectrum"@en , "Имя в спектре"@ru ;
+    rdfs:comment "Name in spectrum download"@en , "Имя в спектре загрузки"@ru .
+
+soc:targetPopulation a rdf:Property ;
+    rdfs:domain soc:EpidemiologicalObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Target population"@en , "Целевая группа населения"@ru ;
+    rdfs:comment "The population group to which the indicator or intervention applies"@en , "Группа населения, к которой применяется индикатор или вмешательство"@ru .
+
+soc:percentRequired a rdf:Property ;
+    rdfs:domain soc:EpidemiologicalObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percent required"@en , "Требуемый процент"@ru ;
+    rdfs:comment "Percentage of requiring intervention"@en , "Процент случаев, требующих вмешательства"@ru .
+
+soc:note a rdf:Property ;
+    rdfs:domain soc:EpidemiologicalObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Note"@en , "Примечание"@ru ;
+    rdfs:comment "Methodological notes and explanations"@en , "Методологические примечания и пояснения"@ru .
+
+soc:year a rdf:Property ;
+    rdfs:domain soc:EpidemiologicalObservation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en , "Год"@ru ;
+    rdfs:comment "The calendar year of observation"@en , "Календарный год наблюдения"@ru .
+
+soc:numberRequired a rdf:Property ;
+    rdfs:domain soc:EpidemiologicalObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number required"@en , "Требуемое количество"@ru ;
+    rdfs:comment "Number of requiring intervention"@en , "Число лиц, нуждающихся в вмешательстве"@ru .
+
+soc:listDataTable a rdf:Property ;
+    rdfs:domain soc:EpidemiologicalObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "LiST data table"@en , "Таблица данных LiST"@ru ;
+    rdfs:comment "Reference to the source table or module in LiST/Spectrum where data is stored or calculated"@en , "Ссылка на исходную таблицу или модуль в LiST/Spectrum, где хранятся или рассчитываются данные"@ru .
