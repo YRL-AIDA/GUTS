@@ -1,0 +1,42 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:InterventionSelection a rdfs:Class ;
+    rdfs:label "Intervention selection"@en , "Выбор вмешательства"@ru ;
+    rdfs:comment "A record representing whether a maternal, newborn, or child health intervention is included in a specific analysis"@en , "Запись, представляющая, включено ли вмешательство в области материнского, новорожденного или детского здоровья в конкретный анализ"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:category a rdf:Property ;
+    rdfs:domain soc:InterventionSelection ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en , "Категория"@ru ;
+    rdfs:comment "Intervention category"@en , "Категория вмешательства"@ru .
+
+soc:categoryIncluded a rdf:Property ;
+    rdfs:domain soc:InterventionSelection ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Category included"@en , "Включенная категория"@ru ;
+    rdfs:comment "A flag that indicates whether the entire category is included in the analysis"@en , "Флаг, который показывает включена ли вся категория в анализ"@ru .
+
+soc:interventionName a rdf:Property ;
+    rdfs:domain soc:InterventionSelection ;
+    rdfs:range xsd:string ;
+    rdfs:label "Intervention name"@en , "Название вмешательства"@ru ;
+    rdfs:comment "Specific intervention name"@en , "Конкретное название вмешательства"@ru .
+
+soc:interventionIncluded a rdf:Property ;
+    rdfs:domain soc:InterventionSelection ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Intervention included"@en , "Включенное вмешательство"@ru ;
+    rdfs:comment "A flag that indicates whether a particular intervention is included in the analysis"@en , "Флаг, который показывает включено ли конкретное вмешательство в анализ"@ru .
+
+soc:note a rdf:Property ;
+    rdfs:domain soc:InterventionSelection ;
+    rdfs:range xsd:string ;
+    rdfs:label "Note"@en , "Примечание"@ru ;
+    rdfs:comment "Methodological notes and explanations"@en , "Методологические примечания и пояснения"@ru .

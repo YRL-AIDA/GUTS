@@ -1,0 +1,36 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:DemographicObservation a rdfs:Class ;
+    rdfs:label "Demographic observation"@en , "Демографическое наблюдение"@ru ;
+    rdfs:comment "Observation representing demographic counts (pregnancies or births) for a specific year in the MNCH model with mitigation measures"@en , "Наблюдение, представляющее демографические показатели (беременности или роды) за конкретный год в модели MNCH с мерами смягчения"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:year a rdf:Property ;
+    rdfs:domain soc:DemographicObservation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en , "Год"@ru ;
+    rdfs:comment "The calendar year of observation"@en , "Календарный год наблюдения"@ru .
+
+soc:demographicType a rdf:Property ;
+    rdfs:domain soc:DemographicObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Demographic type"@en , "Тип демографии"@ru ;
+    rdfs:comment "The type of demographic event (pregnancies or births)"@en , "Тип демографического события (беременность или роды)"@ru .
+
+soc:count a rdf:Property ;
+    rdfs:domain soc:DemographicObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Count"@en , "Количество"@ru ;
+    rdfs:comment "The absolute count for the demographic event with mitigation"@en , "Абсолютное количество для демографического события с мерами по смягчению последствий"@ru .
+
+soc:percentage a rdf:Property ;
+    rdfs:domain soc:DemographicObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Percentage"@en , "Процент"@ru ;
+    rdfs:comment "The percentage ratio applicable to births (e.g., birth-to-pregnancy ratio; null for pregnancies)"@en , "Процентное соотношение, применимое к родам ((например, доля родов от беременностей; null для беременностей)"@ru .
