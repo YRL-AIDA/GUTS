@@ -1,0 +1,114 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:KimberliteLamproiteObservation a rdfs:Class ;
+    rdfs:label "Kimberlite lamproite observation"@en , "Наблюдение за кимберлитами и лампроитами"@ru ;
+    rdfs:comment "Geochemical and geophysical data for a kimberlite or lamproite locality, including olivine composition and lithospheric thickness estimates"@en , "Геохимические и геофизические данные для месторождения кимберлита или лампроита, включая состав оливина и оценки толщины литосферы"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:localityType a rdf:Property ;
+    rdfs:domain soc:KimberliteLamproiteObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Locality type"@en , "Тип месторождения"@ru ;
+    rdfs:comment "The type of the kimberlite or lamproite locality"@en , "Тип месторождения кимберлита или лампроита"@ru .
+
+soc:locality a rdf:Property ;
+    rdfs:domain soc:KimberliteLamproiteObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Locality"@en , "Месторождение"@ru ;
+    rdfs:comment "The name of the kimberlite or lamproite locality"@en , "Название месторождения кимберлита или лампроита"@ru .
+
+soc:lithology a rdf:Property ;
+    rdfs:domain soc:KimberliteLamproiteObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Lithology"@en , "Литология"@ru ;
+    rdfs:comment "The rock type (lithology)"@en , "Тип породы (литология)"@ru .
+
+soc:country a rdf:Property ;
+    rdfs:domain soc:KimberliteLamproiteObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Country"@en , "Страна"@ru ;
+    rdfs:comment "The country where the locality is located"@en , "Страна, в которой расположено месторождение"@ru .
+
+soc:position a rdf:Property ;
+    rdfs:domain soc:KimberliteLamproiteObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Position"@en , "Позиция"@ru ;
+    rdfs:comment "Position relative to the craton"@en , "Положение относительно кратона"@ru .
+
+soc:craton a rdf:Property ;
+    rdfs:domain soc:KimberliteLamproiteObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Craton"@en , "Кратон"@ru ;
+    rdfs:comment "The name of the craton@en , "Название кратона"@ru .
+
+soc:age a rdf:Property ;
+    rdfs:domain soc:KimberliteLamproiteObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Age"@en , "Возраст"@ru ;
+    rdfs:comment "Age of the kimberlite/lamproite in millions of years (Ma)"@en , "Возраст кимберлита/лампроита в миллионах лет (Ma)"@ru .
+
+soc:mantleOlivineMean a rdf:Property ;
+    rdfs:domain soc:KimberliteLamproiteObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Mantle olivine mean"@en , "Среднее значение оливина мантии"@ru ;
+    rdfs:comment "Mean magnesium number (Mg#) of mantle-derived olivine"@en , "Среднее значение магниевого числа (Mg#) мантийного оливина"@ru .
+
+soc:mantleOlivineStandardDeviation a rdf:Property ;
+    rdfs:domain soc:KimberliteLamproiteObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation of mantle olivine"@en , "Стандартное отклонение мантийного оливина"@ru ;
+    rdfs:comment "Standard deviation of magnesium number (Mg#) of mantle-derived olivine"@en , "Стандартное отклонение магниевого числа (Mg#) мантийного оливина"@ru .
+
+soc:magmaticOlivineMean a rdf:Property ;
+    rdfs:domain soc:KimberliteLamproiteObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Magmatic olivine mean"@en , "Среднее содержание магматического оливина"@ru ;
+    rdfs:comment "Mean magnesium number (Mg#) of magmatic olivine"@en , "Среднее значение магниевого числа (Mg#) магматического оливина"@ru .
+
+soc:magmaticOlivineStandardDeviation a rdf:Property ;
+    rdfs:domain soc:KimberliteLamproiteObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation of magmatic olivine"@en , ""@ru ;
+    rdfs:comment "Standard deviation of magnesium number (Mg#) of magmatic olivine"@en , "Стандартное отклонение магниевого числа (Mg#) магматического оливина"@ru .
+
+soc:olivineReference a rdf:Property ;
+    rdfs:domain soc:KimberliteLamproiteObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Olivine reference"@en , "Ссылка на оливин"@ru ;
+    rdfs:comment "Bibliographic reference for olivine composition data"@en , "Библиографическая ссылка на данные по составу оливина"@ru .
+
+soc:xenlithLithosphericThickness a rdf:Property ;
+    rdfs:domain soc:KimberliteLamproiteObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Xenlith-based Lithospheric thickness"@en , "Толщина литосферы на основе ксенолитов"@ru ;
+    rdfs:comment "Lithospheric thickness estimate based on Xenlith data, in kilometers"@en , "Оценка толщины литосферы по данным ксенолитов, в километрах"@ru .
+
+soc:employedMethod a rdf:Property ;
+    rdfs:domain soc:KimberliteLamproiteObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Employed method"@en , "Используемый метод"@ru ;
+    rdfs:comment "Method used for Xenlith-based lithospheric thickness estimation"@en , "Метод, использованный для оценки толщины литосферы по ксенолитам"@ru .
+
+soc:xenolithReference a rdf:Property ;
+    rdfs:domain soc:KimberliteLamproiteObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Xenolith reference"@en , "Ссылка на толщину по ксенолитам"@ru ;
+    rdfs:comment "Bibliographic reference for xenolith-based lithospheric thickness estimate"@en , "Библиографическая ссылка на оценку толщины литосферы по ксенолитам"@ru .
+
+soc:seismicLithosphericThickness a rdf:Property ;
+    rdfs:domain soc:KimberliteLamproiteObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Present day seismic lithospheric thickness"@en , "Современная сейсмическая толщина литосферы"@ru ;
+    rdfs:comment "Present-day seismic lithospheric thickness estimate, in kilometers"@en , "Оценка современной сейсмической толщины литосферы, в километрах"@ru .
+
+soc:seismicReference a rdf:Property ;
+    rdfs:domain soc:KimberliteLamproiteObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Seismic reference"@en , "Ссылка на сейсмическую толщину"@ru ;
+    rdfs:comment "Bibliographic reference for seismic thickness estimate"@en , "Библиографическая ссылка на оценку сейсмической толщины"@ru .

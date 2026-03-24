@@ -1,0 +1,126 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:OlivineDataCompilation a rdfs:Class ;
+    rdfs:label "Olivine data compilation"@en , "Сборник данных по оливину"@ru ;
+    rdfs:comment "Compilation of olivine data from global kimberlites and lamproites"@en , "Сборник данных по оливину из глобальных кимберлитов и лампроитов"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:localityType a rdf:Property ;
+    rdfs:domain soc:OlivineDataCompilation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Locality type"@en , "Тип месторождения"@ru ;
+    rdfs:comment "The type of the kimberlite or lamproite locality"@en , "Тип месторождения кимберлита или лампроита"@ru .
+
+soc:locality a rdf:Property ;
+    rdfs:domain soc:OlivineDataCompilation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Locality"@en , "Месторождение"@ru ;
+    rdfs:comment "The name of the kimberlite or lamproite locality"@en , "Название месторождения кимберлита или лампроита"@ru .
+
+soc:lithology a rdf:Property ;
+    rdfs:domain soc:OlivineDataCompilation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Lithology"@en , "Литология"@ru ;
+    rdfs:comment "The rock type (lithology)"@en , "Тип породы (литология)"@ru .
+
+soc:country a rdf:Property ;
+    rdfs:domain soc:OlivineDataCompilation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Country"@en , "Страна"@ru ;
+    rdfs:comment "The country where the locality is located"@en , "Страна, в которой расположено месторождение"@ru .
+
+soc:position a rdf:Property ;
+    rdfs:domain soc:OlivineDataCompilation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Position"@en , "Позиция"@ru ;
+    rdfs:comment "Position relative to the craton"@en , "Положение относительно кратона"@ru .
+
+soc:age a rdf:Property ;
+    rdfs:domain soc:OlivineDataCompilation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Age"@en , "Возраст"@ru ;
+    rdfs:comment "Age of the kimberlite/lamproite in millions of years (Ma)"@en , "Возраст кимберлита/лампроита в миллионах лет (Ma)"@ru .
+
+soc:ageReference a rdf:Property ;
+    rdfs:domain soc:OlivineDataCompilation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Age reference"@en , "Ссылка на возраст"@ru ;
+    rdfs:comment "Bibliographic reference for the age determination"@en , "Библиографическая ссылка на определение возраста"@ru .
+
+soc:coreMgMedian a rdf:Property ;
+    rdfs:domain soc:OlivineDataCompilation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Core Mg median"@en , "Медианное значение магния в ядре"@ru ;
+    rdfs:comment "Median magnesium number (Mg#) of olivine cores"@en , "Медиана магниевого числа (Mg#) ядер оливина"@ru .
+	
+soc:coreMgMean a rdf:Property ;
+    rdfs:domain soc:OlivineDataCompilation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Core Mg mean"@en , "Среднее значение магния в ядре"@ru ;
+    rdfs:comment "Mean magnesium number (Mg#) of olivine cores"@en , "Среднее значение магниевого числа (Mg#) ядер оливина"@ru .
+
+soc:coreMgStandardDeviation a rdf:Property ;
+    rdfs:domain soc:OlivineDataCompilation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation of core Mg"@en , "Стандартное отклонение магния в ядре"@ru ;
+    rdfs:comment "Standard deviation of magnesium number (Mg#) of olivine cores"@en , "Стандартное отклонение магниевого числа (Mg#) ядер оливина"@ru .
+
+soc:coreMgMax a rdf:Property ;
+    rdfs:domain soc:OlivineDataCompilation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Core Mg max"@en , "Максимальное содержание магния в ядре"@ru ;
+    rdfs:comment "Maximum magnesium number (Mg#) of olivine cores"@en , "Максимальное значение магниевого числа (Mg#) ядер оливина"@ru .
+
+soc:coreFractionBelow90 a rdf:Property ;
+    rdfs:domain soc:OlivineDataCompilation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Core fraction below 90"@en , "Основная доля ниже 90"@ru ;
+    rdfs:comment "Fraction of olivine cores with Mg below 90"@en , "Доля ядер оливина с магнием ниже 90"@ru .
+
+soc:coreNumber a rdf:Property ;
+    rdfs:domain soc:OlivineDataCompilation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Core number"@en , "Количество ядер"@ru ;
+    rdfs:comment "Number of olivine core"@en , "Количество ядер оливина"@ru .
+
+soc:substanceName a rdf:Property ;
+    rdfs:domain soc:OlivineDataCompilation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Substance name"@en , "Название вещества"@ru ;
+    rdfs:comment "The name of the chemical compound (substance) found in olivine cores"@en , "Название вещества (химического соединения), содержащегося в ядрах оливина"@ru .
+
+soc:substanceMean a rdf:Property ;
+    rdfs:domain soc:OlivineDataCompilation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Substance mean"@en , "Среднее значение вещества"@ru ;
+    rdfs:comment "Mean substance content (wt%) of olivine cores"@en , "Среднее содержание вещества (мас.%) в ядрах оливина"@ru .
+
+soc:rimMgMean a rdf:Property ;
+    rdfs:domain soc:OlivineDataCompilation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Rim Mg mean"@en , "Среднее магниевое число края"@ru ;
+    rdfs:comment "Mean magnesium number (Mg#) of olivine rims"@en , "Среднее магниевое число (Mg#) краев оливина"@ru .
+
+soc:rimMgStandardDeviation a rdf:Property ;
+    rdfs:domain soc:OlivineDataCompilation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation of rim Mg"@en , "Стандартное отклонение магниевого числа края"@ru ;
+    rdfs:comment "Standard deviation of magnesium number (Mg#) of olivine rims"@en , "Стандартное отклонение магниевого числа (Mg#) краев оливина"@ru .
+
+soc:rimNumber a rdf:Property ;
+    rdfs:domain soc:OlivineDataCompilation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Rim number"@en , "Количество краев"@ru ;
+    rdfs:comment "Number of olivine rim"@en , "Количество краев оливина"@ru .
+
+soc:reference a rdf:Property ;
+    rdfs:domain soc:OlivineDataCompilation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Reference"@en , "Ссылка"@ru ;
+    rdfs:comment "Bibliographic reference for the olivine composition data"@en , "Библиографическая ссылка на данные по составу оливина"@ru .

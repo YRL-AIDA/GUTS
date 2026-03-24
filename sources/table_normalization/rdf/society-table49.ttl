@@ -1,0 +1,64 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:FamilyPlanning a rdfs:Class ;
+    rdfs:label "Family planning"@en , "Планирование семьи"@ru ;
+    rdfs:comment "A record representing coverage rate percentages for a family planning intervention across multiple pandemic-related scenarios"@en , "Запись, представляющая процентные показатели охвата для вмешательства в области планирования семьи по множеству сценариев пандемии"@ru .
+
+soc:PregnancyDemographic a rdfs:Class ;
+    rdfs:label "Pregnancy demographic"@en , "Демография беременностей"@ru ;
+    rdfs:comment "A record representing the total number of pregnancies for a specific year and mitigation scenario"@en , "Запись, представляющая общее количество беременностей за конкретный год и сценарий мер смягчения"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:category a rdf:Property ;
+    rdfs:domain soc:FamilyPlanning ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en , "Категория"@ru ;
+    rdfs:comment "Intervention category"@en , "Категория вмешательства"@ru .
+
+soc:decreasePercentage a rdf:Property ;
+    rdfs:domain soc:FamilyPlanning ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Decrease percentage"@en , "Процент снижения"@ru ;
+    rdfs:comment "Percentage decrease for intervention category"@en , "Процент снижения для категории вмешательства"@ru .
+
+soc:interventionName a rdf:Property ;
+    rdfs:domain soc:FamilyPlanning ;
+    rdfs:range xsd:string ;
+    rdfs:label "Intervention name"@en , "Название вмешательства"@ru ;
+    rdfs:comment "Specific intervention name"@en , "Конкретное название вмешательства"@ru .
+
+soc:timePeriod a rdf:Property ;
+    rdfs:domain soc:FamilyPlanning ;
+    rdfs:range xsd:string ;
+    rdfs:label "Time period"@en , "Период времени"@ru ;
+    rdfs:comment "Time period with various influencing factors (impact of COVID on original coverage, impact of mitigation strategies)"@en , "Период времени c различными факторами влияния (влияние COVID на первоначальный охват, влияние стратегий по смягчению последствий)"@ru .
+
+soc:coverageRate a rdf:Property ;
+    rdfs:domain soc:FamilyPlanning ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Coverage rate"@en , "Уровень охвата"@ru ;
+    rdfs:comment "The percentage of coverage level for a given intervention over a given period"@en , "Процентное соотношение уровня охвата для данного вмешательства за определенный период"@ru .
+
+soc:scenario a rdf:Property ;
+    rdfs:domain soc:PregnancyDemographic ;
+    rdfs:range xsd:string ;
+    rdfs:label "Scenario"@en , "Сценарий"@ru ;
+    rdfs:comment "The mitigation scenario for demographic projections"@en , "Сценарий мер смягчения для демографических прогнозов"@ru .
+
+soc:year a rdf:Property ;
+    rdfs:domain soc:PregnancyDemographic ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en , "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en , "Календарный год наблюдения"@ru .
+
+soc:pregnancies a rdf:Property ;
+    rdfs:domain soc:PregnancyDemographic ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Pregnancies"@en , "Беременности"@ru ;
+    rdfs:comment "Total number of pregnancies for the given year and scenario"@en , "Общее количество беременностей для данного года и сценария"@ru .
