@@ -1,0 +1,96 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:InsolvencyMonitoring a rdfs:Class ;
+    rdfs:label "Insolvency monitoring"@en , "Мониторинг неплатежеспособности"@ru ;
+    rdfs:comment "Monitoring the number of individual insolvency cases by type of procedure and time period"@en , "Мониторинг количества дел об индивидуальной несостоятельности с разбивкой по типу процедуры и временному периоду"@ru .
+
+soc:Comparison a rdfs:Class ;
+    rdfs:label "Comparison"@en , "Сравнение"@ru ;
+    rdfs:comment "Change in rate per 10,000 adults, 12 months ending latest quarter  (2020 Q2) compared with a specific time period"@en , "Изменение показателя на 10 000 взрослых за 12 месяцев, закончившихся в последнем квартале (2 квартал 2020 г.), по сравнению с определенным временным периодом"@ru .
+
+# ==================== Object Properties ====================
+
+soc:hasComparison a rdf:Property ;
+    rdfs:domain soc:InsolvencyMonitoring ;
+    rdfs:range soc:Comparison ;
+    rdfs:label "Comparison"@en, "Сравнение"@ru ;
+    rdfs:comment "Comparison of insolvency over a specific time period"@en, "Сравнение неплатежеспособности по определенному временному периоду"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:year a rdf:Property ;
+    rdfs:domain soc:InsolvencyMonitoring ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en , "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en , "Календарный год наблюдения"@ru .
+
+soc:quarter a rdf:Property ;
+    rdfs:domain soc:InsolvencyMonitoring ;
+    rdfs:range xsd:string ;
+    rdfs:label "Quarter"@en , "Квартал"@ru ;
+    rdfs:comment "The quarter within the year (Q1, Q2, Q3, Q4), and null for annual records"@en , "Квартал в пределах года (Q1, Q2, Q3, Q4) и null для годовых записей"@ru .
+
+soc:totalIndividualInsolvency a rdf:Property ;
+    rdfs:domain soc:InsolvencyMonitoring ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total individual insolvencies"@en , "Полная индивидуальная неплатежеспособность"@ru ;
+    rdfs:comment "Total number of individual insolvency cases in the period"@en , "Общее количество дел о индивидуальной несостоятельности за период"@ru .
+
+soc:bankruptcy a rdf:Property ;
+    rdfs:domain soc:InsolvencyMonitoring ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Bankruptcies"@en , "Банкротство"@ru ;
+    rdfs:comment "Number of bankruptcy orders granted"@en , "Количество вынесенных приказов о банкротстве"@ru .
+
+soc:debtReliefOrder a rdf:Property ;
+    rdfs:domain soc:InsolvencyMonitoring ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Debt relief orders"@en , "Постановления об освобождении от долгов"@ru ;
+    rdfs:comment "Number of debt relief orders issued"@en , "Количество выданных приказов о списании долгов"@ru .
+
+soc:individualVoluntaryArrangement a rdf:Property ;
+    rdfs:domain soc:InsolvencyMonitoring ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Individual voluntary arrangements"@en , "Индивидуальные добровольные соглашения"@ru ;
+    rdfs:comment "Number of individual voluntary arrangements"@en , "Количество зарегистрированных индивидуальных добровольных соглашений"@ru .
+
+soc:year a rdf:Property ;
+    rdfs:domain soc:Comparison ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en , "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en , "Календарный год наблюдения"@ru .
+
+soc:quarter a rdf:Property ;
+    rdfs:domain soc:Comparison ;
+    rdfs:range xsd:string ;
+    rdfs:label "Quarter"@en , "Квартал"@ru ;
+    rdfs:comment "The quarter within the year (Q1, Q2, Q3, Q4), and null for annual records"@en , "Квартал в пределах года (Q1, Q2, Q3, Q4) и null для годовых записей"@ru .
+
+soc:totalIndividualInsolvencyRateСhange a rdf:Property ;
+    rdfs:domain soc:Comparison ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Rate change of total individual insolvencies"@en , "Изменение показателя полной индивидуальной неплатежеспособности"@ru ;
+    rdfs:comment "Rate change of total number of individual insolvency cases in the period"@en , "Изменение показателя общего числа дел о индивидуальной несостоятельности за период"@ru .
+
+soc:bankruptcyRateСhange a rdf:Property ;
+    rdfs:domain soc:Comparison ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Rate change of bankruptcies"@en , "Изменение показателя банкротства"@ru ;
+    rdfs:comment "Rate change of number of bankruptcy orders granted"@en , "Изменение показателя количества вынесенных приказов о банкротстве"@ru .
+
+soc:debtReliefOrderRateСhange a rdf:Property ;
+    rdfs:domain soc:Comparison ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Rate change of debt relief orders"@en , "Изменение показателя постановлений об освобождении от долгов"@ru ;
+    rdfs:comment "Rate change of number of debt relief orders issued"@en , "Изменение показателя количества выданных приказов о списании долгов"@ru .
+
+soc:individualVoluntaryArrangementRateСhange a rdf:Property ;
+    rdfs:domain soc:Comparison ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Rate change of individual voluntary arrangements"@en , "Изменение показателя индивидуальных добровольных соглашений"@ru ;
+    rdfs:comment "Rate change of number of individual voluntary arrangements"@en , "Изменение показателя количества зарегистрированных индивидуальных добровольных соглашений"@ru .

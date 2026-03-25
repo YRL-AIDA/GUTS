@@ -1,0 +1,84 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:BankruptcyMonitoring a rdfs:Class ;
+    rdfs:label "Bankruptcy monitoring"@en , "Мониторинг банкротства"@ru ;
+    rdfs:comment "Monitoring the number of individual bankruptcy cases stratified by petition type and time period"@en , "Мониторинг количества дел о банкротстве физических лиц с разбивкой по типу заявления и временному периоду"@ru .
+
+soc:Comparison a rdfs:Class ;
+    rdfs:label "Comparison"@en , "Сравнение"@ru ;
+    rdfs:comment "Calculate the percentage change for comparison to a specific time period"@en , "Расчёт процентного изменения для сравнения с определенным временным периодом"@ru .
+
+# ==================== Object Properties ====================
+
+soc:hasComparison a rdf:Property ;
+    rdfs:domain soc:BankruptcyMonitoring ;
+    rdfs:range soc:Comparison ;
+    rdfs:label "Comparison"@en, "Сравнение"@ru ;
+    rdfs:comment "Comparison of individual bankruptcy cases over a specific time period"@en, "Сравнение банкротств физических лиц по определенному временному периоду"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:year a rdf:Property ;
+    rdfs:domain soc:BankruptcyMonitoring ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en , "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en , "Календарный год наблюдения"@ru .
+
+soc:quarter a rdf:Property ;
+    rdfs:domain soc:BankruptcyMonitoring ;
+    rdfs:range xsd:string ;
+    rdfs:label "Quarter"@en , "Квартал"@ru ;
+    rdfs:comment "The quarter within the year (Q1, Q2, Q3, Q4), and null for annual records"@en , "Квартал в пределах года (Q1, Q2, Q3, Q4) и null для годовых записей"@ru .
+
+soc:totalBankruptcy a rdf:Property ;
+    rdfs:domain soc:BankruptcyMonitoring ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total bankruptcies"@en , "Всего банкротств"@ru ;
+    rdfs:comment "Total number of individual bankruptcy cases in the period"@en , "Общее количество дел о банкротстве физических лиц за период"@ru .
+
+soc:creditorsPetitions a rdf:Property ;
+    rdfs:domain soc:BankruptcyMonitoring ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Creditor's petitions"@en , "Заявления кредиторов"@ru ;
+    rdfs:comment "Number of bankruptcy cases initiated by creditor petitions"@en , "Количество дел о банкротстве, инициированных петициями кредиторов"@ru .
+
+soc:debtorsApplications a rdf:Property ;
+    rdfs:domain soc:BankruptcyMonitoring ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Debtor's applications"@en , "Заявления должников"@ru ;
+    rdfs:comment "Number of bankruptcy cases initiated by debtor applications"@en , "Количество дел о банкротстве, инициированных заявлениями должников"@ru .
+
+soc:year a rdf:Property ;
+    rdfs:domain soc:Comparison ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en , "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en , "Календарный год наблюдения"@ru .
+
+soc:quarter a rdf:Property ;
+    rdfs:domain soc:Comparison ;
+    rdfs:range xsd:string ;
+    rdfs:label "Quarter"@en , "Квартал"@ru ;
+    rdfs:comment "The quarter within the year (Q1, Q2, Q3, Q4), and null for annual records"@en , "Квартал в пределах года (Q1, Q2, Q3, Q4) и null для годовых записей"@ru .
+
+soc:totalBankruptcyPercentageСhange a rdf:Property ;
+    rdfs:domain soc:Comparison ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Percentage change of total bankruptcies"@en , "Процентное изменение общего количества банкротств"@ru ;
+    rdfs:comment "Percentage change of total number of individual bankruptcy cases in the period"@en , "Процентное изменение общего количества дел о банкротстве физических лиц за период"@ru .
+
+soc:creditorsPetitionPercentageСhange a rdf:Property ;
+    rdfs:domain soc:Comparison ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Percentage change of creditor's petitions"@en , "Процентное изменение заявлений кредиторов"@ru ;
+    rdfs:comment "Percentage change of number of bankruptcy cases initiated by creditor petitions"@en , "Процентное изменение количества дел о банкротстве, инициированных петициями кредиторов"@ru .
+
+soc:debtorsApplicationPercentageСhange a rdf:Property ;
+    rdfs:domain soc:Comparison ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Percentage change of debtor's applications"@en , "Процентное изменение заявлений должников"@ru ;
+    rdfs:comment "Percentage change of number of bankruptcy cases initiated by debtor applications"@en , "Процентное изменение количества дел о банкротстве, инициированных заявлениями должников"@ru .

@@ -1,0 +1,84 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:ViolencePrevalenceMonitoring a rdfs:Class ;
+    rdfs:label "Violence prevalence monitoring"@en , "Мониторинг распространенности насилия"@ru ;
+    rdfs:comment "Monitoring the prevalence of violence faced by workers, stratified by demographic/professional variables"@en , "Мониторинг распространенности насилия, с которым сталкиваются работники, с разбивкой по демографическим/профессиональным переменным"@ru .
+
+soc:DetailViolenceObservation a rdfs:Class ;
+    rdfs:label "Detail violence observation"@en , "Детальное наблюдение за насилием"@ru ;
+    rdfs:comment "Detailed observation of violence by type of employment and violence status, with statistical significance testing"@en , "Детальное наблюдение за насилием по типу занятости и статусу насилия, с тестированием статистической значимости"@ru .
+
+# ==================== Object Properties ====================
+
+soc:hasDetailViolenceObservation a rdf:Property ;
+    rdfs:domain soc:ViolencePrevalenceMonitoring ;
+    rdfs:range soc:DetailViolenceObservation ;
+    rdfs:label "Detail violence observation"@en, "Детальное наблюдение за насилием"@ru ;
+    rdfs:comment "Monitoring the prevalence of violence includes observation by type of employment and status of violence, with testing of statistical significance"@en, "Мониторинг распространенности насилия включает наблюдение по типу занятости и статусу насилия, с тестированием статистической значимости"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:number a rdf:Property ;
+    rdfs:domain soc:ViolencePrevalenceMonitoring ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number"@en , "Номер"@ru ;
+    rdfs:comment "The number of the variable under consideration"@en , "Номер рассматриваемой переменной"@ru .
+
+soc:variable a rdf:Property ;
+    rdfs:domain soc:ViolencePrevalenceMonitoring ;
+    rdfs:range xsd:string ;
+    rdfs:label "Variable"@en , "Переменная"@ru ;
+    rdfs:comment "The demographic or professional variable being analyzed"@en , "Демографическая или профессиональная переменная, подвергаемая анализу"@ru .
+
+soc:group a rdf:Property ;
+    rdfs:domain soc:ViolencePrevalenceMonitoring ;
+    rdfs:range xsd:string ;
+    rdfs:label "Group"@en , "Группа"@ru ;
+    rdfs:comment "The specific category or value within the variable"@en , "Конкретная категория или значение внутри переменной"@ru .
+
+soc:totalNumber a rdf:Property ;
+    rdfs:domain soc:ViolencePrevalenceMonitoring ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total number"@en , "Общее количество"@ru ;
+    rdfs:comment "Total number of respondents for a given variable and group"@en , "Общее количество респондентов для определенной переменной и группы"@ru .
+
+soc:pValue a rdf:Property ;
+    rdfs:domain soc:ViolencePrevalenceMonitoring ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "P-value"@en , "P-значение"@ru ;
+    rdfs:comment "The p-value from statistical testing of association between the variable and violence experience"@en , "P-значение из статистического тестирования связи между переменной и опытом насилия"@ru .
+
+soc:violenceStatus a rdf:Property ;
+    rdfs:domain soc:DetailViolenceObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Violence status"@en , "Статус насилия"@ru ;
+    rdfs:comment "Whether the respondent reported facing violence"@en , "Сообщал ли респондент о столкновении с насилием"@ru .
+
+soc:employmentType of deaths a rdf:Property ;
+    rdfs:domain soc:DetailViolenceObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Employment type"@en , "Тип занятости"@ru ;
+    rdfs:comment "The type of facility employment"@en , "Тип занятости в учреждении"@ru .
+
+soc:count a rdf:Property ;
+    rdfs:domain soc:DetailViolenceObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Count"@en , "Количество"@ru ;
+    rdfs:comment "The absolute number of respondents in this combination of variable, group, violence status, and employment type"@en , "Абсолютное количество респондентов в данной комбинации переменной, группы, статуса насилия и типа занятости"@ru .
+
+soc:percentage a rdf:Property ;
+    rdfs:domain soc:DetailViolenceObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percentage"@en , "Процент"@ru ;
+    rdfs:comment "Proportion of respondents in this group"@en , "Доля респондентов в данной группе"@ru .
+
+soc:concretePValue a rdf:Property ;
+    rdfs:domain soc:DetailViolenceObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Concrete P-value"@en , "Конкретное P-значение"@ru ;
+    rdfs:comment "The concrete p-value from statistical testing of association between the variable and violence experience"@en , "Конкретное P-значение из статистического тестирования связи между переменной и опытом насилия"@ru .
