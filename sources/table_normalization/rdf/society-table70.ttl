@@ -1,0 +1,60 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:JSASanctionSurvey a rdfs:Class ;
+    rdfs:label "JSA sanction survey"@en , "Обзор санкций JSA"@ru ;
+    rdfs:comment "A survey of JSA sanction decision level in Great Britain for a specific demographic group"@en , "Обзор уровня принятия решения по санкциям JSA в Великобритании для конкретной демографической группы"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:demographicVariable a rdf:Property ;
+    rdfs:domain soc:JSASanctionSurvey ;
+    rdfs:range xsd:string ;
+    rdfs:label "Demographic variable"@en, "Демографическая переменная"@ru ;
+    rdfs:comment "The demographic variable being measured"@en, "Демографическая переменная, подвергаемая измерению"@ru .
+
+soc:demographicGroup a rdf:Property ;
+    rdfs:domain soc:JSASanctionSurvey ;
+    rdfs:range xsd:string ;
+    rdfs:label "Demographic group"@en, "Демографическая группа"@ru ;
+    rdfs:comment "The specific category or value within the demographic variable"@en, "Конкретная категория или значение внутри демографической переменной"@ru .
+
+soc:sanctionDecisionLevel a rdf:Property ;
+    rdfs:domain soc:JSASanctionSurvey ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sanction decision level"@en , "Уровень решения о санкции"@ru ;
+    rdfs:comment "The level of the JSA sanction decision"@en , "Уровень принятия решения по санкциям JSA"@ru .
+
+soc:nonAdverseDecisions a rdf:Property ;
+    rdfs:domain soc:JSASanctionSurvey ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Non-adverse decisions"@en , "Благоприятные решения"@ru ;
+    rdfs:comment "A non-adverse decision is a decision found in favour of the claimant, i.e. a sanction or disallowance is not applied"@en , "Благоприятное решение — это решение, принятое в пользу заявителя, т.е. санкция или отказ в выплате не применяются"@ru .
+
+soc:adverseDecisions a rdf:Property ;
+    rdfs:domain soc:JSASanctionSurvey ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Adverse decisions"@en , "Неблагоприятные решения"@ru ;
+    rdfs:comment "An adverse decision is a decision found against the claimant, i.e. a sanction or disallowance is applied"@en , "Неблагоприятное решение — это решение, принятое против заявителя, т.е. санкция или отказ в выплате применяются"@ru .
+
+soc:reservedDecisions a rdf:Property ;
+    rdfs:domain soc:JSASanctionSurvey ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Reserved decisions"@en , "Отложенные решения"@ru ;
+    rdfs:comment "A reserved decision is where a sanction would be appropriate but cannot be imposed because the claimant does not have a current claim to JSA. A case would be re-referred if the claimant reclaims JSA within the period of the reserved decision."@en , "Решение, отложенное, — это решение, принятое в случае, когда санкция была бы уместна, но не может быть применена, поскольку у заявителя нет текущего заявления на пособие по безработице. Дело будет передано на повторное рассмотрение, если заявитель повторно подаст заявление на пособие по безработице в течение периода действия решения, отложенного."@ru .
+
+soc:cancelledDecisions a rdf:Property ;
+    rdfs:domain soc:JSASanctionSurvey ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Cancelled decisions"@en , "Отмененные решения"@ru ;
+    rdfs:comment "A cancelled decision can occur in specific circumstances e.g. the claimant stops claiming before they actually committed the sanctionable failure"@en , "Отмененное решение может быть принято при определенных обстоятельствах, например, истец прекращает предъявлять претензии до того, как он фактически совершил санкционируемое нарушение"@ru .
+
+soc:totalDecisions a rdf:Property ;
+    rdfs:domain soc:JSASanctionSurvey ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total decisions"@en , "Всего решений"@ru ;
+    rdfs:comment "Total number of JSA sanctions decisions"@en , "Общее количество решений о санкциях JSA"@ru .

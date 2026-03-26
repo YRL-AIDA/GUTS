@@ -1,0 +1,42 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:GVAStatistics a rdfs:Class ;
+    rdfs:label "Gross Value Added (GVA) statistics"@en , "Статистика валовой добавленной стоимости (ВДС)"@ru ;
+    rdfs:comment "Gross Value Added (GVA) statistics of a specific creative industry sector in the UK for a given year, expressed either in current prices (£ million) or as a percentage of total UK GVA"@en , "Статистика валовой добавленной стоимости (ВДС) конкретного сектора креативных индустрий Великобритании за заданный год, выраженную либо в текущих ценах (£ млн), либо как процент от общей ВДС Великобритании"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:year a rdf:Property ;
+    rdfs:domain soc:GVAStatistics ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en , "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en , "Календарный год наблюдения"@ru .
+
+soc:industrySector a rdf:Property ;
+    rdfs:domain soc:GVAStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Industry sector"@en , "Отраслевой сектор"@ru ;
+    rdfs:comment "The creative industry sector"@en , "Сектор креативных индустрий"@ru .
+
+soc:value a rdf:Property ;
+    rdfs:domain soc:GVAStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Value"@en , "Значение"@ru ;
+    rdfs:comment "GVA at current prices (£ million)"@en , "Числовое значение ВДС в текущих ценах (млн. фунтов стерлингов)"@ru .
+
+soc:percentage a rdf:Property ;
+    rdfs:domain soc:GVAStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percentage"@en , "Процент"@ru ;
+    rdfs:comment "Percentage of UK GVA"@en , "Процент от ВДС Великобритании"@ru .
+
+soc:note a rdf:Property ;
+    rdfs:domain soc:GVAStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Note"@en , "Примечание"@ru ;
+    rdfs:comment "Methodological notes about data sources"@en , "Методологические примечания об источниках данных"@ru .

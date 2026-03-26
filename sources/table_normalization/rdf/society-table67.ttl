@@ -1,0 +1,42 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:GestationPeriodObservation a rdfs:Class ;
+    rdfs:label "Gestation period observation"@en , "Наблюдение за периодом беременности"@ru ;
+    rdfs:comment "Pregnancy monitoring for a specific country and year"@en , "Наблюдение за периодом беременности для конкретной страны и года"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:timePeriod a rdf:Property ;
+    rdfs:domain soc:GestationPeriodObservation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+soc:referenceArea a rdf:Property ;
+    rdfs:domain soc:GestationPeriodObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Country"@en, "Страна"@ru ;
+    rdfs:comment "Country name"@en, "Наименование страны"@ru .
+
+soc:typeArea a rdf:Property ;
+    rdfs:domain soc:GestationPeriodObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Type of country's economy"@en, "Тип экономики страны"@ru ;
+    rdfs:comment "Economies of countries that are members of the Organisation for Economic Co-operation and Development (OECD)"@en, "Экономики стран, входящие в организацию экономического сотрудничества и развития (ОЭСР)"@ru .
+
+soc:thresholdType a rdf:Property ;
+    rdfs:domain soc:GestationPeriodObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Threshold type"@en, "Тип порогового значения"@ru ;
+    rdfs:comment "Threshold type (e.g., no minimum threshold of gestation period or birthweight or minimum threshold of 22 weeks)"@en, "Тип порогового значения (например, нет минимального порогового значения срока беременности или массы тела при рождении, либо минимального порогового значения в 22 недели)"@ru .
+
+soc:gestationPeriodThreshold a rdf:Property ;
+    rdfs:domain soc:GestationPeriodObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Gestation period threshold"@en , "Пороговое значение срока беременности"@ru ;
+    rdfs:comment "The gestational age or birthweight threshold"@en , "Порог гестационного возраста или веса при рождении"@ru .

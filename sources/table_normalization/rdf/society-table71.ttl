@@ -1,0 +1,42 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:JSAAdverseDecisionOverview a rdfs:Class ;
+    rdfs:label "JSA adverse decision overview"@en , "Обзор неблагоприятных решений JSA"@ru ;
+    rdfs:comment "An overview of adverse JSA sanction decisions in the UK for a specific demographic group, broken down by sanction decision level and sanction ordinal number"@en , "Обзор неблагоприятных решений о санкциях JSA в Великобритании для конкретной демографической группы, с разбивкой по уровню принятия решения о санкции и порядковому номеру санкции"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:demographicVariable a rdf:Property ;
+    rdfs:domain soc:JSAAdverseDecisionOverview ;
+    rdfs:range xsd:string ;
+    rdfs:label "Demographic variable"@en, "Демографическая переменная"@ru ;
+    rdfs:comment "The demographic variable being measured"@en, "Демографическая переменная, подвергаемая измерению"@ru .
+
+soc:demographicGroup a rdf:Property ;
+    rdfs:domain soc:JSAAdverseDecisionOverview ;
+    rdfs:range xsd:string ;
+    rdfs:label "Demographic group"@en, "Демографическая группа"@ru ;
+    rdfs:comment "The specific category or value within the demographic variable"@en, "Конкретная категория или значение внутри демографической переменной"@ru .
+
+soc:sanctionDecisionLevel a rdf:Property ;
+    rdfs:domain soc:JSAAdverseDecisionOverview ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sanction decision level"@en , "Уровень решения о санкции"@ru ;
+    rdfs:comment "The level of the JSA sanction decision"@en , "Уровень принятия решения по санкциям JSA"@ru .
+
+soc:sanctionOrder a rdf:Property ;
+    rdfs:domain soc:JSAAdverseDecisionOverview ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sanction order"@en , "Порядковый номер санкции"@ru ;
+    rdfs:comment "The order number of the sanction"@en , "Порядковый номер санкции"@ru .
+
+soc:count a rdf:Property ;
+    rdfs:domain soc:JSAAdverseDecisionOverview ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Count"@en , "Количество"@ru ;
+    rdfs:comment "The number of adverse sanction decisions in combination of demographic group, sanction level, and sanction order"@en , "Количество неблагоприятных решений о санкциях в комбинации демографической группы, уровня санкции и порядкового номера"@ru .

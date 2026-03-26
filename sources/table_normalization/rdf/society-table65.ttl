@@ -1,0 +1,60 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:ArtEngagementSurvey a rdfs:Class ;
+    rdfs:label "Art engagement survey"@en , "Опрос об интересе к искусству"@ru ;
+    rdfs:comment "A survey of respondents who engaged with the arts in a given time period, stratified by demographic characteristics, including margin of error and sample size"@en , "Опрос респондентов, участвовавших в культурной жизни за заданный временной период, с разбивкой по демографическим характеристикам, включая диапазон погрешности и размер выборки"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:variable a rdf:Property ;
+    rdfs:domain soc:ArtEngagementSurvey ;
+    rdfs:range xsd:string ;
+    rdfs:label "Variable"@en , "Переменная"@ru ;
+    rdfs:comment "The demographic or behavioral variable being measured"@en , "Демографическая или поведенческая переменная, подвергаемая измерению"@ru .
+
+soc:group a rdf:Property ;
+    rdfs:domain soc:ArtEngagementSurvey ;
+    rdfs:range xsd:string ;
+    rdfs:label "Group"@en , "Группа"@ru ;
+    rdfs:comment "The specific category or value within the variable"@en , "Конкретная категория или значение внутри переменной"@ru .
+
+soc:timePeriod a rdf:Property ;
+    rdfs:domain soc:ArtEngagementSurvey ;
+    rdfs:range xsd:date ;
+    rdfs:label "Time period"@en , "Временной период"@ru ;
+    rdfs:comment "The survey time period"@en , "Период проведения опроса"@ru .
+
+soc:percentage a rdf:Property ;
+    rdfs:domain soc:ArtEngagementSurvey ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percentage"@en , "Процент"@ru ;
+    rdfs:comment "The percentage of respondents in this group who exhibit the measured characteristic"@en , "Процент респондентов в данной группе, демонстрирующих измеряемую характеристику"@ru .
+
+soc:range a rdf:Property ;
+    rdfs:domain soc:ArtEngagementSurvey ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Range"@en , "Диапазон"@ru ;
+    rdfs:comment "he margin of error (±) for the percentage estimate"@en , "Диапазон погрешности (±) для оценки процента"@ru .
+
+soc:respondents a rdf:Property ;
+    rdfs:domain soc:ArtEngagementSurvey ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Respondents"@en , "Респонденты"@ru ;
+    rdfs:comment "The absolute number of survey respondents in this group and time period"@en , "Абсолютное количество респондентов опроса в данной группе и временном периоде"@ru .
+
+soc:significantChange a rdf:Property ;
+    rdfs:domain soc:ArtEngagementSurvey ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Significant change"@en , "Значительные изменения"@ru ;
+    rdfs:comment "Whether the percentage represents a statistically significant change from the baseline period (2005/06)"@en , "Является ли процент статистически значимым изменением по сравнению с базовым периодом (2005/06)"@ru .
+
+soc:dataSource a rdf:Property ;
+    rdfs:domain soc:ArtEngagementSurvey ;
+    rdfs:range xsd:string ;
+    rdfs:label "Data source"@en , "Источник данных"@ru ;
+    rdfs:comment "A data source that indicates that the data is taken from either a rolling quarterly or annual dataset"@en , "Источник данных, который указывает, что данные взяты либо из скользящего квартального, либо годового набора данных"@ru .
