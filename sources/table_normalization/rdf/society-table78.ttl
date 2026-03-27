@@ -1,0 +1,60 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:MusculoskeletalDisorderMortalityObservation a rdfs:Class ;
+    rdfs:label "Musculoskeletal disorder mortality observation"@en , "Наблюдение за смертностью от заболеваний опорно-двигательного аппарата"@ru ;
+    rdfs:comment "The pooled age-standardized musculoskeletal disorders mortality rates (95% CI) per million person-years and women to men rate ratio (95% CI), 1986-2011"@en , "Сводные стандартизированные по возрасту показатели смертности от заболеваний опорно-двигательного аппарата (95% ДИ) на миллион человеко-лет и соотношение показателей смертности среди женщин и мужчин (95% ДИ), 1986–2011 гг."@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:region a rdf:Property ;
+    rdfs:domain soc:MusculoskeletalDisorderMortalityObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region"@en , "Регион"@ru ;
+    rdfs:comment "The geographic region, country or territory"@en , "Географический регион, страна или территория"@ru .
+
+soc:sex a rdf:Property ;
+    rdfs:domain soc:MusculoskeletalDisorderMortalityObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sex"@en , "Пол"@ru ;
+    rdfs:comment "The sex category for the mortality rate"@en , "Категория пола для показателя смертности"@ru .
+
+soc:rate a rdf:Property ;
+    rdfs:domain soc:MusculoskeletalDisorderMortalityObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Rate"@en , "Смертность"@ru ;
+    rdfs:comment "Age-standardized mortality rate"@en , "Стандартизированный по возрасту показатель смертности"@ru .
+
+soc:lowerBound a rdf:Property ;
+    rdfs:domain soc:MusculoskeletalDisorderMortalityObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Lower bound"@en , "Нижняя граница"@ru ;
+    rdfs:comment "Lower bound of the confidence interval"@en , "Нижняя граница доверительного интервала для показателя смертности"@ru .
+
+soc:upperBound a rdf:Property ;
+    rdfs:domain soc:MusculoskeletalDisorderMortalityObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Upper bound"@en , "Верхняя граница"@ru ;
+    rdfs:comment "Upper bound of the confidence interval"@en , "Верхняя граница доверительного интервала для показателя смертности"@ru .
+
+soc:rateRatio a rdf:Property ;
+    rdfs:domain soc:MusculoskeletalDisorderMortalityObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Rate ratio"@en , "Отношение показателей смертности"@ru ;
+    rdfs:comment "Women to men rate ratio"@en , "Соотношение показателей смертности среди женщин и мужчин"@ru .
+
+soc:ratioLower a rdf:Property ;
+    rdfs:domain soc:MusculoskeletalDisorderMortalityObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Lower bound of ratio"@en , "Нижняя граница отношения"@ru ;
+    rdfs:comment "Lower bound of the confidence interval for the women-to-men mortality ratio"@en , "Нижняя граница доверительного интервала для отношения смертности женщин к мужчинам"@ru .
+
+soc:ratioUpper a rdf:Property ;
+    rdfs:domain soc:MusculoskeletalDisorderMortalityObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Upper bound of ratio"@en , "Верхняя граница отношения"@ru ;
+    rdfs:comment "Upper bound of the confidence interval for the women-to-men mortality ratio"@en , "Верхняя граница доверительного интервала для отношения смертности женщин к мужчинам"@ru .

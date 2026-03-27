@@ -1,0 +1,54 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:PopulationMortalityObservation a rdfs:Class ;
+    rdfs:label "Population mortality observation"@en , "Наблюдение за смертностью населения"@ru ;
+    rdfs:comment "Observation of population mortality over a certain period of time under different scenarios"@en , "Наблюдение за изменением смертности населения в определенный временной период по разным сценариям"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:region a rdf:Property ;
+    rdfs:domain soc:PopulationMortalityObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region"@en , "Регион"@ru ;
+    rdfs:comment "The geographic region, country or territory"@en , "Географический регион, страна или территория"@ru .
+
+soc:year a rdf:Property ;
+    rdfs:domain soc:PopulationMortalityObservation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en , "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en , "Календарный год наблюдения"@ru .
+
+soc:deathNumber a rdf:Property ;
+    rdfs:domain soc:PopulationMortalityObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of deaths"@en , "Число смертей"@ru ;
+    rdfs:comment "The actual number of deaths in a given year"@en , "Фактическое количество смертей за определенный год"@ru .
+
+soc:scenario a rdf:Property ;
+    rdfs:domain soc:PopulationMortalityObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Scenario"@en , "Сценарий"@ru ;
+    rdfs:comment "The scenario of population change as a result of growth, aging, or an epidemiological situation"@en , "Сценарий изменения населения в результате роста, старения или эпидемиологической обстановки"@ru .
+
+soc:expectedDeathNumber of deaths a rdf:Property ;
+    rdfs:domain soc:PopulationMortalityObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of deaths expected"@en , "Ожидаемое число смертей"@ru ;
+    rdfs:comment "The expected number of deaths according to a certain population scenario"@en , "Ожидаемое число смертей в соответствии с определенным сценарием населения"@ru .
+
+soc:percentageChange a rdf:Property ;
+    rdfs:domain soc:PopulationMortalityObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Percentage change"@en , "Процентное изменение"@ru ;
+    rdfs:comment "Percentage change in deaths as a result of a certain scenario"@en , "Процентное изменение смертей в результате определенного сценария"@ru .
+
+soc:actualChange a rdf:Property ;
+    rdfs:domain soc:PopulationMortalityObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Actual change"@en , "Фактическое изменение"@ru ;
+    rdfs:comment "Actual change in deaths"@en , "Фактическое изменение смертей"@ru .

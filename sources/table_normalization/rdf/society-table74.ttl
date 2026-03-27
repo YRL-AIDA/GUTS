@@ -1,0 +1,54 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:JSASanctionSurvey a rdfs:Class ;
+    rdfs:label "JSA sanction survey"@en , "Обзор санкций JSA"@ru ;
+    rdfs:comment "A survey of JSA sanction decision level"@en , "Обзор уровня принятия решения по санкциям JSA"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:region a rdf:Property ;
+    rdfs:domain soc:JSASanctionSurvey ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region"@en , "Регион"@ru ;
+    rdfs:comment "Name of the region or area"@en , "Название региона или области"@ru .
+
+soc:parentRegion a rdf:Property ;
+    rdfs:domain soc:JSASanctionSurvey ;
+    rdfs:range xsd:string ;
+    rdfs:label "Parent region"@en , "Родительский регион"@ru ;
+    rdfs:comment "The parent regional group for districts"@en , "Родительская региональная группа для округов"@ru .
+
+soc:nonAdverseDecisions a rdf:Property ;
+    rdfs:domain soc:JSASanctionSurvey ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Non-adverse decisions"@en , "Благоприятные решения"@ru ;
+    rdfs:comment "A non-adverse decision is a decision found in favour of the claimant, i.e. a sanction or disallowance is not applied"@en , "Благоприятное решение — это решение, принятое в пользу заявителя, т.е. санкция или отказ в выплате не применяются"@ru .
+
+soc:adverseDecisions a rdf:Property ;
+    rdfs:domain soc:JSASanctionSurvey ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Adverse decisions"@en , "Неблагоприятные решения"@ru ;
+    rdfs:comment "An adverse decision is a decision found against the claimant, i.e. a sanction or disallowance is applied"@en , "Неблагоприятное решение — это решение, принятое против заявителя, т.е. санкция или отказ в выплате применяются"@ru .
+
+soc:reservedDecisions a rdf:Property ;
+    rdfs:domain soc:JSASanctionSurvey ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Reserved decisions"@en , "Отложенные решения"@ru ;
+    rdfs:comment "A reserved decision is where a sanction would be appropriate but cannot be imposed because the claimant does not have a current claim to JSA. A case would be re-referred if the claimant reclaims JSA within the period of the reserved decision."@en , "Решение, отложенное, — это решение, принятое в случае, когда санкция была бы уместна, но не может быть применена, поскольку у заявителя нет текущего заявления на пособие по безработице. Дело будет передано на повторное рассмотрение, если заявитель повторно подаст заявление на пособие по безработице в течение периода действия решения, отложенного."@ru .
+
+soc:cancelledDecisions a rdf:Property ;
+    rdfs:domain soc:JSASanctionSurvey ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Cancelled decisions"@en , "Отмененные решения"@ru ;
+    rdfs:comment "A cancelled decision can occur in specific circumstances e.g. the claimant stops claiming before they actually committed the sanctionable failure"@en , "Отмененное решение может быть принято при определенных обстоятельствах, например, истец прекращает предъявлять претензии до того, как он фактически совершил санкционируемое нарушение"@ru .
+
+soc:totalDecisions a rdf:Property ;
+    rdfs:domain soc:JSASanctionSurvey ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total decisions"@en , "Всего решений"@ru ;
+    rdfs:comment "Total number of JSA sanctions decisions"@en , "Общее количество решений о санкциях JSA"@ru .

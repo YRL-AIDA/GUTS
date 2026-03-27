@@ -1,0 +1,64 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:AdverseSanctionDecisionOverview a rdfs:Class ;
+    rdfs:label "Adverse sanction decision overview"@en , "Обзор решений о применении неблагоприятных санкций"@ru ;
+    rdfs:comment "Overview of the rate of adverse sanction decisions"@en , "Обзор уровня неблагоприятных решений по пособию"@ru .
+
+soc:ConsolidatedAdverseSanctionDecisions a rdfs:Class ;
+    rdfs:label "Consolidated data of adverse sanction decisions"@en , "Сводные данные о решениях по неблагоприятным санкциям"@ru ;
+    rdfs:comment "All-time consolidated information of adverse sanction decisions"@en , "Общая сводная информация о решениях по неблагоприятным санкциям за все время"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:year a rdf:Property ;
+    rdfs:domain soc:AdverseSanctionDecisionOverview ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en , "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en , "Календарный год наблюдения"@ru .
+
+soc:month a rdf:Property ;
+    rdfs:domain soc:AdverseSanctionDecisionOverview ;
+    rdfs:range xsd:string ;
+    rdfs:label "Month"@en, "Месяц"@ru ;
+    rdfs:comment "Calendar month of observation"@en, "Календарный месяц наблюдения"@ru .
+
+soc:absenceNumber a rdf:Property ;
+    rdfs:domain soc:AdverseSanctionDecisionOverview ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Failure to attend mandatory interview"@en , "Неявка на обязательное собеседование"@ru ;
+    rdfs:comment "The number of non-appearances for the mandatory interview"@en , "Количество неявок на обязательное собеседование"@ru .
+
+soc:nonParticipationNumber a rdf:Property ;
+    rdfs:domain soc:AdverseSanctionDecisionOverview ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Failure to participate in work related activity"@en , "Неучастие в деятельности, связанной с работой"@ru ;
+    rdfs:comment "The number of non-participation in work-related activity"@en , "Количество неявок на мероприятие, связанное с работой"@ru .
+
+soc:total a rdf:Property ;
+    rdfs:domain soc:AdverseSanctionDecisionOverview ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total"@en , "Всего"@ru ;
+    rdfs:comment "Total number of absences"@en , "Общее количество неявок"@ru .
+
+soc:totalAbsenceNumber a rdf:Property ;
+    rdfs:domain soc:ConsolidatedAdverseSanctionDecisions ;
+    rdfs:range xsd:integer ;
+    rdfs:label "General failure to attend mandatory interview"@en , "Общая неявка на обязательное собеседование"@ru ;
+    rdfs:comment "Total number of non-appearances for the mandatory interview of all time"@en , "Количество неявок на обязательное собеседование за все время"@ru .
+
+soc:nonParticipationNumber a rdf:Property ;
+    rdfs:domain soc:ConsolidatedAdverseSanctionDecisions ;
+    rdfs:range xsd:integer ;
+    rdfs:label "General failure to participate in work related activity"@en , "Общая неучастие в деятельности, связанной с работой"@ru ;
+    rdfs:comment "Total number of non-participation in work-related activity of all time"@en , "Количество неявок на мероприятие, связанное с работой, за все время"@ru .
+
+soc:totalNumber a rdf:Property ;
+    rdfs:domain soc:ConsolidatedAdverseSanctionDecisions ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total"@en , "Всего"@ru ;
+    rdfs:comment "Total number of absences of all time"@en , "Общее количество неявок за все время"@ru .

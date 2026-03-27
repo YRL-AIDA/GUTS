@@ -1,0 +1,30 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:AdverseSanctionDecisionOverview a rdfs:Class ;
+    rdfs:label "Adverse sanction decision overview"@en , "Обзор решений о применении неблагоприятных санкций"@ru ;
+    rdfs:comment "An overview of adverse sanctions decisions for different demographic groups"@en , "Обзор неблагоприятных решений о санкциях для различных демографических групп"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:demographicVariable a rdf:Property ;
+    rdfs:domain soc:AdverseSanctionDecisionOverview ;
+    rdfs:range xsd:string ;
+    rdfs:label "Demographic variable"@en, "Демографическая переменная"@ru ;
+    rdfs:comment "The demographic variable being measured"@en, "Демографическая переменная, подвергаемая измерению"@ru .
+
+soc:demographicGroup a rdf:Property ;
+    rdfs:domain soc:AdverseSanctionDecisionOverview ;
+    rdfs:range xsd:string ;
+    rdfs:label "Demographic group"@en, "Демографическая группа"@ru ;
+    rdfs:comment "The specific category or value within the demographic variable"@en, "Конкретная категория или значение внутри демографической переменной"@ru .
+
+soc:countIndividuals a rdf:Property ;
+    rdfs:domain soc:AdverseSanctionDecisionOverview ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Count individuals"@en , "Количество лиц"@ru ;
+    rdfs:comment "All Individuals receiving an adverse sanction decision"@en , "Все лица, получившие неблагоприятное решение о применении санкций"@ru .

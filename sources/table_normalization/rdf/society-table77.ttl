@@ -1,0 +1,48 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:SanctionReview a rdfs:Class ;
+    rdfs:label "Sanction review"@en , "Пересмотр санкций"@ru ;
+    rdfs:comment "A survey of sanctions reviews in the UK"@en , "Обзор решений о пересмотре санкций в Великобритании"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:country a rdf:Property ;
+    rdfs:domain soc:SanctionReview ;
+    rdfs:range xsd:string ;
+    rdfs:label "Country"@en , "Страна"@ru ;
+    rdfs:comment "Name of the country in question"@en , "Название рассматриваемой страны"@ru .
+
+soc:decisionLevel a rdf:Property ;
+    rdfs:domain soc:SanctionReview ;
+    rdfs:range xsd:string ;
+    rdfs:label "Decision level"@en , "Уровень решения"@ru ;
+    rdfs:comment "The level of decision review"@en , "Уровень пересмотра решения"@ru .
+
+soc:outcome a rdf:Property ;
+    rdfs:domain soc:SanctionReview ;
+    rdfs:range xsd:string ;
+    rdfs:label "Outcome"@en, "Исход"@ru ;
+    rdfs:comment "The outcome of the sanction decision"@en, "Результат решения о санкциях"@ru .
+
+soc:absenceNumber a rdf:Property ;
+    rdfs:domain soc:SanctionReview ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Failure to attend mandatory interview"@en , "Неявка на обязательное собеседование"@ru ;
+    rdfs:comment "The number of non-appearances for the mandatory interview"@en , "Количество неявок на обязательное собеседование"@ru .
+
+soc:nonParticipationNumber a rdf:Property ;
+    rdfs:domain soc:SanctionReview ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Failure to participate in work related activity"@en , "Неучастие в деятельности, связанной с работой"@ru ;
+    rdfs:comment "The number of non-participation in work-related activity"@en , "Количество неявок на мероприятие, связанное с работой"@ru .
+
+soc:total a rdf:Property ;
+    rdfs:domain soc:SanctionReview ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total"@en , "Всего"@ru ;
+    rdfs:comment "Total number of absences"@en , "Общее количество неявок"@ru .

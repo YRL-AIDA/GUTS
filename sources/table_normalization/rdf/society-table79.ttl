@@ -1,0 +1,48 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:MusculoskeletalDisorderMortalityObservation a rdfs:Class ;
+    rdfs:label "Musculoskeletal disorder mortality observation"@en , "Наблюдение за смертностью от заболеваний опорно-двигательного аппарата"@ru ;
+    rdfs:comment "Temporal changes in age-standardized MSD mortality rates based on Joinpoint regression analysis 1986-2011, stratified by sex"@en , "Временные изменения стандартизированных по возрасту показателей смертности от мышечно-скелетных заболеваний на основе анализа регрессии Joinpoint за период 1986–2011 гг., с разбивкой по полу"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:region a rdf:Property ;
+    rdfs:domain soc:MusculoskeletalDisorderMortalityObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region"@en , "Регион"@ru ;
+    rdfs:comment "The geographic region, country or territory"@en , "Географический регион, страна или территория"@ru .
+
+soc:sex a rdf:Property ;
+    rdfs:domain soc:MusculoskeletalDisorderMortalityObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sex"@en , "Пол"@ru ;
+    rdfs:comment "The sex stratification"@en , "Стратификация по полу"@ru .
+
+soc:trendNumber a rdf:Property ;
+    rdfs:domain soc:MusculoskeletalDisorderMortalityObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Trend number"@en , "Номер тренда"@ru ;
+    rdfs:comment "The sequential number of the trend segment for this country/sex combination"@en , "Последовательный номер сегмента тренда для данной комбинации страна/пол"@ru .
+
+soc:years a rdf:Property ;
+    rdfs:domain soc:MusculoskeletalDisorderMortalityObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Years"@en , "Годы"@ru ;
+    rdfs:comment "Time period of trends in years"@en , "Временной промежуток трендов в годах"@ru .
+
+soc:annualPercentChange a rdf:Property ;
+    rdfs:domain soc:MusculoskeletalDisorderMortalityObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Annual percent change"@en , "Годовое процентное изменение"@ru ;
+    rdfs:comment "The average yearly percentage change in age-standardized mortality rate during this trend segment"@en , "Среднее годовое процентное изменение стандартизированного по возрасту показателя смертности в течение данного сегмента тренда"@ru .
+
+soc:significant a rdf:Property ;
+    rdfs:domain soc:MusculoskeletalDisorderMortalityObservation ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Significant"@en , "Значимый"@ru ;
+    rdfs:comment "Annual percent change is statistically significantly different from zero (P < 0,05)"@en , "Ежегодное процентное изменение статистически значимо отличается от нуля (P < 0,05)"@ru .
