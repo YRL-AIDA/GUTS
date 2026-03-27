@@ -15,19 +15,13 @@ soc:region a rdf:Property ;
     rdfs:domain soc:MusculoskeletalDisorderMortalityObservation ;
     rdfs:range xsd:string ;
     rdfs:label "Region"@en , "Регион"@ru ;
-    rdfs:comment "The geographic region grouping countries"@en , "Географический регион, группирующий страны"@ru .
-
-soc:country a rdf:Property ;
-    rdfs:domain soc:MusculoskeletalDisorderMortalityObservation ;
-    rdfs:range xsd:string ;
-    rdfs:label "Country"@en , "Страна"@ru ;
-    rdfs:comment "The specific country or territory"@en , "Конкретная страна или территория"@ru .
+    rdfs:comment "The geographic region, country or territory"@en , "Географический регион, страна или территория"@ru .
 
 soc:sex a rdf:Property ;
     rdfs:domain soc:MusculoskeletalDisorderMortalityObservation ;
     rdfs:range xsd:string ;
     rdfs:label "Sex"@en , "Пол"@ru ;
-    rdfs:comment "Sex"@en , "Пол"@ru .
+    rdfs:comment "The sex category for the mortality rate"@en , "Категория пола для показателя смертности"@ru .
 
 soc:rate a rdf:Property ;
     rdfs:domain soc:MusculoskeletalDisorderMortalityObservation ;
