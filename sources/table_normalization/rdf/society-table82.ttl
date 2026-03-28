@@ -1,0 +1,36 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:MusicAlbum a rdfs:Class ;
+    rdfs:label "Music album"@en , "Музыкальный альбом"@ru ;
+    rdfs:comment "A music album by a specific artist with a grouping prefix and a numeric DVD attribute that is consistent per artist"@en , "Музыкальный альбом конкретного исполнителя с префиксом группировки и числовым атрибутом DVD, консистентным в рамках исполнителя"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:artistPrefix a rdf:Property ;
+    rdfs:domain soc:MusicAlbum ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Artist prefix"@en , "Префикс исполнител"@ru ;
+    rdfs:comment "A numeric grouping code for artists"@en , "Числовой код группировки исполнителей"@ru .
+
+soc:artist a rdf:Property ;
+    rdfs:domain soc:MusicAlbum ;
+    rdfs:range xsd:string ;
+    rdfs:label "Artist"@en , "Исполнитель"@ru ;
+    rdfs:comment "The name of the musical artist or band"@en , "Имя музыкального исполнителя или группы"@ru .
+
+soc:album a rdf:Property ;
+    rdfs:domain soc:MusicAlbum ;
+    rdfs:range xsd:string ;
+    rdfs:label "Album"@en , "Альбом"@ru ;
+    rdfs:comment "The title of the music album"@en , "Название музыкального альбома"@ru .
+
+soc:dvd a rdf:Property ;
+    rdfs:domain soc:MusicAlbum ;
+    rdfs:range xsd:integer ;
+    rdfs:label "DVD"@en , "DVD"@ru ;
+    rdfs:comment "A numeric value consistent for all albums by the same artist"@en , "Числовое значение, консистентное для всех альбомов одного исполнителя"@ru .

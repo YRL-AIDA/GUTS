@@ -1,0 +1,36 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:EntryClearanceVisa a rdfs:Class ;
+    rdfs:label "Entry clearance visa"@en , "Въездная виза"@ru ;
+    rdfs:comment "Statistics on issued entry visas, including specific visa categories and subcategories, for the period 2005–2014"@en , "Статистика по выданным въездным визам включающая конкретные категории и подкатегории визы за период 2005–2014 гг."@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:visaCategory a rdf:Property ;
+    rdfs:domain soc:EntryClearanceVisa ;
+    rdfs:range xsd:string ;
+    rdfs:label "Visa category"@en , "Категория визы"@ru ;
+    rdfs:comment "The high-level category of the entry clearance visa"@en , "Высокоуровневая категория въездной визы"@ru .
+
+soc:visaSubcategory a rdf:Property ;
+    rdfs:domain soc:EntryClearanceVisa ;
+    rdfs:range xsd:string ;
+    rdfs:label "Visa subcategory"@en , "Подкатегория визы"@ru ;
+    rdfs:comment "The specific subcategory within the visa category"@en , "онкретная подкатегория внутри категории визы"@ru .
+
+soc:year a rdf:Property ;
+    rdfs:domain soc:EntryClearanceVisa ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en , "Год"@ru ;
+    rdfs:comment "The calendar year for which the visa count is reported"@en , "Календарный год, за который сообщается количество виз"@ru .
+
+soc:visaCount a rdf:Property ;
+    rdfs:domain soc:EntryClearanceVisa ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Visa count"@en , "Количество виз"@ru ;
+    rdfs:comment "The number of entry clearance visas granted for this category"@en , "Количество выданных въездных виз для данной категории"@ru .

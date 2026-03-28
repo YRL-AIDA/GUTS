@@ -1,0 +1,36 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:NonFireIncident a rdfs:Class ;
+    rdfs:label "Non fire incident"@en , "Инцидент, не связанный с пожаром"@ru ;
+    rdfs:comment "Non-fire incident statistics attended by fire and rescue services in England for a specific incident type and time period"@en , "Статистика о не-пожарных инцидентах, на которые реагировали пожарно-спасательные службы в Англии, для конкретного типа инцидента и временного периода"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:incidentCategory a rdf:Property ;
+    rdfs:domain soc:NonFireIncident ;
+    rdfs:range xsd:string ;
+    rdfs:label "Incident category"@en , "Категория инцидента"@ru ;
+    rdfs:comment "The high-level category of the non-fire incident"@en , "Высокоуровневая категория не-пожарного инцидента"@ru .
+
+soc:incidentName a rdf:Property ;
+    rdfs:domain soc:NonFireIncident ;
+    rdfs:range xsd:string ;
+    rdfs:label "Incident name"@en , "Название инцидента"@ru ;
+    rdfs:comment "The specific name of non-fire incident within the category"@en , "Название не-пожарного инцидента внутри категории"@ru .
+
+soc:timePeriod a rdf:Property ;
+    rdfs:domain soc:NonFireIncident ;
+    rdfs:range xsd:date ;
+    rdfs:label "Time period"@en , "Временной период"@ru ;
+    rdfs:comment "The time period for which the incident count is reported"@en , "Временной период, за который сообщается количество инцидентов"@ru .
+
+soc:incidentNumber a rdf:Property ;
+    rdfs:domain soc:NonFireIncident ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Incident number"@en , "Количество инцидентов"@ru ;
+    rdfs:comment "The number of non-fire incidents of this type in this time period"@en , "Количество не-пожарных инцидентов данного типа в данном временном периоде"@ru .

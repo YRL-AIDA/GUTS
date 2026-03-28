@@ -1,0 +1,42 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:TravelStatistics a rdfs:Class ;
+    rdfs:label "Travel statistics"@en , "Статистика поездок"@ru ;
+    rdfs:comment "Travel statistics for a specific geographic entity, purpose category, travel mode, and metric type, for the year 2023"@en , "Статистика выездных поездок для конкретной географической единицы, категории цели, вида транспорта и типа метрики, за 2023 год"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:visitRegion a rdf:Property ;
+    rdfs:domain soc:TravelStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region of visit"@en , "Регион посещения"@ru ;
+    rdfs:comment "Name of the region for which travel statistics are collected"@en , "Название региона для которой собирается статистика поездок"@ru .
+
+soc:visitPurpose a rdf:Property ;
+    rdfs:domain soc:TravelStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Purpose of visit"@en , "Цель визита"@ru ;
+    rdfs:comment "Category of travel purpose"@en , "Категория цели поездки"@ru .
+
+soc:travelMode a rdf:Property ;
+    rdfs:domain soc:TravelStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Travel mode"@en , "Вид транспорта"@ru ;
+    rdfs:comment "The mode of travel"@en , "Вид транспорта"@ru .
+
+soc:visits a rdf:Property ;
+    rdfs:domain soc:TravelStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Visits"@en , "Визиты"@ru ;
+    rdfs:comment "Number of visits"@en , "Количество поездок"@ru .
+
+soc:spending a rdf:Property ;
+    rdfs:domain soc:TravelStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Spending"@en , "Расходы"@ru ;
+    rdfs:comment "Expenditure in GBP millions"@en , "Расходы в миллионах фунтов стерлингов"@ru .

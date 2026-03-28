@@ -1,0 +1,82 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:GeneralWorkVisaStatistics a rdfs:Class ;
+    rdfs:label "General statistics on work visas"@en , "Общая статистика рабочих виз"@ru ;
+    rdfs:comment ""@en , ""@ru .
+
+soc:IssuedVisaStatistics a rdfs:Class ;
+    rdfs:label "Statistics of issued visas"@en , "Статистика выданных виз"@ru ;
+    rdfs:comment "Out of country visas to the United Kingdom issued and in country extensions of stay by work categories, year ending September 2011"@en , "Выданные визы в Великобританию для выезда за границу и продление пребывания внутри страны по категориям трудоустройства, за год, заканчивающийся в сентябре 2011 года"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:category a rdf:Property ;
+    rdfs:domain soc:GeneralWorkVisaStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en , "Категория"@ru ;
+    rdfs:comment "Visa category"@en , "Категория визы"@ru .
+
+soc:dataContext a rdf:Property ;
+    rdfs:domain soc:GeneralWorkVisaStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Data context"@en , "Контекст данных"@ru ;
+    rdfs:comment "The context of visa issuance"@en , "Контекст выдачи визы"@ru .
+
+soc:mainApplicant a rdf:Property ;
+    rdfs:domain soc:GeneralWorkVisaStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Main applicant"@en , "Основной заявитель"@ru ;
+    rdfs:comment "Number of visas issued for main applicants"@en , "Количество выданных виз для основных заявителей"@ru .
+
+soc:dependants a rdf:Property ;
+    rdfs:domain soc:GeneralWorkVisaStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Dependants"@en , "Члены семьи"@ru ;
+    rdfs:comment "Number of visas issued for dependants"@en , "Количество выданных виз для членов семьи"@ru .
+
+soc:totalNumber a rdf:Property ;
+    rdfs:domain soc:GeneralWorkVisaStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total number"@en , "Общее количество"@ru ;
+    rdfs:comment "Total number of visas issued for this category"@en , "Общее количество выданных виз для данной категории"@ru .
+
+soc:category a rdf:Property ;
+    rdfs:domain soc:IssuedVisaStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en , "Категория"@ru ;
+    rdfs:comment "Work visa category"@en , "Категория рабочих виз"@ru .
+
+soc:subCategory a rdf:Property ;
+    rdfs:domain soc:IssuedVisaStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "subcategory"@en , "Подкатегория"@ru ;
+    rdfs:comment "The specific subcategory within the visa category"@en , "Конкретная подкатегория внутри категории визы"@ru .
+
+soc:dataContext a rdf:Property ;
+    rdfs:domain soc:IssuedVisaStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Data context"@en , "Контекст данных"@ru ;
+    rdfs:comment "The context of visa issuance"@en , "Контекст выдачи визы"@ru .
+
+soc:mainApplicant a rdf:Property ;
+    rdfs:domain soc:IssuedVisaStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Main applicant"@en , "Основной заявитель"@ru ;
+    rdfs:comment "Number of visas issued for main applicants"@en , "Количество выданных виз для основных заявителей"@ru .
+
+soc:dependants a rdf:Property ;
+    rdfs:domain soc:IssuedVisaStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Dependants"@en , "Члены семьи"@ru ;
+    rdfs:comment "Number of visas issued for dependants"@en , "Количество выданных виз для членов семьи"@ru .
+
+soc:totalNumber a rdf:Property ;
+    rdfs:domain soc:IssuedVisaStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total number"@en , "Общее количество"@ru ;
+    rdfs:comment "Total number of visas issued for this category"@en , "Общее количество выданных виз для данной категории"@ru .
