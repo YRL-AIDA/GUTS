@@ -1,0 +1,58 @@
+@prefix hl: <http://example.org/health#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+hl:HIVSurveyResponse a rdfs:Class ;
+    rdfs:label "HIV survey response"@en, "Ответы на опрос по ВИЧ"@ru ;
+    rdfs:comment "Answering HIV questions during home self-testing"@en, "Ответ на вопросы о ВИЧ при домашнем самотестировании"@ru .
+
+hl:SurveyResponseAggregation a rdfs:Class ;
+    rdfs:label "Survey response aggregation"@en, "Агрегация ответов на опрос"@ru ;
+    rdfs:comment "Aggregation of all survey responses for each respondent across different categories"@en, "Агрегация всех ответов на опрос для каждого респондента по разным категориям"@ru .
+
+# ==================== Datatype Properties ====================
+
+hl:respondentID a rdf:Property ;
+    rdfs:domain hl:HIVSurveyResponse ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Respondent ID"@en, "Идентификатор респондента"@ru ;
+    rdfs:comment "A sequential identifier assigned to each row in the source table, uniquely identifying a survey participant"@en, "Последовательный идентификатор, присвоенный каждой строке исходной таблицы, уникально идентифицирующий участника опроса"@ru .
+
+hl:construct a rdf:Property ;
+    rdfs:domain hl:HIVSurveyResponse ;
+    rdfs:range xsd:string ;
+    rdfs:label "Construct"@en, "Конструкт"@ru ;
+    rdfs:comment "The psychological or demographic construct measured by the item"@en, "Психологический или демографический конструкт, измеряемый вопросом"@ru .
+
+hl:questionCode a rdf:Property ;
+    rdfs:domain hl:HIVSurveyResponse ;
+    rdfs:range xsd:string ;
+    rdfs:label "Question code"@en, "Код вопроса"@ru ;
+    rdfs:comment "The unique alphanumeric code of the survey question"@en, "Уникальный буквенно-цифровой код вопроса опроса"@ru .
+
+hl:response a rdf:Property ;
+    rdfs:domain hl:HIVSurveyResponse ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Response"@en, "Ответ"@ru ;
+    rdfs:comment "The respondent's answer (integer from 1 to 5 for all questions)"@en, "Ответ респондента (целое число от 1 до 5 для всех вопросов)"@ru .
+
+hl:respondentID a rdf:Property ;
+    rdfs:domain hl:SurveyResponseAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Respondent ID"@en, "Идентификатор респондента"@ru ;
+    rdfs:comment "A sequential identifier assigned to each row in the source table, uniquely identifying a survey participant"@en, "Последовательный идентификатор, присвоенный каждой строке исходной таблицы, уникально идентифицирующий участника опроса"@ru .
+
+hl:construct a rdf:Property ;
+    rdfs:domain hl:SurveyResponseAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Construct"@en, "Конструкт"@ru ;
+    rdfs:comment "The psychological or demographic construct measured by the item"@en, "Психологический или демографический конструкт, измеряемый вопросом"@ru .
+
+hl:mean a rdf:Property ;
+    rdfs:domain hl:SurveyResponseAggregation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Mean"@en, "Среднее значение"@ru ;
+    rdfs:comment "The average value for all questions in the survey on this construct"@en, "Среднее значение на все вопросы в опросе по данному конструкту"@ru .
