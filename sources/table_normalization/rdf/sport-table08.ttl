@@ -1,0 +1,48 @@
+@prefix sp: <http://example.org/sport#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+sp:TeamStatistics a rdfs:Class ;
+    rdfs:label "Team statistics"@en , "Статистика команд"@ru ;
+    rdfs:comment "Football team statistics in the Portuguese league disaggregated by venue type (home/away/total)"@en , "Статистика футбольных команд португальской лиги с разбивкой по типу площадки (дома/в гостях/общий итог)"@ru .
+
+# ==================== Datatype Properties ====================
+
+sp:teamName a rdf:Property ;
+    rdfs:domain sp:TeamStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Team name"@en , "Название команды"@ru ;
+    rdfs:comment "The name of the football team"@en , "Название футбольной команды"@ru .
+
+sp:ranking a rdf:Property ;
+    rdfs:domain sp:TeamStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Ranking"@en , "Ранг"@ru ;
+    rdfs:comment "The league ranking position of the team"@en , "Позиция команды в турнирной таблице"@ru .
+
+sp:points a rdf:Property ;
+    rdfs:domain sp:TeamStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Points"@en , "Очки"@ru ;
+    rdfs:comment "Number of points earned by the team"@en , "Количество заработанных очков командой"@ru .
+
+sp:venueType a rdf:Property ;
+    rdfs:domain sp:TeamStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Venue type"@en , "Тип площадки"@ru ;
+    rdfs:comment "The venue context for the statistic"@en , "Контекст площадки для статистики"@ru .
+
+sp:metricName a rdf:Property ;
+    rdfs:domain sp:TeamStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Metric name"@en , "Название метрики"@ru ;
+    rdfs:comment "The name of the statistical metric"@en , "Название статистической метрики"@ru .
+
+sp:metricValue a rdf:Property ;
+    rdfs:domain sp:TeamStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Metric value"@en , "Значение метрики"@ru ;
+    rdfs:comment "The numeric value of the statistic"@en , "Числовое значение метрики"@ru .

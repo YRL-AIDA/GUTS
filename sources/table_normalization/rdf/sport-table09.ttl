@@ -1,0 +1,60 @@
+@prefix sp: <http://example.org/sport#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+sp:MatchStatistics a rdfs:Class ;
+    rdfs:label "Match statistics"@en , "Статистика матчей"@ru ;
+    rdfs:comment "Football match statistics from international leagues, including match datetime, teams, and their league positions at time of fixture"@en , "Статистика футбольных матчей из международных лиг, включая дату и время матча, команды и их позиции в лиге на момент проведения матча"@ru .
+
+# ==================== Datatype Properties ====================
+
+sp:country a rdf:Property ;
+    rdfs:domain sp:MatchStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Country"@en , "Страна"@ru ;
+    rdfs:comment "The country where the league is based"@en , "Страна, в которой базируется лига"@ru .
+
+sp:league a rdf:Property ;
+    rdfs:domain sp:MatchStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "League"@en , "Лига"@ru ;
+    rdfs:comment "The name of the football league"@en , "Название футбольной лиги"@ru .
+
+sp:gameTime a rdf:Property ;
+    rdfs:domain sp:MatchStatistics ;
+    rdfs:range xsd:time ;
+    rdfs:label "Game time"@en , "Время игры"@ru ;
+    rdfs:comment "The scheduled kick-off time of the match in 24-hour format"@en , "Запланированное время начала матча в 24-часовом формате"@ru .
+
+sp:gameDate a rdf:Property ;
+    rdfs:domain sp:MatchStatistics ;
+    rdfs:range xsd:date ;
+    rdfs:label "Game date"@en , "Дата игры"@ru ;
+    rdfs:comment "The date when the match was played"@en , "Дата проведения матча"@ru .
+
+sp:homeTeam a rdf:Property ;
+    rdfs:domain sp:MatchStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Home team"@en , "Команда хозяев"@ru ;
+    rdfs:comment "The name of the team playing at home"@en , "Название команды, играющей дома"@ru .
+
+sp:homeLeaguePosition a rdf:Property ;
+    rdfs:domain sp:MatchStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Home league position"@en , "Позиция хозяев в лиге"@ru ;
+    rdfs:comment "The league position of the home team at the time of the fixture"@en , "Позиция команды хозяев в турнирной таблице на момент матча"@ru .
+
+sp:awayTeam a rdf:Property ;
+    rdfs:domain sp:MatchStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Away team"@en , "Команда гостей"@ru ;
+    rdfs:comment "The name of the team playing away"@en , "Название команды, играющей в гостях"@ru .
+
+sp:awayLeaguePosition a rdf:Property ;
+    rdfs:domain sp:MatchStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Away league position"@en , "Позиция гостей в лиге"@ru ;
+    rdfs:comment "The league position of the away team at the time of the fixture"@en , "Позиция команды гостей в турнирной таблице на момент матча"@ru .

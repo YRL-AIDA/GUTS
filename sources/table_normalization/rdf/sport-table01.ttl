@@ -1,0 +1,58 @@
+@prefix sp: <http://example.org/sport#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+sp:TeamStatistics a rdfs:Class ;
+    rdfs:label "Team statistics"@en , "Статистика команд"@ru ;
+    rdfs:comment "German Bundesliga football team statistics by venue type (overall/home/away)"@en , "Статистика футбольных команд немецкой Бундеслиги с разбивкой по типу площадки (общий итог/дома/в гостях)"@ru .
+
+sp:Explanation a rdfs:Class ;
+    rdfs:label "Explanation"@en , "Объяснение"@ru ;
+    rdfs:comment "Explanation of short names of metrics"@en , "Расшифровка коротких названий метрик"@ru .
+
+# ==================== Datatype Properties ====================
+
+sp:team a rdf:Property ;
+    rdfs:domain sp:TeamStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Team"@en , "Команда"@ru ;
+    rdfs:comment "The name of the football team"@en , "Название футбольной команды"@ru .
+
+sp:ranking a rdf:Property ;
+    rdfs:domain sp:TeamStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Ranking"@en , "Ранг"@ru ;
+    rdfs:comment "The league ranking position of the team"@en , "Позиция команды в турнирной таблице"@ru .
+
+sp:venueType a rdf:Property ;
+    rdfs:domain sp:TeamStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Venue type"@en , "Тип площадки"@ru ;
+    rdfs:comment "The venue context for the statistic"@en , "Контекст площадки для статистики"@ru .
+
+sp:shortMetricName a rdf:Property ;
+    rdfs:domain sp:TeamStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Short name of the metric"@en , "Короткое название метрики"@ru ;
+    rdfs:comment "The short name of the statistical metric"@en , "Короткое название статистической метрики"@ru .
+
+sp:value a rdf:Property ;
+    rdfs:domain sp:TeamStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Value"@en , "Значение"@ru ;
+    rdfs:comment "The numeric value of the statistic"@en , "Числовое значение метрики"@ru .
+
+sp:shortName a rdf:Property ;
+    rdfs:domain sp:Explanation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Short name"@en , "Короткое название"@ru ;
+    rdfs:comment "Short name of statistical metric"@en , "Короткое название статистической метрики"@ru .
+
+sp:fullName a rdf:Property ;
+    rdfs:domain sp:Explanation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Full name"@en , "Полное название"@ru ;
+    rdfs:comment "The full name of the statistical metric"@en , "Полное название статистической метрики"@ru .

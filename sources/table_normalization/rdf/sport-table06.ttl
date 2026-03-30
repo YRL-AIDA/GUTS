@@ -1,0 +1,60 @@
+@prefix sp: <http://example.org/sport#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+sp:MatchScorePrediction a rdfs:Class ;
+    rdfs:label "Match score prediction"@en , "Прогноз счёта матча"@ru ;
+    rdfs:comment "Statistics of predicted and actual results of football matches in the group stage of the tournament"@en , "Статистика прогнозируемых и фактических результатов футбольных матчей на групповом этапе турнира"@ru .
+
+# ==================== Datatype Properties ====================
+
+sp:matchNumber a rdf:Property ;
+    rdfs:domain sp:MatchScorePrediction ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Match number"@en , "Номер матча"@ru ;
+    rdfs:comment "The sequential number of the match within the tournament group stage"@en , "Порядковый номер матча в рамках группового этапа турнира"@ru .
+
+sp:homeTeam a rdf:Property ;
+    rdfs:domain sp:MatchScorePrediction ;
+    rdfs:range xsd:string ;
+    rdfs:label "Home team"@en , "Команда хозяев"@ru ;
+    rdfs:comment "The name of the team playing at home"@en , "Название команды, играющей дома"@ru .
+
+sp:awayTeam a rdf:Property ;
+    rdfs:domain sp:MatchScorePrediction ;
+    rdfs:range xsd:string ;
+    rdfs:label "Away team"@en , "Команда гостей"@ru ;
+    rdfs:comment "The name of the team playing away"@en , "Название команды, играющей в гостях"@ru .
+
+sp:homeGoals a rdf:Property ;
+    rdfs:domain sp:MatchScorePrediction ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Home goals"@en , "Голы хозяев"@ru ;
+    rdfs:comment "Number of home goals in the group stage"@en , "Количество голов, забитых командой хозяев на групповом этапе"@ru .
+
+sp:awayGoals a rdf:Property ;
+    rdfs:domain sp:MatchScorePrediction ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Away goals"@en , "Голы гостей"@ru ;
+    rdfs:comment "Number of away goals in the group stage"@en , "Количество голов, забитых командой гостей на групповом этапе"@ru .
+
+sp:winner a rdf:Property ;
+    rdfs:domain sp:MatchScorePrediction ;
+    rdfs:range xsd:string ;
+    rdfs:label "Winner"@en , "Победитель"@ru ;
+    rdfs:comment "The predicted winner of the match"@en , "Прогнозируемый победитель матча"@ru .
+
+sp:actualHomeGoals a rdf:Property ;
+    rdfs:domain sp:MatchScorePrediction ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Actual home goals"@en , "Фактические голы хозяев"@ru ;
+    rdfs:comment "Actual results of home goals"@en , "Фактические результаты голов, забитых командой хозяев"@ru .
+
+sp:actualAwayGoals a rdf:Property ;
+    rdfs:domain sp:MatchScorePrediction ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Actual away goals"@en , "Фактические голы гостей"@ru ;
+    rdfs:comment "Actual results of away goals"@en , "Фактические результаты голов, забитых командой гостей"@ru .
