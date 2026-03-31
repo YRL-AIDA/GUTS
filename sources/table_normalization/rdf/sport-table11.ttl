@@ -1,0 +1,100 @@
+@prefix sp: <http://example.org/sport#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+sp:Tournament a rdfs:Class ;
+    rdfs:label "Tournament"@en , "Турнир"@ru ;
+    rdfs:comment "Detailed information about the sports tournament, including the total number of participants and the prize money for each place"@en , "Подробная информация о спортивном турнире, включая общее количество участников и суммы призовых за каждое место"@ru .
+
+sp:TournamentResult a rdfs:Class ;
+    rdfs:label "Tournament result"@en , "Результаты турнира"@ru ;
+    rdfs:comment "Results of participants in a sports tournament, including overall positions and points earned"@en , "Результаты участников на спортивном турнире, включая общие позиции и заработанные очки"@ru .
+
+sp:StageTournamentResult a rdfs:Class ;
+    rdfs:label "Stage tournament result"@en , "Результаты этапа турнира"@ru ;
+    rdfs:comment "A participant's performance at a specific stage of a sports tournament at a specific time"@en , "Результат участника на конкретном этапе спортивного турнира в определенное время"@ru .
+
+# ==================== Object Properties ====================
+
+sp:hasTournamentResult a rdf:Property ;
+    rdfs:domain sp:Tournament ;
+    rdfs:range sp:TournamentResult ;
+    rdfs:label "Tournament result"@en, "Результаты турнира"@ru ;
+    rdfs:comment "Results of the sports tournament"@en, "Результаты спортивного турнира"@ru .
+
+sp:hasStageTournamentResult a rdf:Property ;
+    rdfs:domain sp:TournamentResult ;
+    rdfs:range sp:StageTournamentResult ;
+    rdfs:label "Stage tournament result"@en, "Результаты этапа турнира"@ru ;
+    rdfs:comment "The results of participants in a sports tournament are based on the results obtained at a specific stage"@en, "Результаты участников на спортивном турнире складываются из результатов, полученных на конкретном этапе"@ru .
+
+# ==================== Datatype Properties ====================
+
+sp:entrantNumber a rdf:Property ;
+    rdfs:domain sp:Tournament ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of entrants"@en , "Количество участников"@ru ;
+    rdfs:comment "Total number of participants in the sports tournament"@en , "Общее количество участников спортивного турнира"@ru .
+
+sp:prizePlaceName a rdf:Property ;
+    rdfs:domain sp:Tournament ;
+    rdfs:range xsd:string ;
+    rdfs:label "Prize place name"@en , "Название призового места"@ru ;
+    rdfs:comment "The name of the prize place that this sports tournament implies"@en , "Название призового места, которое подразумевает данный спортивный турнир"@ru .
+
+sp:prizeMoney a rdf:Property ;
+    rdfs:domain sp:Tournament ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Prize money"@en , "Призовые деньги"@ru ;
+    rdfs:comment "The total amount of prize money allocated for a particular place"@en , "Общая сумма призовых денег, выделенная за определенное место"@ru .
+
+sp:participantName a rdf:Property ;
+    rdfs:domain sp:TournamentResult ;
+    rdfs:range xsd:string ;
+    rdfs:label "Participant name"@en , "Имя участника"@ru ;
+    rdfs:comment "The name of the tournament participant"@en , "Имя участника турнира"@ru .
+
+sp:place a rdf:Property ;
+    rdfs:domain sp:TournamentResult ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Place"@en , "Место"@ru ;
+    rdfs:comment "The final ranking position of the participant in the overall tournament standings"@en , "Финальная позиция участника в общей турнирной таблице"@ru .
+
+sp:points a rdf:Property ;
+    rdfs:domain sp:TournamentResult ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Points"@en , "Очки"@ru ;
+    rdfs:comment "The cumulative points earned by the participant across all events of the tournament"@en , "Накопленные очки участника по всем этапам турнира"@ru .
+
+sp:earnt a rdf:Property ;
+    rdfs:domain sp:TournamentResult ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Earnt"@en , "Заработок"@ru ;
+    rdfs:comment "The total prize money earned by the participant in British pounds sterling (GBP)"@en , "Общая сумма призовых, заработанных участником, в фунтах стерлингов"@ru .
+
+sp:played a rdf:Property ;
+    rdfs:domain sp:TournamentResult ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Stages played"@en , "Сыграно этапов"@ru ;
+    rdfs:comment "Number of tournament stages in which the participant competed"@en , "Количество этапов турнира, в которых участвовал участник"@ru .
+
+sp:stageDate a rdf:Property ;
+    rdfs:domain sp:StageTournamentResult ;
+    rdfs:range xsd:date ;
+    rdfs:label "Stage date"@en , "Дата этапа"@ru ;
+    rdfs:comment "The date of the specific tournament stage"@en , "Дата конкретного этапа турнира"@ru .
+
+sp:place a rdf:Property ;
+    rdfs:domain sp:StageTournamentResult ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Place"@en , "Место"@ru ;
+    rdfs:comment "The participant's finishing position in this specific stage"@en , "Позиция финиша участника в данном конкретном этапе"@ru .
+
+sp:points a rdf:Property ;
+    rdfs:domain sp:StageTournamentResult ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Points"@en , "Очки"@ru ;
+    rdfs:comment "The points earned by the participant in this specific stage"@en , "Очки, заработанные участником в данном конкретном этапе"@ru .

@@ -1,0 +1,58 @@
+@prefix sp: <http://example.org/sport#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+sp:SportResult a rdfs:Class ;
+    rdfs:label "Sport result"@en , "Спортивный результат"@ru ;
+    rdfs:comment "Results for a specific sport in a specific region"@en , "Результаты для конкретного вида спорта в определенном регионе"@ru .
+
+sp:ResultAggregation a rdfs:Class ;
+    rdfs:label "Result aggregation"@en , "Агрегация результатов"@ru ;
+    rdfs:comment "Aggregation of results for all sports by region"@en , "Агрегация результатов для всех видов спорта по регионам"@ru .
+
+# ==================== Datatype Properties ====================
+
+sp:region a rdf:Property ;
+    rdfs:domain sp:SportResult ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region"@en , "Регион"@ru ;
+    rdfs:comment "The geographic region where the athletic results were obtained"@en , "Географический регион, где получены спортивные результаты"@ru .
+
+sp:sport a rdf:Property ;
+    rdfs:domain sp:SportResult ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sport"@en , "Вид спорта"@ru ;
+    rdfs:comment "The sport category"@en , "Категория вида спорта"@ru .
+
+sp:score a rdf:Property ;
+    rdfs:domain sp:SportResult ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Score"@en , "Оценка"@ru ;
+    rdfs:comment "Rating for this sport in this region"@en , "Оценка для данного вида спорта в данном регионе"@ru .
+
+sp:option a rdf:Property ;
+    rdfs:domain sp:SportResult ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Option"@en , "Вариант"@ru ;
+    rdfs:comment "Number of options for a given sport in a given region"@en , "Количество вариантов для данного вида спорта в данном регионе"@ru .
+
+sp:region a rdf:Property ;
+    rdfs:domain sp:ResultAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region"@en , "Регион"@ru ;
+    rdfs:comment "The geographic region where the athletic results were obtained"@en , "Географический регион, где получены спортивные результаты"@ru .
+
+sp:totalScore a rdf:Property ;
+    rdfs:domain sp:ResultAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total score"@en , "Общая оценка"@ru ;
+    rdfs:comment "Overall rating for all sports in a given region"@en , "Общая оценка для всех видов спорта в данном регионе"@ru .
+
+sp:totalOption a rdf:Property ;
+    rdfs:domain sp:ResultAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total option"@en , "Общее количество вариантов"@ru ;
+    rdfs:comment "Total number of options for all sports in a given region"@en , "Общее количество вариантов для всех видов спорта в данном регионе"@ru .
