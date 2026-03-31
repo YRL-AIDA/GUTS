@@ -1,0 +1,54 @@
+@prefix ts: <http://example.org/transport#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+ts:AccessibilityServiceStatistics a rdfs:Class ;
+    rdfs:label "Accessibility service statistics"@en , "Статистика доступности услуг"@ru ;
+    rdfs:comment "User statistics with reasonable access to key services by mode of travel, England, 2007 to 2013"@en , "Статистика пользователей с ограниченными возможностями доступа к основным услугам в зависимости от вида транспорта, Англия, 2007–2013 гг."@ru .
+
+# ==================== Datatype Properties ====================
+
+ts:year a rdf:Property ;
+    rdfs:domain ts:AccessibilityServiceStatistics ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en , "Год"@ru ;
+    rdfs:comment "The calendar year for which the accessibility data is reported"@en , "Календарный год, за который сообщаются данные о доступности"@ru .
+
+ts:mode a rdf:Property ;
+    rdfs:domain ts:AccessibilityServiceStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Travel mode"@en , "Вид транспорта"@ru ;
+    rdfs:comment "The mode of travel used to assess accessibility"@en , "Вид транспорта, используемый для оценки доступности"@ru .
+
+ts:keyService a rdf:Property ;
+    rdfs:domain ts:AccessibilityServiceStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Key service"@en , "Ключевая услуга"@ru ;
+    rdfs:comment "The key service being assessed"@en , "Ключевая услуга, доступность которой оценивается"@ru .
+
+ts:users a rdf:Property ;
+    rdfs:domain ts:AccessibilityServiceStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "The number of users"@en , "Количество пользователей"@ru ;
+    rdfs:comment "Users are the population of the local area for the relevant service, e.g. for primary schools, the users are children aged 5-10. Please see the guidance note for a full list of user groups."@en , "Пользователями являются жители населенного пункта, обслуживаемого соответствующей службой, например, для начальных школ это дети в возрасте от 5 до 10 лет. Полный список групп пользователей см. в руководстве."@ru .
+
+ts:atRiskUsers a rdf:Property ;
+    rdfs:domain ts:AccessibilityServiceStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "The number of users at risk"@en , "Количество пользователей, находящихся в группе риска"@ru ;
+    rdfs:comment "The at risk users looks at particular social groups at risk of exclusion, e.g. for primary schools, the at risk users are children aged 5-10 known to be eligible for free school meals. Please see the guidance note for a full list of user groups."@en , "Группа пользователей, находящихся в группе риска, включает в себя определенные социальные группы, подверженные риску исключения из школы, например, для начальных школ это дети в возрасте от 5 до 10 лет, имеющие право на бесплатное школьное питание. Полный список групп пользователей см. в руководстве."@ru .
+
+ts:userPercentage a rdf:Property ;
+    rdfs:domain ts:AccessibilityServiceStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "User percentage"@en , "Процент пользователей"@ru ;
+    rdfs:comment "Percentage of people with reasonable access"@en , "Процент людей с разумным доступом"@ru .
+
+ts:atRiskUserPercentage a rdf:Property ;
+    rdfs:domain ts:AccessibilityServiceStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "At risk user percentage"@en , "Процент пользователей, подверженных риску"@ru ;
+    rdfs:comment "Percentage of at-risk users with reasonable access"@en , "Процент пользователей, подверженных риску с разумным доступом"@ru .
