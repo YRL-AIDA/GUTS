@@ -1,0 +1,54 @@
+@prefix prd: <http://example.org/productivity#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+prd:LaborProductivityAssessmentRevision a rdfs:Class ;
+    rdfs:label "Labor productivity assessment revision"@en , "Пересмотр оценки производительности труда"@ru ;
+    rdfs:comment "A revision of labor productivity assessment for a specific sector, metric, date, and time comparison type"@en , "Пересмотр ранее опубликованной оценки производительности труда для конкретного сектора, метрики, даты и типа временного сравнения"@ru .
+
+# ==================== Datatype Properties ====================
+
+prd:sector a rdf:Property ;
+    rdfs:domain prd:LaborProductivityAssessmentRevision ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sector"@en , "Сектор"@ru ;
+    rdfs:comment "Name of the real sector of the economy"@en , "Название реального сектора экономики"@ru .
+
+prd:metricName a rdf:Property ;
+    rdfs:domain prd:LaborProductivityAssessmentRevision ;
+    rdfs:range xsd:string ;
+    rdfs:label "Metric name"@en , "Название метрики"@ru ;
+    rdfs:comment "Name of the labor productivity metric"@en , "Метрика производительности труда"@ru .
+
+prd:year a rdf:Property ;
+    rdfs:domain prd:LaborProductivityAssessmentRevision ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "year"@en , "Год"@ru ;
+    rdfs:comment "Calendar reporting year"@en , "Календарный отчетный год"@ru .
+
+prd:quarter a rdf:Property ;
+    rdfs:domain prd:LaborProductivityAssessmentRevision ;
+    rdfs:range xsd:string ;
+    rdfs:label "Quarter"@en , "Квартал"@ru ;
+    rdfs:comment "Reporting quarter"@en , "Отчетный квартал"@ru .
+
+prd:code a rdf:Property ;
+    rdfs:domain prd:LaborProductivityAssessmentRevision ;
+    rdfs:range xsd:string ;
+    rdfs:label "Code"@en , "Код"@ru ;
+    rdfs:comment "The internal system identifier"@en , "Внутренний системный идентификатор"@ru .
+
+prd:quarterAYear ago a rdf:Property ;
+    rdfs:domain prd:LaborProductivityAssessmentRevision ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Quarter a year ago"@en , "Квартал год назад"@ru ;
+    rdfs:comment "Percent change on quarter a year ago"@en , "Изменение в процентах по сравнению с аналогичным кварталом прошлого года"@ru .
+
+prd:previousQuarter a rdf:Property ;
+    rdfs:domain prd:LaborProductivityAssessmentRevision ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Previous quarter"@en , "Предыдущий квартал"@ru ;
+    rdfs:comment "Percent change on previous quarter"@en , "Изменение в процентах по сравнению с предыдущим кварталом"@ru .
