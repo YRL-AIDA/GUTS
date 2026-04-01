@@ -1,0 +1,54 @@
+@prefix ts: <http://example.org/transport#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+ts:AccessibilityServiceStatistics a rdfs:Class ;
+    rdfs:label "Accessibility service statistics"@en , "Статистика доступности услуг"@ru ;
+    rdfs:comment "User statistics with reasonable access to key services by mode of travel, England, 2007 to 2013"@en , "Статистика пользователей с ограниченными возможностями доступа к основным услугам в зависимости от вида транспорта, Англия, 2007–2013 гг."@ru .
+
+# ==================== Datatype Properties ====================
+
+ts:year a rdf:Property ;
+    rdfs:domain ts:AccessibilityServiceStatistics ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en , "Год"@ru ;
+    rdfs:comment "The calendar year for which the accessibility data is reported"@en , "Календарный год, за который сообщаются данные о доступности"@ru .
+
+ts:mode a rdf:Property ;
+    rdfs:domain ts:AccessibilityServiceStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Travel mode"@en , "Вид транспорта"@ru ;
+    rdfs:comment "The mode of travel used to assess accessibility"@en , "Вид транспорта, используемый для оценки доступности"@ru .
+
+ts:keyService a rdf:Property ;
+    rdfs:domain ts:AccessibilityServiceStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Key service"@en , "Ключевая услуга"@ru ;
+    rdfs:comment "The key service being assessed"@en , "Ключевая услуга, доступность которой оценивается"@ru .
+
+ts:lowerThreshold a rdf:Property ;
+    rdfs:domain ts:AccessibilityServiceStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Lower threshold"@en , "Нижний порог"@ru ;
+    rdfs:comment "The lower threshold for the number of users in a local area who can access a service within set time limits"@en , "Нижний порог для количества пользователей в локальной области, которые могут получить доступ к услуге в течение установленных временных ограничений"@ru .
+
+ts:upperThreshold a rdf:Property ;
+    rdfs:domain ts:AccessibilityServiceStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Upper threshold"@en , "Верхний порог"@ru ;
+    rdfs:comment "The upper threshold for the number of users in a local area who can access a service within set time limits."@en , "Верхний порог для количества пользователей в локальной области, которые могут получить доступ к услуге в течение установленных временных ограничений"@ru .
+
+ts:lowerThresholdPercentage a rdf:Property ;
+    rdfs:domain ts:AccessibilityServiceStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Lower threshold percentage"@en , "Процент нижнего порога"@ru ;
+    rdfs:comment "Percentage of lower threshold for number of people with reasonable access"@en , "Процент нижнего порога для количества людей с разумным доступом"@ru .
+
+ts:upperThresholdPercentage a rdf:Property ;
+    rdfs:domain ts:AccessibilityServiceStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Upper threshold percentage"@en , "Процент верхнего порога"@ru ;
+    rdfs:comment "Percentage of upper threshold for number of people with reasonable access"@en , "Процент верхнего порога для количества людей с разумным доступом"@ru .
