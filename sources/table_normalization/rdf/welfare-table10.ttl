@@ -1,0 +1,36 @@
+@prefix wf: <http://example.org/welfare#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+wf:HourlyWageStatistics a rdfs:Class ;
+    rdfs:label "Hourly wage statistics"@en , "Статистика почасовой заработной платы"@ru ;
+    rdfs:comment "Statistics of average hourly wages for selected occupations and areas for part-time workers by grouped work levels, civilian workers, 2023"@en , "Статистические данные о средней почасовой заработной плате по отдельным профессиям и областям для работников, занятых неполный рабочий день, по группам уровней занятости, гражданские служащие, 2023 год"@ru .
+
+# ==================== Datatype Properties ====================
+
+wf:occupationalGroup a rdf:Property ;
+    rdfs:domain wf:HourlyWageStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Occupational group"@en , "Профессиональная группа"@ru ;
+    rdfs:comment "The occupational group based on Standard Occupational Classification (SOC) system"@en , "Профессиональная группа на основе системы Стандартной профессиональной классификации (SOC)"@ru .
+
+wf:area a rdf:Property ;
+    rdfs:domain wf:HourlyWageStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Area"@en , "Область"@ru ;
+    rdfs:comment "Area name for wage estimation"@en , "Название области для оценки заработной платы"@ru .
+
+wf:workLevel a rdf:Property ;
+    rdfs:domain wf:HourlyWageStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Work level"@en , "Уровень квалификации"@ru ;
+    rdfs:comment "The work experience level for wage estimation"@en , "Уровень опыта работы для оценки заработной платы"@ru .
+
+wf:averageHourlyWage a rdf:Property ;
+    rdfs:domain wf:HourlyWageStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average hourly wage"@en , "Средняя почасовая зарплата"@ru ;
+    rdfs:comment "Average hourly wage in US dollars"@en , "Средняя почасовая заработная плата в долларах США"@ru .

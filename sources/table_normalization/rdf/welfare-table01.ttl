@@ -1,0 +1,88 @@
+@prefix wf: <http://example.org/welfare#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+wf:EmploymentCostIndex a rdfs:Class ;
+    rdfs:label "Employment cost index"@en , "Индекс стоимости рабочей силы"@ru ;
+    rdfs:comment "Employment cost index for total compensation, by occupational group and industry"@en , "Индекс стоимости рабочей силы для общей компенсации, по профессиональным группам и отраслям"@ru .
+
+wf:IndexAggregation a rdfs:Class ;
+    rdfs:label "Index aggregation"@en , "Агрегация индексов"@ru ;
+    rdfs:comment "Aggregation of employment cost indices by worker categories"@en , "Агрегация индексов стоимости рабочей силы по категориям работников"@ru .
+
+# ==================== Datatype Properties ====================
+
+wf:workerCategory a rdf:Property ;
+    rdfs:domain wf:EmploymentCostIndex ;
+    rdfs:range xsd:string ;
+    rdfs:label "Worker category"@en , "Категория работников"@ru ;
+    rdfs:comment "General category of workers"@en , "Общая категория работников"@ru .
+
+wf:criteriaType a rdf:Property ;
+    rdfs:domain wf:EmploymentCostIndex ;
+    rdfs:range xsd:string ;
+    rdfs:label "Criteria type"@en , "Тип критерия"@ru ;
+    rdfs:comment "The type of criterion by which the employee index is assessed"@en , "Тип критерия по которому оценивается индекс работника"@ru .
+
+wf:criteriaName a rdf:Property ;
+    rdfs:domain wf:EmploymentCostIndex ;
+    rdfs:range xsd:string ;
+    rdfs:label "Criteria name"@en , "Название критерия"@ru ;
+    rdfs:comment "The specific name of the criterion to which the employee belongs"@en , "Конкретное название критерия к которому относится работник"@ru .
+
+wf:criteriaNote a rdf:Property ;
+    rdfs:domain wf:EmploymentCostIndex ;
+    rdfs:range xsd:string ;
+    rdfs:label "Criteria note"@en , "Примечание к критерию"@ru ;
+    rdfs:comment "A note to a specific criterion, disclosing its content"@en , "Примечание к конкретному критерию, раскрывающее его содержание"@ru .
+
+wf:date a rdf:Property ;
+    rdfs:domain wf:EmploymentCostIndex ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date"@en , "Дата"@ru ;
+    rdfs:comment "Time period for which the labor cost index was measured"@en , "Временной период за который проведено измерение индекса стоимости рабочей силы"@ru .
+
+wf:index a rdf:Property ;
+    rdfs:domain wf:EmploymentCostIndex ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Index"@en , "Индекс"@ru ;
+    rdfs:comment "Employment cost index for total compensation (Dec.2005=100)"@en , "Индекс стоимости рабочей силы для общей компенсации (декабрь 2005 г. = 100)"@ru .
+
+wf:percentChange a rdf:Property ;
+    rdfs:domain wf:EmploymentCostIndex ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percent change"@en , "Процентное изменение"@ru ;
+    rdfs:comment "Percent changes for 3-months ended relative to the measurement date"@en , "Процентные изменения за 3 месяца закончились относительно даты измерения"@ru .
+
+wf:workerCategory a rdf:Property ;
+    rdfs:domain wf:IndexAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Worker category"@en , "Категория работников"@ru ;
+    rdfs:comment "General category of workers"@en , "Общая категория работников"@ru .
+
+wf:categoryNote a rdf:Property ;
+    rdfs:domain wf:IndexAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category note"@en , "Примечание к категории"@ru ;
+    rdfs:comment "Note on the category of workers"@en , "Примечание к категории работников"@ru .
+
+wf:date a rdf:Property ;
+    rdfs:domain wf:IndexAggregation ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date"@en , "Дата"@ru ;
+    rdfs:comment "Time period for which the labor cost index was measured"@en , "Временной период за который проведено измерение индекса стоимости рабочей силы"@ru .
+
+wf:totalIndex a rdf:Property ;
+    rdfs:domain wf:IndexAggregation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total index"@en , "Суммарный индекс"@ru ;
+    rdfs:comment "Total employment cost index for total compensation entire worker category"@en , "Суммарный индекс стоимости рабочей силы для общей компенсации по всей категории работников"@ru .
+
+wf:overallPercentChange a rdf:Property ;
+    rdfs:domain wf:IndexAggregation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Overall percent changes"@en , "Общие процентные изменения"@ru ;
+    rdfs:comment "Overall percentage changes for entire employee category"@en , "Общие процентные изменения по всей категории работников"@ru .
