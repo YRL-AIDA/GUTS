@@ -1,0 +1,60 @@
+@prefix ts: <http://example.org/transport#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+ts:AccessibilityServiceStatistics a rdfs:Class ;
+    rdfs:label "Accessibility service statistics"@en , "Статистика доступности услуг"@ru ;
+    rdfs:comment "User statistics with access to key services within lower and upper threshold by mode of travel, rural and urban areas, England, 2007 to 2013"@en , "Статистика пользователей, имеющих доступ к ключевым услугам в пределах нижнего и верхнего пороговых значений, по видам транспорта, сельским и городским районам, в Англии на 2007–2013 гг."@ru .
+
+# ==================== Datatype Properties ====================
+
+ts:year a rdf:Property ;
+    rdfs:domain ts:AccessibilityServiceStatistics ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en , "Год"@ru ;
+    rdfs:comment "The calendar year for which the accessibility data is reported"@en , "Календарный год, за который сообщаются данные о доступности"@ru .
+
+ts:mode a rdf:Property ;
+    rdfs:domain ts:AccessibilityServiceStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Travel mode"@en , "Вид транспорта"@ru ;
+    rdfs:comment "The mode of travel used to assess accessibility"@en , "Вид транспорта, используемый для оценки доступности"@ru .
+
+ts:keyService a rdf:Property ;
+    rdfs:domain ts:AccessibilityServiceStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Key service"@en , "Ключевая услуга"@ru ;
+    rdfs:comment "The key service being assessed"@en , "Ключевая услуга, доступность которой оценивается"@ru .
+
+ts:terrainType a rdf:Property ;
+    rdfs:domain ts:AccessibilityServiceStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Type of terrain"@en , "Тип местности"@ru ;
+    rdfs:comment "Determining the type of terrain for users (rural or urban)"@en , "Определение типа местности для пользователей (сельская или городская)"@ru .
+
+ts:lowerThreshold a rdf:Property ;
+    rdfs:domain ts:AccessibilityServiceStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of users at the lower threshold"@en , "Количество пользователей по нижнему порогу"@ru ;
+    rdfs:comment "Number of people with access within lower threshold"@en , "Количество людей, имеющих доступ в пределах нижнего порога"@ru .
+
+ts:lowerThresholdPercentage a rdf:Property ;
+    rdfs:domain ts:AccessibilityServiceStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percentage of users at the lower threshold"@en , "Процент пользователей по нижнему порогу"@ru ;
+    rdfs:comment "Percentage of people with access within lower threshold"@en , "Процент людей, имеющих доступ в пределах нижнего порога"@ru .
+
+ts:upperThreshold a rdf:Property ;
+    rdfs:domain ts:AccessibilityServiceStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of users at the upper threshold"@en , "Количество пользователей по верхнему порогу"@ru ;
+    rdfs:comment "Number of people with access within upper threshold"@en , "Количество людей, имеющих доступ в пределах верхнего порога"@ru .
+
+ts:upperThresholdPercentage a rdf:Property ;
+    rdfs:domain ts:AccessibilityServiceStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percentage of users at the upper threshold"@en , "Процент пользователей по верхнему порогу"@ru ;
+    rdfs:comment "Percentage of people with access within upper threshold"@en , "Процент людей, имеющих доступ в пределах верхнего порога"@ru .
