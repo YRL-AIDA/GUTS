@@ -1,0 +1,48 @@
+@prefix wf: <http://example.org/welfare#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+wf:EmploymentCostIndex a rdfs:Class ;
+    rdfs:label "Employment cost index"@en , "Индекс стоимости рабочей силы"@ru ;
+    rdfs:comment "Major series of the employment cost index"@en , "Основные показатели индекса стоимости рабочей силы"@ru .
+
+# ==================== Datatype Properties ====================
+
+wf:category a rdf:Property ;
+    rdfs:domain wf:EmploymentCostIndex ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en , "Категория"@ru ;
+    rdfs:comment "Name of a category of workers, a separate industry or government"@en , "Название категории работников, отдельной отрасли или самоуправления"@ru .
+
+wf:remunerationForm a rdf:Property ;
+    rdfs:domain wf:EmploymentCostIndex ;
+    rdfs:range xsd:string ;
+    rdfs:label "Remuneration form"@en , "Форма вознаграждения"@ru ;
+    rdfs:comment "The name of the form of compensation that an organization provides to employees in exchange for their work"@en , "Название формы вознаграждения, которые организация предоставляет сотрудникам в обмен на их труд"@ru .
+
+wf:note a rdf:Property ;
+    rdfs:domain wf:EmploymentCostIndex ;
+    rdfs:range xsd:string ;
+    rdfs:label "Note"@en , "Примечание"@ru ;
+    rdfs:comment "Note on the content of a specific form of remuneration"@en , "Примечание к содержанию определенной формы вознаграждения"@ru .
+
+wf:date a rdf:Property ;
+    rdfs:domain wf:EmploymentCostIndex ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date"@en , "Дата"@ru ;
+    rdfs:comment "Time period for which the labor cost index was measured"@en , "Временной период за который проведено измерение индекса стоимости рабочей силы"@ru .
+
+wf:percentChangeType a rdf:Property ;
+    rdfs:domain wf:EmploymentCostIndex ;
+    rdfs:range xsd:string ;
+    rdfs:label "Type of percentage changes"@en , "Тип процентных изменений"@ru ;
+    rdfs:comment "Type of percentage changes for N-months ended relative to the measurement date"@en , "Тип процентных изменений за N месяцев, закончившихся относительно даты измерения"@ru .
+
+wf:percentChange a rdf:Property ;
+    rdfs:domain wf:EmploymentCostIndex ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percent change"@en , "Процентное изменение"@ru ;
+    rdfs:comment "A specific percentage change in a particular form of remuneration"@en , "Конкретное процентное изменение определенной формы вознаграждения"@ru .
