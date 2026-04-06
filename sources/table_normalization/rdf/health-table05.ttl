@@ -1,0 +1,36 @@
+@prefix hl: <http://example.org/health#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+hl:HealthAndSocialEmployment a rdfs:Class ;
+    rdfs:label "Health and social employment"@en, "Занятость в сфере здравоохранения и социального обеспечения"@ru ;
+    rdfs:comment "A record representing the count of physicians by sex in a country or economy for a specific year"@en, "Запись, представляющая численность врачей с разбивкой по полу в стране или экономике за конкретный год"@ru .
+
+# ==================== Datatype Properties ====================
+
+hl:timePeriod a rdf:Property ;
+    rdfs:domain hl:HealthAndSocialEmployment ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+hl:referenceArea a rdf:Property ;
+    rdfs:domain hl:HealthAndSocialEmployment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Country"@en, "Страна"@ru ;
+    rdfs:comment "Country name"@en, "Наименование страны"@ru .
+
+hl:sex a rdf:Property ;
+    rdfs:domain hl:HealthAndSocialEmployment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sex"@en, "Пол"@ru ;
+    rdfs:comment "The sex category"@en, "Категория пола"@ru .
+
+hl:physicianCount a rdf:Property ;
+    rdfs:domain hl:HealthAndSocialEmployment ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Physicians count"@en, "Численность врачей"@ru ;
+    rdfs:comment "The count of physicians (integer number)"@en, "Численность врачей (целое число)"@ru .
