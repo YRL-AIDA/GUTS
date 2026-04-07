@@ -23,6 +23,12 @@ hl:referenceArea a rdf:Property ;
     rdfs:label "Country"@en, "Страна"@ru ;
     rdfs:comment "Country name"@en, "Наименование страны"@ru .
 
+hl:typeArea a rdf:Property ;
+    rdfs:domain hl:HealthAndSocialEmployment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Type of country's economy"@en, "Тип экономики страны"@ru ;
+    rdfs:comment "Economies of countries that are members of the Organisation for Economic Co-operation and Development (OECD)"@en, "Экономики стран, входящие в организацию экономического сотрудничества и развития (ОЭСР)"@ru .
+
 hl:sex a rdf:Property ;
     rdfs:domain hl:HealthAndSocialEmployment ;
     rdfs:range xsd:string ;

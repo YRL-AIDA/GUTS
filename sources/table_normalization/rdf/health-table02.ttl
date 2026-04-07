@@ -1,0 +1,42 @@
+@prefix hl: <http://example.org/health#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+hl:HealthHospitalObservation a rdfs:Class ;
+    rdfs:label "Health hospital observation"@en, "Наблюдение за больницами"@ru ;
+    rdfs:comment "Observation of the proportion of hospitals per 1000000 inhabitants for a specific region, hospital type, and year"@en, "Наблюдение доли больниц на 1000000 жителей для конкретного региона, типа больницы и года"@ru .
+
+# ==================== Datatype Properties ====================
+
+hl:timePeriod a rdf:Property ;
+    rdfs:domain hl:HealthHospitalObservation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+hl:referenceArea a rdf:Property ;
+    rdfs:domain hl:HealthHospitalObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Country"@en, "Страна"@ru ;
+    rdfs:comment "Country name"@en, "Наименование страны"@ru .
+
+hl:typeArea a rdf:Property ;
+    rdfs:domain hl:HealthHospitalObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Type of country's economy"@en, "Тип экономики страны"@ru ;
+    rdfs:comment "Economies of countries that are members of the Organisation for Economic Co-operation and Development (OECD)"@en, "Экономики стран, входящие в организацию экономического сотрудничества и развития (ОЭСР)"@ru .
+
+hl:hospitalType a rdf:Property ;
+    rdfs:domain hl:HealthHospitalObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Hospital type"@en, "Тип больницы"@ru ;
+    rdfs:comment "The category of hospital ownership or function"@en, "Категория больницы по форме собственности или функционалу"@ru .
+
+hl:hospitalProportion a rdf:Property ;
+    rdfs:domain hl:HealthHospitalObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Hospital proportion"@en, "Доля больниц"@ru ;
+    rdfs:comment "The proportion of health hospitals per 1000000 inhabitants"@en, "Доля медицинских больниц на 1000000 жителей"@ru .
