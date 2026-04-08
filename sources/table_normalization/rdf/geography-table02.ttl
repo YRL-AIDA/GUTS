@@ -1,0 +1,42 @@
+@prefix geo: <http://example.org/geography#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+geo:ArealReductionFactorObservation a rdfs:Class ;
+    rdfs:label "Areal reduction factor observation (ARF)"@en, "Наблюдение коэффициента уменьшения площади (КУП)"@ru ;
+    rdfs:comment "The observation of areal reduction factor (ARF) for a specific region, duration in Florida"@en, "Наблюдение за коэффициентом уменьшения площади (КУП) для конкретного региона, длительности во Флориде"@ru .
+
+# ==================== Datatype Properties ====================
+
+geo:arfRegion a rdf:Property ;
+    rdfs:domain geo:ArealReductionFactorObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "ARF region"@en, "КУП региона"@ru ;
+    rdfs:comment "Numeric identifier (1-7) of the climatic region in Florida. ARF regions in Florida are defined as: 1: Northwest, 2: North, 3: North Central, 4: South Central, 5: Central Everglades, 6: Lower East Coast, 7: Lower West Coast and Everglades National Park."@en, "Числовой идентификатор (1-7) климатического региона Флориды. Регионы ARF во Флориде определены следующим образом: 1: Северо-запад, 2: Север, 3: Северо-центральный, 4: Южно-центральный, 5: Центральная часть Эверглейдс, 6: Нижняя часть Восточного побережья, 7: Нижняя часть Западного побережья и Национальный парк Эверглейдс."@ru .
+
+geo:duration a rdf:Property ;
+    rdfs:domain geo:ArealReductionFactorObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Duration"@en, "Длительность"@ru ;
+    rdfs:comment "The time duration of precipitation measurement (24-hr, 3-day, or 7-day)"@en, "Временная длительность измерения осадков (24 часа, 3 дня или 7 дней)"@ru .
+
+geo:area a rdf:Property ;
+    rdfs:domain geo:ArealReductionFactorObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Area"@en, "Площадь"@ru ;
+    rdfs:comment "The area in square kilometers"@en, "Площадь в квадратных километрах"@ru .
+
+geo:arfValue a rdf:Property ;
+    rdfs:domain geo:ArealReductionFactorObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "ARF value"@en, "Значение КУП"@ru ;
+    rdfs:comment "The areal reduction factor value (0 to 1)"@en, "Значение коэффициента уменьшения площади (от 0 до 1)"@ru .
+
+geo:arfStandardDeviation a rdf:Property ;
+    rdfs:domain geo:ArealReductionFactorObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "ARF standard deviation"@en, "Стандартное отклонение КУП"@ru ;
+    rdfs:comment "The standard deviation of the areal reduction factor, representing uncertainty in the ARF estimate"@en, "Стандартное отклонение коэффициента уменьшения площади, представляющее неопределенность оценки КУП"@ru .

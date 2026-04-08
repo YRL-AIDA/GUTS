@@ -1,0 +1,30 @@
+@prefix geo: <http://example.org/geography#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+geo:GeographyGreenAreaObservation a rdfs:Class ;
+    rdfs:label "Geography green area observation"@en, "Наблюдение площади зеленых зон"@ru ;
+    rdfs:comment "The observation of green space area for a specific region for 2021"@en, "Наблюдение площади зеленых зон для конкретного региона за 2021 год"@ru .
+
+# ==================== Datatype Properties ====================
+
+geo:country a rdf:Property ;
+    rdfs:domain geo:GeographyGreenAreaObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Country"@en, "Страна"@ru ;
+    rdfs:comment "The name of the country to which the TL2 region belongs"@en, "Название страны, к которой принадлежит регион уровня TL2"@ru .
+
+geo:referenceArea a rdf:Property ;
+    rdfs:domain geo:GeographyGreenAreaObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Reference area"@en, "Регион наблюдения"@ru ;
+    rdfs:comment "The name of the TL2 region (territorial level 2) according to OECD classification"@en, "Название региона уровня TL2 (территориальный уровень 2) согласно классификации ОЭСР"@ru .
+
+geo:landArea a rdf:Property ;
+    rdfs:domain geo:GeographyGreenAreaObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Land area"@en, "Площадь земли"@ru ;
+    rdfs:comment "The numeric value of the land area in square kilometres"@en, "Числовое значение площади земель в квадратных километрах"@ru .
