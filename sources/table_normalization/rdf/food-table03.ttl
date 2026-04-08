@@ -1,0 +1,108 @@
+@prefix fd: <http://example.org/food#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+fd:EggSupplyDemandObservation a rdfs:Class ;
+    rdfs:label "Egg supply and demand observation"@en, "Наблюдение предложения и спроса на яйца"@ru ;
+    rdfs:comment "An observation representing a metric for the egg market for a specific year and quarter in the United States"@en, "Наблюдение, представляющее метрику рынка яиц для конкретного года и квартала в США"@ru .
+
+# ==================== Datatype Properties ====================
+
+fd:year a rdf:Property ;
+    rdfs:domain fd:EggSupplyDemandObservation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+fd:quarter a rdf:Property ;
+    rdfs:domain fd:EggSupplyDemandObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Quarter"@en, "Квартал"@ru ;
+    rdfs:comment "The time period: Q1, Q2, Q3, Q4 for quarterly data"@en, "Временной период: Q1, Q2, Q3, Q4 для квартальных данных"@ru .
+
+fd:months a rdf:Property ;
+    rdfs:domain fd:EggSupplyDemandObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Months"@en, "Месяцы"@ru ;
+    rdfs:comment "Textual description of the time period (e.g., Jan-Mar, Apr-Jun, Jul-Sep, Oct-Dec, Jan-Dec)"@en, "Текстовое описание временного периода (например, Янв-Мар, Апр-Июн, Июл-Сен, Окт-Дек, Янв-Дек)"@ru .
+
+fd:tableProduction a rdf:Property ;
+    rdfs:domain fd:EggSupplyDemandObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Table production"@en, "Столовое производство"@ru ;
+    rdfs:comment "The volume of table egg production"@en, "Объем производства столовых яиц"@ru .
+
+fd:hatchingProduction a rdf:Property ;
+    rdfs:domain fd:EggSupplyDemandObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Hatching production"@en, "Инкубационное производство"@ru ;
+    rdfs:comment "The volume of hatching egg production"@en, "Объем инкубационного производства яиц"@ru .
+
+fd:totalProduction a rdf:Property ;
+    rdfs:domain fd:EggSupplyDemandObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total production"@en, "Общий объем производства"@ru ;
+    rdfs:comment "Total egg production"@en, "Общий объем производства яиц"@ru .
+
+fd:beginningStocks a rdf:Property ;
+    rdfs:domain fd:EggSupplyDemandObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Beginning stocks"@en, "Начальные запасы"@ru ;
+    rdfs:comment "The volume of beginning stocks in the balance of supply and demand"@en, "Объем начальных запасов в балансе предложения и спроса"@ru .
+
+fd:imports a rdf:Property ;
+    rdfs:domain fd:EggSupplyDemandObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Imports"@en, "Импорт"@ru ;
+    rdfs:comment "The volume of imports in the balance of supply and demand"@en, "Объем импорта в балансе предложения и спроса"@ru .
+
+fd:totalSupply a rdf:Property ;
+    rdfs:domain fd:EggSupplyDemandObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total supply"@en, "Общий объем предложения"@ru ;
+    rdfs:comment "The total volume of the offer in the balance sheet"@en, "Общий объем предложения в балансе"@ru .
+
+fd:exports a rdf:Property ;
+    rdfs:domain fd:EggSupplyDemandObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Exports"@en, "Экспорт"@ru ;
+    rdfs:comment "The volume of exports in the balance of supply and demand"@en, "Объем экспорта в балансе предложения и спроса"@ru .
+
+fd:endingStocks a rdf:Property ;
+    rdfs:domain fd:EggSupplyDemandObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Ending stocks"@en, "Конечные запасы"@ru ;
+    rdfs:comment "The volume of ending stocks in the balance of supply and demand"@en, "Объем конечных запасов в балансе предложения и спроса"@ru .
+
+fd:hatchingUse a rdf:Property ;
+    rdfs:domain fd:EggSupplyDemandObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Hatching use"@en, "Использование для выведения"@ru ;
+    rdfs:comment "The volume of eggs used for hatching"@en, "Объем использования яиц для выведения"@ru .
+
+fd:totalDisappearance a rdf:Property ;
+    rdfs:domain fd:EggSupplyDemandObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total disappearance"@en, "Общий объем потребления"@ru ;
+    rdfs:comment "Total disappearance (demand) in the balance sheet"@en, "Общий объем потребления (спроса) в балансе"@ru .
+
+fd:population a rdf:Property ;
+    rdfs:domain fd:EggSupplyDemandObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "U.S. population"@en, "Население США"@ru ;
+    rdfs:comment "The population of the USA (1,000 people)"@en, "Население США (1000 человек)"@ru .
+
+fd:shellEggEquivalent a rdf:Property ;
+    rdfs:domain fd:EggSupplyDemandObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Shell-egg equivalent"@en, "В пересчете на яйца в скорлупе"@ru ;
+    rdfs:comment "Egg consumption per capita disappearance (shell-egg equivalent, number)"@en, "Потребление яиц на душу населения (в пересчете на количество яиц в скорлупе)"@ru .
+
+fd:brokenEggs a rdf:Property ;
+    rdfs:domain fd:EggSupplyDemandObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Broken eggs"@en, "Разбитые яйца"@ru ;
+    rdfs:comment "Federally inspected eggs broken"@en, "Разбитые яйца, находящиеся под федеральной проверкой"@ru .

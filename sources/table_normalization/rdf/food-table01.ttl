@@ -1,0 +1,36 @@
+@prefix fd: <http://example.org/food#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+fd:CookingRecipe a rdfs:Class ;
+    rdfs:label "Cooking recipe"@en, "Кулинарный рецепт"@ru ;
+    rdfs:comment "A cooking recipe including ingredients, their quantities and units of measurement"@en, "Кулинарный рецепт включающий ингредиенты, их количество и единицу измерения"@ru .
+
+# ==================== Datatype Properties ====================
+
+fd:recipe a rdf:Property ;
+    rdfs:domain fd:CookingRecipe ;
+    rdfs:range xsd:string ;
+    rdfs:label "Recipe"@en, "Рецепт"@ru ;
+    rdfs:comment "The name of the culinary recipe"@en, "Название кулинарного рецепта"@ru .
+
+fd:ingredient a rdf:Property ;
+    rdfs:domain fd:CookingRecipe ;
+    rdfs:range xsd:string ;
+    rdfs:label "Ingredient"@en, "Ингредиент"@ru ;
+    rdfs:comment "The name of the food ingredient"@en, "Название пищевого ингредиента"@ru .
+
+fd:quantity a rdf:Property ;
+    rdfs:domain fd:CookingRecipe ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Quantity"@en, "Количество"@ru ;
+    rdfs:comment "The numeric amount of the ingredient required for the recipe"@en, "Числовое количество ингредиента, необходимое для рецепта"@ru .
+
+fd:unit a rdf:Property ;
+    rdfs:domain fd:CookingRecipe ;
+    rdfs:range xsd:string ;
+    rdfs:label "Unit"@en, "Единица измерения"@ru ;
+    rdfs:comment "The unit of measurement for the quantity"@en, "Единица измерения для количества"@ru .

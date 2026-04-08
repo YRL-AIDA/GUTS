@@ -1,0 +1,108 @@
+@prefix fd: <http://example.org/food#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+fd:PorkSupplyDemandObservation a rdfs:Class ;
+    rdfs:label "Pork supply and demand observation"@en, "Наблюдение предложения и спроса на свинину"@ru ;
+    rdfs:comment "An observation representing a metric for the pork market for a specific year and quarter in the United States"@en, "Наблюдение, представляющее метрику рынка свинины для конкретного года и квартала в США"@ru .
+
+# ==================== Datatype Properties ====================
+
+fd:year a rdf:Property ;
+    rdfs:domain fd:PorkSupplyDemandObservation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+fd:quarter a rdf:Property ;
+    rdfs:domain fd:PorkSupplyDemandObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Quarter"@en, "Квартал"@ru ;
+    rdfs:comment "The time period: Q1, Q2, Q3, Q4 for quarterly data"@en, "Временной период: Q1, Q2, Q3, Q4 для квартальных данных"@ru .
+
+fd:months a rdf:Property ;
+    rdfs:domain fd:PorkSupplyDemandObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Months"@en, "Месяцы"@ru ;
+    rdfs:comment "Textual description of the time period (e.g., Jan-Mar, Apr-Jun, Jul-Sep, Oct-Dec, Jan-Dec)"@en, "Текстовое описание временного периода (например, Янв-Мар, Апр-Июн, Июл-Сен, Окт-Дек, Янв-Дек)"@ru .
+
+fd:commercialProduction a rdf:Property ;
+    rdfs:domain fd:PorkSupplyDemandObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Commercial production"@en, "Коммерческое производство"@ru ;
+    rdfs:comment "The volume of commercial pork production"@en, "Объем коммерческого производства свинины"@ru .
+
+fd:farmProduction a rdf:Property ;
+    rdfs:domain fd:PorkSupplyDemandObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Farm production"@en, "Сельскохозяйственное производство"@ru ;
+    rdfs:comment "The volume of farm pork production"@en, "Объем сельскохозяйственного производства свинины"@ru .
+
+fd:totalProduction a rdf:Property ;
+    rdfs:domain fd:PorkSupplyDemandObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total production"@en, "Общий объем производства"@ru ;
+    rdfs:comment "Total pork production"@en, "Общий объем производства свинины"@ru .
+
+fd:beginningStocks a rdf:Property ;
+    rdfs:domain fd:PorkSupplyDemandObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Beginning stocks"@en, "Начальные запасы"@ru ;
+    rdfs:comment "The volume of beginning stocks in the balance of supply and demand"@en, "Объем начальных запасов в балансе предложения и спроса"@ru .
+
+fd:imports a rdf:Property ;
+    rdfs:domain fd:PorkSupplyDemandObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Imports"@en, "Импорт"@ru ;
+    rdfs:comment "The volume of imports in the balance of supply and demand"@en, "Объем импорта в балансе предложения и спроса"@ru .
+
+fd:totalSupply a rdf:Property ;
+    rdfs:domain fd:PorkSupplyDemandObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total supply"@en, "Общий объем предложения"@ru ;
+    rdfs:comment "The total volume of the offer in the balance sheet"@en, "Общий объем предложения в балансе"@ru .
+
+fd:exports a rdf:Property ;
+    rdfs:domain fd:PorkSupplyDemandObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Exports"@en, "Экспорт"@ru ;
+    rdfs:comment "The volume of exports in the balance of supply and demand"@en, "Объем экспорта в балансе предложения и спроса"@ru .
+
+fd:endingStocks a rdf:Property ;
+    rdfs:domain fd:PorkSupplyDemandObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Ending stocks"@en, "Конечные запасы"@ru ;
+    rdfs:comment "The volume of ending stocks in the balance of supply and demand"@en, "Объем конечных запасов в балансе предложения и спроса"@ru .
+
+fd:totalDisappearance a rdf:Property ;
+    rdfs:domain fd:PorkSupplyDemandObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total disappearance"@en, "Общий объем потребления"@ru ;
+    rdfs:comment "Total disappearance (demand) in the balance sheet"@en, "Общий объем потребления (спроса) в балансе"@ru .
+
+fd:population a rdf:Property ;
+    rdfs:domain fd:PorkSupplyDemandObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "U.S. population"@en, "Население США"@ru ;
+    rdfs:comment "The population of the USA (1,000 people)"@en, "Население США (1000 человек)"@ru .
+
+fd:carcassWeight a rdf:Property ;
+    rdfs:domain fd:PorkSupplyDemandObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Carcass weight"@en, "Вес туши"@ru ;
+    rdfs:comment "Meat consumption per capita disappearance (carcass weight in pounds)"@en, "Потребление мяса на душу населения (вес туши в фунтах)"@ru .
+
+fd:retailWeight a rdf:Property ;
+    rdfs:domain fd:PorkSupplyDemandObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Retail weight"@en, "Розничный вес"@ru ;
+    rdfs:comment "Meat consumption per capita disappearance (retail weight in pounds)"@en, "Потребление мяса на душу населения (розничный вес в фунтах)"@ru .
+
+fd:bonelessRetailWeight a rdf:Property ;
+    rdfs:domain fd:PorkSupplyDemandObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Boneless retail weight"@en, "Розничный вес бескостного мяса"@ru ;
+    rdfs:comment "Meat consumption per capita disappearance (boneless retail weight in pounds)"@en, "Потребление мяса на душу населения (розничный вес бескостного мяса в фунтах)"@ru .
