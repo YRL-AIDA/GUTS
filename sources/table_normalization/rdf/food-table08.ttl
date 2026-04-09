@@ -1,0 +1,60 @@
+@prefix fd: <http://example.org/food#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+fd:FoodNutrientObservation a rdfs:Class ;
+    rdfs:label "Food nutrient observation"@en, "Наблюдение пищевой ценности"@ru ;
+    rdfs:comment "Nutrition facts for a specific food item (veal cutlet) for a given cooking method and serving size"@en, "Данные по содержанию питательных веществ в конкретном продукте питания (телячья отбивная) для заданного способа приготовления и размера порции"@ru .
+
+# ==================== Datatype Properties ====================
+
+fd:nutrientName a rdf:Property ;
+    rdfs:domain fd:FoodNutrientObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Nutrient name"@en, "Название питательного вещества"@ru ;
+    rdfs:comment "The name of a specific nutrient found in food product"@en, "Название конкретного питательного вещества, содержащегося в продукте питания"@ru .
+
+fd:unit a rdf:Property ;
+    rdfs:domain fd:FoodNutrientObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Unit"@en, "Единица измерения"@ru ;
+    rdfs:comment "The unit of measurement for the nutrient value"@en, "Единица измерения для значения питательного вещества"@ru .
+
+fd:number a rdf:Property ;
+    rdfs:domain fd:FoodNutrientObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of sources"@en, "Количество источников"@ru ;
+    rdfs:comment "The number of data sources used to determine the nutrient value"@en, "Количество источников данных, использованных для определения значения питательного вещества"@ru .
+
+fd:condition a rdf:Property ;
+    rdfs:domain fd:FoodNutrientObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Condition"@en, "Состояние"@ru ;
+    rdfs:comment "Condition of food product"@en, "Состояние продукта питания"@ru .
+
+fd:preparationMethod a rdf:Property ;
+    rdfs:domain fd:FoodNutrientObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Preparation method"@en, "Способ приготовления"@ru ;
+    rdfs:comment "Method of preparing a food product"@en, "Способ приготовления продукта питания"@ru .
+
+fd:servingSizeGrams a rdf:Property ;
+    rdfs:domain fd:FoodNutrientObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Serving size grams"@en, "Размер порции в граммах"@ru ;
+    rdfs:comment "The serving size in grams for which the nutrient value is reported"@en, "Размер порции в граммах, для которого указано значения питательного вещества"@ru .
+
+fd:value a rdf:Property ;
+    rdfs:domain fd:FoodNutrientObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label ""@en, ""@ru ;
+    rdfs:comment "The numeric value of the nutrient content for the given food product, preparation method, and serving size"@en, "Числовое значение содержания питательного вещества для данного продукта питания, способа приготовления и размера порции"@ru .
+
+fd:sourceCode a rdf:Property ;
+    rdfs:domain fd:FoodNutrientObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Source code"@en, "Код источника"@ru ;
+    rdfs:comment "A numeric code indicating the type or reliability of the data source for the nutrient value"@en, "Числовой код, указывающий тип или надежность источника данных для значения питательного вещества"@ru .

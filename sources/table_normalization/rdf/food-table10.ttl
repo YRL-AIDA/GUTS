@@ -1,0 +1,48 @@
+@prefix fd: <http://example.org/food#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+fd:FoodExpenditureSeries a rdfs:Class ;
+    rdfs:label "Food expenditure series"@en, "Серия данных о расходах на продукты питания"@ru ;
+    rdfs:comment "Food expenditure series for a specific year, purchaser type, metric type, and food category in the United States"@en, "Серия данных о расходах на продукты питания для конкретного года, типа покупателя, метрики и категории питания в США"@ru .
+
+# ==================== Datatype Properties ====================
+
+fd:year a rdf:Property ;
+    rdfs:domain fd:FoodExpenditureSeries ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+fd:purchaserCategory a rdf:Property ;
+    rdfs:domain fd:FoodExpenditureSeries ;
+    rdfs:range xsd:string ;
+    rdfs:label "Purchaser category"@en, "Категория покупателя"@ru ;
+    rdfs:comment "Name of the category of food buyers"@en, "Название категории покупателей продуктов питания"@ru .
+
+fd:metricName a rdf:Property ;
+    rdfs:domain fd:FoodExpenditureSeries ;
+    rdfs:range xsd:string ;
+    rdfs:label "Metric name"@en, "Название метрики"@ru ;
+    rdfs:comment "Name of the food expenditure metric"@en, "Название метрики расходов на продукты питания"@ru .
+
+fd:foodCategory a rdf:Property ;
+    rdfs:domain fd:FoodExpenditureSeries ;
+    rdfs:range xsd:string ;
+    rdfs:label "Food category"@en, "Категория питания"@ru ;
+    rdfs:comment "The category of food: FAH (Food at Home), FAFH (Food Away from Home), or All food"@en, "Категория питания: FAH (продукты для дома), FAFH (питание вне дома) или All food (все продукты)"@ru .
+
+fd:unit a rdf:Property ;
+    rdfs:domain fd:FoodExpenditureSeries ;
+    rdfs:range xsd:string ;
+    rdfs:label "Unit"@en, "Единица измерения"@ru ;
+    rdfs:comment "The unit of measurement for the metric value"@en, "Единица измерения для значения метрики"@ru .
+
+fd:metricValue a rdf:Property ;
+    rdfs:domain fd:FoodExpenditureSeries ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Metric value"@en, "Значение метрики"@ru ;
+    rdfs:comment "The specific value of the food expenditure metric"@en, "Конкретное значение метрики расходов на продукты питания"@ru .
