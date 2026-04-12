@@ -1,0 +1,70 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:CaseNewStartsObservation a rdfs:Class ;
+    rdfs:label "Case new starts observation"@en, "Наблюдение новых предприятий по секторам"@ru ;
+    rdfs:comment "The observation of the count of new business starts or 2009 stock for a specific CASE sector and English region"@en, "Наблюдение за количеством новых предприятий или запасов на 2009 год для конкретного сектора CASE и региона Англии"@ru .
+
+eco:ObservationAggregation a rdfs:Class ;
+    rdfs:label "Observation aggregation"@en, "Агрегирование наблюдений"@ru ;
+    rdfs:comment "Aggregating observations of the number of new business starts or stocks across all sectors"@en, "Агрегирование наблюдений за количеством новых предприятий или запасов по всем секторам"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:year a rdf:Property ;
+    rdfs:domain eco:CaseNewStartsObservation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+eco:sector a rdf:Property ;
+    rdfs:domain eco:CaseNewStartsObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sector"@en, "Сектор"@ru ;
+    rdfs:comment "The CASE sector category"@en, "Категория сектора CASE"@ru .
+
+eco:region a rdf:Property ;
+    rdfs:domain eco:CaseNewStartsObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region"@en, "Регион"@ru ;
+    rdfs:comment "The English region"@en, "Регион Англии"@ru .
+
+eco:births a rdf:Property ;
+    rdfs:domain eco:CaseNewStartsObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of births"@en, "Количество новых предприятий"@ru ;
+    rdfs:comment "The number of new business starts (births)"@en, "Количество новых предприятий, начавших свою деятельность (рождений)"@ru .
+
+eco:stock a rdf:Property ;
+    rdfs:domain eco:CaseNewStartsObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of stocks"@en, "Количество запасов"@ru ;
+    rdfs:comment "The number of stocks in given time period"@en, "Количество запасов на заданный период времени"@ru .
+
+eco:year a rdf:Property ;
+    rdfs:domain eco:ObservationAggregation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+eco:region a rdf:Property ;
+    rdfs:domain eco:ObservationAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region"@en, "Регион"@ru ;
+    rdfs:comment "The English region"@en, "Регион Англии"@ru .
+
+eco:totalBirths a rdf:Property ;
+    rdfs:domain eco:ObservationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total number of births"@en, "Общее количество новых предприятий"@ru ;
+    rdfs:comment "Total number of new business starts (births) across all sectors"@en, "Общее количество новых предприятий, начавших свою деятельность (рождений) по всем секторам"@ru .
+
+eco:totalStocks a rdf:Property ;
+    rdfs:domain eco:ObservationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total number of stocks"@en, "Общее количество запасов"@ru ;
+    rdfs:comment "Total number of stocks in given time period across all sectors"@en, "Общее количество запасов на заданный период времени по всем секторам"@ru .

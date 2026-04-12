@@ -1,0 +1,98 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:CaseGVAObservation a rdfs:Class ;
+    rdfs:label "Case GVA observation"@en, "Наблюдение добавленной стоимости по секторам"@ru ;
+    rdfs:comment "The observation of gross value added (GVA) for a specific CASE sector, English region, and fiscal year"@en, "Наблюдение за валовой добавленной стоимостью для конкретного сектора, региона Англии и финансового года"@ru .
+
+eco:ObservationAggregation a rdfs:Class ;
+    rdfs:label "Observation aggregation"@en, "Агрегирование наблюдений"@ru ;
+    rdfs:comment "Aggregation of gross value added (GVA) observations across all sectors"@en, "Агрегирование наблюдений за валовой добавленной стоимостью по всем секторам"@ru .
+
+eco:StatisticsData a rdfs:Class ;
+    rdfs:label "Statistics data"@en, "Данные о статистики"@ru ;
+    rdfs:comment "Data on statistics of gross value added (GVA) observations by sectors"@en, "Данные о статистики наблюдений валовой добавленной стоимости по секторам"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:date a rdf:Property ;
+    rdfs:domain eco:CaseGVAObservation ;
+    rdfs:range xsd:date ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "The fiscal date of observation"@en, "Финансовая дата наблюдения"@ru .
+
+eco:sector a rdf:Property ;
+    rdfs:domain eco:CaseGVAObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sector"@en, "Сектор"@ru ;
+    rdfs:comment "The CASE sector category"@en, "Категория сектора CASE"@ru .
+
+eco:region a rdf:Property ;
+    rdfs:domain eco:CaseGVAObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region"@en, "Регион"@ru ;
+    rdfs:comment "The English region"@en, "Регион Англии"@ru .
+
+eco:gva a rdf:Property ;
+    rdfs:domain eco:CaseGVAObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "GVA"@en, "Валовая добавленная стоимость"@ru ;
+    rdfs:comment "GVA in the CASE sectors (£ thousands)"@en, "Валовая добавленная стоимость в секторах CASE (тысячи фунтов стерлингов)"@ru .
+
+eco:date a rdf:Property ;
+    rdfs:domain eco:ObservationAggregation ;
+    rdfs:range xsd:date ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "The fiscal date of observation"@en, "Финансовая дата наблюдения"@ru .
+
+eco:region a rdf:Property ;
+    rdfs:domain eco:ObservationAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region"@en, "Регион"@ru ;
+    rdfs:comment "The English region"@en, "Регион Англии"@ru .
+
+eco:totalGVA a rdf:Property ;
+    rdfs:domain eco:ObservationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total GVA"@en, "Совокупная валовая добавленная стоимость"@ru ;
+    rdfs:comment "Total GVA across all sectors (£ thousands)"@en, "Совокупная валовая добавленная стоимость по всем секторам (тысячи фунтов стерлингов)"@ru .
+
+eco:dataOwner a rdf:Property ;
+    rdfs:domain eco:StatisticsData ;
+    rdfs:range xsd:string ;
+    rdfs:label "Data owner"@en, "Владелец данных"@ru ;
+    rdfs:comment "Owner of statistics data on gross value added (GVA)"@en, "Владелец статистических данных о валовой добавленной стоимости"@ru .
+
+eco:dataOwnerLink a rdf:Property ;
+    rdfs:domain eco:StatisticsData ;
+    rdfs:range xsd:string ;
+    rdfs:label "Link to data owner"@en, "Ссылка на владельца данных"@ru ;
+    rdfs:comment "Link to owner of statistics data on gross value added (GVA)"@en, "Ссылка на владельца статистических данных о валовой добавленной стоимости"@ru .
+
+eco:dataSource a rdf:Property ;
+    rdfs:domain eco:StatisticsData ;
+    rdfs:range xsd:string ;
+    rdfs:label "Data source"@en, "Источник данных"@ru ;
+    rdfs:comment "Source of statistics data on gross value added (GVA)"@en, "Источник статистических данных о валовой добавленной стоимости"@ru .
+
+eco:dataSourceLink a rdf:Property ;
+    rdfs:domain eco:StatisticsData ;
+    rdfs:range xsd:string ;
+    rdfs:label "Link to data source"@en, "Ссылка на источник данных"@ru ;
+    rdfs:comment "Link to source of statistics data on gross value added (GVA)"@en, "Ссылка на источник статистических данных о валовой добавленной стоимости"@ru .
+
+eco:dates a rdf:Property ;
+    rdfs:domain eco:StatisticsData ;
+    rdfs:range xsd:string ;
+    rdfs:label "Dates"@en, "Даты"@ru ;
+    rdfs:comment "Financial observation dates"@en, "Финансовые даты наблюдений"@ru .
+
+eco:updateCycle a rdf:Property ;
+    rdfs:domain eco:StatisticsData ;
+    rdfs:range xsd:string ;
+    rdfs:label "Update cycle"@en, "Цикл обновления"@ru ;
+    rdfs:comment "Update cycle of statistics data on gross value added (GVA)"@en, "Цикл обновления статистических данных о валовой добавленной стоимости"@ru .

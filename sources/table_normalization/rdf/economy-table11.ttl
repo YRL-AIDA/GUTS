@@ -1,0 +1,48 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:BankruptcyEmploymentObservation a rdfs:Class ;
+    rdfs:label "Bankruptcy employment observation"@en, "Наблюдение о банкротстве по занятости"@ru ;
+    rdfs:comment "The observation of bankruptcies by employment status in England and Wales, not seasonally adjusted, 1 January 2012 to 30 June 2022"@en, "Наблюдение за числом банкротств в зависимости от статуса занятости в Англии и Уэльсе без учета сезонных колебаний, с 1 января 2012 г. по 30 июня 2022 г."@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:year a rdf:Property ;
+    rdfs:domain eco:BankruptcyEmploymentObservation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+eco:quarter a rdf:Property ;
+    rdfs:domain eco:BankruptcyEmploymentObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Quarter"@en, "Квартал"@ru ;
+    rdfs:comment "The time period: Q1, Q2, Q3, Q4 for quarterly data"@en, "Временной период: Q1, Q2, Q3, Q4 для квартальных данных"@ru .
+
+eco:employmentStatus a rdf:Property ;
+    rdfs:domain eco:BankruptcyEmploymentObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Employment status"@en, "Статус занятости"@ru ;
+    rdfs:comment "The specific employment status"@en, "Конкретный статус занятости"@ru .
+
+eco:bankruptcyNumber a rdf:Property ;
+    rdfs:domain eco:BankruptcyEmploymentObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of bankruptcies"@en, "Число банкротств"@ru ;
+    rdfs:comment "The number of bankruptcies by employment status for a given time period"@en, "Количество банкротств в зависимости от статуса занятости для данного временного периода"@ru .
+
+eco:percentageChange a rdf:Property ;
+    rdfs:domain eco:BankruptcyEmploymentObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Percentage change"@en, "Процентное изменение"@ru ;
+    rdfs:comment "Percentage change for the latest quarter compared to the previous one"@en, "Процентное изменение за последний квартал по сравнению с предыдущим"@ru .
+
+eco:dataStatus a rdf:Property ;
+    rdfs:domain eco:BankruptcyEmploymentObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Data status"@en, "Статус данных"@ru ;
+    rdfs:comment "The quality flag of the data (not yet available, revised, provisional, or empty)"@en, "Флаг качества данных (пока недоступно, пересмотренные, предварительные или пустое значение)"@ru .
