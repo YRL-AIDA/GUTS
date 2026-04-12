@@ -7,7 +7,7 @@
 
 eco:IndividualInsolvencyObservation a rdfs:Class ;
     rdfs:label "Individual insolvency observation"@en, "Наблюдение за индивидуальной неплатежеспособностью"@ru ;
-    rdfs:comment "The observation of individual insolvencies in England and Wales, not seasonally adjusted, 1 January 2012 to 30 June 2022"@en, "Наблюдение за количеством случаев несостоятельности отдельных лиц в Англии и Уэльсе без учета сезонных колебаний, с 1 января 2012 г. по 30 июня 2022 г."@ru .
+    rdfs:comment "The observation of individual insolvencies in England and Wales, not seasonally adjusted"@en, "Наблюдение за количеством случаев несостоятельности отдельных лиц в Англии и Уэльсе без учета сезонных колебаний"@ru .
 
 # ==================== Datatype Properties ====================
 
