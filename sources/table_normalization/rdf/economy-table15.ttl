@@ -1,0 +1,98 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:SportsTurnoverPerHeadObservation a rdfs:Class ;
+    rdfs:label "Sports turnover per head observation"@en, "Наблюдение за оборотом спортивных товаров на душу населения"@ru ;
+    rdfs:comment "The observation of turnover per head for a specific sports sub-sector, English region, and year"@en, "Наблюдение за оборотом спортивных товаров на душу населения для конкретного подсектора спортивной индустрии, региона Англии и года"@ru .
+
+eco:ObservationAggregation a rdfs:Class ;
+    rdfs:label "Observation aggregation"@en, "Агрегирование наблюдений"@ru ;
+    rdfs:comment "Aggregation of sports turnover per head observations across all sub-sectors"@en, "Сводные данные по обороту спортивных товаров на душу населения по всем подсекторам"@ru .
+
+eco:StatisticsData a rdfs:Class ;
+    rdfs:label "Statistics data"@en, "Данные о статистики"@ru ;
+    rdfs:comment "Data on statistics of sports turnover per head observations by sub-sectors"@en, "Статистические данные по обороту спортивных товаров на душу населения по подсекторам"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:year a rdf:Property ;
+    rdfs:domain eco:SportsTurnoverPerHeadObservation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "The calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+eco:region a rdf:Property ;
+    rdfs:domain eco:SportsTurnoverPerHeadObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region"@en, "Регион"@ru ;
+    rdfs:comment "The English region"@en, "Регион Англии"@ru .
+
+eco:subSector a rdf:Property ;
+    rdfs:domain eco:SportsTurnoverPerHeadObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sub-sector"@en, "Подсектор"@ru ;
+    rdfs:comment "The specific sport sub-sector"@en, "Конкретный спортивный подсектор"@ru .
+
+eco:turnoverPerHead a rdf:Property ;
+    rdfs:domain eco:SportsTurnoverPerHeadObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Turnover per head"@en, "Оборот на душу населения"@ru ;
+    rdfs:comment "The turnover per head in thousands of pounds (£) for the given sub-sector"@en, "Оборот на душу населения в тысячах фунтов стерлингов (£) для данного подсектора"@ru .
+
+eco:year a rdf:Property ;
+    rdfs:domain eco:ObservationAggregation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "The calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+eco:region a rdf:Property ;
+    rdfs:domain eco:ObservationAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region"@en, "Регион"@ru ;
+    rdfs:comment "The English region"@en, "Регион Англии"@ru .
+
+eco:totalTurnoverPerHead a rdf:Property ;
+    rdfs:domain eco:ObservationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total turnover per head"@en, "Общий оборот на душу населения"@ru ;
+    rdfs:comment "Total turnover per head in thousands of pounds (£) across all sport sub-sectors"@en, "Общий на душу населения в тысячах фунтов стерлингов (£) по всем спортивным подсекторам"@ru .
+
+eco:dataOwner a rdf:Property ;
+    rdfs:domain eco:StatisticsData ;
+    rdfs:range xsd:string ;
+    rdfs:label "Data owner"@en, "Владелец данных"@ru ;
+    rdfs:comment "Owner of statistics data on turnover per head in the sport sector"@en, "Владелец статистических данных об обороте на душу населения в спортивном секторе"@ru .
+
+eco:dataOwnerLink a rdf:Property ;
+    rdfs:domain eco:StatisticsData ;
+    rdfs:range xsd:string ;
+    rdfs:label "Link to data owner"@en, "Ссылка на владельца данных"@ru ;
+    rdfs:comment "Link to owner of statistics data on turnover per head in the sport sector"@en, "Ссылка на владельца статистических данных об обороте на душу населения в спортивном секторе"@ru .
+
+eco:dataSource a rdf:Property ;
+    rdfs:domain eco:StatisticsData ;
+    rdfs:range xsd:string ;
+    rdfs:label "Data source"@en, "Источник данных"@ru ;
+    rdfs:comment "Source of statistics data on turnover per head in the sport sector"@en, "Источник статистических данных об обороте на душу населения в спортивном секторе"@ru .
+
+eco:dataSourceLink a rdf:Property ;
+    rdfs:domain eco:StatisticsData ;
+    rdfs:range xsd:string ;
+    rdfs:label "Link to data source"@en, "Ссылка на источник данных"@ru ;
+    rdfs:comment "Link to source of statistics data on turnover per head in the sport sector"@en, "Ссылка на источник статистических данных об обороте на душу населения в спортивном секторе"@ru .
+
+eco:years a rdf:Property ;
+    rdfs:domain eco:StatisticsData ;
+    rdfs:range xsd:string ;
+    rdfs:label "Years"@en, "Годы"@ru ;
+    rdfs:comment "Calendar years of observations"@en, "Календарные годы наблюдений"@ru .
+
+eco:updateCycle a rdf:Property ;
+    rdfs:domain eco:StatisticsData ;
+    rdfs:range xsd:string ;
+    rdfs:label "Update cycle"@en, "Цикл обновления"@ru ;
+    rdfs:comment "Update cycle of statistics data on turnover per head in the sport sector"@en, "Цикл обновления статистических данных об обороте на душу населения в спортивном секторе"@ru .

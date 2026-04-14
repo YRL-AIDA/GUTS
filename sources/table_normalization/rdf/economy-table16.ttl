@@ -1,0 +1,42 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:IndividualInsolvencyObservation a rdfs:Class ;
+    rdfs:label "Individual insolvency observation"@en, "Наблюдение за индивидуальной неплатежеспособностью"@ru ;
+    rdfs:comment "The observation of total number of individual insolvencies by location, England and Wales, 2011 to 2021"@en, "Наблюдение за общим количеством случаев банкротства физических лиц по регионам, Англия и Уэльс, 2011–2021 гг."@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:year a rdf:Property ;
+    rdfs:domain eco:IndividualInsolvencyObservation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+eco:code a rdf:Property ;
+    rdfs:domain eco:IndividualInsolvencyObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Code"@en, "Код"@ru ;
+    rdfs:comment "The geographic code of location"@en, "Географический код местоположения"@ru .
+
+eco:location a rdf:Property ;
+    rdfs:domain eco:IndividualInsolvencyObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Location"@en, "Местоположение"@ru ;
+    rdfs:comment "The name of the geographic are"@en, "Название географической области"@ru .
+
+eco:geography a rdf:Property ;
+    rdfs:domain eco:IndividualInsolvencyObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Geography"@en, "География"@ru ;
+    rdfs:comment "The type of geographic area"@en, "Тип географической области"@ru .
+
+eco:insolvencyNumber a rdf:Property ;
+    rdfs:domain eco:IndividualInsolvencyObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of insolvencies"@en, "Количество банкротств"@ru ;
+    rdfs:comment "The number of individual insolvencies for a given time period"@en, "Количество случаев индивидуальной неплатежеспособности за определенный период времени"@ru .

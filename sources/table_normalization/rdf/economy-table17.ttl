@@ -1,0 +1,332 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:Budget a rdfs:Class ;
+    rdfs:label "Budget"@en, "Бюджет"@ru ;
+    rdfs:comment "Quarterly data summary of business plan budget for July 2012"@en, "Квартальный сводный отчет о бюджете бизнес-плана за июль 2012 года"@ru .
+
+eco:FinancialIndicator a rdfs:Class ;
+    rdfs:label "Financial indicator"@en, "Финансовый показатель"@ru ;
+    rdfs:comment "Quarterly data summary of financial indicators in business plan for July 2012"@en, "Квартальный сводный отчет о финансовых показателях в бизнес-плане за июль 2012 года"@ru .
+
+eco:Spending a rdfs:Class ;
+    rdfs:label "Spending"@en, "Расходы"@ru ;
+    rdfs:comment "Quarterly data summary of business plan spending for July 2012"@en, "Квартальный сводный отчет о расходах по бизнес-плану за июль 2012 года"@ru .
+
+eco:Project a rdfs:Class ;
+    rdfs:label "Project"@en, "Проект"@ru ;
+    rdfs:comment "Quarterly data summary of business plan projects for July 2012"@en, "Квартальный сводный отчет о проектах по бизнес-плану за июль 2012 года"@ru .
+
+eco:Results a rdfs:Class ;
+    rdfs:label "Results"@en, "Результаты"@ru ;
+    rdfs:comment "Quarterly data summary of business plan results for July 2012"@en, "Квартальный сводный отчет о результатах выполнения бизнес-плана за июль 2012 года"@ru .
+
+eco:StructuralReformPlan a rdfs:Class ;
+    rdfs:label "Structural reform plan"@en, "План структурных реформ"@ru ;
+    rdfs:comment "Quarterly data summary of structural reform plan in business plan results for July 2012"@en, "Квартальный сводный отчет о планах структурных реформ в бизнес-плане за июль 2012 года"@ru .
+
+eco:WorkforceSize a rdfs:Class ;
+    rdfs:label "Workforce size"@en, "Численность персонала"@ru ;
+    rdfs:comment "Quarterly data summary of workforce size costs in business plan for July 2012"@en, "Квартальный сводный отчет по данным о стоимости численности персонала в рамках бизнес-плана за июль 2012 года"@ru .
+
+eco:Department a rdfs:Class ;
+    rdfs:label "Department"@en, "Ведомство"@ru ;
+    rdfs:comment "Quarterly data summary on departments and agencies in business plan for July 2012"@en, "Квартальный сводный отчет по ведомствам и агентствам в бизнес-плане за июль 2012 года"@ru .
+
+eco:PeopleSurvey a rdfs:Class ;
+    rdfs:label "People survey"@en, "Опрос персонала"@ru ;
+    rdfs:comment "Quarterly data summary on business plan people survey for July 2012"@en, "Квартальный сводный отчет по опросу персонала в рамках бизнес-плана за июль 2012 года"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:date a rdf:Property ;
+    rdfs:domain eco:Budget ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date"@en, "Дата"@ru ;
+    rdfs:comment "Date of expenditure observation"@en, "Дата наблюдения за расходами"@ru .
+
+eco:quarter a rdf:Property ;
+    rdfs:domain eco:Budget ;
+    rdfs:range xsd:string ;
+    rdfs:label "Quarter"@en, "Квартал"@ru ;
+    rdfs:comment "The time period: Q1, Q2, Q3, Q4 for quarterly data"@en, "Временной период: Q1, Q2, Q3, Q4 для квартальных данных"@ru .
+
+eco:budgetItem a rdf:Property ;
+    rdfs:domain eco:Budget ;
+    rdfs:range xsd:string ;
+    rdfs:label "Budget item"@en, "Статья бюджета"@ru ;
+    rdfs:comment "Budget expense item"@en, "Статья расхода из бюджета"@ru .
+
+eco:contributoryElement a rdf:Property ;
+    rdfs:domain eco:Budget ;
+    rdfs:range xsd:string ;
+    rdfs:label "Contributory element"@en, "Сопутствующий элемент"@ru ;
+    rdfs:comment "The main contributory factor"@en, "Основной сопутствующий фактор"@ru .
+
+eco:unit a rdf:Property ;
+    rdfs:domain eco:Budget ;
+    rdfs:range xsd:string ;
+    rdfs:label "Unit"@en, "Единица измерения"@ru ;
+    rdfs:comment "Unit of measurement for the budget item"@en, "Единица измерения статьи бюджета"@ru .
+
+eco:expenses a rdf:Property ;
+    rdfs:domain eco:Budget ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Expenses"@en, "Затраты"@ru ;
+    rdfs:comment "Expenses by budget item"@en, "Затраты по статье бюджета"@ru .
+
+eco:date a rdf:Property ;
+    rdfs:domain eco:FinancialIndicator ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date"@en, "Дата"@ru ;
+    rdfs:comment "Date of observation of the financial indicator"@en, "Дата наблюдения за финансовым показателем"@ru .
+
+eco:quarter a rdf:Property ;
+    rdfs:domain eco:FinancialIndicator ;
+    rdfs:range xsd:string ;
+    rdfs:label "Quarter"@en, "Квартал"@ru ;
+    rdfs:comment "The time period: Q1, Q2, Q3, Q4 for quarterly data"@en, "Временной период: Q1, Q2, Q3, Q4 для квартальных данных"@ru .
+
+eco:indicatorType a rdf:Property ;
+    rdfs:domain eco:FinancialIndicator ;
+    rdfs:range xsd:string ;
+    rdfs:label "Indicator type"@en, "Тип показателя"@ru ;
+    rdfs:comment "The type of financial indicator of expenses"@en, "Тип финансового показателя расходов"@ru .
+
+eco:indicatorValue a rdf:Property ;
+    rdfs:domain eco:FinancialIndicator ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Indicator value"@en, "Значение показателя"@ru ;
+    rdfs:comment "The specific value of financial indicator"@en, "Конкретное значение финансового показателя"@ru .
+
+eco:date a rdf:Property ;
+    rdfs:domain eco:Spending ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date"@en, "Дата"@ru ;
+    rdfs:comment "Date of expenditure observation"@en, "Дата наблюдения за расходами"@ru .
+
+eco:quarter a rdf:Property ;
+    rdfs:domain eco:Spending ;
+    rdfs:range xsd:string ;
+    rdfs:label "Quarter"@en, "Квартал"@ru ;
+    rdfs:comment "The time period: Q1, Q2, Q3, Q4 for quarterly data"@en, "Временной период: Q1, Q2, Q3, Q4 для квартальных данных"@ru .
+
+eco:commonSpendArea a rdf:Property ;
+    rdfs:domain eco:Spending ;
+    rdfs:range xsd:string ;
+    rdfs:label "Common area of spend"@en, "Общая область расходов"@ru ;
+    rdfs:comment "The item type of the common area of spend"@en, "Тип статьи общей области расходования средств"@ru .
+
+eco:spendSubarea a rdf:Property ;
+    rdfs:domain eco:Spending ;
+    rdfs:range xsd:string ;
+    rdfs:label "Subarea of spend"@en, "Подобласть расходов"@ru ;
+    rdfs:comment "Specific name of the spend subarea"@en, "Конкретное название подобласти расходов"@ru .
+
+eco:unit a rdf:Property ;
+    rdfs:domain eco:Spending ;
+    rdfs:range xsd:string ;
+    rdfs:label "Unit"@en, "Единица измерения"@ru ;
+    rdfs:comment "Unit of measurement for the common area of spend"@en, "Единица измерения статьи общей области расходов"@ru .
+
+eco:spendValue a rdf:Property ;
+    rdfs:domain eco:Spending ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Spend value"@en, "Стоимость расходов"@ru ;
+    rdfs:comment "The value of expenses spent on a specific subarea"@en, "Стоимость расходов, затраченная на определенную подобласть"@ru .
+
+eco:projectName a rdf:Property ;
+    rdfs:domain eco:Project ;
+    rdfs:range xsd:string ;
+    rdfs:label "Project name"@en, "Название проекта"@ru ;
+    rdfs:comment "Name of the major project"@en, "Название основного проекта"@ru .
+
+eco:unit a rdf:Property ;
+    rdfs:domain eco:Project ;
+    rdfs:range xsd:string ;
+    rdfs:label "Unit"@en, "Единица измерения"@ru ;
+    rdfs:comment "Unit of measurement of project cost"@en, "Единица измерения стоимости проекта"@ru .
+
+eco:cost a rdf:Property ;
+    rdfs:domain eco:Project ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Cost"@en, "Стоимость"@ru ;
+    rdfs:comment "Total cost of the major project"@en, "Общая стоимость основного проекта"@ru .
+
+eco:indicatorType a rdf:Property ;
+    rdfs:domain eco:Results ;
+    rdfs:range xsd:string ;
+    rdfs:label "Indicator type"@en, "Тип показателя"@ru ;
+    rdfs:comment "Type of financial indicator of results"@en, "Тип финансового показателя результатов"@ru .
+
+eco:indicatorName a rdf:Property ;
+    rdfs:domain eco:Results ;
+    rdfs:range xsd:string ;
+    rdfs:label "Indicator name"@en, "Название показателя"@ru ;
+    rdfs:comment "Name of financial indicator of results"@en, "Название финансового показателя результатов"@ru .
+
+eco:unit a rdf:Property ;
+    rdfs:domain eco:Results ;
+    rdfs:range xsd:string ;
+    rdfs:label "Unit"@en, "Единица измерения"@ru ;
+    rdfs:comment "Unit of measurement of financial indicator"@en, "Единица измерения финансового показателя"@ru .
+
+eco:currentTimePeriod a rdf:Property ;
+    rdfs:domain eco:Results ;
+    rdfs:range xsd:string ;
+    rdfs:label "Current time period"@en, "Текущий период времени"@ru ;
+    rdfs:comment "Current time period for the financial indicator"@en, "Текущий временной период для финансового показателя"@ru .
+
+eco:currentValue a rdf:Property ;
+    rdfs:domain eco:Results ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Current value"@en, "Текущее значение"@ru ;
+    rdfs:comment "Current value of the financial indicator"@en, "Текущее значение финансового показателя"@ru .
+
+eco:previousTimePeriod a rdf:Property ;
+    rdfs:domain eco:Results ;
+    rdfs:range xsd:string ;
+    rdfs:label "Previous time period"@en, "Предыдущий период времени"@ru ;
+    rdfs:comment "Previous time period for the financial indicator"@en, "Предыдущий временной период для финансового показателя"@ru .
+
+eco:previousValue a rdf:Property ;
+    rdfs:domain eco:Results ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Previous value"@en, "Предыдущее значение"@ru ;
+    rdfs:comment "Previous value of the financial indicator"@en, "Предыдущее значение финансового показателя"@ru .
+
+eco:date a rdf:Property ;
+    rdfs:domain eco:StructuralReformPlan ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date"@en, "Дата"@ru ;
+    rdfs:comment "Date of action observation"@en, "Дата наблюдения за действием"@ru .
+
+eco:quarter a rdf:Property ;
+    rdfs:domain eco:StructuralReformPlan ;
+    rdfs:range xsd:string ;
+    rdfs:label "Quarter"@en, "Квартал"@ru ;
+    rdfs:comment "The time period: Q1, Q2, Q3, Q4 for quarterly data"@en, "Временной период: Q1, Q2, Q3, Q4 для квартальных данных"@ru .
+
+eco:actionCategory a rdf:Property ;
+    rdfs:domain eco:StructuralReformPlan ;
+    rdfs:range xsd:string ;
+    rdfs:label "Action category"@en, "Категория действия"@ru ;
+    rdfs:comment "Name of the action category within the structural reform plan"@en, "Название категории действия в рамках плана структурных реформ"@ru .
+
+eco:actionNumber a rdf:Property ;
+    rdfs:domain eco:StructuralReformPlan ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of actions"@en, "Количество действий"@ru ;
+    rdfs:comment "Number of actions within the structural reform plan"@en, "Количество действий в рамках плана структурных реформ"@ru .
+
+eco:employeeCategory a rdf:Property ;
+    rdfs:domain eco:WorkforceSize ;
+    rdfs:range xsd:string ;
+    rdfs:label "Employee category"@en, "Категория сотрудников"@ru ;
+    rdfs:comment "The name of employee category"@en, "Название категории сотрудников"@ru .
+
+eco:departmentType a rdf:Property ;
+    rdfs:domain eco:WorkforceSize ;
+    rdfs:range xsd:string ;
+    rdfs:label "Department type"@en, "Тип ведомства"@ru ;
+    rdfs:comment "The name of the department or agency type"@en, "Название типа ведомства или агентства"@ru .
+
+eco:unit a rdf:Property ;
+    rdfs:domain eco:WorkforceSize ;
+    rdfs:range xsd:string ;
+    rdfs:label "Unit"@en, "Единица измерения"@ru ;
+    rdfs:comment "Unit of measurement for the cost of employees"@en, "Единица измерения стоимости сотрудников"@ru .
+
+eco:currentTimePeriod a rdf:Property ;
+    rdfs:domain eco:WorkforceSize ;
+    rdfs:range xsd:string ;
+    rdfs:label "Current time period"@en, "Текущий период времени"@ru ;
+    rdfs:comment "Current time period for monitoring employee costs"@en, "Текущий временной период для наблюдения за стоимостью сотрудников"@ru .
+
+eco:currentValue a rdf:Property ;
+    rdfs:domain eco:WorkforceSize ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Current value"@en, "Текущее значение"@ru ;
+    rdfs:comment "Current value of employee costs"@en, "Текущее значение стоимости персонала"@ru .
+
+eco:previousTimePeriod a rdf:Property ;
+    rdfs:domain eco:WorkforceSize ;
+    rdfs:range xsd:string ;
+    rdfs:label "Previous time period"@en, "Предыдущий период времени"@ru ;
+    rdfs:comment "Previous time period for monitoring employee costs"@en, "Предыдущий временной период для наблюдения за стоимостью сотрудников"@ru .
+
+eco:previousValue a rdf:Property ;
+    rdfs:domain eco:WorkforceSize ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Previous value"@en, "Предыдущее значение"@ru ;
+    rdfs:comment "Previous value of employee costs"@en, "Предыдущее значение стоимости персонала"@ru .
+
+eco:category a rdf:Property ;
+    rdfs:domain eco:Department ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en, "Категория"@ru ;
+    rdfs:comment "Name of the general measurement category"@en, "Название общей категории измерения"@ru .
+
+eco:subcategory a rdf:Property ;
+    rdfs:domain eco:Department ;
+    rdfs:range xsd:string ;
+    rdfs:label "Subcategory"@en, "Подкатегория"@ru ;
+    rdfs:comment "Name of a specific subcategory of the measurement"@en, "Название конкретной подкатегории измерения"@ru .
+
+eco:unit a rdf:Property ;
+    rdfs:domain eco:Department ;
+    rdfs:range xsd:string ;
+    rdfs:label "Unit"@en, "Единица измерения"@ru ;
+    rdfs:comment "Unit of measurement"@en, "Единица измерения"@ru .
+
+eco:currentTimePeriod a rdf:Property ;
+    rdfs:domain eco:Department ;
+    rdfs:range xsd:string ;
+    rdfs:label "Current time period"@en, "Текущий период времени"@ru ;
+    rdfs:comment "Current time period for measuring the indicator"@en, "Текущий временной период для измерения показателя"@ru .
+
+eco:currentValue a rdf:Property ;
+    rdfs:domain eco:Department ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Current value"@en, "Текущее значение"@ru ;
+    rdfs:comment "Current value of the measurement subcategory indicator"@en, "Текущее значение показателя подкатегории измерения"@ru .
+
+eco:previousTimePeriod a rdf:Property ;
+    rdfs:domain eco:Department ;
+    rdfs:range xsd:string ;
+    rdfs:label "Previous time period"@en, "Предыдущий период времени"@ru ;
+    rdfs:comment "Previous time period for measuring the indicator"@en, "Предыдущий временной период для измерения показателя"@ru .
+
+eco:previousValue a rdf:Property ;
+    rdfs:domain eco:Department ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Previous value"@en, "Предыдущее значение"@ru ;
+    rdfs:comment "Previous value of the measurement subcategory indicator"@en, "Предыдущее значение показателя подкатегории измерения"@ru .
+
+eco:year a rdf:Property ;
+    rdfs:domain eco:PeopleSurvey ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of people survey"@en, "Календарный год опроса персонала"@ru .
+
+eco:engagementIndex a rdf:Property ;
+    rdfs:domain eco:PeopleSurvey ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Engagement Index"@en, "Индекс вовлеченности"@ru ;
+    rdfs:comment "Percentage value of the engagement index"@en, "Процентное значение индекса вовлеченности"@ru .
+
+eco:themeCategory a rdf:Property ;
+    rdfs:domain eco:PeopleSurvey ;
+    rdfs:range xsd:string ;
+    rdfs:label "Theme category"@en, "Категория темы"@ru ;
+    rdfs:comment "Name of the metric for the theme category"@en, "Название метрики для тематической категории"@ru .
+
+eco:themeScore a rdf:Property ;
+    rdfs:domain eco:PeopleSurvey ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Theme score"@en, "Тематическая оценка"@ru ;
+    rdfs:comment "Percentage value of theme score"@en, "Процентное значение тематической оценки"@ru .
