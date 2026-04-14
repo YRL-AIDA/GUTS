@@ -32,8 +32,8 @@ eco:insolvencyType a rdf:Property ;
 eco:insolvencyNumber a rdf:Property ;
     rdfs:domain eco:IndividualInsolvencyObservation ;
     rdfs:range xsd:integer ;
-    rdfs:label "Number of insolvency"@en, "Количество банкротств"@ru ;
-    rdfs:comment "The number of insolvency for a given time period"@en, "Количество случаев банкротств для данного временного периода"@ru .
+    rdfs:label "Number of insolvencies"@en, "Количество банкротств"@ru ;
+    rdfs:comment "The number of individual insolvencies for a given time period"@en, "Количество случаев индивидуальной неплатежеспособности за определенный период времени"@ru .
 
 eco:percentageChange a rdf:Property ;
     rdfs:domain eco:IndividualInsolvencyObservation ;
