@@ -1,0 +1,42 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:DebtReliefObservation a rdfs:Class ;
+    rdfs:label "Debt relief observation"@en, "Наблюдение за списанием долгов"@ru ;
+    rdfs:comment "The observation of number of debt relief orders by location, England and Wales, 2011 to 2021"@en, "Наблюдение за количеством распоряжений о списании долгов по регионам, Англия и Уэльс, 2011–2021 гг."@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:year a rdf:Property ;
+    rdfs:domain eco:DebtReliefObservation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+eco:code a rdf:Property ;
+    rdfs:domain eco:DebtReliefObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Code"@en, "Код"@ru ;
+    rdfs:comment "The geographic code of location"@en, "Географический код местоположения"@ru .
+
+eco:location a rdf:Property ;
+    rdfs:domain eco:DebtReliefObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Location"@en, "Местоположение"@ru ;
+    rdfs:comment "The name of the geographic are"@en, "Название географической области"@ru .
+
+eco:geography a rdf:Property ;
+    rdfs:domain eco:DebtReliefObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Geography"@en, "География"@ru ;
+    rdfs:comment "The type of geographic area"@en, "Тип географической области"@ru .
+
+eco:debtReliefOrderNumber a rdf:Property ;
+    rdfs:domain eco:DebtReliefObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of debt relief orders"@en, "Количество распоряжений о списании долгов"@ru ;
+    rdfs:comment "The number of debt relief orders for a given time period"@en, "Количество распоряжений о списании долгов за определенный период времени"@ru .

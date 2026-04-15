@@ -1,0 +1,54 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:AfricaDevelopmentDynamics a rdfs:Class ;
+    rdfs:label "Africa's Development Dynamics"@en, "Динамика развития Африки"@ru ;
+    rdfs:comment "The observation of various indicators of African development dynamics for 2023"@en, "Наблюдение различных показателей динамики развития Африки за 2023 год"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:year a rdf:Property ;
+    rdfs:domain eco:AfricaDevelopmentDynamics ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+eco:referenceArea a rdf:Property ;
+    rdfs:domain eco:AfricaDevelopmentDynamics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Reference area"@en, "Контрольная область"@ru ;
+    rdfs:comment "Reference area, region or country where observation took place"@en, "Область, регион или страна, где проводилось наблюдение"@ru .
+
+eco:resourceStatus a rdf:Property ;
+    rdfs:domain eco:AfricaDevelopmentDynamics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Resource status"@en, "Состояние ресурсов"@ru ;
+    rdfs:comment "Information about the status of resources in a region or country"@en, "Сведения о состоянии ресурсов региона или страны"@ru .
+
+eco:indicator a rdf:Property ;
+    rdfs:domain eco:AfricaDevelopmentDynamics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Indicator"@en, "Показатель"@ru ;
+    rdfs:comment "The main measurable indicator of development dynamics"@en, "Основной измеряемый показатель динамики развития"@ru .
+
+eco:combinedMeasure a rdf:Property ;
+    rdfs:domain eco:AfricaDevelopmentDynamics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Combined measure"@en, "Комбинированная мера"@ru ;
+    rdfs:comment "Name of a specific combined measure of measurement"@en, "Название конкретной комбинированной меры измерения"@ru .
+
+eco:measureUnit a rdf:Property ;
+    rdfs:domain eco:AfricaDevelopmentDynamics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Unit of measure"@en, "Единицы измерения"@ru ;
+    rdfs:comment "Units of measurement of combined measure"@en, "Единицы измерения комбинированной меры"@ru .
+
+eco:measureValue a rdf:Property ;
+    rdfs:domain eco:AfricaDevelopmentDynamics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Value of measure"@en, "Значение меры"@ru ;
+    rdfs:comment "The meaning of the combined measure"@en, "Значение комбинированной меры"@ru .
