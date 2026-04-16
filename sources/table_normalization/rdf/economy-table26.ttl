@@ -1,0 +1,42 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:GovernmentAccount a rdfs:Class ;
+    rdfs:label "Government account"@en, "Государственный отчет"@ru ;
+    rdfs:comment "Annual government non-financial account with key indicators in Italy (for Developer API)"@en, "Ежегодный государственный нефинансовый отчет с ключевыми показателями в Италии (для API разработчика)"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:timePeriod a rdf:Property ;
+    rdfs:domain eco:GovernmentAccount ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+eco:institutionalSector a rdf:Property ;
+    rdfs:domain eco:GovernmentAccount ;
+    rdfs:range xsd:string ;
+    rdfs:label "Institutional sector"@en, "Институциональный сектор"@ru ;
+    rdfs:comment "The institutional sector within general government"@en, "Институциональный сектор в рамках общего государственного управления"@ru .
+
+eco:accountType a rdf:Property ;
+    rdfs:domain eco:GovernmentAccount ;
+    rdfs:range xsd:string ;
+    rdfs:label "Account type"@en, "Тип счета"@ru ;
+    rdfs:comment "The type of government account or combined transaction"@en, "Тип государственного счета или комбинированной транзакции"@ru .
+
+eco:accountingEntry a rdf:Property ;
+    rdfs:domain eco:GovernmentAccount ;
+    rdfs:range xsd:string ;
+    rdfs:label "Accounting entry"@en, "Бухгалтерская запись"@ru ;
+    rdfs:comment "The specific accounting line item or transaction category within the account"@en, "Конкретная статья бухгалтерского учета или категория транзакции в рамках счета"@ru .
+
+eco:accountValue a rdf:Property ;
+    rdfs:domain eco:GovernmentAccount ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Account value"@en, "Значение счета"@ru ;
+    rdfs:comment "The numerical value of the accounting entry in the specified unit of measure"@en, "Числовое значение бухгалтерской записи в указанной единице измерения"@ru .

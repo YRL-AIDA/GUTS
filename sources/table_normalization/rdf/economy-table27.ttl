@@ -1,0 +1,66 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:QuarterlyNationalAccount a rdfs:Class ;
+    rdfs:label "Quarterly national account"@en, "Квартальный национальный счет"@ru ;
+    rdfs:comment "The observation from quarterly national accounts, representing a specific transaction item for a given adjustment method, unit of measure, price base, transformation, and quarter"@en, "Данные ежеквартальных национальных счетов, представляющие собой конкретную статью транзакций для заданного метода корректировки, единицы измерения, ценовой базы, преобразования и квартала"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:year a rdf:Property ;
+    rdfs:domain eco:QuarterlyNationalAccount ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+eco:quarter a rdf:Property ;
+    rdfs:domain eco:QuarterlyNationalAccount ;
+    rdfs:range xsd:string ;
+    rdfs:label "Quarter"@en, "Квартал"@ru ;
+    rdfs:comment "The time period: Q1, Q2, Q3, Q4 for quarterly data"@en, "Временной период: Q1, Q2, Q3, Q4 для квартальных данных"@ru .
+
+eco:combinedTransaction a rdf:Property ;
+    rdfs:domain eco:QuarterlyNationalAccount ;
+    rdfs:range xsd:string ;
+    rdfs:label "Combined transaction"@en, "Совместная сделка"@ru ;
+    rdfs:comment "The specific type of accounting combined transaction"@en, "Конкретный тип бухгалтерской комбинированной транзакции"@ru .
+
+eco:combinedMeasureUnit a rdf:Property ;
+    rdfs:domain eco:QuarterlyNationalAccount ;
+    rdfs:range xsd:string ;
+    rdfs:label "Combined unit of measure"@en, "Комбинированная единица измерения"@ru ;
+    rdfs:comment "The unit of measurement for quarterly national account"@en, "Единица измерения для квартального национального счета"@ru .
+
+eco:adjustment a rdf:Property ;
+    rdfs:domain eco:QuarterlyNationalAccount ;
+    rdfs:range xsd:string ;
+    rdfs:label "Adjustment"@en, "Корректировка"@ru ;
+    rdfs:comment "The type of statistical adjustment applied to the data"@en, "Тип статистической корректировки, примененной к данным"@ru .
+
+eco:measureUnit a rdf:Property ;
+    rdfs:domain eco:QuarterlyNationalAccount ;
+    rdfs:range xsd:string ;
+    rdfs:label "Unit of measure"@en, "Единица измерения"@ru ;
+    rdfs:comment "The exact unit of measurement for the value"@en, "Точная единица измерения для значения"@ru .
+
+eco:priceBase a rdf:Property ;
+    rdfs:domain eco:QuarterlyNationalAccount ;
+    rdfs:range xsd:string ;
+    rdfs:label "Price base"@en, "Ценовая база"@ru ;
+    rdfs:comment "The price basis used for valuation"@en, "Ценовая база, используемая для оценки"@ru .
+
+eco:transformation a rdf:Property ;
+    rdfs:domain eco:QuarterlyNationalAccount ;
+    rdfs:range xsd:string ;
+    rdfs:label "Transformation"@en, "Трансформация"@ru ;
+    rdfs:comment "The data transformation applied"@en, "Примененное преобразование данных"@ru .
+
+eco:transactionValue a rdf:Property ;
+    rdfs:domain eco:QuarterlyNationalAccount ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Transaction value"@en, "Значение транзакции"@ru ;
+    rdfs:comment "The numerical value of the observed transaction in the specified unit of measure, price base, and transformation"@en, "Числовое значение наблюдаемой транзакции в указанной единице измерения, ценовой базе и преобразовании"@ru .

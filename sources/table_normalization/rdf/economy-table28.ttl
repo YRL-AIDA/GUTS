@@ -1,0 +1,60 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:FossilFuelSupport a rdfs:Class ;
+    rdfs:label "Fossil fuel support"@en, "Поддержка ископаемого топлива"@ru ;
+    rdfs:comment "The observation of fossil fuel support, representing a specific instrument, beneficiary level, stage, fuel type, institutional sector, and year"@en, "Анализ поддержки использования ископаемого топлива с учетом конкретного инструмента, уровня бенефициара, этапа, типа топлива, институционального сектора и года"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:timePeriod a rdf:Property ;
+    rdfs:domain eco:FossilFuelSupport ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+eco:supportMechanism a rdf:Property ;
+    rdfs:domain eco:FossilFuelSupport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Support mechanism"@en, "Механизм поддержки"@ru ;
+    rdfs:comment "The type of support mechanism"@en, "Тип механизма поддержки"@ru .
+
+eco:instrument a rdf:Property ;
+    rdfs:domain eco:FossilFuelSupport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Instrument"@en, "Инструмент"@ru ;
+    rdfs:comment "The specific policy instrument or measure providing fossil fuel support"@en, "Конкретный политический инструмент или мера, предоставляющая поддержку ископаемого топлива"@ru .
+
+eco:beneficiary a rdf:Property ;
+    rdfs:domain eco:FossilFuelSupport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Beneficiary"@en, "Бенефициар"@ru ;
+    rdfs:comment "The hierarchical level of the beneficiary"@en, "Иерархический уровень бенефициара"@ru .
+
+eco:stage a rdf:Property ;
+    rdfs:domain eco:FossilFuelSupport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Stage"@en, "Этап"@ru ;
+    rdfs:comment "The stage in the fossil fuel value chain"@en, "Этап в цепочке создания стоимости ископаемого топлива"@ru .
+
+eco:fuelType a rdf:Property ;
+    rdfs:domain eco:FossilFuelSupport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Fuel type"@en, "Тип топлива"@ru ;
+    rdfs:comment "The type of fossil fuel receiving support, including subtypes"@en, "Тип ископаемого топлива, получающего поддержку, включая подтипы"@ru .
+
+eco:institutionalSector a rdf:Property ;
+    rdfs:domain eco:FossilFuelSupport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Institutional sector"@en, "Институциональный сектор"@ru ;
+    rdfs:comment "The institutional sector receiving or administering the support"@en, "Институциональный сектор, получающий или администрирующий поддержку"@ru .
+
+eco:supportValue a rdf:Property ;
+    rdfs:domain eco:FossilFuelSupport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Support value"@en, "Значение поддержки"@ru ;
+    rdfs:comment "The numerical value of the fossil fuel support in the specified unit of measure (Euro)"@en, "Числовое значение поддержки ископаемого топлива в указанной единице измерения (евро)"@ru .
