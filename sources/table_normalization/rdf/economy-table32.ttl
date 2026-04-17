@@ -1,0 +1,172 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:Seller a rdfs:Class ;
+    rdfs:label "Seller"@en, "Продавец"@ru ;
+    rdfs:comment "Detailed information about the seller"@en, "Подробная информация о продавце"@ru .
+
+eco:Counterparty a rdfs:Class ;
+    rdfs:label "Counterparty"@en, "Контрагент"@ru ;
+    rdfs:comment "Detailed information about the counterparty"@en, "Подробная информация о контрагенте"@ru .
+
+eco:TransactionRegister a rdfs:Class ;
+    rdfs:label "Transaction register"@en, "Реестр транзакций"@ru ;
+    rdfs:comment "A register of intercompany accounts/transactions with details by transaction parties, amounts, and projects"@en, "Реестр межкомпанийных счетов/транзакций с детализацией по сторонам сделки, суммам и проектам"@ru .
+
+# ==================== Object Properties ====================
+
+eco:hasSeller a rdf:Property ;
+    rdfs:domain eco:TransactionRegister ;
+    rdfs:range eco:Seller ;
+    rdfs:label "Seller"@en, "Продавец"@ru ;
+    rdfs:comment "Entry of a specific seller in the register of intercompany accounts/transactions"@en, "Запись конкретного продавца в реестре межкомпанийных счетов/транзакций"@ru .
+
+eco:hasCounterparty a rdf:Property ;
+    rdfs:domain eco:TransactionRegister ;
+    rdfs:range eco:Counterparty ;
+    rdfs:label "Counterparty"@en, "Контрагент"@ru ;
+    rdfs:comment "Entry of a specific seller in the counterparty of intercompany accounts/transactions"@en, "Запись конкретного контрагента в реестре межкомпанийных счетов/транзакций"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:sellerRu a rdf:Property ;
+    rdfs:domain eco:Seller ;
+    rdfs:range xsd:string ;
+    rdfs:label "Code seller"@en, "Код продавца"@ru ;
+    rdfs:comment "Seller entity code in Ru format"@en, "Код продавца в формате Ru"@ru .
+
+eco:sellerBu a rdf:Property ;
+    rdfs:domain eco:Seller ;
+    rdfs:range xsd:string ;
+    rdfs:label "Seller business code"@en, "Бизнес код продавца"@ru ;
+    rdfs:comment "Seller business unit code"@en, "Код бизнес-единицы продавца"@ru .
+
+eco:sellerCitCode a rdf:Property ;
+    rdfs:domain eco:Seller ;
+    rdfs:range xsd:string ;
+    rdfs:label "Seller CIT code"@en, "CIT-код продавца"@ru ;
+    rdfs:comment "Seller CIT (Company Internal Tax) code or identifier"@en, "CIT-код или идентификатор продавца"@ru .
+
+eco:sellerPg a rdf:Property ;
+    rdfs:domain eco:Seller ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Seller profit group code"@en, "Код группы прибыли продавца"@ru ;
+    rdfs:comment "Seller profit group or profit center code as integer"@en, "Код группы прибыли или центра прибыли продавца в виде целого числа"@ru .
+
+eco:counterpartyRu a rdf:Property ;
+    rdfs:domain eco:Counterparty ;
+    rdfs:range xsd:string ;
+    rdfs:label "Code counterparty"@en, "Код контрагента"@ru ;
+    rdfs:comment "Counterparty entity code in Ru format"@en, "Код контрагента в формате Ru"@ru .
+
+eco:counterpartyBu a rdf:Property ;
+    rdfs:domain eco:Counterparty ;
+    rdfs:range xsd:string ;
+    rdfs:label "Counterparty business code"@en, "Бизнес код контрагента"@ru ;
+    rdfs:comment "Counterparty business unit code"@en, "Код бизнес-единицы контрагента"@ru .
+
+eco:counterpartyCitCode a rdf:Property ;
+    rdfs:domain eco:Counterparty ;
+    rdfs:range xsd:string ;
+    rdfs:label "Counterparty CIT code"@en, "CIT-код контрагента"@ru ;
+    rdfs:comment "Counterparty CIT (Company Internal Tax) code or identifier"@en, "CIT-код или идентификатор контрагента"@ru .
+
+eco:counterpartyPg a rdf:Property ;
+    rdfs:domain eco:Counterparty ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Counterparty profit group code"@en, "Код группы прибыли контрагента"@ru ;
+    rdfs:comment "Counterparty profit group or profit center code as integer"@en, "Код группы прибыли или центра прибыли контрагента в виде целого числа"@ru .
+
+eco:igAccount a rdf:Property ;
+    rdfs:domain eco:TransactionRegister ;
+    rdfs:range xsd:string ;
+    rdfs:label "Intercompany account"@en, "Межкомпанийный счет"@ru ;
+    rdfs:comment "Intercompany account code used for reconciliation"@en, "Код межкомпанийного счета, используемый для сверки"@ru .
+
+eco:invoiceNumber a rdf:Property ;
+    rdfs:domain eco:TransactionRegister ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Invoice number"@en, "Номер счета"@ru ;
+    rdfs:comment "Unique invoice number assigned by the seller"@en, "Уникальный номер счет-фактуры, присвоенный продавцом"@ru .
+
+eco:invoiceDate a rdf:Property ;
+    rdfs:domain eco:TransactionRegister ;
+    rdfs:range xsd:date ;
+    rdfs:label "Invoice date"@en, "Дата выставления счета"@ru ;
+    rdfs:comment "Date when the invoice was issued"@en, "Дата выставления счет-фактуры"@ru .
+
+eco:poReferenceNumber a rdf:Property ;
+    rdfs:domain eco:TransactionRegister ;
+    rdfs:range xsd:string ;
+    rdfs:label "Purchase reference number"@en, "Номер заказа"@ru ;
+    rdfs:comment "Purchase order reference number or other external identifier"@en, "Номер ссылки на заказ покупки или другой внешний идентификатор"@ru .
+
+eco:currency a rdf:Property ;
+    rdfs:domain eco:TransactionRegister ;
+    rdfs:range xsd:string ;
+    rdfs:label "Currency"@en, "Валюта"@ru ;
+    rdfs:comment "ISO currency code for the transaction amount"@en, "Код валюты в формате ISO для суммы транзакции"@ru .
+
+eco:amount a rdf:Property ;
+    rdfs:domain eco:TransactionRegister ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Amount"@en, "Сумма"@ru ;
+    rdfs:comment "Transaction amount in the specified currency (negative values indicate credits or reversals)"@en, "Сумма транзакции в указанной валюте (отрицательные значения указывают на кредиты или отмену операции)"@ru .
+
+eco:comment a rdf:Property ;
+    rdfs:domain eco:TransactionRegister ;
+    rdfs:range xsd:string ;
+    rdfs:label "Comment"@en, "Комментарий"@ru ;
+    rdfs:comment "Optional free-text comment or note associated with the invoice line"@en, "Необязательный свободный текстовый комментарий или примечание, связанное со строкой счета"@ru .
+
+eco:dueDate a rdf:Property ;
+    rdfs:domain eco:TransactionRegister ;
+    rdfs:range xsd:date ;
+    rdfs:label "Due date"@en, "Дата оплаты"@ru ;
+    rdfs:comment "Payment due date for the invoice"@en, "Дата оплаты по счет-фактуре"@ru .
+
+eco:projectName a rdf:Property ;
+    rdfs:domain eco:TransactionRegister ;
+    rdfs:range xsd:string ;
+    rdfs:label "Project name"@en, "Название проекта"@ru ;
+    rdfs:comment "Optional name or identifier of the project associated with the transaction"@en, "Необязательное имя или идентификатор проекта, связанного с транзакцией"@ru .
+
+eco:poc a rdf:Property ;
+    rdfs:domain eco:TransactionRegister ;
+    rdfs:range xsd:string ;
+    rdfs:label "Contact point code"@en, "Код точки контакта"@ru ;
+    rdfs:comment "Point of contact code or project contract value indicator"@en, "Код точки контакта или индикатор стоимости контракта проекта"@ru .
+
+eco:projectContractValue a rdf:Property ;
+    rdfs:domain eco:TransactionRegister ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Project contract value"@en, "Стоимость контракта по проекту"@ru ;
+    rdfs:comment "Total contract value for the associated project, in local currency"@en, "Общая стоимость контракта для связанного проекта в локальной валюте"@ru .
+
+eco:amountLocalCurrency a rdf:Property ;
+    rdfs:domain eco:TransactionRegister ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Amount local currency"@en, "Сумма в местной валюте"@ru ;
+    rdfs:comment "Transaction amount converted to the local currency"@en, "Сумма транзакции, конвертированная в местную валюту"@ru .
+
+eco:loadDate a rdf:Property ;
+    rdfs:domain eco:TransactionRegister ;
+    rdfs:range xsd:date ;
+    rdfs:label "Load date"@en, "Дата загрузки"@ru ;
+    rdfs:comment "Timestamp when the transaction record was loaded into the system"@en, "Временная метка загрузки записи транзакции в систему"@ru .
+
+eco:reportingPeriod a rdf:Property ;
+    rdfs:domain eco:TransactionRegister ;
+    rdfs:range xsd:string ;
+    rdfs:label "Reporting period"@en, ""@ru ;
+    rdfs:comment "Financial reporting period identifier"@en, "Идентификатор финансового отчетного периода"@ru .
+
+eco:item a rdf:Property ;
+    rdfs:domain eco:TransactionRegister ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Item"@en, "Позиция"@ru ;
+    rdfs:comment "Line item sequence number or identifier within the invoice or reporting batch"@en, "Порядковый номер или идентификатор строки в счете или пакете отчетности"@ru .

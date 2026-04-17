@@ -1,0 +1,48 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:TradingIndicatorAnalysis a rdfs:Class ;
+    rdfs:label "Trading indicator analysis"@en, "Анализ торговых показателей"@ru ;
+    rdfs:comment "Analysis of trading indicators (weight, value, ratio) for a specific product in a specific year and reference area"@en, "Анализ торговых показателей (вес, стоимость, соотношение) для конкретного продукта в конкретном году и в конкретном регионе"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:year a rdf:Property ;
+    rdfs:domain eco:TradingIndicatorAnalysis ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+eco:country a rdf:Property ;
+    rdfs:domain eco:TradingIndicatorAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label "Country"@en, "Страна"@ru ;
+    rdfs:comment "The geographic reference area for the observation"@en, "Географический регион наблюдения"@ru .
+
+eco:product a rdf:Property ;
+    rdfs:domain eco:TradingIndicatorAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label "Product"@en, "Продукт"@ru ;
+    rdfs:comment "The name or identifier of the product"@en, "Название или идентификатор продукта"@ru .
+
+eco:weight a rdf:Property ;
+    rdfs:domain eco:TradingIndicatorAnalysis ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Weight"@en, "Вес"@ru ;
+    rdfs:comment "The weight of the product trade in milligrams (Mg)"@en, "Вес товара, являющегося предметом торговли, в миллиграммах (Мг)"@ru .
+
+eco:monetaryValue a rdf:Property ;
+    rdfs:domain eco:TradingIndicatorAnalysis ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Monetary value"@en, "Денежная стоимость"@ru ;
+    rdfs:comment "The monetary value of the product trade in US dollars"@en, "Денежная стоимость предмета торговли в долларах США"@ru .
+
+eco:ratio a rdf:Property ;
+    rdfs:domain eco:TradingIndicatorAnalysis ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Ratio"@en, "Соотношение"@ru ;
+    rdfs:comment "The ratio of weight to value (Mg per USD)"@en, "Соотношение веса к стоимости (Мг на доллар США)"@ru .

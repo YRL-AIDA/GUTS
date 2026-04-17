@@ -1,0 +1,64 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:SalesAnalysis a rdfs:Class ;
+    rdfs:label "Sales analysis"@en, "Анализ продаж"@ru ;
+    rdfs:comment "Untaxed sales analysis for a specific customer, product, sales team, and time period"@en, "Анализ продаж без учета налогов для конкретного клиента, продукта, команды продаж и периода времени"@ru .
+
+eco:SalesObservationAggregation a rdfs:Class ;
+    rdfs:label "Aggregation of sales observations"@en, "Агрегация наблюдений по продажам"@ru ;
+    rdfs:comment "Aggregation of observations across all sales excluding taxes for a sales team"@en, "Агрегация наблюдений по всем продажам без учета налогов для команды продаж"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:timePeriod a rdf:Property ;
+    rdfs:domain eco:SalesAnalysis ;
+    rdfs:range xsd:date ;
+    rdfs:label "Time period"@en, "Временной период"@ru ;
+    rdfs:comment "The calendar date of the sales observation"@en, "Календарная дата наблюдения за продажами"@ru .
+
+eco:salesTeam a rdf:Property ;
+    rdfs:domain eco:SalesAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sales team"@en, "Команда продаж"@ru ;
+    rdfs:comment "The sales team responsible for the transaction"@en, "Команда продаж, ответственная за транзакцию"@ru .
+
+eco:customer a rdf:Property ;
+    rdfs:domain eco:SalesAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label "Customer"@en, "Клиент"@ru ;
+    rdfs:comment "The name of the customer or client entity placing the order"@en, "Название клиента или организации, разместившей заказ"@ru .
+
+eco:country a rdf:Property ;
+    rdfs:domain eco:SalesAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label "Country"@en, "Страна"@ru ;
+    rdfs:comment "The country associated with the customer"@en, "Страна, связанная с клиентом"@ru .
+
+eco:productType a rdf:Property ;
+    rdfs:domain eco:SalesAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label "Product type"@en, "Тип продукта"@ru ;
+    rdfs:comment "The type or category of the product sold"@en, "Тип или категория проданного продукт"@ru .
+
+eco:salesAmount a rdf:Property ;
+    rdfs:domain eco:SalesAnalysis ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Sales amount"@en, "Сумма продажи"@ru ;
+    rdfs:comment "The numerical value of the untaxed sales amount for the observation"@en, "Числовое значение суммы продажи без учёта налогов для данного наблюдения"@ru .
+
+eco:salesTeam a rdf:Property ;
+    rdfs:domain eco:SalesObservationAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sales team"@en, "Команда продаж"@ru ;
+    rdfs:comment "The sales team responsible for all transactions"@en, "Команда продаж, ответственная за все транзакции"@ru .
+
+eco:totalSalesAmount a rdf:Property ;
+    rdfs:domain eco:SalesObservationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total sales amount"@en, "Общая сумма продаж"@ru ;
+    rdfs:comment "The numerical value of the total untaxed sales amount"@en, "Числовое значение общей суммы продаж без учёта налогов"@ru .

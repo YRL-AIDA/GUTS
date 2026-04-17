@@ -1,0 +1,88 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:RepairOrderLaborAnalysis a rdfs:Class ;
+    rdfs:label "Labor analysis of repair orders"@en, "Анализ трудоемкости ремонтных заказов"@ru ;
+    rdfs:comment "Repair order labor analysis including sales amount, accrued hours, effective rate, technician ID, and efficiency percentage"@en, "Анализ трудозатрат по ремонтным заказам, включая сумму продаж, начисленные часы, эффективную ставку, идентификатор техника и процент эффективности"@ru .
+
+eco:LaborAnalysisSummary a rdfs:Class ;
+    rdfs:label "Labor analysis summary"@en, "Обзор анализа трудовых ресурсов"@ru ;
+    rdfs:comment "Review of the analysis of all labor costs for repair orders"@en, "Обзор анализа всех трудозатрат по ремонтным заказам"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:roNumber a rdf:Property ;
+    rdfs:domain eco:RepairOrderLaborAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label "Repair order number"@en, "Номер ремонтного заказа"@ru ;
+    rdfs:comment "The repair order number, uniquely identifying a service request"@en, "Номер ремонтного заказа, уникально идентифицирующий запрос на обслуживание"@ru .
+
+eco:laborSalesAmount a rdf:Property ;
+    rdfs:domain eco:RepairOrderLaborAnalysis ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Labor sales amount"@en, "Сумма продаж труда"@ru ;
+    rdfs:comment "The sales amount for the labour operation in US dollars"@en, "Сумма выручки от трудоустройства в долларах США"@ru .
+
+eco:hoursCharged a rdf:Property ;
+    rdfs:domain eco:RepairOrderLaborAnalysis ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Hours charged"@en, "Часы оплаты"@ru ;
+    rdfs:comment "The number of hours charged for the labour operation"@en, "Количество часов, оплачиваемых за выполнение трудовой операции"@ru .
+
+eco:effectiveRate a rdf:Property ;
+    rdfs:domain eco:RepairOrderLaborAnalysis ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Effective rate"@en, "Эффективная ставка"@ru ;
+    rdfs:comment "The effective hourly rate in USD per hour"@en, "Эффективная почасовая ставка в долларах США в час"@ru .
+
+eco:tech a rdf:Property ;
+    rdfs:domain eco:RepairOrderLaborAnalysis ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Technician identifier"@en, "Идентификатор техника"@ru ;
+    rdfs:comment "The identifier of the technician performing the work"@en, "Идентификатор техника, выполняемого работу"@ru .
+
+eco:grossPercentage a rdf:Property ;
+    rdfs:domain eco:RepairOrderLaborAnalysis ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Percentage of gross"@en, "Процент от валового дохода"@ru ;
+    rdfs:comment "Percentage of gross amount or profit"@en, "Процент от валовой суммы или прибыли"@ru .
+
+eco:totalLaborSalesAmount a rdf:Property ;
+    rdfs:domain eco:LaborAnalysisSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total labor sales amount"@en, "Общая сумма продаж труда"@ru ;
+    rdfs:comment "Total sales amount for all labour operation in US dollars"@en, "Общая сумма выручки от всех трудовых операций в долларах США"@ru .
+
+eco:totalHoursCharged a rdf:Property ;
+    rdfs:domain eco:LaborAnalysisSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total hours charged"@en, "Общее количество отработанных часов"@ru ;
+    rdfs:comment "Total number of hours charged for all labour operation"@en, "Общее количество часов, отработанных за все виды трудовых операций"@ru .
+
+eco:totalEffectiveRate a rdf:Property ;
+    rdfs:domain eco:LaborAnalysisSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total effective rate"@en, "Суммарная эффективная ставка"@ru ;
+    rdfs:comment "Total effective hourly rate in USD per hour"@en, "Общая эффективная почасовая ставка в долларах США за час"@ru .
+
+eco:totalGrossPercentage a rdf:Property ;
+    rdfs:domain eco:LaborAnalysisSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total percentage of gross"@en, "Общий процент валового дохода"@ru ;
+    rdfs:comment "Total percentage of gross amount or profit"@en, "Общий процент от валовой суммы или прибыли"@ru .
+
+eco:repairOrdersNumber a rdf:Property ;
+    rdfs:domain eco:LaborAnalysisSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of repair orders"@en, "Количество заявок на ремонт"@ru ;
+    rdfs:comment "Total number of repair orders"@en, "Общее количество ремонтных заказов"@ru .
+
+eco:hoursPerRepairOrder a rdf:Property ;
+    rdfs:domain eco:LaborAnalysisSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Hours per repair order"@en, "Часы на один ремонтный заказ"@ru ;
+    rdfs:comment "Hours per repair order equals total hours sold divided by number of repair orders closed"@en, "Количество часов на один ремонтный заказ равно общему количеству проданных часов, деленному на количество закрытых ремонтных заказов"@ru .
