@@ -1,0 +1,48 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:SalesRecord a rdfs:Class ;
+    rdfs:label "Sales record"@en, "Запись отчета о продажах"@ru ;
+    rdfs:comment "Record sales or discount amounts for a specific region, product category, metric type, channel, and product variant"@en, "Запись суммы продаж или скидок для определенного региона, категории продукции, типа метрики, канала и варианта продукта"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:region a rdf:Property ;
+    rdfs:domain eco:SalesRecord ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region"@en, "Регион"@ru ;
+    rdfs:comment "The sales region or distribution channel"@en, "Регион продаж или канал сбыта@ru .
+
+eco:productCategory a rdf:Property ;
+    rdfs:domain eco:SalesRecord ;
+    rdfs:range xsd:string ;
+    rdfs:label "Product category"@en, "Категория товара"@ru ;
+    rdfs:comment "The main product category"@en, "Основная категория продукции"@ru .
+
+eco:metricType a rdf:Property ;
+    rdfs:domain eco:SalesRecord ;
+    rdfs:range xsd:string ;
+    rdfs:label "Metric type"@en, "Тип метрики"@ru ;
+    rdfs:comment "The type of metric being reported (sales or discount)"@en, "Тип отчитываемой метрики (выручка или скидка)"@ru .
+
+eco:channel a rdf:Property ;
+    rdfs:domain eco:SalesRecord ;
+    rdfs:range xsd:string ;
+    rdfs:label "Channel"@en, "Канал"@ru ;
+    rdfs:comment "A specific processing or distribution channel"@en, "Конкретный канал обработки или сбыта"@ru .
+
+eco:productVariant a rdf:Property ;
+    rdfs:domain eco:SalesRecord ;
+    rdfs:range xsd:string ;
+    rdfs:label "Product variant"@en, "Вариант продукта"@ru ;
+    rdfs:comment "The specific product variant"@en, "Конкретный вариант продукта"@ru .
+
+eco:amount a rdf:Property ;
+    rdfs:domain eco:SalesRecord ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Amount"@en, "Денежная сумма"@ru ;
+    rdfs:comment "The monetary amount for the given combination of dimensions"@en, "Денежная сумма для заданной комбинации измерений"@ru .

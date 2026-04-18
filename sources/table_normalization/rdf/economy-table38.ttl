@@ -1,0 +1,42 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:SalesSummary a rdfs:Class ;
+    rdfs:label "Sales summary"@en, "Сводка продаж"@ru ;
+    rdfs:comment "Monthly summary of purchases, sales and profits for a specific product"@en, "Ежемесячная сводка по покупкам, продажам и прибыли для конкретного продукта"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:productName a rdf:Property ;
+    rdfs:domain eco:SalesSummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Product name"@en, "Название продукта"@ru ;
+    rdfs:comment "The name or identifier of the product"@en, "Название или идентификатор продукта"@ru .
+
+eco:month a rdf:Property ;
+    rdfs:domain eco:SalesSummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Month"@en, "Месяц"@ru ;
+    rdfs:comment "The month of the sales period"@en, "Месяц периода продаж"@ru .
+
+eco:buy a rdf:Property ;
+    rdfs:domain eco:SalesSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Buy amount"@en, "Сумма покупки"@ru ;
+    rdfs:comment "The buy amount or cost for the product in the given month"@en, "Сумма покупки или стоимость товара в данном месяце"@ru .
+
+eco:sale a rdf:Property ;
+    rdfs:domain eco:SalesSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Sales amount"@en, "Сумма продаж"@ru ;
+    rdfs:comment "The sale amount or revenue for the product in the given month"@en, "Сумма продаж или выручка от продажи товара за данный месяц"@ru .
+
+eco:profit a rdf:Property ;
+    rdfs:domain eco:SalesSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Profit amount"@en, "Размер прибыли"@ru ;
+    rdfs:comment "The profit amount for the product in the given month"@en, "Размер прибыли от продажи товара за данный месяц"@ru .

@@ -1,0 +1,84 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:ConstructionProductPriceList a rdfs:Class ;
+    rdfs:label "Price list of construction products"@en, "Прайс-лист стоимости строительных изделий"@ru ;
+    rdfs:comment "Price list for calculating the cost of a construction product, including the cost of materials, the cost of labor, and the final price with a markup"@en, "Прайс-лист расчета стоимости для варианта строительного изделия, включая стоимость материалов, стоимость работ и итоговую цену с наценкой"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:productName a rdf:Property ;
+    rdfs:domain eco:ConstructionProductPriceList ;
+    rdfs:range xsd:string ;
+    rdfs:label "Product name"@en, "Название продукта"@ru ;
+    rdfs:comment "The name or identifier of the construction product"@en, "Название или идентификатор строительного изделия"@ru .
+
+eco:blankSize a rdf:Property ;
+    rdfs:domain eco:ConstructionProductPriceList ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Blank size"@en, ""@ru ;
+    rdfs:comment "The blank size of the product in inches, representing the raw material dimension before forming"@en, "Размер заготовки изделия в дюймах, представляющий собой размеры сырья до формовки"@ru .
+
+eco:widthRatio a rdf:Property ;
+    rdfs:domain eco:ConstructionProductPriceList ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Width ratio"@en, "Коэффициент соотношения ширины"@ru ;
+    rdfs:comment "The width ratio coefficient, a derived value calculated from product dimensions"@en, "Коэффициент соотношения ширины — это производное значение, вычисляемое на основе размеров изделия."@ru .
+
+eco:materialType a rdf:Property ;
+    rdfs:domain eco:ConstructionProductPriceList ;
+    rdfs:range xsd:string ;
+    rdfs:label "Material type"@en, "Тип материала"@ru ;
+    rdfs:comment "Type of material finishing"@en, "Тип отделки материала"@ru .
+
+eco:costPerLinearFoot a rdf:Property ;
+    rdfs:domain eco:ConstructionProductPriceList ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Cost per linear foot"@en, "Стоимость за погонный фут"@ru ;
+    rdfs:comment "The material cost per linear foot in US dollars"@en, "Стоимость материалов за погонный фут в долларах США"@ru .
+
+eco:lengthFeet a rdf:Property ;
+    rdfs:domain eco:ConstructionProductPriceList ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Length in feet"@en, "Длина в футах"@ru ;
+    rdfs:comment "The length of the product in feet"@en, "Длина изделия в футах"@ru .
+
+eco:lengthInches a rdf:Property ;
+    rdfs:domain eco:ConstructionProductPriceList ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Length in inches"@en, "Длина в дюймах"@ru ;
+    rdfs:comment "The additional length component in inches"@en, "Дополнительная составляющая длины в дюймах"@ru .
+
+eco:materialCost a rdf:Property ;
+    rdfs:domain eco:ConstructionProductPriceList ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Material cost"@en, "Стоимость материала"@ru ;
+    rdfs:comment "The total material cost in US dollars"@en, "Общая стоимость материала в долларах США"@ru .
+
+eco:stepNumber a rdf:Property ;
+    rdfs:domain eco:ConstructionProductPriceList ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of labor steps"@en, "Количество этапов работы"@ru ;
+    rdfs:comment "The number of labor steps or operations required for installation or fabrication"@en, "Количество этапов или операций, необходимых для монтажа или изготовления"@ru .
+
+eco:laborCost a rdf:Property ;
+    rdfs:domain eco:ConstructionProductPriceList ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Labor cost"@en, "Затраты на рабочую силу"@ru ;
+    rdfs:comment "The labor cost in US dollars, based on num_steps and applicable labor rates"@en, "Стоимость рабочей силы в долларах США, рассчитанная на основе количества шагов и действующих ставок оплаты труда"@ru .
+
+eco:totalCost a rdf:Property ;
+    rdfs:domain eco:ConstructionProductPriceList ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total cost"@en, "Общая стоимость"@ru ;
+    rdfs:comment "The direct cost in US dollars, calculated as material cost plus labor cost"@en, "Прямые затраты в долларах США, рассчитываемые как стоимость материалов плюс стоимость рабочей силы"@ru .
+
+eco:price a rdf:Property ;
+    rdfs:domain eco:ConstructionProductPriceList ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Price"@en, "Цена"@ru ;
+    rdfs:comment "The final selling price in US dollars, including markup over total cost"@en, "Окончательная продажная цена в долларах США, включая наценку к общей стоимости"@ru .
