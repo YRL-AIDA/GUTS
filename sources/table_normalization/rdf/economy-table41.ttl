@@ -1,0 +1,84 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:DealerIncentive a rdfs:Class ;
+    rdfs:label "Dealer incentive"@en, "Дилерские бонусы"@ru ;
+    rdfs:comment "Dealer data on financial incentives (bonuses) for a specific vehicle model and fuel configuration"@en, "Данные дилера о финансовых стимулах (бонусы) для конкретной модели автомобиля и конфигурации топлива"@ru .
+
+eco:EligibilityCondition a rdfs:Class ;
+    rdfs:label "Eligibility condition"@en, "Условия соответствия требованиям"@ru ;
+    rdfs:comment "Dealer data on eligibility conditions for the incentive"@en, "Данные дилера по условиям соответствия требованиям для премирования"@ru .
+
+# ==================== Object Properties ====================
+
+hl:hasEligibilityCondition a rdf:Property ;
+    rdfs:domain hl:DealerIncentive ;
+    rdfs:range hl:EligibilityCondition ;
+    rdfs:label "Eligibility condition"@en, "Условия соответствия требованиям"@ru ;
+    rdfs:comment "Checking the conditions for compliance with the requirements for the incentive (bonus)"@en, "Проверка условий соответствия требованиям для премирования"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:timePeriod a rdf:Property ;
+    rdfs:domain eco:DealerIncentive ;
+    rdfs:range xsd:string ;
+    rdfs:label "Time period"@en, "Временной период"@ru ;
+    rdfs:comment "The time period for which incentives are calculated"@en, "Период времени, за который рассчитываются премии"@ru .
+
+eco:model a rdf:Property ;
+    rdfs:domain eco:DealerIncentive ;
+    rdfs:range xsd:string ;
+    rdfs:label "Model"@en, "Модель"@ru ;
+    rdfs:comment "The commercial name of the vehicle model"@en, "Коммерческое название модели автомобиля"@ru .
+
+eco:fuel a rdf:Property ;
+    rdfs:domain eco:DealerIncentive ;
+    rdfs:range xsd:string ;
+    rdfs:label "Fuel"@en, "Топливо"@ru ;
+    rdfs:comment "The type of fuel compatible with the vehicle"@en, "Тип топлива, совместимый с автомобилем"@ru .
+
+eco:incentiveOnOrdersMonthEnd a rdf:Property ;
+    rdfs:domain eco:DealerIncentive ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Incentive on orders month end"@en, "Бонус за заказы в конце месяца"@ru ;
+    rdfs:comment "Financial incentive amount granted for meeting order targets at the end of the month"@en, "Финансовое поощрение, выплачиваемое за выполнение плановых показателей по заказам в конце месяца"@ru .
+
+eco:incentiveOnOrdersHigherSlab a rdf:Property ;
+    rdfs:domain eco:DealerIncentive ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Incentive on orders higher slab"@en, "Бонус за заказы более высокого уровня"@ru ;
+    rdfs:comment "Higher tier order incentive applicable to dealer categories"@en, "Для категорий дилеров действует система поощрительных бонусов более высокого уровня"@ru .
+
+eco:incentiveOnRetail a rdf:Property ;
+    rdfs:domain eco:DealerIncentive ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Incentive on retail"@en, "Стимул для розничной торговли"@ru ;
+    rdfs:comment "Financial incentive amount granted per completed retail sale"@en, "Сумма финансового стимула, предоставляемая за каждую завершенную розничную продажу"@ru .
+
+eco:monthEnd a rdf:Property ;
+    rdfs:domain eco:EligibilityCondition ;
+    rdfs:range xsd:string ;
+    rdfs:label "Month end"@en, "Конец месяца"@ru ;
+    rdfs:comment "Conditions for receiving an incentive for orders at the end of the month"@en, "Условия получения бонуса за заказы в конце месяца"@ru .
+
+eco:higherSlabType a rdf:Property ;
+    rdfs:domain eco:EligibilityCondition ;
+    rdfs:range xsd:string ;
+    rdfs:label "Higher slab type"@en, "Тип более высокого уровня"@ru ;
+    rdfs:comment "The type of dealer category that is eligible for the higher-level incentive bonus system"@en, "Тип категории дилеров на которые действует система поощрительных бонусов более высокого уровня"@ru .
+
+eco:higherSlabCondition a rdf:Property ;
+    rdfs:domain eco:EligibilityCondition ;
+    rdfs:range xsd:string ;
+    rdfs:label "Higher slab condition"@en, "Условие более высокого уровня"@ru ;
+    rdfs:comment "Conditions for receiving an incentive for higher-level orders"@en, "Условия получения бонуса за заказы более высокого уровня"@ru .
+
+eco:retail a rdf:Property ;
+    rdfs:domain eco:EligibilityCondition ;
+    rdfs:range xsd:string ;
+    rdfs:label "Retail"@en, "Розничная торговля"@ru ;
+    rdfs:comment "Conditions for receiving a financial incentive for each completed retail sale"@en, "Условия получения финансового стимула за каждую завершенную розничную продажу"@ru .
