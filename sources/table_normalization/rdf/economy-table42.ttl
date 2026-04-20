@@ -1,0 +1,48 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:SalesReport a rdfs:Class ;
+    rdfs:label "Sales report"@en, "Отчет о продажах"@ru ;
+    rdfs:comment "A report containing sales performance metrics for a specific product in a specific country"@en, "Отчет, содержащий метрики эффективности продаж для конкретного товара в конкретной стране"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:item a rdf:Property ;
+    rdfs:domain eco:SalesReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Item"@en, "Товар"@ru ;
+    rdfs:comment "The name or type of the product being sold"@en, "Название или тип продаваемого товара"@ru .
+
+eco:country a rdf:Property ;
+    rdfs:domain eco:SalesReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Country"@en, "Страна"@ru ;
+    rdfs:comment "Country or market where sales were recorded"@en, "Страна или рынок, где были зафиксированы продажи"@ru .
+
+eco:budget a rdf:Property ;
+    rdfs:domain eco:SalesReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Budget"@en, "Бюджет"@ru ;
+    rdfs:comment "The planned or target sales value for a product in a given country"@en, "Плановое или целевое значение продаж для товара в данной стране"@ru .
+
+eco:actual a rdf:Property ;
+    rdfs:domain eco:SalesReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Actual"@en, "Фактический"@ru ;
+    rdfs:comment "The actual sales value achieved for a product in a given country"@en, "Фактически достигнутое значение продаж для товара в данной стране"@ru .
+
+eco:variance a rdf:Property ;
+    rdfs:domain eco:SalesReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Variance"@en, "Дисперсия"@ru ;
+    rdfs:comment "Variance, which shows the difference between planned and actual sales values"@en, "Дисперсия, показывающая разницу между плановыми и фактическими значениями продаж"@ru .
+
+eco:absoluteVariance a rdf:Property ;
+    rdfs:domain eco:SalesReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Absolute variance"@en, "Абсолютная дисперсия"@ru ;
+    rdfs:comment "Absolute value of the dispersion metric"@en, "Абсолютное значение метрики дисперсия"@ru .

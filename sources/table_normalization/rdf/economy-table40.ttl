@@ -1,0 +1,406 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:OfficeEquipment a rdfs:Class ;
+    rdfs:label "Office equipment"@en, "Оргтехника"@ru ;
+    rdfs:comment "Comprehensive information about office equipment in the organization's register"@en, "Комплексная информация об офисном оборудовании в реестре организации"@ru .
+
+eco:Supplier a rdfs:Class ;
+    rdfs:label "Supplier"@en, "Поставщик"@ru ;
+    rdfs:comment "The vendor or supplier who provided the office equipment"@en, "Поставщик или подрядчик, предоставивший офисное оборудование"@ru .
+
+eco:PriceList a rdfs:Class ;
+    rdfs:label "Price list"@en, "Прайс-лист"@ru ;
+    rdfs:comment "Price list for office equipment from the supplier"@en, "Прайс-лист на офисное оборудование от поставщика"@ru .
+
+eco:Requisition a rdfs:Class ;
+    rdfs:label "Requisition"@en, "Заявка"@ru ;
+    rdfs:comment "Equipment requisition details for the user"@en, "Детали заявки на оборудование для пользователя"@ru .
+
+eco:CurrentLocation a rdfs:Class ;
+    rdfs:label "Current location"@en, "Текущее местоположение"@ru ;
+    rdfs:comment "Current location of office equipment in the organization"@en, "Текущее местоположение офисного оборудования в организации"@ru .
+
+eco:Transfer a rdfs:Class ;
+    rdfs:label "Transfer"@en, "Перевод"@ru ;
+    rdfs:comment "Details of equipment transfer to new user"@en, "Детали перевода оборудования новому пользователю"@ru .
+
+eco:TechnicalMaintenance a rdfs:Class ;
+    rdfs:label "Technical maintenance"@en, "Техническое обслуживание"@ru ;
+    rdfs:comment "Office equipment maintenance details"@en, "Детали технического обслуживания офисного оборудования"@ru .
+
+eco:AssetDisposal a rdfs:Class ;
+    rdfs:label "Asset disposal"@en, "Утилизация оборудования"@ru ;
+    rdfs:comment "Detailed information on office equipment disposal"@en, "Детальная информация по утилизации офисного оборудования"@ru .
+
+eco:LicenseSupplier a rdfs:Class ;
+    rdfs:label "License supplier"@en, "Поставщик лицензий"@ru ;
+    rdfs:comment "Supplier of software licenses for the organization"@en, "Поставщик лицензий программного обеспечения для организации"@ru .
+
+# ==================== Object Properties ====================
+
+eco:hasSupplier a rdf:Property ;
+    rdfs:domain eco:OfficeEquipment ;
+    rdfs:range eco:Supplier ;
+    rdfs:label "Supplier"@en, "Поставщик"@ru ;
+    rdfs:comment "The equipment was supplied by the relevant supplier"@en, "Оборудование поставлялось соответствующим поставщиком"@ru .
+
+eco:hasPriceList a rdf:Property ;
+    rdfs:domain eco:OfficeEquipment ;
+    rdfs:range eco:PriceList ;
+    rdfs:label "Price list"@en, "Прайс-лист"@ru ;
+    rdfs:comment "The equipment was supplied according to a specific price list"@en, "Оборудование поставлялось по определенному прайс-листу"@ru .
+
+eco:hasRequisition a rdf:Property ;
+    rdfs:domain eco:OfficeEquipment ;
+    rdfs:range eco:Requisition ;
+    rdfs:label "Requisition"@en, "Заявка"@ru ;
+    rdfs:comment "The equipment is specified in the requisition"@en, "Оборудование указано в заявке"@ru .
+
+eco:hasCurrentLocation a rdf:Property ;
+    rdfs:domain eco:OfficeEquipment ;
+    rdfs:range eco:CurrentLocation ;
+    rdfs:label "Current location"@en, "Текущее местоположение"@ru ;
+    rdfs:comment "Current location of equipment"@en, "Текущее местоположение оборудования"@ru .
+
+eco:hasTransfer a rdf:Property ;
+    rdfs:domain eco:OfficeEquipment ;
+    rdfs:range eco:Transfer ;
+    rdfs:label "Transfer"@en, "Перевод"@ru ;
+    rdfs:comment "Transfer of equipment to another location"@en, "Перевод оборудования в другое место"@ru .
+
+eco:hasTechnicalMaintenance a rdf:Property ;
+    rdfs:domain eco:OfficeEquipment ;
+    rdfs:range eco:TechnicalMaintenance ;
+    rdfs:label "Technical maintenance"@en, "Техническое обслуживание"@ru ;
+    rdfs:comment "Maintenance for specific equipment"@en, "Техническое обслуживание для определенного оборудования"@ru .
+
+eco:hasAssetDisposal a rdf:Property ;
+    rdfs:domain eco:OfficeEquipment ;
+    rdfs:range eco:AssetDisposal ;
+    rdfs:label "Asset disposal"@en, "Утилизация оборудования"@ru ;
+    rdfs:comment "Asset disposal for equipments"@en, "Утилизация оборудования"@ru .
+
+eco:hasLicenseSupplier a rdf:Property ;
+    rdfs:domain eco:OfficeEquipment ;
+    rdfs:range eco:LicenseSupplier ;
+    rdfs:label "License supplier"@en, "Поставщик лицензий"@ru ;
+    rdfs:comment "Equipment software licensing supplier"@en, "Поставщик лицензий программного обеспечения для оборудования"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:brand a rdf:Property ;
+    rdfs:domain eco:OfficeEquipment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Brand"@en, "Марка"@ru ;
+    rdfs:comment "The manufacturer or brand name of the equipment"@en, "Производитель или торговая марка оборудования"@ru .
+
+eco:description a rdf:Property ;
+    rdfs:domain eco:OfficeEquipment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Description"@en, "Описание"@ru ;
+    rdfs:comment "Short textual description of the equipment type"@en, "Краткое текстовое описание типа оборудования"@ru .
+
+eco:category a rdf:Property ;
+    rdfs:domain eco:OfficeEquipment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en, "Категория"@ru ;
+    rdfs:comment "High-level classification of the equipment"@en, "Высокий уровень классификации оборудования"@ru .
+
+eco:modelNumber a rdf:Property ;
+    rdfs:domain eco:OfficeEquipment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Model number"@en, "Номер модели"@ru ;
+    rdfs:comment "Manufacturer's model number or equipment code"@en, "Номер модели или код оборудования производителя"@ru .
+
+eco:serialNumber a rdf:Property ;
+    rdfs:domain eco:OfficeEquipment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Serial number"@en, "Серийный номер"@ru ;
+    rdfs:comment "Unique serial number assigned by the manufacturer"@en, "Уникальный серийный номер, присвоенный производителем"@ru .
+
+eco:albTagNumber a rdf:Property ;
+    rdfs:domain eco:OfficeEquipment ;
+    rdfs:range xsd:string ;
+    rdfs:label "ALB tag number"@en, "Инвентарный номер"@ru ;
+    rdfs:comment "Unique internal inventory identifier assigned to the equipment"@en, "Уникальный внутренний инвентарный идентификатор, присваиваемый данному оборудованию"@ru .
+
+eco:stockItem a rdf:Property ;
+    rdfs:domain eco:OfficeEquipment ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Stock item"@en, "Товар в наличии"@ru ;
+    rdfs:comment "Indicates whether the equipment is tracked as a stock item (true/false)"@en, "Указывает, учитывается ли оборудование как складской товар (истина/ложь)"@ru .
+
+eco:supplierName a rdf:Property ;
+    rdfs:domain eco:Supplier ;
+    rdfs:range xsd:string ;
+    rdfs:label "Supplier name"@en, "Название поставщика"@ru ;
+    rdfs:comment "Name of the office equipment supplier"@en, "Название поставщика офисного оборудования"@ru .
+
+eco:orderNoteDate a rdf:Property ;
+    rdfs:domain eco:Supplier ;
+    rdfs:range xsd:date ;
+    rdfs:label "Order note date"@en, "Дата примечания к заказу"@ru ;
+    rdfs:comment "Date when the purchase order note was created"@en, "Дата создания примечания к заказу на покупку"@ru .
+
+eco:orderNoteNumber a rdf:Property ;
+    rdfs:domain eco:Supplier ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Order note number"@en, "Номер примечания к заказу"@ru ;
+    rdfs:comment "Purchase order note number"@en, "Номер примечания к заказу на покупку"@ru .
+
+eco:dateDelivered a rdf:Property ;
+    rdfs:domain eco:Supplier ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date delivered"@en, "Дата доставки"@ru ;
+    rdfs:comment "Date of delivery of equipment from the supplier"@en, "Дата доставки оборудования от поставщика"@ru .
+
+eco:deliveryNoteNumber a rdf:Property ;
+    rdfs:domain eco:Supplier ;
+    rdfs:range xsd:string ;
+    rdfs:label "Delivery note number"@en, "Номер накладной"@ru ;
+    rdfs:comment "Consignment note number for the delivered equipment"@en, "Номер накладной для поставленного оборудования"@ru .
+
+eco:invoiceDate a rdf:Property ;
+    rdfs:domain eco:Supplier ;
+    rdfs:range xsd:date ;
+    rdfs:label "Invoice date"@en, "Дата выставления счета"@ru ;
+    rdfs:comment "Date of invoice for equipment order from supplier"@en, "Дата выставления счета за заказ оборудования от поставщика"@ru .
+
+eco:invoiceNumber a rdf:Property ;
+    rdfs:domain eco:Supplier ;
+    rdfs:range xsd:string ;
+    rdfs:label "Invoice number"@en, "Номер счета-фактуры"@ru ;
+    rdfs:comment "Reference number of the supplier's invoice"@en, "Номер ссылки на счет-фактуру поставщика"@ru .
+
+eco:condition a rdf:Property ;
+    rdfs:domain eco:PriceList ;
+    rdfs:range xsd:string ;
+    rdfs:label "Condition"@en, "Состояние"@ru ;
+    rdfs:comment "Physical or operational condition of the equipment"@en, "Физическое или рабочее состояние оборудования"@ru .
+
+eco:quantity a rdf:Property ;
+    rdfs:domain eco:PriceList ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Quantity"@en, "Количество"@ru ;
+    rdfs:comment "Quantity of items (typically 1 for serialized equipments)"@en, "Количество изделий (обычно 1 для серийного оборудования)"@ru .
+
+eco:unitPrice a rdf:Property ;
+    rdfs:domain eco:PriceList ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Unit price"@en, "Цена за единицу товара"@ru ;
+    rdfs:comment "Price per unit of equipment"@en, "Цена за единицу оборудования"@ru .
+
+eco:totalPriceExcludingVat a rdf:Property ;
+    rdfs:domain eco:PriceList ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total price excluding VAT"@en, "Общая цена без НДС"@ru ;
+    rdfs:comment "Total price for equipment excluding VAT"@en, "Общая цена за оборудования без учета НДС"@ru .
+
+eco:vat a rdf:Property ;
+    rdfs:domain eco:PriceList ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "VAT"@en, "НДС"@ru ;
+    rdfs:comment "The meaning of VAT"@en, "Значение НДС"@ru .
+
+eco:totalPriceIncludingVat a rdf:Property ;
+    rdfs:domain eco:PriceList ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total price including VAT"@en, "Общая цена с НДС"@ru ;
+    rdfs:comment "Total price for equipment including VAT"@en, "Общая цена за оборудования с учетом НДС"@ru .
+
+eco:user a rdf:Property ;
+    rdfs:domain eco:Requisition ;
+    rdfs:range xsd:string ;
+    rdfs:label "User"@en, "Пользователь"@ru ;
+    rdfs:comment "Name of the employee who requested the equipment"@en, "Имя сотрудника, запросившего оборудование"@ru .
+
+eco:branch a rdf:Property ;
+    rdfs:domain eco:Requisition ;
+    rdfs:range xsd:string ;
+    rdfs:label "Branch"@en, "Филиал"@ru ;
+    rdfs:comment "The branch to which the employee belongs"@en, "Филиал к которому относится сотрудник"@ru .
+
+eco:department a rdf:Property ;
+    rdfs:domain eco:Requisition ;
+    rdfs:range xsd:string ;
+    rdfs:label "Department"@en, "Отдел"@ru ;
+    rdfs:comment "The department to which the employee belongs"@en, "Отдел к которому относится сотрудник"@ru .
+
+eco:jobTitle a rdf:Property ;
+    rdfs:domain eco:Requisition ;
+    rdfs:range xsd:string ;
+    rdfs:label "Job title"@en, "Должность"@ru ;
+    rdfs:comment "Employee position"@en, "Должность сотрудника"@ru .
+
+eco:dateRequested a rdf:Property ;
+    rdfs:domain eco:Requisition ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date requested"@en, "Дата запроса"@ru ;
+    rdfs:comment "Date of equipment request from the user"@en, "Дата запроса оборудования от пользователя"@ru .
+
+eco:status a rdf:Property ;
+    rdfs:domain eco:Requisition ;
+    rdfs:range xsd:string ;
+    rdfs:label "Status"@en, "Статус"@ru ;
+    rdfs:comment "Status of the requested equipment"@en, "Статус запрашиваемого оборудования"@ru .
+
+eco:branch a rdf:Property ;
+    rdfs:domain eco:CurrentLocation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Branch"@en, "Филиал"@ru ;
+    rdfs:comment "The branch where the equipment is currently located"@en, "Филиал, где сейчас расположено оборудование"@ru .
+
+eco:department a rdf:Property ;
+    rdfs:domain eco:CurrentLocation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Department"@en, "Отдел"@ru ;
+    rdfs:comment "The department where the equipment is currently located"@en, "Отдел, где сейчас расположено оборудование"@ru .
+
+eco:locationCode a rdf:Property ;
+    rdfs:domain eco:CurrentLocation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Location code"@en, "Код местоположения"@ru ;
+    rdfs:comment "Current equipment location code"@en, "Код текущего местоположения оборудования"@ru .
+
+eco:dateTransferred a rdf:Property ;
+    rdfs:domain eco:Transfer ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date transferred"@en, "Дата передачи"@ru ;
+    rdfs:comment "Date of transfer of equipment to the new user"@en, "Дата передачи оборудования новому пользователю"@ru .
+
+eco:newUser a rdf:Property ;
+    rdfs:domain eco:Transfer ;
+    rdfs:range xsd:string ;
+    rdfs:label "New user"@en, "Новый пользователь"@ru ;
+    rdfs:comment "The user to whom the equipment is transferred"@en, "Пользователь, которому передается оборудование"@ru .
+
+eco:branch a rdf:Property ;
+    rdfs:domain eco:Transfer ;
+    rdfs:range xsd:string ;
+    rdfs:label "Branch"@en, "Филиал"@ru ;
+    rdfs:comment "The branch to which a new user belongs"@en, "Филиал к которому относится новый пользователь"@ru .
+
+eco:department a rdf:Property ;
+    rdfs:domain eco:Transfer ;
+    rdfs:range xsd:string ;
+    rdfs:label "Department"@en, "Отдел"@ru ;
+    rdfs:comment "The department to which a new user belongs"@en, "Отдел к которому относится новый пользователь"@ru .
+
+eco:stockItem a rdf:Property ;
+    rdfs:domain eco:Transfer ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Stock item"@en, "Товар на складе"@ru ;
+    rdfs:comment "Availability of equipment in stock"@en, "Наличие оборудование на складе"@ru .
+
+eco:locationCode a rdf:Property ;
+    rdfs:domain eco:Transfer ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Location code"@en, "Код местоположения"@ru ;
+    rdfs:comment "New equipment location code"@en, "Код нового местоположения оборудования"@ru .
+
+eco:technicianName a rdf:Property ;
+    rdfs:domain eco:TechnicalMaintenance ;
+    rdfs:range xsd:string ;
+    rdfs:label "Technician name"@en, "Имя техника"@ru ;
+    rdfs:comment "Technician name"@en, "Имя техника"@ru .
+
+eco:setupDate a rdf:Property ;
+    rdfs:domain eco:TechnicalMaintenance ;
+    rdfs:range xsd:date ;
+    rdfs:label "Setup date"@en, "Дата настройки"@ru ;
+    rdfs:comment "Setup date"@en, "Дата настройки"@ru .
+
+eco:computerName a rdf:Property ;
+    rdfs:domain eco:TechnicalMaintenance ;
+    rdfs:range xsd:string ;
+    rdfs:label "Computer name"@en, "Имя компьютера"@ru ;
+    rdfs:comment "Computer name"@en, "Имя компьютера"@ru .
+
+eco:powerOnPassword a rdf:Property ;
+    rdfs:domain eco:TechnicalMaintenance ;
+    rdfs:range xsd:string ;
+    rdfs:label "Power on password"@en, "Пароль для включения питания"@ru ;
+    rdfs:comment "Power on password"@en, "Пароль для включения питания"@ru .
+
+eco:encryptionPassword a rdf:Property ;
+    rdfs:domain eco:TechnicalMaintenance ;
+    rdfs:range xsd:string ;
+    rdfs:label "Encryption password"@en, "Пароль шифрования"@ru ;
+    rdfs:comment "Encryption password"@en, "Пароль шифрования"@ru .
+
+eco:dateDisposed a rdf:Property ;
+    rdfs:domain eco:AssetDisposal ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date disposed"@en, "Дата уничтожения"@ru ;
+    rdfs:comment "Date of equipment destruction"@en, "Дата уничтожения оборудования"@ru .
+
+eco:disposalMethod a rdf:Property ;
+    rdfs:domain eco:AssetDisposal ;
+    rdfs:range xsd:string ;
+    rdfs:label "Disposal method"@en, "Метод утилизации"@ru ;
+    rdfs:comment "Equipment disposal method"@en, "Метод утилизации оборудования"@ru .
+
+eco:disposalProceeds a rdf:Property ;
+    rdfs:domain eco:AssetDisposal ;
+    rdfs:range xsd:string ;
+    rdfs:label "Proceeds of disposal"@en, "Поступления от реализации"@ru ;
+    rdfs:comment "Proceeds of disposal"@en, "Поступления от реализации"@ru .
+
+eco:reasonForDisposal a rdf:Property ;
+    rdfs:domain eco:AssetDisposal ;
+    rdfs:range xsd:string ;
+    rdfs:label "Reason for disposal"@en, "Причина удаления"@ru ;
+    rdfs:comment "Reason for disposal of equipment"@en, "Причина утилизации оборудования"@ru .
+
+eco:supplierName a rdf:Property ;
+    rdfs:domain eco:LicenseSupplier ;
+    rdfs:range xsd:string ;
+    rdfs:label "Supplier name"@en, "Название поставщика"@ru ;
+    rdfs:comment "Name of the software supplier"@en, "Название поставщика программного обеспечения"@ru .
+
+eco:orderNoteDate a rdf:Property ;
+    rdfs:domain eco:LicenseSupplier ;
+    rdfs:range xsd:date ;
+    rdfs:label "Order note date"@en, "Дата заказа"@ru ;
+    rdfs:comment "Software order date"@en, "Дата заказа программного обеспечения"@ru .
+
+eco:orderNoteNumber a rdf:Property ;
+    rdfs:domain eco:LicenseSupplier ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Order note number"@en, "Номер заказа"@ru ;
+    rdfs:comment "Software order number"@en, "Номер заказа программного обеспечения"@ru .
+
+eco:invoiceDate a rdf:Property ;
+    rdfs:domain eco:LicenseSupplier ;
+    rdfs:range xsd:date ;
+    rdfs:label "Invoice date"@en, "Дата счета"@ru ;
+    rdfs:comment "Software invoice date"@en, "Дата выставления счета за программное обеспечение"@ru .
+
+eco:invoiceNumber a rdf:Property ;
+    rdfs:domain eco:LicenseSupplier ;
+    rdfs:range xsd:string ;
+    rdfs:label "Invoice number"@en, "Номер счета"@ru ;
+    rdfs:comment "Software order invoice number"@en, "Номер счет-фактуры заказа программного обеспечения"@ru .
+
+eco:cost a rdf:Property ;
+    rdfs:domain eco:LicenseSupplier ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Cost"@en, "Стоимость"@ru ;
+    rdfs:comment "Total cost of software"@en, "Общая стоимость программного обеспечения"@ru .
+
+eco:softwareName a rdf:Property ;
+    rdfs:domain eco:LicenseSupplier ;
+    rdfs:range xsd:string ;
+    rdfs:label "Software name"@en, "Название программного обеспечения"@ru ;
+    rdfs:comment "Software name"@en, "Название программного обеспечения"@ru .
+
+eco:softwareNumber a rdf:Property ;
+    rdfs:domain eco:LicenseSupplier ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Software number"@en, "Количество программного обеспечения"@ru ;
+    rdfs:comment "Number of copies of software"@en, "Количество копий программного обеспечения"@ru .

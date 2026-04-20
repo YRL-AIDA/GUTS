@@ -1,0 +1,52 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:SalesReport a rdfs:Class ;
+    rdfs:label "Sales report"@en, "Отчет о продажах"@ru ;
+    rdfs:comment "A report containing the number of orders and sales revenue for a specific SKU in a specific time period"@en, "Отчет, содержащий количество заказов и выручку от продаж для конкретного артикула товара в определенный временной период"@ru .
+
+eco:AggregatedSalesValues a rdfs:Class ;
+    rdfs:label "Aggregated values"@en, "Агрегированные значения продаж"@ru ;
+    rdfs:comment "Aggregated sales values ​​for two periods"@en, "Агрегированные значения продаж за два периода"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:sku a rdf:Property ;
+    rdfs:domain eco:SalesReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Stock Keeping Unit (SKU)"@en, "Артикул товара"@ru ;
+    rdfs:comment "The Stock Keeping Unit identifier (a unique alphanumeric code for a product item)"@en, "Идентификатор складской единицы (артикул товара - уникальный буквенно-цифровой код для товарной позиции)"@ru .
+
+eco:period a rdf:Property ;
+    rdfs:domain eco:SalesReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Period"@en, "Период"@ru ;
+    rdfs:comment "The time period for which sales data is recorded"@en, "Временной период, за который записываются данные о продажах"@ru .
+
+eco:unitsOrdered a rdf:Property ;
+    rdfs:domain eco:SalesReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Units ordered"@en, "Заказанные единицы"@ru ;
+    rdfs:comment "The quantity of product units ordered during the specified period"@en, "Количество единиц продукции, заказанных в течение указанного периода"@ru .
+
+eco:orderedProductSales a rdf:Property ;
+    rdfs:domain eco:SalesReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Ordered product sales"@en, "Заказанные продажи продукции"@ru ;
+    rdfs:comment "The total monetary value of sales for ordered products during the specified period"@en, "Общая денежная стоимость продаж заказанной продукции за указанный период"@ru .
+
+eco:totalUnitsOrdered a rdf:Property ;
+    rdfs:domain eco:AggregatedSalesValues ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total units ordered"@en, "Общее количество заказанных единиц"@ru ;
+    rdfs:comment "Total number of units of production"@en, "Общее количество единиц продукции"@ru .
+
+eco:totalOrderedProductSales a rdf:Property ;
+    rdfs:domain eco:AggregatedSalesValues ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total ordered product sales"@en, "Общий объем продаж заказанной продукции"@ru ;
+    rdfs:comment "Total monetary value of sales of ordered products"@en, "Общая денежная стоимость продаж заказанной продукции"@ru .

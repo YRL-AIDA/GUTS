@@ -1,0 +1,70 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:UniformClothingReport a rdfs:Class ;
+    rdfs:label "Uniform clothing report"@en, "Отчет об униформе"@ru ;
+    rdfs:comment "Inventory data for long-sleeved and short-sleeved uniforms for a specific employee in a specific department"@en, "Данные по инвентаризации форменной одежды (униформы) с длинным и коротким рукавом для конкретного сотрудника в конкретном подразделении"@ru .
+
+eco:UniformClothingQuantitySummary a rdfs:Class ;
+    rdfs:label "Uniform clothing quantity summary"@en, "Сводная информация о количестве униформы"@ru ;
+    rdfs:comment "Summary of long and short sleeve uniform quantities"@en, "Сводная информация о количестве униформы с длинным и коротким рукавом"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:name a rdf:Property ;
+    rdfs:domain eco:UniformClothingReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Name"@en, "Название"@ru ;
+    rdfs:comment "The name of the person for whom the uniform is recorded"@en, "Имя лица, в отношении которого зарегистрирована форма"@ru .
+
+eco:branch a rdf:Property ;
+    rdfs:domain eco:UniformClothingReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Branch"@en, "Подразделение"@ru ;
+    rdfs:comment "The branch, department, or organizational unit code"@en, "Код подразделения, отдела или организационной единицы"@ru .
+
+eco:sleeveType a rdf:Property ;
+    rdfs:domain eco:UniformClothingReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sleeve type"@en, "Тип рукава"@ru ;
+    rdfs:comment "The type specification for sleeves (long or short)"@en, "Типовые характеристики рукавов (длинные или короткие)"@ru .
+
+eco:size a rdf:Property ;
+    rdfs:domain eco:UniformClothingReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Size"@en, "Размер"@ru ;
+    rdfs:comment "The size of sleeves"@en, "Размер рукавов"@ru .
+
+eco:owned a rdf:Property ;
+    rdfs:domain eco:UniformClothingReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Owned uniforms"@en, "Униформа в наличии"@ru ;
+    rdfs:comment "The count of uniforms of the specified size currently in possession"@en, "Количество форменной одежды указанного размера, имеющейся в наличии"@ru .
+
+eco:needed a rdf:Property ;
+    rdfs:domain eco:UniformClothingReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Needed uniforms"@en, "Необходимая униформа"@ru ;
+    rdfs:comment "The count of uniforms of the specified size required to be needed"@en, "Количество форменной одежды указанного размера, подлежащей выдаче"@ru .
+
+eco:sleeveType a rdf:Property ;
+    rdfs:domain eco:UniformClothingQuantitySummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sleeve type"@en, "Тип рукава"@ru ;
+    rdfs:comment "The type specification for sleeves (long or short)"@en, "Типовые характеристики рукавов (длинные или короткие)"@ru .
+
+eco:totalOwned a rdf:Property ;
+    rdfs:domain eco:UniformClothingQuantitySummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total owned uniforms"@en, "Всего униформы в наличии"@ru ;
+    rdfs:comment "Total number of uniforms of all sizes available"@en, "Общее количество форменной одежды всех размеров имеющейся в наличии"@ru .
+
+eco:totalNeeded a rdf:Property ;
+    rdfs:domain eco:UniformClothingQuantitySummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total needed uniforms"@en, "Всего необходимой униформы"@ru ;
+    rdfs:comment "Total number of uniforms of all sizes to be needed"@en, "Общее количество форменной одежды всех размеров подлежащих выдаче"@ru .
