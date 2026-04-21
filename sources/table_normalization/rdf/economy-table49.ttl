@@ -1,0 +1,96 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:Inventory a rdfs:Class ;
+    rdfs:label "Inventory"@en, "Инвентаризация"@ru ;
+    rdfs:comment "Information on the quantity, cost and weight of the remaining stock of a specific product in a specific warehouse cell"@en, "Информация о количестве, стоимости и массе остатка конкретного товара в конкретной ячейке склада"@ru .
+
+eco:AggregatedInformation a rdfs:Class ;
+    rdfs:label "Aggregated information"@en, "Агрегированная информация"@ru ;
+    rdfs:comment "Aggregated information on the quantity, cost and weight of the remaining goods"@en, "Сводная информация о количестве, стоимости и весе оставшихся товаров"@ru .
+
+# ==================== Object Properties ====================
+
+eco:hasAggregatedInformation a rdf:Property ;
+    rdfs:domain eco:Inventory ;
+    rdfs:range eco:AggregatedInformation ;
+    rdfs:label "Aggregated information"@en, "Агрегированная информация"@ru ;
+    rdfs:comment "Aggregated inventory information"@en, "Агрегированная информация по инвентаризации"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:stockCode a rdf:Property ;
+    rdfs:domain eco:Inventory ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Stock code"@en, "Код товара"@ru ;
+    rdfs:comment "Unique numeric identifier code for a product item in the inventory system"@en, "Уникальный цифровой идентификационный код для товарной позиции в системе учета запасов"@ru .
+
+eco:description a rdf:Property ;
+    rdfs:domain eco:Inventory ;
+    rdfs:range xsd:string ;
+    rdfs:label "Description"@en, "Описание"@ru ;
+    rdfs:comment "Commercial name or textual description of the product"@en, "Торговое название или текстовое описание продукта"@ru .
+
+eco:supplierClass a rdf:Property ;
+    rdfs:domain eco:Inventory ;
+    rdfs:range xsd:string ;
+    rdfs:label "Supplier class"@en, "Класс поставщика"@ru ;
+    rdfs:comment "Supplier class and unit of measure code"@en, "Код класса поставщика и единицы измерения"@ru .
+
+eco:cumulativeCostCenter a rdf:Property ;
+    rdfs:domain eco:Inventory ;
+    rdfs:range xsd:string ;
+    rdfs:label "Cumulative cost center"@en, "Накопленный центр затрат"@ru ;
+    rdfs:comment "Cumulative cost center or base unit code for inventory accounting"@en, "Накопительный код центра затрат или базовой единицы для учета запасов"@ru .
+
+eco:warehouseBin a rdf:Property ;
+    rdfs:domain eco:Inventory ;
+    rdfs:range xsd:string ;
+    rdfs:label "Warehouse bin"@en, "Складской контейнер"@ru ;
+    rdfs:comment "Warehouse bin or storage location code where the inventory is physically stored"@en, "Код складского ячейки или места хранения, где физически хранится товар"@ru .
+
+eco:onHand a rdf:Property ;
+    rdfs:domain eco:Inventory ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Quantity of products in stock"@en, "Количество продукции в наличии"@ru ;
+    rdfs:comment "Current quantity of product units physically available on hand in the specified warehouse bin"@en, "Текущее количество единиц продукции, физически имеющихся на складе в указанном месте хранения"@ru .
+
+eco:averageCost a rdf:Property ;
+    rdfs:domain eco:Inventory ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average cost"@en, "Средняя стоимость"@ru ;
+    rdfs:comment "Average cost per single unit of the product, used for inventory valuation"@en, "Средняя стоимость одной единицы продукции, используемая для оценки запасов"@ru .
+
+eco:value a rdf:Property ;
+    rdfs:domain eco:Inventory ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Value"@en, "Значение"@ru ;
+    rdfs:comment "Total monetary value of the inventory in this bin"@en, "Общая денежная стоимость товаров в этом контейнере"@ru .
+
+eco:totalMass a rdf:Property ;
+    rdfs:domain eco:Inventory ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total mass"@en, "Общая масса"@ru ;
+    rdfs:comment "Total weight or mass of the inventory in this bin, expressed in the system's mass unit"@en, "Общий вес или масса товаров в этом контейнере, выраженная в системных единицах массы"@ru .
+
+eco:totalOnHand a rdf:Property ;
+    rdfs:domain eco:AggregatedInformation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total quantity of products in stock"@en, "Общее количество продукции в наличии"@ru ;
+    rdfs:comment "Total quantity of product units physically available on hand in the specified warehouse bin"@en, "Общее количество единиц продукции, физически имеющихся на складе в указанном месте хранения"@ru .
+
+eco:totalValue a rdf:Property ;
+    rdfs:domain eco:AggregatedInformation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total value"@en, "Общее значение"@ru ;
+    rdfs:comment "Total monetary value of the inventory in this bin"@en, "Общая денежная стоимость товаров в этом контейнере"@ru .
+
+eco:totalMass a rdf:Property ;
+    rdfs:domain eco:AggregatedInformation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total mass"@en, "Общая масса"@ru ;
+    rdfs:comment "Total weight or mass of the inventory in this bin, expressed in the system's mass unit"@en, "Общий вес или масса товаров в этом контейнере, выраженная в системных единицах массы"@ru .

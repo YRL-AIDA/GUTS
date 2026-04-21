@@ -1,0 +1,96 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:BeverageMerchandising a rdfs:Class ;
+    rdfs:label "Beverage merchandising"@en, "Мерчандайзинг напитков"@ru ;
+    rdfs:comment "Beverage merchandising data containing product placement metrics and sales performance for a specific beverage packaging type at a specific retail location"@en, "Данные по мерчандайзингу напитков, содержащий метрики размещения товара и показатели продаж для конкретного типа упаковки напитка в конкретной розничной точке"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:zoneName a rdf:Property ;
+    rdfs:domain eco:BeverageMerchandising ;
+    rdfs:range xsd:string ;
+    rdfs:label "Zone name"@en, "Название зоны"@ru ;
+    rdfs:comment "High-level geographic zone name for the retail location"@en, "Географическое название основного уровня для торговой точки"@ru .
+
+eco:marketName a rdf:Property ;
+    rdfs:domain eco:BeverageMerchandising ;
+    rdfs:range xsd:string ;
+    rdfs:label "Market name"@en, "Название рынка"@ru ;
+    rdfs:comment "Regional market name within the zone"@en, "Название регионального рынка в пределах зоны"@ru .
+
+eco:location a rdf:Property ;
+    rdfs:domain eco:BeverageMerchandising ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Location"@en, "Расположение"@ru ;
+    rdfs:comment "Numeric identifier code of the specific retail store or point of sale"@en, "Числовой идентификационный код конкретного розничного магазина или точки продаж"@ru .
+
+eco:upc a rdf:Property ;
+    rdfs:domain eco:BeverageMerchandising ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Universal Product Code (UPC)"@en, "Универсальный товарный код"@ru ;
+    rdfs:comment "Universal Product Code (UPC), a unique barcode identifier for the product item"@en, "Универсальный товарный код (уникальный идентификатор товара в виде штрихкода)"@ru .
+
+eco:beverageName a rdf:Property ;
+    rdfs:domain eco:BeverageMerchandising ;
+    rdfs:range xsd:string ;
+    rdfs:label "Beverage name"@en, "Название напитка"@ru ;
+    rdfs:comment "Commercial name of the beverage product including pack configuration details"@en, "Торговое наименование напитка, включая подробную информацию о конфигурации упаковки"@ru .
+
+eco:psaCategoryName a rdf:Property ;
+    rdfs:domain eco:BeverageMerchandising ;
+    rdfs:range xsd:string ;
+    rdfs:label "Product category name"@en, "Название категории продукта"@ru ;
+    rdfs:comment "Product segmentation category name"@en, "Название категории сегментации продукта"@ru .
+
+eco:packType a rdf:Property ;
+    rdfs:domain eco:BeverageMerchandising ;
+    rdfs:range xsd:string ;
+    rdfs:label "Pack type"@en, "Тип упаковки"@ru ;
+    rdfs:comment "Type of product packaging configuration"@en, "Тип конфигурации упаковки продукта"@ru .
+
+eco:core a rdf:Property ;
+    rdfs:domain eco:BeverageMerchandising ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Is core"@en, "Основной"@ru ;
+    rdfs:comment "Flag indicating whether this product-pack combination is designated as a CORE item in the merchandising plan"@en, "Отметка, указывающая, обозначена ли данная комбинация товара и упаковки как основной товар в плане мерчандайзинга"@ru .
+
+eco:capacity a rdf:Property ;
+    rdfs:domain eco:BeverageMerchandising ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Capacity"@en, "Емкость"@ru ;
+    rdfs:comment "The shelf or display capacity measured in number of product units that can be accommodated"@en, "Вместимость стеллажей или витрин, измеряемая количеством единиц продукции, которые можно разместить"@ru .
+
+eco:totalUnitMovement a rdf:Property ;
+    rdfs:domain eco:BeverageMerchandising ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total unit movement"@en, "Полное перемещение единиц"@ru ;
+    rdfs:comment "Total quantity of product units sold or moved during the reporting period"@en, "Общее количество проданных или перемещенных единиц продукции за отчетный период"@ru .
+
+eco:totalPFPFacings a rdf:Property ;
+    rdfs:domain eco:BeverageMerchandising ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total PFP facings"@en, "Общее количество товара, размещенных лицевой стороной"@ru ;
+    rdfs:comment "Total number of Planogram Facing Positions (front-facing product placements) allocated to the product on shelf"@en, "Общее количество позиций на полке, указанных в планограмме (размещение товара лицевой стороной к покупателю)"@ru .
+
+eco:totalDollarMovement a rdf:Property ;
+    rdfs:domain eco:BeverageMerchandising ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total dollar movement"@en, "Общее движение долларов"@ru ;
+    rdfs:comment "Total monetary value of product sales during the reporting period, expressed in USD"@en, "Общая денежная стоимость продаж продукции за отчетный период, выраженная в долларах США"@ru .
+
+eco:delete a rdf:Property ;
+    rdfs:domain eco:BeverageMerchandising ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Delete"@en, "Удаленный"@ru ;
+    rdfs:comment "Flag indicating whether this record is marked for deletion at store level without package consideration"@en, "Флаг, указывающий, помечена ли эта запись для удаления на уровне магазина без учета упаковки"@ru .
+
+eco:desiredOutcome a rdf:Property ;
+    rdfs:domain eco:BeverageMerchandising ;
+    rdfs:range xsd:string ;
+    rdfs:label "Desired outcome"@en, "Желаемый результат"@ru ;
+    rdfs:comment "Desired outcome for location 10298 considering package"@en, "Желаемый результат для местоположения 10298 с учетом пакета услуг"@ru .

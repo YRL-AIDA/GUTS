@@ -1,0 +1,66 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:DeliveryRouteList a rdfs:Class ;
+    rdfs:label "Delivery route list"@en, "Список маршрутов доставки"@ru ;
+    rdfs:comment "A list containing details of a delivery or collection task for a specific address within a route"@en, "Список, содержащий детали задачи доставки или сбора для конкретного адреса в рамках маршрута"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:street a rdf:Property ;
+    rdfs:domain eco:DeliveryRouteList ;
+    rdfs:range xsd:string ;
+    rdfs:label "Street"@en, "Улица"@ru ;
+    rdfs:comment "The name of the street or location area for the delivery route"@en, "Название улицы или населенного пункта, к которому относится маршрут доставки"@ru .
+
+eco:number a rdf:Property ;
+    rdfs:domain eco:DeliveryRouteList ;
+    rdfs:range xsd:string ;
+    rdfs:label "Number"@en, "Номер"@ru ;
+    rdfs:comment "The house number or route-specific identifier code for the delivery point"@en, "Номер дома или идентификационный код маршрута для пункта доставки"@ru .
+
+eco:done a rdf:Property ;
+    rdfs:domain eco:DeliveryRouteList ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Is done"@en, "Сделано"@ru ;
+    rdfs:comment "Flag indicating whether the delivery/collection task was completed at this address"@en, "Отметка, указывающая, была ли выполнена задача по доставке/получению по этому адресу"@ru .
+
+eco:owed a rdf:Property ;
+    rdfs:domain eco:DeliveryRouteList ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of owed items"@en, "Количество причитающихся товаров"@ru ;
+    rdfs:comment "The number of product units or service items owed by the customer at this address"@en, "Количество единиц продукции или услуг, причитающихся клиенту по данному адресу"@ru .
+
+eco:price a rdf:Property ;
+    rdfs:domain eco:DeliveryRouteList ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Price"@en, "Цена"@ru ;
+    rdfs:comment "The price per single unit of product or service, expressed in GBP"@en, "Цена за единицу товара или услуги, выраженная в фунтах стерлингов"@ru .
+
+eco:total a rdf:Property ;
+    rdfs:domain eco:DeliveryRouteList ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total amount"@en, "Общая сумма"@ru ;
+    rdfs:comment "The total amount due for this address"@en, "Общая сумма к оплате по данному адресу"@ru .
+
+eco:paid a rdf:Property ;
+    rdfs:domain eco:DeliveryRouteList ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Is paid"@en, "Оплачено"@ru ;
+    rdfs:comment "Flag indicating whether payment was received for this address"@en, "Отметка, указывающая, получена ли оплата по этому адресу"@ru .
+
+eco:inTheBag a rdf:Property ;
+    rdfs:domain eco:DeliveryRouteList ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Actual amount of money"@en, "Фактическая сумма денег"@ru ;
+    rdfs:comment "The actual amount of money collected at this address, expressed in GBP"@en, "Фактическая сумма денег, собранная по этому адресу, выраженная в фунтах стерлингов"@ru .
+
+eco:notes a rdf:Property ;
+    rdfs:domain eco:DeliveryRouteList ;
+    rdfs:range xsd:string ;
+    rdfs:label "Notes"@en, "Заметки"@ru ;
+    rdfs:comment "Additional free-text notes or comments about the delivery/collection task for this address"@en, "Дополнительные текстовые заметки или комментарии, касающиеся доставки/получения по этому адресу"@ru .
