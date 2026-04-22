@@ -1,0 +1,224 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:EmployeeRegistry a rdfs:Class ;
+    rdfs:label "Employee registry"@en, "Реестр сотрудников"@ru ;
+    rdfs:comment "The register of sales department employees, which contains information about employees"@en, "Реестр сотрудников отдела продаж, содержащий данные о сотрудниках"@ru .
+
+eco:Incentive a rdfs:Class ;
+    rdfs:label "Incentive"@en, "Стимулирование продаж"@ru ;
+    rdfs:comment "Calculation of sales promotion for sales department employees"@en, "Расчет стимулирования продаж для сотрудников отдела продаж"@ru .
+
+eco:SalesReport a rdfs:Class ;
+    rdfs:label "Sales report"@en, "Отчет о продажах"@ru ;
+    rdfs:comment "Annual employee sales report"@en, "Годовой отчет о продажах сотрудников"@ru .
+
+eco:TentativeIncentive a rdfs:Class ;
+    rdfs:label "Tentative incentive"@en, "Предварительная оценка стимула"@ru ;
+    rdfs:comment "Preliminary estimate of sales incentive calculation for employees for the coming year"@en, "Предварительная оценка расчета стимулирования продаж для сотрудников на будущий год"@ru .
+
+# ==================== Object Properties ====================
+
+eco:hasIncentive a rdf:Property ;
+    rdfs:domain eco:EmployeeRegistry ;
+    rdfs:range eco:Incentive ;
+    rdfs:label "Incentive"@en, "Стимулирование продаж"@ru ;
+    rdfs:comment "Sales incentive for an employee for the year"@en, "Стимулирование продаж для сотрудника за год"@ru .
+
+eco:hasSalesReport a rdf:Property ;
+    rdfs:domain eco:EmployeeRegistry ;
+    rdfs:range eco:SalesReport ;
+    rdfs:label "Sales report"@en, "Отчет о продажах"@ru ;
+    rdfs:comment "Employee sales report for the year"@en, "Отчет о продажах сотрудника за год"@ru .
+
+eco:hasTentativeIncentive a rdf:Property ;
+    rdfs:domain eco:EmployeeRegistry ;
+    rdfs:range eco:TentativeIncentive ;
+    rdfs:label "Tentative incentive"@en, "Предварительная оценка стимула"@ru ;
+    rdfs:comment "Preliminary assessment of employee sales incentives for the coming year"@en, "Предварительная оценка стимулирования продаж сотрудника на будущий год"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:employeeCode a rdf:Property ;
+    rdfs:domain eco:EmployeeRegistry ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Employee code"@en, "Код сотрудника"@ru ;
+    rdfs:comment "Unique numeric identifier code assigned to the employee"@en, "Уникальный числовой идентификационный код, присваиваемый сотруднику"@ru .
+
+eco:employeeName a rdf:Property ;
+    rdfs:domain eco:EmployeeRegistry ;
+    rdfs:range xsd:string ;
+    rdfs:label "Employee name"@en, "Имя сотрудника"@ru ;
+    rdfs:comment "Full name of the employee"@en, "Полное имя сотрудника"@ru .
+
+eco:designation a rdf:Property ;
+    rdfs:domain eco:EmployeeRegistry ;
+    rdfs:range xsd:string ;
+    rdfs:label "Designation"@en, "Должность"@ru ;
+    rdfs:comment "Job title or position of the employee"@en, "Должность или позиция сотрудника"@ru .
+
+eco:location a rdf:Property ;
+    rdfs:domain eco:EmployeeRegistry ;
+    rdfs:range xsd:string ;
+    rdfs:label "Location"@en, "Местоположение"@ru ;
+    rdfs:comment "Geographic territory or location assigned to the employee"@en, "Географическая территория или локация, закрепленная за сотрудником"@ru .
+
+eco:doj a rdf:Property ;
+    rdfs:domain eco:EmployeeRegistry ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date of joining (DOJ)"@en, "Дата приема на работу"@ru ;
+    rdfs:comment "Date of joining (the date when the employee started employment)"@en, "Дата приема на работу (дата начала работы сотрудника)"@ru .
+
+eco:grossSalary a rdf:Property ;
+    rdfs:domain eco:EmployeeRegistry ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Gross salary"@en, "Валовая заработная плата"@ru ;
+    rdfs:comment "Monthly gross salary amount before deductions"@en, "Ежемесячная валовая заработная плата до вычетов"@ru .
+
+eco:fieldExpence a rdf:Property ;
+    rdfs:domain eco:EmployeeRegistry ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Field expence"@en, "Полевые расходы"@ru ;
+    rdfs:comment "Monthly field expense allowance for work-related travel and activities"@en, "Ежемесячная компенсация полевых расходов для служебных поездок и мероприятий"@ru .
+
+eco:year a rdf:Property ;
+    rdfs:domain eco:Incentive ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "The year of calculation of sales promotion"@en, "Год расчета стимулирования продаж"@ru .
+
+eco:salesTargetIncentive a rdf:Property ;
+    rdfs:domain eco:Incentive ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Sales target incentive"@en, "Премия за достижение целевого показателя продаж"@ru ;
+    rdfs:comment "Incentive amount for achieving sales targets"@en, "Размер премии за достижение целевых показателей продаж"@ru .
+
+eco:productIncentive a rdf:Property ;
+    rdfs:domain eco:Incentive ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Product incentive"@en, "Премия за продукт"@ru ;
+    rdfs:comment "Incentive amount for specific product sales"@en, "Размер премии за продажи конкретного продукта"@ru .
+
+eco:volumeIncentive a rdf:Property ;
+    rdfs:domain eco:Incentive ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Volume incentive"@en, "Премия за объем продаж"@ru ;
+    rdfs:comment "Incentive amount based on sales volume achieved in a given year"@en, "Размер премии, рассчитанный на основе объема продаж, достигнутого в этом году"@ru .
+
+eco:vaccine a rdf:Property ;
+    rdfs:domain eco:Incentive ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Vaccine incentive"@en, "Премия за продажи вакцин"@ru ;
+    rdfs:comment "Special incentive amount for vaccine product sales"@en, "Размер специального поощрения за продажи вакцин"@ru .
+
+eco:specialCashSalesIncentive a rdf:Property ;
+    rdfs:domain eco:Incentive ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Special cash sales incentive"@en, "Специальное денежное поощрение за продажи"@ru ;
+    rdfs:comment "Special cash incentive for sales performance in a given year"@en, "Специальное денежное поощрение за результаты продаж в данном году"@ru .
+
+eco:targetAndVolume a rdf:Property ;
+    rdfs:domain eco:Incentive ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Target and volume incentive"@en, "Премия за достижение целевого показателя продаж и объем продаж"@ru ;
+    rdfs:comment "Combined total of target and volume-based incentives for a given year"@en, "Сумма целевых и объемных премий за данный год"@ru .
+
+eco:totalExpense a rdf:Property ;
+    rdfs:domain eco:Incentive ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total expense"@en, "Общие расходы"@ru ;
+    rdfs:comment "Total expense amount reported for the employee in a give year"@en, "Общая сумма расходов, заявленная сотрудником за год"@ru .
+
+eco:year a rdf:Property ;
+    rdfs:domain eco:SalesReport ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "The reporting year of sales"@en, "Отчетный год продаж"@ru .
+
+eco:salesTarget  a rdf:Property ;
+    rdfs:domain eco:SalesReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Sales target "@en, "Целевой показатель продаж"@ru ;
+    rdfs:comment "Annual sales target amount set for the employee in a given year"@en, "Годовой целевой показатель продаж, устанавливаемый для сотрудника на данный год"@ru .
+
+eco:dealerSales a rdf:Property ;
+    rdfs:domain eco:SalesReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Dealer sales"@en, "Продажи дилерам"@ru ;
+    rdfs:comment "Dealer sales amount at transfer price achieved in a given year"@en, "Объем продаж дилерам по трансфертной цене, достигнутый в данном году"@ru .
+
+eco:dealerSalesVAT a rdf:Property ;
+    rdfs:domain eco:SalesReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Dealer sales with VAT"@en, "Продажи дилерам c НДС"@ru ;
+    rdfs:comment "Dealer sales amount at transfer price plus VAT achieved in a given year"@en, "Объем продаж дилерам по трансфертной цене плюс НДС, достигнутый в данном году"@ru .
+
+eco:nonDealerSales a rdf:Property ;
+    rdfs:domain eco:SalesReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Non-dealer sales"@en, "Продажи недилерским компаниям"@ru ;
+    rdfs:comment "Non-dealer sales amount at transfer price achieved in a given year"@en, "Объем продаж недилерским компаниям по трансфертной цене, достигнутый в данном году"@ru .
+
+eco:nonDealerSalesVAT a rdf:Property ;
+    rdfs:domain eco:SalesReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Non-dealer sales with VAT"@en, "Продажи недилерским компаниям c НДС"@ru ;
+    rdfs:comment "Non-dealer sales amount at transfer price plus VAT achieved in a given year"@en, "Объем продаж недилерским компаниям по трансфертной цене плюс НДС, достигнутый в данном году"@ru .
+
+eco:achievementPercent a rdf:Property ;
+    rdfs:domain eco:SalesReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Achievement percent"@en, "Процент достижения"@ru ;
+    rdfs:comment "Percentage of sales target achievement in a given year"@en, "Процент достижения целевого показателя продаж за год"@ru .
+
+eco:totalSales a rdf:Property ;
+    rdfs:domain eco:SalesReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total actual sales"@en, "Общий объем фактических продаж"@ru ;
+    rdfs:comment "The total amount of actual sales for the year"@en, "Общая сумма фактических продаж за год"@ru .
+
+eco:year a rdf:Property ;
+    rdfs:domain eco:TentativeIncentive ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Year of preparation of preliminary estimate of sales incentive calculation"@en, "Год составления предварительной оценки расчета стимулирования продаж"@ru .
+
+eco:dealer a rdf:Property ;
+    rdfs:domain eco:TentativeIncentive ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Dealer sales"@en, "Продажи дилерам"@ru ;
+    rdfs:comment "Tentative dealer-related incentive component"@en, "Предварительная составляющая стимулирующих выплат дилерам"@ru .
+
+eco:nonDealer a rdf:Property ;
+    rdfs:domain eco:TentativeIncentive ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Non-dealer"@en, "Продажи недилерским компаниям"@ru ;
+    rdfs:comment "Tentative non-dealer-related incentive component"@en, "Предварительная составляющая стимулирующих выплат, не связанных с дилером"@ru .
+
+eco:volume a rdf:Property ;
+    rdfs:domain eco:TentativeIncentive ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Volume"@en, "Премия за объем продаж"@ru ;
+    rdfs:comment "Tentative volume-based incentive component"@en, "Предварительная составляющая стимулирования, основанная на объеме продаж"@ru .
+
+eco:total a rdf:Property ;
+    rdfs:domain eco:TentativeIncentive ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total tentative incentive"@en, "Общая предварительная сумма премий"@ru ;
+    rdfs:comment "Final tentative total incentive amount after all calculations"@en, "Окончательная предварительная общая сумма вознаграждения после всех расчетов"@ru .
+
+eco:status a rdf:Property ;
+    rdfs:domain eco:TentativeIncentive ;
+    rdfs:range xsd:string ;
+    rdfs:label "Status"@en, "Статус"@ru ;
+    rdfs:comment "Achievement status indicator (Achiver / Non Achiver)"@en, "Индикатор статуса достижения (Успешный / Неуспешный)"@ru .
+
+eco:difference a rdf:Property ;
+    rdfs:domain eco:TentativeIncentive ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Difference"@en, ""@ru ;
+    rdfs:comment "The numerical difference between the total incentives for a time period"@en, "Числовая разница между суммарными выплатами за временной период"@ru .

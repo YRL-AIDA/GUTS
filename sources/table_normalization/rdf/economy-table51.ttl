@@ -1,0 +1,46 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:FinancialReport a rdfs:Class ;
+    rdfs:label "Financial report"@en, "Финансовый отчет"@ru ;
+    rdfs:comment "A financial report containing the monetary amount for a specific account code within a certain category"@en, "Финансовый отчет, содержащий денежную сумму для конкретного кода счета в пределах некоторой категории"@ru .
+
+eco:FinancialSummary a rdfs:Class ;
+    rdfs:label "Financial summary"@en, "Финансовый обзор"@ru ;
+    rdfs:comment "Financial summary containing the monetary amount for the entire category"@en, "Финансовый обзор, содержащий денежную сумму для всей категории"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:category a rdf:Property ;
+    rdfs:domain eco:FinancialReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en, "Категория"@ru ;
+    rdfs:comment "The category or group identifier"@en, "Идентификатор категории или группы"@ru .
+
+eco:accountCode a rdf:Property ;
+    rdfs:domain eco:FinancialReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Account code"@en, "Код счета"@ru ;
+    rdfs:comment "The alphanumeric account or item code identifying a specific financial line item"@en, "Буквенно-цифровой код счета или позиции, идентифицирующий конкретную финансовую строку"@ru .
+
+eco:amount a rdf:Property ;
+    rdfs:domain eco:FinancialReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Amount"@en, "Сумма"@ru ;
+    rdfs:comment "The monetary value associated with the account code in the given category"@en, "Денежная сумма, связанная с кодом счета в данной категории"@ru .
+
+eco:category a rdf:Property ;
+    rdfs:domain eco:FinancialSummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en, "Категория"@ru ;
+    rdfs:comment "The category or group identifier"@en, "Идентификатор категории или группы"@ru .
+
+eco:totalAmount a rdf:Property ;
+    rdfs:domain eco:FinancialSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total amount"@en, "Общая сумма"@ru ;
+    rdfs:comment "Total monetary amount for categories"@en, "Общая денежная сумма для категорий"@ru .

@@ -1,0 +1,112 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:GlassProductOrder a rdfs:Class ;
+    rdfs:label "Glass product order"@en, "Заказ стеклянного изделия"@ru ;
+    rdfs:comment "An order for a glass product containing product specifications, dimensions and price"@en, "Заказ на стеклянное изделие, содержащий спецификации изделия, габариты и цену"@ru .
+
+eco:GlassProductModification a rdfs:Class ;
+    rdfs:label "Glass product modification"@en, "Модификация стеклянного изделия"@ru ;
+    rdfs:comment "Information on glass product modifications, including quantity and cost"@en, "Информация о модификациях стеклянного изделия, включая количество и стоимость"@ru .
+
+eco:OrderSummary a rdfs:Class ;
+    rdfs:label "Order summary"@en, "Сводка по заказам"@ru ;
+    rdfs:comment "Summary information for the entire glass product order"@en, "Сводная информация по всему заказу стеклянных изделий"@ru .
+
+# ==================== Object Properties ====================
+
+eco:hasGlassProductModification a rdf:Property ;
+    rdfs:domain eco:GlassProductOrder ;
+    rdfs:range eco:GlassProductModification ;
+    rdfs:label "Glass product modification"@en, "Модификация стеклянного изделия"@ru ;
+    rdfs:comment "Ordering a glass product containing modifications"@en, "Заказ стеклянного изделия, содержащий модификаций"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:product a rdf:Property ;
+    rdfs:domain eco:GlassProductOrder ;
+    rdfs:range xsd:string ;
+    rdfs:label "Product"@en, "Изделие"@ru ;
+    rdfs:comment "Textual description of the glass product including thickness, color, treatment, and finish"@en, "Текстовое описание изделия из стекла, включающее толщину, цвет, обработку и отделку"@ru .
+
+eco:quantity a rdf:Property ;
+    rdfs:domain eco:GlassProductOrder ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Quantity"@en, "Количество"@ru ;
+    rdfs:comment "Number of units of this glass product ordered"@en, "Количество заказанных единиц данного изделия из стекла"@ru .
+
+eco:mark a rdf:Property ;
+    rdfs:domain eco:GlassProductOrder ;
+    rdfs:range xsd:string ;
+    rdfs:label "Mark"@en, "Отметка"@ru ;
+    rdfs:comment "Mark"@en, "Отметка"@ru .
+
+eco:width a rdf:Property ;
+    rdfs:domain eco:GlassProductOrder ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Width"@en, "Ширина"@ru ;
+    rdfs:comment "Width of the glass product in millimeters"@en, "Ширина стеклянного изделия в миллиметрах"@ru .
+
+eco:height a rdf:Property ;
+    rdfs:domain eco:GlassProductOrder ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Height"@en, "Высота"@ru ;
+    rdfs:comment "Height of the glass product in millimeters"@en, "Высота стеклянного изделия в миллиметрах"@ru .
+
+eco:area a rdf:Property ;
+    rdfs:domain eco:GlassProductOrder ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Area"@en, "Площадь"@ru ;
+    rdfs:comment "Calculated surface area of the glass product in square meters"@en, "Расчетная площадь поверхности стеклянного изделия в квадратных метрах"@ru .
+
+eco:price a rdf:Property ;
+    rdfs:domain eco:GlassProductOrder ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Price"@en, "Цена"@ru ;
+    rdfs:comment "Base price per square meter of the glass product, excluding additional services"@en, "Базовая цена за квадратный метр изделия из стекла, без учета дополнительных услуг"@ru .
+
+eco:totalPrice a rdf:Property ;
+    rdfs:domain eco:GlassProductOrder ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total price"@en, "Общая цена"@ru ;
+    rdfs:comment "The total price of a glass product, including all additional services (modifications)"@en, "Общая цена изделия из стекла c учетом всех дополнительных услуг (модификаций)"@ru .
+
+eco:modificationName a rdf:Property ;
+    rdfs:domain eco:GlassProductModification ;
+    rdfs:range xsd:string ;
+    rdfs:label "Modification name"@en, "Название модификации"@ru ;
+    rdfs:comment "Name of glass product modification"@en, "Название модификации стеклянного изделия"@ru .
+
+eco:quantity a rdf:Property ;
+    rdfs:domain eco:GlassProductModification ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Quantity"@en, "Количество"@ru ;
+    rdfs:comment "Number of modifications ordered"@en, "Количество заказанных модификаций"@ru .
+
+eco:price a rdf:Property ;
+    rdfs:domain eco:GlassProductModification ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Price"@en, "Цена"@ru ;
+    rdfs:comment "Price of modification"@en, "Цена модификации"@ru .
+
+eco:totalCost a rdf:Property ;
+    rdfs:domain eco:OrderSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total cost"@en, "Общая стоимость"@ru ;
+    rdfs:comment "Total cost of the entire order"@en, "Общая стоимость всего заказа"@ru .
+
+eco:vat a rdf:Property ;
+    rdfs:domain eco:OrderSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "VAT"@en, "НДС"@ru ;
+    rdfs:comment "The meaning of VAT"@en, "Значение НДС"@ru .
+
+eco:grandTotal a rdf:Property ;
+    rdfs:domain eco:OrderSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Grand total"@en, "Общий итог"@ru ;
+    rdfs:comment "Total cost of the order including VAT"@en, "Общая итоговая стоимость заказа включая НДС"@ru .

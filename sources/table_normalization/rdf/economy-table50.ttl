@@ -1,0 +1,64 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:AmenityConsideration a rdfs:Class ;
+    rdfs:label "Amenity consideration"@en, "Учет особенностей благоустройства"@ru ;
+    rdfs:comment "Taking into account the features of the amenities, showing whether a particular amenity is available in a particular residential tower"@en, "Учет особенностей благоустройства, показывающий доступно ли конкретное удобство в конкретной жилой башне"@ru .
+
+eco:SummaryAmenityInformation a rdfs:Class ;
+    rdfs:label "Summary amenity information"@en, "Сводная информация об удобствах"@ru ;
+    rdfs:comment "Summary of amenities in all residential towers"@en, "Сводная информация об удобствах во всех жилых башнях"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:tower a rdf:Property ;
+    rdfs:domain eco:AmenityConsideration ;
+    rdfs:range xsd:string ;
+    rdfs:label "Tower"@en, "Башня"@ru ;
+    rdfs:comment "The identifier of the residential tower"@en, "Идентификатор жилой башни"@ru .
+
+eco:amenityCategory a rdf:Property ;
+    rdfs:domain eco:AmenityConsideration ;
+    rdfs:range xsd:string ;
+    rdfs:label "Amenity category"@en, "Категория удобств"@ru ;
+    rdfs:comment "The classification category of the amenity"@en, "Классификационная категория объекта благоустройства"@ru .
+
+eco:amenityType a rdf:Property ;
+    rdfs:domain eco:AmenityConsideration ;
+    rdfs:range xsd:string ;
+    rdfs:label "Amenity type"@en, "Тип удобств"@ru ;
+    rdfs:comment "The type name of the amenity or facility"@en, "Название типа удобства или объекта"@ru .
+
+eco:availability a rdf:Property ;
+    rdfs:domain eco:AmenityConsideration ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Availability"@en, "Наличие"@ru ;
+    rdfs:comment "Flag indicating whether the amenity is available in the specified tower"@en, "Отметка, указывающая, доступна ли данная услуга в указанной башне"@ru .
+
+eco:amenityCategory a rdf:Property ;
+    rdfs:domain eco:SummaryAmenityInformation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Amenity category"@en, "Категория удобств"@ru ;
+    rdfs:comment "The classification category of the amenity"@en, "Классификационная категория объекта благоустройства"@ru .
+
+eco:amenityType a rdf:Property ;
+    rdfs:domain eco:SummaryAmenityInformation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Amenity type"@en, "Тип удобств"@ru ;
+    rdfs:comment "The type name of the amenity or facility"@en, "Название типа удобства или объекта"@ru .
+
+eco:totalNumber a rdf:Property ;
+    rdfs:domain eco:SummaryAmenityInformation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total number"@en, "Общее количество"@ru ;
+    rdfs:comment "Total number of amenities of this type"@en, "Общее количество удобств данного типа"@ru .
+
+eco:percentage a rdf:Property ;
+    rdfs:domain eco:SummaryAmenityInformation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Percentage"@en, "Процент"@ru ;
+    rdfs:comment "Percentage of total number of amenities of this type"@en, "Процент от общего количества удобств данного типа"@ru .

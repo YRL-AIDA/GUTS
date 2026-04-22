@@ -1,0 +1,70 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:EquipmentCostBreakdownReport a rdfs:Class ;
+    rdfs:label "Equipment Cost Breakdown Report"@en, "Отчет о разбивке затрат на оборудование"@ru ;
+    rdfs:comment "Equipment Cost Report, which provides cost and percentage information for a specific equipment item from a specific supplier within a category"@en, "Отчет по затратам на оборудование, содержащий информацию о стоимости и процентной доле для конкретной позиции оборудования от конкретного поставщика в пределах категории"@ru .
+
+eco:CostSummary a rdfs:Class ;
+    rdfs:label "Cost summary"@en, "Сводная информация о затратах"@ru ;
+    rdfs:comment "Summary of costs by category and supplier"@en, "Сводная информация о затратах по категориям и поставщикам"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:supplier a rdf:Property ;
+    rdfs:domain eco:EquipmentCostBreakdownReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Supplier"@en, "Поставщик"@ru ;
+    rdfs:comment "The name of the equipment supplier or vendor"@en, "Название поставщика или продавца оборудования"@ru .
+
+eco:category a rdf:Property ;
+    rdfs:domain eco:EquipmentCostBreakdownReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en, "Категория"@ru ;
+    rdfs:comment "The equipment category or subcategory classification"@en, "Классификация по категории или подкатегории оборудования"@ru .
+
+eco:productName a rdf:Property ;
+    rdfs:domain eco:EquipmentCostBreakdownReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Product name"@en, "Название продукта"@ru ;
+    rdfs:comment "The commercial name or model identifier of the specific equipment item"@en, "Торговое наименование или идентификатор модели конкретного элемента оборудования"@ru .
+
+eco:cost a rdf:Property ;
+    rdfs:domain eco:EquipmentCostBreakdownReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Cost"@en, "Стоимость"@ru ;
+    rdfs:comment "The monetary cost of the equipment item, expressed in the report's currency unit"@en, "Денежная стоимость единицы оборудования, выраженная в валюте, указанной в отчете"@ru .
+
+eco:percentage a rdf:Property ;
+    rdfs:domain eco:EquipmentCostBreakdownReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percentage"@en, "Процент"@ru ;
+    rdfs:comment "Percentage of the cost of this equipment"@en, "Процентная доля стоимости данного оборудования"@ru .
+
+eco:supplier a rdf:Property ;
+    rdfs:domain eco:CostSummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Supplier"@en, "Поставщик"@ru ;
+    rdfs:comment "The name of the equipment supplier or vendor"@en, "Название поставщика или продавца оборудования"@ru .
+
+eco:category a rdf:Property ;
+    rdfs:domain eco:CostSummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en, "Категория"@ru ;
+    rdfs:comment "The equipment category or subcategory classification"@en, "Классификация по категории или подкатегории оборудования"@ru .
+
+eco:totalCost a rdf:Property ;
+    rdfs:domain eco:CostSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total cost"@en, "Общая стоимость"@ru ;
+    rdfs:comment "Total monetary value of equipment for a category or supplier"@en, "Общая денежная стоимость оборудования для категории или поставщика"@ru .
+
+eco:totalPercentage a rdf:Property ;
+    rdfs:domain eco:CostSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total percentage"@en, "Общий процент"@ru ;
+    rdfs:comment "Total percentage of equipment cost for a category or supplier"@en, "Общая процентная доля стоимости оборудования для категории или поставщика"@ru .
