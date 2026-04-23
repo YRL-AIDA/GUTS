@@ -1,0 +1,76 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:DentalProduct a rdfs:Class ;
+    rdfs:label "Dental product"@en, "Стоматологическая продукция"@ru ;
+    rdfs:comment "A dental implant or prosthetic component with technical specifications and pricing information"@en, "Стоматологический имплант или протезный компонент с техническими характеристиками и ценовой информацией"@ru .
+
+eco:DentalProductCategorySummary a rdfs:Class ;
+    rdfs:label "Dental product category summary"@en, "Сводка по категориям стоматологической продукции"@ru ;
+    rdfs:comment "Summary of dental product categories, including total product quantities and discounts"@en, "Сводка по категориям стоматологической продукции, включая общее количество продукции и скидку"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:category a rdf:Property ;
+    rdfs:domain eco:DentalProduct ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en, "Категория"@ru ;
+    rdfs:comment "Name of the dental product group"@en, "Name of the dental product group"@ru .
+
+eco:code a rdf:Property ;
+    rdfs:domain eco:DentalProduct ;
+    rdfs:range xsd:string ;
+    rdfs:label "Code"@en, "Код"@ru ;
+    rdfs:comment "Unique alphanumeric identifier of the product"@en, "Уникальный буквенно-цифровой идентификатор продукта"@ru .
+
+eco:description a rdf:Property ;
+    rdfs:domain eco:DentalProduct ;
+    rdfs:range xsd:string ;
+    rdfs:label "Description"@en, "Описание"@ru ;
+    rdfs:comment "Descriptive name or title of the product"@en, "Описательное название или заголовок продукта"@ru .
+
+eco:characteristics a rdf:Property ;
+    rdfs:domain eco:DentalProduct ;
+    rdfs:range xsd:string ;
+    rdfs:label "Characteristics"@en, "Характеристики"@ru ;
+    rdfs:comment "Description of the main characteristics of the dental product"@en, "Описание основных характеристик стоматологического изделия"@ru .
+
+eco:price a rdf:Property ;
+    rdfs:domain eco:DentalProduct ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Price"@en, "Цена"@ru ;
+    rdfs:comment "Base retail price of the product in euros"@en, "Базовая розничная цена продукта в евро"@ru .
+
+eco:discountedPrice a rdf:Property ;
+    rdfs:domain eco:DentalProduct ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Discounted price"@en, "Цена со скидкой"@ru ;
+    rdfs:comment "Promotional or discounted price in euros"@en, "Акционная или сниженная цена в евро"@ru .
+
+eco:quantity a rdf:Property ;
+    rdfs:domain eco:DentalProduct ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Quantity"@en, "Количество"@ru ;
+    rdfs:comment "Number of units available in stock"@en, "Количество единиц товара на складе"@ru .
+
+eco:category a rdf:Property ;
+    rdfs:domain eco:DentalProductCategorySummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en, "Категория"@ru ;
+    rdfs:comment "Name of the dental product group"@en, "Name of the dental product group"@ru .
+
+eco:totalDiscountedPrice a rdf:Property ;
+    rdfs:domain eco:DentalProductCategorySummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total discounted price"@en, "Общая цена со скидкой"@ru ;
+    rdfs:comment "Total promotional or reduced price in euros for the entire product category"@en, "Общая акционная или сниженная цена в евро для всей категории продукции"@ru .
+
+eco:totalQuantity a rdf:Property ;
+    rdfs:domain eco:DentalProductCategorySummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total quantity"@en, "Общее количество"@ru ;
+    rdfs:comment "Total number of units of goods in stock for this category"@en, "Общее количество единиц товара на складе для данной категории"@ru .

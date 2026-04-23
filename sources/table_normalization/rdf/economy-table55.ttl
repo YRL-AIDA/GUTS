@@ -1,0 +1,66 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:CostCalculation a rdfs:Class ;
+    rdfs:label "Cost calculation"@en, "Расчет стоимости"@ru ;
+    rdfs:comment "Information on detailed pricing components and calculation of the final cost for a specific product at a certain order volume"@en, "Информация о детальных компонентах ценообразования и расчет итоговой стоимости для конкретного продукта при определенном объеме заказа"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:productName a rdf:Property ;
+    rdfs:domain eco:CostCalculation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Product name"@en, "Название продукта"@ru ;
+    rdfs:comment "The commercial name or identifier code of the product"@en, "Торговое наименование или идентификационный код продукта"@ru .
+
+eco:quantity a rdf:Property ;
+    rdfs:domain eco:CostCalculation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Quantity"@en, "Количество"@ru ;
+    rdfs:comment "The order quantity tier for which the pricing is calculated"@en, "Уровень количества заказа, для которого рассчитывается цена"@ru .
+
+eco:unitPrice a rdf:Property ;
+    rdfs:domain eco:CostCalculation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Unit price"@en, "Цена за единицу товара"@ru ;
+    rdfs:comment "The base price per single unit of the product before any additional charges or adjustments"@en, "Базовая цена за единицу товара до вычета каких-либо дополнительных сборов или корректировок"@ru .
+
+eco:cost a rdf:Property ;
+    rdfs:domain eco:CostCalculation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Cost"@en, "Стоимость"@ru ;
+    rdfs:comment "The total base cost calculated as unit price multiplied by quantity, excluding additional charges"@en, "Общая базовая стоимость рассчитывается как цена за единицу товара, умноженная на количество, без учета дополнительных сборов"@ru .
+
+eco:setupCharge a rdf:Property ;
+    rdfs:domain eco:CostCalculation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Setup charge"@en, "Плата за настройку"@ru ;
+    rdfs:comment "A fixed fee charged for setup, configuration, or preparation of the order"@en, "Фиксированная плата, взимаемая за настройку, конфигурацию или подготовку заказа"@ru .
+
+eco:exchangeAmount a rdf:Property ;
+    rdfs:domain eco:CostCalculation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Exchange amount"@en, "Сумма обмена"@ru ;
+    rdfs:comment "The monetary amount of the exchange rate adjustment applied to the order (36 percentage rate)"@en, "Денежная сумма корректировки обменного курса, применяемая к заказу (36-процентная ставка)"@ru .
+
+eco:markup a rdf:Property ;
+    rdfs:domain eco:CostCalculation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Markup"@en, "Наценка"@ru ;
+    rdfs:comment "A fixed markup amount added to the order total, varying by quantity tier"@en, "К общей сумме заказа добавляется фиксированная наценка, размер которой зависит от количества товара"@ru .
+
+eco:totalPrice a rdf:Property ;
+    rdfs:domain eco:CostCalculation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total price"@en, "Общая цена"@ru ;
+    rdfs:comment "The final total price of the order including base cost, setup charge, exchange adjustment, and markup"@en, "Итоговая сумма заказа, включая базовую стоимость, плату за настройку, корректировку обменного курса и наценку"@ru .
+
+eco:costEach a rdf:Property ;
+    rdfs:domain eco:CostCalculation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Cost each"@en, "Стоимость за единицу"@ru ;
+    rdfs:comment "The final effective price per unit after all charges and adjustments have been applied"@en, "Окончательная эффективная цена за единицу после применения всех сборов и корректировок"@ru .

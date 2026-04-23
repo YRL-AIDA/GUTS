@@ -1,0 +1,124 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:MonthlySalesReport a rdfs:Class ;
+    rdfs:label "Monthly sales report"@en, "Ежемесячный отчет о продажах"@ru ;
+    rdfs:comment "A record of units sold for a product variant in a specific calendar month"@en, "Запись о количестве проданных единиц варианта продукта в конкретном календарном месяце"@ru .
+
+eco:InventoryManagementReport a rdfs:Class ;
+    rdfs:label "Inventory management report"@en, "Отчет по управлению запасами"@ru ;
+    rdfs:comment "Inventory management report for a specific product variant identified by color"@en, "Отчет по управлению запасами конкретного варианта продукта, идентифицируемого по цвету"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:color a rdf:Property ;
+    rdfs:domain eco:MonthlySalesReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Color"@en, "Цвет"@ru ;
+    rdfs:comment "Color name identifying the product variant"@en, "Название цвета, идентифицирующее вариант продукта"@ru .
+
+eco:month a rdf:Property ;
+    rdfs:domain eco:MonthlySalesReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Month"@en, "Месяц"@ru ;
+    rdfs:comment "Calendar month number (1–12) for the sales record"@en, "Номер календарного месяца (1–12) для записи о продажах"@ru .
+
+eco:unitsSold a rdf:Property ;
+    rdfs:domain eco:MonthlySalesReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Units sold"@en, "Проданные единицы"@ru ;
+    rdfs:comment "Number of units sold for the product variant in the specified month"@en, "Количество проданных единиц варианта продукта в указанном месяце"@ru .
+
+eco:color a rdf:Property ;
+    rdfs:domain eco:InventoryManagementReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Color"@en, "Цвет"@ru ;
+    rdfs:comment "Color name identifying the product variant"@en, "Название цвета, идентифицирующее вариант продукта"@ru .
+
+eco:totalSold a rdf:Property ;
+    rdfs:domain eco:InventoryManagementReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total sold"@en, "Всего проданных единиц"@ru ;
+    rdfs:comment "Total number of units sold for a product variant for all months"@en, "Общее количество проданных единиц варианта продукта за все месяцы"@ru .
+
+eco:purchased a rdf:Property ;
+    rdfs:domain eco:InventoryManagementReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Purchased"@en, "Приобретено"@ru ;
+    rdfs:comment "Total quantity of the variant purchased or received into inventory"@en, "Общее количество закупленных или поступивших на склад единиц варианта"@ru .
+
+eco:percentSold a rdf:Property ;
+    rdfs:domain eco:InventoryManagementReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Percent sold"@en, "Процент продаж"@ru ;
+    rdfs:comment "Percentage of unit sales of a product variant across all months"@en, "Процент продаж единиц варианта продукта за все месяцы"@ru .
+
+eco:stockLeft a rdf:Property ;
+    rdfs:domain eco:InventoryManagementReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Stock left"@en, "Остаток товара"@ru ;
+    rdfs:comment "The remainder of the product variant is in stock"@en, "Остаток варианта продукта на складе"@ru .
+
+eco:record a rdf:Property ;
+    rdfs:domain eco:InventoryManagementReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Record"@en, "Норма запаса"@ru ;
+    rdfs:comment "Reorder point or historical reference quantity for inventory control"@en, "Точка повторного заказа или эталонное количество для управления запасами"@ru .
+
+eco:sixMonth a rdf:Property ;
+    rdfs:domain eco:InventoryManagementReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Six month projection"@en, "Прогноз на шесть месяцев"@ru ;
+    rdfs:comment "Forecasted demand or required stock for the next 6 months"@en, "Прогнозируемый спрос или необходимый запас на ближайшие 6 месяцев"@ru .
+
+eco:threeMonth a rdf:Property ;
+    rdfs:domain eco:InventoryManagementReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Three month projection"@en, "Прогноз на три месяца"@ru ;
+    rdfs:comment "Forecasted demand or required stock for the next 3 months"@en, "Прогнозируемый спрос или необходимый запас на ближайшие 3 месяца"@ru .
+
+eco:monthsLeft a rdf:Property ;
+    rdfs:domain eco:InventoryManagementReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Months left"@en, "Осталось месяцев"@ru ;
+    rdfs:comment "Remaining months"@en, "Остаток месяцев"@ru .
+
+eco:status a rdf:Property ;
+    rdfs:domain eco:InventoryManagementReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Status"@en, "Статус"@ru ;
+    rdfs:comment "Current inventory status indicator"@en, "Текущий индикатор состояния запасов"@ru .
+
+eco:percentByColor a rdf:Property ;
+    rdfs:domain eco:InventoryManagementReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Percent by color"@en, "Процент по цвету"@ru ;
+    rdfs:comment "Percentage share of this color variant in total product distribution"@en, "Доля данного цветового варианта в общем распределении продукта в процентах"@ru .
+
+eco:recordTweak a rdf:Property ;
+    rdfs:domain eco:InventoryManagementReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Record tweak"@en, "Корректировка нормы"@ru ;
+    rdfs:comment "Adjusted or fine-tuned reorder point based on recent trends"@en, "Скорректированная точка повторного заказа с учетом последних тенденций"@ru .
+
+eco:orderNumber a rdf:Property ;
+    rdfs:domain eco:InventoryManagementReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Number of orders"@en, "Количество заказов"@ru ;
+    rdfs:comment "Number of orders"@en, "Количество заказов"@ru .
+
+eco:shipTime a rdf:Property ;
+    rdfs:domain eco:InventoryManagementReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Ship time"@en, "Время доставки"@ru ;
+    rdfs:comment "Expected lead time for shipment or replenishment"@en, "Ожидаемое время доставки или пополнения запасов"@ru .
+
+eco:myOrder a rdf:Property ;
+    rdfs:domain eco:InventoryManagementReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "My order"@en, "Мой заказ"@ru ;
+    rdfs:comment "Quantity ordered by the user or planner for this variant"@en, "Количество, заказанное пользователем или планировщиком для данного варианта"@ru .
