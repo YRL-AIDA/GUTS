@@ -1,0 +1,36 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:WeeklySalesReport a rdfs:Class ;
+    rdfs:label "Weekly sales report"@en, "Еженедельный отчет о продажах"@ru ;
+    rdfs:comment "Weekly sales total report for a specific cafe"@en, "Еженедельный отчет о сумме продаж для конкретного кафе"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:date a rdf:Property ;
+    rdfs:domain eco:WeeklySalesReport ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date"@en, "Дата"@ru ;
+    rdfs:comment "The Sunday or designated end day of the reporting week"@en, "Дата воскресенья или иного установленного последнего дня отчетной недели"@ru .
+
+eco:category a rdf:Property ;
+    rdfs:domain eco:WeeklySalesReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en, "Категория"@ru ;
+    rdfs:comment "The brand or business group to which the cafe belongs, or another source of income"@en, "Бренд или бизнес-группа, к которой относится кафе, или другой источник дохода"@ru .
+
+eco:cafeName a rdf:Property ;
+    rdfs:domain eco:WeeklySalesReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Cafe name"@en, "Название кафе"@ru ;
+    rdfs:comment "Unique name or identifier of the cafe location"@en, "Уникальное название или идентификатор торговой точки кафе"@ru .
+
+eco:targetAmount a rdf:Property ;
+    rdfs:domain eco:WeeklySalesReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Target amount"@en, "Целевая сумма"@ru ;
+    rdfs:comment "Planned or target sales revenue in currency units for the cafe for the specified week"@en, "Планируемая или целевая выручка от продаж в денежных единицах для кафе в указанную неделю"@ru .

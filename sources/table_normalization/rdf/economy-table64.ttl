@@ -1,0 +1,94 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:FitnessMembership a rdfs:Class ;
+    rdfs:label "Fitness membership"@en, "Абонемент в фитнес-центр"@ru ;
+    rdfs:comment "Information on sold memberships to a fitness center with fixed configuration parameters"@en, "Информация о проданных абонементах в фитнес-центр с фиксированными параметрами конфигурации"@ru .
+
+eco:SalesSummary a rdfs:Class ;
+    rdfs:label "Sales summary"@en, "Сводка продаж"@ru ;
+    rdfs:comment "Summary of fitness center membership sales for the entire period"@en, "Сводка продаж абонементов в фитнес-центр за весь период"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:year a rdf:Property ;
+    rdfs:domain eco:FitnessMembership ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of the financial record"@en, "Календарный год финансовой записи"@ru .
+
+eco:membershipType a rdf:Property ;
+    rdfs:domain eco:FitnessMembership ;
+    rdfs:range xsd:string ;
+    rdfs:label "Membership type"@en, "Тип членства"@ru ;
+    rdfs:comment "Identifier of the membership category"@en, "Идентификатор категории абонемента"@ru .
+
+eco:monthSold a rdf:Property ;
+    rdfs:domain eco:FitnessMembership ;
+    rdfs:range xsd:string ;
+    rdfs:label "Month sold"@en, "Месяц продажи"@ru ;
+    rdfs:comment "Month when the membership was sold"@en, "Месяц продажи абонемента"@ru .
+
+eco:proration a rdf:Property ;
+    rdfs:domain eco:FitnessMembership ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Proration"@en, "Пропорциональное распределение"@ru ;
+    rdfs:comment "The number of months the subscription is valid for"@en, "Количество месяцев, в течение которых действует абонемент"@ru .
+
+eco:glCode a rdf:Property ;
+    rdfs:domain eco:FitnessMembership ;
+    rdfs:range xsd:string ;
+    rdfs:label "General ledger code"@en, "Код главной бухгалтерской книги"@ru ;
+    rdfs:comment "General ledger accounting code used for financial reporting of this membership type"@en, "Код бухгалтерского счета главной книги, используемый для финансовой отчетности по данному типу абонемента"@ru .
+
+eco:openingBalance a rdf:Property ;
+    rdfs:domain eco:FitnessMembership ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Opening balance"@en, "Входящий остаток"@ru ;
+    rdfs:comment "Balance carried forward from the previous period at the start of the reporting month"@en, "Остаток, перенесенный из предыдущего периода на начало отчетного месяца"@ru .
+
+eco:sold a rdf:Property ;
+    rdfs:domain eco:FitnessMembership ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Sold"@en, "Продано"@ru ;
+    rdfs:comment "Revenue amount from new memberships sold during the reporting month"@en, "Сумма выручки от продажи новых абонементов в течение отчетного месяца"@ru .
+
+eco:revenue a rdf:Property ;
+    rdfs:domain eco:FitnessMembership ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Revenue"@en, "Доход"@ru ;
+    rdfs:comment "Recognized revenue for the month after applying proration rules"@en, "Признанная выручка за месяц после применения правил пропорционального распределения"@ru .
+
+eco:closingBalance a rdf:Property ;
+    rdfs:domain eco:FitnessMembership ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Closing balance"@en, "Исходящий остаток"@ru ;
+    rdfs:comment "Remaining deferred revenue balance at the end of the reporting month"@en, "Остаток отложенной выручки на конец отчетного месяца"@ru .
+
+eco:totalOpeningBalance a rdf:Property ;
+    rdfs:domain eco:SalesSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total opening balance"@en, "Общий начальный баланс"@ru ;
+    rdfs:comment "The total opening balance carried forward from the previous period to the beginning of the reporting month"@en, "Общий начальный остаток, перенесенный из предыдущего периода на начало отчетного месяца"@ru .
+
+eco:totalSold a rdf:Property ;
+    rdfs:domain eco:SalesSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total sold"@en, "Всего продано"@ru ;
+    rdfs:comment "Total revenue from new season ticket sales during the entire period"@en, "Общая сумма выручки от продажи новых абонементов в течении всего периода"@ru .
+
+eco:totalRevenue a rdf:Property ;
+    rdfs:domain eco:SalesSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total revenue"@en, "Общий доход"@ru ;
+    rdfs:comment "Total income after applying the proportional distribution rules for the entire period"@en, "Общий доход после применения правил пропорционального распределения за весь период"@ru .
+
+eco:totalClosingBalance a rdf:Property ;
+    rdfs:domain eco:SalesSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total closing balance"@en, "Итого на конец периода"@ru ;
+    rdfs:comment "Deferred revenue balance for the entire period"@en, "Остаток отложенной выручки за весь период"@ru .

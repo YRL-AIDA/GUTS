@@ -1,0 +1,184 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:DailySalesReport a rdfs:Class ;
+    rdfs:label "Daily sales report"@en, "Ежедневный отчет о продажах"@ru ;
+    rdfs:comment "Daily sales total report for a specific cafe"@en, "Ежедневный отчет о сумме продаж для конкретного кафе"@ru .
+
+eco:DailySalesSummary a rdfs:Class ;
+    rdfs:label "Daily sales summary"@en, "Ежедневная сводка продаж"@ru ;
+    rdfs:comment "Daily sales summary for all cafes"@en, "Ежедневная сводка продаж по всем кафе"@ru .
+
+eco:WeeklySalesReport a rdfs:Class ;
+    rdfs:label "Weekly sales report"@en, "Еженедельный отчет о продажах"@ru ;
+    rdfs:comment "Weekly sales total report for a specific cafe"@en, "Еженедельный отчет о сумме продаж для конкретного кафе"@ru .
+
+eco:WeeklySalesSummary a rdfs:Class ;
+    rdfs:label "Weekly sales summary"@en, "Еженедельная сводка продаж"@ru ;
+    rdfs:comment "Weekly sales summary for all cafes"@en, "Еженедельная сводка продаж по всем кафе"@ru .
+
+eco:DailyIncomeReport a rdfs:Class ;
+    rdfs:label "Daily income report"@en, "Ежедневный отчет о доходах"@ru ;
+    rdfs:comment "Daily report on the income amount for a specific category"@en, "Ежедневный отчет о сумме дохода по конкретной категории"@ru .
+
+eco:DailyIncomeSummary a rdfs:Class ;
+    rdfs:label "Daily income summary"@en, "Ежедневная сводка доходов"@ru ;
+    rdfs:comment "Daily income summary for all categories"@en, "Ежедневная сводка доходов по всем категориям"@ru .
+
+eco:WeeklyIncomeReport a rdfs:Class ;
+    rdfs:label "Weekly income report"@en, "Еженедельный отчет о продажах"@ru ;
+    rdfs:comment "Weekly report on the amount of income for a specific category"@en, "Еженедельный отчет о сумме дохода по конкретной категории"@ru .
+
+eco:WeeklyIncomeSummary a rdfs:Class ;
+    rdfs:label "Weekly income summary"@en, "Еженедельная сводка продаж"@ru ;
+    rdfs:comment "Weekly income summary for all categories"@en, "Еженедельная сводка доходов по всем категориям"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:date a rdf:Property ;
+    rdfs:domain eco:DailySalesReport ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date"@en, "Дата"@ru ;
+    rdfs:comment "Calendar date of the sales record"@en, "Календарная дата записи о продажах"@ru .
+
+eco:cafeName a rdf:Property ;
+    rdfs:domain eco:DailySalesReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Cafe name"@en, "Название кафе"@ru ;
+    rdfs:comment "Unique name or identifier of the cafe location"@en, "Уникальное название или идентификатор торговой точки кафе"@ru .
+
+eco:salesAmount a rdf:Property ;
+    rdfs:domain eco:DailySalesReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Sales amount"@en, "Сумма продаж"@ru ;
+    rdfs:comment "Actual sales revenue in currency units for the cafe on the specified date"@en, "Фактическая выручка от продаж в денежных единицах для кафе в указанную дату"@ru .
+
+eco:date a rdf:Property ;
+    rdfs:domain eco:DailySalesSummary ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date"@en, "Дата"@ru ;
+    rdfs:comment "Calendar date of the sales record"@en, "Календарная дата записи о продажах"@ru .
+
+eco:totalSalesAmount a rdf:Property ;
+    rdfs:domain eco:DailySalesSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total sales amount"@en, "Общая сумма продаж"@ru ;
+    rdfs:comment "Total actual sales revenue in monetary units for all cafes on the specified date"@en, "Общая фактическая выручка от продаж в денежных единицах для всех кафе в указанную дату"@ru .
+
+eco:cafeName a rdf:Property ;
+    rdfs:domain eco:WeeklySalesReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Cafe name"@en, "Название кафе"@ru ;
+    rdfs:comment "Unique name or identifier of the cafe location"@en, "Уникальное название или идентификатор торговой точки кафе"@ru .
+
+eco:salesAmount a rdf:Property ;
+    rdfs:domain eco:WeeklySalesReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Sales amount"@en, "Сумма продаж"@ru ;
+    rdfs:comment "Actual sales revenue in GBP for the cafe for the week"@en, "Фактическая выручка от продаж в фунтах стерлингов для кафе за неделю"@ru .
+
+eco:weeklyTarget a rdf:Property ;
+    rdfs:domain eco:WeeklySalesReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Weekly target"@en, "Недельный план"@ru ;
+    rdfs:comment "Target sales amount in GBP for the cafe for a standard week"@en, "Целевая сумма продаж в фунтах стерлингов для кафе за стандартную неделю"@ru .
+
+eco:deviation a rdf:Property ;
+    rdfs:domain eco:WeeklySalesReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Deviation"@en, "Отклонение"@ru ;
+    rdfs:comment "Deviation from target in GBP"@en, "Отклонение от целевого значения в фунтах стерлингов"@ru .
+
+eco:totalSalesAmount a rdf:Property ;
+    rdfs:domain eco:WeeklySalesSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total sales amount"@en, "Общая сумма продаж"@ru ;
+    rdfs:comment "Total sales revenue in pounds sterling for all cafes for the week"@en, "Общая выручка от продаж в фунтах стерлингов для всех кафе за неделю"@ru .
+
+eco:totalWeeklyTarget a rdf:Property ;
+    rdfs:domain eco:WeeklySalesSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total weekly target"@en, "Общий недельный план"@ru ;
+    rdfs:comment "Total target sales in pounds sterling for all cafes for a standard week"@en, "Общая целевая сумма продаж в фунтах стерлингов для всех кафе за стандартную неделю"@ru .
+
+eco:totalDeviation a rdf:Property ;
+    rdfs:domain eco:WeeklySalesSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total deviation"@en, "Общее отклонение"@ru ;
+    rdfs:comment "Total deviation from target in GBP for all cafes"@en, "Общее отклонение от целевого значения в фунтах стерлингов для всех кафе"@ru .
+
+eco:date a rdf:Property ;
+    rdfs:domain eco:DailyIncomeReport ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date"@en, "Дата"@ru ;
+    rdfs:comment "Calendar date of income recording"@en, "Календарная дата записи о доходах"@ru .
+
+eco:category a rdf:Property ;
+    rdfs:domain eco:DailyIncomeReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en, "Категория"@ru ;
+    rdfs:comment "Income category name"@en, "Название категории дохода"@ru .
+
+eco:incomeAmount a rdf:Property ;
+    rdfs:domain eco:DailyIncomeReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Income amount"@en, "Сумма дохода"@ru ;
+    rdfs:comment "The actual amount of income for this category in monetary units on the specified date"@en, "Фактическая сумма дохода по данной категории в денежных единицах на указанную дату"@ru .
+
+eco:date a rdf:Property ;
+    rdfs:domain eco:DailyIncomeSummary ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date"@en, "Дата"@ru ;
+    rdfs:comment "Calendar date of income recording"@en, "Календарная дата записи о доходах"@ru .
+
+eco:totalIncomeAmount a rdf:Property ;
+    rdfs:domain eco:DailyIncomeSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total income amount"@en, "Общая сумма дохода"@ru ;
+    rdfs:comment "Total actual income in monetary units for all categories on the specified date"@en, "Общая фактическая сумма дохода в денежных единицах для всех категорий в указанную дату"@ru .
+
+eco:category a rdf:Property ;
+    rdfs:domain eco:WeeklyIncomeReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en, "Категория"@ru ;
+    rdfs:comment "Income category name"@en, "Название категории дохода"@ru .
+
+eco:incomeAmount a rdf:Property ;
+    rdfs:domain eco:WeeklyIncomeReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Income amount"@en, "Сумма дохода"@ru ;
+    rdfs:comment "Actual income amount in GBP for a particular category per week"@en, "Фактическая сумма дохода в фунтах стерлингов для конкретной категории за неделю"@ru .
+
+eco:weeklyTarget a rdf:Property ;
+    rdfs:domain eco:WeeklyIncomeReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Weekly target"@en, "Недельный план"@ru ;
+    rdfs:comment "Target income amount in GBP for a specific category per week"@en, "Целевая сумма дохода в фунтах стерлингов для конкретной категории за неделю"@ru .
+
+eco:deviation a rdf:Property ;
+    rdfs:domain eco:WeeklyIncomeReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Deviation"@en, "Отклонение"@ru ;
+    rdfs:comment "Deviation from target in GBP"@en, "Отклонение от целевого значения в фунтах стерлингов"@ru .
+
+eco:totalIncomeAmount a rdf:Property ;
+    rdfs:domain eco:WeeklyIncomeSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total income amount"@en, "Общая сумма дохода"@ru ;
+    rdfs:comment "Total income in GBP for all categories for the week"@en, "Общая сумма дохода в фунтах стерлингов для всех категорий за неделю"@ru .
+
+eco:totalWeeklyTarget a rdf:Property ;
+    rdfs:domain eco:WeeklyIncomeSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total weekly target"@en, "Общий недельный план"@ru ;
+    rdfs:comment "Total target income amount in GBP for all categories for the week"@en, "Общая целевая сумма дохода в фунтах стерлингов для всех категорий за неделю"@ru .
+
+eco:totalDeviation a rdf:Property ;
+    rdfs:domain eco:WeeklyIncomeSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total deviation"@en, "Общее отклонение"@ru ;
+    rdfs:comment "Total deviation from target in GBP for all categories"@en, "Общее отклонение от целевого значения в фунтах стерлингов для всех категорий"@ru .
