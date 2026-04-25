@@ -1,0 +1,130 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:OutstandingBillReport a rdfs:Class ;
+    rdfs:label "Outstanding bill report"@en, "Отчет о неоплаченных счетах"@ru ;
+    rdfs:comment "Customer listing of outstanding bills"@en, "Список неоплаченных счетов клиента"@ru .
+
+eco:CustomerBillSummary a rdfs:Class ;
+    rdfs:label "Customer bill summary"@en, "Сводка по счетам клиентов"@ru ;
+    rdfs:comment "Summary of outstanding customer accounts"@en, "Итоговая сводная информация по неоплаченным счетам клиентов"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:customerName a rdf:Property ;
+    rdfs:domain eco:OutstandingBillReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Customer name"@en, "Имя клиента"@ru ;
+    rdfs:comment "The unique name or identifier of the client (organization)"@en, "Уникальное название или идентификатор клиента (организации)"@ru .
+
+eco:days a rdf:Property ;
+    rdfs:domain eco:OutstandingBillReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Days"@en, "Дни"@ru ;
+    rdfs:comment "Number of days the invoice is past its due date as of the report date"@en, "Количество дней просрочки оплаты счёта на дату отчета"@ru .
+
+eco:voucher a rdf:Property ;
+    rdfs:domain eco:OutstandingBillReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Voucher"@en, "Квитанция"@ru ;
+    rdfs:comment "The unique identifier of the voucher in the accounting system"@en, "Уникальный идентификатор квитанции в бухгалтерской системе"@ru .
+
+eco:date a rdf:Property ;
+    rdfs:domain eco:OutstandingBillReport ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date"@en, "Дата"@ru ;
+    rdfs:comment "Date when the invoice was issued"@en, "Дата выставления счета"@ru .
+
+eco:invoiceAmount a rdf:Property ;
+    rdfs:domain eco:OutstandingBillReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Invoice amount"@en, "Сумма счета"@ru ;
+    rdfs:comment "Original amount of the invoice in currency units"@en, "Исходная сумма счета в денежных единицах"@ru .
+
+eco:balanceAmount a rdf:Property ;
+    rdfs:domain eco:OutstandingBillReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Balance amount"@en, "Остаток задолженности"@ru ;
+    rdfs:comment "Remaining unpaid amount of the invoice as of the report date in currency units"@en, "Оставшаяся неоплаченной сумма счета на дату отчета в денежных единицах"@ru .
+
+eco:dueDate a rdf:Property ;
+    rdfs:domain eco:OutstandingBillReport ;
+    rdfs:range xsd:date ;
+    rdfs:label "Due date"@en, "Срок оплаты"@ru ;
+    rdfs:comment "Expected payment date for the invoice"@en, "Ожидаемая дата оплаты счета"@ru .
+
+eco:outletCode a rdf:Property ;
+    rdfs:domain eco:OutstandingBillReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Outlet code"@en, "Код точки продаж"@ru ;
+    rdfs:comment "System identifier of the specific sales outlet or shop within a branch"@en, "Системный идентификатор конкретной торговой точки или магазина в рамках филиала"@ru .
+
+eco:branchCode a rdf:Property ;
+    rdfs:domain eco:OutstandingBillReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Branch code"@en, "Код филиала"@ru ;
+    rdfs:comment "Short alphanumeric identifier of the branch"@en, "Короткий буквенно-цифровой идентификатор филиала"@ru .
+
+eco:branchName a rdf:Property ;
+    rdfs:domain eco:OutstandingBillReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Branch name"@en, "Название филиала"@ru ;
+    rdfs:comment "Full name of the branch"@en, "Полное название филиала"@ru .
+
+eco:salesTypeName a rdf:Property ;
+    rdfs:domain eco:OutstandingBillReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sales type name"@en, "Название типа продаж"@ru ;
+    rdfs:comment "Name of the trading operation category"@en, "Название категории торговой операции"@ru .
+
+eco:employeeName a rdf:Property ;
+    rdfs:domain eco:OutstandingBillReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Employee name"@en, "Имя сотрудника"@ru ;
+    rdfs:comment "Name or identifier of the employee responsible for the sales transaction"@en, "Имя или идентификатор сотрудника, ответственного за торговую операцию"@ru .
+
+eco:accountCreditDays a rdf:Property ;
+    rdfs:domain eco:OutstandingBillReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Account credit days"@en, "Кредитные дни"@ru ;
+    rdfs:comment "Number of days allowed for payment under the customer's credit agreement"@en, "Количество дней, отведенных на оплату согласно кредитному соглашению с клиентом"@ru .
+
+eco:accountCreditLimit a rdf:Property ;
+    rdfs:domain eco:OutstandingBillReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Account credit limit"@en, "Кредитный лимит"@ru ;
+    rdfs:comment "Maximum outstanding balance allowed for the customer under their credit agreement"@en, "Максимально допустимая сумма задолженности для клиента согласно кредитному соглашению"@ru .
+
+eco:customerName a rdf:Property ;
+    rdfs:domain eco:CustomerBillSummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Customer name"@en, "Имя клиента"@ru ;
+    rdfs:comment "The unique name or identifier of the client (organization)"@en, "Уникальное название или идентификатор клиента (организации)"@ru .
+
+eco:totalInvoiceAmount a rdf:Property ;
+    rdfs:domain eco:CustomerBillSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total invoice amount"@en, "Общая сумма по счетам"@ru ;
+    rdfs:comment "Total amount for all client accounts in monetary units"@en, "Общая сумма по всем счетам клиента в денежных единицах"@ru .
+
+eco:totalBalanceAmount a rdf:Property ;
+    rdfs:domain eco:CustomerBillSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total balance amount"@en, "Общий остаток задолженности"@ru ;
+    rdfs:comment "The total remaining unpaid amount on all customer accounts in monetary units"@en, "Общая оставшаяся неоплаченной сумма по всем счетам клиента в денежных единицах"@ru .
+
+eco:totalAccountCreditDays a rdf:Property ;
+    rdfs:domain eco:CustomerBillSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total account credit days"@en, "Суммарные кредитные дни"@ru ;
+    rdfs:comment "The total number of days allocated for payment according to the credit agreement with the client"@en, "Суммарное количество дней, отведенных на оплату согласно кредитному соглашению с клиентом"@ru .
+
+eco:totalAccountCreditLimit a rdf:Property ;
+    rdfs:domain eco:CustomerBillSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total account credit limit"@en, "Суммарный кредитный лимит"@ru ;
+    rdfs:comment "The maximum total amount of debt permissible for a client according to the credit agreement"@en, "Максимальная суммарная допустимая сумма задолженности для клиента согласно кредитному соглашению"@ru .

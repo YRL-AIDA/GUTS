@@ -1,0 +1,100 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:AdvertisingPlacement a rdfs:Class ;
+    rdfs:label "Advertising placement"@en, "Рекламное размещение"@ru ;
+    rdfs:comment "Information about advertising placements in the magazine, including information about the artist, venue, size and cost"@en, "Информация о рекламных размещениях в журнале, включающая информацию об артисте, площадке, размерах и стоимости"@ru .
+
+eco:AdvertisingPlacementSummary a rdfs:Class ;
+    rdfs:label "Advertising placement summary"@en, "Сводка по размещению рекламы"@ru ;
+    rdfs:comment "Summary of all advertising placements in the magazine"@en, "Сводная информация по размещению всей рекламы в журнале"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:jobNumber a rdf:Property ;
+    rdfs:domain eco:AdvertisingPlacement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Job number"@en, "Номер заказа"@ru ;
+    rdfs:comment "Unique alphanumeric identifier of the advertising job"@en, "Уникальный буквенно-цифровой идентификатор рекламного заказа"@ru .
+
+eco:artist a rdf:Property ;
+    rdfs:domain eco:AdvertisingPlacement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Artist"@en, "Артист"@ru ;
+    rdfs:comment "Name of the artist, band, or event being advertised in the placement"@en, "Имя артиста, название группы или мероприятия, рекламируемого в данном размещени"@ru .
+
+eco:venue a rdf:Property ;
+    rdfs:domain eco:AdvertisingPlacement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Venue"@en, "Площадка"@ru ;
+    rdfs:comment "Name of the physical location or venue associated with the advertised event"@en, "Название физической локации или площадки, связанной с рекламируемым мероприятием"@ru .
+
+eco:date a rdf:Property ;
+    rdfs:domain eco:AdvertisingPlacement ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date"@en, "Дата"@ru ;
+    rdfs:comment "Date when the advertised event takes place or when the ad was published"@en, "Дата проведения рекламируемого мероприятия или публикации объявлени"@ru .
+
+eco:column a rdf:Property ;
+    rdfs:domain eco:AdvertisingPlacement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Column width"@en, "Ширина колонки"@ru ;
+    rdfs:comment "Width of the advertising placement measured in column units of the magazine layout"@en, "Ширина рекламного размещения, измеренная в единицах колонок макета журнала"@ru .
+
+eco:height a rdf:Property ;
+    rdfs:domain eco:AdvertisingPlacement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Height"@en, "Высота"@ru ;
+    rdfs:comment "Height of the advertising placement in millimeters"@en, "Высота рекламного размещения в миллиметрах"@ru .
+
+eco:advertisingArea a rdf:Property ;
+    rdfs:domain eco:AdvertisingPlacement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Advertising area"@en, "Площадь рекламы"@ru ;
+    rdfs:comment "Total area of the advertising placement in square millimeters"@en, "Общая площадь рекламного размещения в квадратных миллиметрах"@ru .
+
+eco:share a rdf:Property ;
+    rdfs:domain eco:AdvertisingPlacement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Share"@en, "Доля"@ru ;
+    rdfs:comment "The share of this placement in the total advertising volume for the reporting period"@en, "Доля данного размещения в общем объеме рекламы за отчетный период"@ru .
+
+eco:cost a rdf:Property ;
+    rdfs:domain eco:AdvertisingPlacement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Cost"@en, "Стоимость"@ru ;
+    rdfs:comment "Cost of the advertising placement in US dollars"@en, "Стоимость рекламного размещения в долларах США"@ru .
+
+eco:totalColumn a rdf:Property ;
+    rdfs:domain eco:AdvertisingPlacementSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total column width"@en, "Общая ширина колонки"@ru ;
+    rdfs:comment "Total column width for all ad placements"@en, "Общая ширина колонок для всех рекламных размещений"@ru .
+
+eco:totalHeight a rdf:Property ;
+    rdfs:domain eco:AdvertisingPlacementSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total height"@en, "Общая высота"@ru ;
+    rdfs:comment "Total height of all advertisements in millimeters"@en, "Общая высота всей рекламы в миллиметрах"@ru .
+
+eco:totalAdvertisingArea a rdf:Property ;
+    rdfs:domain eco:AdvertisingPlacementSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total advertising area"@en, "Общая площадь рекламы"@ru ;
+    rdfs:comment "Total area of ​​advertising placements"@en, "Общая площадь рекламных размещений"@ru .
+
+eco:totalShare a rdf:Property ;
+    rdfs:domain eco:AdvertisingPlacementSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total share"@en, "Общая доля"@ru ;
+    rdfs:comment "Total share of all advertising placements"@en, "Суммарная доля размещения всей рекламы"@ru .
+
+eco:totalCost a rdf:Property ;
+    rdfs:domain eco:AdvertisingPlacementSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total cost"@en, "Общая стоимость"@ru ;
+    rdfs:comment "Total cost of all advertising placement in US dollars"@en, "Общая стоимость размещения всей рекламы в долларах США"@ru .

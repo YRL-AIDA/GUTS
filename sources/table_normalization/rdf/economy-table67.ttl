@@ -1,0 +1,72 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:EmployeeCompensationPackage a rdfs:Class ;
+    rdfs:label "Employee compensation package"@en, "Компенсационный пакет сотрудника"@ru ;
+    rdfs:comment "Detailed information on the employee's compensation package"@en, "Детальная информация по компенсационному пакету сотрудника"@ru .
+
+eco:InformationAggregation a rdfs:Class ;
+    rdfs:label "Information aggregation"@en, "Агрегация информации"@ru ;
+    rdfs:comment "Aggregation of employee compensation package information"@en, "Агрегация информации по компенсационному пакету сотрудника"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:period a rdf:Property ;
+    rdfs:domain eco:EmployeeCompensationPackage ;
+    rdfs:range xsd:string ;
+    rdfs:label "Period"@en, "Период"@ru ;
+    rdfs:comment "Time period for the compensation amount"@en, "Временной период для суммы компенсации"@ru .
+
+eco:category a rdf:Property ;
+    rdfs:domain eco:EmployeeCompensationPackage ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en, "Категория"@ru ;
+    rdfs:comment "Business category of the component"@en, "Бизнес-категория компонента"@ru .
+
+eco:componentName a rdf:Property ;
+    rdfs:domain eco:EmployeeCompensationPackage ;
+    rdfs:range xsd:string ;
+    rdfs:label "Component name"@en, "Название компонента"@ru ;
+    rdfs:comment "Unique name of the compensation component"@en, "Уникальное название компонента компенсации"@ru .
+
+eco:amount a rdf:Property ;
+    rdfs:domain eco:EmployeeCompensationPackage ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Amount"@en, "Сумма"@ru ;
+    rdfs:comment "The monetary value of the compensation component for the specified period"@en, "Денежное значение компонента компенсации для указанного периода"@ru .
+
+
+
+eco:period a rdf:Property ;
+    rdfs:domain eco:InformationAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Period"@en, "Период"@ru ;
+    rdfs:comment "Time period for the compensation amount"@en, "Временной период для суммы компенсации"@ru .
+
+eco:ctcTarget a rdf:Property ;
+    rdfs:domain eco:InformationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "CTC target"@en, "Целевой CTC"@ru ;
+    rdfs:comment "CTC target"@en, "Плановый показатель CTC"@ru .
+
+eco:totalGrossEarnings a rdf:Property ;
+    rdfs:domain eco:InformationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total gross earnings"@en, "Общий валовой доход"@ru ;
+    rdfs:comment "Total gross earnings for the specified period"@en, "Общий валовой зароботок для указанного периода"@ru .
+
+eco:totalEmployerContribution a rdf:Property ;
+    rdfs:domain eco:InformationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total employer contribution"@en, "Общий взнос работодателя"@ru ;
+    rdfs:comment "Total of employer's contribution for the specified period"@en, "Общая сумма взносов работодателя для указанного периода"@ru .
+
+eco:totalCTC a rdf:Property ;
+    rdfs:domain eco:InformationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total CTC"@en, "Общий CTC"@ru ;
+    rdfs:comment "Total cross verification CTC"@en, "Общий CTC по перекрестной проверке"@ru .
