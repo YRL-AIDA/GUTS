@@ -1,0 +1,90 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:MortgageTransactionReport a rdfs:Class ;
+    rdfs:label "Mortgage transaction report"@en, "Отчет о ипотечной сделке"@ru ;
+    rdfs:comment "A report of closed mortgage transactions, including information about the property, agent, lender, and finance charges"@en, "Отчет о закрытых ипотечных сделках, включающая информацию о недвижимости, агенте, кредиторе и финансовых комиссиях"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:year a rdf:Property ;
+    rdfs:domain eco:MortgageTransactionReport ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year when the loan was closed"@en, "Календарный год закрытия ипотечной сделки"@ru .
+
+eco:agent a rdf:Property ;
+    rdfs:domain eco:MortgageTransactionReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Agent"@en, "Агент"@ru ;
+    rdfs:comment "Identifier or name of the loan agent responsible for the transaction"@en, "Идентификатор или имя агента по кредитам, ответственного за сделку"@ru .
+
+eco:closeDate a rdf:Property ;
+    rdfs:domain eco:MortgageTransactionReport ;
+    rdfs:range xsd:date ;
+    rdfs:label "Close date"@en, "Дата закрытия"@ru ;
+    rdfs:comment "Date when the loan transaction was formally closed"@en, "Дата формального закрытия ипотечной сделки"@ru .
+
+eco:city a rdf:Property ;
+    rdfs:domain eco:MortgageTransactionReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "City"@en, "Город"@ru ;
+    rdfs:comment "Name of the city where the financed property is located"@en, "Название города, в котором расположена финансируемая недвижимость"@ru .
+
+eco:state a rdf:Property ;
+    rdfs:domain eco:MortgageTransactionReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "State"@en, "Штат"@ru ;
+    rdfs:comment "Two-letter state code (US) where the financed property is located"@en, "Двухбуквенный код штата (США), в котором расположена финансируемая недвижимость"@ru .
+
+eco:zipCode a rdf:Property ;
+    rdfs:domain eco:MortgageTransactionReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Zip code"@en, "Почтовый индекс"@ru ;
+    rdfs:comment "Five-digit ZIP code of the property location in the United States"@en, "Пятизначный почтовый индекс местоположения недвижимости в США"@ru .
+
+eco:loanAmount a rdf:Property ;
+    rdfs:domain eco:MortgageTransactionReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Loan amount"@en, "Сумма кредита"@ru ;
+    rdfs:comment "Total principal amount of the loan in US dollars"@en, "Общая основная сумма кредита в долларах США"@ru .
+
+eco:propertyType a rdf:Property ;
+    rdfs:domain eco:MortgageTransactionReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Property type"@en, "Тип недвижимости"@ru ;
+    rdfs:comment "Category of the financed property"@en, "Категория финансируемой недвижимости"@ru .
+
+eco:lender a rdf:Property ;
+    rdfs:domain eco:MortgageTransactionReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Lender"@en, "Кредитор"@ru ;
+    rdfs:comment "Name of the financial institution or lender that provided the loan"@en, "Название финансового учреждения или кредитора, предоставившего заем"@ru .
+
+eco:grossFee a rdf:Property ;
+    rdfs:domain eco:MortgageTransactionReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Gross fee"@en, "Валовая комиссия"@ru ;
+    rdfs:comment "Total fee amount charged for the loan transaction in US dollars"@en, "Общая сумма комиссии за ипотечную сделку в долларах США"@ru .
+
+eco:referralFee a rdf:Property ;
+    rdfs:domain eco:MortgageTransactionReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Referral fee"@en, "Реферальная комиссия"@ru ;
+    rdfs:comment "Portion of the gross fee paid as referral compensation"@en, "Часть валовой комиссии, выплачиваемая в качестве реферального вознаграждения"@ru .
+
+eco:income a rdf:Property ;
+    rdfs:domain eco:MortgageTransactionReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Income"@en, "Доход"@ru ;
+    rdfs:comment "Net income amount allocated to the agent or office after fee splits and referrals"@en, "Чистая сумма дохода, выделенная агенту или офису после распределения комиссий и реферальных платежей"@ru .
+
+eco:pcCommission a rdf:Property ;
+    rdfs:domain eco:MortgageTransactionReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "PC commission"@en, "Комиссия ПК"@ru ;
+    rdfs:comment "Commission amount allocated to the production center or partner entity"@en, "Сумма комиссии, выделенная производственному центру или партнерскому подразделению"@ru .
