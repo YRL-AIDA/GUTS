@@ -1,0 +1,64 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:PlannedProductionSchedule a rdfs:Class ;
+    rdfs:label "Planned production schedule"@en, "Планируемый производственный график"@ru ;
+    rdfs:comment "A planned production schedule that includes records of planned work assignments for construction team members in a particular week"@en, "Планируемый производственный график, включающий записи о запланированных рабочих назначениях для членов строительной команды в конкретную неделю"@ru .
+
+eco:BudgetSummary a rdfs:Class ;
+    rdfs:label "Budget summary"@en, "Сводка по бюджету"@ru ;
+    rdfs:comment "Summary of planned budget cost of assignment of workers"@en, "Сводная информация по запланированной бюджетной стоимости назначения рабочих"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:firstName a rdf:Property ;
+    rdfs:domain eco:PlannedProductionSchedule ;
+    rdfs:range xsd:string ;
+    rdfs:label "First name"@en, "Имя"@ru ;
+    rdfs:comment "First name of the construction team member assigned to the work"@en, "Имя члена строительной команды, назначенного на работу"@ru .
+
+eco:lastName a rdf:Property ;
+    rdfs:domain eco:PlannedProductionSchedule ;
+    rdfs:range xsd:string ;
+    rdfs:label "Last name"@en, "Фамилия"@ru ;
+    rdfs:comment "Last name of the construction team member assigned to the work"@en, "Фамилия члена строительной команды, назначенного на работу"@ru .
+
+eco:weekNumber a rdf:Property ;
+    rdfs:domain eco:PlannedProductionSchedule ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Week number"@en, "Номер недели"@ru ;
+    rdfs:comment "Sequential week number (1–6) within the planning period for the assignment"@en, "Последовательный номер недели (1–6) в рамках планового периода для назначения"@ru .
+
+eco:location a rdf:Property ;
+    rdfs:domain eco:PlannedProductionSchedule ;
+    rdfs:range xsd:string ;
+    rdfs:label "Location"@en, "Местоположение"@ru ;
+    rdfs:comment "Geographic location or site where the construction work is planned"@en, "Географическая локация или объект, где запланированы строительные работы"@ru .
+
+eco:status a rdf:Property ;
+    rdfs:domain eco:PlannedProductionSchedule ;
+    rdfs:range xsd:string ;
+    rdfs:label "Status"@en, "Статус"@ru ;
+    rdfs:comment "Current status or timing indicator of the assignment"@en, "Текущий статус или индикатор времени выполнения назначения"@ru .
+
+eco:budget a rdf:Property ;
+    rdfs:domain eco:PlannedProductionSchedule ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Budget"@en, "Бюджет"@ru ;
+    rdfs:comment "Planned budgeted value of the assignment in US dollars"@en, "Запланированная бюджетная стоимость назначения в долларах США"@ru .
+
+eco:weekNumber a rdf:Property ;
+    rdfs:domain eco:BudgetSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Week number"@en, "Номер недели"@ru ;
+    rdfs:comment "Sequential week number (1–6) within the planning period for the assignment"@en, "Последовательный номер недели (1–6) в рамках планового периода для назначения"@ru .
+
+eco:totalBudget a rdf:Property ;
+    rdfs:domain eco:BudgetSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total budget"@en, "Общий бюджет"@ru ;
+    rdfs:comment "Total planned budgeted cost of all assignments in US dollars per week"@en, "Общая запланированная бюджетная стоимость всех назначений в долларах США за неделю"@ru .

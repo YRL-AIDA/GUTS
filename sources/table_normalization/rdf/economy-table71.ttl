@@ -1,0 +1,60 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:SalesTransactionReport a rdfs:Class ;
+    rdfs:label "Sales transaction report"@en, "Отчет о сделках купли-продажи"@ru ;
+    rdfs:comment "A report of purchase and sale transactions, including quantity, costs, revenue and profit for a specific batch"@en, "Отчет о сделках купли-продажи, включающие количество, затраты, выручку и прибыль для конкретной партии"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:individualName a rdf:Property ;
+    rdfs:domain eco:SalesTransactionReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Individual name"@en, "Имя физического лица"@ru ;
+    rdfs:comment "Name of the individual or entity involved in the transaction"@en, "Имя физического или юридического лица, участвующего в сделке"@ru .
+
+eco:quantity a rdf:Property ;
+    rdfs:domain eco:SalesTransactionReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Quantity"@en, "Количество"@ru ;
+    rdfs:comment "Number of units sold in the transaction"@en, "Количество единиц товара, проданных в данной сделке"@ru .
+
+eco:batch a rdf:Property ;
+    rdfs:domain eco:SalesTransactionReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Batch"@en, "Партия"@ru ;
+    rdfs:comment "Identifier of the procurement batch"@en, "Идентификатор партии закупки"@ru .
+
+eco:purchaseDate a rdf:Property ;
+    rdfs:domain eco:SalesTransactionReport ;
+    rdfs:range xsd:date ;
+    rdfs:label "Purchase date"@en, "Дата закупки"@ru ;
+    rdfs:comment "Date when the batch was originally purchased"@en, "Дата первоначальной закупки партии"@ru .
+
+eco:purchaseCost a rdf:Property ;
+    rdfs:domain eco:SalesTransactionReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Purchase cost"@en, "Стоимость закупки"@ru ;
+    rdfs:comment "Total purchase price for the sold batch"@en, "Общая стоимость закупки для проданной партии"@ru .
+
+eco:saleDate a rdf:Property ;
+    rdfs:domain eco:SalesTransactionReport ;
+    rdfs:range xsd:date ;
+    rdfs:label "Sale date"@en, "Дата продажи"@ru ;
+    rdfs:comment "Date when the sale transaction occurred"@en, "Дата совершения сделки продажи"@ru .
+
+eco:saleValue a rdf:Property ;
+    rdfs:domain eco:SalesTransactionReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Sale value"@en, "Сумма продажи"@ru ;
+    rdfs:comment "Total revenue received from the sale transaction in currency units"@en, "Общая выручка, полученная от сделки продажи, в денежных единицах"@ru .
+
+eco:gain a rdf:Property ;
+    rdfs:domain eco:SalesTransactionReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Gain"@en, "Прибыль"@ru ;
+    rdfs:comment "Profit from the transaction"@en, "Прибыль от сделки"@ru .

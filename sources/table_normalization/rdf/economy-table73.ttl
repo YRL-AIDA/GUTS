@@ -1,0 +1,100 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:CashBook a rdfs:Class ;
+    rdfs:label "Cash book"@en, "Кассовая книга"@ru ;
+    rdfs:comment "A record of a cash book entry representing a received payment with GST-inclusive amount and tax calculation"@en, "Запись кассовой книги, представляющая полученный платеж с суммой, включающей налоги, и расчетом налога"@ru .
+
+eco:PaymentAllocation a rdfs:Class ;
+    rdfs:label "Payment allocation"@en, "Распределение платежа"@ru ;
+    rdfs:comment "A breakdown of a payment into GST-exclusive category amounts with tax treatment codes"@en, "Детализация платежа по категориям с суммами без налога и кодами налогового режима"@ru .
+
+eco:PaymentSummary a rdfs:Class ;
+    rdfs:label "Payment summary"@en, "Сводка платежей"@ru ;
+    rdfs:comment "Payment data aggregation"@en, "Агрегация данных по платежам"@ru .
+
+# ==================== Object Properties ====================
+
+eco:hasPaymentAllocation a rdf:Property ;
+    rdfs:domain eco:CashBook ;
+    rdfs:range eco:PaymentAllocation ;
+    rdfs:label "Payment allocation"@en, "Распределение платежа"@ru ;
+    rdfs:comment "The cash book contains payment details by category with amounts excluding GST."@en, "Кассовая книга содержит детализацию платежа по категориям с суммами без налога"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:recordNumber a rdf:Property ;
+    rdfs:domain eco:CashBook ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Record number"@en, "Номер записи"@ru ;
+    rdfs:comment ""@en, "Порядковый номер записи в кассовой книге"@ru .
+
+eco:paymentMethod a rdf:Property ;
+    rdfs:domain eco:CashBook ;
+    rdfs:range xsd:string ;
+    rdfs:label "Payment method"@en, "Способ оплаты"@ru ;
+    rdfs:comment "Method used for the payment"@en, "Метод, используемый для оплаты"@ru .
+
+eco:date a rdf:Property ;
+    rdfs:domain eco:CashBook ;
+    rdfs:range xsd:date ;
+    rdfs:label "Payment date"@en, "Дата платежа"@ru ;
+    rdfs:comment "Date when the payment was received"@en, "Дата получения платежа"@ru .
+
+eco:receiptNumber a rdf:Property ;
+    rdfs:domain eco:CashBook ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Receipt number"@en, "Номер квитанции"@ru ;
+    rdfs:comment "Unique identifier of the payment receipt as recorded in the cash book"@en, "Уникальный идентификатор квитанции о платеже, записанный в кассовой книге"@ru .
+
+eco:customerName a rdf:Property ;
+    rdfs:domain eco:CashBook ;
+    rdfs:range xsd:string ;
+    rdfs:label "Customer name"@en, "Имя клиента"@ru ;
+    rdfs:comment "Name of the person who made the payment"@en, "Имя клиента, совершившего платеж"@ru .
+
+eco:amountReceived a rdf:Property ;
+    rdfs:domain eco:CashBook ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Amount received"@en, "Полученная сумма"@ru ;
+    rdfs:comment "Total amount received including Goods and Services Tax (GST)"@en, "Общая полученная сумма, включающая налог на товары и услуги"@ru .
+
+eco:gst a rdf:Property ;
+    rdfs:domain eco:CashBook ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "GST amount"@en, "Сумма налога"@ru ;
+    rdfs:comment "Calculated Goods and Services Tax amount at 10% rate for taxable portions of the payment"@en, "Рассчитанная сумма налога на товары и услуги по ставке 10% для налогооблагаемых частей платежа"@ru .
+
+eco:categoryCode a rdf:Property ;
+    rdfs:domain eco:PaymentAllocation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category code"@en, "Код категории"@ru ;
+    rdfs:comment "Tax treatment code for the category"@en, "Код налогового режима для категории"@ru .
+
+eco:categoryName a rdf:Property ;
+    rdfs:domain eco:PaymentAllocation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category name"@en, "Название категории"@ru ;
+    rdfs:comment "Name of the income category"@en, "Название категории дохода"@ru .
+
+eco:gstExclusiveAmount a rdf:Property ;
+    rdfs:domain eco:PaymentAllocation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "GST exclusive amount"@en, "Сумма без налога"@ru ;
+    rdfs:comment "GST-exclusive amount allocated to this category"@en, "Сумма без налога на товары и услуги, распределенная на данную категорию"@ru .
+
+eco:totalAmountReceived a rdf:Property ;
+    rdfs:domain eco:PaymentSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total amount received"@en, "Общая полученная сумма"@ru ;
+    rdfs:comment "Total amount received, including tax on all Goods and Services Tax (GTS)"@en, "Общая полученная сумма, включающая налог на все товары и услуги"@ru .
+
+eco:totalGST a rdf:Property ;
+    rdfs:domain eco:PaymentSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total GST amount"@en, "Общая сумма НДС"@ru ;
+    rdfs:comment "Total calculated Goods and Services Tax amount at 10% rate for taxable portions of the payment"@en, "Общая рассчитанная сумма налогов на товары и услуги по ставке 10% для налогооблагаемых частей платежа"@ru .

@@ -1,0 +1,80 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:MarketBasket a rdfs:Class ;
+    rdfs:label "Market basket"@en, "Потребительская корзина"@ru ;
+    rdfs:comment "Consumer basket data including basket size, markup percentage, and valuation date"@en, "Данные по потребительской корзине, включающие объем корзины, процент наценки и дату оценки"@ru .
+
+eco:IncentiveCalculation a rdfs:Class ;
+    rdfs:label "Incentive calculation"@en, "Расчет премий"@ru ;
+    rdfs:comment "A pricing incentive or discount program with qualifying conditions, percentage rate, and calculated monetary value"@en, "Ценовой стимул или программа скидок с условиями квалификации, процентной ставкой и рассчитанной денежной величиной"@ru .
+
+eco:IncentiveAggregation a rdfs:Class ;
+    rdfs:label "Incentive aggregation"@en, "Совокупность премий"@ru ;
+    rdfs:comment "Estimated information on the total premiums for certain categories"@en, "Расчетная информация по совокупности премий по определенным категориям"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:volume a rdf:Property ;
+    rdfs:domain eco:MarketBasket ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Volume"@en, "Объем"@ru ;
+    rdfs:comment "Estimation of the volume of the consumer basket"@en, "Оценка объема потребительской корзины"@ru .
+
+eco:averageCategoryMarkUp a rdf:Property ;
+    rdfs:domain eco:MarketBasket ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average category mark-up"@en, "Средняя наценка по категории"@ru ;
+    rdfs:comment "Average mark-up by category"@en, "Средняя величина наценки по категории"@ru .
+
+eco:pricingEvaluationDate a rdf:Property ;
+    rdfs:domain eco:MarketBasket ;
+    rdfs:range xsd:date ;
+    rdfs:label "Pricing evaluation date"@en, "Дата оценки цен"@ru ;
+    rdfs:comment "Pricing evaluation date for price context"@en, "Дата оценки цен для ценового контекста"@ru .
+
+eco:incentiveCategory a rdf:Property ;
+    rdfs:domain eco:IncentiveCalculation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Incentive category"@en, "Категория премии"@ru ;
+    rdfs:comment "Category grouping of the incentive"@en, "Категория группировки премии"@ru .
+
+eco:incentiveName a rdf:Property ;
+    rdfs:domain eco:IncentiveCalculation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Incentive name"@en, "Название премии"@ru ;
+    rdfs:comment "Descriptive name of the incentive or discount program"@en, "Описательное название премии или программы скидок"@ru .
+
+eco:condition a rdf:Property ;
+    rdfs:domain eco:IncentiveCalculation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Condition"@en, "Условие"@ru ;
+    rdfs:comment "Condition or criterion that must be met to qualify for the incentive"@en, "Условие или критерий, который должен быть выполнен для получения премии"@ru .
+
+eco:incentivePercentage a rdf:Property ;
+    rdfs:domain eco:IncentiveCalculation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percentage of incentive"@en, "Процентная ставка премии"@ru ;
+    rdfs:comment "Percentage rate of the incentive applied to the qualifying base amount"@en, "Процентная ставка премии"@ru .
+
+eco:monetaryIncentiveValue a rdf:Property ;
+    rdfs:domain eco:IncentiveCalculation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Monetary incentive value"@en, "Денежная величина премии"@ru ;
+    rdfs:comment "The actual monetary value of the premium in US dollars is calculated based on the volume in the consumer basket"@en, "Фактическая денежная величина премии в долларах США рассчитана на основе объема в потребительской корзины"@ru .
+
+eco:incentiveCategory a rdf:Property ;
+    rdfs:domain eco:IncentiveAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Incentive category"@en, "Категория премии"@ru ;
+    rdfs:comment "Category grouping of the incentive"@en, "Категория группировки премии"@ru .
+
+eco:totalAmount a rdf:Property ;
+    rdfs:domain eco:IncentiveAggregation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total amount"@en, "Общая сумма"@ru ;
+    rdfs:comment "Total amount of all premiums in US dollars for this category"@en, "Общая сумма всех премий в долларах США по данной категории"@ru .
