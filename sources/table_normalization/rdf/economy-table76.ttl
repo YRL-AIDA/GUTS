@@ -1,0 +1,64 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:SalesCompensationPlan a rdfs:Class ;
+    rdfs:label "Sales compensation plan"@en, "План вознаграждения за продажи"@ru ;
+    rdfs:comment "Sales compensation plan with classification by section and value type"@en, "План компенсаций продаж с классификацией по разделу и типом значения"@ru .
+
+eco:InformationAggregation a rdfs:Class ;
+    rdfs:label "Information aggregation"@en, "Агрегация информации"@ru ;
+    rdfs:comment "Aggregated sales compensation data"@en, "Агрегированные данные по компенсациям продаж"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:timePeriod a rdf:Property ;
+    rdfs:domain eco:SalesCompensationPlan ;
+    rdfs:range xsd:string ;
+    rdfs:label "Time period"@en, "Временной период"@ru ;
+    rdfs:comment "Time period for calculating values ​​(first or second half of the year, year)"@en, "Временной период для расчета значений (первое или второе полугодие, год)"@ru .
+
+eco:section a rdf:Property ;
+    rdfs:domain eco:SalesCompensationPlan ;
+    rdfs:range xsd:string ;
+    rdfs:label "Section"@en, "Раздел"@ru ;
+    rdfs:comment "Logical section of the compensation plan"@en, "Логический раздел плана компенсаций"@ru .
+
+eco:metricName a rdf:Property ;
+    rdfs:domain eco:SalesCompensationPlan ;
+    rdfs:range xsd:string ;
+    rdfs:label "Metric name"@en, "Название метрики"@ru ;
+    rdfs:comment "Descriptive name of the compensation metric"@en, "Описательное название метрики компенсации"@ru .
+
+eco:valueType a rdf:Property ;
+    rdfs:domain eco:SalesCompensationPlan ;
+    rdfs:range xsd:string ;
+    rdfs:label "Value type"@en, "Тип значения"@ru ;
+    rdfs:comment "Data type of the metric value (currency or percentage)"@en, "Тип данных значения метрики (валюта или процент)"@ru .
+
+eco:metricValue a rdf:Property ;
+    rdfs:domain eco:SalesCompensationPlan ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Metric value"@en, "Значение метрики"@ru ;
+    rdfs:comment "Numeric value of the metric for the specified period"@en, "Числовое значение метрики для указанного периода"@ru .
+
+eco:timePeriod a rdf:Property ;
+    rdfs:domain eco:Quota ;
+    rdfs:range xsd:InformationAggregation ;
+    rdfs:label "Time period"@en, "Временной период"@ru ;
+    rdfs:comment "Time period for calculating values ​​(first or second half of the year, year)"@en, "Временной период для расчета значений (первое или второе полугодие, год)"@ru .
+
+eco:section a rdf:Property ;
+    rdfs:domain eco:InformationAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Section"@en, "Раздел"@ru ;
+    rdfs:comment "The logical section of the compensation plan for which the aggregation of values ​​is performed"@en, "Логический раздел плана компенсаций по которому делается агрегация значений"@ru .
+
+eco:totalIncome a rdf:Property ;
+    rdfs:domain eco:InformationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total income"@en, "Совокупный доход"@ru ;
+    rdfs:comment "Total revenue for all metrics for a given period"@en, "Совокупный доход для всех метрик за определенный период"@ru .

@@ -1,0 +1,30 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:RestaurantMenu a rdfs:Class ;
+    rdfs:label "Restaurant menu"@en, "Меню ресторана"@ru ;
+    rdfs:comment "Restaurant menu information"@en, "Информация по меню ресторана"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:categoryName a rdf:Property ;
+    rdfs:domain eco:RestaurantMenu ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category name"@en, "Название категории"@ru ;
+    rdfs:comment "Descriptive name of the menu category"@en, "Описательное название категории меню"@ru .
+
+eco:menuItemName a rdf:Property ;
+    rdfs:domain eco:RestaurantMenu ;
+    rdfs:range xsd:string ;
+    rdfs:label "Menu item name"@en, "Название пункта меню"@ru ;
+    rdfs:comment "Descriptive name of the specific dish or beverage as listed on the menu"@en, ""Описательное название конкретного блюда или напитка, указанное в меню"@ru .
+
+eco:price a rdf:Property ;
+    rdfs:domain eco:RestaurantMenu ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Price"@en, "Цена"@ru ;
+    rdfs:comment "Price for a specific menu item"@en, "Цена за конкретный пункт меню"@ru .

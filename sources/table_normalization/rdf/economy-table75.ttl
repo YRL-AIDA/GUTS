@@ -1,0 +1,102 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:SalesOpportunity a rdfs:Class ;
+    rdfs:label "Sales opportunity"@en, "Коммерческая возможность"@ru ;
+    rdfs:comment "A potential sales deal identified by region, customer, location, and part specifications, with priority levels and win probability"@en, "Потенциальная коммерческая сделка, идентифицируемая по региону, клиенту, локации и спецификациям детали, с уровнями приоритета и вероятностью победы"@ru .
+
+eco:RevenuePhase a rdfs:Class ;
+    rdfs:label "Revenue phase"@en, "Фаза дохода"@ru ;
+    rdfs:comment "A projected revenue milestone for a sales opportunity with expected date and amount"@en, "Прогнозируемый этап дохода для коммерческой возможности с ожидаемой датой и суммой"@ru .
+
+# ==================== Object Properties ====================
+
+eco:hasRevenuePhase a rdf:Property ;
+    rdfs:domain eco:SalesOpportunity ;
+    rdfs:range eco:RevenuePhase ;
+    rdfs:label "Revenue phase"@en, "Фаза дохода"@ru ;
+    rdfs:comment "The commercial opportunity involves forecasting several stages of income"@en, "Коммерческая возможность предполагает прогнозирование нескольких этап дохода"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:region a rdf:Property ;
+    rdfs:domain eco:SalesOpportunity ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region"@en, "Регион"@ru ;
+    rdfs:comment "Geographic sales region code"@en, "Код географического региона продаж"@ru .
+
+eco:customer a rdf:Property ;
+    rdfs:domain eco:SalesOpportunity ;
+    rdfs:range xsd:string ;
+    rdfs:label "Customer"@en, "Клиент"@ru ;
+    rdfs:comment "Name or identifier of the customer organization"@en, "Название или идентификатор организации-клиента"@ru .
+
+eco:city a rdf:Property ;
+    rdfs:domain eco:SalesOpportunity ;
+    rdfs:range xsd:string ;
+    rdfs:label "City"@en, "Город"@ru ;
+    rdfs:comment "City where the customer is located"@en, "Город, в котором расположен клиент"@ru .
+
+eco:pos a rdf:Property ;
+    rdfs:domain eco:SalesOpportunity ;
+    rdfs:range xsd:string ;
+    rdfs:label "Point of Sale"@en, "Точка продаж"@ru ;
+    rdfs:comment "Point of Sale or sales channel code"@en, "Код точки продаж или канала сбыта"@ru .
+
+eco:partType a rdf:Property ;
+    rdfs:domain eco:SalesOpportunity ;
+    rdfs:range xsd:string ;
+    rdfs:label "Part type"@en, "Тип детали"@ru ;
+    rdfs:comment "Category or type of the part being sold"@en, "Категория или тип продаваемой детали"@ru .
+
+eco:partNumber a rdf:Property ;
+    rdfs:domain eco:SalesOpportunity ;
+    rdfs:range xsd:string ;
+    rdfs:label "Part number"@en, "Номер детали"@ru ;
+    rdfs:comment "Specific part number or model identifier"@en, "Конкретный номер детали или идентификатор модели"@ru .
+
+eco:globalPriority a rdf:Property ;
+    rdfs:domain eco:SalesOpportunity ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Global priority"@en, "Глобальный приоритет"@ru ;
+    rdfs:comment "Global priority level for the opportunity"@en, "Глобальный уровень приоритета для возможности"@ru .
+
+eco:regionalPriority a rdf:Property ;
+    rdfs:domain eco:SalesOpportunity ;
+    rdfs:range xsd:string ;
+    rdfs:label "Regional priority"@en, "Региональный приоритет"@ru ;
+    rdfs:comment "Regional priority level for the opportunity"@en, "Региональный уровень приоритета для возможности"@ru .
+
+eco:winningProbability a rdf:Property ;
+    rdfs:domain eco:SalesOpportunity ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Winning probability"@en, "Вероятность победы"@ru ;
+    rdfs:comment "Estimated probability of winning the deal, expressed as percentage"@en, "Оценочная вероятность победы в сделке, выраженная в процентах"@ru .
+
+eco:totalCost a rdf:Property ;
+    rdfs:domain eco:SalesOpportunity ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total cost"@en, "Общая стоимость"@ru ;
+    rdfs:comment "Total projected value of the opportunity in US dollars (sum of all revenue phases)"@en, "Общая прогнозируемая стоимость возможности в долларах США (сумма всех фаз дохода)"@ru .
+
+eco:phaseNumber a rdf:Property ;
+    rdfs:domain eco:RevenuePhase ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Phase number"@en, "номер фазы"@ru ;
+    rdfs:comment "Sequential number of the revenue phase (1, 2, or 3)"@en, "Последовательный номер фазы дохода (1, 2 или 3)"@ru .
+
+eco:date a rdf:Property ;
+    rdfs:domain eco:RevenuePhase ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date"@en, "Дата"@ru ;
+    rdfs:comment "Expected or planned date for the revenue phase"@en, "Ожидаемая или плановая дата этапа дохода"@ru .
+
+eco:revenueAmount a rdf:Property ;
+    rdfs:domain eco:RevenuePhase ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Revenue amount"@en, "Сумма дохода"@ru ;
+    rdfs:comment "Projected revenue amount for this phase in US dollars"@en, "Прогнозируемая сумма дохода для данной фазы в долларах США"@ru .
