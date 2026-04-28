@@ -1,0 +1,78 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:Match a rdfs:Class ;
+    rdfs:label "Match"@en, "Матч"@ru ;
+    rdfs:comment "Data on sporting events (matches) indicating the date and time of the game, as well as the league and competing teams"@en, "Данные по спортивным событиям (матчам) с указанием даты и времени игры, а также лиги и соревнующихся команд"@ru .
+
+eco:OddsComparison a rdfs:Class ;
+    rdfs:label "Odds comparison"@en, "Сравнение коэффициентов"@ru ;
+    rdfs:comment ""@en, ""@ru .
+
+# ==================== Object Properties ====================
+
+eco:hasOddsComparison a rdf:Property ;
+    rdfs:domain eco:Match ;
+    rdfs:range eco:OddsComparison ;
+    rdfs:label "Odds comparison"@en, "Сравнение коэффициентов"@ru ;
+    rdfs:comment "Comparison of bookmaker odds with user odds within matches"@en, "Сравнение букмекерских коэффициентов с пользовательскими в рамках матчей"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:date a rdf:Property ;
+    rdfs:domain eco:Match ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date"@en, "Дата"@ru ;
+    rdfs:comment "Calendar date of the match"@en, "Календарная дата матча"@ru .
+
+eco:time a rdf:Property ;
+    rdfs:domain eco:Match ;
+    rdfs:range xsd:time ;
+    rdfs:label "Time"@en, "Время"@ru ;
+    rdfs:comment "Scheduled start time of the match"@en, "Запланированное время начала матча"@ru .
+
+eco:league a rdf:Property ;
+    rdfs:domain eco:Match ;
+    rdfs:range xsd:string ;
+    rdfs:label "League"@en, "Лига"@ru ;
+    rdfs:comment "Name of the league or competition where the match takes place"@en, "Название лиги или соревнования, в котором проходит матч"@ru .
+
+eco:homeTeam a rdf:Property ;
+    rdfs:domain eco:Match ;
+    rdfs:range xsd:string ;
+    rdfs:label "Home team"@en, "Домашняя команда"@ru ;
+    rdfs:comment "Name of the team playing at home in the match"@en, "Название команды, играющей дома в матче"@ru .
+
+eco:awayTeam a rdf:Property ;
+    rdfs:domain eco:Match ;
+    rdfs:range xsd:string ;
+    rdfs:label "Away team"@en, "Гостевая команда"@ru ;
+    rdfs:comment "Name of the team playing away in the match"@en, "Название команды, играющей в гостях в матче"@ru .
+
+eco:outcomeType a rdf:Property ;
+    rdfs:domain eco:OddsComparison ;
+    rdfs:range xsd:string ;
+    rdfs:label "Outcome type"@en, "Тип исхода"@ru ;
+    rdfs:comment "Type of match outcome"@en, "Тип исхода матча"@ru .
+
+eco:betfairOdds a rdf:Property ;
+    rdfs:domain eco:OddsComparison ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Betfair odds"@en, "Коэффициенты Betfair"@ru ;
+    rdfs:comment "Betfair odds value in decimal format"@en, "Значение коэффициента в десятичном формате от букмекера Betfair"@ru .
+
+eco:userOdds a rdf:Property ;
+    rdfs:domain eco:OddsComparison ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "User odds"@en, "Коэффициенты пользователя"@ru ;
+    rdfs:comment "The coefficient value in decimal format from the user"@en, "Значение коэффициента в десятичном формате от пользователя"@ru .
+
+eco:difference a rdf:Property ;
+    rdfs:domain eco:OddsComparison ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Difference"@en, "Разница"@ru ;
+    rdfs:comment "Percentage difference between odds"@en, "Процентная разница между коэффициентами"@ru .

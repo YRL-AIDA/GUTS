@@ -1,0 +1,84 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:AccountingBook a rdfs:Class ;
+    rdfs:label "Accounting book"@en, "Бухгалтерская книга"@ru ;
+    rdfs:comment "An accounting book containing records of financial transactions"@en, "Бухгалтерская книга содержащая записи о финансовых операциях"@ru .
+
+eco:BankTransaction a rdfs:Class ;
+    rdfs:label "Bank transaction"@en, "Банковская операция"@ru ;
+    rdfs:comment "Bank transaction data including debit, credit amounts and accumulated balance"@en, "Данные о банковских операциях и включающая дебетовые, кредитовые суммы и накопленный остаток"@ru .
+
+# ==================== Object Properties ====================
+
+eco:hasBankTransaction a rdf:Property ;
+    rdfs:domain eco:AccountingBook ;
+    rdfs:range eco:BankTransaction ;
+    rdfs:label "Bank transaction"@en, "Банковская операция"@ru ;
+    rdfs:comment "An accounting book that includes banking transactions"@en, "Бухгалтерская книга включающая банковские операции"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:carryOverAmount a rdf:Property ;
+    rdfs:domain eco:AccountingBook ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Carry over amount"@en, "Перенесенная сумма"@ru ;
+    rdfs:comment "Carry over amount from previous month"@en, "Перенесенная сумма с предыдущего месяца"@ru .
+
+eco:reconcile a rdf:Property ;
+    rdfs:domain eco:AccountingBook ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Reconcile"@en, "Согласовано"@ru ;
+    rdfs:comment "Sum matching logical flag"@en, "Логический флаг согласования суммы"@ru .
+
+eco:transactionDate a rdf:Property ;
+    rdfs:domain eco:BankTransaction ;
+    rdfs:range xsd:date ;
+    rdfs:label "Transaction date"@en, "Дата операции"@ru ;
+    rdfs:comment "Date when the financial transaction occurred"@en, "Дата совершения финансовой операции"@ru .
+
+eco:transactionType a rdf:Property ;
+    rdfs:domain eco:BankTransaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "Transaction type"@en, "Тип операции"@ru ;
+    rdfs:comment "Category or type of the financial transaction"@en, "Категория или тип финансовой операции"@ru .
+
+eco:transactionDescription a rdf:Property ;
+    rdfs:domain eco:BankTransaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "Transaction description"@en, "Описание операции"@ru ;
+    rdfs:comment "Detailed textual description of the financial transaction"@en, "Детальное текстовое описание финансовой операции"@ru .
+
+eco:debit a rdf:Property ;
+    rdfs:domain eco:BankTransaction ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Debit amount"@en, "Сумма расхода"@ru ;
+    rdfs:comment "Amount debited from the account (expense or payment) in currency units"@en, "Сумма, списанная со счета (расход или платеж) в денежных единицах"@ru .
+
+eco:checkNumber a rdf:Property ;
+    rdfs:domain eco:BankTransaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "Check number"@en, "Номер чека"@ru ;
+    rdfs:comment "Check number or reference identifier for check-based transactions"@en, "Номер чека или справочный идентификатор для операций с чеками"@ru .
+
+eco:credit a rdf:Property ;
+    rdfs:domain eco:BankTransaction ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Credit amount"@en, "Сумма дохода"@ru ;
+    rdfs:comment "Amount credited to the account (deposit or income) in currency units"@en, ""Сумма, зачисленная на счет (депозит или доход) в денежных единицах@ru .
+
+eco:balance a rdf:Property ;
+    rdfs:domain eco:BankTransaction ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Balance amount"@en, "Остаток на счете"@ru ;
+    rdfs:comment "Running account balance in currency units after the transaction is applied"@en, "Накопленный остаток на счете в денежных единицах после применения операции"@ru .
+
+eco:reconcile a rdf:Property ;
+    rdfs:domain eco:BankTransaction ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Reconcile"@en, "Согласовано"@ru ;
+    rdfs:comment "Boolean flag indicating whether the transaction has been reconciled with bank statements"@en, "Логический флаг, указывающий, была ли операция сверена с банковскими выписками"@ru .

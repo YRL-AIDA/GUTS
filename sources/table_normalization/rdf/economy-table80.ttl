@@ -1,0 +1,54 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:AgriculturalProductPriceList a rdfs:Class ;
+    rdfs:label "Agricultural product price list"@en, "Прайс-лист на сельскохозяйственную продукцию"@ru ;
+    rdfs:comment "Price list for fresh agricultural produce, including size/packaging options and logistics costs"@en, "Прайс-лист на свежую сельскохозяйственную продукцию с указанием размера/варианта упаковки и логистических расходов"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:category a rdf:Property ;
+    rdfs:domain eco:AgriculturalProductPriceList ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en, "категория"@ru ;
+    rdfs:comment "Category name for fresh agricultural produce"@en, "Название категории свежей сельскохозяйственной продукции"@ru .
+
+eco:item a rdf:Property ;
+    rdfs:domain eco:AgriculturalProductPriceList ;
+    rdfs:range xsd:string ;
+    rdfs:label "Item"@en, "Товарная единица@ru ;
+    rdfs:comment "Size or packaging specification for the produce item"@en, "Спецификация размера или упаковки для товара"@ru .
+
+eco:fob a rdf:Property ;
+    rdfs:domain eco:AgriculturalProductPriceList ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Free On Board (FOB)"@en, "Условия поставки"@ru ;
+    rdfs:comment "The price of the goods in US dollars does not include freight and brokerage fees"@en, "Цена товара в долларах США без учета фрахта и брокерских сборов"@ru .
+
+eco:unitsPerPallet a rdf:Property ;
+    rdfs:domain eco:AgriculturalProductPriceList ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Units per pallet"@en, "Количество единиц в паллете"@ru ;
+    rdfs:comment "Number of product units that fit on a standard shipping pallet"@en, "Количество единиц товара, помещающихся на стандартный транспортный паллет"@ru .
+
+eco:freight a rdf:Property ;
+    rdfs:domain eco:AgriculturalProductPriceList ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Freight"@en, "Фрахт"@ru ;
+    rdfs:comment "Additional cost for transportation/freight services"@en, "Дополнительная стоимость транспортных/логистических услуг"@ru .
+
+eco:brokerageFee a rdf:Property ;
+    rdfs:domain eco:AgriculturalProductPriceList ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Brokerage fee"@en, "Брокерский сбор"@ru ;
+    rdfs:comment "A fee in US dollars charged by a broker or agent for facilitating a transaction"@en, "Сбор в долларах США, взимаемый брокером или агентом за содействие в сделке"@ru .
+
+eco:deliveredPrice a rdf:Property ;
+    rdfs:domain eco:AgriculturalProductPriceList ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Delivered price"@en, "Цена с доставкой"@ru ;
+    rdfs:comment "The final price, including all markups and fees"@en, "Итоговая цена, включающая все наценки и сборы"@ru .

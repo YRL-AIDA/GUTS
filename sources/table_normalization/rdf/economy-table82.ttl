@@ -1,0 +1,36 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:InheritanceTaxRateGuide a rdfs:Class ;
+    rdfs:label "Inheritance tax rate guide"@en, "Справочник ставок наследственного налога"@ru ;
+    rdfs:comment "A guide describing the tax rates applicable to inheritance depending on the type of property, the floor level of the building, and the residency status of the heir"@en, "Справочник описывающий ставки налога, применяемые к наследству в зависимости от типа имущества, уровня этажа здания и статуса резидентства наследника"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:propertyType a rdf:Property ;
+    rdfs:domain eco:InheritanceTaxRateGuide ;
+    rdfs:range xsd:string ;
+    rdfs:label "Property type"@en, "Тип имущества"@ru ;
+    rdfs:comment "Legal classification of inherited property as defined in Article 17 paragraphs"@en, "Юридическая классификация наследуемого имущества, определенная в параграфах Статьи 17"@ru .
+
+eco:floorLevel a rdf:Property ;
+    rdfs:domain eco:InheritanceTaxRateGuide ;
+    rdfs:range xsd:string ;
+    rdfs:label "Floor level"@en, "Уровень этажа"@ru ;
+    rdfs:comment "Building floor level"@en, "Уровень этажа здания"@ru .
+
+eco:heirType a rdf:Property ;
+    rdfs:domain eco:InheritanceTaxRateGuide ;
+    rdfs:range xsd:string ;
+    rdfs:label "Heir type"@en, "Тип наследника"@ru ;
+    rdfs:comment "Residency status of the heir"@en, "Статус резидентства наследника"@ru .
+
+eco:taxRate a rdf:Property ;
+    rdfs:domain eco:InheritanceTaxRateGuide ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Tax rate"@en, "Налоговая ставка"@ru ;
+    rdfs:comment "Tax rate applicable to the inheritance"@en, "Налоговая ставка, применяемая к наследству"@ru .
