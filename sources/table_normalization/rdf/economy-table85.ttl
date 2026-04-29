@@ -1,0 +1,54 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:AvocadoProduct a rdfs:Class ;
+    rdfs:label "Avocado product"@en, "Яблочная продукция"@ru ;
+    rdfs:comment "A report on average retail prices for avocados in various forms of release"@en, "Отчет о средних розничных ценах на авокадо в различных формах выпуска"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:form a rdf:Property ;
+    rdfs:domain eco:AvocadoProduct ;
+    rdfs:range xsd:string ;
+    rdfs:label "Form"@en, "Форма"@ru ;
+    rdfs:comment "Name of the product form type"@en, "Название типа формы продукта"@ru .
+
+eco:averageRetailPrice a rdf:Property ;
+    rdfs:domain eco:AvocadoProduct ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average retail price"@en, "Средняя розничная цена"@ru ;
+    rdfs:comment "Average retail price for the specified unit of avocado products"@en, "Средняя розничная цена за указанную единицу продукции из авокадо"@ru .
+
+eco:unitType a rdf:Property ;
+    rdfs:domain eco:AvocadoProduct ;
+    rdfs:range xsd:string ;
+    rdfs:label "Unit type"@en, "Тип единицы измерения"@ru ;
+    rdfs:comment "Unit of measurement for the retail price"@en, "Единица измерения для розничной цены"@ru .
+
+eco:preparationYieldFactor a rdf:Property ;
+    rdfs:domain eco:AvocadoProduct ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Preparation yield factor"@en, "Коэффициент выхода при подготовке"@ru ;
+    rdfs:comment "Proportion of edible product after preparation"@en, "Доля съедобного продукта после подготовки"@ru .
+
+eco:cupEquivalentSize a rdf:Property ;
+    rdfs:domain eco:AvocadoProduct ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Cup equivalent size"@en, "Размер эквивалента чашки"@ru ;
+    rdfs:comment "Quantity of the product that constitutes one cup equivalent"@en, "Количество продукта, составляющее один эквивалент чашки"@ru .
+
+eco:cupEquivalentUnit a rdf:Property ;
+    rdfs:domain eco:AvocadoProduct ;
+    rdfs:range xsd:string ;
+    rdfs:label "Cup equivalent unit"@en, "Единица измерения эквивалента чашки"@ru ;
+    rdfs:comment "Unit of measurement for the cup equivalent size"@en, "Единица измерения для размера эквивалента чашки"@ru .
+
+eco:averagePricePerCupEquivalent a rdf:Property ;
+    rdfs:domain eco:AvocadoProduct ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average price per cup equivalent"@en, "Средняя цена за чашку (в эквиваленте)"@ru ;
+    rdfs:comment "Calculated average price for one cup equivalent of the product in currency units"@en, "Рассчитанная средняя цена за один эквивалент чашки продукта в денежных единицах"@ru .

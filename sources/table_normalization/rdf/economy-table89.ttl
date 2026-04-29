@@ -1,0 +1,66 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:LoanDefault a rdfs:Class ;
+    rdfs:label "Loan default"@en, "Невыполнение обязательств по кредиту"@ru ;
+    rdfs:comment "Direct loans entering default including outstanding principal and interest balances of direct loans at the time of default"@en, "Прямые кредиты, вступившие в стадию дефолта, включая непогашенные остатки основного долга и процентов по прямым кредитам на момент дефолта"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:year a rdf:Property ;
+    rdfs:domain eco:LoanDefault ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "year"@en, "Год"@ru ;
+    rdfs:comment "Federal fiscal year for the reporting period"@en, "Федеральный финансовый год отчетного периода"@ru .
+
+eco:quarter a rdf:Property ;
+    rdfs:domain eco:LoanDefault ;
+    rdfs:range xsd:string ;
+    rdfs:label "Quarter"@en, "Квартал"@ru ;
+    rdfs:comment "Quarter within the fiscal year (1–4) for the reporting period"@en, "Квартал в рамках финансового года (1–4) для отчетного периода"@ru .
+
+eco:dollarsInRepayment a rdf:Property ;
+    rdfs:domain eco:LoanDefault ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Dollars in repayment"@en, "Сумма погашения в долларах"@ru ;
+    rdfs:comment "Dollars in repayment from previous quarter in billions"@en, "Сумма погашенных кредитов за предыдущий квартал в миллиардах долларов"@ru .
+
+eco:recipientsInRepayment a rdf:Property ;
+    rdfs:domain eco:LoanDefault ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Recipients in repayment"@en, "Получатели, получившие погашение"@ru ;
+    rdfs:comment "Recipients in repayment from previous quarter (in thousands)"@en, "Получатели, получившие погашенные кредиты за предыдущий квартал (в тысячах)"@ru .
+
+eco:defaultCategory a rdf:Property ;
+    rdfs:domain eco:LoanDefault ;
+    rdfs:range xsd:string ;
+    rdfs:label "Default category"@en, "Категория дефолта"@ru ;
+    rdfs:comment "Category of default classification"@en, "Категория классификации дефолта"@ru .
+
+eco:dollars a rdf:Property ;
+    rdfs:domain eco:LoanDefault ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Dollars"@en, "Доллары"@ru ;
+    rdfs:comment "Total amount in US dollars"@en, "Общая сумма в долларах США"@ru .
+
+eco:borrowers a rdf:Property ;
+    rdfs:domain eco:LoanDefault ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Borrowers"@en, "Заемщики"@ru ;
+    rdfs:comment "Total number of unique borrowers (in thousands)"@en, "Общее количество уникальных заемщиков (в тысячах)"@ru .
+
+eco:dollarsPercent a rdf:Property ;
+    rdfs:domain eco:LoanDefault ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percent of dollars"@en, "Процент долларов"@ru ;
+    rdfs:comment "Percent of dollars in repayment last quarter that defaulted"@en, "Процент долларов США, выплаченных в счет погашения задолженности за последний квартал, по которым произошел дефолт"@ru .
+
+eco:borrowersPercent a rdf:Property ;
+    rdfs:domain eco:LoanDefault ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percent of borrowers"@en, "Процент заемщиков"@ru ;
+    rdfs:comment "Percent of borrowers in repayment last quarter that defaulted"@en, "Процент заемщиков, осуществлявших погашение кредита в прошлом квартале, допустивших дефолт"@ru .

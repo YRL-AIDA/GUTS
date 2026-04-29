@@ -1,0 +1,42 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:ConsumerPriceIndex a rdfs:Class ;
+    rdfs:label "Consumer price index"@en, "Индекс потребительских цен"@ru ;
+    rdfs:comment "Forecast data for changes in the Consumer Price Index (CPI) for a specified time period"@en, "Данные прогноза изменений индекса потребительских цен за определенный временной период"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:indexItem a rdf:Property ;
+    rdfs:domain eco:ConsumerPriceIndex ;
+    rdfs:range xsd:string ;
+    rdfs:label "Index item"@en, "Показатель индекса"@ru ;
+    rdfs:comment "Descriptive name of the consumer price index category"@en, "Описательное название категории индекса потребительских цен"@ru .
+
+eco:parentCategory a rdf:Property ;
+    rdfs:domain eco:ConsumerPriceIndex ;
+    rdfs:range xsd:string ;
+    rdfs:label "Parent category"@en, "Родительская категория"@ru ;
+    rdfs:comment "Name of the parent consumer price index category in the hierarchical classification"@en, "Название родительской категории индекса потребительских цен в иерархической классификации"@ru .
+
+eco:timePeriod a rdf:Property ;
+    rdfs:domain eco:ConsumerPriceIndex ;
+    rdfs:range xsd:string ;
+    rdfs:label "Time period"@en, ""@ru ;
+    rdfs:comment "Calendar month identifier for the forecast"@en, "Идентификатор календарного месяца для прогноза"@ru .
+
+eco:measurementVariant a rdf:Property ;
+    rdfs:domain eco:ConsumerPriceIndex ;
+    rdfs:range xsd:string ;
+    rdfs:label "Measurement variant"@en, "Вариант измерения"@ru ;
+    rdfs:comment "Type of prediction interval bound"@en, "Тип границы прогнозного интервала"@ru .
+
+eco:percentChange a rdf:Property ;
+    rdfs:domain eco:ConsumerPriceIndex ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percent change"@en, "Процентное изменение"@ru ;
+    rdfs:comment "Percentage change value for consumer price index item"@en, "Значение процентного изменения для элемента индекса потребительских цен"@ru .

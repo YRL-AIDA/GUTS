@@ -1,0 +1,48 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:ConsumerPriceIndex a rdfs:Class ;
+    rdfs:label "Consumer price index"@en, "Индекс потребительских цен"@ru ;
+    rdfs:comment "Forecast data for changes in the Consumer Price Index (CPI) by food category for a specified time period"@en, "Данные прогноза изменений индекса потребительских цен по продовольственным категориям за определенный временной период"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:indexItem a rdf:Property ;
+    rdfs:domain eco:ConsumerPriceIndex ;
+    rdfs:range xsd:string ;
+    rdfs:label "Index item"@en, "Показатель индекса"@ru ;
+    rdfs:comment "Descriptive name of the consumer price index category"@en, "Описательное название категории индекса потребительских цен"@ru .
+
+eco:parentCategory a rdf:Property ;
+    rdfs:domain eco:ConsumerPriceIndex ;
+    rdfs:range xsd:string ;
+    rdfs:label "Parent category"@en, "Родительская категория"@ru ;
+    rdfs:comment "Name of the parent consumer price index category in the hierarchical classification"@en, "Название родительской категории индекса потребительских цен в иерархической классификации"@ru .
+
+eco:relativeImportance a rdf:Property ;
+    rdfs:domain eco:ConsumerPriceIndex ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Relative importance"@en, "Относительная важность"@ru ;
+    rdfs:comment "Percentage weight of this consumer price index item in the overall index calculation"@en, "Процентный вес данного элемента индекса потребительских цен в расчете общего индекса"@ru .
+
+eco:measurementCategory a rdf:Property ;
+    rdfs:domain eco:ConsumerPriceIndex ;
+    rdfs:range xsd:string ;
+    rdfs:label "Measurement category"@en, "Категория измерения"@ru ;
+    rdfs:comment "A category for measuring the percentage change in a consumer price index item over a specific time period"@en, "Категория измерения процентного изменения для элемента индекса потребительских цен в конкретный временной период"@ru .
+
+eco:measurementVariant a rdf:Property ;
+    rdfs:domain eco:ConsumerPriceIndex ;
+    rdfs:range xsd:string ;
+    rdfs:label "Measurement variant"@en, "Вариант измерения"@ru ;
+    rdfs:comment "Measurement variant type"@en, "Тип варианта измерения"@ru .
+
+eco:percentChange a rdf:Property ;
+    rdfs:domain eco:ConsumerPriceIndex ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percent change"@en, "Процентное изменение"@ru ;
+    rdfs:comment "Percentage change value for consumer price index item"@en, "Значение процентного изменения для элемента индекса потребительских цен"@ru .

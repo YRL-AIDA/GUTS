@@ -1,0 +1,42 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:DirectLoanPortfolio a rdfs:Class ;
+    rdfs:label "Direct loan portfolio"@en, "Портфель прямых кредитов"@ru ;
+    rdfs:comment "Direct loan portfolio by deferment type including outstanding principal and interest balances of direct loans in a deferment status"@en, "Портфель прямых кредитов по типам отсрочки, включая непогашенные остатки основного долга и процентов по прямым кредитам, находящимся в статусе отсрочки"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:year a rdf:Property ;
+    rdfs:domain eco:DirectLoanPortfolio ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "year"@en, "Год"@ru ;
+    rdfs:comment "Federal fiscal year for the reporting period"@en, "Федеральный финансовый год отчетного периода"@ru .
+
+eco:quarter a rdf:Property ;
+    rdfs:domain eco:DirectLoanPortfolio ;
+    rdfs:range xsd:string ;
+    rdfs:label "Quarter"@en, "Квартал"@ru ;
+    rdfs:comment "Quarter within the fiscal year (1–4) for the reporting period"@en, "Квартал в рамках финансового года (1–4) для отчетного периода"@ru .
+
+eco:defermentType a rdf:Property ;
+    rdfs:domain eco:DirectLoanPortfolio ;
+    rdfs:range xsd:string ;
+    rdfs:label "Deferment type"@en, "Тип отсрочки"@ru ;
+    rdfs:comment "Category of loan deferment status"@en, "Категория статуса отсрочки по кредиту"@ru .
+
+eco:dollarsOutstanding a rdf:Property ;
+    rdfs:domain eco:DirectLoanPortfolio ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Dollars outstanding"@en, "Сумма непогашенных платежей"@ru ;
+    rdfs:comment "Total outstanding principal and interest balance for this deferment type in billions of US dollars; null if data not available"@en, "Общий непогашенный остаток основного долга и процентов для данного типа отсрочки в миллиардах долларов США"@ru .
+
+eco:recipients a rdf:Property ;
+    rdfs:domain eco:DirectLoanPortfolio ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Recipients"@en, "Получатели"@ru ;
+    rdfs:comment "Number of borrowers in this deferment status in millions of individuals"@en, "Количество заемщиков в данном статусе отсрочки в миллионах человек"@ru .
