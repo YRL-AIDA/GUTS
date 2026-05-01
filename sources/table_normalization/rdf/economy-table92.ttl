@@ -1,0 +1,78 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:FFELLoanReport a rdfs:Class ;
+    rdfs:label "FFEL loan report"@en, "Отчет по кредитам FFEL"@ru ;
+    rdfs:comment "A report representing quarterly FFEL (Federal Family Education Loan) loan activity for a specific educational institution and loan type for 2009-2010"@en, "Отчет, представляющий квартальную активность по займам FFEL (Федеральный Семейный Образовательный Кредит) для конкретного учебного заведения и типа займа за 2009-2010 учебный год"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:opeId a rdf:Property ;
+    rdfs:domain eco:FFELLoanReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "OPE identifier"@en, "Идентификатор OPE"@ru ;
+    rdfs:comment "Unique identifier assigned by the Office of Postsecondary Education (OPE) to the institution"@en, "Уникальный идентификатор, присвоенный учебному заведению управлением послесреднего образования"@ru .
+
+eco:schoolName a rdf:Property ;
+    rdfs:domain eco:FFELLoanReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "School name"@en, "Название школы"@ru ;
+    rdfs:comment "Official name of the educational institution"@en, "Официальное название учебного заведения"@ru .
+
+eco:state a rdf:Property ;
+    rdfs:domain eco:FFELLoanReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "State"@en, "Штат"@ru ;
+    rdfs:comment "Two-letter abbreviation of the U.S. state where the school is located"@en, "Двухбуквенное сокращение штата США, где находится школа"@ru .
+
+eco:zipCode a rdf:Property ;
+    rdfs:domain eco:FFELLoanReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "ZIP code"@en, "Почтовый индекс"@ru ;
+    rdfs:comment "Postal code of the school's primary address"@en, "Почтовый индекс основного адреса школы"@ru .
+
+eco:schoolType a rdf:Property ;
+    rdfs:domain eco:FFELLoanReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "School type"@en, "Тип школы"@ru ;
+    rdfs:comment "Classification of the institution's ownership"@en, "Классификация формы собственности учебного заведения"@ru .
+
+eco:loanType a rdf:Property ;
+    rdfs:domain eco:FFELLoanReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Loan type"@en, "Тип займа"@ru ;
+    rdfs:comment "Category of the Federal Family Education Loan (FFEL)"@en, "Категория федерального семейного образовательного займа"@ru .
+
+eco:recipients a rdf:Property ;
+    rdfs:domain eco:FFELLoanReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Recipients"@en, "Получатели"@ru ;
+    rdfs:comment "Number of unique students receiving this type of loan"@en, "Количество уникальных студентов, получивших данный тип займа"@ru .
+
+eco:loansOriginatedNumber a rdf:Property ;
+    rdfs:domain eco:FFELLoanReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of loans originated"@en, "Количество выданных займов"@ru ;
+    rdfs:comment "Total number of individual loans initiated during the period"@en, "Общее количество отдельных займов, инициированных за период"@ru .
+
+eco:loansOriginatedAmount a rdf:Property ;
+    rdfs:domain eco:FFELLoanReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Amount of loans originated"@en, "Сумма выданных займов"@ru ;
+    rdfs:comment "Total monetary value of loans originated during the period"@en, "Общая денежная стоимость займов, выданных за период"@ru .
+
+eco:disbursementsNumber a rdf:Property ;
+    rdfs:domain eco:FFELLoanReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of disbursements"@en, "Количество выплат"@ru ;
+    rdfs:comment "Number of actual fund disbursement transactions"@en, "Количество фактических транзакций по выплате средств"@ru .
+
+eco:disbursementsAmount a rdf:Property ;
+    rdfs:domain eco:FFELLoanReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Amount of disbursements"@en, "Сумма выплат"@ru ;
+    rdfs:comment "Total monetary value disbursed to school"@en, "Общая денежная стоимость, выплаченная школе"@ru .

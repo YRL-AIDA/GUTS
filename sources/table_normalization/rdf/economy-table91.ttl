@@ -1,0 +1,64 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:EmploymentCertificationForm a rdfs:Class ;
+    rdfs:label "Employment certification form"@en, "Форма подтверждения занятости"@ru ;
+    rdfs:comment "Public service loan forgiveness employment certification forms (ECFs)"@en, "Формы подтверждения занятости для списания кредитов, выданных государственным служащим"@ru .
+
+eco:InformationAggregation a rdfs:Class ;
+    rdfs:label "Information aggregation"@en, "Агрегация информации"@ru ;
+    rdfs:comment "Aggregation of information on employment confirmation forms ECFs) for the entire time period"@en, "Агрегация информации по формам подтверждения занятости для всего временного периода"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:calendarYear a rdf:Property ;
+    rdfs:domain eco:EmploymentCertificationForm ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Calendar year"@en, "Календарный год"@ru ;
+    rdfs:comment "Calendar year of the reporting period"@en, "Календарный год отчетного периода"@ru .
+
+eco:calendarQuarter a rdf:Property ;
+    rdfs:domain eco:EmploymentCertificationForm ;
+    rdfs:range xsd:string ;
+    rdfs:label "Calendar quarter"@en, "Календарный квартал"@ru ;
+    rdfs:comment "Quarter within the calendar year (1–4) for the reporting period"@en, "Квартал в рамках календарного года (1–4) для отчетного периода"@ru .
+
+eco:totalApproved a rdf:Property ;
+    rdfs:domain eco:EmploymentCertificationForm ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total approved ECFs"@en, "Всего одобренных форм"@ru ;
+    rdfs:comment "Total number of employment certification forms (ECFs) approved during the reporting period"@en, "Общее количество форм подтверждения занятости, одобренных в течение отчетного периода"@ru .
+
+eco:totalDenied a rdf:Property ;
+    rdfs:domain eco:EmploymentCertificationForm ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total denied ECFs"@en, "Всего отклоненных форм"@ru ;
+    rdfs:comment "Total number of employment certification forms (ECFs) denied during the reporting period"@en, "Общее количество форм подтверждения занятости, отклоненных в течение отчетного периода"@ru .
+
+eco:cumulativeBorrowers a rdf:Property ;
+    rdfs:domain eco:EmploymentCertificationForm ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Cumulative PSLF borrowers"@en, "совокупное количество заемщиков"@ru ;
+    rdfs:comment "The total number of unique borrowers who submitted at least one approved employment certification form for public service loan forgiveness"@en, "Совокупное количество уникальных заемщиков, подавших хотя бы одну одобренную форму подтверждения занятости для списания кредитов, выданных государственным служащим"@ru .
+
+eco:totalApproved a rdf:Property ;
+    rdfs:domain eco:InformationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total approved ECFs"@en, "Общее число одобренных форм"@ru ;
+    rdfs:comment "Total number of employment certification forms (ECFs) approved over time"@en, "Общее количество форм подтверждения занятости, одобренных за все время"@ru .
+
+eco:totalDenied a rdf:Property ;
+    rdfs:domain eco:InformationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total denied ECFs"@en, "Общее число отклоненных форм"@ru ;
+    rdfs:comment "Total number of employment certification forms (ECFs) denied over time"@en, "Общее количество форм подтверждения занятости, отклоненных за все время"@ru .
+
+eco:totalCumulativeBorrowers a rdf:Property ;
+    rdfs:domain eco:InformationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total cumulative PSLF borrowers"@en, "совокупное количество заемщиков"@ru ;
+    rdfs:comment "Total number of all-time unique borrowers who submitted at least one approved employment certification form for public service loan forgiveness"@en, "Общее количество уникальных заемщиков за все время, подавших хотя бы одну одобренную форму подтверждения занятости для списания кредитов, выданных государственным служащим"@ru .
