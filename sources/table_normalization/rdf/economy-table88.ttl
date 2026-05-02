@@ -33,7 +33,7 @@ eco:dollarsOutstanding a rdf:Property ;
     rdfs:domain eco:DirectLoanPortfolio ;
     rdfs:range xsd:decimal ;
     rdfs:label "Dollars outstanding"@en, "Сумма непогашенных платежей"@ru ;
-    rdfs:comment "Total outstanding principal and interest balance for this deferment type in billions of US dollars; null if data not available"@en, "Общий непогашенный остаток основного долга и процентов для данного типа отсрочки в миллиардах долларов США"@ru .
+    rdfs:comment "Total outstanding principal and interest balance for this deferment type in billions of US dollars"@en, "Общий непогашенный остаток основного долга и процентов для данного типа отсрочки в миллиардах долларов США"@ru .
 
 eco:recipients a rdf:Property ;
     rdfs:domain eco:DirectLoanPortfolio ;
