@@ -1,0 +1,30 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:FuelSourceStatistic a rdfs:Class ;
+    rdfs:label "Fuel source statistic"@en, "Статистика источника топлива"@ru ;
+    rdfs:comment "Statistics on primary fuel sources in a given region of the United Kingdom (UK)"@en, "Статистические данные по первичным источникам топлива в заданном регионе Великобритании"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:region a rdf:Property ;
+    rdfs:domain eco:FuelSourceStatistic ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region"@en, "Регион"@ru ;
+    rdfs:comment "Geographic region within the United Kingdom"@en, "Географический регион в пределах Великобритании"@ru .
+
+eco:fuelSource a rdf:Property ;
+    rdfs:domain eco:FuelSourceStatistic ;
+    rdfs:range xsd:string ;
+    rdfs:label "Fuel source"@en, "Источник топлива"@ru ;
+    rdfs:comment "Type of primary fuel source"@en, "Тип первичного источника топлива"@ru .
+
+eco:quantity a rdf:Property ;
+    rdfs:domain eco:FuelSourceStatistic ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Quantity"@en, "Количество"@ru ;
+    rdfs:comment "The numerical number of fuel sources in a given region"@en, "Числовое количество источников топлива в заданном регионе"@ru .
