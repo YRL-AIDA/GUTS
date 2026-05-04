@@ -1,0 +1,36 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:InnovationActivityObservation a rdfs:Class ;
+    rdfs:label "Innovation activity observation"@en, "Наблюдение за инновационной деятельностью"@ru ;
+    rdfs:comment "The observation of businesses engaging in innovation activity, by type of activity, 2018 to 2020"@en, "Наблюдение за деятельностью предприятий, занимающихся инновационными проектами, по видам деятельности, 2018–2020 годы"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:segmentType a rdf:Property ;
+    rdfs:domain eco:InnovationActivityObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Segment type"@en, "Тип сегмента"@ru ;
+    rdfs:comment "The hierarchical category type for segmentation"@en, "Тип иерархической категории для сегментации"@ru .
+
+eco:segmentName a rdf:Property ;
+    rdfs:domain eco:InnovationActivityObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Segment name"@en, "Название сегмента"@ru ;
+    rdfs:comment "The specific name of the segment within its type"@en, "Конкретное название сегмента в пределах его типа"@ru .
+
+eco:metricType a rdf:Property ;
+    rdfs:domain eco:InnovationActivityObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Metric type"@en, "Тип метрики"@ru ;
+    rdfs:comment "Type of innovation activity metric"@en, "Тип метрики инновационной активности"@ru .
+
+eco:percentage a rdf:Property ;
+    rdfs:domain eco:InnovationActivityObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percentage"@en, "Процент"@ru ;
+    rdfs:comment "The percentage value of businesses in the given segment that engaged in the specified innovation activity type"@en, "Процентное значение предприятий в заданном сегменте, вовлеченных в указанный тип инновационной деятельности"@ru .

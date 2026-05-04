@@ -1,0 +1,48 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:BankruptcyStatistic a rdfs:Class ;
+    rdfs:label "Bankruptcy statistic"@en, "Статистика банкротств"@ru ;
+    rdfs:comment "Statistics on the number of insolvency cases by petition type for a given year and optional quarter in England and Wales (data seasonally adjusted)"@en, "Статистика количества случаев банкротства по типу заявления для конкретного года и необязательного квартала в Англии и Уэльсе (данные сезонно скорректированы)"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:year a rdf:Property ;
+    rdfs:domain eco:BankruptcyStatistic ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+eco:quarter a rdf:Property ;
+    rdfs:domain eco:BankruptcyStatistic ;
+    rdfs:range xsd:string ;
+    rdfs:label "Quarter"@en, "Квартал"@ru ;
+    rdfs:comment "The time period: Q1, Q2, Q3, Q4 for quarterly data"@en, "Временной период: Q1, Q2, Q3, Q4 для квартальных данных"@ru .
+
+eco:petitionType a rdf:Property ;
+    rdfs:domain eco:BankruptcyStatistic ;
+    rdfs:range xsd:string ;
+    rdfs:label "Petition type"@en, "Тип заявления"@ru ;
+    rdfs:comment "Type of bankruptcy petition"@en, "Тип заявления о банкротстве"@ru .
+
+eco:bankruptcyNumber a rdf:Property ;
+    rdfs:domain eco:BankruptcyStatistic ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of bankruptcies"@en, "Количество банкротств"@ru ;
+    rdfs:comment "The number of bankruptcies for a given time period"@en, "Количество банкротств за определенный период времени"@ru .
+
+eco:percentageChange a rdf:Property ;
+    rdfs:domain eco:BankruptcyStatistic ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Percentage change"@en, "Процентное изменение"@ru ;
+    rdfs:comment "Percentage change for the latest quarter compared to the previous one"@en, "Процентное изменение за последний квартал по сравнению с предыдущим"@ru .
+
+eco:revised a rdf:Property ;
+    rdfs:domain eco:BankruptcyStatistic ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Revised"@en, "Пересмотрено"@ru ;
+    rdfs:comment "Flag indicating a revised value since initial publication"@en, "Флаг, указывающий на пересмотреное значение после первоначальной публикации"@ru .

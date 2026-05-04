@@ -1,0 +1,48 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:RealGrossOutput a rdfs:Class ;
+    rdfs:label "Real gross output"@en, "Реальный валовой объем производства"@ru ;
+    rdfs:comment "Statistical data on the real gross output by commodity for a given calendar year"@en, "Статистические данные по реальному валовому объему производства товаров за определенный календарный год"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:year a rdf:Property ;
+    rdfs:domain eco:RealGrossOutput ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+eco:category a rdf:Property ;
+    rdfs:domain eco:RealGrossOutput ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en, "Категория"@ru ;
+    rdfs:comment "The economic category or component name"@en, "Название экономической категории или компонента"@ru .
+
+eco:parentCategory a rdf:Property ;
+    rdfs:domain eco:RealGrossOutput ;
+    rdfs:range xsd:string ;
+    rdfs:label "Parent category"@en, "Родительская категория"@ru ;
+    rdfs:comment "Name of the parent economic category or component to which this category belongs"@en, "Название родительской экономической категории или компонента, к которой относится данная категория"@ru .
+
+eco:chainedDollars a rdf:Property ;
+    rdfs:domain eco:RealGrossOutput ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Chained dollars"@en, "Цепные доллары"@ru ;
+    rdfs:comment "Billions of dollars adjusted for inflation over time"@en, "Миллиарды долларов с учетом инфляции с течением времени"@ru .
+
+eco:percentChange a rdf:Property ;
+    rdfs:domain eco:RealGrossOutput ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percent change"@en, "Процентное изменение"@ru ;
+    rdfs:comment "Percent change from preceding period"@en, "Процентное изменение по сравнению с предыдущим периодом"@ru .
+
+eco:contribution a rdf:Property ;
+    rdfs:domain eco:RealGrossOutput ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Contribution"@en, "Вклад"@ru ;
+    rdfs:comment "Contribution to percent change"@en, "Вклад в процентное изменение"@ru .
