@@ -1,0 +1,42 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:RSDIImproperPayment a rdfs:Class ;
+    rdfs:label "RSDI improper payment"@en, "Неправомерная оплата RSDI"@ru ;
+    rdfs:comment "RSDI improper payments experience fiscal years 2007 – 2017"@en, "Данные RSDI (общие выплаты, недоплаты или переплаты) о неправомерных платежах за 2007–2017 финансовые годы"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:fiscalYear a rdf:Property ;
+    rdfs:domain eco:RSDIImproperPayment ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Fiscal year"@en, "Финансовый год"@ru ;
+    rdfs:comment "Fiscal year for which the payment data is reported"@en, "Финансовый год, за который представлены данные о выплатах"@ru .
+
+eco:paymentType a rdf:Property ;
+    rdfs:domain eco:RSDIImproperPayment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Payment type"@en, "Тип выплаты"@ru ;
+    rdfs:comment "Payment category name"@en, "Название категории выплаты"@ru .
+
+eco:amountDollars a rdf:Property ;
+    rdfs:domain eco:RSDIImproperPayment ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Amount dollars"@en, "Сумма в долларах"@ru ;
+    rdfs:comment "The monetary amount in millions of US dollars for this type of payment"@en, "Денежная сумма в миллионах долларах США для данного типа выплат"@ru .
+
+eco:targetRate a rdf:Property ;
+    rdfs:domain eco:RSDIImproperPayment ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Target rate"@en, "Целевая ставка"@ru ;
+    rdfs:comment "The percentage value of the target rate for this type of payment"@en, "Процентное значение целевой ставки для данного типа выплат"@ru .
+
+eco:actualRate a rdf:Property ;
+    rdfs:domain eco:RSDIImproperPayment ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Actual rate"@en, "Фактическая ставка"@ru ;
+    rdfs:comment "The percentage value of the actual rate for this type of payment"@en, "Процентное значение фактической ставки для данного типа выплат"@ru .

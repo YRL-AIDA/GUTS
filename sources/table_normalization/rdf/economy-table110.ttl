@@ -1,0 +1,54 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:PriceComparison a rdfs:Class ;
+    rdfs:label "Price comparison"@en, "Сравнение цен"@ru ;
+    rdfs:comment "Price information for the item in the original or new version with a price difference indicator"@en, "Информация о ценах для товарной позиции в исходной или новой версии с индикатором разницы в цене"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:priceVersion a rdf:Property ;
+    rdfs:domain eco:PriceComparison ;
+    rdfs:range xsd:string ;
+    rdfs:label "Price version"@en, "Версия цен"@ru ;
+    rdfs:comment "Price version indicator"@en, "Индикатор версии цены"@ru .
+
+eco:item a rdf:Property ;
+    rdfs:domain eco:PriceComparison ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Item"@en, "Позиция"@ru ;
+    rdfs:comment "Numeric identifier for the product item"@en, "Числовой идентификатор товарной позиции"@ru .
+
+eco:batch a rdf:Property ;
+    rdfs:domain eco:PriceComparison ;
+    rdfs:range xsd:string ;
+    rdfs:label "Batch name"@en, "Название партии"@ru ;
+    rdfs:comment "Name or code of the product batch"@en, "Название или код партии товара"@ru .
+
+eco:quantity a rdf:Property ;
+    rdfs:domain eco:PriceComparison ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Quantity"@en, "Количество"@ru ;
+    rdfs:comment "Number of units of products in the batch"@en, "Количество единиц продукции в партии"@ru .
+
+eco:unitPrice a rdf:Property ;
+    rdfs:domain eco:PriceComparison ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Unit price"@en, "Цена за единицу"@ru ;
+    rdfs:comment "Price per single unit of the product"@en, "Цена за одну единицу товара"@ru .
+
+eco:total a rdf:Property ;
+    rdfs:domain eco:PriceComparison ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total price"@en, "Общая стоимость"@ru ;
+    rdfs:comment "The total cost of all products in the batch"@en, "Общая стоимость всей продукции в партии"@ru .
+
+eco:priceDifference a rdf:Property ;
+    rdfs:domain eco:PriceComparison ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Price difference"@en, "Разница в цене"@ru ;
+    rdfs:comment "Difference between new and original total costs"@en, "Разница между новой и первоначальной общей стоимостью"@ru .

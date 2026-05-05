@@ -1,0 +1,58 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:AssistanceGroupStatistic a rdfs:Class ;
+    rdfs:label "Assistance group statistic"@en, "Статистика групп помощи"@ru ;
+    rdfs:comment "Statistics on the number and percentage of beneficiary groups for a given group size and locality type"@en, "Статистические данные о количестве и проценте групп получателей помощи для конкретного размера группы и типа местности"@ru .
+
+eco:InformationAggregation a rdfs:Class ;
+    rdfs:label "Information aggregation"@en, "Агрегация информации"@ru ;
+    rdfs:comment "Aggregation of information by assistance groups"@en, "Агрегация информации по группам помощи"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:personsPerAssistanceGroup a rdf:Property ;
+    rdfs:domain eco:AssistanceGroupStatistic ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Persons per assistance group"@en, "Количество человек в каждой группе помощи"@ru ;
+    rdfs:comment "The number of persons in an assistance group (integer from 1 to 12)"@en, "Количество человек в группе получателей помощи (целое число от 1 до 12)"@ru .
+
+eco:locationType a rdf:Property ;
+    rdfs:domain eco:AssistanceGroupStatistic ;
+    rdfs:range xsd:string ;
+    rdfs:label "Location type"@en, "Тип местности"@ru ;
+    rdfs:comment "Geographic classification of location"@en, "Географическая классификация местности"@ru .
+
+eco:groups a rdf:Property ;
+    rdfs:domain eco:AssistanceGroupStatistic ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of groups"@en, "Количество групп"@ru ;
+    rdfs:comment "The number of beneficiary groups of a given size in a given location type"@en, "Количество групп получателей помощи заданного размера в указанном типе местности"@ru .
+
+eco:percent a rdf:Property ;
+    rdfs:domain eco:AssistanceGroupStatistic ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Value in percent"@en, "Значение в процентах"@ru ;
+    rdfs:comment "Percentage of beneficiary groups of a given size within a given location type"@en, "Процент групп получателей помощи заданного размера в пределах указанного типа местности"@ru .
+
+eco:locationType a rdf:Property ;
+    rdfs:domain eco:InformationAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Location type"@en, "Тип местности"@ru ;
+    rdfs:comment "Geographic classification of location"@en, "Географическая классификация местности"@ru .
+
+eco:totalGroups a rdf:Property ;
+    rdfs:domain eco:InformationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total number of groups"@en, "Общее количество групп"@ru ;
+    rdfs:comment "Total number of beneficiary groups for all sizes in the specified locality type"@en, "Общее количество групп получателей помощи для всех размеров в указанном типе местности"@ru .
+
+eco:totalPercent a rdf:Property ;
+    rdfs:domain eco:InformationAggregation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total value in percent"@en, "Общее значение в процентах"@ru ;
+    rdfs:comment "Total percentage of beneficiary groups for all sizes within the specified locality type"@en, "Общий процент групп получателей помощи для всех размеров в пределах указанного типа местности"@ru .

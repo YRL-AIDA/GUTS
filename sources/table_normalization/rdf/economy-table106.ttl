@@ -1,0 +1,36 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:DigitalEconomy a rdfs:Class ;
+    rdfs:label "Digital economy"@en, "Цифровая экономика"@ru ;
+    rdfs:comment "Digital economy current-dollar value added by industry"@en, "Цифровая экономика: добавленная стоимость в долларах США по отраслям"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:industryName a rdf:Property ;
+    rdfs:domain eco:DigitalEconomy ;
+    rdfs:range xsd:string ;
+    rdfs:label "Industry name"@en, "Название отрасли"@ru ;
+    rdfs:comment "The specific name of the industry or sub-industry"@en, "Конкретное название отрасли или подотрасли"@ru .
+
+eco:parentIndustry a rdf:Property ;
+    rdfs:domain eco:DigitalEconomy ;
+    rdfs:range xsd:string ;
+    rdfs:label "Parent industry"@en, "Родительская отрасль"@ru ;
+    rdfs:comment "The higher-level industry category in the hierarchical classification"@en, "Категория отрасли более высокого уровня в иерархической классификации"@ru .
+
+eco:year a rdf:Property ;
+    rdfs:domain eco:DigitalEconomy ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, ""@ru ;
+    rdfs:comment "Calendar year for which the value added is reported"@en, "Календарный год, за который представлена добавленная стоимость"@ru .
+
+eco:valueAddedBillions a rdf:Property ;
+    rdfs:domain eco:DigitalEconomy ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Value added billions"@en, "Добавленная  стоимость в миллиардах"@ru ;
+    rdfs:comment "The value added in billions of US dollars for the given industry and year"@en, "Добавленная стоимость в миллиардах долларов США для заданной отрасли и года"@ru .
