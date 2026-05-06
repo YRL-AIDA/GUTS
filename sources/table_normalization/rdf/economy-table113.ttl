@@ -1,0 +1,78 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:EmployeeOrganizationHierarchy a rdfs:Class ;
+    rdfs:label "Employee organization hierarchy"@en, "Иерархия организации сотрудников"@ru ;
+    rdfs:comment "Information representing a manager in the organizational chain of command"@en, "Информация, представляющая менеджера в организационной иерархии подчинения"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:managerName a rdf:Property ;
+    rdfs:domain eco:EmployeeOrganizationHierarchy ;
+    rdfs:range xsd:string ;
+    rdfs:label "Manager name"@en, "Имя менеджера"@ru ;
+    rdfs:comment "Name of the manager in the hierarchy"@en, "Имя менеджера в иерархии"@ru .
+
+eco:hierarchyLevel a rdf:Property ;
+    rdfs:domain eco:EmployeeOrganizationHierarchy ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Hierarchy level"@en, "Уровень иерархии"@ru ;
+    rdfs:comment "Numeric depth level in the reporting hierarchy, where higher numbers indicate higher positions"@en, "Числовой уровень глубины в иерархии подчинения, где более высокие числа указывают на более высокие позиции"@ru .
+
+eco:supervisor a rdf:Property ;
+    rdfs:domain eco:EmployeeOrganizationHierarchy ;
+    rdfs:range xsd:string ;
+    rdfs:label "Supervisor"@en, "Руководитель"@ru ;
+    rdfs:comment "Name of the manager's immediate supervisor in the hierarchy"@en, "Имя непосредственного руководителя менеджера в иерархии"@ru .
+
+eco:subordinateManager a rdf:Property ;
+    rdfs:domain eco:EmployeeOrganizationHierarchy ;
+    rdfs:range xsd:string ;
+    rdfs:label "Subordinate manager"@en, "Подчиненный менеджер"@ru ;
+    rdfs:comment "Name of the lower-level subordinate manager in the hierarchy"@en, "Имя подчиненного менеджера нижнего уровня в иерархии"@ru .
+
+eco:identifierEmployee a rdf:Property ;
+    rdfs:domain eco:EmployeeOrganizationHierarchy ;
+    rdfs:range xsd:string ;
+    rdfs:label "Identifier employee"@en, "Идентификатор сотрудника"@ru ;
+    rdfs:comment "Unique identifier for the employee"@en, "Уникальный идентификатор сотрудника"@ru .
+
+eco:organizationCode a rdf:Property ;
+    rdfs:domain eco:EmployeeOrganizationHierarchy ;
+    rdfs:range xsd:string ;
+    rdfs:label "Organization code"@en, "Код организации"@ru ;
+    rdfs:comment "Organizational code or department identifier for the person"@en, "Код организации или идентификатор подразделения для человека"@ru .
+
+eco:phone a rdf:Property ;
+    rdfs:domain eco:EmployeeOrganizationHierarchy ;
+    rdfs:range xsd:string ;
+    rdfs:label "Phone"@en, "Телефон"@ru ;
+    rdfs:comment "Phone number of the employee"@en, "Номер телефона сотрудника"@ru .
+
+eco:department a rdf:Property ;
+    rdfs:domain eco:EmployeeOrganizationHierarchy ;
+    rdfs:range xsd:string ;
+    rdfs:label "Department"@en, "Отдел"@ru ;
+    rdfs:comment "Department or division to which the employee belongs"@en, "Отдел или подразделение, к которому принадлежит сотрудник"@ru .
+
+eco:site a rdf:Property ;
+    rdfs:domain eco:EmployeeOrganizationHierarchy ;
+    rdfs:range xsd:string ;
+    rdfs:label "Site"@en, "Место"@ru ;
+    rdfs:comment "Physical location of the employee"@en, "Физическое местоположение сотрудника"@ru .
+
+eco:building a rdf:Property ;
+    rdfs:domain eco:EmployeeOrganizationHierarchy ;
+    rdfs:range xsd:string ;
+    rdfs:label "Building"@en, "Здание"@ru ;
+    rdfs:comment "Building identifier where the employee works"@en, "Идентификатор здания, где работает сотрудник"@ru .
+
+eco:email a rdf:Property ;
+    rdfs:domain eco:EmployeeOrganizationHierarchy ;
+    rdfs:range xsd:string ;
+    rdfs:label "Email"@en, "Электронная почта"@ru ;
+    rdfs:comment "Email address of the employee"@en, "Адрес электронной почты сотрудника"@ru .

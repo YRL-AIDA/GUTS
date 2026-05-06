@@ -1,0 +1,46 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:InvestmentReturn a rdfs:Class ;
+    rdfs:label "Investment return"@en, "Доходность инвестиции"@ru ;
+    rdfs:comment "Information on the annual percentage return for a specific asset class in a specified calendar year"@en, "Информация по годовой процентной доходности для конкретного класса активов в указанный календарный год"@ru .
+
+eco:InvestmentReturnSummary a rdfs:Class ;
+    rdfs:label "Investment return summary"@en, "Сводная информация о доходности инвестиций"@ru ;
+    rdfs:comment "Summary of average investment returns for the entire period"@en, "Сводная информация о средней доходности инвестиций за весь период"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:year a rdf:Property ;
+    rdfs:domain eco:InvestmentReturn ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year for which the investment return is reported"@en, "Календарный год, за который представлена доходность инвестиции"@ru .
+
+eco:assetClass a rdf:Property ;
+    rdfs:domain eco:InvestmentReturn ;
+    rdfs:range xsd:string ;
+    rdfs:label "Asset class"@en, "Класс актива"@ru ;
+    rdfs:comment "Type of investment asset"@en, "Тип инвестиционного актива"@ru .
+
+eco:annualReturn a rdf:Property ;
+    rdfs:domain eco:InvestmentReturn ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Annual return"@en, "Годовая доходность"@ru ;
+    rdfs:comment "Annual percentage return for the given asset class and year"@en, "Годовая процентная доходность для данного класса активов и года"@ru .
+
+eco:assetClass a rdf:Property ;
+    rdfs:domain eco:InvestmentReturnSummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Asset class"@en, "Класс актива"@ru ;
+    rdfs:comment "Type of investment asset"@en, "Тип инвестиционного актива"@ru .
+
+eco:average a rdf:Property ;
+    rdfs:domain eco:InvestmentReturnSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average"@en, "Среднее значение"@ru ;
+    rdfs:comment "Average percentage return for a given asset class over the entire period"@en, "Среднее значение процента доходности для данного класса активов за весь период"@ru .

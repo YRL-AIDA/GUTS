@@ -1,0 +1,76 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:FinancialTransaction a rdfs:Class ;
+    rdfs:label "Financial transaction"@en, "Финансовая транзакция"@ru ;
+    rdfs:comment "Information about financial transactions in the accounting register for a specific client"@en, "Информация о финансовых транзакциях в бухгалтерском реестре для конкретного клиента"@ru .
+
+eco:BalanceSummary a rdfs:Class ;
+    rdfs:label "Balance summary"@en, "Сводка баланса"@ru ;
+    rdfs:comment "Summary of balance data for all transactions"@en, "Сводные данные о балансе по всем транзакциям"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:date a rdf:Property ;
+    rdfs:domain eco:FinancialTransaction ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Date"@en, "Дата"@ru ;
+    rdfs:comment "Date of transactionn represented as a serial number"@en, "Дата проведения транзакции, представленная как серийный номер"@ru .
+
+eco:invoiceNumber a rdf:Property ;
+    rdfs:domain eco:FinancialTransaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "Invoice number"@en, "Номер счета"@ru ;
+    rdfs:comment "Reference number of the invoice or document associated with the transaction"@en, "Справочный номер счета или документа, связанного с транзакцией"@ru .
+
+eco:clientNumber a rdf:Property ;
+    rdfs:domain eco:FinancialTransaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "Client number"@en, "Номер клиента"@ru ;
+    rdfs:comment "Unique identifier of the client account"@en, "Уникальный идентификатор счета клиента"@ru .
+
+eco:transactionType a rdf:Property ;
+    rdfs:domain eco:FinancialTransaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "Transaction type"@en, "Тип транзакции"@ru ;
+    rdfs:comment "Description of transaction type"@en, "Описание типа транзакции"@ru .
+
+eco:debit a rdf:Property ;
+    rdfs:domain eco:FinancialTransaction ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Debit amount"@en, "Сумма дебета"@ru ;
+    rdfs:comment "Amount debited (added to the account balance) in the transaction"@en, "Сумма, зачисленная на счет (увеличивающая баланс) в транзакции"@ru .
+
+eco:credit a rdf:Property ;
+    rdfs:domain eco:FinancialTransaction ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Credit amount"@en, "Сумма кредита"@ru ;
+    rdfs:comment "Amount credited (subtracted from the account balance) in the transaction"@en, "Сумма, списанная со счета (уменьшающая баланс) в транзакции"@ru .
+
+eco:balance a rdf:Property ;
+    rdfs:domain eco:FinancialTransaction ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Balance"@en, "Баланс"@ru ;
+    rdfs:comment "Running account balance after the transaction"@en, "Накопительный остаток на счете после транзакции"@ru .
+
+eco:totalDebit a rdf:Property ;
+    rdfs:domain eco:BalanceSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total debit amount"@en, "Общая сумма дебета"@ru ;
+    rdfs:comment "Total amount debited from the account"@en, "Общая сумма, зачисленная на счет"@ru .
+
+eco:totalCredit a rdf:Property ;
+    rdfs:domain eco:BalanceSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total credit amount"@en, "Общая сумма кредита"@ru ;
+    rdfs:comment "Total amount credited to the account"@en, "Общая сумма, списанная со счета"@ru .
+
+eco:totalBalance a rdf:Property ;
+    rdfs:domain eco:BalanceSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total balance"@en, "Общий баланс"@ru ;
+    rdfs:comment "Cumulative total balance in the account after all transactions"@en, "Накопительный общий остаток на счете после всех транзакций"@ru .

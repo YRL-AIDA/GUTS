@@ -1,0 +1,64 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:ProductItem a rdfs:Class ;
+    rdfs:label "Product item"@en, "Номенклатура товара"@ru ;
+    rdfs:comment "Information on product items indicating quantity, unit price and total cost"@en, "Информация по товарным позициям с указанием количества, цены за единицу товара и общей стоимости"@ru .
+
+eco:ProductBalanceSummary a rdfs:Class ;
+    rdfs:label "Product balance summary"@en, "Сводка баланса продукции"@ru ;
+    rdfs:comment "Summary information on the cost of all goods, taking into account the current shortage"@en, "Сводная информация по стоимости всех товаров с учетом текущего дефицита"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:itemNumber a rdf:Property ;
+    rdfs:domain eco:ProductItem ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Item number"@en, "Номер позиции"@ru ;
+    rdfs:comment "Numeric identifier for the product item"@en, "Числовой идентификатор товарной позиции"@ru .
+
+eco:brand a rdf:Property ;
+    rdfs:domain eco:ProductItem ;
+    rdfs:range xsd:string ;
+    rdfs:label "Brand"@en, "Бренд"@ru ;
+    rdfs:comment "Product specification including brand, size, and country of origin"@en, "Спецификация товара, включающая бренд, размер и страну происхождения"@ru .
+
+eco:quantity a rdf:Property ;
+    rdfs:domain eco:ProductItem ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Quantity"@en, "Количество"@ru ;
+    rdfs:comment "Number of units of the product item"@en, "Количество единиц товара"@ru .
+
+eco:price a rdf:Property ;
+    rdfs:domain eco:ProductItem ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Price"@en, "Цена"@ru ;
+    rdfs:comment "Unit price of the product item"@en, "Цена за одну единицу товара"@ru .
+
+eco:balance a rdf:Property ;
+    rdfs:domain eco:ProductItem ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Balance"@en, "Баланс"@ru ;
+    rdfs:comment "The total cost of all products of this brand"@en, "Общая стоимость всего товара данного бренда"@ru .
+
+eco:totalQuantity a rdf:Property ;
+    rdfs:domain eco:ProductBalanceSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total quantity"@en, "Общее количество"@ru ;
+    rdfs:comment "Total number of units of products of all brands"@en, "Общее количество единиц товара всех брендов"@ru .
+
+eco:totalCost a rdf:Property ;
+    rdfs:domain eco:ProductBalanceSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total cost"@en, "Общая стоимость"@ru ;
+    rdfs:comment "Total cost of all products"@en, "Общая стоимость всех товаров"@ru .
+
+eco:deficit a rdf:Property ;
+    rdfs:domain eco:ProductBalanceSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Deficit"@en, "Дефицит"@ru ;
+    rdfs:comment "Current deficit of products"@en, "Текущий дефицит товаров"@ru .
