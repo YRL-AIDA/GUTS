@@ -1,0 +1,98 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:ExpenditureReport a rdfs:Class ;
+    rdfs:label "Expenditure report"@en, "Отчет о расходах"@ru ;
+    rdfs:comment "Report on specific categories, subcategories, and expenditure items for a specific time period"@en, "Отчет по конкретным категориям, подкатегориям и статьям расходов за определенный временной период"@ru .
+
+eco:ExpenditureSummary a rdfs:Class ;
+    rdfs:label "Expenditure summary"@en, "Сводка расходов"@ru ;
+    rdfs:comment "Key summary information on public sector expenditure"@en, "Основная сводная информация по расходам государственного сектора"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:timePeriod a rdf:Property ;
+    rdfs:domain eco:ExpenditureReport ;
+    rdfs:range xsd:gYearMonth ;
+    rdfs:label "Time period"@en, "Временной период"@ru ;
+    rdfs:comment "The time period for which expenditure data is provided"@en, "Временной период, за который представлены данные о расходах"@ru .
+
+eco:category a rdf:Property ;
+    rdfs:domain eco:ExpenditureReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en, "Категория"@ru ;
+    rdfs:comment "Top-level expenditure classification"@en, "Классификация расходов верхнего уровня"@ru .
+
+eco:subcategory a rdf:Property ;
+    rdfs:domain eco:ExpenditureReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Subcategory"@en, "Подкатегория"@ru ;
+    rdfs:comment "Intermediate expenditure grouping"@en, "Промежуточная группировка расходов"@ru .
+
+eco:expenditureItem a rdf:Property ;
+    rdfs:domain eco:ExpenditureReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Expenditure item"@en, "Статья расходов"@ru ;
+    rdfs:comment "Specific expenditure or revenue line item name"@en, "Название конкретной статьи расходов или доходов"@ru .
+
+eco:dataStatus a rdf:Property ;
+    rdfs:domain eco:ExpenditureReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Data status"@en, "Статус данных"@ru ;
+    rdfs:comment "Indicates whether the value is outturn or planned"@en, "Индикатор, указывающий, является ли значение фактическим или запланированным"@ru .
+
+eco:amount a rdf:Property ;
+    rdfs:domain eco:ExpenditureReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Amount"@en, "Сумма"@ru ;
+    rdfs:comment "The monetary value of the amount of expenditures for a given period of time"@en, "Денежное значение суммы расходов за данный период времени"@ru .
+
+
+
+
+
+eco:timePeriod a rdf:Property ;
+    rdfs:domain eco:ExpenditureSummary ;
+    rdfs:range xsd:gYearMonth ;
+    rdfs:label "Time period"@en, "Временной период"@ru ;
+    rdfs:comment "The time period for which expenditure data is provided"@en, "Временной период, за который представлены данные о расходах"@ru .
+
+eco:dataStatus a rdf:Property ;
+    rdfs:domain eco:ExpenditureSummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Data status"@en, "Статус данных"@ru ;
+    rdfs:comment "Indicates whether the value is outturn or planned"@en, "Индикатор, указывающий, является ли значение фактическим или запланированным"@ru .
+
+eco:currentExpenditure a rdf:Property ;
+    rdfs:domain eco:ExpenditureSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Current expenditure"@en, "Текущие расходы"@ru ;
+    rdfs:comment "Public sector current expenditure"@en, "Текущие расходы государственного сектора"@ru .
+
+eco:grossInvestment a rdf:Property ;
+    rdfs:domain eco:ExpenditureSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Gross investment"@en, "Валовые инвестиции"@ru ;
+    rdfs:comment "Public sector gross investment"@en, "Валовые инвестиции государственного сектора"@ru .
+
+eco:grossInvestmentLessDepreciation a rdf:Property ;
+    rdfs:domain eco:ExpenditureSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Gross investment less depreciation"@en, "Валовые инвестиции за вычетом амортизации"@ru ;
+    rdfs:comment "Public sector gross investment less public sector depreciation"@en, "Валовые инвестиции государственного сектора за вычетом амортизации государственного сектора"@ru .
+
+eco:netInvestment a rdf:Property ;
+    rdfs:domain eco:ExpenditureSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Net investment"@en, "Чистые инвестиции"@ru ;
+    rdfs:comment "Public sector net investment"@en, "Чистые инвестиции государственного сектора"@ru .
+
+eco:totalManagedExpenditure a rdf:Property ;
+    rdfs:domain eco:ExpenditureSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total managed expenditure"@en, "Совокупные управляемые расходы"@ru ;
+    rdfs:comment "Total monetary amount of controlled expenditures"@en, "Общая денежная сумма управляемых расходов"@ru .

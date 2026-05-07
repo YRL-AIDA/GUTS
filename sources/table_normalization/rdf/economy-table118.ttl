@@ -1,0 +1,58 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:NationalStatistics a rdfs:Class ;
+    rdfs:label "National statistics"@en, "Национальная статистика"@ru ;
+    rdfs:comment "National statistics presenting the value of marginal expenditure for a specific government department or budget category for a specified financial period"@en, "Национальная статистика, представляющая значение предельных расходов для конкретного государственного ведомства или бюджетной категории за указанный финансовый период"@ru .
+
+eco:InformationAggregation a rdfs:Class ;
+    rdfs:label "Information aggregation"@en, "Агрегация информации"@ru ;
+    rdfs:comment "Aggregation of information on the expenses of all departments for a specific financial period"@en, "Агрегация информации по расходам всех ведомств за определенный финансовый период"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:timePeriod a rdf:Property ;
+    rdfs:domain eco:NationalStatistics ;
+    rdfs:range xsd:gYearMonth ;
+    rdfs:label "Time period"@en, "Временной период"@ru ;
+    rdfs:comment "The time period for which expenditure data is provided"@en, "Временной период, за который представлены данные о расходах"@ru .
+
+eco:department a rdf:Property ;
+    rdfs:domain eco:NationalStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Department"@en, "Ведомство"@ru ;
+    rdfs:comment "Name of the government department or budget category"@en, "Название государственного ведомства или бюджетной категории"@ru .
+
+eco:dataStatus a rdf:Property ;
+    rdfs:domain eco:NationalStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Data status"@en, "Статус данных"@ru ;
+    rdfs:comment "Indicates whether the value is outturn or planned"@en, "Индикатор, указывающий, является ли значение фактическим или запланированным"@ru .
+
+eco:expenditure a rdf:Property ;
+    rdfs:domain eco:NationalStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Expenditure"@en, "Расходы"@ru ;
+    rdfs:comment "The value of the department's marginal expenditure in millions of pounds sterling"@en, "Значение предельных расходов ведомства в миллионах фунтов стерлингов"@ru .
+
+eco:timePeriod a rdf:Property ;
+    rdfs:domain eco:InformationAggregation ;
+    rdfs:range xsd:gYearMonth ;
+    rdfs:label "Time period"@en, "Временной период"@ru ;
+    rdfs:comment "The time period for which expenditure data is provided"@en, "Временной период, за который представлены данные о расходах"@ru .
+
+eco:dataStatus a rdf:Property ;
+    rdfs:domain eco:InformationAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Data status"@en, "Статус данных"@ru ;
+    rdfs:comment "Indicates whether the value is outturn or planned"@en, "Индикатор, указывающий, является ли значение фактическим или запланированным"@ru .
+
+eco:totalExpenditure a rdf:Property ;
+    rdfs:domain eco:InformationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total expenditure"@en, "Общие расходы"@ru ;
+    rdfs:comment "Total value of marginal expenditure of all departments in millions of pounds sterling"@en, "Общее значение предельных расходов всех ведомств в миллионах фунтов стерлингов"@ru .

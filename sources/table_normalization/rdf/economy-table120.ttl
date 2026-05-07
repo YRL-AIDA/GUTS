@@ -1,0 +1,111 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:CustomerInvoiceReport a rdfs:Class ;
+    rdfs:label "Customer invoice report"@en, "Отчет по счетам-фактурам клиентов"@ru ;
+    rdfs:comment "A customer account transaction report showing the hotel, room number, date, total amount, and commission details"@en, "Отчет по транзакциям клиентского счета с указанием отеля, номера комнаты, даты, общей суммы и деталей комиссии"@ru .
+
+eco:CustomerInvoiceSummary a rdfs:Class ;
+    rdfs:label "Customer invoice summary"@en, "Сводка по счетам-фактурам клиентов"@ru ;
+    rdfs:comment "Summary information on customer invoices for a specific time period"@en, "Сводная информация по счетам-фактурам клиентов за определенный временной период"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:company a rdf:Property ;
+    rdfs:domain eco:CustomerInvoiceReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Company"@en, "Компания"@ru ;
+    rdfs:comment "Name of the parent company"@en, "Название головной компании"@ru .
+
+eco:reference a rdf:Property ;
+    rdfs:domain eco:CustomerInvoiceReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Reference"@en, "Партнер"@ru ;
+    rdfs:comment "Name of the hotel or partner reference for the invoice"@en, "Название отеля или партнера для счета"@ru .
+
+eco:roomNumber a rdf:Property ;
+    rdfs:domain eco:CustomerInvoiceReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Room number"@en, "Номер комнаты"@ru ;
+    rdfs:comment "Room number associated with the invoice"@en, "Номер комнаты, связанный со счетом"@ru .
+
+eco:invoiceNumber a rdf:Property ;
+    rdfs:domain eco:CustomerInvoiceReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Invoice number@en, "Номер счета"@ru ;
+    rdfs:comment "Unique identifier for the invoice"@en, "Уникальный идентификатор счета"@ru .
+
+eco:date a rdf:Property ;
+    rdfs:domain eco:CustomerInvoiceReport ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date"@en, "Дата"@ru ;
+    rdfs:comment "Date when the invoice was issued"@en, "Дата выставления счета"@ru .
+
+eco:invoiceTotal a rdf:Property ;
+    rdfs:domain eco:CustomerInvoiceReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Invoice total"@en, "Общая сумма счета"@ru ;
+    rdfs:comment "Total amount of the invoice in British pounds sterling"@en, "Общая сумма счета в фунтах стерлингов"@ru .
+
+eco:day a rdf:Property ;
+    rdfs:domain eco:CustomerInvoiceReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Day"@en, "День"@ru ;
+    rdfs:comment "Day of the week when the invoice was issued"@en, "День недели, когда был выставлен счет"@ru .
+
+eco:commissionable a rdf:Property ;
+    rdfs:domain eco:CustomerInvoiceReport ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Commissionable"@en, "Комиссионные"@ru ;
+    rdfs:comment "Flag indicating whether the invoice is eligible for commission"@en, "Индикатор, указывающий, подлежит ли счет комиссии"@ru .
+
+eco:commissionAmount a rdf:Property ;
+    rdfs:domain eco:CustomerInvoiceReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Commission amount"@en, "Сумма комиссии"@ru ;
+    rdfs:comment "Commission amount in British pounds sterling for the invoice"@en, "Сумма комиссии в фунтах стерлингов для счета"@ru .
+
+
+
+
+
+
+eco:company a rdf:Property ;
+    rdfs:domain eco:CustomerInvoiceSummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Company"@en, "Компания"@ru ;
+    rdfs:comment "Name of the parent company"@en, "Название головной компании"@ru .
+
+eco:dateFrom a rdf:Property ;
+    rdfs:domain eco:CustomerInvoiceSummary ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date from"@en, "Дата от"@ru ;
+    rdfs:comment "Initial invoice date"@en, "Начальная дата выставления счета"@ru .
+
+eco:dateTo a rdf:Property ;
+    rdfs:domain eco:CustomerInvoiceSummary ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date to"@en, "Дата до"@ru ;
+    rdfs:comment "Final invoice date"@en, "Окончательная дата выставления счета"@ru .
+
+eco:totalAmount a rdf:Property ;
+    rdfs:domain eco:CustomerInvoiceSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total amount"@en, "Общая сумма"@ru ;
+    rdfs:comment "Total amount of all accounts in British pounds sterling"@en, "Общая сумма всех счетов в фунтах стерлингов"@ru .
+
+eco:commissionsNumber a rdf:Property ;
+    rdfs:domain eco:CustomerInvoiceSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of commissions"@en, "Количество комиссий"@ru ;
+    rdfs:comment "Total number of commissions paid"@en, "Общее количество уплаченных комиссий"@ru .
+
+eco:totalCommissionAmount a rdf:Property ;
+    rdfs:domain eco:CustomerInvoiceSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total commission amount"@en, "Общая сумма комиссий"@ru ;
+    rdfs:comment "Total commissions paid in British pounds sterling for all accounts"@en, "Общая сумма уплаченных комиссий в фунтах стерлингов для всех счетов"@ru .

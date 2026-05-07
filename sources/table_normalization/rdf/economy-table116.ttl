@@ -1,0 +1,48 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:HourlyEarnings a rdfs:Class ;
+    rdfs:label "Hourly earnings"@en, "Почасовая оплата"@ru ;
+    rdfs:comment "Hourly wage report for a specific geographic area, institutional sector, and time period"@en, "Отчет о почасовой оплате труда для конкретной географической области, институционального сектора и временного периода"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:timePeriod a rdf:Property ;
+    rdfs:domain eco:HourlyEarnings ;
+    rdfs:range xsd:gYearMonth ;
+    rdfs:label "Time period"@en, "Временной период"@ru ;
+    rdfs:comment "Time period for which the earnings data is reported"@en, "Временной период, за который представлены данные о заработной плате"@ru .
+
+eco:referenceArea a rdf:Property ;
+    rdfs:domain eco:HourlyEarnings ;
+    rdfs:range xsd:string ;
+    rdfs:label "Reference area"@en, "Географическая область"@ru ;
+    rdfs:comment "Name of the geographic area"@en, "Название географической области"@ru .
+
+eco:typeArea a rdf:Property ;
+    rdfs:domain eco:HourlyEarnings ;
+    rdfs:range xsd:string ;
+    rdfs:label "Area type"@en, "Тип области"@ru ;
+    rdfs:comment "Economies of countries that are members of the Organisation for Economic Co-operation and Development (OECD)"@en, "Экономики стран, входящие в организацию экономического сотрудничества и развития (ОЭСР)"@ru .
+
+eco:institutionalSector a rdf:Property ;
+    rdfs:domain eco:HourlyEarnings ;
+    rdfs:range xsd:string ;
+    rdfs:label "Institutional sector"@en, "Институциональный сектор"@ru ;
+    rdfs:comment "Institutional sector classification"@en, "Классификация институционального сектора"@ru .
+
+eco:measure a rdf:Property ;
+    rdfs:domain eco:HourlyEarnings ;
+    rdfs:range xsd:string ;
+    rdfs:label "Measure"@en, "Показатель"@ru ;
+    rdfs:comment "Type of earnings measure"@en, "Тип показателя заработной платы"@ru .
+
+eco:hourlyEarningsValue a rdf:Property ;
+    rdfs:domain eco:HourlyEarnings ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Hourly earnings value"@en, "Значение почасовой заработной платы"@ru ;
+    rdfs:comment "Hourly earnings value in the reference currency or index units"@en, "Значение почасовой заработной платы в условных денежных единицах или индексах"@ru .

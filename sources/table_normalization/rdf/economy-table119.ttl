@@ -1,0 +1,118 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:HotelSalesPerformance a rdfs:Class ;
+    rdfs:label "Hotel sales performance"@en, "Показатели продаж отеля"@ru ;
+    rdfs:comment "Key sales performance for the hotel"@en, "Основные показатели продаж отеля"@ru .
+
+eco:HotelCommissionDue a rdfs:Class ;
+    rdfs:label "Hotel commission due"@en, "Комиссионные выплаты отелю"@ru ;
+    rdfs:comment "Data on commission due to the hotel"@en, "Данные по комиссионным выплатам отелю"@ru .
+
+eco:HotelSalesPatterns a rdfs:Class ;
+    rdfs:label "Hotel sales patterns"@en, "Структура продаж отеля"@ru ;
+    rdfs:comment "Detailed sales patterns for the hotel"@en, "Подробная структура продаж для отеля"@ru .
+
+# ==================== Object Properties ====================
+
+eco:hasHotelCommissionDue a rdf:Property ;
+    rdfs:domain eco:HotelSalesPerformance ;
+    rdfs:range eco:HotelCommissionDue ;
+    rdfs:label "Hotel commission due"@en, "Комиссионные выплаты отелю"@ru ;
+    rdfs:comment "Hotel sales performance include commission due"@en, "Показатели продаж отеля включают комиссионные выплаты"@ru .
+
+eco:hasHotelSalesPatterns a rdf:Property ;
+    rdfs:domain eco:HotelSalesPerformance ;
+    rdfs:range eco:HotelSalesPatterns ;
+    rdfs:label "Hotel sales patterns"@en, "Структура продаж отеля"@ru ;
+    rdfs:comment "Hotel sales performance by day of the week"@en, "Показатели продаж отеля с разбивкой по дням недели"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:hotelName a rdf:Property ;
+    rdfs:domain eco:HotelSalesPerformance ;
+    rdfs:range xsd:string ;
+    rdfs:label "Hotel name"@en, "Название отеля"@ru ;
+    rdfs:comment "The name of the hotel for which sales figures are calculated"@en, "Название отеля для которого рассчитываются показатели продаж"@ru .
+
+eco:totalOrders a rdf:Property ;
+    rdfs:domain eco:HotelSalesPerformance ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total orders"@en, "Общее количество заказов"@ru ;
+    rdfs:comment "Total number of orders in the hotel"@en, "Общее количество заказов в отеле"@ru .
+
+eco:staffOrders a rdf:Property ;
+    rdfs:domain eco:HotelSalesPerformance ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Staff orders"@en, "Заказы персонала"@ru ;
+    rdfs:comment "Total number of staff orders"@en, "Общее количество заказов персонала"@ru .
+
+eco:clientsOrders a rdf:Property ;
+    rdfs:domain eco:HotelSalesPerformance ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Clients orders"@en, "Заказы клиентов"@ru ;
+    rdfs:comment "Total number of clients orders"@en, "Общее количество заказов клиентов"@ru .
+
+eco:operatingDays a rdf:Property ;
+    rdfs:domain eco:HotelSalesPerformance ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Operating days"@en, "Рабочие дни"@ru ;
+    rdfs:comment "Hotel operating days"@en, "Рабочие дни отеля"@ru .
+
+eco:averageOrders a rdf:Property ;
+    rdfs:domain eco:HotelSalesPerformance ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average orders"@en, "Среднее количество заказов"@ru ;
+    rdfs:comment "Average number of orders per day"@en, "Среднее количество заказов в день"@ru .
+
+eco:grossRevenues a rdf:Property ;
+    rdfs:domain eco:HotelSalesPerformance ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Gross revenues"@en, "Валовая выручка"@ru ;
+    rdfs:comment "Total hotel gross revenue in pounds sterling (GBP)"@en, "Итоговая валовая выручка отеля в фунтах стерлингов"@ru .
+
+eco:averageSpend a rdf:Property ;
+    rdfs:domain eco:HotelSalesPerformance ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average spend"@en, "Средние расходы"@ru ;
+    rdfs:comment "Average spend per order in pounds sterling (GBP)"@en, "Средние расходы на заказ в фунтах стерлингов"@ru .
+
+eco:currency a rdf:Property ;
+    rdfs:domain eco:HotelCommissionDue ;
+    rdfs:range xsd:string ;
+    rdfs:label "Currency"@en, "Валюта"@ru ;
+    rdfs:comment "Name of the calculation currency"@en, "Название валюты расчета"@ru .
+
+eco:commission a rdf:Property ;
+    rdfs:domain eco:HotelCommissionDue ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Commission"@en, "Комиссия"@ru ;
+    rdfs:comment "Net Commission to pay"@en, "Комиссия к уплате (нетто)"@ru .
+
+eco:vat a rdf:Property ;
+    rdfs:domain eco:HotelCommissionDue ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "VAT"@en, "НДС"@ru ;
+    rdfs:comment "Value Added Tax (VAT) 20%"@en, "Налог на добавленную стоимость (НДС) 20%"@ru .
+
+eco:totalAmount a rdf:Property ;
+    rdfs:domain eco:HotelCommissionDue ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total amount"@en, "Общая сумма"@ru ;
+    rdfs:comment "Total commission amount with VAT"@en, "Общая сумма комиссии с НДС"@ru .
+
+eco:weekDay a rdf:Property ;
+    rdfs:domain eco:HotelSalesPatterns ;
+    rdfs:range xsd:string ;
+    rdfs:label "Day of the week"@en, "День недели"@ru ;
+    rdfs:comment "Day of the week for daily sales patterns"@en, "День недели для анализа динамики ежедневных продаж"@ru .
+
+eco:salesPerDay a rdf:Property ;
+    rdfs:domain eco:HotelSalesPatterns ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Sales per day"@en, "Продаж в день"@ru ;
+    rdfs:comment "Number of sales on a given day of the week"@en, "Количество продаж в определенный день недели"@ru .
