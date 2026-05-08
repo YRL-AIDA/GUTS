@@ -1,0 +1,66 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:CaseOrder a rdfs:Class ;
+    rdfs:label "Case order"@en, "Порядок заказов"@ru ;
+    rdfs:comment "Information about orders associated with a specific operating group, category and number"@en, "Информация о заказах, связанных с конкретной операционной группой, категорией и номером"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:caseNumber a rdf:Property ;
+    rdfs:domain eco:CaseOrder ;
+    rdfs:range xsd:string ;
+    rdfs:label "Case number"@en, "Номер конкретного случая"@ru ;
+    rdfs:comment "Unique identifier for the case or order batch"@en, "Уникальный идентификатор для конкретного случая или партии заказов"@ru .
+
+eco:opNumber a rdf:Property ;
+    rdfs:domain eco:CaseOrder ;
+    rdfs:range xsd:string ;
+    rdfs:label "OP number"@en, "Операционная группа"@ru ;
+    rdfs:comment "Operational group identifier"@en, "Идентификатор операционной группы"@ru .
+
+eco:systemSize a rdf:Property ;
+    rdfs:domain eco:CaseOrder ;
+    rdfs:range xsd:string ;
+    rdfs:label "System size"@en, "Размер системы"@ru ;
+    rdfs:comment "System size specification"@en, "Спецификация размера системы"@ru .
+
+eco:unit a rdf:Property ;
+    rdfs:domain eco:CaseOrder ;
+    rdfs:range xsd:string ;
+    rdfs:label "Unit"@en, "Единица измерения"@ru ;
+    rdfs:comment "Unit of measurement for system size"@en, "Единица измерения для размера системы"@ru .
+
+eco:currency a rdf:Property ;
+    rdfs:domain eco:CaseOrder ;
+    rdfs:range xsd:string ;
+    rdfs:label "Currency"@en, "Валюта"@ru ;
+    rdfs:comment "Currency symbol for cost values"@en, "Символ валюты для значений стоимости"@ru .
+
+eco:category a rdf:Property ;
+    rdfs:domain eco:CaseOrder ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en, "Категория"@ru ;
+    rdfs:comment "Product category identifier"@en, "Идентификатор категории продукта"@ru .
+
+eco:partNumber a rdf:Property ;
+    rdfs:domain eco:CaseOrder ;
+    rdfs:range xsd:string ;
+    rdfs:label "Part number"@en, "Номер детали"@ru ;
+    rdfs:comment "The unique part number or article number for the item ordered"@en, "Уникальный номер детали или артикул для заказанного товара"@ru .
+
+eco:cost a rdf:Property ;
+    rdfs:domain eco:CaseOrder ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Cost"@en, "Стоимость"@ru ;
+    rdfs:comment "Unit cost of the part in the specified currency"@en, "Стоимость единицы детали в указанной валюте"@ru .
+
+eco:quantity a rdf:Property ;
+    rdfs:domain eco:CaseOrder ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Quantity"@en, "Количество"@ru ;
+    rdfs:comment "Quantity of ordered units of the part"@en, "Количество заказанных единиц детали"@ru .

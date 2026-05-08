@@ -1,0 +1,60 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:Ledger a rdfs:Class ;
+    rdfs:label "Ledger"@en, "Бухгалтерская книга"@ru ;
+    rdfs:comment "Ledger entries with product description, quantity, price, and total amount"@en, "Записи бухгалтерской книги с описанием товара, количеством, ценой и общей суммой"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:date a rdf:Property ;
+    rdfs:domain eco:Ledger ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date"@en, "Дата"@ru ;
+    rdfs:comment "Date when the invoice was issued"@en, "Дата выставления счета"@ru .
+
+eco:invoiceNumber a rdf:Property ;
+    rdfs:domain eco:Ledger ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Invoice number"@en, "Номер счета"@ru ;
+    rdfs:comment "Unique identifier for the invoice"@en, "Уникальный идентификатор счета"@ru .
+
+eco:customerIdentifier a rdf:Property ;
+    rdfs:domain eco:Ledger ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Customer identifier"@en, "Идентификатор клиента"@ru ;
+    rdfs:comment "Identifier of the customer associated with the invoice"@en, "Идентификатор клиента, связанного со счетом"@ru .
+
+eco:serialNumber a rdf:Property ;
+    rdfs:domain eco:Ledger ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Serial number"@en, "Порядковый номер"@ru ;
+    rdfs:comment "Sequential line number within the invoice"@en, "Порядковый номер строки в счете-фактуре"@ru .
+
+eco:description a rdf:Property ;
+    rdfs:domain eco:Ledger ;
+    rdfs:range xsd:string ;
+    rdfs:label "Description"@en, "Описание"@ru ;
+    rdfs:comment "Product name or description"@en, "Название или описание товара"@ru .
+
+eco:quantity a rdf:Property ;
+    rdfs:domain eco:Ledger ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Quantity"@en, "Количество"@ru ;
+    rdfs:comment "Number of units of the product"@en, "Количество единиц продукции"@ru .
+
+eco:rate a rdf:Property ;
+    rdfs:domain eco:Ledger ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Rate"@en, "Цена за единицу"@ru ;
+    rdfs:comment "Unit price of the product in the base currency"@en, "Цена за одну единицу товара в базовой валюте"@ru .
+
+eco:total a rdf:Property ;
+    rdfs:domain eco:Ledger ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total"@en, "Общая сумма"@ru ;
+    rdfs:comment "Total amount of production"@en, "Общая сумма продукции"@ru .

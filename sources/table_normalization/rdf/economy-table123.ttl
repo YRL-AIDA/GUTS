@@ -1,0 +1,58 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:FinancialStatement a rdfs:Class ;
+    rdfs:label "Financial statement"@en, "Финансовый отчет"@ru ;
+    rdfs:comment "A financial statement of income presenting the monetary amount for a specific financial category and subcategory for a given month"@en, "Финансовый отчет о прибылях и убытках, представляющий денежную сумму для конкретной финансовой категории и подкатегории за определенный месяц"@ru .
+
+eco:InformationAggregation a rdfs:Class ;
+    rdfs:label "Information aggregation"@en, "Агрегация информации"@ru ;
+    rdfs:comment "Aggregation of financial statement information"@en, "Агрегация информации финансовой отчетности"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:code a rdf:Property ;
+    rdfs:domain eco:FinancialStatement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Code"@en, "Код"@ru ;
+    rdfs:comment "Top-level financial category code"@en, "Код финансовой категории высшего уровня"@ru .
+
+eco:description a rdf:Property ;
+    rdfs:domain eco:FinancialStatement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Description"@en, "Описание"@ru ;
+    rdfs:comment "Description of a specific financial item within a category code"@en, "Описание конкретной финансовой статьи в рамках кода категории"@ru .
+
+eco:month a rdf:Property ;
+    rdfs:domain eco:FinancialStatement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Month"@en, "Месяц"@ru ;
+    rdfs:comment "Calendar month for which the financial amount is reported"@en, "Календарный месяц, за который указывается финансовая сумма"@ru .
+
+eco:amount a rdf:Property ;
+    rdfs:domain eco:FinancialStatement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Amount"@en, "Сумма"@ru ;
+    rdfs:comment "Monetary amount in US dollars for the given category, financial item, and month"@en, "Денежная сумма в долларах США для данной категории, финансовой статьи и месяца"@ru .
+
+eco:code a rdf:Property ;
+    rdfs:domain eco:InformationAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Code"@en, "Код"@ru ;
+    rdfs:comment "Top-level financial category code"@en, "Код финансовой категории высшего уровня"@ru .
+
+eco:description a rdf:Property ;
+    rdfs:domain eco:InformationAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Description"@en, "Описание"@ru ;
+    rdfs:comment "Description of a specific financial item within a category code"@en, "Описание конкретной финансовой статьи в рамках кода категории"@ru .
+
+eco:totalAmount a rdf:Property ;
+    rdfs:domain eco:InformationAggregation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total amount"@en, "Общая сумма"@ru ;
+    rdfs:comment "Total dollar amount for a given category and financial item for all time"@en, "Общая денежная сумма в долларах США для данной категории и финансовой статьи за все время"@ru .
