@@ -1,0 +1,76 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:ConstructionEstimate a rdfs:Class ;
+    rdfs:label "Construction estimate"@en, "Смета строительства"@ru ;
+    rdfs:comment "Estimate of building materials indicating section, category, quantity, pricing and tax information"@en, "Смета строительных материалов с указанием секции, категории, количества, ценообразования и информации о налоге"@ru .
+
+eco:InformationAggregation a rdfs:Class ;
+    rdfs:label "Information aggregation"@en, "Агрегация информации"@ru ;
+    rdfs:comment "Aggregation of information on construction estimates"@en, "Агрегация информации по смете строительства"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:section a rdf:Property ;
+    rdfs:domain eco:ConstructionEstimate ;
+    rdfs:range xsd:string ;
+    rdfs:label "Section"@en, "Секция"@ru ;
+    rdfs:comment "Construction section of the building project"@en, "Секция сооружения строительного проекта"@ru .
+
+eco:category a rdf:Property ;
+    rdfs:domain eco:ConstructionEstimate ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en, "Категория"@ru ;
+    rdfs:comment "High-level material category for roofing work"@en, "Категория материала верхнего уровня для кровельных работ"@ru .
+
+eco:lineItem a rdf:Property ;
+    rdfs:domain eco:ConstructionEstimate ;
+    rdfs:range xsd:string ;
+    rdfs:label "Line item"@en, "Товар"@ru ;
+    rdfs:comment "Specific product name or description"@en, "Конкретное название или описание товара"@ru .
+
+eco:quantity a rdf:Property ;
+    rdfs:domain eco:ConstructionEstimate ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Quantity"@en, "Количество"@ru ;
+    rdfs:comment "Number of units of the material required for this line item"@en, "Количество единиц материала, требуемых для данной строки сметы"@ru .
+
+eco:unit a rdf:Property ;
+    rdfs:domain eco:ConstructionEstimate ;
+    rdfs:range xsd:string ;
+    rdfs:label "Unit"@en, "Единица измерения"@ru ;
+    rdfs:comment "Unit of measurement for the product"@en, "Единица измерения для товара"@ru .
+
+eco:unitPrice a rdf:Property ;
+    rdfs:domain eco:ConstructionEstimate ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Unit price"@en, "Цена за единицу"@ru ;
+    rdfs:comment "Price per single unit of the material in the base currency"@en, "Цена за одну единицу материала в базовой валюте"@ru .
+
+eco:tax a rdf:Property ;
+    rdfs:domain eco:ConstructionEstimate ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Tax"@en, "Налог"@ru ;
+    rdfs:comment "Tax amount applied to this line item"@en, "Сумма налога, примененная к данной строке сметы"@ru .
+
+eco:total a rdf:Property ;
+    rdfs:domain eco:ConstructionEstimate ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total"@en, "Общая стоимость"@ru ;
+    rdfs:comment "Total item amount including material cost and tax"@en, "Общая стоимость товара, включая стоимость материалов и налоги"@ru .
+
+eco:totalTax a rdf:Property ;
+    rdfs:domain eco:InformationAggregation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total tax"@en, "Общий налог"@ru ;
+    rdfs:comment "The total amount of tax applied to the entire estimate"@en, "Общая сумма налога, примененная ко всей смете"@ru .
+
+eco:totalCost a rdf:Property ;
+    rdfs:domain eco:InformationAggregation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total cost"@en, "Общая стоимость"@ru ;
+    rdfs:comment "Total item amount including material cost and tax"@en, "Общая стоимость товара, включая стоимость материалов и налоги"@ru .
