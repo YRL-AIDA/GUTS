@@ -1,0 +1,94 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:ShowroomSales a rdfs:Class ;
+    rdfs:label "Showroom sales"@en, "Продажы шоурума"@ru ;
+    rdfs:comment "Comparison of budgeted and actual sales figures for a specific showroom, reporting period, and quarter"@en, "Сравнение бюджетных и фактических показателей продаж для конкретного шоурума, отчетного периода и квартала"@ru .
+
+eco:SalesReport a rdfs:Class ;
+    rdfs:label "Sales report"@en, "Отчет о продажах"@ru ;
+    rdfs:comment "Showroom sales report data"@en, "Данные отчета о продажах шоурумов"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:showroom a rdf:Property ;
+    rdfs:domain eco:ShowroomSales ;
+    rdfs:range xsd:string ;
+    rdfs:label "Showroom"@en, "Шоурум"@ru ;
+    rdfs:comment "Name of the showroom or sales location"@en, "Название шоурума или торговой точки"@ru .
+
+eco:date a rdf:Property ;
+    rdfs:domain eco:ShowroomSales ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date"@en, "Дата"@ru ;
+    rdfs:comment "Date of report creation"@en, "Дата создания отчета"@ru .
+
+eco:timePeriod a rdf:Property ;
+    rdfs:domain eco:ShowroomSales ;
+    rdfs:range xsd:gYearMonth ;
+    rdfs:label "Time period"@en, "Временной период"@ru ;
+    rdfs:comment "Time period label for the sales data"@en, "Временной интервал для данных о продажах"@ru .
+
+eco:quarter a rdf:Property ;
+    rdfs:domain eco:ShowroomSales ;
+    rdfs:range xsd:string ;
+    rdfs:label "Quarter"@en, "Квартал"@ru ;
+    rdfs:comment "Fiscal quarter within the period"@en, "Финансовый квартал в пределах периода"@ru .
+
+eco:budget a rdf:Property ;
+    rdfs:domain eco:ShowroomSales ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Budget"@en, "Планируемый показатель"@ru ;
+    rdfs:comment "Planned or budgeted sales value for the given period and quarter"@en, "Плановое или бюджетное значение продаж для заданного периода и квартала"@ru .
+
+eco:actual a rdf:Property ;
+    rdfs:domain eco:ShowroomSales ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Actual"@en, "Фактический показатель"@ru ;
+    rdfs:comment "Actual achieved sales value for the given period and quarter"@en, "Фактически достигнутое значение продаж для заданного периода и квартала"@ru .
+
+eco:growth a rdf:Property ;
+    rdfs:domain eco:ShowroomSales ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Growth"@en, "Рост"@ru ;
+    rdfs:comment "Variance between actual and budget values"@en, "Отклонение между фактическими и бюджетными значениями"@ru .
+
+
+
+
+
+
+
+eco:showroom a rdf:Property ;
+    rdfs:domain eco:SalesReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Showroom"@en, "Шоурум"@ru ;
+    rdfs:comment "Name of the showroom or sales location"@en, "Название шоурума или торговой точки"@ru .
+
+eco:date a rdf:Property ;
+    rdfs:domain eco:SalesReport ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date"@en, "Дата"@ru ;
+    rdfs:comment "Date of report creation"@en, "Дата создания отчета"@ru .
+
+eco:quarter a rdf:Property ;
+    rdfs:domain eco:SalesReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Quarter"@en, "Квартал"@ru ;
+    rdfs:comment "Fiscal quarter within the period"@en, "Финансовый квартал в пределах периода"@ru .
+
+eco:variance a rdf:Property ;
+    rdfs:domain eco:SalesReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Variance"@en, "Отклонение"@ru ;
+    rdfs:comment "The value of the deviation of the actual indicator"@en, "Значение отклонения фактического показателя"@ru .
+
+eco:actualGrowth a rdf:Property ;
+    rdfs:domain eco:SalesReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Actual growth"@en, "Фактический рост"@ru ;
+    rdfs:comment "The value of actual growth"@en, "Значение фактического роста"@ru .
