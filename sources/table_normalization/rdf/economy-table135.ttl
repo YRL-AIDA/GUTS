@@ -1,0 +1,88 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:ConsumerPriceIndex a rdfs:Class ;
+    rdfs:label "Consumer price index"@en, "Индекс потребительских цен"@ru ;
+    rdfs:comment "Consumer price index for urban wage earners and clerical workers:  U.S. city average, by expenditure category, February 2024"@en, "Индекс потребительских цен для городских наемных работников и офисных служащих: средний показатель по городам США по категориям расходов, февраль 2024 года"@ru .
+
+eco:MonthlyObservation a rdfs:Class ;
+    rdfs:label "Monthly observation"@en, "Ежемесячное наблюдение"@ru ;
+    rdfs:comment "Monthly observation of the consumer price index"@en, "Ежемесячное наблюдение индекса потребительских цен"@ru .
+
+eco:PercentageObservation a rdfs:Class ;
+    rdfs:label "Percentage observation"@en, "Процентное наблюдение"@ru ;
+    rdfs:comment "Percentage observation of the difference in the consumer price index for a given period of time"@en, "Процентное наблюдение разницы индекса потребительских цен на определенный период времени"@ru .
+
+# ==================== Object Properties ====================
+
+eco:hasMonthlyObservation a rdf:Property ;
+    rdfs:domain eco:ConsumerPriceIndex ;
+    rdfs:range eco:MonthlyObservation ;
+    rdfs:label "Monthly observation"@en, "Ежемесячное наблюдение"@ru ;
+    rdfs:comment "The consumer price index includes monthly observations of changes"@en, "Индекс потребительских цен включает ежемесячные наблюдения изменений"@ru .
+
+eco:hasPercentageObservation a rdf:Property ;
+    rdfs:domain eco:ConsumerPriceIndex ;
+    rdfs:range eco:PercentageObservation ;
+    rdfs:label "Percentage observation"@en, "Процентное наблюдение"@ru ;
+    rdfs:comment "The consumer price index includes percentage changes observed"@en, "Индекс потребительских цен включает процентные наблюдения изменений"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:indentLevel a rdf:Property ;
+    rdfs:domain eco:ConsumerPriceIndex ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Indent level"@en, "Уровень вложенности"@ru ;
+    rdfs:comment "Hierarchical indentation level of the category (0–4)"@en, "Уровень иерархической вложенности категории (0–4)"@ru .
+
+eco:expenditureCategory a rdf:Property ;
+    rdfs:domain eco:ConsumerPriceIndex ;
+    rdfs:range xsd:string ;
+    rdfs:label "Expenditure category"@en, "Категория расходов"@ru ;
+    rdfs:comment "Name of the category or group of expenditure"@en, "Название категории или группы расходов"@ru .
+
+eco:relativeImportance a rdf:Property ;
+    rdfs:domain eco:ConsumerPriceIndex ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Relative importance"@en, "Относительная важность"@ru ;
+    rdfs:comment "Relative importance weight of the category as of January 2024"@en, "Вес относительной важности категории по состоянию на январь 2024"@ru .
+
+eco:observationMonth a rdf:Property ;
+    rdfs:domain eco:MonthlyObservation ;
+    rdfs:range xsd:gYearMonth ;
+    rdfs:label "Observation month"@en, "Месяц наблюдения"@ru ;
+    rdfs:comment "Month of observation in MM-YYYY format"@en, "Месяц наблюдения в формате ММ-ГГГГ"@ru .
+
+eco:unadjustedIndex a rdf:Property ;
+    rdfs:domain eco:MonthlyObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Unadjusted index"@en, "Нескорректированный индекс"@ru ;
+    rdfs:comment "Unadjusted сonsumer price index value for the category and month"@en, "Нескорректированное значение индекса потребительских цен для данной категории и месяца"@ru .
+
+eco:seasonallyAdjustedIndex a rdf:Property ;
+    rdfs:domain eco:MonthlyObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Seasonally adjusted index"@en, "Сезонно скорректированный индекс"@ru ;
+    rdfs:comment "Seasonally adjusted сonsumer price index value for the category and month"@en, "Сезонно скорректированное значение индекса потребительских цен для данной категории и месяца"@ru .
+
+eco:timePeriod a rdf:Property ;
+    rdfs:domain eco:PercentageObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Time period"@en, "Временной период"@ru ;
+    rdfs:comment "The time period for which the percentage observation is made"@en, "Временной период за который делается процентное наблюдение"@ru .
+
+eco:unadjustedPercentChange a rdf:Property ;
+    rdfs:domain eco:PercentageObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Unadjusted percent change"@en, "Нескорректированное процентное изменение"@ru ;
+    rdfs:comment "Unadjusted percent change in the consumer price index over a specified time period"@en, "Нескорректированное процентное изменение индекса потребительских цен за определенный временной период"@ru .
+
+eco:seasonallyAdjustedPercentChange a rdf:Property ;
+    rdfs:domain eco:PercentageObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Seasonally adjusted percent change"@en, "Процентное изменение с учетом сезонных колебаний"@ru ;
+    rdfs:comment "Seasonally adjusted percentage change in the consumer price index over a given time period"@en, "Процентное изменение индекса потребительских цен с учетом сезонных колебаний за определенный временной период"@ru .
