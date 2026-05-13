@@ -1,0 +1,66 @@
+@prefix edu: <http://example.org/education#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+edu:MiddleLayerSuperOutputArea a rdfs:Class ;
+    rdfs:label "Middle Layer Super Output Area (MSOA)"@en, "Административная зона в Великобритании"@ru ;
+    rdfs:comment "Middle Layer Super Output Area (MSOA) for which literacy statistics are reported"@en, "Административная зона в Великобритании для которой публикуются статистические данные о грамотности"@ru .
+
+edu:LiteracyEstimate a rdfs:Class ;
+    rdfs:label "Literacy estimate"@en, "Оценка уровня грамотности"@ru ;
+    rdfs:comment "A statistical estimate of population distribution across literacy levels for a specific Middle Layer Super Output Area (MSOA)"@en, "Статистическая оценка распределения населения по уровням грамотности для конкретной административной зоны в Великобритании"@ru .
+
+# ==================== Object Properties ====================
+
+edu:hasLiteracyEstimate a rdf:Property ;
+    rdfs:domain edu:MiddleLayerSuperOutputArea ;
+    rdfs:range edu:LiteracyEstimate ;
+    rdfs:label "Literacy estimate"@en, "Оценка уровня грамотности"@ru ;
+    rdfs:comment "Statistical estimate of the literacy rate for a given electoral ward"@en, "Статистическая оценка уровня грамотности для определенной административной зоны в Великобритании"@ru .
+
+# ==================== Datatype Properties ====================
+
+edu:MSOACode a rdf:Property ;
+    rdfs:domain edu:MiddleLayerSuperOutputArea ;
+    rdfs:range xsd:string ;
+    rdfs:label "MSOA code"@en, "Код административной зоны в Великобритании"@ru ;
+    rdfs:comment "Unique geographical identifier for the Middle Layer Super Output Area (MSOA)"@en, "Уникальный географический идентификатор административной зоны в Великобритании"@ru .
+
+edu:MSOAName a rdf:Property ;
+    rdfs:domain edu:MiddleLayerSuperOutputArea ;
+    rdfs:range xsd:string ;
+    rdfs:label "MSOA name"@en, "Название административной зоны в Великобритании"@ru ;
+    rdfs:comment "Official name of the Middle Layer Super Output Area (MSOA)"@en, "Официальное название административной зоны в Великобритании"@ru .
+
+edu:population a rdf:Property ;
+    rdfs:domain edu:MiddleLayerSuperOutputArea ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Population"@en, "Население"@ru ;
+    rdfs:comment "Total resident population count within the Middle Layer Super Output Area (MSOA) boundary"@en, "Общее количество жителей в границах административной зоны в Великобритании"@ru .
+
+edu:literacyLevel a rdf:Property ;
+    rdfs:domain edu:LiteracyEstimate ;
+    rdfs:range xsd:string ;
+    rdfs:label "Literacy level"@en, "Уровень грамотности"@ru ;
+    rdfs:comment "The name of the level or category of literacy of the population"@en, "Название уровня или категории грамотности населения"@ru .
+
+edu:meanEstimate a rdf:Property ;
+    rdfs:domain edu:LiteracyEstimate ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Mean estimate"@en, "Средняя оценка"@ru ;
+    rdfs:comment "Average population estimate for a given literacy level"@en, "Средняя оценка численности населения для данного уровня грамотности"@ru .
+
+edu:lowerEstimate a rdf:Property ;
+    rdfs:domain edu:LiteracyEstimate ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Lower estimate"@en, "Нижняя оценка"@ru ;
+    rdfs:comment "Lower bound of the 95% confidence interval for the estimate"@en, "Нижняя граница 95% доверительного интервала для оценки"@ru .
+
+edu:upperEstimate a rdf:Property ;
+    rdfs:domain edu:LiteracyEstimate ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Upper estimate"@en, "Верхняя оценка"@ru ;
+    rdfs:comment "Upper bound of the 95% confidence interval for the estimate"@en, "Верхняя граница 95% доверительного интервала для оценки"@ru .

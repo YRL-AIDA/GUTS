@@ -1,0 +1,66 @@
+@prefix edu: <http://example.org/education#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+edu:Ward a rdfs:Class ;
+    rdfs:label "Ward"@en, "Избирательный округ"@ru ;
+    rdfs:comment "An electoral ward or administrative district for which literacy statistics are reported"@en, "Избирательный округ или административный район, для которого публикуются статистические данные о грамотности"@ru .
+
+edu:LiteracyEstimate a rdfs:Class ;
+    rdfs:label "Literacy estimate"@en, "Оценка уровня грамотности"@ru ;
+    rdfs:comment "A statistical estimate of population distribution across literacy levels for a specific ward"@en, "Статистическая оценка распределения населения по уровням грамотности для конкретного округа"@ru .
+
+# ==================== Object Properties ====================
+
+edu:hasLiteracyEstimate a rdf:Property ;
+    rdfs:domain edu:Ward ;
+    rdfs:range edu:LiteracyEstimate ;
+    rdfs:label "Literacy estimate"@en, "Оценка уровня грамотности"@ru ;
+    rdfs:comment "Statistical estimate of the literacy rate for a given electoral ward"@en, "Статистическая оценка уровня грамотности для определенного избирательного округа"@ru .
+
+# ==================== Datatype Properties ====================
+
+edu:wardCode a rdf:Property ;
+    rdfs:domain edu:Ward ;
+    rdfs:range xsd:string ;
+    rdfs:label "Ward code"@en, "Код избирательного округа"@ru ;
+    rdfs:comment "Unique alphanumeric code identifying the ward"@en, "Уникальный буквенно-цифровой код, идентифицирующий избирательный округ"@ru .
+
+edu:wardName a rdf:Property ;
+    rdfs:domain edu:Ward ;
+    rdfs:range xsd:string ;
+    rdfs:label "Ward name"@en, "Название избирательного округа"@ru ;
+    rdfs:comment "Name of the electoral ward or administrative region"@en, "Название избирательного округа или административного района"@ru .
+
+edu:population a rdf:Property ;
+    rdfs:domain edu:Ward ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Population"@en, "Население"@ru ;
+    rdfs:comment "Total population count of the ward"@en, "Общая численность населения округа"@ru .
+
+edu:literacyLevel a rdf:Property ;
+    rdfs:domain edu:LiteracyEstimate ;
+    rdfs:range xsd:string ;
+    rdfs:label "Literacy level"@en, "Уровень грамотности"@ru ;
+    rdfs:comment "The name of the level or category of literacy of the population"@en, "Название уровня или категории грамотности населения"@ru .
+
+edu:meanEstimate a rdf:Property ;
+    rdfs:domain edu:LiteracyEstimate ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Mean estimate"@en, "Средняя оценка"@ru ;
+    rdfs:comment "Average population estimate for a given literacy level"@en, "Средняя оценка численности населения для данного уровня грамотности"@ru .
+
+edu:lowerEstimate a rdf:Property ;
+    rdfs:domain edu:LiteracyEstimate ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Lower estimate"@en, "Нижняя оценка"@ru ;
+    rdfs:comment "Lower bound of the 95% confidence interval for the estimate"@en, "Нижняя граница 95% доверительного интервала для оценки"@ru .
+
+edu:upperEstimate a rdf:Property ;
+    rdfs:domain edu:LiteracyEstimate ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Upper estimate"@en, "Верхняя оценка"@ru ;
+    rdfs:comment "Upper bound of the 95% confidence interval for the estimate"@en, "Верхняя граница 95% доверительного интервала для оценки"@ru .
