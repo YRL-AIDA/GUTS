@@ -1,0 +1,36 @@
+@prefix edu: <http://example.org/education#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+edu:EducationStatistics a rdfs:Class ;
+    rdfs:label "Education statistics"@en, "Статистика образования"@ru ;
+    rdfs:comment "Educational participation and achievement statistics for a specific demographic, geographic, and academic subgroup"@en, "Статистика участия и достижений в образовании для определенной демографической, географической и академической подгруппы"@ru .
+
+# ==================== Datatype Properties ====================
+
+edu:academicYear a rdf:Property ;
+    rdfs:domain edu:EducationStatistics ;
+    rdfs:range xsd:gYearMonth ;
+    rdfs:label "Academic year"@en, "Учебный год"@ru ;
+    rdfs:comment "The academic year to which the statistical record pertains"@en, "Учебный год, к которому относится статистическая запись"@ru .
+
+edu:measureType a rdf:Property ;
+    rdfs:domain edu:EducationStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Measure type"@en, "Тип оценки"@ru ;
+    rdfs:comment "The type of statistical measure (participation or achievement)"@en, "Тип статистического измерения (участие или достижения)"@ru .
+
+edu:subject a rdf:Property ;
+    rdfs:domain edu:EducationStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Subject"@en, "Предмет"@ru ;
+    rdfs:comment "Name of the subject"@en, "Название учебного предмета"@ru .
+
+edu:value a rdf:Property ;
+    rdfs:domain edu:EducationStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Value"@en, "Значение"@ru ;
+    rdfs:comment "Quantitative value for a specific type of assessment and subject"@en, "Количественное значение для определенного типа оценки и предмета"@ru .

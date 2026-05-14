@@ -1,0 +1,76 @@
+@prefix edu: <http://example.org/education#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+edu:EducationStatistics a rdfs:Class ;
+    rdfs:label "Education statistics"@en, "Статистика образования"@ru ;
+    rdfs:comment "All ages FE and skills – Skills for life participation and achievement by level (2007/08 to 2011/12)"@en, "Профессиональное образование и навыки для всех возрастов – Навыки для участия в жизни и достижения успеха по уровням (2007/08 – 2011/12)"@ru .
+
+edu:StatisticsAggregation a rdfs:Class ;
+    rdfs:label "Aggregation of statistics"@en, "Агрегация статистики"@ru ;
+    rdfs:comment "Aggregation of statistical data across all subjects and levels for a given measurement type"@en, "Агрегация статистических данных по всем предметам и уровням для данного типа измерения"@ru .
+
+# ==================== Datatype Properties ====================
+
+edu:academicYear a rdf:Property ;
+    rdfs:domain edu:EducationStatistics ;
+    rdfs:range xsd:gYearMonth ;
+    rdfs:label "Academic year"@en, "Учебный год"@ru ;
+    rdfs:comment "The academic year to which the statistical record pertains"@en, "Учебный год, к которому относится статистическая запись"@ru .
+
+edu:measureType a rdf:Property ;
+    rdfs:domain edu:EducationStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Measure type"@en, "Тип оценки"@ru ;
+    rdfs:comment "The type of statistical measure (participation or achievement)"@en, "Тип статистического измерения (участие или достижения)"@ru .
+
+edu:subject a rdf:Property ;
+    rdfs:domain edu:EducationStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Subject"@en, "Предмет"@ru ;
+    rdfs:comment "Name of the subject"@en, "Название учебного предмета"@ru .
+
+edu:level a rdf:Property ;
+    rdfs:domain edu:EducationStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Level"@en, "Уровень"@ru ;
+    rdfs:comment "The qualification level"@en, "Уровень квалификации"@ru .
+
+edu:fundedLearners a rdf:Property ;
+    rdfs:domain edu:EducationStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Funded learners"@en, "Учащиеся, получающие финансирование"@ru ;
+    rdfs:comment "The number of students who receive funding over a given time period"@en, "Количественное значение учащихся, которые получают финансирование за определенный временной период"@ru .
+
+edu:percentChange a rdf:Property ;
+    rdfs:domain edu:EducationStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percent change"@en, "Процентное изменение"@ru ;
+    rdfs:comment "Percentage change from the previous time period"@en, "Процентное изменение по сравнению с предыдущим временным периодом"@ru .
+
+edu:academicYear a rdf:Property ;
+    rdfs:domain edu:StatisticsAggregation ;
+    rdfs:range xsd:gYearMonth ;
+    rdfs:label "Academic year"@en, "Учебный год"@ru ;
+    rdfs:comment "The academic year to which the statistical record pertains"@en, "Учебный год, к которому относится статистическая запись"@ru .
+
+edu:measureType a rdf:Property ;
+    rdfs:domain edu:StatisticsAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Measure type"@en, "Тип оценки"@ru ;
+    rdfs:comment "The type of statistical measure (participation or achievement)"@en, "Тип статистического измерения (участие или достижения)"@ru .
+
+edu:totalLearners a rdf:Property ;
+    rdfs:domain edu:StatisticsAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total learners"@en, "Всего учащихся"@ru ;
+    rdfs:comment "The total number of students receiving funding for a given time period"@en, "Общее количество учащихся, которые получают финансирование за определенный временной период"@ru .
+
+edu:totalPercentChange a rdf:Property ;
+    rdfs:domain edu:StatisticsAggregation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total percent change"@en, "Общее процентное изменение"@ru ;
+    rdfs:comment "Total percentage change from the previous time period"@en, "Общее процентное изменение по сравнению с предыдущим временным периодом"@ru .
