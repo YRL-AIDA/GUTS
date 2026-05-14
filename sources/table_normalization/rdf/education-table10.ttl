@@ -1,0 +1,30 @@
+@prefix edu: <http://example.org/education#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+edu:EducationStatistics a rdfs:Class ;
+    rdfs:label "Education statistics"@en, "Статистика образования"@ru ;
+    rdfs:comment "Statistics on participation or successful completion of adult education programs, broken down by educational institution"@en, "Статистика участия или успешного завершения программ взрослого образования с детализацией по образовательному учереждению"@ru .
+
+# ==================== Datatype Properties ====================
+
+edu:measureType a rdf:Property ;
+    rdfs:domain edu:EducationStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Measure type"@en, "Тип измерения"@ru ;
+    rdfs:comment "The type of statistical measure (participation or achievement)"@en, "Тип статистического измерения (участие или достижения)"@ru .
+
+edu:providerType a rdf:Property ;
+    rdfs:domain edu:EducationStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Provider type"@en, "Тип поставщика услуг"@ru ;
+    rdfs:comment "The type of educational institution providing the program"@en, "Тип образовательного учреждения, предоставляющего программу"@ru .
+
+edu:totalLearners a rdf:Property ;
+    rdfs:domain edu:EducationStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total learners"@en, "Всего учащихся"@ru ;
+    rdfs:comment "Absolute number of students for a given combination of measurement type and educational institution"@en, "Абсолютное количество учащихся для данной комбинации типа измерения и образовательного учреждения"@ru .

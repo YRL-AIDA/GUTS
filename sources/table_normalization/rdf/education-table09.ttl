@@ -1,0 +1,58 @@
+@prefix edu: <http://example.org/education#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+edu:EducationStatistics a rdfs:Class ;
+    rdfs:label "Education statistics"@en, "Статистика образования"@ru ;
+    rdfs:comment "Education statistics - Skills for life participation and achievement by level, age and provider type (2008/09)"@en, "Статистические данные по образованию - Навыки для участия в жизни и достижения успеха по уровням, возрасту и типу поставщика услуг (2008/09)"@ru .
+
+edu:StatisticsAggregation a rdfs:Class ;
+    rdfs:label "Aggregation of statistics"@en, "Агрегация статистики"@ru ;
+    rdfs:comment "Aggregation of statistical data across all subjects for a given measure type, and provider"@en, "Агрегация статистических данных по всем предметам для данного типа измерения и поставщика услуг"@ru .
+
+# ==================== Datatype Properties ====================
+
+edu:measureType a rdf:Property ;
+    rdfs:domain edu:EducationStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Measure type"@en, "Тип измерения"@ru ;
+    rdfs:comment "The type of statistical measure (participation or achievement)"@en, "Тип статистического измерения (участие или достижения)"@ru .
+
+edu:providerType a rdf:Property ;
+    rdfs:domain edu:EducationStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Provider type"@en, "Тип поставщика услуг"@ru ;
+    rdfs:comment "The type of educational institution providing the program"@en, "Тип образовательного учреждения, предоставляющего программу"@ru .
+
+edu:subject a rdf:Property ;
+    rdfs:domain edu:EducationStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Subject"@en, "Предмет"@ru ;
+    rdfs:comment "Name of the subject"@en, "Название учебного предмета"@ru .
+
+edu:learnerNumber a rdf:Property ;
+    rdfs:domain edu:EducationStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of learners"@en, "Количество учащихся"@ru ;
+    rdfs:comment "Number of learners for a given measure type, provider, and subject"@en, "Количество учащихся для данного типа измерения, поставщика услуг и предмета"@ru .
+
+edu:measureType a rdf:Property ;
+    rdfs:domain edu:StatisticsAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Measure type"@en, "Тип измерения"@ru ;
+    rdfs:comment "The type of statistical measure (participation or achievement)"@en, "Тип статистического измерения (участие или достижения)"@ru .
+
+edu:providerType a rdf:Property ;
+    rdfs:domain edu:StatisticsAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Provider type"@en, "Тип поставщика услуг"@ru ;
+    rdfs:comment "The type of educational institution providing the program"@en, "Тип образовательного учреждения, предоставляющего программу"@ru .
+
+edu:totalLearners a rdf:Property ;
+    rdfs:domain edu:StatisticsAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total learners"@en, "Всего учащихся"@ru ;
+    rdfs:comment "Total number of students across all subjects for a given measure type and provider"@en, "Общее количество учащихся по всем предметам для данного типа измерения и поставщика услуг"@ru .
