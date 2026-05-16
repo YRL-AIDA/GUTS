@@ -1,0 +1,60 @@
+@prefix edu: <http://example.org/education#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+edu:EducationDemographicStatistics a rdfs:Class ;
+    rdfs:label "Education demographic statistics"@en, "Демографические статистические данные в сфере образования"@ru ;
+    rdfs:comment "Statistics representing the demographic composition of students in the U.S. education system, broken down by state, demographic dimension, category, and metric type"@en, "Статистические данные, представляющие демографический состав учащихся в системе образования США с детализацией по штату, демографическому измерению, категории и типу метрики"@ru .
+
+# ==================== Datatype Properties ====================
+
+edu:state a rdf:Property ;
+    rdfs:domain edu:EducationDemographicStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "State"@en, "Штат"@ru ;
+    rdfs:comment "The US state or aggregated region for which the statistic is reported"@en, "Штат США или регион, для которого представлены статистические данные"@ru .
+
+edu:totalStudents a rdf:Property ;
+    rdfs:domain edu:EducationDemographicStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total students"@en, "Общее число учащихся"@ru ;
+    rdfs:comment "The total number of students in the state"@en, "Общее количество студентов в штате"@ru .
+
+edu:schoolsNumber a rdf:Property ;
+    rdfs:domain edu:EducationDemographicStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of schools"@en, "Число школ"@ru ;
+    rdfs:comment "The number of schools reporting data for the state"@en, "Количество школ, предоставивших данные по штату"@ru .
+
+edu:percentSchoolsReporting a rdf:Property ;
+    rdfs:domain edu:EducationDemographicStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percent schools reporting"@en, "Процент отчитавшихся школ"@ru ;
+    rdfs:comment "The percentage of schools in the state that reported data"@en, "Процент школ в штате, предоставивших данные"@ru .
+
+edu:demographicDimension a rdf:Property ;
+    rdfs:domain edu:EducationDemographicStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Demographic dimension"@en, "Демографическое измерение"@ru ;
+    rdfs:comment "The type of demographic dimension"@en, "Тип демографического измерения"@ru .
+
+edu:demographicCategory a rdf:Property ;
+    rdfs:domain edu:EducationDemographicStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Demographic category"@en, "Демографическая категория"@ru ;
+    rdfs:comment "The specific category within the demographic dimension"@en, "Конкретная категория в рамках демографического измерения"@ru .
+
+edu:number a rdf:Property ;
+    rdfs:domain edu:EducationDemographicStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number"@en, "Количество"@ru ;
+    rdfs:comment "Numerical value of quantity"@en, "Числовое значение количества"@ru .
+
+edu:percent a rdf:Property ;
+    rdfs:domain edu:EducationDemographicStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percent"@en, "Процент"@ru ;
+    rdfs:comment "Percentage of quantity"@en, "Процентное значение от количества"@ru .

@@ -1,0 +1,48 @@
+@prefix edu: <http://example.org/education#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+edu:CommunityLearningParticipation a rdfs:Class ;
+    rdfs:label "Community learning participation"@en, "Участие в общественном обучении"@ru ;
+    rdfs:comment "Community learning participation by narrow age band, gender, learners with learning difficulties and/or disabilities and ethnicity (2015/16 to 2018/19)"@en, "Участие в общественном обучении по узким возрастным группам, полу, учащимся с трудностями в обучении и/или инвалидностью, а также по этнической принадлежности (2015/16 – 2018/19 учебный год)"@ru .
+
+# ==================== Datatype Properties ====================
+
+edu:academicYear a rdf:Property ;
+    rdfs:domain edu:CommunityLearningParticipation ;
+    rdfs:range xsd:gYearMonth ;
+    rdfs:label "Academic year"@en, "Учебный год"@ru ;
+    rdfs:comment "The academic year in format YYYY/MM"@en, "Учебный год в формате ГГГГ/ММ"@ru .
+
+edu:programType a rdf:Property ;
+    rdfs:domain edu:CommunityLearningParticipation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Program type"@en, "Тип программы"@ru ;
+    rdfs:comment "The type of community learning program"@en, "Тип программы общественного обучения"@ru .
+
+edu:dimension a rdf:Property ;
+    rdfs:domain edu:CommunityLearningParticipation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Dimension"@en, "Измерение"@ru ;
+    rdfs:comment "The demographic dimension being reported"@en, "Демографическое измерение, по которому представлена статистика"@ru .
+
+edu:category a rdf:Property ;
+    rdfs:domain edu:CommunityLearningParticipation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en, "Категория"@ru ;
+    rdfs:comment "The specific category value within the demographic dimension"@en, "Конкретное значение категории внутри демографического измерения"@ru .
+
+edu:totalNumber a rdf:Property ;
+    rdfs:domain edu:CommunityLearningParticipation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total number"@en, "Общее количество"@ru ;
+    rdfs:comment "Total number of learners in this program"@en, "Общее количество обучающихся по данной программе"@ru .
+
+edu:percentage a rdf:Property ;
+    rdfs:domain edu:CommunityLearningParticipation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percentage"@en, "Процент"@ru ;
+    rdfs:comment "Percentage of total number of learners"@en, "Процент от общего числа обучающихся"@ru .

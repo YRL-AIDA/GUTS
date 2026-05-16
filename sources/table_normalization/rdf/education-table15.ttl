@@ -1,0 +1,36 @@
+@prefix edu: <http://example.org/education#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+edu:StudentPerformance a rdfs:Class ;
+    rdfs:label "Student performance"@en, "Успеваемость студента"@ru ;
+    rdfs:comment "Information on students' academic performance, including grades for a specific subject for a specific academic year"@en, "Информация по академической успеваемости студентов, включающая баллы по определенному предмету за конкретный учебный год"@ru .
+
+# ==================== Datatype Properties ====================
+
+edu:studentName a rdf:Property ;
+    rdfs:domain edu:StudentPerformance ;
+    rdfs:range xsd:string ;
+    rdfs:label "Student name"@en, "Имя студента"@ru ;
+    rdfs:comment "The surname of the student"@en, "Фамилия студента"@ru .
+
+edu:subject a rdf:Property ;
+    rdfs:domain edu:StudentPerformance ;
+    rdfs:range xsd:string ;
+    rdfs:label "Subject"@en, "Предмет"@ru ;
+    rdfs:comment "The subject of assessment"@en, "Предмет оценки"@ru .
+
+edu:year a rdf:Property ;
+    rdfs:domain edu:StudentPerformance ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "The academic year in which the assessment took place"@en, "Учебный год, в котором проводилась оценка"@ru .
+
+edu:score a rdf:Property ;
+    rdfs:domain edu:StudentPerformance ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Score"@en, "Балл"@ru ;
+    rdfs:comment "The numeric score achieved by the student in the specified subject and year"@en, "Числовой балл, полученный студентом по указанному предмету и году обучения"@ru .

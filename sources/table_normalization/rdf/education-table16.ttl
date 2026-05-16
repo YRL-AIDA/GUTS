@@ -1,0 +1,148 @@
+@prefix edu: <http://example.org/education#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+edu:ContinuousAssessment a rdfs:Class ;
+    rdfs:label "Continuous assessment"@en, "Непрерывная оценка"@ru ;
+    rdfs:comment "A continuous assessment record representing a student's grades in a particular subject for an academic term"@en, "Ведомость непрерывного оценивания, представляющая баллы студента по определенному предмету за учебный триместр"@ru .
+
+edu:TestTask a rdfs:Class ;
+    rdfs:label "Test task"@en, "Тестовая задача"@ru ;
+    rdfs:comment "Information on the assessment of each individual test task"@en, "Информация по оцениванию каждой отдельной тестовой задачи"@ru .
+
+edu:Examination a rdfs:Class ;
+    rdfs:label "Examination"@en, "Экзамен"@ru ;
+    rdfs:comment "General assessment data, including test scores, exam scores, and overall scores"@en, "Общие данные по оцениванию, включая оценку за тестовые задачи, оценку за экзамен и общую оценку"@ru .
+
+# ==================== Object Properties ====================
+
+edu:hasTestTask a rdf:Property ;
+    rdfs:domain edu:ContinuousAssessment ;
+    rdfs:range edu:TestTask ;
+    rdfs:label "Test task"@en, "Тестовая задача"@ru ;
+    rdfs:comment "Continuous assessment form for a student including assessments for test tasks"@en, "Ведомость непрерывного оценивания для студента включая оценки по тестовым задачам"@ru .
+
+edu:hasExamination a rdf:Property ;
+    rdfs:domain edu:ContinuousAssessment ;
+    rdfs:range edu:Examination ;
+    rdfs:label "Examination"@en, "Экзамен"@ru ;
+    rdfs:comment "A continuous assessment report for a student including overall test scores, exam scores, and final grade"@en, "Ведомость непрерывного оценивания для студента включая общие оценки по тестовым задачам, экзамену и итоговый балл"@ru .
+
+# ==================== Datatype Properties ====================
+
+edu:collegeName a rdf:Property ;
+    rdfs:domain edu:ContinuousAssessment ;
+    rdfs:range xsd:string ;
+    rdfs:label "College name"@en, "Название колледжа"@ru ;
+    rdfs:comment "The full name of the college where the student is studying"@en, "Полное название колледжа, в котором обучается студент"@ru .
+
+edu:trimester a rdf:Property ;
+    rdfs:domain edu:ContinuousAssessment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Trimester"@en, "Триместр"@ru ;
+    rdfs:comment "The academic term within the session"@en, "Академический семестр в рамках учебного года"@ru .
+
+edu:session a rdf:Property ;
+    rdfs:domain edu:ContinuousAssessment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Session"@en, "Сессия"@ru ;
+    rdfs:comment "The academic session in format YYYY/YYYY to which the assessment pertains"@en, "Учебная сессия в формате ГГГГ/ГГГГ, к которой относится оценивание"@ru .
+
+edu:class a rdf:Property ;
+    rdfs:domain edu:ContinuousAssessment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Class"@en, "Класс"@ru ;
+    rdfs:comment "The class or grade identifier"@en, "Идентификатор класса или группы"@ru .
+
+edu:subject a rdf:Property ;
+    rdfs:domain edu:ContinuousAssessment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Subject"@en, "Предмет"@ru ;
+    rdfs:comment "The subject of assessment"@en, "Предмет оценивания"@ru .
+
+edu:serialNumber a rdf:Property ;
+    rdfs:domain edu:ContinuousAssessment ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Serial number"@en, "Порядковый номер"@ru ;
+    rdfs:comment "The serial number of the entry with grades in the statement"@en, "Порядковый номер записи с оценками в ведомости"@ru .
+
+edu:studentName a rdf:Property ;
+    rdfs:domain edu:ContinuousAssessment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Student name"@en, "Имя студента"@ru ;
+    rdfs:comment "Student's full name"@en, "Полное имя студента"@ru .
+
+edu:testName a rdf:Property ;
+    rdfs:domain edu:TestTask ;
+    rdfs:range xsd:string ;
+    rdfs:label "Test name"@en, "Название теста"@ru ;
+    rdfs:comment "The name or identifier of a specific test"@en, "Название или идентификатор конкретного теста"@ru .
+
+edu:score a rdf:Property ;
+    rdfs:domain edu:TestTask ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Score"@en, "Балл"@ru ;
+    rdfs:comment "The numeric score achieved by the student in the specified test"@en, "Числовой балл, полученный студентом в указанном тесте"@ru .
+
+edu:maxScore a rdf:Property ;
+    rdfs:domain edu:TestTask ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Max score"@en, "Максимальный балл"@ru ;
+    rdfs:comment "The maximum possible score for the test"@en, "Максимально возможный балл для теста"@ru .
+
+edu:assignment a rdf:Property ;
+    rdfs:domain edu:TestTask ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Assignment"@en, "Задание"@ru ;
+    rdfs:comment "Separate point for the task"@en, "Отдельный балл за задание"@ru .
+
+edu:maxAssignmentScore a rdf:Property ;
+    rdfs:domain edu:TestTask ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Max assignment score"@en, "Максимальный балл за задание"@ru ;
+    rdfs:comment "Maximum possible score for the assignment"@en, "Максимальный возможный балл за задание"@ru .
+
+edu:totalScore a rdf:Property ;
+    rdfs:domain edu:TestTask ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total score"@en, "Общий балл"@ru ;
+    rdfs:comment "The overall score received by the student"@en, "Общий балл, полученный студентом"@ru .
+
+edu:maxTotalScore a rdf:Property ;
+    rdfs:domain edu:TestTask ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Max total score"@en, "Максимальный общий балл"@ru ;
+    rdfs:comment "The maximum possible total score for all test"@en, "Максимально возможный общий балл для всего теста"@ru .
+
+edu:position a rdf:Property ;
+    rdfs:domain edu:TestTask ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Position"@en, "Позиция"@ru ;
+    rdfs:comment "The student's rank position relative to peers for the corresponding aggregated score"@en, "Место студента в рейтинге относительно сверстников по соответствующему суммарному баллу"@ru .
+
+edu:assessmentComponent a rdf:Property ;
+    rdfs:domain edu:Examination ;
+    rdfs:range xsd:string ;
+    rdfs:label "Assessment component"@en, "Компонент оценивания"@ru ;
+    rdfs:comment "The type of assessment component"@en, "Тип компонента оценки"@ru .
+
+edu:score a rdf:Property ;
+    rdfs:domain edu:Examination ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Score"@en, "Балл"@ru ;
+    rdfs:comment "The numeric score achieved by the student in the specified assessment component"@en, "Числовой балл, полученный студентом в указанном компоненте оценки"@ru .
+
+edu:maxScore a rdf:Property ;
+    rdfs:domain edu:Examination ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Max score"@en, "Максимальный балл"@ru ;
+    rdfs:comment "The maximum possible score for the assessment component"@en, "Максимально возможный балл для компонента оценивания"@ru .
+
+edu:position a rdf:Property ;
+    rdfs:domain edu:Examination ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Position"@en, "Позиция"@ru ;
+    rdfs:comment "The student's rank position relative to peers for the corresponding aggregated score"@en, "Место студента в рейтинге относительно сверстников по соответствующему суммарному баллу"@ru .
