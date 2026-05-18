@@ -1,0 +1,66 @@
+@prefix edu: <http://example.org/education#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+edu:StudentProgress a rdfs:Class ;
+    rdfs:label "Student progress"@en, "Прогресс студента"@ru ;
+    rdfs:comment "Student progress information presenting the transfer high school progress score and student outcome metrics with comparison ranges to similar schools and city benchmarks"@en, "Информация по прогрессу студентов, представляющая балл прогресса трансферной старшей школы и метрики результатов учащихся с диапазонами сравнения с похожими школами и городскими эталонами"@ru .
+
+# ==================== Datatype Properties ====================
+
+edu:dbn a rdf:Property ;
+    rdfs:domain edu:StudentProgress ;
+    rdfs:range xsd:string ;
+    rdfs:label "DBN"@en, "Код школы"@ru ;
+    rdfs:comment "The unique alphanumeric identifier for the school"@en, "Уникальный буквенно-цифровой идентификатор школы"@ru .
+
+edu:schoolName a rdf:Property ;
+    rdfs:domain edu:StudentProgress ;
+    rdfs:range xsd:string ;
+    rdfs:label "School name"@en, "Название школы"@ru ;
+    rdfs:comment "The official name of the educational institution"@en, "Официальное название образовательного учреждения"@ru .
+
+edu:progressScore a rdf:Property ;
+    rdfs:domain edu:StudentProgress ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Progress score"@en, "Оценка прогресса"@ru ;
+    rdfs:comment "The overall numeric progress score for the school"@en, "Общий числовой показатель успеваемости школы"@ru .
+
+edu:progressGrade a rdf:Property ;
+    rdfs:domain edu:StudentProgress ;
+    rdfs:range xsd:string ;
+    rdfs:label "Progress grade"@en, "Градация прогресса"@ru ;
+    rdfs:comment "The letter grade summarizing the progress score (A, B, C, D, or F)"@en, "Буквенная оценка, суммирующая результаты промежуточных тестов (A, B, C, D или F)"@ru .
+
+edu:dimension a rdf:Property ;
+    rdfs:domain edu:StudentProgress ;
+    rdfs:range xsd:string ;
+    rdfs:label "Dimension"@en, "Измерение"@ru ;
+    rdfs:comment "The type of progress metric"@en, "Тип показателя прогресса"@ru .
+
+edu:comparisonScope a rdf:Property ;
+    rdfs:domain edu:StudentProgress ;
+    rdfs:range xsd:string ;
+    rdfs:label "Comparison scope"@en, "Область сравнения"@ru ;
+    rdfs:comment "The reference group for comparison (peer, city)"@en, "Контрольная группа для сравнения (аналог, город)"@ru .
+
+edu:minRange a rdf:Property ;
+    rdfs:domain edu:StudentProgress ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Min range"@en, "Минимальный диапазон"@ru ;
+    rdfs:comment "The lower bound of the value range for the given dimension and comparison scope"@en, "Нижняя граница диапазона значений для заданного измерения и области сравнения"@ru .
+
+edu:maxRange a rdf:Property ;
+    rdfs:domain edu:StudentProgress ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Max range"@en, "Максимальный диапазон"@ru ;
+    rdfs:comment "The upper bound of the value range for the given dimension and comparison scope"@en, "Верхняя граница диапазона значений для заданного измерения и области сравнения"@ru .
+
+edu:rangePercent a rdf:Property ;
+    rdfs:domain edu:StudentProgress ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percent of range"@en, "Процент от диапазона"@ru ;
+    rdfs:comment "The school's position within the comparison range, expressed as a percentage"@en, "Позиция школы в диапазоне сравнения, выраженная в процентах"@ru .
