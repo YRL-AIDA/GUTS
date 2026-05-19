@@ -1,0 +1,150 @@
+@prefix edu: <http://example.org/education#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+edu:AnnualEducationalResult a rdfs:Class ;
+    rdfs:label "Annual educational result"@en, "Ежегодные результаты в сфере образования"@ru ;
+    rdfs:comment "Annual educational results representing a student's grades in a given subject and assessment period with accompanying demographic and academic metadata"@en, "Ежегодные результаты в сфере образования, представляющие оценки учащегося по определенному предмету и оценочному периоду с сопутствующими демографическими и академическими метаданными"@ru .
+
+edu:SubjectGrade a rdfs:Class ;
+    rdfs:label "Subject grade"@en, "Оценка по предмету"@ru ;
+    rdfs:comment "Subject grade for semesters"@en, "Оценка по предмету за семестры"@ru .
+
+# ==================== Object Properties ====================
+
+edu:hasSubjectGrade a rdf:Property ;
+    rdfs:domain edu:AnnualEducationalResult ;
+    rdfs:range edu:SubjectGrade ;
+    rdfs:label "Subject grade"@en, "Оценка по предмету"@ru ;
+    rdfs:comment "The grade for a subject included in the student's annual results"@en, "Оценка по предмету входящая в ежегодные результаты студента"@ru .
+
+# ==================== Datatype Properties ====================
+
+edu:serialNumber a rdf:Property ;
+    rdfs:domain edu:AnnualEducationalResult ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Serial number"@en, "Порядковый номер"@ru ;
+    rdfs:comment "Student's result record ordinal number"@en, "Порядковый номер записи результата студента"@ru .
+
+edu:admNumber a rdf:Property ;
+    rdfs:domain edu:AnnualEducationalResult ;
+    rdfs:range xsd:integer ;
+    rdfs:label "ADM number"@en, "Номер приема"@ru ;
+    rdfs:comment "The unique admission number assigned to the student"@en, "Уникальный регистрационный номер, присвоенный студенту"@ru .
+
+edu:studentName a rdf:Property ;
+    rdfs:domain edu:AnnualEducationalResult ;
+    rdfs:range xsd:string ;
+    rdfs:label "Student name"@en, "Имя студента"@ru ;
+    rdfs:comment "Name of a student studying in a particular subject"@en, "Имя студента учащегося по определенному предмету"@ru .
+
+edu:fatherName a rdf:Property ;
+    rdfs:domain edu:AnnualEducationalResult ;
+    rdfs:range xsd:string ;
+    rdfs:label "Father name"@en, "Имя отца"@ru ;
+    rdfs:comment "Name of the student's father"@en, "Имя отца учащегося"@ru .
+
+edu:category a rdf:Property ;
+    rdfs:domain edu:AnnualEducationalResult ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en, "Категория"@ru ;
+    rdfs:comment "The social category of the student"@en, "Социальная категория студента"@ru .
+
+edu:attendance a rdf:Property ;
+    rdfs:domain edu:AnnualEducationalResult ;
+    rdfs:range xsd:string ;
+    rdfs:label "Attendance"@en, "Посещаемость"@ru ;
+    rdfs:comment "Attendance information for the student"@en, "Информация о посещаемости студента"@ru .
+
+edu:grandTotal a rdf:Property ;
+    rdfs:domain edu:AnnualEducationalResult ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Grand total"@en, "Общий итог"@ru ;
+    rdfs:comment "The overall score for all student grades"@en, "Общий итог по всем оценкам студента"@ru .
+
+edu:result a rdf:Property ;
+    rdfs:domain edu:AnnualEducationalResult ;
+    rdfs:range xsd:string ;
+    rdfs:label "Result"@en, "Результат"@ru ;
+    rdfs:comment "Student's final result"@en, "Итоговый результат студента"@ru .
+
+edu:markPercentage a rdf:Property ;
+    rdfs:domain edu:AnnualEducationalResult ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Percentage of marks"@en, "Процент оценок"@ru ;
+    rdfs:comment "Student's grade percentage"@en, "Процент оценок студента"@ru .
+
+edu:grade a rdf:Property ;
+    rdfs:domain edu:AnnualEducationalResult ;
+    rdfs:range xsd:string ;
+    rdfs:label "Grade"@en, "Ранг"@ru ;
+    rdfs:comment "Student grade according to grades received"@en, "Ранг студента в соответствии с полученными оценками"@ru .
+
+edu:gender a rdf:Property ;
+    rdfs:domain edu:AnnualEducationalResult ;
+    rdfs:range xsd:string ;
+    rdfs:label "Gender"@en, "Пол"@ru ;
+    rdfs:comment "The gender of the student"@en, "Пол студента"@ru .
+
+edu:motherName a rdf:Property ;
+    rdfs:domain edu:AnnualEducationalResult ;
+    rdfs:range xsd:string ;
+    rdfs:label "Mother's name"@en, "Имя матери"@ru ;
+    rdfs:comment "Name of the student's mother"@en, "Имя матери студента"@ru .
+
+edu:birthdate a rdf:Property ;
+    rdfs:domain edu:AnnualEducationalResult ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date of birth"@en, "Дата рождения"@ru ;
+    rdfs:comment "Student's date of birth"@en, "Дата рождения студента"@ru .
+
+edu:residentialAddress a rdf:Property ;
+    rdfs:domain edu:AnnualEducationalResult ;
+    rdfs:range xsd:string ;
+    rdfs:label "Residential address"@en, "Адрес проживания"@ru ;
+    rdfs:comment "Student's residential address"@en, "Адрес проживания студента"@ru .
+
+edu:nationality a rdf:Property ;
+    rdfs:domain edu:AnnualEducationalResult ;
+    rdfs:range xsd:string ;
+    rdfs:label "Nationality"@en, "Национальность"@ru ;
+    rdfs:comment "Student's nationality"@en, "Национальность студента"@ru .
+
+edu:absent a rdf:Property ;
+    rdfs:domain edu:AnnualEducationalResult ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Absent"@en, "Отсутствующий"@ru ;
+    rdfs:comment "Student absence flag"@en, "Флаг отсутствия студента"@ru .
+
+edu:subject a rdf:Property ;
+    rdfs:domain edu:SubjectGrade ;
+    rdfs:range xsd:string ;
+    rdfs:label "Subject"@en, "Предмет"@ru ;
+    rdfs:comment "Name of the academic subject"@en, "Название академического предмета"@ru .
+
+edu:firstTerm a rdf:Property ;
+    rdfs:domain edu:SubjectGrade ;
+    rdfs:range xsd:integer ;
+    rdfs:label "First term assessment"@en, "Оценка первого семестра"@ru ;
+    rdfs:comment "Student's grade for the first semester"@en, "Оценка студента за первый семестр"@ru .
+
+edu:secondTerm a rdf:Property ;
+    rdfs:domain edu:SubjectGrade ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Second term assessment"@en, "Оценка второго семестра"@ru ;
+    rdfs:comment "Student's grade for the second semester"@en, "Оценка студента за второй семестр"@ru .
+
+edu:final a rdf:Property ;
+    rdfs:domain edu:SubjectGrade ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Final term assessment"@en, "Оценка итогового семестра"@ru ;
+    rdfs:comment "Student's grade for the final semester"@en, "Оценка студента за итоговый семестр"@ru .
+
+edu:total a rdf:Property ;
+    rdfs:domain edu:SubjectGrade ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total assessment"@en, "Итоговая оценка"@ru ;
+    rdfs:comment "The student's final grade for the subject"@en, "Итоговая оценка студента по предмету"@ru .

@@ -1,0 +1,92 @@
+@prefix edu: <http://example.org/education#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+edu:ExperimentalMeasurement a rdfs:Class ;
+    rdfs:label "Experimental measurement"@en, "Экспериментальное измерение"@ru ;
+    rdfs:comment "An experimental measurement of participant assessment in an educational intervention study comparing computer-based and traditional instructional methods"@en, "Экспериментальное измерение оценки для участника в исследовании образовательного вмешательства, сравнивающем методы компьютерного и традиционного обучения"@ru .
+
+edu:GeneralInformation a rdfs:Class ;
+    rdfs:label "General information"@en, "Общие данные"@ru ;
+    rdfs:comment "Overall data for all experimental measurements for the participant"@en, "Общие данные по всем экспериментальным измерением для участника"@ru .
+
+edu:AverageIndicator a rdfs:Class ;
+    rdfs:label "Average indicator measurement"@en, "Среднее значение показателя измерения"@ru ;
+    rdfs:comment "Average values ​​of the assessment indicators of all participants"@en, "Средние значения показателей измерения оценки всех участников"@ru .
+
+# ==================== Datatype Properties ====================
+
+edu:wpId a rdf:Property ;
+    rdfs:domain edu:ExperimentalMeasurement ;
+    rdfs:range xsd:integer ;
+    rdfs:label "WP id"@en, "Идентификатор участника"@ru ;
+    rdfs:comment "The unique identifier for the participant or observation unit in the experiment"@en, "Уникальный идентификатор участника или наблюдательной единицы в эксперименте"@ru .
+
+edu:className a rdf:Property ;
+    rdfs:domain edu:ExperimentalMeasurement ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Class name"@en, "Название класса"@ru ;
+    rdfs:comment "The numeric code of the class to which the participant was assigned"@en, "Числовой код класса, к которому был приписан участник"@ru .
+
+edu:method a rdf:Property ;
+    rdfs:domain edu:ExperimentalMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Method"@en, "Метод"@ru ;
+    rdfs:comment "The experimental method"@en, "Метод эксперимента"@ru .
+
+edu:measurementNumber a rdf:Property ;
+    rdfs:domain edu:ExperimentalMeasurement ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Measurement number "@en, "Номер измерения"@ru ;
+    rdfs:comment "The sequential number of the measurement/session/task"@en, "Порядковый номер измерения/сессии/задания"@ru .
+
+edu:score a rdf:Property ;
+    rdfs:domain edu:ExperimentalMeasurement ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Score"@en, "Оценка"@ru ;
+    rdfs:comment "The numeric score achieved by the participant for the specified measurement"@en, "Числовой балл, полученный участником за указанное измерение"@ru .
+
+edu:wpId a rdf:Property ;
+    rdfs:domain edu:GeneralInformation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "WP id"@en, "Идентификатор участника"@ru ;
+    rdfs:comment "The unique identifier for the participant or observation unit in the experiment"@en, "Уникальный идентификатор участника или наблюдательной единицы в эксперименте"@ru .
+
+edu:className a rdf:Property ;
+    rdfs:domain edu:GeneralInformation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Class name"@en, "Название класса"@ru ;
+    rdfs:comment "The numeric code of the class to which the participant was assigned"@en, "Числовой код класса, к которому был приписан участник"@ru .
+
+edu:method a rdf:Property ;
+    rdfs:domain edu:GeneralInformation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Method"@en, "Метод"@ru ;
+    rdfs:comment "The experimental method"@en, "Метод эксперимента"@ru .
+
+edu:totalScore a rdf:Property ;
+    rdfs:domain edu:GeneralInformation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total score"@en, "Общая оценка"@ru ;
+    rdfs:comment "The overall score received by the participant for all measurements"@en, "Общая оценка, полученная участником за все измерения"@ru .
+
+edu:measurementNumber a rdf:Property ;
+    rdfs:domain edu:AverageIndicator ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Measurement number "@en, "Номер измерения"@ru ;
+    rdfs:comment "The sequential number of the measurement/session/task"@en, "Порядковый номер измерения/сессии/задания"@ru .
+
+edu:method a rdf:Property ;
+    rdfs:domain edu:AverageIndicator ;
+    rdfs:range xsd:string ;
+    rdfs:label "Method"@en, "Метод"@ru ;
+    rdfs:comment "The experimental method"@en, "Метод эксперимента"@ru .
+
+edu:average a rdf:Property ;
+    rdfs:domain edu:AverageIndicator ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average"@en, "Среднее значение"@ru ;
+    rdfs:comment "The average score obtained by all participants for a given measurement and method"@en, "Среднее значение оценки, полученное всеми участниками за указанное измерение и метод"@ru .
