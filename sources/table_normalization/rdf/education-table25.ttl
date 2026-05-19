@@ -1,0 +1,54 @@
+@prefix edu: <http://example.org/education#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+edu:HighSchoolScienceCourse a rdfs:Class ;
+    rdfs:label "High school science course"@en, "Курс естественных наук для старшей школы"@ru ;
+    rdfs:comment "Information on the availability of science courses (biology, chemistry, and physics) in US high schools, broken down by state, course type, and metric type"@en, "Информация о доступности курсов естественных наук (биологии, химии и физики) в старших школах США с детализацией по штату, типу курса и типу метрики"@ru .
+
+# ==================== Datatype Properties ====================
+
+edu:state a rdf:Property ;
+    rdfs:domain edu:HighSchoolScienceCourse ;
+    rdfs:range xsd:string ;
+    rdfs:label "State"@en, "Штат"@ru ;
+    rdfs:comment "The US state or aggregated region for which the statistic is reported"@en, "Штат США или регион, для которого представлены статистические данные"@ru .
+
+edu:schoolsReporting a rdf:Property ;
+    rdfs:domain edu:HighSchoolScienceCourse ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Schools reporting"@en, "Отчитавшиеся школы"@ru ;
+    rdfs:comment "The number of schools in the state that submitted data for this report"@en, "Количество школ в штате, предоставивших данные для этого отчета"@ru .
+
+edu:courseType a rdf:Property ;
+    rdfs:domain edu:HighSchoolScienceCourse ;
+    rdfs:range xsd:string ;
+    rdfs:label "Course type"@en, "Тип курса"@ru ;
+    rdfs:comment "The type of science course"@en, "Тип курса естественных наук"@ru .
+
+edu:courseNumber a rdf:Property ;
+    rdfs:domain edu:HighSchoolScienceCourse ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Course number"@en, "Количество курсов"@ru ;
+    rdfs:comment "Total number of natural science courses"@en, "Общее количество курсов естественных наук"@ru .
+
+edu:coursePercent a rdf:Property ;
+    rdfs:domain edu:HighSchoolScienceCourse ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Course percent"@en, "Процент курсов"@ru ;
+    rdfs:comment "Percentage of natural science courses"@en, "Процент курсов естественных наук"@ru .
+
+edu:schoolsNumber a rdf:Property ;
+    rdfs:domain edu:HighSchoolScienceCourse ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of schools"@en, "Число школ"@ru ;
+    rdfs:comment "The total number of schools in the state"@en, "Общее количество школ в штате"@ru .
+
+edu:schoolsReportingPercent a rdf:Property ;
+    rdfs:domain edu:HighSchoolScienceCourse ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percent of schools reporting"@en, "Процент отчитавшихся школ"@ru ;
+    rdfs:comment "The percentage of schools in the state that reported data"@en, "Процент школ штата, предоставивших данные"@ru .

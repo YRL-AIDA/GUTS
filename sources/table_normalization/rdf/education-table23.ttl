@@ -1,0 +1,138 @@
+@prefix edu: <http://example.org/education#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+edu:HighSchoolSummary a rdfs:Class ;
+    rdfs:label "High school summary"@en, "Сводка по средней школе"@ru ;
+    rdfs:comment "Summary of transfer high school performance information, including student demographics and academic metrics"@en, "Сводная информация о результативности трансферной старшей школы, включая демографический состав учащихся и академические метрики"@ru .
+
+# ==================== Datatype Properties ====================
+
+edu:dbn a rdf:Property ;
+    rdfs:domain edu:HighSchoolSummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "DBN"@en, "Код школы"@ru ;
+    rdfs:comment "The unique alphanumeric identifier for the school"@en, "Уникальный буквенно-цифровой идентификатор школы"@ru .
+
+edu:schoolName a rdf:Property ;
+    rdfs:domain edu:HighSchoolSummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "School name"@en, "Название школы"@ru ;
+    rdfs:comment "The official name of the educational institution"@en, "Официальное название образовательного учреждения"@ru .
+
+edu:schoolType a rdf:Property ;
+    rdfs:domain edu:HighSchoolSummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "School type"@en, "Тип школы"@ru ;
+    rdfs:comment "The type of high school"@en, "Тип средней школы"@ru .
+
+edu:overallScore a rdf:Property ;
+    rdfs:domain edu:HighSchoolSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Overall score"@en, "Общая оценка"@ru ;
+    rdfs:comment "The overall numeric performance score (0–100 scale)"@en, "Общий числовой показатель эффективности (шкала от 0 до 100)"@ru .
+
+edu:overallGrade a rdf:Property ;
+    rdfs:domain edu:HighSchoolSummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Overall grade"@en, "Общая градация"@ru ;
+    rdfs:comment "The overall letter grade summarizing performance (A, B, C, D, or F)"@en, "Общая буквенная оценка, суммирующая результаты работы (A, B, C, D или F)"@ru .
+
+edu:overallRank a rdf:Property ;
+    rdfs:domain edu:HighSchoolSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Overall rank"@en, "Общая ранг"@ru ;
+    rdfs:comment "The school's rank among peer transfer high schools based on overall score"@en, "Рейтинг школы среди аналогичных средних школ, принимающих учеников по программе перевода, на основе общего балла"@ru .
+
+edu:progressGrade a rdf:Property ;
+    rdfs:domain edu:HighSchoolSummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Progress grade"@en, "Градация прогресса"@ru ;
+    rdfs:comment "Letter grade for student progress metric (A–F)"@en, "Буквенная оценка метрики прогресса учащихся (A–F)"@ru .
+
+edu:performanceGrade a rdf:Property ;
+    rdfs:domain edu:HighSchoolSummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Performance grade"@en, "Градация результативности"@ru ;
+    rdfs:comment "Letter grade for academic performance metric (A–F)"@en, "Буквенная оценка метрики академической результативности (A–F)"@ru .
+
+edu:environmentGrade a rdf:Property ;
+    rdfs:domain edu:HighSchoolSummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Environment grade"@en, "Градация среды"@ru ;
+    rdfs:comment "Letter grade for school environment metric (A–F)"@en, "Буквенная оценка метрики школьной среды (A–F)"@ru .
+
+edu:collegeCareerReadinessGrade a rdf:Property ;
+    rdfs:domain edu:HighSchoolSummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "College career readiness grade"@en, "Оценка готовности к колледжу и карьере"@ru ;
+    rdfs:comment "Letter grade for college and career readiness metric (A–F)"@en, "Буквенная оценка по показателю готовности к поступлению в колледж и к профессиональной деятельности (A–F)"@ru .
+
+edu:closingAchievementGapPoints a rdf:Property ;
+    rdfs:domain edu:HighSchoolSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Closing achievement gap points"@en, "Сокращение разрыва в успеваемости"@ru ;
+    rdfs:comment "Points awarded for closing achievement gaps among student subgroups"@en, "Баллы начисляются за сокращение разрыва в успеваемости между различными группами учащихся"@ru .
+
+edu:principal a rdf:Property ;
+    rdfs:domain edu:HighSchoolSummary ;
+    rdfs:range xsd:string ;
+    rdfs:label "Principal"@en, "Директор"@ru ;
+    rdfs:comment "The name of the school principal or leadership team"@en, "Имя директора школы или членов руководящей команды"@ru .
+
+edu:enrollment a rdf:Property ;
+    rdfs:domain edu:HighSchoolSummary ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Enrollment"@en, "Численность учащихся"@ru ;
+    rdfs:comment "The total number of students enrolled at the school"@en, "Общее количество учащихся, зачисленных в школу"@ru .
+
+edu:studentPercentWithDisabilities a rdf:Property ;
+    rdfs:domain edu:HighSchoolSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percentage of students with disabilities"@en, "Процент учащихся с ограниченными возможностями"@ru ;
+    rdfs:comment "Percentage of students with disabilities (0–100, without percent sign)"@en, "Процент учащихся с ограниченными возможностями (0–100, без знака процента)"@ru .
+
+edu:studentPercentInSelfContainedSettings a rdf:Property ;
+    rdfs:domain edu:HighSchoolSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percentage of students in self-contained settings"@en, "Процент учащихся в специализированных классах"@ru ;
+    rdfs:comment "Percentage of students in self-contained classroom settings (0–100)"@en, "Процент учащихся в классах с полным спектром образовательных услуг (0–100)"@ru .
+
+edu:overagePercent a rdf:Property ;
+    rdfs:domain edu:HighSchoolSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Overage percent"@en, "Процент старшевозрастных учащихся"@ru ;
+    rdfs:comment "Percentage of students who are overage for their grade level (0–100)"@en, "Процент учащихся, превышающих возрастной предел для своего класса (0–100)"@ru .
+
+edu:freeLunchPercent a rdf:Property ;
+    rdfs:domain edu:HighSchoolSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Free lunch percent"@en, "Процент учащихся на бесплатном питании"@ru ;
+    rdfs:comment "Percentage of students eligible for free lunch program (0–100)"@en, "Процент учащихся, имеющих право на бесплатное питание (0–100)"@ru .
+
+edu:blackHispanicPercent a rdf:Property ;
+    rdfs:domain edu:HighSchoolSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Black or hispanic percent"@en, "Процент чернокожих/латиноамериканцев"@ru ;
+    rdfs:comment "Percentage of students identifying as Black or Hispanic/Latino (0–100)"@en, "Процент учащихся, идентифицирующих себя как чернокожие или латиноамериканцы (0–100)"@ru .
+
+edu:ellPercent a rdf:Property ;
+    rdfs:domain edu:HighSchoolSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "ELL percent"@en, "Процент изучающих английский язык"@ru ;
+    rdfs:comment "Percentage of English Language Learners (ELL) at the school (0–100)"@en, "Процент учащихся, изучающих английский язык как второй (ELL), в школе (0–100)"@ru .
+
+edu:eighthGrMathELA a rdf:Property ;
+    rdfs:domain edu:HighSchoolSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Eighth GR math ELA"@en, "Средний балл 8 класса (математика/английский)"@ru ;
+    rdfs:comment "Average proficiency score in Math and English Language Arts for 8th grade students"@en, "Средний балл успеваемости по математике и английскому языку у учеников 8-го класса"@ru .
+
+edu:peerIndex a rdf:Property ;
+    rdfs:domain edu:HighSchoolSummary ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Peer index "@en, "Индекс сравнения с похожими школами"@ru ;
+    rdfs:comment "Index value comparing the school's performance to a peer group of similar schools"@en, "Индексный показатель, сравнивающий результаты работы школы с показателями группы аналогичных школ"@ru .
