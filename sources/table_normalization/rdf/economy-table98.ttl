@@ -1,0 +1,78 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:DamageCase a rdfs:Class ;
+    rdfs:label "Cases of damage"@en, "Случаи причинения ущерба"@ru ;
+    rdfs:comment "All consumer detriment incidents in the United Kingdom in the 12 months to April 2021"@en, "Все случаи причинения ущерба потребителям в Великобритании за 12 месяцев до апреля 2021 года"@ru .
+
+eco:DetrimentPurchaseChannel a rdfs:Class ;
+    rdfs:label "Detriment purchase channel"@en, "Канал покупок, наносящих ущерб"@ru ;
+    rdfs:comment "Channel through which the consumer purchased products that they experienced detriment with"@en, "Канал, через который потребитель приобрел продукты, в отношении которых он столкнулся с причинением вреда"@ru .
+
+# ==================== Object Properties ====================
+
+eco:hasDetrimentPurchaseChannel a rdf:Property ;
+    rdfs:domain eco:DamageCase ;
+    rdfs:range eco:DetrimentPurchaseChannel ;
+    rdfs:label "Detriment purchase channel"@en, "Канал покупок, наносящих ущерб"@ru ;
+    rdfs:comment "Damage cases, including purchasing channels"@en, "Случаи причинения ущерба, включая каналы покупок"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:productCategory a rdf:Property ;
+    rdfs:domain eco:DamageCase ;
+    rdfs:range xsd:string ;
+    rdfs:label "Product category"@en, "Категория продукта"@ru ;
+    rdfs:comment "High-end product category name"@en, "Название категории продукции высокого уровня"@ru .
+
+eco:specificProductType a rdf:Property ;
+    rdfs:domain eco:DamageCase ;
+    rdfs:range xsd:string ;
+    rdfs:label "Specific product type"@en, "Конкретный тип продукта"@ru ;
+    rdfs:comment "The name of a specific type of product, market cluster, or sector of goods or services"@en, "Название конкретного типа продукта, рыночного кластера или сектора товаров или услуг"@ru .
+
+eco:typeCode a rdf:Property ;
+    rdfs:domain eco:DamageCase ;
+    rdfs:range xsd:string ;
+    rdfs:label "Type code"@en, "Код типа"@ru ;
+    rdfs:comment "Alphanumeric code of product type"@en, "Буквенно-цифровой код типа продукта"@ru .
+
+eco:note a rdf:Property ;
+    rdfs:domain eco:DamageCase ;
+    rdfs:range xsd:string ;
+    rdfs:label "Note"@en, "Примечание"@ru ;
+    rdfs:comment "Brief commentary on the product type"@en, "Краткий комментарий к типу продукта"@ru .
+
+eco:unweightedTotal a rdf:Property ;
+    rdfs:domain eco:DamageCase ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Unweighted total"@en, "Невзвешенная оценка"@ru ;
+    rdfs:comment "The unweighted sample size (count of detriment incidents) for the given product classification level"@en, "Невзвешенная оценка генеральной совокупности (количество случаев причинения вреда) для данного уровня классификации продукции"@ru .
+
+eco:weightedTotal a rdf:Property ;
+    rdfs:domain eco:DamageCase ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Weighted total"@en, "Взвешенная оценка"@ru ;
+    rdfs:comment "The weighted population estimate (representative count of detriment incidents) for the given product classification level"@en, "Взвешенная оценка генеральной совокупности (репрезентативное количество случаев причинения вреда) для заданного уровня классификации продукта"@ru .
+
+eco:purchaseChannel a rdf:Property ;
+    rdfs:domain eco:DetrimentPurchaseChannel ;
+    rdfs:range xsd:string ;
+    rdfs:label "Purchase channel"@en, "Канал покупки"@ru ;
+    rdfs:comment "The method or channel through which the consumer originally purchased the product"@en, "Метод или канал, через который потребитель изначально приобрел товар"@ru .
+
+eco:percentValue a rdf:Property ;
+    rdfs:domain eco:DetrimentPurchaseChannel ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Percent value"@en, "Значение в процентах"@ru ;
+    rdfs:comment "The percentage of detriment incidents that occurred via the specified purchase channel"@en, "Процент случаев причинения ущерба, произошедших через указанный канал покупки"@ru .
+
+eco:codeCombination a rdf:Property ;
+    rdfs:domain eco:DetrimentPurchaseChannel ;
+    rdfs:range xsd:string ;
+    rdfs:label "Combination of codes"@en, "Комбинация кодов"@ru ;
+    rdfs:comment "Product type code combination reference"@en, "Ссылка на комбинацию кодов типа продукта"@ru .
