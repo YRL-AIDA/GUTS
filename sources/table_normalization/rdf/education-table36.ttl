@@ -1,0 +1,42 @@
+@prefix edu: <http://example.org/education#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+edu:ChemicalAnalyte a rdfs:Class ;
+    rdfs:label "Chemical analyte "@en, "Химический аналит"@ru ;
+    rdfs:comment "Information on detection rates and concentration metrics for a specific chemical analyte within a broader chemical class"@en, "Информация по частоте обнаружения и метрикам концентрации для конкретного химического аналита в рамках более широкого химического класса"@ru .
+
+# ==================== Datatype Properties ====================
+
+edu:chemicalClass a rdf:Property ;
+    rdfs:domain edu:ChemicalAnalyte ;
+    rdfs:range xsd:string ;
+    rdfs:label "Chemical class"@en, "Химический класс"@ru ;
+    rdfs:comment "The broad chemical class category"@en, "Широкая категория химических классов"@ru .
+
+edu:analyte a rdf:Property ;
+    rdfs:domain edu:ChemicalAnalyte ;
+    rdfs:range xsd:string ;
+    rdfs:label "Analyte"@en, "Аналит"@ru ;
+    rdfs:comment "The specific chemical compound or analyte name"@en, "Название конкретного химического соединения или анализируемого вещества"@ru .
+
+edu:detectionFrequency a rdf:Property ;
+    rdfs:domain edu:ChemicalAnalyte ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Detection frequency"@en, "Частота обнаружения"@ru ;
+    rdfs:comment "The percentage of samples in which the analyte was detected"@en, "Процент образцов, в которых был обнаружен анализируемый образец"@ru .
+
+edu:median a rdf:Property ;
+    rdfs:domain edu:ChemicalAnalyte ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Median concentration"@en, "Медианная концентрация"@ru ;
+    rdfs:comment "The median concentration value of the analyte across detected samples"@en, "Медианное значение концентрации аналита по всем исследованным образцам"@ru .
+
+edu:max a rdf:Property ;
+    rdfs:domain edu:ChemicalAnalyte ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Max concentration"@en, "Максимальная концентрация"@ru ;
+    rdfs:comment "The maximum concentration value of the analyte across detected samples"@en, "Максимальная концентрация аналита в обнаруженных образцах"@ru .

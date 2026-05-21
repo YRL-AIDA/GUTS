@@ -1,0 +1,42 @@
+@prefix edu: <http://example.org/education#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+edu:ClassTimetable a rdfs:Class ;
+    rdfs:label "Class timetable"@en, "Расписание занятий"@ru ;
+    rdfs:comment ""@en, "изованная атомарная запись, представляющая назначение занятия для класса в определённый период расписания старшей школы, связывающая секцию класса, период, предмет и преподавател"@ru .
+
+# ==================== Datatype Properties ====================
+
+edu:timeSlot a rdf:Property ;
+    rdfs:domain edu:ClassTimetable ;
+    rdfs:range xsd:string ;
+    rdfs:label "Time slot"@en, "Временной интервал"@ru ;
+    rdfs:comment "The fixed time slot for all periods in this timetable"@en, "Фиксированный временной интервал для всех периодов в этом расписании"@ru .
+
+edu:className a rdf:Property ;
+    rdfs:domain edu:ClassTimetable ;
+    rdfs:range xsd:string ;
+    rdfs:label "Class name"@en, "Название класса"@ru ;
+    rdfs:comment "Class identifier or name"@en, "Идентификатор или название класса"@ru .
+
+edu:periodNumber a rdf:Property ;
+    rdfs:domain edu:ClassTimetable ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Period number"@en, "Номер периода"@ru ;
+    rdfs:comment "The sequential number of the class period"@en, "Порядковый номер урока"@ru .
+
+edu:subject a rdf:Property ;
+    rdfs:domain edu:ClassTimetable ;
+    rdfs:range xsd:string ;
+    rdfs:label "Subject"@en, "Предмет"@ru ;
+    rdfs:comment "The subject taught in the period"@en, "Предмет, преподаваемый в этот период"@ru .
+
+edu:teacherName a rdf:Property ;
+    rdfs:domain edu:ClassTimetable ;
+    rdfs:range xsd:string ;
+    rdfs:label "Teacher name"@en, "Имя преподавателя"@ru ;
+    rdfs:comment "The name of the teacher assigned to the period"@en, "Имя преподавателя, назначенного на данный урок"@ru .

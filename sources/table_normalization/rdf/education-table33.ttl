@@ -1,0 +1,134 @@
+@prefix edu: <http://example.org/education#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+edu:Student a rdfs:Class ;
+    rdfs:label "Student"@en, "Студент"@ru ;
+    rdfs:comment "Basic information about the student"@en, "Основная информаци по студенту"@ru .
+
+edu:StudentAssessment a rdfs:Class ;
+    rdfs:label "Student assessment"@en, "Оценка студента"@ru ;
+    rdfs:comment "Data on a student's grades in specific subjects and assessment periods for a given academic session"@en, "Данные по оценкам учащегося по определенным предметам и оценочному периоду для данной учебной сессии"@ru .
+
+edu:SubjectAssessmentSum a rdfs:Class ;
+    rdfs:label "Sum of assessments for subject"@en, "Сумма оценок по предмету"@ru ;
+    rdfs:comment "The total number of grades a student has received for a given subject over the entire academic period"@en, "Сумма оценок студента по предмету за весь учебный период"@ru .
+
+edu:PeriodAssessmentSum a rdfs:Class ;
+    rdfs:label "Sum of assessments for period"@en, "Сумма оценок за период"@ru ;
+    rdfs:comment "The sum of a student's grades in all subjects for a given assessment period"@en, "Сумма оценок студента по всем предметам за определенный оценочный период"@ru .
+
+# ==================== Object Properties ====================
+
+edu:hasStudentAssessment a rdf:Property ;
+    rdfs:domain edu:Student ;
+    rdfs:range edu:StudentAssessment ;
+    rdfs:label "Student assessment"@en, "Оценка студента"@ru ;
+    rdfs:comment "Student grades in subjects for the academic session"@en, "Оценки студента по предметам за учебную сессию"@ru .
+
+edu:hasSubjectAssessmentSum a rdf:Property ;
+    rdfs:domain edu:Student ;
+    rdfs:range edu:SubjectAssessmentSum ;
+    rdfs:label "Sum of assessments for subject"@en, "Сумма оценок по предмету"@ru ;
+    rdfs:comment "The sum of all student grades in a subject"@en, "Сумма всех оценок студента по предмету"@ru .
+
+edu:hasPeriodAssessmentSum a rdf:Property ;
+    rdfs:domain edu:Student ;
+    rdfs:range edu:PeriodAssessmentSum ;
+    rdfs:label "Sum of assessments for period"@en, "Сумма оценок за период"@ru ;
+    rdfs:comment "The sum of all student grades for the assessment period"@en, "Сумма всех оценок студента за оценочный период"@ru .
+
+# ==================== Datatype Properties ====================
+
+edu:studentName a rdf:Property ;
+    rdfs:domain edu:Student ;
+    rdfs:range xsd:string ;
+    rdfs:label "Student name"@en, "Имя студента"@ru ;
+    rdfs:comment "Student's full name"@en, "Полное имя студента"@ru .
+
+edu:fatherName a rdf:Property ;
+    rdfs:domain edu:Student ;
+    rdfs:range xsd:string ;
+    rdfs:label "Father's name"@en, "Имя отца"@ru ;
+    rdfs:comment "The father's name of the student"@en, "Имя отца студента"@ru .
+
+edu:className a rdf:Property ;
+    rdfs:domain edu:Student ;
+    rdfs:range xsd:string ;
+    rdfs:label "Class name"@en, "Название класса"@ru ;
+    rdfs:comment "Class name or identifier"@en, "Название или идентификатор класса"@ru .
+
+edu:rollNumber a rdf:Property ;
+    rdfs:domain edu:Student ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Roll number"@en, "Номер зачетной книжки"@ru ;
+    rdfs:comment "The roll number of the student"@en, "Номер зачетной книжки студента"@ru .
+
+edu:session a rdf:Property ;
+    rdfs:domain edu:Student ;
+    rdfs:range xsd:gYearMonth ;
+    rdfs:label "Session"@en, "Сессия"@ru ;
+    rdfs:comment "The academic session in format YYYY-MM"@en, "Учебный год в формате ГГГГ-ММ"@ru .
+
+edu:subject a rdf:Property ;
+    rdfs:domain edu:StudentAssessment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Subject"@en, "Предмет"@ru ;
+    rdfs:comment "Academic subject or any other disciplines and activities"@en, "Академический предмет или любые другие дисциплины и активности"@ru .
+
+edu:assessmentPeriod a rdf:Property ;
+    rdfs:domain edu:StudentAssessment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Assessment period"@en, "Оценочный период"@ru ;
+    rdfs:comment "The assessment period within the academic session"@en, "Период оценивания в рамках учебного года"@ru .
+
+edu:maximumMarks a rdf:Property ;
+    rdfs:domain edu:StudentAssessment ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Maximum marks"@en, "Максимальная оценка"@ru ;
+    rdfs:comment "The maximum possible score for the specified subject and assessment period"@en, "Максимально возможный балл по указанному предмету и периоду оценки"@ru .
+
+edu:obtainedMarks a rdf:Property ;
+    rdfs:domain edu:StudentAssessment ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Obtained marks"@en, "Полученная оценка"@ru ;
+    rdfs:comment "The actual grade received by the student in the specified subject and for the assessment period"@en, "Фактическая оценка, полученная учащимся по указанному предмету и за отчетный период"@ru .
+
+edu:subject a rdf:Property ;
+    rdfs:domain edu:SubjectAssessmentSum ;
+    rdfs:range xsd:string ;
+    rdfs:label "Subject"@en, "Предмет"@ru ;
+    rdfs:comment "Academic subject or any other disciplines and activities"@en, "Академический предмет или любые другие дисциплины и активности"@ru .
+
+edu:totalMaximumMarks a rdf:Property ;
+    rdfs:domain edu:SubjectAssessmentSum ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total maximum marks"@en, "Общая максимальная оценка"@ru ;
+    rdfs:comment "The overall maximum grade for a subject that can be obtained for the entire assessment period"@en, "Общая максимальная оценка по предмету, которую можно получить за весь оценочный период"@ru .
+
+edu:totalObtainedMarks a rdf:Property ;
+    rdfs:domain edu:SubjectAssessmentSum ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total obtained marks"@en, "Общая полученная оценка"@ru ;
+    rdfs:comment "The total actual grade received by the student in the subject for the entire assessment period"@en, "Общая фактическая полученная оценка студента по предмету за весь оценочный период"@ru .
+
+edu:assessmentPeriod a rdf:Property ;
+    rdfs:domain edu:PeriodAssessmentSum ;
+    rdfs:range xsd:string ;
+    rdfs:label "Assessment period"@en, "Оценочный период"@ru ;
+    rdfs:comment "The assessment period within the academic session"@en, "Период оценивания в рамках учебного года"@ru .
+
+edu:totalMaximumMarks a rdf:Property ;
+    rdfs:domain edu:PeriodAssessmentSum ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total maximum marks"@en, "Общая максимальная оценка"@ru ;
+    rdfs:comment "The total maximum grade for all subjects that can be obtained during a given assessment period"@en, "Общая максимальная оценка по всем предметам, которую можно получить за данный оценочный период"@ru .
+
+edu:totalObtainedMarks a rdf:Property ;
+    rdfs:domain edu:PeriodAssessmentSum ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total obtained marks"@en, "Общая полученная оценка"@ru ;
+    rdfs:comment "The total actual grade received by the student in all subjects for a given assessment period"@en, "Общая фактическая полученная оценка студента по всем предметам за данный оценочный период"@ru .
