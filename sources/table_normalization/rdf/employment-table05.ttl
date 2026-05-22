@@ -1,0 +1,78 @@
+@prefix emp: <http://example.org/employment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+emp:EmploymentStatistics a rdfs:Class ;
+    rdfs:label "Employment statistics"@en, "Статистика занятости"@ru ;
+    rdfs:comment "Annual statistics on employment of the civilian non-institutional population of the United States in various demographic groups with various details by category"@en, "Ежегодные статистические данные занятости гражданского неинституционального населения США в различных демографических группах с разной детализацией по категориям"@ru .
+
+# ==================== Datatype Properties ====================
+
+emp:year a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "The calendar year for which the statistic is reported"@en, "Календарный год, за который приводятся статистические данные"@ru .
+
+emp:sexAgeGroup a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sex and age group"@en, "Пол и возрастная группа"@ru ;
+    rdfs:comment "Combined attribute of sex and age group"@en, "Совокупный признак пола и возрастной группы"@ru .
+
+emp:race a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Race"@en, "Раса"@ru ;
+    rdfs:comment "Racial category"@en, "Расовая категория"@ru .
+
+emp:civilianNoninstitutionalPopulation a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Civilian noninstitutional population"@en, "Гражданское неинституциональное население"@ru ;
+    rdfs:comment "The size of the civilian noninstitutional population in thousands of persons"@en, "Численность гражданского неинституционального населения в тысячах человек"@ru .
+
+emp:totalCivilianLaborForce a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total civilian labor force"@en, "Общая численность гражданской рабочей силы"@ru ;
+    rdfs:comment "The total number of persons in the civilian labor force (in thousands)"@en, "Общее число лиц, входящих в состав гражданской рабочей силы (в тысячах)"@ru .
+
+emp:participationRate a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Participation rate"@en, "Уровень участия"@ru ;
+    rdfs:comment "Labor force participation rate of the civilian non-institutional population"@en, "Уровень участия гражданского неинституционального населения, входящего в состав рабочей силы"@ru .
+
+emp:totalEmployed a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total employed"@en, "Общая численность занятых"@ru ;
+    rdfs:comment "The total number of employed persons (in thousands)"@en, "Общее число занятых (в тысячах)"@ru .
+
+emp:employmentPopulationRatio a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Employment-population ratio"@en, "Соотношение занятости к численности населения"@ru ;
+    rdfs:comment "Percentage of employed civilian population to the population"@en, "Процент занятого гражданского населения к численности населения"@ru .
+
+emp:unemployedNumber a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of unemployed"@en, "Число безработных"@ru ;
+    rdfs:comment "The number of unemployed persons (in thousands)"@en, "Число безработных (в тысячах)"@ru .
+
+emp:unemploymentRate a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Unemployment rate"@en, "Уровень безработицы"@ru ;
+    rdfs:comment "The percentage of the civilian labor force that is unemployed"@en, "Процент безработных среди гражданского населения"@ru .
+
+emp:notInLaborForce a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Not in labor force"@en, "Не входит в состав рабочей силы"@ru ;
+    rdfs:comment "The number of persons not in the labor force (in thousands)"@en, "Число лиц, не входящих в состав рабочей силы (в тысячах)"@ru .
