@@ -1,0 +1,54 @@
+@prefix emp: <http://example.org/employment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+emp:EmploymentStatistics a rdfs:Class ;
+    rdfs:label "Employment statistics"@en, "Статистика занятости"@ru ;
+    rdfs:comment "Employment statistics for the United States workers, detailed by demographic and age group, employment category, type of work schedule, and job detail"@en, "Статистические данные занятости работников США с детализацией по демографической и возрастной группе, категории занятости, типу графика работы и детализации работы"@ru .
+
+# ==================== Datatype Properties ====================
+
+emp:year a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "The calendar year for which the statistic is reported"@en, "Календарный год, за который приводятся статистические данные"@ru .
+
+emp:demographicGroup a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Demographic group"@en, "Демографическая группа"@ru ;
+    rdfs:comment "The demographic group covered by the statistic"@en, "Демографическая группа, охватываемая данным статистическим показателем"@ru .
+
+emp:sexAgeGroup a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sex and age group"@en, "Пол и возрастная группа"@ru ;
+    rdfs:comment "Combined attribute of sex and age group"@en, "Совокупный признак пола и возрастной группы"@ru .
+
+emp:employmentCategory a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Employment category"@en, "Категория занятости"@ru ;
+    rdfs:comment "Employee employment status category"@en, "Категория статуса занятости работника"@ru .
+
+emp:workSchedule a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Work schedule"@en, "График работы"@ru ;
+    rdfs:comment "Type of work schedule"@en, "Тип рабочего графика"@ru .
+
+emp:workDetail a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Work detail"@en, "Детали работы"@ru ;
+    rdfs:comment "The detailed work classification within the schedule type"@en, "Детальная классификация работ в рамках типа графика"@ru .
+
+emp:employedNumebr a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of employed"@en, "Количество занятых"@ru ;
+    rdfs:comment "A numeric value representing the number of employees"@en, "Числовое значение, представляющее количество работников"@ru .
