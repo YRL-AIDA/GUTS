@@ -35,10 +35,10 @@ emp:civilianNoninstitutionalPopulation a rdf:Property ;
     rdfs:label "Civilian noninstitutional population"@en, "Гражданское неинституциональное население"@ru ;
     rdfs:comment "The size of the civilian noninstitutional population in thousands of persons"@en, "Численность гражданского неинституционального населения в тысячах человек"@ru .
 
-emp:totalCivilianLaborForce a rdf:Property ;
+emp:civilianLaborForce a rdf:Property ;
     rdfs:domain emp:EmploymentStatistics ;
     rdfs:range xsd:integer ;
-    rdfs:label "Total civilian labor force"@en, "Общая численность гражданской рабочей силы"@ru ;
+    rdfs:label "Civilian labor force"@en, "Численность гражданской рабочей силы"@ru ;
     rdfs:comment "The total number of persons in the civilian labor force (in thousands)"@en, "Общее число лиц, входящих в состав гражданской рабочей силы (в тысячах)"@ru .
 
 emp:participationRate a rdf:Property ;
@@ -47,10 +47,10 @@ emp:participationRate a rdf:Property ;
     rdfs:label "Participation rate"@en, "Уровень участия"@ru ;
     rdfs:comment "Labor force participation rate of the civilian non-institutional population"@en, "Уровень участия гражданского неинституционального населения, входящего в состав рабочей силы"@ru .
 
-emp:totalEmployed a rdf:Property ;
+emp:employed a rdf:Property ;
     rdfs:domain emp:EmploymentStatistics ;
     rdfs:range xsd:integer ;
-    rdfs:label "Total employed"@en, "Общая численность занятых"@ru ;
+    rdfs:label "Employed"@en, "Численность занятых"@ru ;
     rdfs:comment "The total number of employed persons (in thousands)"@en, "Общее число занятых (в тысячах)"@ru .
 
 emp:employmentPopulationRatio a rdf:Property ;
@@ -59,10 +59,10 @@ emp:employmentPopulationRatio a rdf:Property ;
     rdfs:label "Employment-population ratio"@en, "Соотношение занятости к численности населения"@ru ;
     rdfs:comment "Percentage of employed civilian population to the population"@en, "Процент занятого гражданского населения к численности населения"@ru .
 
-emp:unemployedNumber a rdf:Property ;
+emp:unemployed a rdf:Property ;
     rdfs:domain emp:EmploymentStatistics ;
     rdfs:range xsd:integer ;
-    rdfs:label "Number of unemployed"@en, "Число безработных"@ru ;
+    rdfs:label "Unemployed"@en, "Число безработных"@ru ;
     rdfs:comment "The number of unemployed persons (in thousands)"@en, "Число безработных (в тысячах)"@ru .
 
 emp:unemploymentRate a rdf:Property ;
