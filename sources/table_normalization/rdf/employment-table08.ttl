@@ -47,7 +47,7 @@ emp:workDetail a rdf:Property ;
     rdfs:label "Work detail"@en, "Детали работы"@ru ;
     rdfs:comment "The detailed work classification within the schedule type"@en, "Детальная классификация работ в рамках типа графика"@ru .
 
-emp:employedNumebr a rdf:Property ;
+emp:employedNumber a rdf:Property ;
     rdfs:domain emp:EmploymentStatistics ;
     rdfs:range xsd:integer ;
     rdfs:label "Number of employed"@en, "Количество занятых"@ru ;
