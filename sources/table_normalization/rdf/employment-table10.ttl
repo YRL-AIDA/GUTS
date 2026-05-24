@@ -1,0 +1,54 @@
+@prefix emp: <http://example.org/employment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+emp:EmploymentStatistics a rdfs:Class ;
+    rdfs:label "Employment statistics"@en, "Статистика занятости"@ru ;
+    rdfs:comment "Annual averages of employed persons by occupation, race, Hispanic or Latino ethnicity, and sex"@en, "Среднегодовые показатели занятости населения по роду занятий, расе, этнической принадлежности (испанцы или латиноамериканцы) и полу"@ru .
+
+# ==================== Datatype Properties ====================
+
+emp:year a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "The calendar year for which the statistic is reported"@en, "Календарный год, за который приводятся статистические данные"@ru .
+
+emp:demographicGroup a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Demographic group"@en, "Демографическая группа"@ru ;
+    rdfs:comment "The demographic group covered by the statistic"@en, "Демографическая группа, охватываемая данным статистическим показателем"@ru .
+
+emp:sex a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sex"@en, "Пол"@ru ;
+    rdfs:comment "Sex category"@en, "Категория пола"@ru .
+
+emp:occupation a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Occupation"@en, "Профессия"@ru ;
+    rdfs:comment "Occupation category"@en, "Категория профессии"@ru .
+
+emp:totalEmployed a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total employed"@en, "Общая численность занятых"@ru ;
+    rdfs:comment "Total number of employed persons aged 16 years and over (in thousands)"@en, "Общее число занятых в возрасте 16 лет и старше (в тысячах)"@ru .
+
+emp:percentEmployed a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Percent of total employed"@en, "Процент от общего числа занятых"@ru ;
+    rdfs:comment "Percentage of employed population"@en, "Процент занятого населения"@ru .
+
+emp:averageEmploymentRate a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average employment rate"@en, "Средний показатель занятости"@ru ;
+    rdfs:comment "Average employment rate of the population in a particular occupation and depending on the demographic group, gender and year"@en, "Средний показатель занятости населения в определенной профессии и в зависимости от демографической группы, пола и года"@ru .
