@@ -1,0 +1,42 @@
+@prefix emp: <http://example.org/employment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+emp:EmploymentStatistics a rdfs:Class ;
+    rdfs:label "Employment statistics"@en, "Статистика занятости"@ru ;
+    rdfs:comment "Annual statistics of employment of the civilian population of the United States for a specific category and ethnicity"@en, "Ежегодные статистические данные занятости гражданского населения США для конкретной категории и этнической группы"@ru .
+
+# ==================== Datatype Properties ====================
+
+emp:year a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "The calendar year for which the statistic is reported"@en, "Календарный год, за который приводятся статистические данные"@ru .
+
+emp:ethnicity a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Ethnicity"@en, "Этническая группа"@ru ;
+    rdfs:comment "Ethnicity category"@en, "Категория этнической группы"@ru .
+
+emp:categoryType a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category type"@en, "Тип категории"@ru ;
+    rdfs:comment "Name of the category classification level"@en, "Название уровня классификации категории"@ru .
+
+emp:categoryName a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category name"@en, "Название категории"@ru ;
+    rdfs:comment "The name of the specific category for which statistics are provided"@en, "Название конкретной категории по которой приводится статистика"@ru .
+
+emp:totalEmployed a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total employed"@en, "Общая численность занятых"@ru ;
+    rdfs:comment "Total number of employed persons in thousands for the specified race and category"@en, "Общее количество занятых лиц в тысячах для указанной расы и категории"@ru .

@@ -1,0 +1,42 @@
+@prefix emp: <http://example.org/employment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+emp:EmploymentStatistics a rdfs:Class ;
+    rdfs:label "Employment statistics"@en, "Статистика занятости"@ru ;
+    rdfs:comment "U.S. civilian employment statistics by occupation and age group"@en, "Статистические данные занятости гражданского населения США с детализацией по профессиям и возрастной группе"@ru .
+
+# ==================== Datatype Properties ====================
+
+emp:year a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "The calendar year for which the statistic is reported"@en, "Календарный год, за который приводятся статистические данные"@ru .
+
+emp:occupation a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Occupation"@en, "Профессия"@ru ;
+    rdfs:comment "Occupation category"@en, "Категория профессии"@ru .
+
+emp:ageGroup a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Age group"@en, "Возрастная группа"@ru ;
+    rdfs:comment "The age group covered by the statistic"@en, "Возрастная группа, охватываемая данным статистическим показателем"@ru .
+
+emp:totalEmployed a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total employed"@en, "Общая численность занятых"@ru ;
+    rdfs:comment "Total number of employed persons in thousands for the given occupation"@en, "Общее количество занятых лиц в тысячах для указанной профессии"@ru .
+
+emp:medianAge a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Median age"@en, "Средний возраст"@ru ;
+    rdfs:comment "The average age of a worker employed in a given profession"@en, "Среднее значение возраста работника, задействованного в данной профессии"@ru .
