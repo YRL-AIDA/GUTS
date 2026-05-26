@@ -1,0 +1,48 @@
+@prefix emp: <http://example.org/employment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+emp:EmploymentStatistics a rdfs:Class ;
+    rdfs:label "Employment statistics"@en, "Статистика занятости"@ru ;
+    rdfs:comment "Annual averages of employed persons by industry, sex, race, and occupation"@en, "Среднегодовые показатели занятости населения по отраслям, полу, расе и роду занятий"@ru .
+
+# ==================== Datatype Properties ====================
+
+emp:year a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "The calendar year for which the statistic is reported"@en, "Календарный год, за который приводятся статистические данные"@ru .
+
+emp:sex a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sex"@en, "Пол"@ru ;
+    rdfs:comment "Sex category"@en, "Категория пола"@ru .
+
+emp:race a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Race"@en, "Раса"@ru ;
+    rdfs:comment "Race category"@en, "Категория расы"@ru .
+
+emp:industry a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Industry"@en, "Отрасль"@ru ;
+    rdfs:comment "Industry name"@en, "Название отрасли"@ru .
+
+emp:occupation a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Occupation"@en, "Профессия"@ru ;
+    rdfs:comment "Occupation category"@en, "Категория профессии"@ru .
+
+emp:averageEmploymentRate a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Average employment rate"@en, "Средний показатель занятости"@ru ;
+    rdfs:comment "Average employment rate for the specified industry, gender, race, and occupation"@en, "Средний показатель занятости для указанной отрасли, пола, расы и профессии"@ru .

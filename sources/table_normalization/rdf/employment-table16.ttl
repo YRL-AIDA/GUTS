@@ -1,0 +1,54 @@
+@prefix emp: <http://example.org/employment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+emp:EmploymentStatistics a rdfs:Class ;
+    rdfs:label "Employment statistics"@en, "Статистика занятости"@ru ;
+    rdfs:comment "Employment statistics for a specific demographic group by age and gender, industry type, worker class, and sector"@en, "Статистические данные численности занятых для конкретной демографической группы по возрасту и полу, типу отрасли, классу работника и сектору"@ru .
+
+# ==================== Datatype Properties ====================
+
+emp:year a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "The calendar year for which the statistic is reported"@en, "Календарный год, за который приводятся статистические данные"@ru .
+
+emp:sex a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sex"@en, "Пол"@ru ;
+    rdfs:comment "Sex category"@en, "Категория пола"@ru .
+
+emp:ageGroup a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Age group"@en, "Возрастная группа"@ru ;
+    rdfs:comment "Age group category"@en, "Категория возрастной группы"@ru .
+
+emp:industry a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Industry"@en, "Отрасль"@ru ;
+    rdfs:comment "Name of broad industry category"@en, "Название широкой категории отрасли"@ru .
+
+emp:workerClass a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Worker class"@en, "Класс работника"@ru ;
+    rdfs:comment "Worker employment class"@en, "Класс занятости работника"@ru .
+
+emp:sector a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sector"@en, "Сектор"@ru ;
+    rdfs:comment "The sector breakdown for nonagricultural wage and salary workers"@en, "Детализация сектора для неаграрных наемных работников"@ru .
+
+emp:totalEmployed a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total employed"@en, "Общая численность занятых"@ru ;
+    rdfs:comment "Total number of employed persons in thousands for the specified demographic and age group, gender and industry"@en, "Общее количество занятых лиц в тысячах для указанной демографической и возрастной группе, полу и отрасли"@ru .
