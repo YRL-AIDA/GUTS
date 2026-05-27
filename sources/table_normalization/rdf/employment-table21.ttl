@@ -1,0 +1,82 @@
+@prefix emp: <http://example.org/employment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+emp:EmploymentStatistics a rdfs:Class ;
+    rdfs:label "Employment statistics"@en, "Статистика занятости"@ru ;
+    rdfs:comment "Employment statistics for a specific hours worked category and industry type"@en, "Статистические данные по численности занятых работников для конкретной категории часов работы и типа отрасли"@ru .
+
+emp:GeneralStatisticalIndicator a rdfs:Class ;
+    rdfs:label "General statistical indicator"@en, "Общий статистический показатель"@ru ;
+    rdfs:comment "General statistical indicator for the industry type"@en, "Общий статистический показатель для типа отрасли"@ru .
+
+# ==================== Datatype Properties ====================
+
+emp:year a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "The calendar year for which the statistic is reported"@en, "Календарный год, за который приводятся статистические данные"@ru .
+
+emp:workHours a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Hours of work"@en, "Рабочее время"@ru ;
+    rdfs:comment "The weekly hours-of-work category"@en, "Категория еженедельные рабочие часы"@ru .
+
+emp:industryType a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Industry type"@en, "Тип отрасли"@ru ;
+    rdfs:comment "Industry sector type"@en, "Тип отраслевого сектора"@ru .
+
+emp:personsAtWork a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Persons at work"@en, "Рабочие люди"@ru ;
+    rdfs:comment "Number of employed workers for a specific hours worked category and industry type"@en, "Количество занятых работников для конкретной категории часов работы и типа отрасли"@ru .
+
+emp:percentDistribution a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percent distribution"@en, "Процентное распределение"@ru ;
+    rdfs:comment "Percentage distribution of employed workers for a specific hours worked category and industry type"@en, "Процентное распределение занятых работников для конкретной категории часов работы и типа отрасли"@ru .
+
+emp:year a rdf:Property ;
+    rdfs:domain emp:GeneralStatisticalIndicator ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "The calendar year for which the statistic is reported"@en, "Календарный год, за который приводятся статистические данные"@ru .
+
+emp:industryType a rdf:Property ;
+    rdfs:domain emp:GeneralStatisticalIndicator ;
+    rdfs:range xsd:string ;
+    rdfs:label "Industry type"@en, "Тип отрасли"@ru ;
+    rdfs:comment "Industry sector type"@en, "Тип отраслевого сектора"@ru .
+
+emp:totalPersonsAtWork a rdf:Property ;
+    rdfs:domain emp:GeneralStatisticalIndicator ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total persons at work"@en, "Общее количество работающих человек"@ru ;
+    rdfs:comment "Total number of employed workers by industry type for all hours worked categories"@en, "Общее количество занятых работников по типу отрасли для всех категорий часов работы"@ru .
+
+emp:totalPercentDistribution a rdf:Property ;
+    rdfs:domain emp:GeneralStatisticalIndicator ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total percent distribution"@en, "Общее процентное распределение"@ru ;
+    rdfs:comment "Overall percentage distribution of employed workers by industry type for all hours worked categories"@en, "Общее процентное распределение занятых работников по типу отрасли для всех категорий часов работы"@ru .
+
+emp:averageHours a rdf:Property ;
+    rdfs:domain emp:GeneralStatisticalIndicator ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average hours"@en, "Среднее количество часов"@ru ;
+    rdfs:comment "Average hours, total at work"@en, "Среднее количество рабочих часов, общее время работы"@ru .
+
+emp:fullTimeAverageHours a rdf:Property ;
+    rdfs:domain emp:GeneralStatisticalIndicator ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Full time average hours"@en, "Среднее количество часов полный рабочий день"@ru ;
+    rdfs:comment "Average hours, persons who usually work full time"@en, "Среднее количество рабочих часов, для лиц, обычно работающих полный рабочий день"@ru .
