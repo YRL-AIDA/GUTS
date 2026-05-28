@@ -1,0 +1,82 @@
+@prefix emp: <http://example.org/employment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+emp:EmploymentStatistics a rdfs:Class ;
+    rdfs:label "Employment statistics"@en, "Статистика занятости"@ru ;
+    rdfs:comment "Employment statistics: Annual averages of persons at work 1 to 34 hours in all and in nonagricultural industries by reason for working less than 35 hours and usual full- or part-time status"@en, "Статистика занятости: Среднегодовое количество людей, работающих от 1 до 34 часов во всех и несельскохозяйственных отраслях, в зависимости от причины работы менее 35 часов и обычного статуса полной или неполной занятости"@ru .
+
+emp:GeneralStatisticalIndicator a rdfs:Class ;
+    rdfs:label "General statistical indicator"@en, "Общий статистический показатель"@ru ;
+    rdfs:comment "General statistical indicator for annual averages of persons"@en, "Общий статистический показатель среднегодовой численности населения"@ru .
+
+# ==================== Datatype Properties ====================
+
+emp:year a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "The calendar year for which the statistic is reported"@en, "Календарный год, за который приводятся статистические данные"@ru .
+
+emp:reason a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Reason"@en, "Причина"@ru ;
+    rdfs:comment "Reason for working less than 35 hours"@en, "Причина работы менее 35 часов в неделю"@ru .
+
+emp:industryType a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Industry type"@en, "Тип отрасли"@ru ;
+    rdfs:comment "Industry sector type"@en, "Тип отраслевого сектора"@ru .
+
+emp:workStatus a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Work status"@en, "Статус занятости"@ru ;
+    rdfs:comment "The usual work status based on typical weekly hours"@en, "Обычный статус занятости на основе типичного количества часов в неделю"@ru .
+
+emp:annualPersonAverages a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Annual averages of persons"@en, "Среднегодовое количество людей"@ru ;
+    rdfs:comment "Average annual number of people employed for a given reason, industry type, and work status"@en, "Среднегодовое работающее количество людей для указанной причины, типа отрасли и статуса занятости"@ru .
+
+emp:year a rdf:Property ;
+    rdfs:domain emp:GeneralStatisticalIndicator ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "The calendar year for which the statistic is reported"@en, "Календарный год, за который приводятся статистические данные"@ru .
+
+emp:industryType a rdf:Property ;
+    rdfs:domain emp:GeneralStatisticalIndicator ;
+    rdfs:range xsd:string ;
+    rdfs:label "Industry type"@en, "Тип отрасли"@ru ;
+    rdfs:comment "Industry sector type"@en, "Тип отраслевого сектора"@ru .
+
+emp:workStatus a rdf:Property ;
+    rdfs:domain emp:GeneralStatisticalIndicator ;
+    rdfs:range xsd:string ;
+    rdfs:label "Work status"@en, "Статус занятости"@ru ;
+    rdfs:comment "The usual work status based on typical weekly hours"@en, "Обычный статус занятости на основе типичного количества часов в неделю"@ru .
+
+emp:totalWorkHours a rdf:Property ;
+    rdfs:domain emp:GeneralStatisticalIndicator ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total work hours"@en, "Общее количество отработанных часов"@ru ;
+    rdfs:comment "Total, at work 1 to 34 hours"@en, "В общей сложности, затраченное на работу время: от 1 до 34 часов"@ru .
+
+emp:averageEconomicReasonHours a rdf:Property ;
+    rdfs:domain emp:GeneralStatisticalIndicator ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average economic reason hours"@en, "Среднее количество часов, обусловленных экономическими причинами"@ru ;
+    rdfs:comment "Average hours for economic reasons"@en, "Среднее количество рабочих часов по экономическим причинам"@ru .
+
+emp:averageNoneconomicReasonHours a rdf:Property ;
+    rdfs:domain emp:GeneralStatisticalIndicator ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average noneconomic reason hours"@en, "Среднее количество часов, отведенных на неэкономические причины"@ru ;
+    rdfs:comment "Average hours for noneconomic reasons"@en, "Среднее количество рабочих часов по неэкономическим причинам"@ru .
