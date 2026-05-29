@@ -7,7 +7,7 @@
 
 emp:EmploymentStatistics a rdfs:Class ;
     rdfs:label "Employment statistics"@en, "Статистика занятости"@ru ;
-    rdfs:comment "Statistics on the number of employed workers and average hours worked for a specific industry or class of workers"@en, "Статистические данные по численности занятых работников и средних часах работы для конкретной отрасли или класса работников"@ru .
+    rdfs:comment "Statistics on the number of employed workers for a specific industry or class of workers"@en, "Статистические данные по численности занятых работников для конкретной отрасли или класса работников"@ru .
 
 emp:AverageHoursStatistics a rdfs:Class ;
     rdfs:label "Average hours statistics"@en, "Статистика среднего показателя часов"@ru ;
