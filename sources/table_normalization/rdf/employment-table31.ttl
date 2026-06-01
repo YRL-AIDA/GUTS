@@ -1,0 +1,98 @@
+@prefix emp: <http://example.org/employment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+emp:CASEEmploymentStatistics a rdfs:Class ;
+    rdfs:label "CASE employment statistics"@en, "Статистика занятости в CASE"@ru ;
+    rdfs:comment "Employment statistics for CASE sectors (Creative Industries, Arts, Sports, Heritage, Entertainment) for a specific region and year"@en, "Статистические данные по занятости в секторах креативной экономики (Креативные индустрии, Искусство, Спорт, Наследие, Развлечения) для конкретного региона и года"@ru .
+
+emp:InformationAggregation a rdfs:Class ;
+    rdfs:label "Information aggregation"@en, "Агрегация информации"@ru ;
+    rdfs:comment "General employment summary for all creative economy sectors in a given region over the years"@en, "Общая сводная информация по занятости для всех секторов креативной экономики в конкретном регионе за года"@ru .
+
+emp:StatisticsData a rdfs:Class ;
+    rdfs:label "Statistics data"@en, "Данные о статистики"@ru ;
+    rdfs:comment "Employment observation statistics data"@en, "Данные о статистики наблюдений занятости"@ru .
+
+# ==================== Datatype Properties ====================
+
+emp:year a rdf:Property ;
+    rdfs:domain emp:CASEEmploymentStatistics ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+emp:region a rdf:Property ;
+    rdfs:domain emp:CASEEmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region"@en, "Регион"@ru ;
+    rdfs:comment "Name of the region of England"@en, "Название региона Англии"@ru .
+
+emp:sector a rdf:Property ;
+    rdfs:domain emp:CASEEmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sector"@en, "Сектор"@ru ;
+    rdfs:comment "CASE sector name"@en, "Название сектора креативной экономики"@ru .
+
+emp:employeesNumber a rdf:Property ;
+    rdfs:domain emp:CASEEmploymentStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of employees"@en, "Количество занятых"@ru ;
+    rdfs:comment "Number of employees in the specified CASE sector and region for a given year"@en, "Количество занятых в указанном секторе креативной экономики и регионе для данного года"@ru .
+
+emp:year a rdf:Property ;
+    rdfs:domain emp:InformationAggregation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+emp:region a rdf:Property ;
+    rdfs:domain emp:InformationAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region"@en, "Регион"@ru ;
+    rdfs:comment "Name of the region of England"@en, "Название региона Англии"@ru .
+
+emp:totalEmployeesNumber a rdf:Property ;
+    rdfs:domain emp:InformationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total number of employees"@en, "Общее количество занятых"@ru ;
+    rdfs:comment "The total employment value for all sectors in the specified region for the year"@en, "Общее значение занятости для всех секторов в указанном регионе за год"@ru .
+
+eco:dataOwner a rdf:Property ;
+    rdfs:domain eco:StatisticsData ;
+    rdfs:range xsd:string ;
+    rdfs:label "Data owner"@en, "Владелец данных"@ru ;
+    rdfs:comment "Owner of employment statistics data"@en, "Владелец статистических данных о занятости"@ru .
+
+eco:dataOwnerLink a rdf:Property ;
+    rdfs:domain eco:StatisticsData ;
+    rdfs:range xsd:string ;
+    rdfs:label "Link to data owner"@en, "Ссылка на владельца данных"@ru ;
+    rdfs:comment "Link to the owner of the employment statistics data"@en, "Ссылка на владельца статистических данных о занятости"@ru .
+
+eco:dataSource a rdf:Property ;
+    rdfs:domain eco:StatisticsData ;
+    rdfs:range xsd:string ;
+    rdfs:label "Data source"@en, "Источник данных"@ru ;
+    rdfs:comment "Source of employment statistics data"@en, "Источник статистических данных о занятости"@ru .
+
+eco:dataSourceLink a rdf:Property ;
+    rdfs:domain eco:StatisticsData ;
+    rdfs:range xsd:string ;
+    rdfs:label "Link to data source"@en, "Ссылка на источник данных"@ru ;
+    rdfs:comment "Link to source of employment statistics data"@en, "Ссылка на источник статистических данных о занятости"@ru .
+
+eco:dates a rdf:Property ;
+    rdfs:domain eco:StatisticsData ;
+    rdfs:range xsd:string ;
+    rdfs:label "Dates"@en, "Даты"@ru ;
+    rdfs:comment "Financial observation dates"@en, "Финансовые даты наблюдений"@ru .
+
+eco:updateCycle a rdf:Property ;
+    rdfs:domain eco:StatisticsData ;
+    rdfs:range xsd:string ;
+    rdfs:label "Update cycle"@en, "Цикл обновления"@ru ;
+    rdfs:comment "Employment statistics data update cycle"@en, "Цикл обновления статистических данных о занятости"@ru .
