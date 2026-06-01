@@ -1,0 +1,58 @@
+@prefix emp: <http://example.org/employment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+emp:CreativeEmploymentStatistics a rdfs:Class ;
+    rdfs:label "Creative employment statistics"@en, "Статистика занятости в творческой сфере"@ru ;
+    rdfs:comment "Statistics on average employment in creative subsectors for a specific region and year"@en, "Статистические данные по средней занятости в креативных подсекторах для конкретного региона и года"@ru .
+
+emp:InformationAggregation a rdfs:Class ;
+    rdfs:label "Information aggregation"@en, "Агрегация информации"@ru ;
+    rdfs:comment "General summary of average employment for all subsectors in a particular region for the year"@en, "Общая сводная информация по средней занятости для всех подсекторов в конкретном регионе за год"@ru .
+
+# ==================== Datatype Properties ====================
+
+emp:year a rdf:Property ;
+    rdfs:domain emp:CreativeEmploymentStatistics ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+emp:region a rdf:Property ;
+    rdfs:domain emp:CreativeEmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region"@en, "Регион"@ru ;
+    rdfs:comment "Name of the region of England"@en, "Название региона Англии"@ru .
+
+emp:subsector a rdf:Property ;
+    rdfs:domain emp:CreativeEmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sybsector"@en, "Подсектор"@ru ;
+    rdfs:comment "The name of the subsector in the creative field"@en, "Название подсектора в творческой сфере"@ru .
+
+emp:averageEmployment a rdf:Property ;
+    rdfs:domain emp:CreativeEmploymentStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Average employment"@en, "Средняя занятость"@ru ;
+    rdfs:comment "The average employment value for the specified creative subsector, region, and year"@en, "Значение средней занятости для указанного креативного подсектора, региона и года"@ru .
+
+emp:year a rdf:Property ;
+    rdfs:domain emp:InformationAggregation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+emp:region a rdf:Property ;
+    rdfs:domain emp:InformationAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region"@en, "Регион"@ru ;
+    rdfs:comment "Name of the region of England"@en, "Название региона Англии"@ru .
+
+emp:totalAverageEmployment a rdf:Property ;
+    rdfs:domain emp:InformationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total average employment"@en, "Общая средняя занятость"@ru ;
+    rdfs:comment "The total value of the average employment for all subsectors in the specified region for the year"@en, "Общее значение средней занятости для всех подсекторов в указанном регионе за год"@ru .
