@@ -1,0 +1,128 @@
+@prefix enr: <http://example.org/energy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+enr:EmissionStatistics a rdfs:Class ;
+    rdfs:label "Emission statistics"@en, "Статистика выбросов"@ru ;
+    rdfs:comment "Emission statistics for a specific month, hour and pollutant type"@en, "Статистические данные о выбросах для конкретного месяца, часа и вида загрязнителя"@ru .
+
+enr:GeneralAverageMonthlyStatistics a rdfs:Class ;
+    rdfs:label "General average monthly statistics"@en, "Общая среднемесячная статистика"@ru ;
+    rdfs:comment "Overall average emissions statistics for the month"@en, "Общая средняя статистика по выбросам за месяц"@ru .
+
+enr:GeneralAverageAnnualStatistics a rdfs:Class ;
+    rdfs:label "General average annual statistics"@en, "Общая среднегодовая статистика"@ru ;
+    rdfs:comment "Overall average emissions statistics for the year"@en, "Общая средняя статистика по выбросам за год"@ru .
+
+# ==================== Datatype Properties ====================
+
+enr:month a rdf:Property ;
+    rdfs:domain enr:EmissionStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Month"@en, "Месяц"@ru ;
+    rdfs:comment "Calendar month identifier"@en, "Идентификатор календарного месяц"@ru .
+
+enr:hour a rdf:Property ;
+    rdfs:domain enr:EmissionStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Hour"@en, "Час"@ru ;
+    rdfs:comment "Hour of day identifier"@en, "Идентификатор часа суток"@ru .
+
+enr:pollutant a rdf:Property ;
+    rdfs:domain enr:EmissionStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Pollutant"@en, "Загрязнитель"@ru ;
+    rdfs:comment "Pollutant type"@en, "Тип загрязнителя"@ru .
+
+enr:minimum a rdf:Property ;
+    rdfs:domain enr:EmissionStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Minimum"@en, "Минимум"@ru ;
+    rdfs:comment "Minimum pollution value"@en, "Минимальное значение загрязнения"@ru .
+
+enr:maximum a rdf:Property ;
+    rdfs:domain enr:EmissionStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Maximum"@en, "Максимум"@ru ;
+    rdfs:comment "Maximum pollution value"@en, "Максимальное значение загрязнения"@ru .
+
+enr:average a rdf:Property ;
+    rdfs:domain enr:EmissionStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average"@en, "Среднее"@ru ;
+    rdfs:comment "Average pollution value"@en, "Среднее значение загрязнения"@ru .
+
+enr:standardDeviation a rdf:Property ;
+    rdfs:domain enr:EmissionStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation"@en, "Стандартное отклонение"@ru ;
+    rdfs:comment "Standard deviation of the pollution value"@en, "Стандартное отклонение значения загрязнения"@ru .
+
+enr:month a rdf:Property ;
+    rdfs:domain enr:GeneralAverageMonthlyStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Month"@en, "Месяц"@ru ;
+    rdfs:comment "Calendar month identifier"@en, "Идентификатор календарного месяц"@ru .
+
+enr:pollutant a rdf:Property ;
+    rdfs:domain enr:GeneralAverageMonthlyStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Pollutant"@en, "Загрязнитель"@ru ;
+    rdfs:comment "Pollutant type"@en, "Тип загрязнителя"@ru .
+
+enr:averageMonthlyMinimum a rdf:Property ;
+    rdfs:domain enr:GeneralAverageMonthlyStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average monthly minimum"@en, "Среднемесячный минимум"@ru ;
+    rdfs:comment "Average monthly minimum pollution value"@en, "Среднемесячное минимальное значение загрязнения"@ru .
+
+enr:averageMonthlyMaximum a rdf:Property ;
+    rdfs:domain enr:GeneralAverageMonthlyStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average monthly maximum"@en, "Среднемесячный максимум"@ru ;
+    rdfs:comment "Average monthly maximum pollution value"@en, "Среднемесячное максимальное значение загрязнения"@ru .
+
+enr:averageMonthlyAverage a rdf:Property ;
+    rdfs:domain enr:GeneralAverageMonthlyStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average monthly average"@en, "Среднемесячное среднее"@ru ;
+    rdfs:comment "Average monthly pollution value"@en, "Среднемесячное среднее значение загрязнения"@ru .
+
+enr:monthlyStandardDeviation a rdf:Property ;
+    rdfs:domain enr:GeneralAverageMonthlyStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Monthly standard deviation"@en, "Среднемесячное стандартное отклонение"@ru ;
+    rdfs:comment "Average monthly standard deviation of pollution value"@en, "Среднемесячное стандартное отклонение значения загрязнения"@ru .
+
+enr:pollutant a rdf:Property ;
+    rdfs:domain enr:GeneralAverageAnnualStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Pollutant"@en, "Загрязнитель"@ru ;
+    rdfs:comment "Pollutant type"@en, "Тип загрязнителя"@ru .
+
+enr:averageAnnualMinimum a rdf:Property ;
+    rdfs:domain enr:GeneralAverageAnnualStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average annual minimum"@en, "Среднегодовой минимум"@ru ;
+    rdfs:comment "Average annual minimum pollution value"@en, "Среднегодовое минимальное значение загрязнения"@ru .
+
+enr:averageAnnualMaximum a rdf:Property ;
+    rdfs:domain enr:GeneralAverageAnnualStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average annual maximum"@en, "Среднегодовой максимум"@ru ;
+    rdfs:comment "Average annual maximum pollution value"@en, "Среднегодовое максимальное значение загрязнения"@ru .
+
+enr:averageAnnualAverage a rdf:Property ;
+    rdfs:domain enr:GeneralAverageAnnualStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average annual average"@en, "Среднегодовое среднее"@ru ;
+    rdfs:comment "Average annual pollution value"@en, "Среднегодовое среднее значение загрязнения"@ru .
+
+enr:annualStandardDeviation a rdf:Property ;
+    rdfs:domain enr:GeneralAverageAnnualStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Annual standard deviation"@en, "Среднегодовое стандартное отклонение"@ru ;
+    rdfs:comment "Average annual standard deviation of pollution value"@en, "Среднегодовое стандартное отклонение значения загрязнения"@ru .
