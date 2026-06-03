@@ -1,0 +1,54 @@
+@prefix env: <http://example.org/environment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+env:ClimateChangeStatistics a rdfs:Class ;
+    rdfs:label "Climate change statistics"@en, "Статистика изменения климата"@ru ;
+    rdfs:comment "Annual statistics on climate change in the regions"@en, "Ежегодная статистика по изменению климата в регионах"@ru .
+
+# ==================== Datatype Properties ====================
+
+env:timePeriod a rdf:Property ;
+    rdfs:domain env:ClimateChangeStatistics ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+env:referenceArea a rdf:Property ;
+    rdfs:domain env:ClimateChangeStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Reference area"@en, "Контрольная область"@ru ;
+    rdfs:comment "Name of the reference area (region)"@en, "Наименование контрольной области (региона)"@ru .
+
+env:measure a rdf:Property ;
+    rdfs:domain env:ClimateChangeStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Measure"@en, "Показатель"@ru ;
+    rdfs:comment "The main indicator of climate change"@en, "Основной показатель изменения климата"@ru .
+
+env:combinedMeasureUnit a rdf:Property ;
+    rdfs:domain env:ClimateChangeStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Combined unit of measure"@en, "Общая единица измерения"@ru ;
+    rdfs:comment "Name of combined unit of measure"@en, "Наименование комбинированной единицы измерения"@ru .
+
+env:returnPeriod a rdf:Property ;
+    rdfs:domain env:ClimateChangeStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Return period"@en, "Период восстановления"@ru ;
+    rdfs:comment "Return period in years"@en, "Период восстановления в годах"@ru .
+
+env:heatStressThreshold a rdf:Property ;
+    rdfs:domain env:ClimateChangeStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Heat stress threshold"@en, "Порог теплового стресса"@ru ;
+    rdfs:comment "Heat stress threshold marking"@en, "Отметка порога теплового стресса"@ru .
+
+env:measurementValue a rdf:Property ;
+    rdfs:domain env:ClimateChangeStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Measurement value"@en, "Значение измерения"@ru ;
+    rdfs:comment "The numerical value of the measurement"@en, "Числовое значение измерения"@ru .
