@@ -27,7 +27,7 @@ env:measure a rdf:Property ;
     rdfs:domain env:ClimateChangeStatistics ;
     rdfs:range xsd:string ;
     rdfs:label "Measure"@en, "Показатель"@ru ;
-    rdfs:comment "The main indicator of climate change"@en, "Основной показатель изменения климата"@ru .
+    rdfs:comment "A specific measurable indicator of climate danger"@en, "Конкретный измеряемый показатель климатической опасности"@ru .
 
 env:combinedMeasureUnit a rdf:Property ;
     rdfs:domain env:ClimateChangeStatistics ;
@@ -45,10 +45,10 @@ env:heatStressThreshold a rdf:Property ;
     rdfs:domain env:ClimateChangeStatistics ;
     rdfs:range xsd:string ;
     rdfs:label "Heat stress threshold"@en, "Порог теплового стресса"@ru ;
-    rdfs:comment "Heat stress threshold marking"@en, "Отметка порога теплового стресса"@ru .
+    rdfs:comment "Temperature threshold for heat stress metrics"@en, "Температурный порог для метрик теплового стресса"@ru .
 
 env:measurementValue a rdf:Property ;
     rdfs:domain env:ClimateChangeStatistics ;
     rdfs:range xsd:decimal ;
     rdfs:label "Measurement value"@en, "Значение измерения"@ru ;
-    rdfs:comment "The numerical value of the measurement"@en, "Числовое значение измерения"@ru .
+    rdfs:comment "The actual numerical value of the observation for the given dimensions"@en, "Фактическое числовое значение наблюдения для заданных измерений"@ru .
