@@ -1,0 +1,90 @@
+@prefix enr: <http://example.org/energy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+enr:FailureModeEffectsAnalysis a rdfs:Class ;
+    rdfs:label "Failure Mode and Effects Analysis (FMEA)"@en, "Анализ видов и последствий отказов"@ru ;
+    rdfs:comment "Failure Mode and Effects Analysis (FMEA) that describes the potential failure mode, its consequences, causes, and mitigation strategies for a specific system component"@en, "Анализ видов и последствий отказов, описывающий потенциальный режим отказа, его последствия, причины и стратегии смягчения для конкретного компонента системы"@ru .
+
+# ==================== Datatype Properties ====================
+
+enr:riskId a rdf:Property ;
+    rdfs:domain enr:FailureModeEffectsAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label "Risk identifier"@en, "Идентификатор риска"@ru ;
+    rdfs:comment "A unique identifier for the specific risk scenario"@en, "Уникальный идентификатор конкретного сценария риска"@ru .
+
+enr:itemDescription a rdf:Property ;
+    rdfs:domain enr:FailureModeEffectsAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label "Item description"@en, "Описание элемента"@ru ;
+    rdfs:comment "The name of the system component being analyzed"@en, "Название анализируемого компонента системы"@ru .
+
+enr:function a rdf:Property ;
+    rdfs:domain enr:FailureModeEffectsAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label "Function"@en, "Функция"@ru ;
+    rdfs:comment "The intended function or purpose of the component within the system"@en, "Предназначенная функция или назначение компонента в системе"@ru .
+
+enr:techClass a rdf:Property ;
+    rdfs:domain enr:FailureModeEffectsAnalysis ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Technical class"@en, "Технический класс"@ru ;
+    rdfs:comment "The technical classification or category of the component"@en, "Техническая классификация или категория компонента"@ru .
+
+enr:novelAspects a rdf:Property ;
+    rdfs:domain enr:FailureModeEffectsAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label "Novel aspects"@en, "Новые аспекты"@ru ;
+    rdfs:comment "Specific novel or unique aspects of the component's application"@en, "Специфические новые или уникальные аспекты применения компонента"@ru .
+
+enr:sss a rdf:Property ;
+    rdfs:domain enr:FailureModeEffectsAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label ""@en, ""@ru ;
+    rdfs:comment ""@en, ""@ru .
+
+enr:sss a rdf:Property ;
+    rdfs:domain enr:FailureModeEffectsAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label ""@en, ""@ru ;
+    rdfs:comment ""@en, ""@ru .
+
+enr:sss a rdf:Property ;
+    rdfs:domain enr:FailureModeEffectsAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label ""@en, ""@ru ;
+    rdfs:comment ""@en, ""@ru .
+
+enr:sss a rdf:Property ;
+    rdfs:domain enr:FailureModeEffectsAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label ""@en, ""@ru ;
+    rdfs:comment ""@en, ""@ru .
+
+enr:sss a rdf:Property ;
+    rdfs:domain enr:FailureModeEffectsAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label ""@en, ""@ru ;
+    rdfs:comment ""@en, ""@ru .
+
+enr:sss a rdf:Property ;
+    rdfs:domain enr:FailureModeEffectsAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label ""@en, ""@ru ;
+    rdfs:comment ""@en, ""@ru .
+
+enr:sss a rdf:Property ;
+    rdfs:domain enr:FailureModeEffectsAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label ""@en, ""@ru ;
+    rdfs:comment ""@en, ""@ru .
+
+enr:sss a rdf:Property ;
+    rdfs:domain enr:FailureModeEffectsAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label ""@en, ""@ru ;
+    rdfs:comment ""@en, ""@ru .
