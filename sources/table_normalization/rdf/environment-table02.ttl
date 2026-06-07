@@ -1,0 +1,118 @@
+@prefix env: <http://example.org/environment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+env:GeneralInactivationResults a rdfs:Class ;
+    rdfs:label "General inactivation results"@en, "Общие результаты инактивации"@ru ;
+    rdfs:comment "Detailed information on the inactivation results for a specific wash water sample using NaOCl"@en, "Детализированная информация по результатам инактивации для конкретного образца промывочной воды с использованием NaOCl"@ru .
+
+env:AverageInactivationRates a rdfs:Class ;
+    rdfs:label "Average inactivation rates"@en, "Средние показатели инактивации"@ru ;
+    rdfs:comment "Calculation of average inactivation values ​​for a specific wash water sample using NaOCl"@en, "Расчет средних показателей инактивации для конкретного образца промывочной воды с использованием NaOCl"@ru .
+
+# ==================== Datatype Properties ====================
+
+env:washWater a rdf:Property ;
+    rdfs:domain env:GeneralInactivationResults ;
+    rdfs:range xsd:string ;
+    rdfs:label "Wash water"@en, "Промывочная вода"@ru ;
+    rdfs:comment "The type and composition of the wash water being tested"@en, "Тип и состав тестируемой промывочной воды"@ru .
+
+env:testId a rdf:Property ;
+    rdfs:domain env:GeneralInactivationResults ;
+    rdfs:range xsd:string ;
+    rdfs:label "Test identifier"@en, "Идентификатор теста"@ru ;
+    rdfs:comment "A unique identifier for the specific experimental test"@en, "Уникальный идентификатор конкретного экспериментального теста"@ru .
+
+env:temperature a rdf:Property ;
+    rdfs:domain env:GeneralInactivationResults ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Temperature"@en, "Температура"@ru ;
+    rdfs:comment "The temperature of the water sample during the test in degrees Celsius"@en, "Температура образца воды во время теста в градусах Цельсия"@ru .
+
+env:waterPH a rdf:Property ;
+    rdfs:domain env:GeneralInactivationResults ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "pH of water"@en, "pH воды"@ru ;
+    rdfs:comment "The initial pH level of the water before any chemical additions"@en, "Начальный уровень pH воды до добавления каких-либо химических веществ"@ru .
+
+env:pHAfterCl2Addition a rdf:Property ;
+    rdfs:domain env:GeneralInactivationResults ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "pH after Cl2 addition"@en, "pH после добавления Cl2"@ru ;
+    rdfs:comment "The pH level of the water after the addition of chlorine (Cl2)"@en, "Уровень pH воды после добавления хлора (Cl2)"@ru .
+
+env:lImax a rdf:Property ;
+    rdfs:domain env:GeneralInactivationResults ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "LImax"@en, "LImax"@ru ;
+    rdfs:comment "The maximum log inactivation value achieved"@en, "Максимальное достигнутое значение логарифмической инактивации"@ru .
+
+env:tmax a rdf:Property ;
+    rdfs:domain env:GeneralInactivationResults ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Tmax"@en, "Tmax"@ru ;
+    rdfs:comment "The sample time in minutes required to reach LImax"@en, "Время отбора проб в минутах, необходимое для достижения LImax"@ru .
+
+env:t6log a rdf:Property ;
+    rdfs:domain env:GeneralInactivationResults ;
+    rdfs:range xsd:integer ;
+    rdfs:label "T6log"@en, "T6log"@ru ;
+    rdfs:comment "The time in minutes required to achieve a 6-log kill of the target pathogen"@en, "Время в минутах, необходимое для достижения 6-логарифмического уничтожения целевого патогена"@ru .
+
+env:pointsForT6logCalc a rdf:Property ;
+    rdfs:domain env:GeneralInactivationResults ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of points for T6log calculation"@en, "Количество точек для расчета T6log"@ru ;
+    rdfs:comment "The number of data points used to calculate the T6log value"@en, "Количество точек данных, использованных для расчета значения T6log"@ru .
+
+env:r2 a rdf:Property ;
+    rdfs:domain env:GeneralInactivationResults ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "R-squared"@en, "R-квадрат"@ru ;
+    rdfs:comment "The coefficient of determination (R-squared) for the test model"@en, "Коэффициент детерминации (R-квадрат) для модели теста"@ru .
+
+
+
+
+
+
+
+env:washWater a rdf:Property ;
+    rdfs:domain env:AverageInactivationRates ;
+    rdfs:range xsd:string ;
+    rdfs:label "Wash water"@en, "Промывочная вода"@ru ;
+    rdfs:comment "The type and composition of the wash water being tested"@en, "Тип и состав тестируемой промывочной воды"@ru .
+
+env:averageTemperature a rdf:Property ;
+    rdfs:domain env:AverageInactivationRates ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average temperature"@en, "Средняя температура"@ru ;
+    rdfs:comment "Average temperature of the water sample during the test in degrees Celsius"@en, "Средняя температура образца воды во время теста в градусах Цельсия"@ru .
+
+env:averageWaterPH a rdf:Property ;
+    rdfs:domain env:AverageInactivationRates ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average pH of water"@en, "Среднее pH воды"@ru ;
+    rdfs:comment "Average pH value of water before any chemical additions"@en, "Среднее значение pH воды до добавления каких-либо химических веществ"@ru .
+
+env:averagePHAfterCl2Addition a rdf:Property ;
+    rdfs:domain env:AverageInactivationRates ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average pH after Cl2 addition"@en, "Среднее pH после добавления Cl2"@ru ;
+    rdfs:comment "Average pH value of water after the addition of chlorine (Cl2)"@en, "Среднее значение pH воды после добавления хлора (Cl2)"@ru .
+
+env:averageT6log a rdf:Property ;
+    rdfs:domain env:AverageInactivationRates ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Average T6log"@en, "Среднее T6log"@ru ;
+    rdfs:comment "Average time in minutes required to achieve a 6-log kill of the target pathogen"@en, "Среднее время в минутах, необходимое для достижения 6-логарифмического уничтожения целевого патогена"@ru .
+
+env:sigma a rdf:Property ;
+    rdfs:domain env:AverageInactivationRates ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Sigma"@en, "Сигма"@ru ;
+    rdfs:comment "The standard deviation or variance metric for the test calculations"@en, "Метрика стандартного отклонения или дисперсии для расчетов теста"@ru .
