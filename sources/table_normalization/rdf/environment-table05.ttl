@@ -1,0 +1,60 @@
+@prefix env: <http://example.org/environment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+env:EnergySavingObservation a rdfs:Class ;
+    rdfs:label ""Energy saving observation"@en, "Наблюдение за экономией энергии"@ru ;
+    rdfs:comment "Estimated energy savings resulting from the installation of an energy efficiency measure"@en, "Предполагаемая экономия энергии в результате установки энергоэффективных мер"@ru .
+
+# ==================== Datatype Properties ====================
+
+env:energyEfficiencyMeasure a rdf:Property ;
+    rdfs:domain env:EnergySavingObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Energy efficiency measure"@en, "Мера энергоэффективности"@ru ;
+    rdfs:comment "The specific type of energy efficiency measure installed"@en, "Конкретный тип установленной меры по повышению энергоэффективности"@ru .
+
+env:savingsShown a rdf:Property ;
+    rdfs:domain env:EnergySavingObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Savings shown"@en, "Показанная экономия"@ru ;
+    rdfs:comment "The type of energy savings being reported"@en, "Тип учитываемой экономии энергии"@ru .
+
+env:notes a rdf:Property ;
+    rdfs:domain env:EnergySavingObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Notes"@en, "Примечания"@ru ;
+    rdfs:comment "Additional notes or references related to the observation"@en, "Дополнительные примечания или ссылки, связанные с наблюдением"@ru .
+
+env:numberInSample a rdf:Property ;
+    rdfs:domain env:EnergySavingObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number in sample"@en, "Количество в выборке"@ru ;
+    rdfs:comment "The number of observations or installations included in the sample for this measure"@en, "Количество наблюдений или установок, включенных в выборку для данной меры"@ru .
+
+env:medianPercentageSaving a rdf:Property ;
+    rdfs:domain env:EnergySavingObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Median percentage saving"@en, "Медианная экономия в процентах"@ru ;
+    rdfs:comment "The median percentage of energy saved"@en, "Медианная процентная экономия энергии"@ru .
+
+env:meanPercentageSaving a rdf:Property ;
+    rdfs:domain env:EnergySavingObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Mean percentage saving"@en, "Средняя экономия в процентах"@ru ;
+    rdfs:comment "The mean percentage of energy saved"@en, "Средняя процентная экономия энергии"@ru .
+
+env:medianSaving a rdf:Property ;
+    rdfs:domain env:EnergySavingObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Median saving (kWh)"@en, "Медианная экономия (кВт/ч)"@ru ;
+    rdfs:comment "The median energy saving in kilowatt-hours (kWh)"@en, "Медианная экономия энергии в киловатт-часах (кВт/ч)"@ru .
+
+env:meanSaving a rdf:Property ;
+    rdfs:domain env:EnergySavingObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Mean saving (kWh)"@en, "Средняя экономия (кВт/ч)"@ru ;
+    rdfs:comment "The mean energy saving in kilowatt-hours (kWh)"@en, "Средняя экономия энергии в киловатт-часах (кВт/ч)"@ru .
