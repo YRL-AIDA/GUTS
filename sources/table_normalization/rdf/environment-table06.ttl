@@ -1,0 +1,30 @@
+@prefix env: <http://example.org/environment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+env:DwellingStatistics a rdfs:Class ;
+    rdfs:label "Dwelling statistics"@en, "Статистика жилых помещений"@ru ;
+    rdfs:comment "Statistical data representing the number of dwellings in sample by floor area (square metres) within a specified area range for a given year"@en, "Статистические данные, представляющие количество жилых помещений в выборке по площади (в квадратных метрах) в определенном диапазоне площади для заданного года"@ru .
+
+# ==================== Datatype Properties ====================
+
+env:year a rdf:Property ;
+    rdfs:domain env:DwellingStatistics ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Year of statistical observation"@en, "Год статистического наблюдения"@ru .
+
+env:floorAreaRange a rdf:Property ;
+    rdfs:domain env:DwellingStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Floor area range"@en, "Диапазон площади"@ru ;
+    rdfs:comment "The floor area range or category of the dwellings in square metres"@en, "Диапазон или категория площади жилых домов в квадратных метрах"@ru .
+
+env:dwellingsNumber a rdf:Property ;
+    rdfs:domain env:DwellingStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of dwellings"@en, "Количество жилых помещений"@ru ;
+    rdfs:comment "The total count of dwellings falling into the specified floor area band for the given year"@en, "Общее количество жилых помещений, попадающих в указанный диапазон площади для заданного года"@ru .
