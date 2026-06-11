@@ -1,0 +1,42 @@
+@prefix env: <http://example.org/environment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+env:AgriculturalHorticulturalSurvey a rdfs:Class ;
+    rdfs:label "Agricultural and horticultural survey"@en, "Исследование сельского хозяйства и садоводства"@ru ;
+    rdfs:comment "A study presenting the number of agricultural enterprises by type or size for a specified region and metric in England"@en, "Исследование, представляющее количество сельскохозяйственных предприятий по типу или размеру для определенного региона и метрики в Англии"@ru .
+
+# ==================== Datatype Properties ====================
+
+env:region a rdf:Property ;
+    rdfs:domain env:AgriculturalHorticulturalSurvey ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region"@en, "Регион"@ru ;
+    rdfs:comment "The geographical region or county in England"@en, "Географический регион или графство в Англии"@ru .
+
+env:farmType a rdf:Property ;
+    rdfs:domain env:AgriculturalHorticulturalSurvey ;
+    rdfs:range xsd:string ;
+    rdfs:label "Farm type"@en, "Тип фермы"@ru ;
+    rdfs:comment "Farm classification name"@en, "Название классификации фермы"@ru .
+
+env:year a rdf:Property ;
+    rdfs:domain env:AgriculturalHorticulturalSurvey ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Year of statistical observation"@en, "Год статистического наблюдения"@ru .
+
+env:holdingsNumber a rdf:Property ;
+    rdfs:domain env:AgriculturalHorticulturalSurvey ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of holdings"@en, "Количество активов"@ru ;
+    rdfs:comment "The numerical value representing the number of holdings"@en, "Числовое значение, представляющее количество активов"@ru .
+
+env:percentageChange a rdf:Property ;
+    rdfs:domain env:AgriculturalHorticulturalSurvey ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percentage change"@en, "Процентное изменение"@ru ;
+    rdfs:comment "Percentage change in the number of assets over the previous year"@en, "Процентное изменение количества активов за предыдущий год"@ru .

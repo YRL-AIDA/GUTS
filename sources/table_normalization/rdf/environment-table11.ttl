@@ -1,0 +1,54 @@
+@prefix env: <http://example.org/environment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+env:SpecialLevyForecast a rdfs:Class ;
+    rdfs:label "Special levy forecast"@en, "Прогноз специального сбора"@ru ;
+    rdfs:comment "Forecast of the special levy for a particular local authority within the internal drainage board for a given financial year"@en, "Прогноз специального сбора для конкретного местного органа власти в составе совета по внутреннему дренажу для данного финансового года"@ru .
+
+# ==================== Datatype Properties ====================
+
+env:dateReceived a rdf:Property ;
+    rdfs:domain env:SpecialLevyForecast ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date received"@en, "Дата получения"@ru ;
+    rdfs:comment "The date when the forecast was received or recorded"@en, "Дата получения или записи прогноза"@ru .
+
+env:idb a rdf:Property ;
+    rdfs:domain env:SpecialLevyForecast ;
+    rdfs:range xsd:string ;
+    rdfs:label "IDB"@en, ""@ru ;
+    rdfs:comment "The name of the Internal Drainage Board (IDB) to which the local authority belongs"@en, "Название совета по внутреннему дренажу, к которому относится местный орган власти"@ru .
+
+env:localAuthorityName a rdf:Property ;
+    rdfs:domain env:SpecialLevyForecast ;
+    rdfs:range xsd:string ;
+    rdfs:label "Local authority name"@en, "Название местного органа власти"@ru ;
+    rdfs:comment "The name of the local authority or council being levied"@en, "Название местного органа власти или совета, для которого начисляется сбор"@ru .
+
+env:forecast a rdf:Property ;
+    rdfs:domain env:SpecialLevyForecast ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Forecast"@en, "Прогноз"@ru ;
+    rdfs:comment "The forecasted financial amount for the special levy in pounds sterling"@en, "Прогнозируемая финансовая сумма специального сбора в фунтах стерлингов"@ru .
+
+env:total a rdf:Property ;
+    rdfs:domain env:SpecialLevyForecast ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total forecast"@en, "Общий прогноз"@ru ;
+    rdfs:comment "Total projected financial amount"@en, "Общая прогнозируемая финансовая сумма"@ru .
+
+env:notes a rdf:Property ;
+    rdfs:domain env:SpecialLevyForecast ;
+    rdfs:range xsd:string ;
+    rdfs:label "Notes"@en, "Примечания"@ru ;
+    rdfs:comment "Additional notes or references related to the forecast"@en, "Дополнительные примечания или ссылки, связанные с прогнозам"@ru .
+
+env:updateBy a rdf:Property ;
+    rdfs:domain env:SpecialLevyForecast ;
+    rdfs:range xsd:string ;
+    rdfs:label "Update by"@en, "Кем обновлено"@ru ;
+    rdfs:comment "The identifier or initials of the person who updated the forecast"@en, "Идентификатор или инициалы лица, обновившего прогноз"@ru .
