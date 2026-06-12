@@ -1,0 +1,42 @@
+@prefix env: <http://example.org/environment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+env:AgriculturalHorticulturalSurvey a rdfs:Class ;
+    rdfs:label "Agricultural and horticultural survey"@en, "Исследование сельского хозяйства и садоводства"@ru ;
+    rdfs:comment "Annual statistics monitoring the area of ​​a particular land use category for a particular region or county in England"@en, "Ежегодные статистические данные наблюдения за площадью конкретной категории землепользования для определенного региона или графства в Англии"@ru .
+
+# ==================== Datatype Properties ====================
+
+env:region a rdf:Property ;
+    rdfs:domain env:AgriculturalHorticulturalSurvey ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region"@en, "Регион"@ru ;
+    rdfs:comment "The geographical region or county in England"@en, "Географический регион или графство в Англии"@ru .
+
+env:landUse a rdf:Property ;
+    rdfs:domain env:AgriculturalHorticulturalSurvey ;
+    rdfs:range xsd:string ;
+    rdfs:label "Land use"@en, "Землепользование"@ru ;
+    rdfs:comment "The specific category of land use being measured"@en, "Конкретная категория землепользования, которая измеряется"@ru .
+
+env:year a rdf:Property ;
+    rdfs:domain env:AgriculturalHorticulturalSurvey ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Year of statistical observation"@en, "Год статистического наблюдения"@ru .
+
+env:area a rdf:Property ;
+    rdfs:domain env:AgriculturalHorticulturalSurvey ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Area (ha)"@en, "Площадь (га)"@ru ;
+    rdfs:comment "The numerical value of the area of ​​a specific land use category"@en, "Числовое значение, площади конкретной категории землепользования"@ru .
+
+env:percentageChange a rdf:Property ;
+    rdfs:domain env:AgriculturalHorticulturalSurvey ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percentage change"@en, "Процентное изменение"@ru ;
+    rdfs:comment "Percentage change in land use area over the previous year"@en, "Процентное изменение площади землепользования за предыдущий год"@ru .
