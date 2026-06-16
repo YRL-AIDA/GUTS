@@ -1,0 +1,100 @@
+@prefix env: <http://example.org/environment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+env:ScientificProcedureObservation a rdfs:Class ;
+    rdfs:label "Scientific procedure observation"@en, "Наблюдение за научными процедурами"@ru ;
+    rdfs:comment "Observations of scientific procedures (non-toxicology) by species of animal and techniques of particular interest"@en, "Наблюдения за научными процедурами (нетоксикологическими) с использованием различных видов животных и методов, представляющих особый интерес"@ru .
+
+env:ObservationInformationAggregation a rdfs:Class ;
+    rdfs:label "Observation information aggregation"@en, "Агрегация информации наблюдений"@ru ;
+    rdfs:comment "Aggregated information on observations of scientific procedures for all animal species"@en, "Агрегированная информация по наблюдениям за научными процедурами для всех видов животных"@ru .
+
+# ==================== Datatype Properties ====================
+
+env:territory a rdf:Property ;
+    rdfs:domain env:ScientificProcedureObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Territory"@en, "Территория"@ru ;
+    rdfs:comment "The geographical territory or country where the procedures were conducted"@en, "Географическая территория или страна, где проводились процедуры"@ru .
+
+env:year a rdf:Property ;
+    rdfs:domain env:ScientificProcedureObservation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Year of statistical observation"@en, "Год статистического наблюдения"@ru .
+
+env:animalClass a rdf:Property ;
+    rdfs:domain env:ScientificProcedureObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Animal class"@en, "Класс животного"@ru ;
+    rdfs:comment "The general class of animals to which a particular species belongs"@en, "Общий класс животных, к которому принадлежит конкретный вид"@ru .
+
+env:animalSpecies a rdf:Property ;
+    rdfs:domain env:ScientificProcedureObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Species of animal"@en, "Вид животного"@ru ;
+    rdfs:comment "The specific species or category of animal used in the scientific procedures"@en, "Конкретный вид или категория животного, использованного в научных процедурах"@ru .
+
+env:technique a rdf:Property ;
+    rdfs:domain env:ScientificProcedureObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Technique of particular interest"@en, "Метод, представляющий особый интерес"@ru ;
+    rdfs:comment "The specific technique of particular interest used during the procedure"@en, "Конкретный метод, представляющий особый интерес, использованный во время процедуры"@ru .
+
+env:proceduresNumber a rdf:Property ;
+    rdfs:domain env:ScientificProcedureObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of procedures"@en, "Количество процедур"@ru ;
+    rdfs:comment "The numerical value representing the number of scientific procedures"@en, "Числовое значение, представляющее количество научных процедур"@ru .
+
+env:territory a rdf:Property ;
+    rdfs:domain env:ObservationInformationAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Territory"@en, "Территория"@ru ;
+    rdfs:comment "The geographical territory or country where the procedures were conducted"@en, "Географическая территория или страна, где проводились процедуры"@ru .
+
+env:year a rdf:Property ;
+    rdfs:domain env:ObservationInformationAggregation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Year of statistical observation"@en, "Год статистического наблюдения"@ru .
+
+env:technique a rdf:Property ;
+    rdfs:domain env:ObservationInformationAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Technique of particular interest"@en, "Метод, представляющий особый интерес"@ru ;
+    rdfs:comment "The specific technique of particular interest used during the procedure"@en, "Конкретный метод, представляющий особый интерес, использованный во время процедуры"@ru .
+
+env:totalNumber a rdf:Property ;
+    rdfs:domain env:ObservationInformationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total number"@en, "Общее количество"@ru ;
+    rdfs:comment "A numerical value representing the total number of scientific procedures for all animal species for a given year"@en, "Числовое значение, представляющее общее количество научных процедур для всех видов животных за указанный год"@ru .
+
+env:totalPercentage a rdf:Property ;
+    rdfs:domain env:ObservationInformationAggregation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percentage of total"@en, "Процент от общего количества"@ru ;
+    rdfs:comment "Percentage of total scientific procedures for all animal species for a given year"@en, "Процент от общего количества научных процедур для всех видов животных за указанный год"@ru .
+
+env:totalPreviousYear a rdf:Property ;
+    rdfs:domain env:ObservationInformationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total for the previous year"@en, "Общее количество за предыдущий год"@ru ;
+    rdfs:comment "A numerical value representing the total number of scientific procedures for all animal species for the previous year"@en, "Числовое значение, представляющее общее количество научных процедур для всех видов животных за предыдущий год"@ru .
+
+env:increase a rdf:Property ;
+    rdfs:domain env:ObservationInformationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Increase"@en, "Рост"@ru ;
+    rdfs:comment "Increase in the number of scientific procedures compared to the previous year"@en, "Рост количества научных процедур по сравнению с предыдущим годом"@ru .
+
+env:percentageChange a rdf:Property ;
+    rdfs:domain env:ObservationInformationAggregation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percentage change"@en, "Процентное изменение"@ru ;
+    rdfs:comment "Percentage change in the number of scientific procedures for all animal species compared to the previous year"@en, "Процентное изменение количества научных процедур для всех видов животных по сравнению с предыдущим годом"@ru .
