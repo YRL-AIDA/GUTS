@@ -1,0 +1,70 @@
+@prefix env: <http://example.org/environment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+env:ScientificProcedureObservation a rdfs:Class ;
+    rdfs:label "Scientific procedure observation"@en, "Наблюдение за научными процедурами"@ru ;
+    rdfs:comment "Observations of scientific procedures (toxicology) by species of animal and type of toxicological test: safety testing of substances other than pharmaceuticals"@en, "Наблюдения за научными процедурами (токсикология) по видам животных и типам токсикологических тестов: проверка безопасности веществ, отличных от фармацевтических препаратов"@ru .
+
+env:ObservationInformationAggregation a rdfs:Class ;
+    rdfs:label "Observation information aggregation"@en, "Агрегация информации наблюдений"@ru ;
+    rdfs:comment "Aggregated information on observations of scientific procedures for all animal species"@en, "Агрегированная информация по наблюдениям за научными процедурами для всех видов животных"@ru .
+
+# ==================== Datatype Properties ====================
+
+env:territory a rdf:Property ;
+    rdfs:domain env:ScientificProcedureObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Territory"@en, "Территория"@ru ;
+    rdfs:comment "The geographical territory or country where the procedures were conducted"@en, "Географическая территория или страна, где проводились процедуры"@ru .
+
+env:year a rdf:Property ;
+    rdfs:domain env:ScientificProcedureObservation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Year of statistical observation"@en, "Год статистического наблюдения"@ru .
+
+env:animalSpecies a rdf:Property ;
+    rdfs:domain env:ScientificProcedureObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Species of animal"@en, "Вид животного"@ru ;
+    rdfs:comment "The specific species or category of animal used in the scientific procedures"@en, "Конкретный вид или категория животного, использованного в научных процедурах"@ru .
+
+env:toxicologicalTestType a rdf:Property ;
+    rdfs:domain env:ScientificProcedureObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Type of toxicological test"@en, "Тип токсикологического теста"@ru ;
+    rdfs:comment "The specific type of toxicological test or procedure performed"@en, "Конкретный тип токсикологического теста или процедуры"@ru .
+
+env:proceduresNumber a rdf:Property ;
+    rdfs:domain env:ScientificProcedureObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of procedures"@en, "Количество процедур"@ru ;
+    rdfs:comment "The numerical value representing the number of scientific procedures"@en, "Числовое значение, представляющее количество научных процедур"@ru .
+
+env:territory a rdf:Property ;
+    rdfs:domain env:ObservationInformationAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Territory"@en, "Территория"@ru ;
+    rdfs:comment "The geographical territory or country where the procedures were conducted"@en, "Географическая территория или страна, где проводились процедуры"@ru .
+
+env:year a rdf:Property ;
+    rdfs:domain env:ObservationInformationAggregation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Year of statistical observation"@en, "Год статистического наблюдения"@ru .
+
+env:toxicologicalTestType a rdf:Property ;
+    rdfs:domain env:ObservationInformationAggregation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Type of toxicological test"@en, "Тип токсикологического теста"@ru ;
+    rdfs:comment "The specific type of toxicological test or procedure performed"@en, "Конкретный тип токсикологического теста или процедуры"@ru .
+
+env:totalNumber a rdf:Property ;
+    rdfs:domain env:ObservationInformationAggregation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total number"@en, "Общее количество"@ru ;
+    rdfs:comment "A numerical value representing the total number of scientific procedures for all animal species for a given year"@en, "Числовое значение, представляющее общее количество научных процедур для всех видов животных за указанный год"@ru .
