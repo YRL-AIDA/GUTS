@@ -1,0 +1,48 @@
+@prefix env: <http://example.org/environment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+env:PathogenDensity a rdfs:Class ;
+    rdfs:label "Pathogen density"@en, "Плотность патогенов"@ru ;
+    rdfs:comment "A statistical record representing the density, occurrence, and distribution of a specific reference pathogen in a specific source of water"@en, "Статистическая запись, представляющая плотность, частоту встречаемости и распределение конкретного референсного патогена в определенном источнике воды"@ru .
+
+# ==================== Datatype Properties ====================
+
+env:waterSource a rdf:Property ;
+    rdfs:domain env:PathogenDensity ;
+    rdfs:range xsd:string ;
+    rdfs:label "Source of water"@en, "Источник воды"@ru ;
+    rdfs:comment "The source of the water being analyzed"@en, "Источник анализируемой воды"@ru .
+
+env:referencePathogen a rdf:Property ;
+    rdfs:domain env:PathogenDensity ;
+    rdfs:range xsd:string ;
+    rdfs:label "Reference pathogen"@en, "Референтный патоген"@ru ;
+    rdfs:comment "The specific reference pathogen being measured"@en, "Конкретный референтный патоген, который измеряется"@ru .
+
+env:units a rdf:Property ;
+    rdfs:domain env:PathogenDensity ;
+    rdfs:range xsd:string ;
+    rdfs:label "Units"@en, "Единицы измерения"@ru ;
+    rdfs:comment "The units of measurement for the pathogen density"@en, "Единицы измерения плотности патогена"@ru .
+
+env:occurrence a rdf:Property ;
+    rdfs:domain env:PathogenDensity ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Occurrence"@en, "Частота встречаемости"@ru ;
+    rdfs:comment "The percentage occurrence of the pathogen in the specified water source"@en, "Процент встречаемости патогена в указанном источнике воды"@ru .
+
+env:distribution a rdf:Property ;
+    rdfs:domain env:PathogenDensity ;
+    rdfs:range xsd:string ;
+    rdfs:label "Distribution"@en, "Распределение"@ru ;
+    rdfs:comment "The statistical distribution of the pathogen density in logarithmic scale (log10/L)"@en, "Статистическое распределение плотности патогена в логарифмической шкале (log10/л)"@ru .
+
+env:references a rdf:Property ;
+    rdfs:domain env:PathogenDensity ;
+    rdfs:range xsd:string ;
+    rdfs:label "References"@en, "Ссылки"@ru ;
+    rdfs:comment "The bibliographic references or scientific literature sources supporting the data"@en, "Библиографические ссылки или источники научной литературы, подтверждающие данные"@ru .

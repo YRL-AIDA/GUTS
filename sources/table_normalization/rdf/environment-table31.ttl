@@ -1,0 +1,100 @@
+@prefix env: <http://example.org/environment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+env:ScientificProcedureAndLicenceObservation a rdfs:Class ;
+    rdfs:label "Observation of scientific procedures and licences"@en, "Наблюдение за научными процедурами и лицензиями"@ru ;
+    rdfs:comment "Observations of project licences and scientific procedures by type of designated establishment"@en, "Наблюдение за лицензиями на проекты и научными процедурами по типу назначенного учреждения"@ru .
+
+env:ReportedProcedureObservation a rdfs:Class ;
+    rdfs:label "Observation of reported procedures"@en, "Наблюдение за зарегистрированными процедурами"@ru ;
+    rdfs:comment "Observations the number of registered procedures by type of designated institution"@en, "Наблюдения за количеством зарегистрированных процедур по типу назначенного учреждения"@ru .
+
+# ==================== Datatype Properties ====================
+
+env:territory a rdf:Property ;
+    rdfs:domain env:ScientificProcedureAndLicenceObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Territory"@en, "Территория"@ru ;
+    rdfs:comment "The geographical territory or country where the procedures were conducted"@en, "Географическая территория или страна, где проводились процедуры"@ru .
+
+env:year a rdf:Property ;
+    rdfs:domain env:ScientificProcedureAndLicenceObservation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Year of statistical observation"@en, "Год статистического наблюдения"@ru .
+
+env:establishmentType a rdf:Property ;
+    rdfs:domain env:ScientificProcedureAndLicenceObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Establishment type"@en, "Тип учреждения"@ru ;
+    rdfs:comment "The specific type of designated establishment"@en, "Конкретный тип обозначенного учреждения"@ru .
+
+env:countableLicenceHoldersNumber a rdf:Property ;
+    rdfs:domain env:ScientificProcedureAndLicenceObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of licence holders (countable)"@en, "Количество обладателей лицензий (учитываемые)"@ru ;
+    rdfs:comment "Number of licence holders reporting countable procedures, by number of procedures reported"@en, "Количество обладателей лицензий, сообщивших о поддающихся учету процедурах, по количеству зарегистрированных процедур"@ru .
+
+env:nonCountableLicenceHoldersNumber a rdf:Property ;
+    rdfs:domain env:ScientificProcedureAndLicenceObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of licence holders (non-countable only)"@en, "Количество обладателей лицензий (только неучитываемые)"@ru ;
+    rdfs:comment "Licensees reporting non-countable procedures only"@en, "Лицензиаты, сообщающие только о процедурах, не подлежащих учету"@ru .
+
+env:noProceduresLicenceHoldersNumber a rdf:Property ;
+    rdfs:domain env:ScientificProcedureAndLicenceObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of licence holders (no procedures)"@en, "Количество обладателей лицензий (без учета процедур)"@ru ;
+    rdfs:comment "Number of licence holders reporting no procedures"@en, "Количество обладателей лицензий, сообщивших об отсутствии каких-либо процедур"@ru .
+
+env:totalLicensees a rdf:Property ;
+    rdfs:domain env:ScientificProcedureAndLicenceObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total licensees"@en, "Общее количество лицензиатов"@ru ;
+    rdfs:comment "The total number of licence holders associated with the establishment type"@en, "Общее количество держателей лицензий, связанных с данным типом учреждения"@ru .
+
+env:totalProcedureNumber a rdf:Property ;
+    rdfs:domain env:ScientificProcedureAndLicenceObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total number of procedures"@en, "Общее количество процедур"@ru ;
+    rdfs:comment "The total number of scientific procedures conducted by the establishment type"@en, "Общее количество научных процедур, проведенных учреждением данного типа"@ru .
+
+env:totalProcedurePercentage a rdf:Property ;
+    rdfs:domain env:ScientificProcedureAndLicenceObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total percentage of procedures"@en, "Общий процент процедур"@ru ;
+    rdfs:comment "The percentage of total procedures attributed to the establishment type"@en, "Процент от общего числа процедур, приходящийся на учреждение данного типа"@ru .
+
+env:territory a rdf:Property ;
+    rdfs:domain env:ReportedProcedureObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Territory"@en, "Территория"@ru ;
+    rdfs:comment "The geographical territory or country where the procedures were conducted"@en, "Географическая территория или страна, где проводились процедуры"@ru .
+
+env:year a rdf:Property ;
+    rdfs:domain env:ReportedProcedureObservation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Year of statistical observation"@en, "Год статистического наблюдения"@ru .
+
+env:establishmentType a rdf:Property ;
+    rdfs:domain env:ReportedProcedureObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Establishment type"@en, "Тип учреждения"@ru ;
+    rdfs:comment "The specific type of designated establishment"@en, "Конкретный тип обозначенного учреждения"@ru .
+
+env:proceduresNumberRange a rdf:Property ;
+    rdfs:domain env:ReportedProcedureObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Range of number of procedures"@en, "Диапазон количества процедур"@ru ;
+    rdfs:comment "The value of the range of the number of registered procedures"@en, "Значение диапазона количества зарегистрированных процедур"@ru .
+
+env:proceduresReportedNumber a rdf:Property ;
+    rdfs:domain env:ReportedProcedureObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of procedures reported"@en, "Количество зарегистрированных процедур"@ru ;
+    rdfs:comment "The numerical value of the number of registered procedures that fit within the specified range"@en, "Числовое значение количества зарегистрированных процедур подходящих под заданный диапазон"@ru .

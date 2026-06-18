@@ -1,0 +1,42 @@
+@prefix env: <http://example.org/environment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+env:ExposureEstimate a rdfs:Class ;
+    rdfs:label "Exposure estimate"@en, "Оценка воздействия"@ru ;
+    rdfs:comment "Exposure estimate statistics and parameters for specific water use purposes"@en, "Статистика оценки воздействия и параметров для конкретного назначения использования воды"@ru .
+
+# ==================== Datatype Properties ====================
+
+env:endUse a rdf:Property ;
+    rdfs:domain env:ExposureEstimate ;
+    rdfs:range xsd:string ;
+    rdfs:label "End use"@en, "Назначение использования"@ru ;
+    rdfs:comment "The intended end use of the water"@en, "Предназначенное назначение использования воды"@ru .
+
+env:dailyExposureVolume a rdf:Property ;
+    rdfs:domain env:ExposureEstimate ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Daily exposure volume (l)"@en, "Суточный объем воздействия (л)"@ru ;
+    rdfs:comment "The daily volume of water exposure in liters for the specified end use"@en, "Суточный объем воздействия воды в литрах для указанного назначения использования"@ru .
+
+env:exposureFrequency a rdf:Property ;
+    rdfs:domain env:ExposureEstimate ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Exposure frequency (days/year)"@en, "Частота воздействия (дней/год)"@ru ;
+    rdfs:comment "The frequency of exposure measured in days per year"@en, "Частота воздействия, измеряемая в днях в году"@ru .
+
+env:populationExposedFraction a rdf:Property ;
+    rdfs:domain env:ExposureEstimate ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Fraction of population exposed"@en, "Доля подвергшегося воздействию населения"@ru ;
+    rdfs:comment "The fraction or percentage of the population exposed to the water for the specified end use"@en, "Доля или процент населения, подвергающегося воздействию воды для указанного назначения использования"@ru .
+
+env:keyAssumptions a rdf:Property ;
+    rdfs:domain env:ExposureEstimate ;
+    rdfs:range xsd:string ;
+    rdfs:label "Key assumptions"@en, "Ключевые допущения"@ru ;
+    rdfs:comment "The key assumptions, guidelines, or scientific references supporting the exposure estimates"@en, "Ключевые допущения, руководства или научные ссылки, подтверждающие оценки воздействия"@ru .
