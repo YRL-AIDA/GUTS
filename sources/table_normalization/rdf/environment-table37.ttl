@@ -1,0 +1,90 @@
+@prefix env: <http://example.org/environment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+env:FuelMaterial a rdfs:Class ;
+    rdfs:label "Fuel material"@en, "Топливный материал"@ru ;
+    rdfs:comment "A solid fuel or biomass material characterized by proximate/ultimate analysis and particle size distribution"@en, "Твердое топливо или биомасса, охарактеризованные техническим/элементным анализом и гранулометрическим составом"@ru .
+
+# ==================== Datatype Properties ====================
+
+env:materialName a rdf:Property ;
+    rdfs:domain env:FuelMaterial ;
+    rdfs:range xsd:string ;
+    rdfs:label "Material name"@en, "Название материала"@ru ;
+    rdfs:comment "Unique name identifying the fuel material"@en, "Уникальное название, идентифицирующее топливный материал"@ru .
+
+env:moisture a rdf:Property ;
+    rdfs:domain env:FuelMaterial ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Moisture"@en, "Влажность"@ru ;
+    rdfs:comment "Moisture content percentage"@en, "Процентное содержание влаги"@ru .
+
+env:volatiles a rdf:Property ;
+    rdfs:domain env:FuelMaterial ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Volatiles"@en, "Летучие вещества"@ru ;
+    rdfs:comment "Volatile matter content percentage"@en, "Процентное содержание летучих веществ"@ru .
+
+env:fixedCarbon a rdf:Property ;
+    rdfs:domain env:FuelMaterial ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Fixed carbon"@en, "Фиксированный углерод"@ru ;
+    rdfs:comment "Fixed carbon content percentage"@en, "Процентное содержание фиксированного углерода"@ru .
+
+env:ash a rdf:Property ;
+    rdfs:domain env:FuelMaterial ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Ash"@en, "Зола"@ru ;
+    rdfs:comment "Ash content percentage"@en, "Процентное содержание золы"@ru .
+
+env:sulfur a rdf:Property ;
+    rdfs:domain env:FuelMaterial ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Sulfur"@en, "Сера"@ru ;
+    rdfs:comment "Sulfur content percentage"@en, "Процентное содержание серы"@ru .
+
+env:carbon a rdf:Property ;
+    rdfs:domain env:FuelMaterial ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Carbon"@en, "Углерод"@ru ;
+    rdfs:comment "Elemental carbon content percentage"@en, "Процентное содержание элементного углерода"@ru .
+
+env:hydrogen a rdf:Property ;
+    rdfs:domain env:FuelMaterial ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Hydrogen"@en, "Водород"@ru ;
+    rdfs:comment "Elemental hydrogen content percentage"@en, "Процентное содержание элементного водорода"@ru .
+
+env:nitrogen a rdf:Property ;
+    rdfs:domain env:FuelMaterial ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Nitrogen"@en, "Азот"@ru ;
+    rdfs:comment "Elemental nitrogen content percentage"@en, "Процентное содержание элементного азота"@ru .
+
+env:oxygen a rdf:Property ;
+    rdfs:domain env:FuelMaterial ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Oxygen"@en, "Кислород"@ru ;
+    rdfs:comment "Elemental oxygen content percentage"@en, "Процентное содержание элементного кислорода"@ru .
+
+env:hhv a rdf:Property ;
+    rdfs:domain env:FuelMaterial ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Higher heating value"@en, "Высшая теплота сгорания"@ru ;
+    rdfs:comment "Higher Heating Value (HHV) in BTU per pound"@en, "Высшая теплота сгорания (BTU на фунт)"@ru .
+
+env:coalSize a rdf:Property ;
+    rdfs:domain env:FuelMaterial ;
+    rdfs:range xsd:string ;
+    rdfs:label "Coal size (mesh)"@en, "Размер угля (сетка)"@ru ;
+    rdfs:comment "Coal size (distribution by fractions in meshes)"@en, "Размер угля (распределение по фракциям в сетках)"@ru .
+
+env:massPercentage a rdf:Property ;
+    rdfs:domain env:FuelMaterial ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Mass percentage"@en, "Массовая доля"@ru ;
+    rdfs:comment "Mass percentage of particles"@en, "Массовая доля частиц"@ru .

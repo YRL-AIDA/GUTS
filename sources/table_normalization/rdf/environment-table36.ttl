@@ -1,0 +1,48 @@
+@prefix env: <http://example.org/environment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+env:EmissionMeasurement a rdfs:Class ;
+    rdfs:label "Emission measurement"@en, "Измерение выбросов"@ru ;
+    rdfs:comment "Emissions measurement data, including the mean and standard deviation of a specific pollutant measured at a given point for a given material and blend"@en, "Данные по измерению выбросов, включая среднее значение и стандартное отклонение конкретного загрязняющего вещества, измеренного в определенной точке для заданного материала и смеси"@ru .
+
+# ==================== Datatype Properties ====================
+
+env:material a rdf:Property ;
+    rdfs:domain env:EmissionMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Material"@en, "Материал"@ru ;
+    rdfs:comment "The type of material being tested"@en, "Тип тестируемого материала"@ru .
+
+env:blend a rdf:Property ;
+    rdfs:domain env:EmissionMeasurement ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Blend"@en, "Смесь"@ru ;
+    rdfs:comment "The blend ratio or percentage of the material used in the test"@en, "Доля смеси или процент материала, использованного в тесте"@ru .
+
+env:pollutant a rdf:Property ;
+    rdfs:domain env:EmissionMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Pollutant"@en, "Загрязняющее вещество"@ru ;
+    rdfs:comment "The specific pollutant being measured"@en, "Конкретное загрязняющее вещество, которое измеряется"@ru .
+
+env:location a rdf:Property ;
+    rdfs:domain env:EmissionMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Location"@en, "Точка измерения"@ru ;
+    rdfs:comment "The measurement location or point in the system"@en, "Точка измерения или расположение в системе"@ru .
+
+env:average a rdf:Property ;
+    rdfs:domain env:EmissionMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average"@en, "Среднее значение"@ru ;
+    rdfs:comment "Average measured value of a pollutant at a specified location (lb/MMBtu)"@en, "Среднее измеренное значение загрязняющего вещества в указанном месте (фунт/ММБту)"@ru .
+
+env:standardDeviation a rdf:Property ;
+    rdfs:domain env:EmissionMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation"@en, "Стандартное отклонение"@ru ;
+    rdfs:comment "Standard deviation value of a pollutant at a specified location"@en, "Значение стандартного отклонения загрязняющего вещества в указанном месте"@ru .
