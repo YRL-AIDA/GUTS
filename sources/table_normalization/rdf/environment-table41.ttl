@@ -1,0 +1,130 @@
+@prefix env: <http://example.org/environment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+env:AnimalObservation a rdfs:Class ;
+    rdfs:label "Animal observation"@en, "Наблюдение за животным"@ru ;
+    rdfs:comment "Animal observation in the elevated plus-maze test, characterized by genotype, experimental group, pharmacological treatment, and behavioral measurements"@en, "Наблюдение за животным в тесте приподнятого крестообразного лабиринта, охарактеризованное генотипом, экспериментальной группой, фармакологической обработкой и поведенческими измерениями"@ru .
+
+env:AggregatedObservationInformation a rdfs:Class ;
+    rdfs:label "Aggregated observation information"@en, "Агрегированная информация по наблюдениям"@ru ;
+    rdfs:comment "Aggregated observation information for all animals in experiments"@en, "Агрегированная информация по наблюдениям для всех животных в экспериментах"@ru .
+
+# ==================== Datatype Properties ====================
+
+env:animal a rdf:Property ;
+    rdfs:domain env:AnimalObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Animal"@en, "Животное"@ru ;
+    rdfs:comment "Unique identifier of an animal"@en, "Уникальный идентификатор животного"@ru .
+
+env:genotype a rdf:Property ;
+    rdfs:domain env:AnimalObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Genotype"@en, "Генотип"@ru ;
+    rdfs:comment "Genotype of an animal"@en, "Генотип животного"@ru .
+
+env:group a rdf:Property ;
+    rdfs:domain env:AnimalObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Group"@en, "Группа"@ru ;
+    rdfs:comment "Experimental group to which the animal belongs"@en, "Экспериментальная группа, к которой принадлежит животное"@ru .
+
+env:treatment a rdf:Property ;
+    rdfs:domain env:AnimalObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Treatment"@en, "Обработка"@ru ;
+    rdfs:comment "Pharmacological treatment applied to the animal"@en, "Фармакологическая обработка, примененная к животному"@ru .
+
+env:timeOpenArms a rdf:Property ;
+    rdfs:domain env:AnimalObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Time in open arms"@en, "Время в открытых рукавах"@ru ;
+    rdfs:comment "Duration the animal spent in the open arms of the maze, measured in seconds"@en, "Продолжительность пребывания животного в открытых рукавах лабиринта, в секундах"@ru .
+
+env:openDistancePercent a rdf:Property ;
+    rdfs:domain env:AnimalObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Open distance percent"@en, "Процент открытой дистанции"@ru ;
+    rdfs:comment "Percentage of the total distance traveled in the open arms relative to the total distance traveled (Open Distance / Total Distance * 100)"@en, "Процент общей пройденной дистанции, приходящийся на открытые рукава, относительно общей пройденной дистанции (Пройденная дистанция / Общая дистанция * 100)"@ru .
+
+env:totalDistance a rdf:Property ;
+    rdfs:domain env:AnimalObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total distance"@en, "Общая дистанция"@ru ;
+    rdfs:comment "Total distance traveled by the animal during the test, measured in meters"@en, "Общая дистанция, пройденная животным во время теста, в метрах"@ru .
+
+env:genotype a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Genotype"@en, "Генотип"@ru ;
+    rdfs:comment "Genotype of an animal"@en, "Генотип животного"@ru .
+
+env:group a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Group"@en, "Группа"@ru ;
+    rdfs:comment "Experimental group to which the animal belongs"@en, "Экспериментальная группа, к которой принадлежит животное"@ru .
+
+env:treatment a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Treatment"@en, "Обработка"@ru ;
+    rdfs:comment "Pharmacological treatment applied to the animal"@en, "Фармакологическая обработка, примененная к животному"@ru .
+
+env:averageTimeOpenArms a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average time in open arms"@en, "Среднее время в открытых рукавах"@ru ;
+    rdfs:comment "Average duration the animal spent in the open arms of the maze, measured in seconds"@en, "Средняя продолжительность пребывания животного в открытых рукавах лабиринта, в секундах"@ru .
+
+env:timeOpenArmsStandardDeviation a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation of time in open arms"@en, "Стандартное отклонение времени в открытых рукавах"@ru ;
+    rdfs:comment "Standard deviation of duration the animal spent in the open arms of the maze, measured in seconds"@en, "Стандартное отклонение продолжительности пребывания животного в открытых рукавах лабиринта, в секундах"@ru .
+
+env:timeOpenArmsStatisticalError a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Statistical error of time in open arms"@en, "Статистическая ошибка времени в открытых рукавах"@ru ;
+    rdfs:comment "Statistical error in the duration the animal spent in the open arms of the maze, measured in seconds"@en, "Статистическая ошибка в продолжительности пребывания животного в открытых рукавах лабиринта, в секундах"@ru .
+
+env:averageOpenDistancePercent a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average open distance percent"@en, "Средний процент открытой дистанции"@ru ;
+    rdfs:comment "Average percentage of the total distance traveled in the open arms relative to the total distance traveled (Open Distance / Total Distance * 100)"@en, "Средний процент общей пройденной дистанции, приходящийся на открытые рукава, относительно общей пройденной дистанции (Пройденная дистанция / Общая дистанция * 100)"@ru .
+
+env:openDistancePercentStandardDeviation a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation of open distance percent"@en, "Стандартное отклонение процента открытой дистанции"@ru ;
+    rdfs:comment "Standard deviation of percentage of the total distance traveled in the open arms relative to the total distance traveled (Open Distance / Total Distance * 100)"@en, "Стандартное отклонение процента общей пройденной дистанции, приходящийся на открытые рукава, относительно общей пройденной дистанции (Пройденная дистанция / Общая дистанция * 100)"@ru .
+
+env:openDistancePercentStatisticalError a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Statistical error in open distance percent"@en, "Статистическая ошибка в процентах открытой дистанции"@ru ;
+    rdfs:comment "Statistical error in percentage of the total distance traveled in the open arms relative to the total distance traveled (Open Distance / Total Distance * 100)"@en, "Статистическая ошибка в процентах общей пройденной дистанции, приходящийся на открытые рукава, относительно общей пройденной дистанции (Пройденная дистанция / Общая дистанция * 100)"@ru .
+
+env:averageTotalDistance a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average total distance"@en, "Средняя общая дистанция"@ru ;
+    rdfs:comment "Average total distance traveled by the animal during the test, measured in meters"@en, "Средняя общая дистанция, пройденная животным во время теста, в метрах"@ru .
+
+env:totalDistanceStandardDeviation a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation of total distance"@en, "Стандартное отклонение общей дистанции"@ru ;
+    rdfs:comment "Standard deviation of total distance traveled by the animal during the test, measured in meters"@en, "Стандартное отклонение общей дистанции, пройденной животным во время теста, в метрах"@ru .
+
+env:totalDistanceStatisticalError a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Statistical error in total distance"@en, "Статистическая ошибка в общей дистанции"@ru ;
+    rdfs:comment "Statistical error in total distance traveled by the animal during the test, measured in meters"@en, "Статистическая ошибка в общей дистанции, пройденной животным во время теста, в метрах"@ru .

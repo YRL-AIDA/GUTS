@@ -1,0 +1,106 @@
+@prefix env: <http://example.org/environment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+env:AnimalObservation a rdfs:Class ;
+    rdfs:label "Animal observation"@en, "Наблюдение за животным"@ru ;
+    rdfs:comment "Observation of an animal in an experiment, characterized by genotype, experimental group, pharmacological treatment, and behavioral measurements"@en, "Наблюдение за животным в эксперименте, охарактеризованное генотипом, экспериментальной группой, фармакологической обработкой и поведенческими измерениями"@ru .
+
+env:AggregatedObservationInformation a rdfs:Class ;
+    rdfs:label "Aggregated observation information"@en, "Агрегированная информация по наблюдениям"@ru ;
+    rdfs:comment "Aggregated observation information for all animals in experiments"@en, "Агрегированная информация по наблюдениям для всех животных в экспериментах"@ru .
+
+# ==================== Datatype Properties ====================
+
+env:animal a rdf:Property ;
+    rdfs:domain env:AnimalObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Animal"@en, "Животное"@ru ;
+    rdfs:comment "Unique identifier of an animal"@en, "Уникальный идентификатор животного"@ru .
+
+env:genotype a rdf:Property ;
+    rdfs:domain env:AnimalObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Genotype"@en, "Генотип"@ru ;
+    rdfs:comment "Genotype of an animal"@en, "Генотип животного"@ru .
+
+env:group a rdf:Property ;
+    rdfs:domain env:AnimalObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Group"@en, "Группа"@ru ;
+    rdfs:comment "Experimental group to which the animal belongs"@en, "Экспериментальная группа, к которой принадлежит животное"@ru .
+
+env:treatment a rdf:Property ;
+    rdfs:domain env:AnimalObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Treatment"@en, "Обработка"@ru ;
+    rdfs:comment "Pharmacological treatment applied to the animal"@en, "Фармакологическая обработка, примененная к животному"@ru .
+
+env:timeImmobile a rdf:Property ;
+    rdfs:domain env:AnimalObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Time immobile"@en, "Время неподвижности"@ru ;
+    rdfs:comment "Duration of immobility observed during the behavioral test, measured in seconds"@en, "Продолжительность неподвижности, зафиксированная во время поведенческого теста, в секундах"@ru .
+
+env:latencyToImmobility a rdf:Property ;
+    rdfs:domain env:AnimalObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Latency to immobility"@en, "Латентность до неподвижности"@ru ;
+    rdfs:comment "Latency period before the onset of immobility during the behavioral test, measured in seconds"@en, "Латентный период до наступления неподвижности во время поведенческого теста, в секундах"@ru .
+
+env:genotype a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Genotype"@en, "Генотип"@ru ;
+    rdfs:comment "Genotype of an animal"@en, "Генотип животного"@ru .
+
+env:group a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Group"@en, "Группа"@ru ;
+    rdfs:comment "Experimental group to which the animal belongs"@en, "Экспериментальная группа, к которой принадлежит животное"@ru .
+
+env:treatment a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Treatment"@en, "Обработка"@ru ;
+    rdfs:comment "Pharmacological treatment applied to the animal"@en, "Фармакологическая обработка, примененная к животному"@ru .
+
+env:averageTimeImmobile a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average time immobile"@en, "Среднее время неподвижности"@ru ;
+    rdfs:comment "Average duration of immobility observed during the behavioral test, measured in seconds"@en, "Средняя продолжительность неподвижности, зафиксированная во время поведенческого теста, в секундах"@ru .
+
+env:timeImmobileStandardDeviation a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation of time immobile"@en, "Стандартное отклонение времени неподвижности"@ru ;
+    rdfs:comment "Standard deviation of duration of immobility observed during the behavioral test, measured in seconds"@en, "Стандартное отклонение продолжительности неподвижности, зафиксированная во время поведенческого теста, в секундах"@ru .
+
+env:timeImmobileStatisticalError a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Statistical error of time immobile"@en, "Статистическая ошибка времени неподвижности"@ru ;
+    rdfs:comment "Statistical error in the duration of immobility observed during the behavioral test, measured in seconds"@en, "Статистическая ошибка при продолжительности неподвижности, зафиксированная во время поведенческого теста, в секундах"@ru .
+
+env:averageLatencyToImmobility a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average latency to immobility"@en, "Средняя латентность до неподвижности"@ru ;
+    rdfs:comment "Average latency period before the onset of immobility during the behavioral test, measured in seconds"@en, "Средний латентный период до наступления неподвижности во время поведенческого теста, в секундах"@ru .
+
+env:latencyToImmobilityStandardDeviation a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation of latency to immobility"@en, "Стандартное отклонение латентности до неподвижности"@ru ;
+    rdfs:comment "Standard deviation of latency period before the onset of immobility during the behavioral test, measured in seconds"@en, "Стандартное отклонение латентного периода до наступления неподвижности во время поведенческого теста, в секундах"@ru .
+
+env:latencyToImmobilityStatisticalError a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Statistical error of latency to immobility"@en, "Статистическая ошибка латентности до неподвижности"@ru ;
+    rdfs:comment "Statistical error in the latency period before the onset of immobility during the behavioral test, measured in seconds"@en, "Статистическая ошибка в латентном периоде до наступления неподвижности во время поведенческого теста, в секундах"@ru .
