@@ -51,11 +51,6 @@ env:latencyCentre a rdf:Property ;
     rdfs:label "Latency centre"@en, "Латентность центра"@ru ;
     rdfs:comment "Latency period before the animal first entered the central area of the open field arena, measured in seconds"@en, "Латентный период до первого входа животного в центральную часть арены открытого поля, в секундах"@ru .
 
-
-
-
-
-
 env:genotype a rdf:Property ;
     rdfs:domain env:AggregatedObservationInformation ;
     rdfs:range xsd:string ;
