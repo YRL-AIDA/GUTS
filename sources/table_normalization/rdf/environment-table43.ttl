@@ -1,0 +1,82 @@
+@prefix env: <http://example.org/environment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+env:AnimalObservation a rdfs:Class ;
+    rdfs:label "Animal observation"@en, "Наблюдение за животным"@ru ;
+    rdfs:comment "Observation of an animal's emotionality index, characterized by genotype, experimental group, pharmacological treatment, and the calculated emotionality index value"@en, "Наблюдение за индексом эмоциональности животного, охарактеризованное генотипом, экспериментальной группой, фармакологической обработкой и вычисленным значением индекса эмоциональности"@ru .
+
+env:AggregatedObservationInformation a rdfs:Class ;
+    rdfs:label "Aggregated observation information"@en, "Агрегированная информация по наблюдениям"@ru ;
+    rdfs:comment "Aggregated observation information for all animals in experiments"@en, "Агрегированная информация по наблюдениям для всех животных в экспериментах"@ru .
+
+# ==================== Datatype Properties ====================
+
+env:animal a rdf:Property ;
+    rdfs:domain env:AnimalObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Animal"@en, "Животное"@ru ;
+    rdfs:comment "Unique identifier of an animal"@en, "Уникальный идентификатор животного"@ru .
+
+env:genotype a rdf:Property ;
+    rdfs:domain env:AnimalObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Genotype"@en, "Генотип"@ru ;
+    rdfs:comment "Genotype of an animal"@en, "Генотип животного"@ru .
+
+env:group a rdf:Property ;
+    rdfs:domain env:AnimalObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Group"@en, "Группа"@ru ;
+    rdfs:comment "Experimental group to which the animal belongs"@en, "Экспериментальная группа, к которой принадлежит животное"@ru .
+
+env:treatment a rdf:Property ;
+    rdfs:domain env:AnimalObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Treatment"@en, "Обработка"@ru ;
+    rdfs:comment "Pharmacological treatment applied to the animal"@en, "Фармакологическая обработка, примененная к животному"@ru .
+
+env:emotionalityIndex a rdf:Property ;
+    rdfs:domain env:AnimalObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Emotionality index"@en, "Индекс эмоциональности"@ru ;
+    rdfs:comment "A composite standardized behavioral index quantifying the overall emotionality (anxiety-like behavior) of the animal"@en, "Составной стандартизированный поведенческий показатель, количественно характеризующий общую эмоциональность (тревожноподобное поведение) животного"@ru .
+
+env:genotype a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Genotype"@en, "Генотип"@ru ;
+    rdfs:comment "Genotype of an animal"@en, "Генотип животного"@ru .
+
+env:group a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Group"@en, "Группа"@ru ;
+    rdfs:comment "Experimental group to which the animal belongs"@en, "Экспериментальная группа, к которой принадлежит животное"@ru .
+
+env:treatment a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Treatment"@en, "Обработка"@ru ;
+    rdfs:comment "Pharmacological treatment applied to the animal"@en, "Фармакологическая обработка, примененная к животному"@ru .
+
+env:averageEmotionalityIndex a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average emotionality index"@en, "Средний индекс эмоциональности"@ru ;
+    rdfs:comment "Average composite standardized behavioral index quantifying the overall emotionality (anxiety-like behavior) of the animal"@en, "Средний составной стандартизированный поведенческий показатель, количественно характеризующий общую эмоциональность (тревожноподобное поведение) животного"@ru .
+
+env:emotionalityIndexStandardDeviation a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation of emotionality index"@en, "Стандартное отклонение индекса эмоциональности"@ru ;
+    rdfs:comment "Standard deviation of a composite standardized behavioral index quantifying the overall emotionality (anxiety-like behavior) of the animal"@en, "Стандартное отклонение составного стандартизированного поведенческого показателя, количественно характеризующий общую эмоциональность (тревожноподобное поведение) животного"@ru .
+
+env:emotionalityIndexStatisticalError a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Statistical error of emotionality index"@en, "Статистическая ошибка индекса эмоциональности"@ru ;
+    rdfs:comment "Statistical error in a composite standardized behavioral index quantifying the overall emotionality (anxiety-like behavior) of the animal"@en, "Статистическая ошибка в составном стандартизированном поведенческом показателе, количественно характеризующий общую эмоциональность (тревожноподобное поведение) животного"@ru .

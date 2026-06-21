@@ -1,0 +1,111 @@
+@prefix env: <http://example.org/environment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+env:AnimalObservation a rdfs:Class ;
+    rdfs:label "Animal observation"@en, "Наблюдение за животным"@ru ;
+    rdfs:comment "Animal observation characterized by genotype, experimental group, pharmacological treatment and fold change measurements of gene expression (GR and FGF2)"@en, "Наблюдение за животным, охарактеризованное генотипом, экспериментальной группой, фармакологической обработкой и измерениями кратности изменения экспрессии генов (GR и FGF2)"@ru .
+
+env:AggregatedObservationInformation a rdfs:Class ;
+    rdfs:label "Aggregated observation information"@en, "Агрегированная информация по наблюдениям"@ru ;
+    rdfs:comment "Aggregated observation information for all animals in experiments"@en, "Агрегированная информация по наблюдениям для всех животных в экспериментах"@ru .
+
+# ==================== Datatype Properties ====================
+
+env:animal a rdf:Property ;
+    rdfs:domain env:AnimalObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Animal"@en, "Животное"@ru ;
+    rdfs:comment "Unique identifier of an animal"@en, "Уникальный идентификатор животного"@ru .
+
+env:genotype a rdf:Property ;
+    rdfs:domain env:AnimalObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Genotype"@en, "Генотип"@ru ;
+    rdfs:comment "Genotype of an animal"@en, "Генотип животного"@ru .
+
+env:group a rdf:Property ;
+    rdfs:domain env:AnimalObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Group"@en, "Группа"@ru ;
+    rdfs:comment "Experimental group to which the animal belongs"@en, "Экспериментальная группа, к которой принадлежит животное"@ru .
+
+env:treatment a rdf:Property ;
+    rdfs:domain env:AnimalObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Treatment"@en, "Обработка"@ru ;
+    rdfs:comment "Pharmacological treatment applied to the animal"@en, "Фармакологическая обработка, примененная к животному"@ru .
+
+env:grFoldChange a rdf:Property ;
+    rdfs:domain env:AnimalObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "GR fold change"@en, "Кратность изменения экспрессии GR"@ru ;
+    rdfs:comment "Fold change in the expression level of the Glucocorticoid Receptor (GR) gene. Values greater than 1 indicate up-regulation, values less than 1 indicate down-regulation, and values close to 1 indicate no significant change."@en, "Кратность изменения уровня экспрессии гена глюкокортикоидного рецептора (GR). Значения больше 1 указывают на повышение экспрессии, значения меньше 1 — на понижение, а значения около 1 — на отсутствие значимых изменений."@ru .
+
+env:fgf2FoldChange a rdf:Property ;
+    rdfs:domain env:AnimalObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "FGF2 fold change"@en, "Кратность изменения экспрессии FGF2"@ru ;
+    rdfs:comment "Fold change in the expression level of the Fibroblast Growth Factor 2 (FGF2) gene. Values greater than 1 indicate up-regulation, values less than 1 indicate down-regulation, and values close to 1 indicate no significant change."@en, "Кратность изменения уровня экспрессии гена фактора роста фибробластов 2 (FGF2). Значения больше 1 указывают на повышение экспрессии, значения меньше 1 — на понижение, а значения около 1 — на отсутствие значимых изменений."@ru .
+
+
+
+
+
+
+env:genotype a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Genotype"@en, "Генотип"@ru ;
+    rdfs:comment "Genotype of an animal"@en, "Генотип животного"@ru .
+
+env:group a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Group"@en, "Группа"@ru ;
+    rdfs:comment "Experimental group to which the animal belongs"@en, "Экспериментальная группа, к которой принадлежит животное"@ru .
+
+env:treatment a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Treatment"@en, "Обработка"@ru ;
+    rdfs:comment "Pharmacological treatment applied to the animal"@en, "Фармакологическая обработка, примененная к животному"@ru .
+
+env:averageGRFoldChange a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average GR fold change"@en, "Средняя кратность изменения экспрессии GR"@ru ;
+    rdfs:comment "Average fold change in the expression level of the Glucocorticoid Receptor (GR) gene"@en, "Средняя кратность изменения уровня экспрессии гена глюкокортикоидного рецептора (GR)"@ru .
+
+env:grFoldChangeStandardDeviation a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation of GR fold change"@en, "Стандартное отклонение кратности изменения экспрессии GR"@ru ;
+    rdfs:comment "Standard deviation of fold change in the expression level of the Glucocorticoid Receptor (GR) gene"@en, "Стандартное отклонение кратности изменения уровня экспрессии гена глюкокортикоидного рецептора (GR)"@ru .
+
+env:grFoldChangeStatisticalError a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Statistical error of GR fold change"@en, "Статистическая ошибка кратности изменения экспрессии GR"@ru ;
+    rdfs:comment "Statistical error of fold change in the expression level of the Glucocorticoid Receptor (GR) gene"@en, "Статистическая ошибка кратности изменения уровня экспрессии гена глюкокортикоидного рецептора (GR)"@ru .
+
+env:averageFGF2FoldChange a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average FGF2 fold change"@en, "Средняя кратность изменения экспрессии FGF2"@ru ;
+    rdfs:comment "Average fold change in the expression level of the Fibroblast Growth Factor 2 (FGF2) gene"@en, "Средняя кратность изменения уровня экспрессии гена фактора роста фибробластов 2 (FGF2)"@ru .
+
+env:fgf2FoldChangeStandardDeviation a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation of FGF2 fold change"@en, "Стандартное отклонение кратности изменения экспрессии FGF2"@ru ;
+    rdfs:comment "Standard deviation of fold change in the expression level of the Fibroblast Growth Factor 2 (FGF2) gene"@en, "Стандартное отклонение кратности изменения уровня экспрессии гена фактора роста фибробластов 2 (FGF2)"@ru .
+
+env:fgf2FoldChangeStatisticalError a rdf:Property ;
+    rdfs:domain env:AggregatedObservationInformation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Statistical error of FGF2 fold change"@en, "Статистическая ошибка кратности изменения экспрессии FGF2"@ru ;
+    rdfs:comment "Statistical error of fold change in the expression level of the Fibroblast Growth Factor 2 (FGF2) gene"@en, "Статистическая ошибка кратности изменения уровня экспрессии гена фактора роста фибробластов 2 (FGF2)"@ru .
