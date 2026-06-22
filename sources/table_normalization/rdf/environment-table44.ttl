@@ -51,11 +51,6 @@ env:fgf2FoldChange a rdf:Property ;
     rdfs:label "FGF2 fold change"@en, "Кратность изменения экспрессии FGF2"@ru ;
     rdfs:comment "Fold change in the expression level of the Fibroblast Growth Factor 2 (FGF2) gene. Values greater than 1 indicate up-regulation, values less than 1 indicate down-regulation, and values close to 1 indicate no significant change."@en, "Кратность изменения уровня экспрессии гена фактора роста фибробластов 2 (FGF2). Значения больше 1 указывают на повышение экспрессии, значения меньше 1 — на понижение, а значения около 1 — на отсутствие значимых изменений."@ru .
 
-
-
-
-
-
 env:genotype a rdf:Property ;
     rdfs:domain env:AggregatedObservationInformation ;
     rdfs:range xsd:string ;
