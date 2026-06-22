@@ -1,0 +1,64 @@
+@prefix env: <http://example.org/environment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+env:LeadConcentrationMeasurement a rdfs:Class ;
+    rdfs:label "Lead concentration measurement"@en, "Измерение концентрации свинца"@ru ;
+    rdfs:comment "Monthly measurement of lead concentration in soil in a specific location and month"@en, "Помесячное измерение концентрации свинца в почве в определенной локации и в определенный месяц"@ru .
+
+env:AverageLeadConcentrationMeasurement a rdfs:Class ;
+    rdfs:label "Average lead concentration measurement"@en, "Измерение средней концентрации свинца"@ru ;
+    rdfs:comment "Average measurement of lead concentration in soil in a specific location over a specific period of time"@en, "Среднее измерение концентрации свинца в почве в определенной локации за определенный промежуток времени"@ru .
+
+# ==================== Datatype Properties ====================
+
+env:location a rdf:Property ;
+    rdfs:domain env:LeadConcentrationMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Location"@en, "Местоположение"@ru ;
+    rdfs:comment "Unique name identifying the monitoring location"@en, "Уникальное название, идентифицирующее местоположение мониторинга"@ru .
+
+env:month a rdf:Property ;
+    rdfs:domain env:LeadConcentrationMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Month"@en, "Месяц"@ru ;
+    rdfs:comment "Month of the measurement"@en, "Месяц выполнения измерения"@ru .
+
+env:leadConcentration a rdf:Property ;
+    rdfs:domain env:LeadConcentrationMeasurement ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Lead concentration"@en, "Концентрация свинца"@ru ;
+    rdfs:comment "Measured concentration of lead (Pb) in soil, expressed in mg/Kg"@en, "Измеренная концентрация свинца (Pb) в почве, выраженная в мг/кг"@ru .
+
+env:maxPermissibleLimit a rdf:Property ;
+    rdfs:domain env:LeadConcentrationMeasurement ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Max permissible limit"@en, "Максимально допустимый предел"@ru ;
+    rdfs:comment "Maximum permissible limit of lead concentration in soil (mg/Kg) for the location"@en, "Максимально допустимый предел концентрации свинца в почве (мг/кг) для данной локации"@ru .
+
+env:location a rdf:Property ;
+    rdfs:domain env:AverageLeadConcentrationMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Location"@en, "Местоположение"@ru ;
+    rdfs:comment "Unique name identifying the monitoring location"@en, "Уникальное название, идентифицирующее местоположение мониторинга"@ru .
+
+env:timePeriod a rdf:Property ;
+    rdfs:domain env:AverageLeadConcentrationMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Time period"@en, "Период времени"@ru ;
+    rdfs:comment "Time period (several months) for performing the measurement"@en, "Период времени (в несколько месяцев) выполнения измерения"@ru .
+
+env:averageLeadConcentration a rdf:Property ;
+    rdfs:domain env:AverageLeadConcentrationMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average lead concentration"@en, "Средняя концентрация свинца"@ru ;
+    rdfs:comment "Average concentration of lead (Pb) in soil, expressed in mg/Kg"@en, "Средняя концентрация свинца (Pb) в почве, выраженная в мг/кг"@ru .
+
+env:maxPermissibleLimit a rdf:Property ;
+    rdfs:domain env:AverageLeadConcentrationMeasurement ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Max permissible limit"@en, "Максимально допустимый предел"@ru ;
+    rdfs:comment "Maximum permissible limit of lead concentration in soil (mg/Kg) for the location"@en, "Максимально допустимый предел концентрации свинца в почве (мг/кг) для данной локации"@ru .

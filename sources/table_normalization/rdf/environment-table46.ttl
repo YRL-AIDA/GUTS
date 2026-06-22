@@ -1,0 +1,30 @@
+@prefix env: <http://example.org/environment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+env:LeadConcentrationMeasurement a rdfs:Class ;
+    rdfs:label "Lead concentration measurement"@en, "Измерение концентрации свинца"@ru ;
+    rdfs:comment "Monthly measurement of lead concentration in a water sample in a specific location"@en, "Помесячное измерение концентрации свинца в пробе воды в определенной локации"@ru .
+
+# ==================== Datatype Properties ====================
+
+env:location a rdf:Property ;
+    rdfs:domain env:LeadConcentrationMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Location"@en, "Местоположение"@ru ;
+    rdfs:comment "Unique name identifying the monitoring location"@en, "Уникальное название, идентифицирующее местоположение мониторинга"@ru .
+
+env:month a rdf:Property ;
+    rdfs:domain env:LeadConcentrationMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Month"@en, "Месяц"@ru ;
+    rdfs:comment "Month of the water sample collection"@en, "Месяц отбора пробы воды"@ru .
+
+env:leadConcentration a rdf:Property ;
+    rdfs:domain env:LeadConcentrationMeasurement ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Lead concentration"@en, "Концентрация свинца"@ru ;
+    rdfs:comment "Measured concentration of lead (Pb) in the water sample, expressed in mg/L"@en, "Измеренная концентрация свинца (Pb) в пробе воды, выраженная в мг/л"@ru .
