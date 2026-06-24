@@ -20,6 +20,7 @@
   * `expert` contains labeled tables made by an independent expert (data analyst);
   * `measurement` contains labeled tables in terms of measurement;
   * `table_normalization` contains labeled tables in terms of table normalization (converting tables to the first and second normal form):
+    * `example` contains one example of manual table labeling from the viewpoint of table normalization;
     * `rdf` contains RDF data schemas in the RDF/XML format;
     * `visual_schemes` contains visual data schemas;
     * `xlsx` contains labeled tables with marked headers.
