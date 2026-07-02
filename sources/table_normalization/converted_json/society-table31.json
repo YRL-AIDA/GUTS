@@ -1,0 +1,815 @@
+[
+  {
+    "cells": [
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "LiST Input Data - Family Planning Coverage WITH Mitigation Measures",
+        "pdf_text_content": "LiST Input Data - Family Planning Coverage WITH Mitigation Measures",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": true
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1. Data to be Entered into FamPlan Model",
+        "pdf_text_content": "1. Data to be Entered into FamPlan Model",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": true
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "2019 Pre-COVID",
+        "pdf_text_content": "2019 Pre-COVID",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "2020 With COVID",
+        "pdf_text_content": "2020 With COVID",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "2021 WITH Mitigation",
+        "pdf_text_content": "2021 WITH Mitigation",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Total CPR",
+        "pdf_text_content": "Total CPR",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "65.735509",
+        "pdf_text_content": "65.735509",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "46.039819",
+        "pdf_text_content": "46.039819",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "51.86265378",
+        "pdf_text_content": "51.86265378",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Method Mix",
+        "pdf_text_content": "Method Mix",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Condom",
+        "pdf_text_content": "Condom",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Male condom",
+        "pdf_text_content": "Male condom",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0",
+        "pdf_text_content": "0",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0",
+        "pdf_text_content": "0",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "0",
+        "pdf_text_content": "0",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Sterilization",
+        "pdf_text_content": "Sterilization",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Female sterilization",
+        "pdf_text_content": "Female sterilization",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0",
+        "pdf_text_content": "0",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0",
+        "pdf_text_content": "0",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "0",
+        "pdf_text_content": "0",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Male sterilization",
+        "pdf_text_content": "Male sterilization",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Injectable",
+        "pdf_text_content": "Injectable",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "3 month (Depo Provera)",
+        "pdf_text_content": "3 month (Depo Provera)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Implants",
+        "pdf_text_content": "Implants",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Jadelle (5 years)",
+        "pdf_text_content": "Jadelle (5 years)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "IUD",
+        "pdf_text_content": "IUD",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Copper-T 380-A IUD (10 year)",
+        "pdf_text_content": "Copper-T 380-A IUD (10 year)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "6.64556655368714",
+        "pdf_text_content": "6.64556655368714",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "6.07265219700364",
+        "pdf_text_content": "6.07265219700364",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "6.25338646679641",
+        "pdf_text_content": "6.25338646679641",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Pill",
+        "pdf_text_content": "Pill",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Standard Daily regimen",
+        "pdf_text_content": "Standard Daily regimen",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "76.5822821878507",
+        "pdf_text_content": "76.5822821878507",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "69.9801229018733",
+        "pdf_text_content": "69.9801229018733",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "72.0628712632761",
+        "pdf_text_content": "72.0628712632761",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Traditional",
+        "pdf_text_content": "Traditional",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Withdrawal",
+        "pdf_text_content": "Withdrawal",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "6.09212",
+        "pdf_text_content": "6.09212",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "9.2625994033556",
+        "pdf_text_content": "9.2625994033556",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "8.38710201458573",
+        "pdf_text_content": "8.38710201458573",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Periodic abstinence",
+        "pdf_text_content": "Periodic abstinence",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "6.53789",
+        "pdf_text_content": "6.53789",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "9.94035836674336",
+        "pdf_text_content": "9.94035836674336",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "9.00079945735473",
+        "pdf_text_content": "9.00079945735473",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Traditional (Not Specified)",
+        "pdf_text_content": "Traditional (Not Specified)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "3.12036",
+        "pdf_text_content": "3.12036",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "4.74426713102412",
+        "pdf_text_content": "4.74426713102412",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "4.29584079798702",
+        "pdf_text_content": "4.29584079798702",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Other",
+        "pdf_text_content": "Other",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Other",
+        "pdf_text_content": "Other",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0",
+        "pdf_text_content": "0",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0",
+        "pdf_text_content": "0",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "0",
+        "pdf_text_content": "0",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          25
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "98.9782187415378",
+        "pdf_text_content": "98.9782187415378",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          25
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "100",
+        "pdf_text_content": "100",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          25
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "100",
+        "pdf_text_content": "100",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      }
+    ],
+    "structure_id": "society-table31",
+    "pdf_file_name": "society-table31.png",
+    "split": "manual_colored"
+  }
+]

@@ -1,0 +1,1665 @@
+[
+  {
+    "cells": [
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Source of Water",
+        "pdf_text_content": "Source of Water",
+        "is_column_header": true,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Reference Pathogen",
+        "pdf_text_content": "Reference Pathogen",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Units",
+        "pdf_text_content": "Units",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Occurrence (%)",
+        "pdf_text_content": "Occurrence (%)",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "Distribution3 (log10/L)",
+        "pdf_text_content": "Distribution3 (log10/L)",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "References",
+        "pdf_text_content": "References",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Untreated municipal wastewater",
+        "pdf_text_content": "Untreated municipal wastewater",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Norovirus GI+GII",
+        "pdf_text_content": "Norovirus GI+GII",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "genome copies",
+        "pdf_text_content": "genome copies",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "100",
+        "pdf_text_content": "100",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "N(4.7,1.5)",
+        "pdf_text_content": "N(4.7,1.5)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Eftim et al. (2017)",
+        "pdf_text_content": "Eftim et al. (2017)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Cryptosporidium",
+        "pdf_text_content": "Cryptosporidium",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "oocysts",
+        "pdf_text_content": "oocysts",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "100",
+        "pdf_text_content": "100",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "U(-0.5,4.38)",
+        "pdf_text_content": "U(-0.5,4.38)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Robertson et al. (2006), Madore et al. (1987), Yang et al. (2015), Crockett (2007), Nasser (2015), Harwood et al. (2005), Pecson et al. (2022b)",
+        "pdf_text_content": "Robertson et al. (2006), Madore et al. (1987), Yang et al. (2015), Crockett (2007), Nasser (2015), Harwood et al. (2005), Pecson et al. (2022b)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Giardia",
+        "pdf_text_content": "Giardia",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "cysts",
+        "pdf_text_content": "cysts",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "100",
+        "pdf_text_content": "100",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "U(0.5,5.0)",
+        "pdf_text_content": "U(0.5,5.0)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Wallis et al. (1996), Sykora et al. (1991),\nHarwood et al. (2005), Pecson et al. (2022b)",
+        "pdf_text_content": "Wallis et al. (1996), Sykora et al. (1991),\nHarwood et al. (2005), Pecson et al. (2022b)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Campylobacter spp.",
+        "pdf_text_content": "Campylobacter spp.",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "CFU",
+        "pdf_text_content": "CFU",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "100",
+        "pdf_text_content": "100",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "U(2.95,4.6)",
+        "pdf_text_content": "U(2.95,4.6)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Stampi et al. (1993)",
+        "pdf_text_content": "Stampi et al. (1993)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Salmonella spp.",
+        "pdf_text_content": "Salmonella spp.",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "CFU",
+        "pdf_text_content": "CFU",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "100",
+        "pdf_text_content": "100",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "U(0.5,7.4)",
+        "pdf_text_content": "U(0.5,7.4)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Jimenez-Cisneros et al. (2001), Bonadonna et al. (2002), Lemarchand and Lebaron (2003)",
+        "pdf_text_content": "Jimenez-Cisneros et al. (2001), Bonadonna et al. (2002), Lemarchand and Lebaron (2003)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Untreated onsite wastewater",
+        "pdf_text_content": "Untreated onsite wastewater",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Norovirus GI+GII",
+        "pdf_text_content": "Norovirus GI+GII",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "genome copies",
+        "pdf_text_content": "genome copies",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "99.7",
+        "pdf_text_content": "99.7",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "E(6.52,8.21)",
+        "pdf_text_content": "E(6.52,8.21)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Jahne et al. (2017)",
+        "pdf_text_content": "Jahne et al. (2017)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Cryptosporidium spp.",
+        "pdf_text_content": "Cryptosporidium spp.",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "oocysts",
+        "pdf_text_content": "oocysts",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "11.3",
+        "pdf_text_content": "11.3",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "E(3.28,5.11)",
+        "pdf_text_content": "E(3.28,5.11)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Jahne et al. (2017)",
+        "pdf_text_content": "Jahne et al. (2017)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Giardia",
+        "pdf_text_content": "Giardia",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "cysts",
+        "pdf_text_content": "cysts",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "69.8",
+        "pdf_text_content": "69.8",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "E(2.92,4.65)",
+        "pdf_text_content": "E(2.92,4.65)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Jahne et al. (2017)",
+        "pdf_text_content": "Jahne et al. (2017)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Campylobacter spp.",
+        "pdf_text_content": "Campylobacter spp.",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "CFU",
+        "pdf_text_content": "CFU",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "27.3",
+        "pdf_text_content": "27.3",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "E(2.75,5.35)",
+        "pdf_text_content": "E(2.75,5.35)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Jahne et al. (2017)",
+        "pdf_text_content": "Jahne et al. (2017)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Salmonella spp.",
+        "pdf_text_content": "Salmonella spp.",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "CFU",
+        "pdf_text_content": "CFU",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "23.2",
+        "pdf_text_content": "23.2",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "E(3.52,5.28)",
+        "pdf_text_content": "E(3.52,5.28)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Jahne et al. (2017)",
+        "pdf_text_content": "Jahne et al. (2017)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Graywater",
+        "pdf_text_content": "Graywater",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Norovirus GI+GII",
+        "pdf_text_content": "Norovirus GI+GII",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "genome copies",
+        "pdf_text_content": "genome copies",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "99.7",
+        "pdf_text_content": "99.7",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "E(3.86,5.73)",
+        "pdf_text_content": "E(3.86,5.73)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Jahne et al. (2017)",
+        "pdf_text_content": "Jahne et al. (2017)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Cryptosporidium spp.",
+        "pdf_text_content": "Cryptosporidium spp.",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "oocysts",
+        "pdf_text_content": "oocysts",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "11.3",
+        "pdf_text_content": "11.3",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "E(0.99,2.77)",
+        "pdf_text_content": "E(0.99,2.77)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Jahne et al. (2017)",
+        "pdf_text_content": "Jahne et al. (2017)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Giardia",
+        "pdf_text_content": "Giardia",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "cysts",
+        "pdf_text_content": "cysts",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "69.8",
+        "pdf_text_content": "69.8",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "E(0.84,2.48)",
+        "pdf_text_content": "E(0.84,2.48)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Jahne et al. (2017)",
+        "pdf_text_content": "Jahne et al. (2017)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Campylobacter spp.",
+        "pdf_text_content": "Campylobacter spp.",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "CFU",
+        "pdf_text_content": "CFU",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "27.3",
+        "pdf_text_content": "27.3",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "E(1.13,3.19)",
+        "pdf_text_content": "E(1.13,3.19)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Jahne et al. (2017)",
+        "pdf_text_content": "Jahne et al. (2017)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Salmonella spp.",
+        "pdf_text_content": "Salmonella spp.",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "CFU",
+        "pdf_text_content": "CFU",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "23.2",
+        "pdf_text_content": "23.2",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "E(1.11,2.89)",
+        "pdf_text_content": "E(1.11,2.89)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Jahne et al. (2017)",
+        "pdf_text_content": "Jahne et al. (2017)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Stormwater",
+        "pdf_text_content": "Stormwater",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Norovirus GI+GII",
+        "pdf_text_content": "Norovirus GI+GII",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "genome copies",
+        "pdf_text_content": "genome copies",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "100",
+        "pdf_text_content": "100",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "N(3.7,1.5)",
+        "pdf_text_content": "N(3.7,1.5)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Schoen et al. (2023)",
+        "pdf_text_content": "Schoen et al. (2023)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Cryptosporidium spp.",
+        "pdf_text_content": "Cryptosporidium spp.",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "oocysts",
+        "pdf_text_content": "oocysts",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "100",
+        "pdf_text_content": "100",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "U(-1.5, 3.38)",
+        "pdf_text_content": "U(-1.5, 3.38)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Schoen et al. (2023)",
+        "pdf_text_content": "Schoen et al. (2023)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Giardia",
+        "pdf_text_content": "Giardia",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "cysts",
+        "pdf_text_content": "cysts",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "100",
+        "pdf_text_content": "100",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "U(-0.5, 4.0)",
+        "pdf_text_content": "U(-0.5, 4.0)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Schoen et al. (2023)",
+        "pdf_text_content": "Schoen et al. (2023)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Campylobacter spp.",
+        "pdf_text_content": "Campylobacter spp.",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "CFU",
+        "pdf_text_content": "CFU",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "100",
+        "pdf_text_content": "100",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "U(1.95,3.6)",
+        "pdf_text_content": "U(1.95,3.6)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Schoen et al. (2023)",
+        "pdf_text_content": "Schoen et al. (2023)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Salmonella spp.",
+        "pdf_text_content": "Salmonella spp.",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "CFU",
+        "pdf_text_content": "CFU",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "100",
+        "pdf_text_content": "100",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "U(-0.5, 6.4)",
+        "pdf_text_content": "U(-0.5, 6.4)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Schoen et al. (2023)",
+        "pdf_text_content": "Schoen et al. (2023)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          21,
+          22,
+          23
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Roof runoff",
+        "pdf_text_content": "Roof runoff",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Campylobacter spp.",
+        "pdf_text_content": "Campylobacter spp.",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "CFU",
+        "pdf_text_content": "CFU",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "100",
+        "pdf_text_content": "100",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "E(-0.85,1.67)",
+        "pdf_text_content": "E(-0.85,1.67)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Schoen et al. (2017)",
+        "pdf_text_content": "Schoen et al. (2017)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Salmonella spp.",
+        "pdf_text_content": "Salmonella spp.",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "CFU",
+        "pdf_text_content": "CFU",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "100",
+        "pdf_text_content": "100",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "E(0.15,3.94)",
+        "pdf_text_content": "E(0.15,3.94)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Schoen et al. (2017)",
+        "pdf_text_content": "Schoen et al. (2017)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Giardia",
+        "pdf_text_content": "Giardia",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "cysts",
+        "pdf_text_content": "cysts",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "100",
+        "pdf_text_content": "100",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "U(-0.7,1.2)",
+        "pdf_text_content": "U(-0.7,1.2)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Alja'fari et al. (2022)",
+        "pdf_text_content": "Alja'fari et al. (2022)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      }
+    ],
+    "structure_id": "environment-table32",
+    "pdf_file_name": "environment-table32.png",
+    "split": "manual_colored"
+  }
+]

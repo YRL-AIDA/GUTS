@@ -1,0 +1,3862 @@
+[
+  {
+    "cells": [
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "xml_text_content": "ARV Regimen",
+        "pdf_text_content": "ARV Regimen",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "xml_text_content": "Liver Biopsy Concentrations by IR-MALDESI MSI Analysis",
+        "pdf_text_content": "Liver Biopsy Concentrations by IR-MALDESI MSI Analysis",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": true
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          6,
+          7
+        ],
+        "xml_text_content": "FTC",
+        "pdf_text_content": "FTC",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          8,
+          9
+        ],
+        "xml_text_content": "TFV",
+        "pdf_text_content": "TFV",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          10,
+          11
+        ],
+        "xml_text_content": "EFV",
+        "pdf_text_content": "EFV",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          12,
+          13
+        ],
+        "xml_text_content": "RPV",
+        "pdf_text_content": "RPV",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          14,
+          15
+        ],
+        "xml_text_content": "3TC",
+        "pdf_text_content": "3TC",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "FTC",
+        "pdf_text_content": "FTC",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "TFV",
+        "pdf_text_content": "TFV",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "EFV",
+        "pdf_text_content": "EFV",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "RPV",
+        "pdf_text_content": "RPV",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "3TC",
+        "pdf_text_content": "3TC",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "FTC Concentration  (µg/g)",
+        "pdf_text_content": "FTC Concentration  (µg/g)",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "LLOQ   (fg/voxel)",
+        "pdf_text_content": "LLOQ   (fg/voxel)",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "TFV Concentration(µg/g)",
+        "pdf_text_content": "TFV Concentration(µg/g)",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "Sample Specific LLOQ (fg/voxel)",
+        "pdf_text_content": "Sample Specific LLOQ (fg/voxel)",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          10
+        ],
+        "xml_text_content": "EFV Concentration (µg/g)",
+        "pdf_text_content": "EFV Concentration (µg/g)",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          11
+        ],
+        "xml_text_content": "Sample Specific LLOQ   (fg/voxel)",
+        "pdf_text_content": "Sample Specific LLOQ   (fg/voxel)",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          12
+        ],
+        "xml_text_content": "RPV Concentration (µg/g)",
+        "pdf_text_content": "RPV Concentration (µg/g)",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          13
+        ],
+        "xml_text_content": "Sample Specific LLOQ   (fg/voxel)",
+        "pdf_text_content": "Sample Specific LLOQ   (fg/voxel)",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          14
+        ],
+        "xml_text_content": "3TC Concentration (µg/g)",
+        "pdf_text_content": "3TC Concentration (µg/g)",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          15
+        ],
+        "xml_text_content": "Sample Specific LLOQ  (fg/voxel)",
+        "pdf_text_content": "Sample Specific LLOQ  (fg/voxel)",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.162450578109101",
+        "pdf_text_content": "0.162450578109101",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "893.418668832173",
+        "pdf_text_content": "893.418668832173",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "2.96176551584803",
+        "pdf_text_content": "2.96176551584803",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "2221.92742359528",
+        "pdf_text_content": "2221.92742359528",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          10
+        ],
+        "xml_text_content": "56.9289555627022",
+        "pdf_text_content": "56.9289555627022",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          11
+        ],
+        "xml_text_content": "120.03228959477",
+        "pdf_text_content": "120.03228959477",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          12
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          13
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          14
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          15
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "BLQ",
+        "pdf_text_content": "BLQ",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "893.418668832173",
+        "pdf_text_content": "893.418668832173",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "0.565496157988288",
+        "pdf_text_content": "0.565496157988288",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "2221.92742359528",
+        "pdf_text_content": "2221.92742359528",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          10
+        ],
+        "xml_text_content": "134.246509108021",
+        "pdf_text_content": "134.246509108021",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          11
+        ],
+        "xml_text_content": "120.03228959477",
+        "pdf_text_content": "120.03228959477",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          12
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          13
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          14
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          15
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "1.01156827198645",
+        "pdf_text_content": "1.01156827198645",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "893.418668832173",
+        "pdf_text_content": "893.418668832173",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "6.20405177078788",
+        "pdf_text_content": "6.20405177078788",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "2221.92742359528",
+        "pdf_text_content": "2221.92742359528",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          10
+        ],
+        "xml_text_content": "672.333239820488",
+        "pdf_text_content": "672.333239820488",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          11
+        ],
+        "xml_text_content": "120.03228959477",
+        "pdf_text_content": "120.03228959477",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          12
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          13
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          14
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          15
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.273186247908213",
+        "pdf_text_content": "0.273186247908213",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "893.418668832173",
+        "pdf_text_content": "893.418668832173",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "8.65049044193212",
+        "pdf_text_content": "8.65049044193212",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "2221.92742359528",
+        "pdf_text_content": "2221.92742359528",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          10
+        ],
+        "xml_text_content": "162.652437175456",
+        "pdf_text_content": "162.652437175456",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          11
+        ],
+        "xml_text_content": "120.03228959477",
+        "pdf_text_content": "120.03228959477",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          12
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          13
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          14
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          15
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "BLQ",
+        "pdf_text_content": "BLQ",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "57.0504855502188",
+        "pdf_text_content": "57.0504855502188",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "1.62279655770208",
+        "pdf_text_content": "1.62279655770208",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "8731.8063702269",
+        "pdf_text_content": "8731.8063702269",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          10
+        ],
+        "xml_text_content": "1956.51891442001",
+        "pdf_text_content": "1956.51891442001",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          11
+        ],
+        "xml_text_content": "776.689681860328",
+        "pdf_text_content": "776.689681860328",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          12
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          13
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          14
+        ],
+        "xml_text_content": "0.0679459652891036",
+        "pdf_text_content": "0.0679459652891036",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          15
+        ],
+        "xml_text_content": "14.2045733663093",
+        "pdf_text_content": "14.2045733663093",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.0939181427361188",
+        "pdf_text_content": "0.0939181427361188",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "57.0504855502188",
+        "pdf_text_content": "57.0504855502188",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "3.51723584804466",
+        "pdf_text_content": "3.51723584804466",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "8731.8063702269",
+        "pdf_text_content": "8731.8063702269",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          10
+        ],
+        "xml_text_content": "408.34520191477",
+        "pdf_text_content": "408.34520191477",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          11
+        ],
+        "xml_text_content": "776.689681860328",
+        "pdf_text_content": "776.689681860328",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          12
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          13
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          14
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          15
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "BLQ",
+        "pdf_text_content": "BLQ",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "42.1025319730853",
+        "pdf_text_content": "42.1025319730853",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "13.5568834338718",
+        "pdf_text_content": "13.5568834338718",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "1816.71883899924",
+        "pdf_text_content": "1816.71883899924",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          10
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          11
+        ],
+        "xml_text_content": "1014.57153719574",
+        "pdf_text_content": "1014.57153719574",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          12
+        ],
+        "xml_text_content": "0.410698962944711",
+        "pdf_text_content": "0.410698962944711",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          13
+        ],
+        "xml_text_content": "38.1438672846133",
+        "pdf_text_content": "38.1438672846133",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          14
+        ],
+        "xml_text_content": "2.44840517097",
+        "pdf_text_content": "2.44840517097",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          15
+        ],
+        "xml_text_content": "14.2045733663093",
+        "pdf_text_content": "14.2045733663093",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.0479547042960519",
+        "pdf_text_content": "0.0479547042960519",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "57.0504855502188",
+        "pdf_text_content": "57.0504855502188",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "3.46811245843157",
+        "pdf_text_content": "3.46811245843157",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "8731.8063702269",
+        "pdf_text_content": "8731.8063702269",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          10
+        ],
+        "xml_text_content": "344.410588259595",
+        "pdf_text_content": "344.410588259595",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          11
+        ],
+        "xml_text_content": "776.689681860328",
+        "pdf_text_content": "776.689681860328",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          12
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          13
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          14
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          15
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "BLQ",
+        "pdf_text_content": "BLQ",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "42.1025319730853",
+        "pdf_text_content": "42.1025319730853",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "3.78106254837119",
+        "pdf_text_content": "3.78106254837119",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "1816.71883899924",
+        "pdf_text_content": "1816.71883899924",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          10
+        ],
+        "xml_text_content": "247.284520195173",
+        "pdf_text_content": "247.284520195173",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          11
+        ],
+        "xml_text_content": "1014.57153719574",
+        "pdf_text_content": "1014.57153719574",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          12
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          13
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          14
+        ],
+        "xml_text_content": "0.457562207976514",
+        "pdf_text_content": "0.457562207976514",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          15
+        ],
+        "xml_text_content": "14.2045733663093",
+        "pdf_text_content": "14.2045733663093",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "BLQ",
+        "pdf_text_content": "BLQ",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "42.1025319730853",
+        "pdf_text_content": "42.1025319730853",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "2.30095951487665",
+        "pdf_text_content": "2.30095951487665",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "1816.71883899924",
+        "pdf_text_content": "1816.71883899924",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          10
+        ],
+        "xml_text_content": "BLQ",
+        "pdf_text_content": "BLQ",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          11
+        ],
+        "xml_text_content": "1014.57153719574",
+        "pdf_text_content": "1014.57153719574",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          12
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          13
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          14
+        ],
+        "xml_text_content": "0.335075574337581",
+        "pdf_text_content": "0.335075574337581",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          15
+        ],
+        "xml_text_content": "14.2045733663093",
+        "pdf_text_content": "14.2045733663093",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.0485427299724036",
+        "pdf_text_content": "0.0485427299724036",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "57.0504855502188",
+        "pdf_text_content": "57.0504855502188",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "2.8586895224466",
+        "pdf_text_content": "2.8586895224466",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "8731.8063702269",
+        "pdf_text_content": "8731.8063702269",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          10
+        ],
+        "xml_text_content": "313.302454991585",
+        "pdf_text_content": "313.302454991585",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          11
+        ],
+        "xml_text_content": "776.689681860328",
+        "pdf_text_content": "776.689681860328",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          12
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          13
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          14
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          15
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "BLQ",
+        "pdf_text_content": "BLQ",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "42.1025319730853",
+        "pdf_text_content": "42.1025319730853",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "3.3039661672191",
+        "pdf_text_content": "3.3039661672191",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "1816.71883899924",
+        "pdf_text_content": "1816.71883899924",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          10
+        ],
+        "xml_text_content": "223.42538830752",
+        "pdf_text_content": "223.42538830752",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          11
+        ],
+        "xml_text_content": "1014.57153719574",
+        "pdf_text_content": "1014.57153719574",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          12
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          13
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          14
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          15
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "BLQ",
+        "pdf_text_content": "BLQ",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "42.1025319730853",
+        "pdf_text_content": "42.1025319730853",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "4.77509381723761",
+        "pdf_text_content": "4.77509381723761",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "1816.71883899924",
+        "pdf_text_content": "1816.71883899924",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          10
+        ],
+        "xml_text_content": "909.828324700003",
+        "pdf_text_content": "909.828324700003",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          11
+        ],
+        "xml_text_content": "1014.57153719574",
+        "pdf_text_content": "1014.57153719574",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          12
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          13
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          14
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          15
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "1.79176152098772",
+        "pdf_text_content": "1.79176152098772",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "42.1025319730853",
+        "pdf_text_content": "42.1025319730853",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "7.818269816414",
+        "pdf_text_content": "7.818269816414",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "1816.71883899924",
+        "pdf_text_content": "1816.71883899924",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          10
+        ],
+        "xml_text_content": "1133.46501494757",
+        "pdf_text_content": "1133.46501494757",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          11
+        ],
+        "xml_text_content": "1014.57153719574",
+        "pdf_text_content": "1014.57153719574",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          12
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          13
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          14
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          15
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.0180565089892386",
+        "pdf_text_content": "0.0180565089892386",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "42.1025319730853",
+        "pdf_text_content": "42.1025319730853",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "1.68611493628264",
+        "pdf_text_content": "1.68611493628264",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "1816.71883899924",
+        "pdf_text_content": "1816.71883899924",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          10
+        ],
+        "xml_text_content": "470.206353373069",
+        "pdf_text_content": "470.206353373069",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          11
+        ],
+        "xml_text_content": "1014.57153719574",
+        "pdf_text_content": "1014.57153719574",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          12
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          13
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          14
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          15
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "BLQ",
+        "pdf_text_content": "BLQ",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "42.1025319730853",
+        "pdf_text_content": "42.1025319730853",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "3.93512189238159",
+        "pdf_text_content": "3.93512189238159",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "1816.71883899924",
+        "pdf_text_content": "1816.71883899924",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          10
+        ],
+        "xml_text_content": "376.95145443447",
+        "pdf_text_content": "376.95145443447",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          11
+        ],
+        "xml_text_content": "1014.57153719574",
+        "pdf_text_content": "1014.57153719574",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          12
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          13
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          14
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          15
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "BLQ",
+        "pdf_text_content": "BLQ",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "42.1025319730853",
+        "pdf_text_content": "42.1025319730853",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "4.35350703732816",
+        "pdf_text_content": "4.35350703732816",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "1816.71883899924",
+        "pdf_text_content": "1816.71883899924",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          10
+        ],
+        "xml_text_content": "768.602029309487",
+        "pdf_text_content": "768.602029309487",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          11
+        ],
+        "xml_text_content": "1014.57153719574",
+        "pdf_text_content": "1014.57153719574",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          12
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          13
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          14
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          15
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "x",
+        "pdf_text_content": "x",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.387432992104798",
+        "pdf_text_content": "0.387432992104798",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "42.1025319730853",
+        "pdf_text_content": "42.1025319730853",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "13.1787055727919",
+        "pdf_text_content": "13.1787055727919",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "1816.71883899924",
+        "pdf_text_content": "1816.71883899924",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          10
+        ],
+        "xml_text_content": "512.276325709187",
+        "pdf_text_content": "512.276325709187",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          11
+        ],
+        "xml_text_content": "1014.57153719574",
+        "pdf_text_content": "1014.57153719574",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          12
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          13
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          14
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          15
+        ],
+        "xml_text_content": "NR",
+        "pdf_text_content": "NR",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "Liver/Plasma Pearson Correlation",
+        "pdf_text_content": "Liver/Plasma Pearson Correlation",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "0.564",
+        "pdf_text_content": "0.564",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          10
+        ],
+        "xml_text_content": "0.689",
+        "pdf_text_content": "0.689",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      }
+    ],
+    "structure_id": "science-table06",
+    "pdf_file_name": "science-table06.png",
+    "split": "manual_colored"
+  }
+]

@@ -1,0 +1,376 @@
+<table border='1' cellspacing='0' cellpadding='5'>
+  <tr>
+    <th>Risk
+ID</th>
+    <th>Item
+Description</th>
+    <th>Function</th>
+    <th>Tech. Class</th>
+    <th>Novel Aspects</th>
+    <th>Failure
+Mode</th>
+    <th>Failure 
+Effects
+(Local, WEC, System)</th>
+    <th>Failure
+Cause(s)</th>
+    <th>Initial Mode
+ of
+Operation</th>
+    <th>Risk Reduction 
+Design</th>
+    <th>Preventative
+Detection</th>
+    <th>Post Failure
+Detection</th>
+    <th>Post Failure
+Repair
+Strategy 
+(automated, manual)</th>
+  </tr>
+  <tr>
+    <td>310-1</td>
+    <td>Motor Drive</td>
+    <td>Convert Motor Generator Voltages to DC voltage for transmission and storage.</td>
+    <td>2</td>
+    <td>Marine application, loading</td>
+    <td>Short or Open Circuit</td>
+    <td>Loss of Power Production, PTO Controlled Shutdown may or may not be possible</td>
+    <td>Corrosion Induced Short Circuit</td>
+    <td>Normal</td>
+    <td>Marine Rated system for corrosion protection, controlled nacelle environment</td>
+    <td>Visual Inspection, SCADA Detection of Flooding</td>
+    <td>SCADA Diagnosis</td>
+    <td>In-Situ Inspection, Repair or Replacement</td>
+  </tr>
+  <tr>
+    <td>310-2</td>
+    <td>Motor Drive</td>
+    <td>Convert Motor Generator Voltages to DC voltage for transmission and storage.</td>
+    <td>2</td>
+    <td>Marine application, loading</td>
+    <td>Short or Open Circuit</td>
+    <td>Loss of Power Production, PTO Controlled Shutdown may or may not be possible</td>
+    <td>Improper Installation or Manufacturing defect</td>
+    <td>Normal</td>
+    <td>V&V (QA/QC)</td>
+    <td>Visual Inspection</td>
+    <td>SCADA Diagnosis</td>
+    <td>In-Situ Inspection, Repair or Replacement of faulty component</td>
+  </tr>
+  <tr>
+    <td>310-3</td>
+    <td>Motor Drive</td>
+    <td>Convert Motor Generator Voltages to DC voltage for transmission and storage.</td>
+    <td>2</td>
+    <td>Marine application, loading</td>
+    <td>Short or Open Circuit</td>
+    <td>Loss of Power Production, PTO Controlled Shutdown may or may not be possible</td>
+    <td>Vibration or Buoy Motion induced failure</td>
+    <td>Normal</td>
+    <td>V&V (QA/QC), Proper selection of bus attachment system</td>
+    <td>Visual Inspection</td>
+    <td>SCADA Diagnosis and visual inspection</td>
+    <td>In-Situ Inspection, Repair or Replacement of faulty component or mounting</td>
+  </tr>
+  <tr>
+    <td>310-4</td>
+    <td>Motor Drive</td>
+    <td>Convert Motor Generator Voltages to DC voltage for transmission and storage.</td>
+    <td>2</td>
+    <td>Marine application, loading</td>
+    <td>Short Circuit</td>
+    <td>Loss of Power Production, PTO Controlled Shutdown may or may not be possible</td>
+    <td>Flooding Induced Failure (contact with water not corrosion)</td>
+    <td>Normal</td>
+    <td>System level isolation from water ingress, Marine rated Components, System level seperation of equipment.</td>
+    <td>Visual Inspection, SCADA Detection of Flooding</td>
+    <td>SCADA Diagnosis and visual inspection</td>
+    <td>Removal of Bouy from Water for dry repair or dry dock overhaul</td>
+  </tr>
+  <tr>
+    <td>330-1</td>
+    <td>Energy Storage</td>
+    <td>Power smoothing for continuous power flow over umbilical to subsea battery, and to support local payload power needs</td>
+    <td>2</td>
+    <td>Marine application, loading</td>
+    <td>Faulted Energy Storage</td>
+    <td>Loss of Power smoothing, Reduced Damping, Reduction in power production to the battery</td>
+    <td>Corrosion induced failure short/open circuit</td>
+    <td>Normal</td>
+    <td>Marine Rated system for corrosion protection, controlled nacelle environment</td>
+    <td>Visual Inspection, SCADA Detection of Flooding</td>
+    <td>SCADA Diagnosis</td>
+    <td>In-Situ Inspection, Repair or Replacement</td>
+  </tr>
+  <tr>
+    <td>330-2</td>
+    <td>Energy Storage</td>
+    <td>Power smoothing for continuous power flow over umbilical to subsea battery, and to support local payload power needs</td>
+    <td>2</td>
+    <td>Marine application, loading</td>
+    <td>Faulted Energy Storage</td>
+    <td>Loss of Power smoothing, Reduced Damping, Reduction in power production to the battery</td>
+    <td>Improper Installation or Manufacturing defect</td>
+    <td>Normal</td>
+    <td>V&V (QA/QC)</td>
+    <td>Visual Inspection</td>
+    <td>SCADA Diagnosis</td>
+    <td>In-Situ Inspection, Repair or Replacement of faulty component</td>
+  </tr>
+  <tr>
+    <td>330-3</td>
+    <td>Energy Storage</td>
+    <td>Power smoothing for continuous power flow over umbilical to subsea battery, and to support local payload power needs</td>
+    <td>2</td>
+    <td>Marine application, loading</td>
+    <td>Faulted Energy Storage</td>
+    <td>Loss of Power smoothing, Reduced Damping, Reduction in power production to the battery</td>
+    <td>Vibration or Buoy Motion induced failure</td>
+    <td>Normal</td>
+    <td>V&V (QA/QC), Proper selection of bus attachment system</td>
+    <td>Visual Inspection</td>
+    <td>SCADA Diagnosis and visual inspection</td>
+    <td>In-Situ Inspection, Repair or Replacement of faulty component or mounting</td>
+  </tr>
+  <tr>
+    <td>330-4</td>
+    <td>Energy Storage</td>
+    <td>Power smoothing for continuous power flow over umbilical to subsea battery, and to support local payload power needs</td>
+    <td>2</td>
+    <td>Marine application, loading</td>
+    <td>Faulted Energy Storage</td>
+    <td>Loss of Power smoothing, Reduced Damping, Reduction in power production to the battery</td>
+    <td>Flooding Induced Failure (contact with water not corrosion)</td>
+    <td>Normal</td>
+    <td>System level isolation from water ingress, Marine rated Components, System level seperation of equipment.</td>
+    <td>Visual Inspection, SCADA Detection of Flooding</td>
+    <td>SCADA Diagnosis and visual inspection</td>
+    <td>Removal of Bouy from Water for dry repair or dry dock overhaul</td>
+  </tr>
+  <tr>
+    <td>330-5</td>
+    <td>Energy Storage</td>
+    <td>Power smoothing for continuous power flow over umbilical to subsea battery, and to support local payload power needs</td>
+    <td>2</td>
+    <td>Marine application, loading</td>
+    <td>Fire/Smoke</td>
+    <td>Loss of Power smoothing, Reduced Damping, Reduction in power production to the battery</td>
+    <td>Fire/Smoke induced failure</td>
+    <td>Normal</td>
+    <td>Safety and Emergency system smoke alarm, overcurrent protection</td>
+    <td>Visual Inspection, SCADA Detection of Fire</td>
+    <td>SCADA Diagnosis and visual inspection</td>
+    <td>In-Situ Inspection, In-Situ Repair or Replacement of faulty component or Removal of Bouy from Water for dry repair or dry dock overhaul</td>
+  </tr>
+  <tr>
+    <td>330-5</td>
+    <td>Energy Storage</td>
+    <td>Power smoothing for continuous power flow over umbilical to subsea battery, and to support local payload power needs</td>
+    <td>2</td>
+    <td>Marine application, loading</td>
+    <td>Faulted Energy Storage</td>
+    <td>Loss of Power smoothing, Reduced Damping, Reduction in power production to the battery</td>
+    <td>Failure of Capacitor internally</td>
+    <td>Normal</td>
+    <td>temperature monitoring, charge control. V&V (QA/QC)</td>
+    <td>Visual Inspection, SCADA Detection</td>
+    <td>SCADA Diagnosis and visual inspection</td>
+    <td>In-Situ Inspection, Repair of faulty component</td>
+  </tr>
+  <tr>
+    <td>340-1</td>
+    <td>Umbilical Power Converter</td>
+    <td>Control power flow over umbilical to subsea battery</td>
+    <td>2</td>
+    <td>Marine application, loading</td>
+    <td>Short or Open Circuit</td>
+    <td>Loss of power transmission across umbilical</td>
+    <td>Corrosion Induced Short Circuit</td>
+    <td>Normal</td>
+    <td>Marine Rated system for corrosion protection, controlled nacelle environment</td>
+    <td>Visual Inspection, SCADA Detection of Flooding</td>
+    <td>SCADA Diagnosis</td>
+    <td>In-Situ Inspection, Repair or Replacement</td>
+  </tr>
+  <tr>
+    <td>340-2</td>
+    <td>Umbilical Power Converter</td>
+    <td>Control power flow over umbilical to subsea battery</td>
+    <td>2</td>
+    <td>Marine application, loading</td>
+    <td>Short or Open Circuit</td>
+    <td>Loss of power transmission across umbilical</td>
+    <td>Improper Installation or Manufacturing defect</td>
+    <td>Normal</td>
+    <td>V&V (QA/QC)</td>
+    <td>Visual Inspection</td>
+    <td>SCADA Diagnosis</td>
+    <td>In-Situ Inspection, Repair or Replacement of faulty component</td>
+  </tr>
+  <tr>
+    <td>340-3</td>
+    <td>Umbilical Power Converter</td>
+    <td>Control power flow over umbilical to subsea battery</td>
+    <td>2</td>
+    <td>Marine application, loading</td>
+    <td>Short or Open Circuit</td>
+    <td>Loss of power transmission across umbilical</td>
+    <td>Vibration or Buoy Motion induced failure</td>
+    <td>Normal</td>
+    <td>V&V (QA/QC), Proper selection of bus attachment system</td>
+    <td>Visual Inspection</td>
+    <td>SCADA Diagnosis and visual inspection</td>
+    <td>In-Situ Inspection, Repair or Replacement of faulty component or mounting</td>
+  </tr>
+  <tr>
+    <td>340-4</td>
+    <td>Umbilical Power Converter</td>
+    <td>Control power flow over umbilical to subsea battery</td>
+    <td>2</td>
+    <td>Marine application, loading</td>
+    <td>Short Circuit</td>
+    <td>Loss of power transmission across umbilical</td>
+    <td>Flooding Induced Failure (contact with water not corrosion)</td>
+    <td>Normal</td>
+    <td>System level isolation from water ingress, Marine rated Components, System level seperation of equipment.</td>
+    <td>Visual Inspection, SCADA Detection of Flooding</td>
+    <td>SCADA Diagnosis and visual inspection</td>
+    <td>Removal of Bouy from Water for dry repair or dry dock overhaul</td>
+  </tr>
+  <tr>
+    <td>370-1</td>
+    <td>Emergency Resistor</td>
+    <td>Electrical Resistor for dissipating power in over voltage situations</td>
+    <td>2</td>
+    <td>Marine application, loading</td>
+    <td>Open circuit occurs in resistor under load</td>
+    <td>Overvoltage from loss of emergency resistor could damage Electrical Insulation, and result in shorts or open circuits in other components, loss of PTO damping may lead to structural fatigue</td>
+    <td>Failure due to Corrosion, Inproper Mounting, Vibration, overheating, or over-current</td>
+    <td>Normal</td>
+    <td>Marine-rated resistor module, design to provide sufficient cooling and vibration damping</td>
+    <td>SCADA - temperature, vibration, and current monitoring</td>
+    <td>SCADA - PTO controller error diagnostics, physical inspection/test</td>
+    <td>In-Situ Inspection, Repair or Replacement of faulty component</td>
+  </tr>
+  <tr>
+    <td>380-1</td>
+    <td>Motor Bus</td>
+    <td>Electrical Connection between Generating Motor and Motor Drive</td>
+    <td>2</td>
+    <td>Marine application, loading</td>
+    <td>Short Or Open Bus</td>
+    <td>Loss of Power Generation, PTO Controlled Shutdown</td>
+    <td>Corrosion Induced Short Circuit</td>
+    <td>Normal</td>
+    <td>Marine Rated system for corrosion protection, controlled nacelle environment</td>
+    <td>Visual Inspection, SCADA Detection of Flooding</td>
+    <td>SCADA Diagnosis</td>
+    <td>In-Situ Inspection, Repair or Replacement</td>
+  </tr>
+  <tr>
+    <td>380-2</td>
+    <td>Motor Bus</td>
+    <td>Electrical Connection between Generating Motor and Motor Drive</td>
+    <td>2</td>
+    <td>Marine application, loading</td>
+    <td>Short Or Open Bus</td>
+    <td>Loss of Power Generation, PTO Controlled Shutdown</td>
+    <td>Improper Installation or Manufacturing defect</td>
+    <td>Normal</td>
+    <td>V&V (QA/QC)</td>
+    <td>Visual Inspection</td>
+    <td>SCADA Diagnosis</td>
+    <td>In-Situ Inspection, Repair or Replacement of faulty component</td>
+  </tr>
+  <tr>
+    <td>380-3</td>
+    <td>Motor Bus</td>
+    <td>Electrical Connection between Generating Motor and Motor Drive</td>
+    <td>2</td>
+    <td>Marine application, loading</td>
+    <td>Short Or Open Bus</td>
+    <td>Loss of Power Generation, PTO Controlled Shutdown</td>
+    <td>Vibration or Buoy Motion induced failure</td>
+    <td>Normal</td>
+    <td>V&V (QA/QC), Proper selection of bus attachment system</td>
+    <td>Visual Inspection</td>
+    <td>SCADA Diagnosis and visual inspection</td>
+    <td>In-Situ Inspection, Repair or Replacement of faulty component or mounting</td>
+  </tr>
+  <tr>
+    <td>380-4</td>
+    <td>Motor Bus</td>
+    <td>Electrical Connection between Generating Motor and Motor Drive</td>
+    <td>2</td>
+    <td>Marine application, loading</td>
+    <td>Short on Bus</td>
+    <td>Loss of Power Generation, PTO Controlled Shutdown</td>
+    <td>Flooding Induced Failure (contact with water not corrosion)</td>
+    <td>Normal</td>
+    <td>System level isolation from water ingress, Marine rated Components, System level seperation of equipment.</td>
+    <td>Visual Inspection, SCADA Detection of Flooding</td>
+    <td>SCADA Diagnosis and visual inspection</td>
+    <td>Removal of Bouy from Water for dry repair or dry dock overhaul</td>
+  </tr>
+  <tr>
+    <td>380-5</td>
+    <td>DC Bus</td>
+    <td>Common electrical connection between motor drive, local energy storage, and umbilical power converter</td>
+    <td>2</td>
+    <td>Marine application, loading</td>
+    <td>Short Or Open Bus</td>
+    <td>Loss of Power Generation, PTO Controlled Shutdown</td>
+    <td>Corrosion Induced Short Circuit</td>
+    <td>Normal</td>
+    <td>Marine Rated system for corrosion protection, controlled nacelle environment</td>
+    <td>Visual Inspection, SCADA Detection of Flooding</td>
+    <td>SCADA Diagnosis</td>
+    <td>In-Situ Inspection, Repair or Replacement</td>
+  </tr>
+  <tr>
+    <td>380-6</td>
+    <td>DC Bus</td>
+    <td>Common electrical connection between motor drive, local energy storage, and umbilical power converter</td>
+    <td>2</td>
+    <td>Marine application, loading</td>
+    <td>Short Or Open Bus</td>
+    <td>Loss of Power Generation, PTO Controlled Shutdown</td>
+    <td>Improper Installation or Manufacturing defect</td>
+    <td>Normal</td>
+    <td>V&V (QA/QC)</td>
+    <td>Visual Inspection</td>
+    <td>SCADA Diagnosis</td>
+    <td>In-Situ Inspection, Repair or Replacement of faulty component</td>
+  </tr>
+  <tr>
+    <td>380-7</td>
+    <td>DC Bus</td>
+    <td>Common electrical connection between motor drive, local energy storage, and umbilical power converter</td>
+    <td>2</td>
+    <td>Marine application, loading</td>
+    <td>Short Or Open Bus</td>
+    <td>Loss of Power Generation, PTO Controlled Shutdown</td>
+    <td>Vibration or Buoy Motion induced failure</td>
+    <td>Normal</td>
+    <td>V&V (QA/QC), Proper selection of bus attachment system</td>
+    <td>Visual Inspection</td>
+    <td>SCADA Diagnosis and visual inspection</td>
+    <td>In-Situ Inspection, Repair or Replacement of faulty component or mounting</td>
+  </tr>
+  <tr>
+    <td>380-8</td>
+    <td>DC Bus</td>
+    <td>Common electrical connection between motor drive, local energy storage, and umbilical power converter</td>
+    <td>2</td>
+    <td>Marine application, loading</td>
+    <td>Short on Bus</td>
+    <td>Loss of Power Generation, PTO Controlled Shutdown</td>
+    <td>Flooding Induced Failure (contact with water not corrosion)</td>
+    <td>Normal</td>
+    <td>System level isolation from water ingress, Marine rated Components, System level seperation of equipment.</td>
+    <td>Visual Inspection, SCADA Detection of Flooding</td>
+    <td>SCADA Diagnosis and visual inspection</td>
+    <td>Removal of Bouy from Water for dry repair or dry dock overhaul</td>
+  </tr>
+</table>

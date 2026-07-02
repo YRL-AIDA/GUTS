@@ -1,0 +1,4787 @@
+[
+  {
+    "cells": [
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Table A2: Estimated odds ratios from logistic regression of employment",
+        "pdf_text_content": "Table A2: Estimated odds ratios from logistic regression of employment",
+        "is_column_header": true,
+        "is_projected_row_header": true,
+        "is_metadata": true
+      },
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Contents",
+        "pdf_text_content": "Contents",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": true
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "(1) All",
+        "pdf_text_content": "(1) All",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "(2) Male",
+        "pdf_text_content": "(2) Male",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "(3) Female",
+        "pdf_text_content": "(3) Female",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(4) All",
+        "pdf_text_content": "(4) All",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(5) Male",
+        "pdf_text_content": "(5) Male",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(6) Female",
+        "pdf_text_content": "(6) Female",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "xml_text_content": "Religious affiliation (omitted category Christian)",
+        "pdf_text_content": "Religious affiliation (omitted category Christian)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "No answer",
+        "pdf_text_content": "No answer",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.793***",
+        "pdf_text_content": "0.793***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.661***",
+        "pdf_text_content": "0.661***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "1.042",
+        "pdf_text_content": "1.042",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.123***",
+        "pdf_text_content": "1.123***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "0.992",
+        "pdf_text_content": "0.992",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "1.511***",
+        "pdf_text_content": "1.511***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "(0.015)",
+        "pdf_text_content": "(0.015)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "(0.015)",
+        "pdf_text_content": "(0.015)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "(0.032)",
+        "pdf_text_content": "(0.032)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.021)",
+        "pdf_text_content": "(0.021)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.024)",
+        "pdf_text_content": "(0.024)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.048)",
+        "pdf_text_content": "(0.048)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "No Religion",
+        "pdf_text_content": "No Religion",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.852***",
+        "pdf_text_content": "0.852***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.896***",
+        "pdf_text_content": "0.896***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.810***",
+        "pdf_text_content": "0.810***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "0.936***",
+        "pdf_text_content": "0.936***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "0.955***",
+        "pdf_text_content": "0.955***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.921***",
+        "pdf_text_content": "0.921***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "(0.002)",
+        "pdf_text_content": "(0.002)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "(0.002)",
+        "pdf_text_content": "(0.002)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "(0.002)",
+        "pdf_text_content": "(0.002)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.002)",
+        "pdf_text_content": "(0.002)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.003)",
+        "pdf_text_content": "(0.003)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.003)",
+        "pdf_text_content": "(0.003)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Buddhist",
+        "pdf_text_content": "Buddhist",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.990",
+        "pdf_text_content": "0.990",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "1.519***",
+        "pdf_text_content": "1.519***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.750***",
+        "pdf_text_content": "0.750***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.084***",
+        "pdf_text_content": "1.084***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "1.390***",
+        "pdf_text_content": "1.390***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "1.002",
+        "pdf_text_content": "1.002",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "(0.015)",
+        "pdf_text_content": "(0.015)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "(0.041)",
+        "pdf_text_content": "(0.041)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "(0.014)",
+        "pdf_text_content": "(0.014)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.017)",
+        "pdf_text_content": "(0.017)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.039)",
+        "pdf_text_content": "(0.039)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.019)",
+        "pdf_text_content": "(0.019)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Hindu",
+        "pdf_text_content": "Hindu",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.747***",
+        "pdf_text_content": "0.747***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "1.085***",
+        "pdf_text_content": "1.085***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.522***",
+        "pdf_text_content": "0.522***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "0.683***",
+        "pdf_text_content": "0.683***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "0.802***",
+        "pdf_text_content": "0.802***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.618***",
+        "pdf_text_content": "0.618***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "(0.005)",
+        "pdf_text_content": "(0.005)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "(0.011)",
+        "pdf_text_content": "(0.011)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "(0.005)",
+        "pdf_text_content": "(0.005)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.006)",
+        "pdf_text_content": "(0.006)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.010)",
+        "pdf_text_content": "(0.010)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.007)",
+        "pdf_text_content": "(0.007)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Jewish",
+        "pdf_text_content": "Jewish",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1.237***",
+        "pdf_text_content": "1.237***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "1.295***",
+        "pdf_text_content": "1.295***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "1.184***",
+        "pdf_text_content": "1.184***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "0.970*",
+        "pdf_text_content": "0.970*",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "1.073***",
+        "pdf_text_content": "1.073***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.884***",
+        "pdf_text_content": "0.884***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "(0.019)",
+        "pdf_text_content": "(0.019)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "(0.027)",
+        "pdf_text_content": "(0.027)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "(0.027)",
+        "pdf_text_content": "(0.027)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.015)",
+        "pdf_text_content": "(0.015)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.023)",
+        "pdf_text_content": "(0.023)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.020)",
+        "pdf_text_content": "(0.020)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Muslim",
+        "pdf_text_content": "Muslim",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.376***",
+        "pdf_text_content": "0.376***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.519***",
+        "pdf_text_content": "0.519***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.245***",
+        "pdf_text_content": "0.245***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "0.554***",
+        "pdf_text_content": "0.554***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "0.601***",
+        "pdf_text_content": "0.601***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.470***",
+        "pdf_text_content": "0.470***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "(0.001)",
+        "pdf_text_content": "(0.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "(0.002)",
+        "pdf_text_content": "(0.002)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "(0.001)",
+        "pdf_text_content": "(0.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.003)",
+        "pdf_text_content": "(0.003)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.005)",
+        "pdf_text_content": "(0.005)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.003)",
+        "pdf_text_content": "(0.003)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Sikh",
+        "pdf_text_content": "Sikh",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.637***",
+        "pdf_text_content": "0.637***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.681***",
+        "pdf_text_content": "0.681***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.595***",
+        "pdf_text_content": "0.595***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "0.669***",
+        "pdf_text_content": "0.669***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "0.557***",
+        "pdf_text_content": "0.557***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.799***",
+        "pdf_text_content": "0.799***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "(0.006)",
+        "pdf_text_content": "(0.006)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "(0.009)",
+        "pdf_text_content": "(0.009)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "(0.008)",
+        "pdf_text_content": "(0.008)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.007)",
+        "pdf_text_content": "(0.007)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.009)",
+        "pdf_text_content": "(0.009)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.013)",
+        "pdf_text_content": "(0.013)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Other",
+        "pdf_text_content": "Other",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.865***",
+        "pdf_text_content": "0.865***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "1.129***",
+        "pdf_text_content": "1.129***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.669***",
+        "pdf_text_content": "0.669***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "0.823***",
+        "pdf_text_content": "0.823***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "1.074***",
+        "pdf_text_content": "1.074***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.626***",
+        "pdf_text_content": "0.626***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "(0.006)",
+        "pdf_text_content": "(0.006)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "(0.012)",
+        "pdf_text_content": "(0.012)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "(0.007)",
+        "pdf_text_content": "(0.007)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.006)",
+        "pdf_text_content": "(0.006)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.012)",
+        "pdf_text_content": "(0.012)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.006)",
+        "pdf_text_content": "(0.006)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Age",
+        "pdf_text_content": "Age",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.209***",
+        "pdf_text_content": "1.209***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "1.257***",
+        "pdf_text_content": "1.257***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "1.160***",
+        "pdf_text_content": "1.160***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.001)",
+        "pdf_text_content": "(0.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.001)",
+        "pdf_text_content": "(0.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.001)",
+        "pdf_text_content": "(0.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Age squared",
+        "pdf_text_content": "Age squared",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "0.998***",
+        "pdf_text_content": "0.998***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "0.997***",
+        "pdf_text_content": "0.997***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.998***",
+        "pdf_text_content": "0.998***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.000)",
+        "pdf_text_content": "(0.000)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.000)",
+        "pdf_text_content": "(0.000)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.000)",
+        "pdf_text_content": "(0.000)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          25
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Female",
+        "pdf_text_content": "Female",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          25
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "0.943***",
+        "pdf_text_content": "0.943***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          26
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.002)",
+        "pdf_text_content": "(0.002)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          27
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "xml_text_content": "Marital status (omitted category - Single)",
+        "pdf_text_content": "Marital status (omitted category - Single)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          28,
+          29
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Married, living with spouse",
+        "pdf_text_content": "Married, living with spouse",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          28
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "2.567***",
+        "pdf_text_content": "2.567***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          28
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "3.696***",
+        "pdf_text_content": "3.696***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          28
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "1.762***",
+        "pdf_text_content": "1.762***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          29
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.007)",
+        "pdf_text_content": "(0.007)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          29
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.015)",
+        "pdf_text_content": "(0.015)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          29
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.007)",
+        "pdf_text_content": "(0.007)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          30,
+          31
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Married, separated",
+        "pdf_text_content": "Married, separated",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          30
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.101***",
+        "pdf_text_content": "1.101***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          30
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "1.288***",
+        "pdf_text_content": "1.288***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          30
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.986*",
+        "pdf_text_content": "0.986*",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          31
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.007)",
+        "pdf_text_content": "(0.007)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          31
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.012)",
+        "pdf_text_content": "(0.012)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          31
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.008)",
+        "pdf_text_content": "(0.008)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          32
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Divorced",
+        "pdf_text_content": "Divorced",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          32
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.491***",
+        "pdf_text_content": "1.491***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          32
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "1.705***",
+        "pdf_text_content": "1.705***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          32
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "1.282***",
+        "pdf_text_content": "1.282***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          33
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.007)",
+        "pdf_text_content": "(0.007)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          33
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.012)",
+        "pdf_text_content": "(0.012)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          33
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.008)",
+        "pdf_text_content": "(0.008)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          34
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Widowed",
+        "pdf_text_content": "Widowed",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          34
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.251***",
+        "pdf_text_content": "1.251***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          34
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "1.454***",
+        "pdf_text_content": "1.454***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          34
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.985",
+        "pdf_text_content": "0.985",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          35
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.012)",
+        "pdf_text_content": "(0.012)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          35
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.025)",
+        "pdf_text_content": "(0.025)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          35
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.012)",
+        "pdf_text_content": "(0.012)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          36,
+          37
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Civil partnership",
+        "pdf_text_content": "Civil partnership",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          36
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.411***",
+        "pdf_text_content": "1.411***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          36
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "1.917***",
+        "pdf_text_content": "1.917***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          36
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "1.121***",
+        "pdf_text_content": "1.121***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          37
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.033)",
+        "pdf_text_content": "(0.033)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          37
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.071)",
+        "pdf_text_content": "(0.071)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          37
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.035)",
+        "pdf_text_content": "(0.035)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          38
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "xml_text_content": "Highest qualification held (omitted category – No qualifications)",
+        "pdf_text_content": "Highest qualification held (omitted category – No qualifications)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          39
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Degree or equivalent",
+        "pdf_text_content": "Degree or equivalent",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          39
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "2.912***",
+        "pdf_text_content": "2.912***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          39
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "2.554***",
+        "pdf_text_content": "2.554***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          39
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "3.512***",
+        "pdf_text_content": "3.512***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          40
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.011)",
+        "pdf_text_content": "(0.011)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          40
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.013)",
+        "pdf_text_content": "(0.013)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          40
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.021)",
+        "pdf_text_content": "(0.021)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          41
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Higher education",
+        "pdf_text_content": "Higher education",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          41
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "2.566***",
+        "pdf_text_content": "2.566***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          41
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "2.592***",
+        "pdf_text_content": "2.592***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          41
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "2.696***",
+        "pdf_text_content": "2.696***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          42
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.013)",
+        "pdf_text_content": "(0.013)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          42
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.018)",
+        "pdf_text_content": "(0.018)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          42
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.020)",
+        "pdf_text_content": "(0.020)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          43
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "A level or equivalent",
+        "pdf_text_content": "A level or equivalent",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          43
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "2.504***",
+        "pdf_text_content": "2.504***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          43
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "2.419***",
+        "pdf_text_content": "2.419***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          43
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "2.733***",
+        "pdf_text_content": "2.733***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          44
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.010)",
+        "pdf_text_content": "(0.010)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          44
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.012)",
+        "pdf_text_content": "(0.012)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          44
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.017)",
+        "pdf_text_content": "(0.017)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          45
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "GCSE A*-C or equivalent",
+        "pdf_text_content": "GCSE A*-C or equivalent",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          45
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.654***",
+        "pdf_text_content": "1.654***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          45
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "1.771***",
+        "pdf_text_content": "1.771***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          45
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "1.610***",
+        "pdf_text_content": "1.610***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          46
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.006)",
+        "pdf_text_content": "(0.006)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          46
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.009)",
+        "pdf_text_content": "(0.009)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          46
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.009)",
+        "pdf_text_content": "(0.009)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          47
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Other qualification",
+        "pdf_text_content": "Other qualification",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          47
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.246***",
+        "pdf_text_content": "1.246***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          47
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "1.197***",
+        "pdf_text_content": "1.197***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          47
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "1.369***",
+        "pdf_text_content": "1.369***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          48
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.005)",
+        "pdf_text_content": "(0.005)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          48
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.006)",
+        "pdf_text_content": "(0.006)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          48
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.009)",
+        "pdf_text_content": "(0.009)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          49
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "No answer",
+        "pdf_text_content": "No answer",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          49
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "2.273***",
+        "pdf_text_content": "2.273***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          49
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "2.371***",
+        "pdf_text_content": "2.371***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          49
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "1.917***",
+        "pdf_text_content": "1.917***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          50
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.049)",
+        "pdf_text_content": "(0.049)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          50
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.064)",
+        "pdf_text_content": "(0.064)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          50
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.071)",
+        "pdf_text_content": "(0.071)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          51
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Don’t know",
+        "pdf_text_content": "Don’t know",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          51
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "2.140***",
+        "pdf_text_content": "2.140***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          51
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "1.956***",
+        "pdf_text_content": "1.956***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          51
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "2.581***",
+        "pdf_text_content": "2.581***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          52
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.016)",
+        "pdf_text_content": "(0.016)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          52
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.018)",
+        "pdf_text_content": "(0.018)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          52
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.034)",
+        "pdf_text_content": "(0.034)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          53
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "xml_text_content": "Government Office Region (omitted category – North East)",
+        "pdf_text_content": "Government Office Region (omitted category – North East)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          54
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "North West",
+        "pdf_text_content": "North West",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          54
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.350***",
+        "pdf_text_content": "1.350***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          54
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "1.520***",
+        "pdf_text_content": "1.520***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          54
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "1.160***",
+        "pdf_text_content": "1.160***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          55
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.007)",
+        "pdf_text_content": "(0.007)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          55
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.010)",
+        "pdf_text_content": "(0.010)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          55
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.009)",
+        "pdf_text_content": "(0.009)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          56
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Merseyside",
+        "pdf_text_content": "Merseyside",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          56
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.714***",
+        "pdf_text_content": "1.714***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          56
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "1.731***",
+        "pdf_text_content": "1.731***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          56
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "1.672***",
+        "pdf_text_content": "1.672***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          57
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.014)",
+        "pdf_text_content": "(0.014)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          57
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.018)",
+        "pdf_text_content": "(0.018)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          57
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.021)",
+        "pdf_text_content": "(0.021)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          58
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Yorkshire and Humberside",
+        "pdf_text_content": "Yorkshire and Humberside",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          58
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.290***",
+        "pdf_text_content": "1.290***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          58
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "1.504***",
+        "pdf_text_content": "1.504***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          58
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "1.055***",
+        "pdf_text_content": "1.055***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          59
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.007)",
+        "pdf_text_content": "(0.007)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          59
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.010)",
+        "pdf_text_content": "(0.010)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          59
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.008)",
+        "pdf_text_content": "(0.008)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          60
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "East Midlands",
+        "pdf_text_content": "East Midlands",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          60
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.272***",
+        "pdf_text_content": "1.272***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          60
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "1.452***",
+        "pdf_text_content": "1.452***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          60
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "1.079***",
+        "pdf_text_content": "1.079***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          61
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.007)",
+        "pdf_text_content": "(0.007)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          61
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.010)",
+        "pdf_text_content": "(0.010)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          61
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.009)",
+        "pdf_text_content": "(0.009)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          62
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "West Midlands",
+        "pdf_text_content": "West Midlands",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          62
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.269***",
+        "pdf_text_content": "1.269***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          62
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "1.510***",
+        "pdf_text_content": "1.510***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          62
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "1.020***",
+        "pdf_text_content": "1.020***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          63
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.006)",
+        "pdf_text_content": "(0.006)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          63
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.010)",
+        "pdf_text_content": "(0.010)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          63
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.008)",
+        "pdf_text_content": "(0.008)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          64
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Eastern",
+        "pdf_text_content": "Eastern",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          64
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.599***",
+        "pdf_text_content": "1.599***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          64
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "1.921***",
+        "pdf_text_content": "1.921***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          64
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "1.283***",
+        "pdf_text_content": "1.283***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          65
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.008)",
+        "pdf_text_content": "(0.008)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          65
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.013)",
+        "pdf_text_content": "(0.013)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          65
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.010)",
+        "pdf_text_content": "(0.010)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          66
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "London",
+        "pdf_text_content": "London",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          66
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.235***",
+        "pdf_text_content": "1.235***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          66
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "1.414***",
+        "pdf_text_content": "1.414***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          66
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "1.034***",
+        "pdf_text_content": "1.034***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          67
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.006)",
+        "pdf_text_content": "(0.006)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          67
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.009)",
+        "pdf_text_content": "(0.009)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          67
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.008)",
+        "pdf_text_content": "(0.008)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          68
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "South East",
+        "pdf_text_content": "South East",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          68
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.514***",
+        "pdf_text_content": "1.514***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          68
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "1.808***",
+        "pdf_text_content": "1.808***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          68
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "1.224***",
+        "pdf_text_content": "1.224***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          69
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.007)",
+        "pdf_text_content": "(0.007)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          69
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.012)",
+        "pdf_text_content": "(0.012)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          69
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.009)",
+        "pdf_text_content": "(0.009)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          70
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "South West",
+        "pdf_text_content": "South West",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          70
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.684***",
+        "pdf_text_content": "1.684***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          70
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "2.054***",
+        "pdf_text_content": "2.054***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          70
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "1.330***",
+        "pdf_text_content": "1.330***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          71
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.009)",
+        "pdf_text_content": "(0.009)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          71
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.015)",
+        "pdf_text_content": "(0.015)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          71
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.011)",
+        "pdf_text_content": "(0.011)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          72
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Wales",
+        "pdf_text_content": "Wales",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          72
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.211***",
+        "pdf_text_content": "1.211***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          72
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "1.258***",
+        "pdf_text_content": "1.258***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          72
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "1.167***",
+        "pdf_text_content": "1.167***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          73
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.007)",
+        "pdf_text_content": "(0.007)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          73
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.009)",
+        "pdf_text_content": "(0.009)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          73
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.010)",
+        "pdf_text_content": "(0.010)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          74
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "xml_text_content": "Ethnicity (omitted category – White)",
+        "pdf_text_content": "Ethnicity (omitted category – White)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          75
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "No answer",
+        "pdf_text_content": "No answer",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          75
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.145***",
+        "pdf_text_content": "1.145***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          75
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "4.048***",
+        "pdf_text_content": "4.048***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          75
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.415***",
+        "pdf_text_content": "0.415***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          76
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.043)",
+        "pdf_text_content": "(0.043)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          76
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.312)",
+        "pdf_text_content": "(0.312)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          76
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.018)",
+        "pdf_text_content": "(0.018)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          77
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Mixed/multiple ethnic groups",
+        "pdf_text_content": "Mixed/multiple ethnic groups",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          77
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "0.745***",
+        "pdf_text_content": "0.745***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          77
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "0.680***",
+        "pdf_text_content": "0.680***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          77
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.821***",
+        "pdf_text_content": "0.821***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          78
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.005)",
+        "pdf_text_content": "(0.005)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          78
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.006)",
+        "pdf_text_content": "(0.006)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          78
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.008)",
+        "pdf_text_content": "(0.008)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          79
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Asian / Asian British",
+        "pdf_text_content": "Asian / Asian British",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          79
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "0.730***",
+        "pdf_text_content": "0.730***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          79
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "0.844***",
+        "pdf_text_content": "0.844***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          79
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.622***",
+        "pdf_text_content": "0.622***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          80
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.004)",
+        "pdf_text_content": "(0.004)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          80
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.007)",
+        "pdf_text_content": "(0.007)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          80
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.005)",
+        "pdf_text_content": "(0.005)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          81
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Black / Black British",
+        "pdf_text_content": "Black / Black British",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          81
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "0.480***",
+        "pdf_text_content": "0.480***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          81
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "0.497***",
+        "pdf_text_content": "0.497***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          81
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.469***",
+        "pdf_text_content": "0.469***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          82
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.002)",
+        "pdf_text_content": "(0.002)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          82
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.003)",
+        "pdf_text_content": "(0.003)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          82
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.003)",
+        "pdf_text_content": "(0.003)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          83
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Chinese",
+        "pdf_text_content": "Chinese",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          83
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "0.517***",
+        "pdf_text_content": "0.517***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          83
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "0.446***",
+        "pdf_text_content": "0.446***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          83
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.571***",
+        "pdf_text_content": "0.571***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          84
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.006)",
+        "pdf_text_content": "(0.006)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          84
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.007)",
+        "pdf_text_content": "(0.007)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          84
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.009)",
+        "pdf_text_content": "(0.009)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          85
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Arab",
+        "pdf_text_content": "Arab",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          85
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "0.262***",
+        "pdf_text_content": "0.262***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          85
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "0.276***",
+        "pdf_text_content": "0.276***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          85
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.228***",
+        "pdf_text_content": "0.228***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          86
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.003)",
+        "pdf_text_content": "(0.003)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          86
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.004)",
+        "pdf_text_content": "(0.004)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          86
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.004)",
+        "pdf_text_content": "(0.004)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          87
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Other",
+        "pdf_text_content": "Other",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          87
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "0.706***",
+        "pdf_text_content": "0.706***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          87
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "0.781***",
+        "pdf_text_content": "0.781***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          87
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.625***",
+        "pdf_text_content": "0.625***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          88
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.005)",
+        "pdf_text_content": "(0.005)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          88
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.008)",
+        "pdf_text_content": "(0.008)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          88
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.006)",
+        "pdf_text_content": "(0.006)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          89
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Constant",
+        "pdf_text_content": "Constant",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          89
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "26.015***",
+        "pdf_text_content": "26.015***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          89
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "24.627***",
+        "pdf_text_content": "24.627***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          89
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "27.474***",
+        "pdf_text_content": "27.474***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          89
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "0.171***",
+        "pdf_text_content": "0.171***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          89
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "0.078***",
+        "pdf_text_content": "0.078***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          89
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.370***",
+        "pdf_text_content": "0.370***",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          90
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "(0.038)",
+        "pdf_text_content": "(0.038)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          90
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "(0.050)",
+        "pdf_text_content": "(0.050)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          90
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "(0.057)",
+        "pdf_text_content": "(0.057)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          90
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "(0.002)",
+        "pdf_text_content": "(0.002)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          90
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "(0.001)",
+        "pdf_text_content": "(0.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          90
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "(0.005)",
+        "pdf_text_content": "(0.005)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          91
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Number of Observations (thousands)",
+        "pdf_text_content": "Number of Observations (thousands)",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          91
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "28793",
+        "pdf_text_content": "28793",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          91
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "15237",
+        "pdf_text_content": "15237",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          91
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "13557",
+        "pdf_text_content": "13557",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          91
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "28793",
+        "pdf_text_content": "28793",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          91
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "15237",
+        "pdf_text_content": "15237",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          91
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "13557",
+        "pdf_text_content": "13557",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          92
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Other Controls in the Model",
+        "pdf_text_content": "Other Controls in the Model",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          92
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          92
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          92
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          92
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          92
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          92
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          94
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Note – standard errors are in parenthesis. *** p<0.01, ** p<0.05, * p<0.1",
+        "pdf_text_content": "Note – standard errors are in parenthesis. *** p<0.01, ** p<0.05, * p<0.1",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": true
+      }
+    ],
+    "structure_id": "religion-table09",
+    "pdf_file_name": "religion-table09.png",
+    "split": "manual_colored"
+  }
+]

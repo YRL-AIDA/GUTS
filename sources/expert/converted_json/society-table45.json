@@ -1,0 +1,2201 @@
+[
+  {
+    "cells": [
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Excess Risk Calculation",
+        "pdf_text_content": "Excess Risk Calculation",
+        "is_column_header": true,
+        "is_projected_row_header": true,
+        "is_metadata": true
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "xml_text_content": "Additional infections/deaths  among households that are attributable to a vaccination visit/adult visit to a health facility, that  would not have occurred during the course of the epidemic if not for vaccination/adult visit to a health facility.",
+        "pdf_text_content": "Additional infections/deaths  among households that are attributable to a vaccination visit/adult visit to a health facility, that  would not have occurred during the course of the epidemic if not for vaccination/adult visit to a health facility.",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": true
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "xml_text_content": "Methodology adapted and expanded from:  Abbas K. et al.  2020.  Benefit-risk analysis of health benefits of routine childhood immunisation against the excess risk of SARS-CoV-2 infections during the COVID-19 pandemic in Africa.  The Lancet Global Health doi: 10.1016/S2214-109X(20)30308-9",
+        "pdf_text_content": "Methodology adapted and expanded from:  Abbas K. et al.  2020.  Benefit-risk analysis of health benefits of routine childhood immunisation against the excess risk of SARS-CoV-2 infections during the COVID-19 pandemic in Africa.  The Lancet Global Health doi: 10.1016/S2214-109X(20)30308-9",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": true
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Variable",
+        "pdf_text_content": "Variable",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Mean",
+        "pdf_text_content": "Mean",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Comment",
+        "pdf_text_content": "Comment",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Number of children receiving vaccination/adults receiving health intervention x",
+        "pdf_text_content": "Number of children receiving vaccination/adults receiving health intervention x",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "I",
+        "pdf_text_content": "I",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "200000",
+        "pdf_text_content": "200000",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "This is just for illustration, the actual number of visits and infections is calculated separately for each intervention",
+        "pdf_text_content": "This is just for illustration, the actual number of visits and infections is calculated separately for each intervention",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "User Input Cells",
+        "pdf_text_content": "User Input Cells",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": true
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Number of visits for vaccination/health intervention x",
+        "pdf_text_content": "Number of visits for vaccination/health intervention x",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "v",
+        "pdf_text_content": "v",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "1",
+        "pdf_text_content": "1",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Current percentage of population that has or has had COVID",
+        "pdf_text_content": "Current percentage of population that has or has had COVID",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "CP",
+        "pdf_text_content": "CP",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.1",
+        "pdf_text_content": "0.1",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Number of COVID cases in 2020 divided by total population",
+        "pdf_text_content": "Number of COVID cases in 2020 divided by total population",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Duration of period at risk (in months):  Number of months until herd immunity is achieved",
+        "pdf_text_content": "Duration of period at risk (in months):  Number of months until herd immunity is achieved",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "T",
+        "pdf_text_content": "T",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "8",
+        "pdf_text_content": "8",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Length of community spread. After this period, between 40% and 70% of the population will have been infected (corresponds to herd immunity required for R0 between 1.6 and 3.6",
+        "pdf_text_content": "Length of community spread. After this period, between 40% and 70% of the population will have been infected (corresponds to herd immunity required for R0 between 1.6 and 3.6",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Proportion of SARS-CoV2 infected population at end of risk period",
+        "pdf_text_content": "Proportion of SARS-CoV2 infected population at end of risk period",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Θ",
+        "pdf_text_content": "Θ",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.333333333333333",
+        "pdf_text_content": "0.333333333333333",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Herd immunity calculated based on R0:",
+        "pdf_text_content": "Herd immunity calculated based on R0:",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Reproduction number for SARS-CoV2",
+        "pdf_text_content": "Reproduction number for SARS-CoV2",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "R0",
+        "pdf_text_content": "R0",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "1.5",
+        "pdf_text_content": "1.5",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Expected number of cases directly generated by one case in a population where all individuals are susceptible to infection",
+        "pdf_text_content": "Expected number of cases directly generated by one case in a population where all individuals are susceptible to infection",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Duration of infectiousness (day)",
+        "pdf_text_content": "Duration of infectiousness (day)",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Ψ",
+        "pdf_text_content": "Ψ",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "7",
+        "pdf_text_content": "7",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Number of days an infected individual spreads the virus on average",
+        "pdf_text_content": "Number of days an infected individual spreads the virus on average",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Risk ratio of health care provider being infected and infectious vs. another community member",
+        "pdf_text_content": "Risk ratio of health care provider being infected and infectious vs. another community member",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "l1",
+        "pdf_text_content": "l1",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "2.5",
+        "pdf_text_content": "2.5",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Higher risk of being infected (between 1 and 4 times) because of higher frequency of exposure to other people\nCommunity member:  6 contacts per day\nVaccinator: 21 potentially infectious contacts per day",
+        "pdf_text_content": "Higher risk of being infected (between 1 and 4 times) because of higher frequency of exposure to other people\nCommunity member:  6 contacts per day\nVaccinator: 21 potentially infectious contacts per day",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Risk ratio potentially infectious contact of a health care provider transmitting vs. another community member",
+        "pdf_text_content": "Risk ratio potentially infectious contact of a health care provider transmitting vs. another community member",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "l2",
+        "pdf_text_content": "l2",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.62",
+        "pdf_text_content": "0.62",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Lower risk of onward transmission (between 0.25 and 1 times) because most of HCW's contacts with vaccinees are brief, and they have enhanced risk awareness and use corresponding protective measures including basic respiratory hygiene and personal protective equipment as available",
+        "pdf_text_content": "Lower risk of onward transmission (between 0.25 and 1 times) because most of HCW's contacts with vaccinees are brief, and they have enhanced risk awareness and use corresponding protective measures including basic respiratory hygiene and personal protective equipment as available",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Increased risk of inpatient stay vs. ambulatory visit (1 day stay vs. 1 outpatient visit)",
+        "pdf_text_content": "Increased risk of inpatient stay vs. ambulatory visit (1 day stay vs. 1 outpatient visit)",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "h",
+        "pdf_text_content": "h",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "3",
+        "pdf_text_content": "3",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Higher risk of getting infected  due to a) longer stay in a potentially contagious environment, b) contacts with more health care providers,",
+        "pdf_text_content": "Higher risk of getting infected  due to a) longer stay in a potentially contagious environment, b) contacts with more health care providers,",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Average number of transmission-relevant contacts of a community member per day",
+        "pdf_text_content": "Average number of transmission-relevant contacts of a community member per day",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "N",
+        "pdf_text_content": "N",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "6",
+        "pdf_text_content": "6",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Number of non-health care provider contacts of child and carer during their travel to the vaccine clinic and in the waiting room",
+        "pdf_text_content": "Number of non-health care provider contacts of child and carer during their travel to the vaccine clinic and in the waiting room",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "n",
+        "pdf_text_content": "n",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "5.5",
+        "pdf_text_content": "5.5",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Prevalence among community members on any given day (ΘΨ / T)",
+        "pdf_text_content": "Prevalence among community members on any given day (ΘΨ / T)",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "po",
+        "pdf_text_content": "po",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.00671232876712329",
+        "pdf_text_content": "0.00671232876712329",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Assumes reasonably flat epidemic curve, total cases spread out over months of community spread as specified above",
+        "pdf_text_content": "Assumes reasonably flat epidemic curve, total cases spread out over months of community spread as specified above",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Updated to account for current prevalence being over 0%",
+        "pdf_text_content": "Updated to account for current prevalence being over 0%",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": true
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Prevalence among health care provider on any given day ( l1xpo)",
+        "pdf_text_content": "Prevalence among health care provider on any given day ( l1xpo)",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "pv",
+        "pdf_text_content": "pv",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.0167808219178082",
+        "pdf_text_content": "0.0167808219178082",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Higher risk due to increased number of potentially infectious contacts",
+        "pdf_text_content": "Higher risk due to increased number of potentially infectious contacts",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Probability of transmission given potentially infectious contact with community members (R0/NΨ)",
+        "pdf_text_content": "Probability of transmission given potentially infectious contact with community members (R0/NΨ)",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "t0",
+        "pdf_text_content": "t0",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.0357142857142857",
+        "pdf_text_content": "0.0357142857142857",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "General risk of acquiring infection in the community",
+        "pdf_text_content": "General risk of acquiring infection in the community",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Probability of transmission given potentially infectious contact with health care provider (l2 x t0)",
+        "pdf_text_content": "Probability of transmission given potentially infectious contact with health care provider (l2 x t0)",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "tv",
+        "pdf_text_content": "tv",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.0221428571428571",
+        "pdf_text_content": "0.0221428571428571",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Probability of transmission given potentially infectious contact with health care provider(s) during hospital stay (l2 x h x t0)",
+        "pdf_text_content": "Probability of transmission given potentially infectious contact with health care provider(s) during hospital stay (l2 x h x t0)",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "th",
+        "pdf_text_content": "th",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.0664285714285714",
+        "pdf_text_content": "0.0664285714285714",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Risk of acquiring infection  interacting with health care provider(s) during hospital stay",
+        "pdf_text_content": "Risk of acquiring infection  interacting with health care provider(s) during hospital stay",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Effectiveness of Health Facility Mitigation Measures",
+        "pdf_text_content": "Effectiveness of Health Facility Mitigation Measures",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Effectiveness of Personal Protective Equipment",
+        "pdf_text_content": "Effectiveness of Personal Protective Equipment",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Eppe",
+        "pdf_text_content": "Eppe",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.1",
+        "pdf_text_content": "0.1",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Reduction in transmission risk across all interventions",
+        "pdf_text_content": "Reduction in transmission risk across all interventions",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Effectiveness of Temperature Screening",
+        "pdf_text_content": "Effectiveness of Temperature Screening",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Ets",
+        "pdf_text_content": "Ets",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.1",
+        "pdf_text_content": "0.1",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Reduction in transmission risk across all interventions",
+        "pdf_text_content": "Reduction in transmission risk across all interventions",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Effectiveness of  Reducing Number of Contacts",
+        "pdf_text_content": "Effectiveness of  Reducing Number of Contacts",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Intervention-specific",
+        "pdf_text_content": "Intervention-specific",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Proportional to Reduction (intervention-specific), see Sheet 6. Cells EX7:HS7",
+        "pdf_text_content": "Proportional to Reduction (intervention-specific), see Sheet 6. Cells EX7:HS7",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          25
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "1. Infection Risk for vaccination visits (child + caretaker):",
+        "pdf_text_content": "1. Infection Risk for vaccination visits (child + caretaker):",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          26
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Probability for a SARS-CoV-2 infection for the whole household of a child who gets vaccinated",
+        "pdf_text_content": "Probability for a SARS-CoV-2 infection for the whole household of a child who gets vaccinated",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          26
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "P",
+        "pdf_text_content": "P",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          26
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.00337488345159576",
+        "pdf_text_content": "0.00337488345159576",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          26
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "One minus the probability of either the infant or the mother not being infected by either the vaccinator or anyone else on any of the vaccination visits",
+        "pdf_text_content": "One minus the probability of either the infant or the mother not being infected by either the vaccinator or anyone else on any of the vaccination visits",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          26
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "P = 1 - (1 - pv tv x (1 - Eppe))2v x (1 - po to) 2vn",
+        "pdf_text_content": "P = 1 - (1 - pv tv x (1 - Eppe))2v x (1 - po to) 2vn",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": true
+      },
+      {
+        "row_nums": [
+          27
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Probability for excess SARS-CoV-2 infection for the whole household of a child who gets vaccinated (Px (1-Θ))",
+        "pdf_text_content": "Probability for excess SARS-CoV-2 infection for the whole household of a child who gets vaccinated (Px (1-Θ))",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          27
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "PECHild",
+        "pdf_text_content": "PECHild",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          27
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.00258741064622341",
+        "pdf_text_content": "0.00258741064622341",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          27
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Probability of facility-visit related infection x Percent of population who has not gotten infected at the end of the risk period",
+        "pdf_text_content": "Probability of facility-visit related infection x Percent of population who has not gotten infected at the end of the risk period",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          28
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Probability of transmission during travel to clinic",
+        "pdf_text_content": "Probability of transmission during travel to clinic",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          28
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.00263382780218657",
+        "pdf_text_content": "0.00263382780218657",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          28
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "1 - (1 - po to)2vn",
+        "pdf_text_content": "1 - (1 - po to)2vn",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          29
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Probability of transmission during contact with health care provider",
+        "pdf_text_content": "Probability of transmission during contact with health care provider",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          29
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.000743012616696404",
+        "pdf_text_content": "0.000743012616696404",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          29
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "1 - (1 - pv tv)2vn",
+        "pdf_text_content": "1 - (1 - pv tv)2vn",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          30
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Probability of transmission if clinic uses PPE",
+        "pdf_text_content": "Probability of transmission if clinic uses PPE",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          30
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.00066872378116789",
+        "pdf_text_content": "0.00066872378116789",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          30
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "P = 1 - (1 - pv tv x (1 - Eppe))2v",
+        "pdf_text_content": "P = 1 - (1 - pv tv x (1 - Eppe))2v",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          31
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Probability of transmission if clinic uses PPE and temperature screening",
+        "pdf_text_content": "Probability of transmission if clinic uses PPE and temperature screening",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          31
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.000601871531604403",
+        "pdf_text_content": "0.000601871531604403",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          31
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "P = 1 - (1 - pv tv x (1 - Eppe) )2v x (1 - Ets)",
+        "pdf_text_content": "P = 1 - (1 - pv tv x (1 - Eppe) )2v x (1 - Ets)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          32
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "2. Infection Risk for adult visits:",
+        "pdf_text_content": "2. Infection Risk for adult visits:",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          33
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Probability for a SARS-CoV-2 infection for the whole household of an adult seeking care",
+        "pdf_text_content": "Probability for a SARS-CoV-2 infection for the whole household of an adult seeking care",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          33
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "PE",
+        "pdf_text_content": "PE",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          33
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.00168886786312739",
+        "pdf_text_content": "0.00168886786312739",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          33
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "One minus the probability of the adult not being infected by either the health care provider or anyone else on the visit or visits to the health facility",
+        "pdf_text_content": "One minus the probability of the adult not being infected by either the health care provider or anyone else on the visit or visits to the health facility",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          34
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Probability for excess SARS-CoV-2 infection for the whole household of an adult seeking care  (Px (1-Θ))",
+        "pdf_text_content": "Probability for excess SARS-CoV-2 infection for the whole household of an adult seeking care  (Px (1-Θ))",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          34
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "PEAdult",
+        "pdf_text_content": "PEAdult",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          34
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.00129479869506433",
+        "pdf_text_content": "0.00129479869506433",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          35
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Probability of transmission during travel to clinic",
+        "pdf_text_content": "Probability of transmission during travel to clinic",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          35
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.00131778217602496",
+        "pdf_text_content": "0.00131778217602496",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          36
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Probability of transmission during contact with health care provider",
+        "pdf_text_content": "Probability of transmission during contact with health care provider",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          36
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.000371575342465791",
+        "pdf_text_content": "0.000371575342465791",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          36
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "1 - (1 - pv tv)vn",
+        "pdf_text_content": "1 - (1 - pv tv)vn",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          37
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Probability of transmission if clinic uses PPE",
+        "pdf_text_content": "Probability of transmission if clinic uses PPE",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          37
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.00033441780821919",
+        "pdf_text_content": "0.00033441780821919",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          37
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "P = 1 - (1 - pv tv x (1 - Eppe))v",
+        "pdf_text_content": "P = 1 - (1 - pv tv x (1 - Eppe))v",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          38
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Probability of transmission if clinic uses PPE and temperature screening",
+        "pdf_text_content": "Probability of transmission if clinic uses PPE and temperature screening",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          38
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.000300981060601613",
+        "pdf_text_content": "0.000300981060601613",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          38
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "P = 1 - (1 - pv tv x (1 - Eppe) )v x (1 - Ets)",
+        "pdf_text_content": "P = 1 - (1 - pv tv x (1 - Eppe) )v x (1 - Ets)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          39
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "3. Infection Risk for hospitalization visits:",
+        "pdf_text_content": "3. Infection Risk for hospitalization visits:",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          40
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Probability for a SARS-CoV-2 infection for the whole household of an adult seeking care",
+        "pdf_text_content": "Probability for a SARS-CoV-2 infection for the whole household of an adult seeking care",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          40
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "PEI",
+        "pdf_text_content": "PEI",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          40
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.00243103923733212",
+        "pdf_text_content": "0.00243103923733212",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          40
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "One minus the probability of the adult not being infected by either health care providers or anyone else during the hospital stay",
+        "pdf_text_content": "One minus the probability of the adult not being infected by either health care providers or anyone else during the hospital stay",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          41
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Probability for excess SARS-CoV-2 infection for the whole household of an adult seeking care  (Px (1-Θ))",
+        "pdf_text_content": "Probability for excess SARS-CoV-2 infection for the whole household of an adult seeking care  (Px (1-Θ))",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          41
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "PEAdult",
+        "pdf_text_content": "PEAdult",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          41
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.00186379674862129",
+        "pdf_text_content": "0.00186379674862129",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          42
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Probability of transmission during travel to clinic",
+        "pdf_text_content": "Probability of transmission during travel to clinic",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          42
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.00131778217602496",
+        "pdf_text_content": "0.00131778217602496",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          42
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "1 - (1 - po to)vn",
+        "pdf_text_content": "1 - (1 - po to)vn",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          43
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Probability of transmission during stay at hospital",
+        "pdf_text_content": "Probability of transmission during stay at hospital",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          43
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.00111472602739726",
+        "pdf_text_content": "0.00111472602739726",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          43
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "1 - (1 - pv th)v",
+        "pdf_text_content": "1 - (1 - pv th)v",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          44
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Probability of transmission if clinic uses PPE",
+        "pdf_text_content": "Probability of transmission if clinic uses PPE",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          44
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.00100325342465757",
+        "pdf_text_content": "0.00100325342465757",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          44
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "P = 1 - (1 - pv th x (1 - Eppe))v",
+        "pdf_text_content": "P = 1 - (1 - pv th x (1 - Eppe))v",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          45
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Probability of transmission if clinic uses PPE and temperature screening",
+        "pdf_text_content": "Probability of transmission if clinic uses PPE and temperature screening",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          45
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.000902973392146733",
+        "pdf_text_content": "0.000902973392146733",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          45
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "P = 1 - (1 - pv th x (1 - Eppe) )v x (1 - Ets)",
+        "pdf_text_content": "P = 1 - (1 - pv th x (1 - Eppe) )v x (1 - Ets)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          47
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Infection rate within household",
+        "pdf_text_content": "Infection rate within household",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          47
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.9",
+        "pdf_text_content": "0.9",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          47
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Assumption that if either child or caretaker gets infected they will infect all other household members, owing to the high secondary attack rates observed for family gatherings",
+        "pdf_text_content": "Assumption that if either child or caretaker gets infected they will infect all other household members, owing to the high secondary attack rates observed for family gatherings",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          49
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Infection fatality rate",
+        "pdf_text_content": "Infection fatality rate",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          50
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Children (aged <20)",
+        "pdf_text_content": "Children (aged <20)",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          50
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "P",
+        "pdf_text_content": "P",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          50
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "1.61e-05",
+        "pdf_text_content": "1.61e-05",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          50,
+          51,
+          52
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Based on Verity R, Okell LC, Dorigatti I, et al. Estimates of the severity of coronavirus disease 2019: a model-based analysis. Lancet Infect Dis 2020; published online March 30. DOI:10.1016/S1473-3099(20)30243-7.",
+        "pdf_text_content": "Based on Verity R, Okell LC, Dorigatti I, et al. Estimates of the severity of coronavirus disease 2019: a model-based analysis. Lancet Infect Dis 2020; published online March 30. DOI:10.1016/S1473-3099(20)30243-7.",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          51
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Adults (aged 20-59)",
+        "pdf_text_content": "Adults (aged 20-59)",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          51
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "P",
+        "pdf_text_content": "P",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          51
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.0008464",
+        "pdf_text_content": "0.0008464",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          52
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Older adults (60+)",
+        "pdf_text_content": "Older adults (60+)",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          52
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "P",
+        "pdf_text_content": "P",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          52
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.0328379",
+        "pdf_text_content": "0.0328379",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          54
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Household Age Distribution",
+        "pdf_text_content": "Household Age Distribution",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          55
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Average Household Size",
+        "pdf_text_content": "Average Household Size",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          55
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "6.3",
+        "pdf_text_content": "6.3",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          56
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Children (aged <20)",
+        "pdf_text_content": "Children (aged <20)",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          56
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "3.2",
+        "pdf_text_content": "3.2",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          57
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Adults (aged 20-59)",
+        "pdf_text_content": "Adults (aged 20-59)",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          57
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "2.8",
+        "pdf_text_content": "2.8",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          58
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Older adults (60+)",
+        "pdf_text_content": "Older adults (60+)",
+        "is_column_header": false,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          58
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.3",
+        "pdf_text_content": "0.3",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      }
+    ],
+    "structure_id": "society-table45",
+    "pdf_file_name": "society-table45.png",
+    "split": "manual_colored"
+  }
+]

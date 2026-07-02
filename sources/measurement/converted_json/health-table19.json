@@ -1,0 +1,997 @@
+[
+  {
+    "cells": [
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Data Dictionary - HCP Influenza Vaccination by Hospital and County",
+        "pdf_text_content": "Data Dictionary - HCP Influenza Vaccination by Hospital and County",
+        "is_column_header": true,
+        "is_projected_row_header": true,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Field",
+        "pdf_text_content": "Field",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Format",
+        "pdf_text_content": "Format",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Definition",
+        "pdf_text_content": "Definition",
+        "is_column_header": true,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Influenza_Season",
+        "pdf_text_content": "Influenza_Season",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Plain Text",
+        "pdf_text_content": "Plain Text",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "October 01, 2023 through March 31, 2024",
+        "pdf_text_content": "October 01, 2023 through March 31, 2024",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "State",
+        "pdf_text_content": "State",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Plain Text",
+        "pdf_text_content": "Plain Text",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "California",
+        "pdf_text_content": "California",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "CDPH_HAI_HCP_FLU_VACCINATION",
+        "pdf_text_content": "CDPH_HAI_HCP_FLU_VACCINATION",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Plain Text",
+        "pdf_text_content": "Plain Text",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "California Department of Public Health, Healthcare-Associated Infections Program, Health Care Personnel Influenza Vaccination",
+        "pdf_text_content": "California Department of Public Health, Healthcare-Associated Infections Program, Health Care Personnel Influenza Vaccination",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "County",
+        "pdf_text_content": "County",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Plain Text",
+        "pdf_text_content": "Plain Text",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Reported County",
+        "pdf_text_content": "Reported County",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Facility_ID",
+        "pdf_text_content": "Facility_ID",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Plain Text",
+        "pdf_text_content": "Plain Text",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Facility_ID is the primary key used to track facility information for all facilities stored in the Electronic Licensing Management System (ELMS) for CDPH Center for Health Care Quality, Licensing and Certification Program.",
+        "pdf_text_content": "Facility_ID is the primary key used to track facility information for all facilities stored in the Electronic Licensing Management System (ELMS) for CDPH Center for Health Care Quality, Licensing and Certification Program.",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Facility_Name",
+        "pdf_text_content": "Facility_Name",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Plain Text",
+        "pdf_text_content": "Plain Text",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Facility name for facilities reporting to National Healthcare Safety Network (NHSN) healthcare personnel influenza vaccination data for the 2023-24 influenza season, specifically October 1, 2023, through March 31, 2024 for California General Acute Care Hospitals reporting.",
+        "pdf_text_content": "Facility name for facilities reporting to National Healthcare Safety Network (NHSN) healthcare personnel influenza vaccination data for the 2023-24 influenza season, specifically October 1, 2023, through March 31, 2024 for California General Acute Care Hospitals reporting.",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Hospital_Type",
+        "pdf_text_content": "Hospital_Type",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Plain Text",
+        "pdf_text_content": "Plain Text",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "HAI Program designation for hospital types. These include major teaching, community (<125 beds, 125-250 beds, and >250 beds), pediatric, critical access, long-term acute care (LTAC), and free-standing rehabilitation hospitals.",
+        "pdf_text_content": "HAI Program designation for hospital types. These include major teaching, community (<125 beds, 125-250 beds, and >250 beds), pediatric, critical access, long-term acute care (LTAC), and free-standing rehabilitation hospitals.",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "HCP_Total_Number_Vaccinated",
+        "pdf_text_content": "HCP_Total_Number_Vaccinated",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Number",
+        "pdf_text_content": "Number",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Total number of Health Care Personnel (HCP) vaccinated. HCP include all paid (employee) and unpaid (licensed independent practitioners, other contract personnel and adult students/trainees and volunteers) persons working in health care settings and have the potential to transmit influenza to and from other HCP and patients.",
+        "pdf_text_content": "Total number of Health Care Personnel (HCP) vaccinated. HCP include all paid (employee) and unpaid (licensed independent practitioners, other contract personnel and adult students/trainees and volunteers) persons working in health care settings and have the potential to transmit influenza to and from other HCP and patients.",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "HCP_Total_Number_Working",
+        "pdf_text_content": "HCP_Total_Number_Working",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Number",
+        "pdf_text_content": "Number",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Total number of Health Care Personnel (HCP) working",
+        "pdf_text_content": "Total number of Health Care Personnel (HCP) working",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "HCP_Percent_Vaccinated",
+        "pdf_text_content": "HCP_Percent_Vaccinated",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Number",
+        "pdf_text_content": "Number",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Percentage of HCP vaccinated.",
+        "pdf_text_content": "Percentage of HCP vaccinated.",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Emp_Number_Vaccinated",
+        "pdf_text_content": "Emp_Number_Vaccinated",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Number",
+        "pdf_text_content": "Number",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Total number of hospital employees vaccinated",
+        "pdf_text_content": "Total number of hospital employees vaccinated",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Emp_Number_Working",
+        "pdf_text_content": "Emp_Number_Working",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Number",
+        "pdf_text_content": "Number",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Total number of hospital employees working",
+        "pdf_text_content": "Total number of hospital employees working",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Emp_Percent_Vaccinated",
+        "pdf_text_content": "Emp_Percent_Vaccinated",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Number",
+        "pdf_text_content": "Number",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Percentage of hospital employees vaccinated",
+        "pdf_text_content": "Percentage of hospital employees vaccinated",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Lip_Number_Vaccinated",
+        "pdf_text_content": "Lip_Number_Vaccinated",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Number",
+        "pdf_text_content": "Number",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Total number of licensed independent practitioners vaccinated",
+        "pdf_text_content": "Total number of licensed independent practitioners vaccinated",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Lip_Number_Working",
+        "pdf_text_content": "Lip_Number_Working",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Number",
+        "pdf_text_content": "Number",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Total number of licensed independent practitioners working",
+        "pdf_text_content": "Total number of licensed independent practitioners working",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Lip_Percent_Vaccinated",
+        "pdf_text_content": "Lip_Percent_Vaccinated",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Number",
+        "pdf_text_content": "Number",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Percentage of licensed independent practitioners vaccinated",
+        "pdf_text_content": "Percentage of licensed independent practitioners vaccinated",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Cont_Number_Vaccinated",
+        "pdf_text_content": "Cont_Number_Vaccinated",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Number",
+        "pdf_text_content": "Number",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Total number of other contract personnel vaccinated",
+        "pdf_text_content": "Total number of other contract personnel vaccinated",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Cont_Number_Working",
+        "pdf_text_content": "Cont_Number_Working",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Number",
+        "pdf_text_content": "Number",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Total number of other contract personnel working",
+        "pdf_text_content": "Total number of other contract personnel working",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Cont_Percent_Vaccinated",
+        "pdf_text_content": "Cont_Percent_Vaccinated",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Number",
+        "pdf_text_content": "Number",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Percentage of contract personnel vaccinated",
+        "pdf_text_content": "Percentage of contract personnel vaccinated",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "StudVol_Number_Vaccinated",
+        "pdf_text_content": "StudVol_Number_Vaccinated",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Number",
+        "pdf_text_content": "Number",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Total number of students, trainees, and volunteers vaccinated",
+        "pdf_text_content": "Total number of students, trainees, and volunteers vaccinated",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "StudVol_Number_Working",
+        "pdf_text_content": "StudVol_Number_Working",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Number",
+        "pdf_text_content": "Number",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Total number of students, trainees, and volunteers working",
+        "pdf_text_content": "Total number of students, trainees, and volunteers working",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "StudVol_Percent_Vaccinated",
+        "pdf_text_content": "StudVol_Percent_Vaccinated",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Number",
+        "pdf_text_content": "Number",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Percentage of students, trainees, and volunteers vaccinated",
+        "pdf_text_content": "Percentage of students, trainees, and volunteers vaccinated",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Met 2020 goal of 90% (>=90% in 2023-24)",
+        "pdf_text_content": "Met 2020 goal of 90% (>=90% in 2023-24)",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Plain Text",
+        "pdf_text_content": "Plain Text",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "In 2023-24, hospitals should have achieved at least 90% (Healthy People 2020 goal) HCP vaccination coverage. Did hospital achieve at least 90% HCP vaccination coverage in 2023-24?  Yes or No.",
+        "pdf_text_content": "In 2023-24, hospitals should have achieved at least 90% (Healthy People 2020 goal) HCP vaccination coverage. Did hospital achieve at least 90% HCP vaccination coverage in 2023-24?  Yes or No.",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          25
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Notes",
+        "pdf_text_content": "Notes",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          25
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Plain Text",
+        "pdf_text_content": "Plain Text",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      },
+      {
+        "row_nums": [
+          25
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "“Non-reporter” indicates if hospital did not report data (all data fields are blank); \"Reported combined data\" indicates when hospital reports consolidated data with another hospital.",
+        "pdf_text_content": "“Non-reporter” indicates if hospital did not report data (all data fields are blank); \"Reported combined data\" indicates when hospital reports consolidated data with another hospital.",
+        "is_column_header": false,
+        "is_projected_row_header": false,
+        "is_metadata": false
+      }
+    ],
+    "structure_id": "health-table19",
+    "pdf_file_name": "health-table19.png",
+    "split": "manual_colored"
+  }
+]

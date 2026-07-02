@@ -1,0 +1,217 @@
+<table border='1' cellspacing='0' cellpadding='5'>
+  <tr>
+    <th>Risk
+ID</th>
+    <th>Item
+Description</th>
+    <th>Function</th>
+    <th>Tech. Class</th>
+    <th>Novel Aspects</th>
+    <th>Failure
+Mode</th>
+    <th>Failure 
+Effects
+(Local, WEC, System)</th>
+    <th>Failure
+Cause(s)</th>
+    <th>Initial Mode
+ of
+Operation</th>
+    <th>Risk Reduction 
+Design</th>
+    <th>Preventative
+Detection</th>
+    <th>Post Failure
+Detection</th>
+    <th>Post Failure
+Repair
+Strategy 
+(automated, manual)</th>
+  </tr>
+  <tr>
+    <td>0521-1</td>
+    <td>Smoke alarms</td>
+    <td>Alarms in case of smoke in nacelle</td>
+    <td>1</td>
+    <td>none</td>
+    <td>No smoke alarm</td>
+    <td>Failure to alarm with smoke present</td>
+    <td>1) Sensor defect, contamination, or corrosion
+2) wiring fault</td>
+    <td>Normal</td>
+    <td>1) V&V (QC)
+2) Redundant sensors</td>
+    <td>Visual inspection</td>
+    <td>1) SCADA - Loss of other systems, temperature increase
+2) Visual - camera inspection</td>
+    <td>1) Repair in-situ if possible. 
+2) dry dock</td>
+  </tr>
+  <tr>
+    <td>0521-2</td>
+    <td>Smoke alarms</td>
+    <td>Alarms in case of smoke in nacelle</td>
+    <td>1</td>
+    <td>none</td>
+    <td>False alarm</td>
+    <td>Alarm sounds with no smoke present</td>
+    <td>1) Sensor defect, contamination, or corrosion
+2) wiring fault</td>
+    <td>Normal</td>
+    <td>1) V&V (QC)
+2) Redundant sensors</td>
+    <td>Visual inspection</td>
+    <td>1) SCADA - All systems & temp are normal
+2) Visual - camera inspection</td>
+    <td>1) Do nothing
+2) Repair in-situ if possible.</td>
+  </tr>
+  <tr>
+    <td>0522-1</td>
+    <td>Flooding Alarms</td>
+    <td>Monitor for water intrusion and alarm if water present</td>
+    <td>1</td>
+    <td>none</td>
+    <td>No water intrusion alarm</td>
+    <td>Failure to alarm with water present</td>
+    <td>1) Sensor defect, contamination, or corrosion
+2) wiring fault</td>
+    <td>Normal</td>
+    <td>1) V&V (QC)
+2) Redundant sensors</td>
+    <td>Visual inspection</td>
+    <td>1) SCADA - Loss of other systems, humidity increase
+2) Visual - camera inspection</td>
+    <td>1) Repair in-situ if possible. 
+2) dry dock</td>
+  </tr>
+  <tr>
+    <td>0522-2</td>
+    <td>Flooding Alarms</td>
+    <td>Monitor for water intrusion and alarm if water present</td>
+    <td>1</td>
+    <td>none</td>
+    <td>False alarm</td>
+    <td>False alarm with no water present</td>
+    <td>1) Sensor defect, contamination, or corrosion
+2) wiring fault</td>
+    <td>Normal</td>
+    <td>1) V&V (QC)
+2) Redundant sensors</td>
+    <td>Visual inspection</td>
+    <td>1) SCADA - All systems normal
+2) Visual - camera inspection</td>
+    <td>1) Do nothing
+2) Repair in-situ if possible.</td>
+  </tr>
+  <tr>
+    <td>0523-1</td>
+    <td>Temperature Sensors</td>
+    <td>Monitor temperature in nacelle</td>
+    <td>1</td>
+    <td>none</td>
+    <td>Erroneous reading</td>
+    <td>Sensor reading significantly high causes systems shutdown for overheat protection</td>
+    <td>1) Sensor defect, contamination, or corrosion
+2) wiring fault</td>
+    <td>Normal</td>
+    <td>1) V&V (QC)
+2) Redundant sensors</td>
+    <td>Visual inspection</td>
+    <td>1) SCADA - other systems temperatures normal</td>
+    <td>1) Do nothing
+2) Repair in-situ if possible.</td>
+  </tr>
+  <tr>
+    <td>0523-2</td>
+    <td>Temperature Sensors</td>
+    <td>Monitor temperature in nacelle</td>
+    <td>1</td>
+    <td>none</td>
+    <td>Erroneous reading</td>
+    <td>Sensor reading significantly low results in loss of confidence and iceing concern</td>
+    <td>1) Sensor defect, contamination, or corrosion
+2) wiring fault</td>
+    <td>Normal</td>
+    <td>1) V&V (QC)
+2) Redundant sensors</td>
+    <td>Visual inspection</td>
+    <td>1) SCADA - other systems temperatures normal</td>
+    <td>1) Do nothing
+2) Repair in-situ if possible.</td>
+  </tr>
+  <tr>
+    <td>0524-1</td>
+    <td>Humidity Sensors</td>
+    <td>Monitor humidity in nacelle</td>
+    <td>1</td>
+    <td>none</td>
+    <td>Erroneous reading</td>
+    <td>Sensor reading significantly high causes systems shutdown for condensation protection</td>
+    <td>1) Sensor defect, contamination, or corrosion
+2) wiring fault</td>
+    <td>Normal</td>
+    <td>1) V&V (QC)
+2) Redundant sensors</td>
+    <td>Visual inspection</td>
+    <td>1) SCADA - other systems normal, access closed, no water intrusion</td>
+    <td>1) Do nothing
+2) Repair in-situ if possible.</td>
+  </tr>
+  <tr>
+    <td>0524-2</td>
+    <td>Humidity Sensors</td>
+    <td>Monitor humidity in nacelle</td>
+    <td>1</td>
+    <td>none</td>
+    <td>Erroneous reading</td>
+    <td>Sensor reading significantly low results in loss of confidence</td>
+    <td>1) Sensor defect, contamination, or corrosion
+2) wiring fault</td>
+    <td>Normal</td>
+    <td>1) V&V (QC)
+2) Redundant sensors</td>
+    <td>Visual inspection</td>
+    <td>1) SCADA - other systems normal</td>
+    <td>1) Do nothing
+2) Repair in-situ if possible.</td>
+  </tr>
+  <tr>
+    <td>0525-1</td>
+    <td>Access Alarms</td>
+    <td>Monitor access sensors and alarm based on SCADA operational setting.  Indicate hatch status</td>
+    <td>1</td>
+    <td>none</td>
+    <td>Failed CLOSED, hatch sensor fails to identify open access panel</td>
+    <td>Failure to alarm when access panel is opened</td>
+    <td>1) Sensor defect, contamination, or corrosion
+2) wiring fault</td>
+    <td>Normal</td>
+    <td>1) V&V (QC)
+2) Redundant sensors</td>
+    <td>Visual inspection</td>
+    <td>1) SCADA - water intrusion, humidity, temperature
+2) Visual - camera inspection</td>
+    <td>1) Repair in-situ if possible. 
+2) dry dock</td>
+  </tr>
+  <tr>
+    <td>0525-2</td>
+    <td>Access Alarms</td>
+    <td>Monitor access sensors and alarm based on SCADA operational setting.  Indicate hatch status</td>
+    <td>1</td>
+    <td>none</td>
+    <td>Failed OPEN, hatch sensor inducates false open</td>
+    <td>Hatch indicates open while closed</td>
+    <td>1) Sensor defect, contamination, or corrosion
+2) wiring fault</td>
+    <td>Normal</td>
+    <td>1) V&V (QC)
+2) Redundant sensors</td>
+    <td>Visual inspection</td>
+    <td>1) SCADA - water intrusion, humidity, temperature
+2) Visual - camera inspection</td>
+    <td>1) Do nothing
+2) Repair in-situ if possible.</td>
+  </tr>
+</table>
