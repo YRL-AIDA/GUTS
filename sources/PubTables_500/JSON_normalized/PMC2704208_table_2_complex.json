@@ -1,0 +1,985 @@
+[
+  {
+    "cells": [
+      {
+        "row_nums": [
+          0,
+          1
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Correlates",
+        "pdf_text_content": "Correlates",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0,
+          1
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "All† OR (95% CI)",
+        "pdf_text_content": "All† OR (95% CI)",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0,
+          1
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Boys‡ OR (95% CI)",
+        "pdf_text_content": "Boys‡ OR (95% CI)",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0,
+          1
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Girls‡ OR (95% CI)",
+        "pdf_text_content": "Girls‡ OR (95% CI)",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "xml_text_content": "Body weight status and body weight perception",
+        "pdf_text_content": "Body weight status and body weight perception",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Y = Try to lose weight",
+        "pdf_text_content": "Y = Try to lose weight",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Model 1",
+        "pdf_text_content": "Model 1",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Model 2",
+        "pdf_text_content": "Model 2",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Model 3",
+        "pdf_text_content": "Model 3",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "BMI ≥ 85 th",
+        "pdf_text_content": "BMI ≥ 85th",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "4.52 (2.53, 8.08)",
+        "pdf_text_content": "4.52 (2.53, 8.08)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "3.17 (1.45, 6.89)",
+        "pdf_text_content": "3.17 (1.45, 6.89)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "7.22 (2.93, 17.81)",
+        "pdf_text_content": "7.22 (2.93, 17.81)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Perceived overweight",
+        "pdf_text_content": "Perceived overweight",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "18.04 (7.19, 45.30)",
+        "pdf_text_content": "18.04 (7.19, 45.30)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "5.88 (1.99, 17.33)",
+        "pdf_text_content": "5.88 (1.99, 17.33)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "95.0 (11.91, 757.9)",
+        "pdf_text_content": "95.0 (11.91, 757.9)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Perceived underweight",
+        "pdf_text_content": "Perceived underweight",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1.58 (0.53, 4.70)",
+        "pdf_text_content": "1.58 (0.53, 4.70)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.88 (0.21, 3.78)",
+        "pdf_text_content": "0.88 (0.21, 3.78)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "3.30 (0.62, 17.57)",
+        "pdf_text_content": "3.30 (0.62, 17.57)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Feel bad about weight",
+        "pdf_text_content": "Feel bad about weight",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "4.12 (1.64, 10.37)",
+        "pdf_text_content": "4.12 (1.64, 10.37)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "4.85 (1.22, 19.24)",
+        "pdf_text_content": "4.85 (1.22, 19.24)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "2.98 (0.72, 12.34)",
+        "pdf_text_content": "2.98 (0.72, 12.34)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "xml_text_content": "Y = Try to gain weight",
+        "pdf_text_content": "Y = Try to gain weight",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "BMI ≥ 85 th",
+        "pdf_text_content": "BMI ≥ 85th",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.40 (0.13, 1.22)",
+        "pdf_text_content": "0.40 (0.13, 1.22)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.50 (0.13, 1.87)",
+        "pdf_text_content": "0.50 (0.13, 1.87)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.21 (0.02, 2.02)",
+        "pdf_text_content": "0.21 (0.02, 2.02)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Perceived overweight",
+        "pdf_text_content": "Perceived overweight",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.0002 (0.0001, 0.0003)",
+        "pdf_text_content": "0.0002 (0.0001, 0.0003)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.0002 (0.0001, 0.0004)",
+        "pdf_text_content": "0.0002 (0.0001, 0.0004)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.002 (0.001, 0.005)",
+        "pdf_text_content": "0.002 (0.001, 0.005)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Perceived underweight",
+        "pdf_text_content": "Perceived underweight",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "12.36 (5.57, 27.44)",
+        "pdf_text_content": "12.36 (5.57, 27.44)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "8.99 (3.11, 25.96)",
+        "pdf_text_content": "8.99 (3.11, 25.96)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "18.86 (5.42, 65.67)",
+        "pdf_text_content": "18.86 (5.42, 65.67)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Feel bad about weight",
+        "pdf_text_content": "Feel bad about weight",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "5.86 (2.09, 16.43)",
+        "pdf_text_content": "5.86 (2.09, 16.43)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "7.01 (1.42, 34.47)",
+        "pdf_text_content": "7.01 (1.42, 34.47)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "4.36 (1.09, 17.48)",
+        "pdf_text_content": "4.36 (1.09, 17.48)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "xml_text_content": "Body weight status and misclassification",
+        "pdf_text_content": "Body weight status and misclassification",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Y = Try to lose weight",
+        "pdf_text_content": "Y = Try to lose weight",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Model 4",
+        "pdf_text_content": "Model 4",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Model 5",
+        "pdf_text_content": "Model 5",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Model 6",
+        "pdf_text_content": "Model 6",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "BMI ≥ 85 th",
+        "pdf_text_content": "BMI ≥ 85th",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "26.33 (12.36, 56.08)",
+        "pdf_text_content": "26.33 (12.36, 56.08)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "9.18 (3.64, 23.15)",
+        "pdf_text_content": "9.18 (3.64, 23.15)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "112.7 (24.41, 519.9)",
+        "pdf_text_content": "112.7 (24.41, 519.9)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Overestimate weight status",
+        "pdf_text_content": "Overestimate weight status",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "14.47 (3.88, 53.92)",
+        "pdf_text_content": "14.47 (3.88, 53.92)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "12.02 (1.32, 109.1)",
+        "pdf_text_content": "12.02 (1.32, 109.1)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "17.62 (3.35, 92.77)",
+        "pdf_text_content": "17.62 (3.35, 92.77)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Underestimate weight status",
+        "pdf_text_content": "Underestimate weight status",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.21 (0.10, 0.47)",
+        "pdf_text_content": "0.21 (0.10, 0.47)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.46 (0.18, 1.20)",
+        "pdf_text_content": "0.46 (0.18, 1.20)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.06 (0.01, 0.30)",
+        "pdf_text_content": "0.06 (0.01, 0.30)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Feel bad about one's weight",
+        "pdf_text_content": "Feel bad about one's weight",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "4.81 (1.99, 11.60)",
+        "pdf_text_content": "4.81 (1.99, 11.60)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "4.39 (1.10, 17.55)",
+        "pdf_text_content": "4.39 (1.10, 17.55)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "4.03 (1.14, 14.22)",
+        "pdf_text_content": "4.03 (1.14, 14.22)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "xml_text_content": "Y = Try to gain weight",
+        "pdf_text_content": "Y = Try to gain weight",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "BMI ≥ 85 th",
+        "pdf_text_content": "BMI ≥ 85th",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.08 (0.02, 0.25)",
+        "pdf_text_content": "0.08 (0.02, 0.25)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.12 (0.03, 0.47)",
+        "pdf_text_content": "0.12 (0.03, 0.47)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.03 (0.003, 0.29)",
+        "pdf_text_content": "0.03 (0.003, 0.29)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Overestimate weight status",
+        "pdf_text_content": "Overestimate weight status",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1.23 (0.18, 8.48)",
+        "pdf_text_content": "1.23 (0.18, 8.48)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "-§",
+        "pdf_text_content": "-§",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "2.56 (0.29, 22.74)",
+        "pdf_text_content": "2.56 (0.29, 22.74)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Underestimate weight status",
+        "pdf_text_content": "Underestimate weight status",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "5.92 (2.82, 12.40)",
+        "pdf_text_content": "5.92 (2.82, 12.40)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "3.94 (1.45, 10.69)",
+        "pdf_text_content": "3.94 (1.45, 10.69)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "10.60 (3.33, 33.76)",
+        "pdf_text_content": "10.60 (3.33, 33.76)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Feel bad about one's weight",
+        "pdf_text_content": "Feel bad about one's weight",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "7.84 (2.92, 21.03)",
+        "pdf_text_content": "7.84 (2.92, 21.03)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "8.93 (1.97, 40.47)",
+        "pdf_text_content": "8.93 (1.97, 40.47)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "5.33 (1.37, 20.70)",
+        "pdf_text_content": "5.33 (1.37, 20.70)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      }
+    ],
+    "structure_id": "PMC2704208_table_2",
+    "pdf_file_name": "1471-2458-9-183.pdf",
+    "split": "test"
+  }
+]

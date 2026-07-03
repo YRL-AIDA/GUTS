@@ -1,0 +1,805 @@
+[
+  {
+    "cells": [
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Path",
+        "pdf_text_content": "Path",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Score",
+        "pdf_text_content": "Score",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          0,
+          1
+        ],
+        "xml_text_content": "SOS",
+        "pdf_text_content": "SOS",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv0242c (FabG4) -(276)→ Rv2245 (KasA) -(596)→ Rv2737c (RecA)",
+        "pdf_text_content": "Rv0242c (FabG4) -(276)→Rv2245 (KasA) -(596)→Rv2737c (RecA)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.0102",
+        "pdf_text_content": "0.0102",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv0242c -(276)→ Rv2245 -(596)→ Rv2737c -(44)→ Rv2720 (LexA)",
+        "pdf_text_content": "Rv0242c -(276)→Rv2245 -(596)→Rv2737c -(44)→Rv2720 (LexA)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.0727",
+        "pdf_text_content": "0.0727",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv0904c (AccD3) -(241)→ Rv1547 (DnaE1)",
+        "pdf_text_content": "Rv0904c (AccD3) -(241)→Rv1547 (DnaE1)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.1000",
+        "pdf_text_content": "0.1000",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv0824c (DesA1) -(162)→ Rv0823c -(247)→ Rv2737c",
+        "pdf_text_content": "Rv0824c (DesA1) -(162)→Rv0823c -(247)→Rv2737c",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.1344",
+        "pdf_text_content": "0.1344",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv0242c -(276)→ Rv2245 -(596)→ Rv2737c -(96)→ Rv2593c (RuvA)",
+        "pdf_text_content": "Rv0242c -(276)→Rv2245 -(596)→Rv2737c -(96)→Rv2593c (RuvA)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.1352",
+        "pdf_text_content": "0.1352",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv2246 (KasB) -(400)→ Rv1131 (GltA1) -(526)→Rv1629 (PolA)",
+        "pdf_text_content": "Rv2246 (KasB) -(400)→Rv1131 (GltA1) -(526)→Rv1629 (PolA)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.1389",
+        "pdf_text_content": "0.1389",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          0,
+          1
+        ],
+        "xml_text_content": "CYTOCHROMES",
+        "pdf_text_content": "CYTOCHROMES",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv2243 (FabD) -(200)→Rv3546 (FadA5) -(395)→Rv3545c (Cyp125)",
+        "pdf_text_content": "Rv2243 (FabD) -(200)→Rv3546 (FadA5) -(395)→Rv3545c (Cyp125)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.0174",
+        "pdf_text_content": "0.0174",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv0242c -(436)→ Rv2243 -(200)→Rv3546 -(395)→Rv3545c",
+        "pdf_text_content": "Rv0242c -(436)→Rv2243 -(200)→Rv3546 -(395)→Rv3545c",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.0203",
+        "pdf_text_content": "0.0203",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv1350 (FabG2) -(205)→ Rv2243 -(200)→Rv3546 -(395)→Rv3545c",
+        "pdf_text_content": "Rv1350 (FabG2) -(205)→Rv2243 -(200)→Rv3546 -(395)→Rv3545c",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.0230",
+        "pdf_text_content": "0.0230",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv1483 (FabG1) -(121)→ Rv2243 -(200)→Rv3546 -(395)→Rv3545c",
+        "pdf_text_content": "Rv1483 (FabG1) -(121)→Rv2243 -(200)→Rv3546 -(395)→Rv3545c",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.0352",
+        "pdf_text_content": "0.0352",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv2243 -(257)→Rv0769 -(558)→Rv0766c (Cyp123)",
+        "pdf_text_content": "Rv2243 -(257)→Rv0769 -(558)→Rv0766c (Cyp123)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.0643",
+        "pdf_text_content": "0.0643",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv0242c -(436)→ Rv2243 -(559)→Rv2782c (PepR) -(513)→ Rv1622c (CydB)",
+        "pdf_text_content": "Rv0242c -(436)→Rv2243 -(559)→Rv2782c (PepR) -(513)→Rv1622c (CydB)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.0655",
+        "pdf_text_content": "0.0655",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv0242c -(436)→ Rv2243 -(257)→ Rv0769 -(558)→ Rv0766c (Cyp123)",
+        "pdf_text_content": "Rv0242c -(436)→Rv2243 -(257)→Rv0769 -(558)→Rv0766c (Cyp123)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.0673",
+        "pdf_text_content": "0.0673",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv0242c -(436)→ Rv2243 -(559)→Rv2782c -(578)→ Rv2193 (CtaE)",
+        "pdf_text_content": "Rv0242c -(436)→Rv2243 -(559)→Rv2782c -(578)→Rv2193 (CtaE)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.0738",
+        "pdf_text_content": "0.0738",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv0643c (MmaA3) -(350)→Rv0892 -(350)→ Rv0568 (Cyp135B1)",
+        "pdf_text_content": "Rv0643c (MmaA3) -(350)→Rv0892 -(350)→Rv0568 (Cyp135B1)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.0956",
+        "pdf_text_content": "0.0956",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv0643c -(350)→Rv0892 -(350)→ Rv3059 (Cyp136)",
+        "pdf_text_content": "Rv0643c -(350)→Rv0892 -(350)→Rv3059 (Cyp136)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.0956",
+        "pdf_text_content": "0.0956",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          0,
+          1
+        ],
+        "xml_text_content": "ANTIBIOTIC EFFLUX PUMPS",
+        "pdf_text_content": "ANTIBIOTIC EFFLUX PUMPS",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv2245 -(565)→Rv0340 -(447)→ Rv0342 (IniA)",
+        "pdf_text_content": "Rv2245 -(565)→Rv0340 -(447)→Rv0342 (IniA)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.0526",
+        "pdf_text_content": "0.0526",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv0242c -(276)→ Rv2245 -(565)→ Rv0340 -(447)→ Rv0342",
+        "pdf_text_content": "Rv0242c -(276)→Rv2245 -(565)→Rv0340 -(447)→Rv0342",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.0580",
+        "pdf_text_content": "0.0580",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv2243 -(356)→Rv2238c (AhpE) -(569)→Rv2687c",
+        "pdf_text_content": "Rv2243 -(356)→Rv2238c (AhpE) -(569)→Rv2687c",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.0901",
+        "pdf_text_content": "0.0901",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv2243 -(2)→ Rv2245 -(565)→Rv0340 -(447)→ Rv0342",
+        "pdf_text_content": "Rv2243 -(2)→Rv2245 -(565)→Rv0340 -(447)→Rv0342",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.1151",
+        "pdf_text_content": "0.1151",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv0642c (MmaA4) -(350)→ Rv3248c (sahH) -(486)→ Rv3240c -(323)→Rv3239c",
+        "pdf_text_content": "Rv0642c (MmaA4) -(350)→Rv3248c (sahH) -(486)→Rv3240c -(323)→Rv3239c",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.1365",
+        "pdf_text_content": "0.1365",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          25
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv0642c -(350)→ Rv3248c -(350)→ Rv1988",
+        "pdf_text_content": "Rv0642c -(350)→Rv3248c -(350)→Rv1988",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          25
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.1385",
+        "pdf_text_content": "0.1385",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          26
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv1350 -(90)→ Rv2245 -(596)→ Rv2737c -(429)→ Rv2882c (Frr) -(584)→Rv0783c (EmrB)",
+        "pdf_text_content": "Rv1350 -(90)→Rv2245 -(596)→Rv2737c -(429)→Rv2882c (Frr) -(584)→Rv0783c (EmrB)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          26
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.3169",
+        "pdf_text_content": "0.3169",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          27
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv2245 -(369)→ Rv1908c (KatG) -(350)→ Rv1988",
+        "pdf_text_content": "Rv2245 -(369)→Rv1908c (KatG) -(350)→Rv1988",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          27
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.3833",
+        "pdf_text_content": "0.3833",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          28
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv0242c -(276)→ Rv2245 -(369)→ Rv1908c -(350)→ Rv1988",
+        "pdf_text_content": "Rv0242c -(276)→Rv2245 -(369)→Rv1908c -(350)→Rv1988",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          28
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.3888",
+        "pdf_text_content": "0.3888",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          29
+        ],
+        "column_nums": [
+          0,
+          1
+        ],
+        "xml_text_content": "HORIZONTAL GENE TRANSFER",
+        "pdf_text_content": "HORIZONTAL GENE TRANSFER",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          30
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv0644c (MmaA2) -(350)→ Rv3248c -(486)→ Rv3240c (SecA1)",
+        "pdf_text_content": "Rv0644c (MmaA2) -(350)→Rv3248c -(486)→Rv3240c (SecA1)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          30
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.0812",
+        "pdf_text_content": "0.0812",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          31
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv2243 -(202)→Rv2925c (Rnc) -(378)→Rv3659c",
+        "pdf_text_content": "Rv2243 -(202)→Rv2925c (Rnc) -(378)→Rv3659c",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          31
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.0913",
+        "pdf_text_content": "0.0913",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          32
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv2243 -(202)→Rv2925c -(378)→Rv3659c -(63)→Rv3660c",
+        "pdf_text_content": "Rv2243 -(202)→Rv2925c -(378)→Rv3659c -(63)→Rv3660c",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          32
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.1538",
+        "pdf_text_content": "0.1538",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          33
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv2245 -(596)→ Rv2737c -(514)→ Rv2890c (RpsB) -(187)→ Rv3240c",
+        "pdf_text_content": "Rv2245 -(596)→Rv2737c -(514)→Rv2890c (RpsB) -(187)→Rv3240c",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          33
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.3715",
+        "pdf_text_content": "0.3715",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          34
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rv2524c (Fas) -(464)→ Rv2918c (GlnD) -(380)→ Rv2890c -(187)→ Rv3240c",
+        "pdf_text_content": "Rv2524c (Fas) -(464)→Rv2918c (GlnD) -(380)→Rv2890c -(187)→Rv3240c",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          34
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.4833",
+        "pdf_text_content": "0.4833",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      }
+    ],
+    "structure_id": "PMC2649132_table_0",
+    "pdf_file_name": "1471-2180-8-234.pdf",
+    "split": "test"
+  }
+]

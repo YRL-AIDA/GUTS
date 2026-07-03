@@ -1,0 +1,540 @@
+[
+  {
+    "cells": [
+      {
+        "row_nums": [
+          0,
+          1
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Pop.",
+        "pdf_text_content": "Pop.",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          2,
+          3,
+          4
+        ],
+        "xml_text_content": "Oral Potentially Malignant Disorders",
+        "pdf_text_content": "Oral Potentially Malignant Disorders",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Number",
+        "pdf_text_content": "Number",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Percent [95% CI]",
+        "pdf_text_content": "Percent [95% CI]",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "Crude Odds Ratio",
+        "pdf_text_content": "Crude Odds Ratio",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "xml_text_content": "Betel quid chewing habit",
+        "pdf_text_content": "Betel quid chewing habit",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Non-chewers (Ref . group)",
+        "pdf_text_content": "Non-chewers (Ref. group)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "258",
+        "pdf_text_content": "258",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "1",
+        "pdf_text_content": "1",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.4 [0 to 2.1]",
+        "pdf_text_content": "0.4 [0 to 2.1]",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1",
+        "pdf_text_content": "1",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Chewers without tobacco",
+        "pdf_text_content": "Chewers without tobacco",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "44",
+        "pdf_text_content": "44",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "1",
+        "pdf_text_content": "1",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "2.3 [0.06 to 12]",
+        "pdf_text_content": "2.3 [0.06 to 12]",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "6 [2 to 17]",
+        "pdf_text_content": "6 [2 to 17]",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Chewers with tobacco",
+        "pdf_text_content": "Chewers with tobacco",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "240",
+        "pdf_text_content": "240",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "23",
+        "pdf_text_content": "23",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "9.6 [6.2 to 14]",
+        "pdf_text_content": "9.6 [6.2 to 14]",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "27 [12 to 62]",
+        "pdf_text_content": "27 [12 to 62]",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "xml_text_content": "Smoking habit",
+        "pdf_text_content": "Smoking habit",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Non-smoker (Ref . group)",
+        "pdf_text_content": "Non-smoker (Ref. group)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "371",
+        "pdf_text_content": "371",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "17",
+        "pdf_text_content": "17",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "4.6 [2.7 to 7.2]",
+        "pdf_text_content": "4.6 [2.7 to 7.2]",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1",
+        "pdf_text_content": "1",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Smoker",
+        "pdf_text_content": "Smoker",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "171",
+        "pdf_text_content": "171",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "8",
+        "pdf_text_content": "8",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "4.7 [2.0 to 9.0]",
+        "pdf_text_content": "4.7 [2.0 to 9.0]",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.02 [0.4 to 2.6]",
+        "pdf_text_content": "1.02 [0.4 to 2.6]",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "xml_text_content": "Alcohol drinking habit",
+        "pdf_text_content": "Alcohol drinking habit",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Non-drinker (Ref . group)",
+        "pdf_text_content": "Non-drinker (Ref. group)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "451",
+        "pdf_text_content": "451",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "17",
+        "pdf_text_content": "17",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "3.8 [2.2 to 6.0]",
+        "pdf_text_content": "3.8 [2.2 to 6.0]",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1",
+        "pdf_text_content": "1",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Drinker",
+        "pdf_text_content": "Drinker",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "91",
+        "pdf_text_content": "91",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "8",
+        "pdf_text_content": "8",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "8.8 [3.9 to 16.6]",
+        "pdf_text_content": "8.8 [3.9 to 16.6]",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "2.5 [1.1 to 5.7]",
+        "pdf_text_content": "2.5 [1.1 to 5.7]",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      }
+    ],
+    "structure_id": "PMC5017671_table_3",
+    "pdf_file_name": "pone.0162081.pdf",
+    "split": "test"
+  }
+]

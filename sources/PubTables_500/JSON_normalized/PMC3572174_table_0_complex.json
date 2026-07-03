@@ -1,0 +1,1258 @@
+[
+  {
+    "cells": [
+      {
+        "row_nums": [
+          0,
+          1,
+          2
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Variables",
+        "pdf_text_content": "Variables",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          1,
+          2
+        ],
+        "xml_text_content": "Description % or mean (range)",
+        "pdf_text_content": "Description % or mean (range)",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "xml_text_content": "Model 1 Logistic regression (probit procedure)",
+        "pdf_text_content": "Model 1 Logistic regression (probit procedure)",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          3,
+          4
+        ],
+        "xml_text_content": "Recall (Probit coef.)",
+        "pdf_text_content": "Recall (Probit coef.)",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          5,
+          6
+        ],
+        "xml_text_content": "Ideation (Probit coef.)",
+        "pdf_text_content": "Ideation (Probit coef.)",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          7,
+          8
+        ],
+        "xml_text_content": "APA (Probit coef.)",
+        "pdf_text_content": "APA (Probit coef.)",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Female",
+        "pdf_text_content": "Female",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "Male",
+        "pdf_text_content": "Male",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Female",
+        "pdf_text_content": "Female",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Male",
+        "pdf_text_content": "Male",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Female",
+        "pdf_text_content": "Female",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "Male",
+        "pdf_text_content": "Male",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Age (older vs. younger)",
+        "pdf_text_content": "Age (older vs. younger)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "20.99 (18–26)",
+        "pdf_text_content": "20.99 (18–26)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "21.1 (18–27)",
+        "pdf_text_content": "21.1 (18–27)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "1.60***",
+        "pdf_text_content": "1.60***",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "0.75***",
+        "pdf_text_content": "0.75***",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "−0.16*",
+        "pdf_text_content": "20.16*",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "−0.36**",
+        "pdf_text_content": "20.36**",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "–",
+        "pdf_text_content": "–",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "–",
+        "pdf_text_content": "–",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Parental occupation (white vs. blue collar)",
+        "pdf_text_content": "Parental occupation (white vs. blue collar)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "42.22",
+        "pdf_text_content": "42.22",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "39.80",
+        "pdf_text_content": "39.80",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "−0.13",
+        "pdf_text_content": "20.13",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "0.31*",
+        "pdf_text_content": "0.31*",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "0.29",
+        "pdf_text_content": "0.29",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.49*",
+        "pdf_text_content": "0.49*",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "–",
+        "pdf_text_content": "–",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "–",
+        "pdf_text_content": "–",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Place of permanent residence(urban vs. rural)",
+        "pdf_text_content": "Place of permanent residence (urban vs. rural)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "48.89",
+        "pdf_text_content": "48.89",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "45.41",
+        "pdf_text_content": "45.41",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.55*",
+        "pdf_text_content": "0.55*",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "−0.10",
+        "pdf_text_content": "20.10",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "–",
+        "pdf_text_content": "–",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "−0.29",
+        "pdf_text_content": "20.29",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "–",
+        "pdf_text_content": "–",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "–",
+        "pdf_text_content": "–",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Ideation (higher vs. lower)",
+        "pdf_text_content": "Ideation (higher vs. lower)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "16.89",
+        "pdf_text_content": "16.89",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "19.39",
+        "pdf_text_content": "19.39",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "1.06***",
+        "pdf_text_content": "1.06***",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "0.43",
+        "pdf_text_content": "0.43",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Recall (higher vs. lower)",
+        "pdf_text_content": "Recall (higher vs. lower)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "33.33",
+        "pdf_text_content": "33.33",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "24.49",
+        "pdf_text_content": "24.49",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "0.83**",
+        "pdf_text_content": "0.83**",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "−0.21",
+        "pdf_text_content": "20.21",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "0.85***",
+        "pdf_text_content": "0.85***",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "0.69**",
+        "pdf_text_content": "0.69**",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Academic year (senior vs. junior)",
+        "pdf_text_content": "Academic year (senior vs. junior)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "54.22",
+        "pdf_text_content": "54.22",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "48.47",
+        "pdf_text_content": "48.47",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "–",
+        "pdf_text_content": "–",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "–",
+        "pdf_text_content": "–",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "–",
+        "pdf_text_content": "–",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.69*",
+        "pdf_text_content": "0.69*",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "–",
+        "pdf_text_content": "–",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "–",
+        "pdf_text_content": "–",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Living stipend level (millionVietnamese Dong)",
+        "pdf_text_content": "Living stipend level (million Vietnamese Dong)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1.35 (0.4–10)",
+        "pdf_text_content": "1.35 (0.4–10)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "1.37 (0.3–4)",
+        "pdf_text_content": "1.37 (0.3–4)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.45*",
+        "pdf_text_content": "0.45*",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "0.15",
+        "pdf_text_content": "0.15",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "0.18",
+        "pdf_text_content": "0.18",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "−0.13",
+        "pdf_text_content": "20.13",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "–",
+        "pdf_text_content": "–",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "–",
+        "pdf_text_content": "–",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Religion (yes vs. no)",
+        "pdf_text_content": "Religion (yes vs. no)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2.67",
+        "pdf_text_content": "2.67",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "1.53",
+        "pdf_text_content": "1.53",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "–",
+        "pdf_text_content": "–",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "–",
+        "pdf_text_content": "–",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "1.19*",
+        "pdf_text_content": "1.19*",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "–",
+        "pdf_text_content": "–",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "–",
+        "pdf_text_content": "–",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "–",
+        "pdf_text_content": "–",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Number of cases",
+        "pdf_text_content": "Number of cases",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "225",
+        "pdf_text_content": "225",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "196",
+        "pdf_text_content": "196",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "225",
+        "pdf_text_content": "225",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "196",
+        "pdf_text_content": "196",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "225",
+        "pdf_text_content": "225",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "196",
+        "pdf_text_content": "196",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "225",
+        "pdf_text_content": "225",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "196",
+        "pdf_text_content": "196",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Variance explained (adjusted R 2 )",
+        "pdf_text_content": "Variance explained (adjusted R2)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.70",
+        "pdf_text_content": "0.70",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "0.29",
+        "pdf_text_content": "0.29",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "0.12",
+        "pdf_text_content": "0.12",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.11",
+        "pdf_text_content": "0.11",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "0.13",
+        "pdf_text_content": "0.13",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "0.10",
+        "pdf_text_content": "0.10",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Exclusion test (model fitness) ( p ) 1",
+        "pdf_text_content": "Exclusion test (model fitness) (p)1",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "NS",
+        "pdf_text_content": "NS",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "NS",
+        "pdf_text_content": "NS",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "NS",
+        "pdf_text_content": "NS",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "NS",
+        "pdf_text_content": "NS",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "NS",
+        "pdf_text_content": "NS",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "NS",
+        "pdf_text_content": "NS",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1,
+          2
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Female",
+        "pdf_text_content": "Female",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1,
+          2
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Male",
+        "pdf_text_content": "Male",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      }
+    ],
+    "structure_id": "PMC3572174_table_0",
+    "pdf_file_name": "pone.0055845.pdf",
+    "split": "test"
+  }
+]

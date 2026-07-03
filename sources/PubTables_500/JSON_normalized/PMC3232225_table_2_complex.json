@@ -1,0 +1,684 @@
+[
+  {
+    "cells": [
+      {
+        "row_nums": [
+          0,
+          1,
+          2
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Factor",
+        "pdf_text_content": "Factor",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "xml_text_content": "Likelihood of Quality Rating Versus Positive Quality",
+        "pdf_text_content": "Likelihood of Quality Rating Versus Positive Quality",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          1,
+          2
+        ],
+        "xml_text_content": "Neutral",
+        "pdf_text_content": "Neutral",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          3,
+          4
+        ],
+        "xml_text_content": "Negative",
+        "pdf_text_content": "Negative",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "OR",
+        "pdf_text_content": "OR",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "95% CI of OR",
+        "pdf_text_content": "95% CI of OR",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "OR",
+        "pdf_text_content": "OR",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "95% CI of OR",
+        "pdf_text_content": "95% CI of OR",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "xml_text_content": "Funder",
+        "pdf_text_content": "Funder",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Government (reference category)",
+        "pdf_text_content": "Government (reference category)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1.00",
+        "pdf_text_content": "1.00",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "—",
+        "pdf_text_content": "—",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "1.00",
+        "pdf_text_content": "1.00",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "—",
+        "pdf_text_content": "—",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Industry",
+        "pdf_text_content": "Industry",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1.38",
+        "pdf_text_content": "1.38",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.98–1.95 2",
+        "pdf_text_content": "0.98–1.952",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "1.90",
+        "pdf_text_content": "1.90",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "0.95–3.81",
+        "pdf_text_content": "0.95–3.81",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Multiple funders",
+        "pdf_text_content": "Multiple funders",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1.10",
+        "pdf_text_content": "1.10",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.87–1.38",
+        "pdf_text_content": "0.87–1.38",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.98",
+        "pdf_text_content": "0.98",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "0.56–1.71",
+        "pdf_text_content": "0.56–1.71",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "University/Hospital",
+        "pdf_text_content": "University/Hospital",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1.54 3",
+        "pdf_text_content": "1.543",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "1.21–1.96",
+        "pdf_text_content": "1.21–1.96",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "1.62",
+        "pdf_text_content": "1.62",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "0.95–2.76",
+        "pdf_text_content": "0.95–2.76",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Non-profit",
+        "pdf_text_content": "Non-profit",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1.17",
+        "pdf_text_content": "1.17",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.81–1.68",
+        "pdf_text_content": "0.81–1.68",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "1.14",
+        "pdf_text_content": "1.14",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "0.53–2.45",
+        "pdf_text_content": "0.53–2.45",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Not reported",
+        "pdf_text_content": "Not reported",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1.85 3",
+        "pdf_text_content": "1.853",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "1.32–2.59",
+        "pdf_text_content": "1.32–2.59",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "4.97 3",
+        "pdf_text_content": "4.973",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "2.76–8.95",
+        "pdf_text_content": "2.76–8.95",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "xml_text_content": "Type of research",
+        "pdf_text_content": "Type of research",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Intervention (reference category)",
+        "pdf_text_content": "Intervention (reference category)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1.00",
+        "pdf_text_content": "1.00",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "—",
+        "pdf_text_content": "—",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "1.00",
+        "pdf_text_content": "1.00",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "—",
+        "pdf_text_content": "—",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Observation",
+        "pdf_text_content": "Observation",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.92",
+        "pdf_text_content": "0.92",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.78–1.10",
+        "pdf_text_content": "0.78–1.10",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.77",
+        "pdf_text_content": "0.77",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "0.52–1.15",
+        "pdf_text_content": "0.52–1.15",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Review",
+        "pdf_text_content": "Review",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1.38 4",
+        "pdf_text_content": "1.384",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "1.00–1.90",
+        "pdf_text_content": "1.00–1.90",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "5.26 3",
+        "pdf_text_content": "5.263",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "3.34–8.28",
+        "pdf_text_content": "3.34–8.28",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      }
+    ],
+    "structure_id": "PMC3232225_table_2",
+    "pdf_file_name": "pone.0028437.pdf",
+    "split": "test"
+  }
+]

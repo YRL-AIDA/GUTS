@@ -1,0 +1,1627 @@
+[
+  {
+    "cells": [
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Variable",
+        "pdf_text_content": "Variable",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Mean",
+        "pdf_text_content": "Mean",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "SD",
+        "pdf_text_content": "SD",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Min",
+        "pdf_text_content": "Min",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "Max",
+        "pdf_text_content": "Max",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Description",
+        "pdf_text_content": "Description",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "xml_text_content": "Panel A : Time varying variables :",
+        "pdf_text_content": "Panel A: Time varying variables:",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Dodd-Frank indicator a",
+        "pdf_text_content": "Dodd-Frank indicator a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.18",
+        "pdf_text_content": "0.18",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.38",
+        "pdf_text_content": "0.38",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0",
+        "pdf_text_content": "0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1",
+        "pdf_text_content": "1",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "= 1 from July 2010 onwards for territories that are located within the Dodd-Frank treatment area.",
+        "pdf_text_content": "= 1 from July 2010 onwards for territories that are located within the Dodd-Frank treatment area.",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Looting indicator b",
+        "pdf_text_content": "Looting indicator b",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.04",
+        "pdf_text_content": "0.04",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.19",
+        "pdf_text_content": "0.19",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0",
+        "pdf_text_content": "0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1",
+        "pdf_text_content": "1",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "= 1 if there was at least one conflict event described with the words: loot, pillage, plunder, rob, steal, ransack or seize. Indicates the action of an armed group against civilians.",
+        "pdf_text_content": "= 1 if there was at least one conflict event described with the words: loot, pillage, plunder, rob, steal, ransack or seize. Indicates the action of an armed group against civilians.",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Battles indicator b",
+        "pdf_text_content": "Battles indicator b",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.11",
+        "pdf_text_content": "0.11",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.31",
+        "pdf_text_content": "0.31",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0",
+        "pdf_text_content": "0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1",
+        "pdf_text_content": "1",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "= 1 if there was at least one battle event. Battles are violent interactions between two organized armed groups at a particular time and location.",
+        "pdf_text_content": "= 1 if there was at least one battle event. Battles are violent interactions between two organized armed groups at a particular time and location.",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Violence against civilians indicator b",
+        "pdf_text_content": "Violence against civilians indicator b",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.11",
+        "pdf_text_content": "0.11",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.32",
+        "pdf_text_content": "0.32",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0",
+        "pdf_text_content": "0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1",
+        "pdf_text_content": "1",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "= 1 if there was at least one event of violence against civilians; occurs when an armed group attacks civilians.",
+        "pdf_text_content": "= 1 if there was at least one event of violence against civilians; occurs when an armed group attacks civilians.",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Riots indicator b",
+        "pdf_text_content": "Riots indicator b",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.04",
+        "pdf_text_content": "0.04",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.19",
+        "pdf_text_content": "0.19",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0",
+        "pdf_text_content": "0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1",
+        "pdf_text_content": "1",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "= 1 if there was at least one riot. Riots are potentially violent public demonstrations by groups.",
+        "pdf_text_content": "= 1 if there was at least one riot. Riots are potentially violent public demonstrations by groups.",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Gold price c",
+        "pdf_text_content": "Gold price c",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2.48",
+        "pdf_text_content": "2.48",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "1.00",
+        "pdf_text_content": "1.00",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.93",
+        "pdf_text_content": "0.93",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "4.28",
+        "pdf_text_content": "4.28",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "International gold price, normalized at 1 based on the January 2004 price.",
+        "pdf_text_content": "International gold price, normalized at 1 based on the January 2004 price.",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Tin price c",
+        "pdf_text_content": "Tin price c",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1.90",
+        "pdf_text_content": "1.90",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.72",
+        "pdf_text_content": "0.72",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.71",
+        "pdf_text_content": "0.71",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "3.72",
+        "pdf_text_content": "3.72",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "International tin price, normalized at 1 based on the January 2004 price.",
+        "pdf_text_content": "International tin price, normalized at 1 based on the January 2004 price.",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Tungsten price c",
+        "pdf_text_content": "Tungsten price c",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "4.20",
+        "pdf_text_content": "4.20",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "1.18",
+        "pdf_text_content": "1.18",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "1.00",
+        "pdf_text_content": "1.00",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "6.35",
+        "pdf_text_content": "6.35",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "International tungsten price, normalized at 1 based on the January 2004 price.",
+        "pdf_text_content": "International tungsten price, normalized at 1 based on the January 2004 price.",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Tantalum price c",
+        "pdf_text_content": "Tantalum price c",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1.95",
+        "pdf_text_content": "1.95",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.96",
+        "pdf_text_content": "0.96",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.89",
+        "pdf_text_content": "0.89",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "3.46",
+        "pdf_text_content": "3.46",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "International tantalum price, normalized at 1 based on the January 2004 price.",
+        "pdf_text_content": "International tantalum price, normalized at 1 based on the January 2004 price.",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Rainfall anomaly d",
+        "pdf_text_content": "Rainfall anomaly d",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "-0.01",
+        "pdf_text_content": "-0.01",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.87",
+        "pdf_text_content": "0.87",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "-4.25",
+        "pdf_text_content": "-4.25",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "4.10",
+        "pdf_text_content": "4.10",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Monthly deviation from the 1997–2015 monthly mean, divided by the 1997–2015 SD.",
+        "pdf_text_content": "Monthly deviation from the 1997–2015 monthly mean, divided by the 1997–2015 SD.",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Adjacent conflict indicator b",
+        "pdf_text_content": "Adjacent conflict indicator b",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.35",
+        "pdf_text_content": "0.35",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.48",
+        "pdf_text_content": "0.48",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0",
+        "pdf_text_content": "0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1",
+        "pdf_text_content": "1",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "= 1 if there was any conflict event (looting, battles, violence against civilians, riots) in an adjacent territory.",
+        "pdf_text_content": "= 1 if there was any conflict event (looting, battles, violence against civilians, riots) in an adjacent territory.",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "xml_text_content": "Panel B : Time invariant variables :",
+        "pdf_text_content": "Panel B: Time invariant variables:",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Gold mines (PV) e",
+        "pdf_text_content": "Gold mines (PV) e",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "5.79",
+        "pdf_text_content": "5.79",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "11.03",
+        "pdf_text_content": "11.03",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0",
+        "pdf_text_content": "0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "69",
+        "pdf_text_content": "69",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "# gold mines in PV set-up",
+        "pdf_text_content": "# gold mines in PV set-up",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Tin mines (PV) e",
+        "pdf_text_content": "Tin mines (PV) e",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2.91",
+        "pdf_text_content": "2.91",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "6.37",
+        "pdf_text_content": "6.37",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0",
+        "pdf_text_content": "0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "33",
+        "pdf_text_content": "33",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "# tin mines in PV set-up",
+        "pdf_text_content": "# tin mines in PV set-up",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Tantalum mines (PV) e",
+        "pdf_text_content": "Tantalum mines (PV) e",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.31",
+        "pdf_text_content": "0.31",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "1.21",
+        "pdf_text_content": "1.21",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0",
+        "pdf_text_content": "0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "9",
+        "pdf_text_content": "9",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "# tantalum mines in PV set-up",
+        "pdf_text_content": "# tantalum mines in PV set-up",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Tungsten mines (PV) e",
+        "pdf_text_content": "Tungsten mines (PV) e",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.11",
+        "pdf_text_content": "0.11",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.62",
+        "pdf_text_content": "0.62",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0",
+        "pdf_text_content": "0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "5",
+        "pdf_text_content": "5",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "# tungsten mines in PV set-up",
+        "pdf_text_content": "# tungsten mines in PV set-up",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Gold mines (full) e",
+        "pdf_text_content": "Gold mines (full) e",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "22.93",
+        "pdf_text_content": "22.93",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "42.52",
+        "pdf_text_content": "42.52",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0",
+        "pdf_text_content": "0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "193",
+        "pdf_text_content": "193",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "# gold mines in full sample of mines",
+        "pdf_text_content": "# gold mines in full sample of mines",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Tin mines (full) e",
+        "pdf_text_content": "Tin mines (full) e",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "7.43",
+        "pdf_text_content": "7.43",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "15.97",
+        "pdf_text_content": "15.97",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0",
+        "pdf_text_content": "0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "72",
+        "pdf_text_content": "72",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "# tin mines in full sample of mines",
+        "pdf_text_content": "# tin mines in full sample of mines",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Tantalum mines (full) e",
+        "pdf_text_content": "Tantalum mines (full) e",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1.80",
+        "pdf_text_content": "1.80",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "5.71",
+        "pdf_text_content": "5.71",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0",
+        "pdf_text_content": "0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "39",
+        "pdf_text_content": "39",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "# tantalum mines in full sample of mines",
+        "pdf_text_content": "# tantalum mines in full sample of mines",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Tungsten mines (full) e",
+        "pdf_text_content": "Tungsten mines (full) e",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.44",
+        "pdf_text_content": "0.44",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "1.31",
+        "pdf_text_content": "1.31",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0",
+        "pdf_text_content": "0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "7",
+        "pdf_text_content": "7",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "# tungsten mines in full sample of mines",
+        "pdf_text_content": "# tungsten mines in full sample of mines",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Dry month indicator d",
+        "pdf_text_content": "Dry month indicator d",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.25",
+        "pdf_text_content": "0.25",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.43",
+        "pdf_text_content": "0.43",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0",
+        "pdf_text_content": "0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1",
+        "pdf_text_content": "1",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "= 1 for the three driest months in each territory, based on 1997–2015 precipitation averages.",
+        "pdf_text_content": "= 1 for the three driest months in each territory, based on 1997–2015 precipitation averages.",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Wet month indicator d",
+        "pdf_text_content": "Wet month indicator d",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.25",
+        "pdf_text_content": "0.25",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.43",
+        "pdf_text_content": "0.43",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0",
+        "pdf_text_content": "0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1",
+        "pdf_text_content": "1",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "= 1 for the three wettest months in each territory, based on 1997–2015 precipitation averages.",
+        "pdf_text_content": "= 1 for the three wettest months in each territory, based on 1997–2015 precipitation averages.",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      }
+    ],
+    "structure_id": "PMC6084930_table_0",
+    "pdf_file_name": "pone.0201783.pdf",
+    "split": "test"
+  }
+]

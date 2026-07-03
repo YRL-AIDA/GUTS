@@ -1,0 +1,1232 @@
+[
+  {
+    "cells": [
+      {
+        "row_nums": [
+          0,
+          1
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "MD3",
+        "pdf_text_content": "MD3",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0,
+          1
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "B2",
+        "pdf_text_content": "B2",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          3,
+          4
+        ],
+        "xml_text_content": "B3",
+        "pdf_text_content": "B3",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Best leg",
+        "pdf_text_content": "Best leg",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "Other leg",
+        "pdf_text_content": "Other leg",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "xml_text_content": "Exp 2",
+        "pdf_text_content": "Exp 2",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "xml_text_content": "Skew",
+        "pdf_text_content": "Skew",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Best",
+        "pdf_text_content": "Best",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1.89 (0.27)",
+        "pdf_text_content": "1.89 (0.27)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "-1.21 (0.27)",
+        "pdf_text_content": "-1.21 (0.27)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "-2.55 (0.27)",
+        "pdf_text_content": "-2.55 (0.27)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "-2.55 (0.27)",
+        "pdf_text_content": "-2.55 (0.27)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Average",
+        "pdf_text_content": "Average",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1.46 (0.27)",
+        "pdf_text_content": "1.46 (0.27)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "-.362 (0.27)",
+        "pdf_text_content": "-.362 (0.27)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "-1.37 (0.27)",
+        "pdf_text_content": "-1.37 (0.27)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "-1.43 (0.27)",
+        "pdf_text_content": "-1.43 (0.27)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Band 3",
+        "pdf_text_content": "Band 3",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": ".574 (0.27)",
+        "pdf_text_content": ".574 (0.27)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "-.203 (0.27)",
+        "pdf_text_content": "-.203 (0.27)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "-.773 (0.27)",
+        "pdf_text_content": "-.773 (0.27)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "-.549 (0.27)",
+        "pdf_text_content": "-.549 (0.27)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "xml_text_content": "Kolmogorov-Smirnov Df = 81",
+        "pdf_text_content": "Kolmogorov-Smirnov Df = 81",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Best (p)",
+        "pdf_text_content": "Best (p)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": ".212, (.001)",
+        "pdf_text_content": ".212, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": ".154, (.001)",
+        "pdf_text_content": ".154, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": ".459, (.001)",
+        "pdf_text_content": ".459, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": ".445, (.001)",
+        "pdf_text_content": ".445, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Average (p)",
+        "pdf_text_content": "Average (p)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": ".180, (.001)",
+        "pdf_text_content": ".180, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": ".148, (.001)",
+        "pdf_text_content": ".148, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": ".235, (.001)",
+        "pdf_text_content": ".235, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": ".253 (.001)",
+        "pdf_text_content": ".253 (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Band 3 (p)",
+        "pdf_text_content": "Band 3 (p)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": ".092, (.026)",
+        "pdf_text_content": ".092, (.026)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": ".195, (.001)",
+        "pdf_text_content": ".195, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": ".222, (.001)",
+        "pdf_text_content": ".222, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": ".195, (.001)",
+        "pdf_text_content": ".195, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "xml_text_content": "X 2 Df = (4–7)",
+        "pdf_text_content": "X2 Df = (4–7)",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Best (p)",
+        "pdf_text_content": "Best (p)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "32, (.05)",
+        "pdf_text_content": "32, (.05)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "135, (.001)",
+        "pdf_text_content": "135, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "108, (.001)",
+        "pdf_text_content": "108, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "135, (.001)",
+        "pdf_text_content": "135, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Average (p)",
+        "pdf_text_content": "Average (p)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "23, (.05)",
+        "pdf_text_content": "23, (.05)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "54, (.001)",
+        "pdf_text_content": "54, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "44, (.001)",
+        "pdf_text_content": "44, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "66, (.001)",
+        "pdf_text_content": "66, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Band 3 (p)",
+        "pdf_text_content": "Band 3 (p)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "5, (.57)",
+        "pdf_text_content": "5, (.57)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "43, (.001)",
+        "pdf_text_content": "43, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "71, (.001)",
+        "pdf_text_content": "71, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "64, (.001)",
+        "pdf_text_content": "64, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "% at ceiling",
+        "pdf_text_content": "% at ceiling",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "32",
+        "pdf_text_content": "32",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "50",
+        "pdf_text_content": "50",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "79",
+        "pdf_text_content": "79",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "77",
+        "pdf_text_content": "77",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "xml_text_content": "Errors",
+        "pdf_text_content": "Errors",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "xml_text_content": "Skew (SE)",
+        "pdf_text_content": "Skew (SE)",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Best",
+        "pdf_text_content": "Best",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "2.110 (0.27)",
+        "pdf_text_content": "2.110 (0.27)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "3.60 (0.27)",
+        "pdf_text_content": "3.60 (0.27)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "3.38 (0.27)",
+        "pdf_text_content": "3.38 (0.27)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Average",
+        "pdf_text_content": "Average",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": ".878 (0.27)",
+        "pdf_text_content": ".878 (0.27)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "2.09 (0.27)",
+        "pdf_text_content": "2.09 (0.27)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "2.38 (0.27)",
+        "pdf_text_content": "2.38 (0.27)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Band 3",
+        "pdf_text_content": "Band 3",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": ".902 (0.27)",
+        "pdf_text_content": ".902 (0.27)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "1.16 (0.27)",
+        "pdf_text_content": "1.16 (0.27)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.21 (0.27)",
+        "pdf_text_content": "1.21 (0.27)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "xml_text_content": "Kolmogorov-Smirnov Df = 81",
+        "pdf_text_content": "Kolmogorov-Smirnov Df = 81",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Best (p)",
+        "pdf_text_content": "Best (p)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": ".268, (.001)",
+        "pdf_text_content": ".268, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": ".448, (.001)",
+        "pdf_text_content": ".448, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": ".425, (.001)",
+        "pdf_text_content": ".425, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Average (p)",
+        "pdf_text_content": "Average (p)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": ".123, (.004)",
+        "pdf_text_content": ".123, (.004)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": ".229, (.001)",
+        "pdf_text_content": ".229, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": ".241, (.001)",
+        "pdf_text_content": ".241, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Band 3 (p)",
+        "pdf_text_content": "Band 3 (p)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": ".124, (.004)",
+        "pdf_text_content": ".124, (.004)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": ".183, (.001)",
+        "pdf_text_content": ".183, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": ".188, (.001)",
+        "pdf_text_content": ".188, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          25
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "xml_text_content": "X 2 Df = (3–9)",
+        "pdf_text_content": "X2 Df = (3–9)",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          26
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Best (p)",
+        "pdf_text_content": "Best (p)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          26
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "97, (.001)",
+        "pdf_text_content": "97, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          26
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "64, (.001)",
+        "pdf_text_content": "64, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          26
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "54, (.001)",
+        "pdf_text_content": "54, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          27
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Average (p)",
+        "pdf_text_content": "Average (p)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          27
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "10, (.312)",
+        "pdf_text_content": "10, (.312)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          27
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "26, (.001)",
+        "pdf_text_content": "26, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          27
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "41, (.001)",
+        "pdf_text_content": "41, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          28
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Band 3 (p)",
+        "pdf_text_content": "Band 3 (p)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          28
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "11, (.272)",
+        "pdf_text_content": "11, (.272)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          28
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "43, (.001)",
+        "pdf_text_content": "43, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          28
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "54, (.001)",
+        "pdf_text_content": "54, (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      }
+    ],
+    "structure_id": "PMC5983505_table_4",
+    "pdf_file_name": "pone.0198426.pdf",
+    "split": "test"
+  }
+]

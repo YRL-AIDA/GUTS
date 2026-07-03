@@ -1,0 +1,124 @@
+<table border='1' cellspacing='0' cellpadding='5'>
+  <tr>
+    <th>Parameter</th>
+    <th>Value</th>
+    <th>Description of parameters</th>
+  </tr>
+  <tr>
+    <td>a, b, c, d</td>
+    <td>1, 3, 1, 5</td>
+    <td>Constants affecting faster ion channels</td>
+  </tr>
+  <tr>
+    <td>r</td>
+    <td>0.006</td>
+    <td>Constant affecting slower ion channels</td>
+  </tr>
+  <tr>
+    <td>s</td>
+    <td>4</td>
+    <td>Bursting strength of model</td>
+  </tr>
+  <tr>
+    <td>μ and σ</td>
+    <td>3.1, 0.5</td>
+    <td>Mean and dispersion of input current in each node</td>
+  </tr>
+  <tr>
+    <td>IE, II</td>
+    <td>Derived from μ and σ</td>
+    <td>Models excitability of each node and mode (IE for excitatory input, II for inhibitory input)</td>
+  </tr>
+  <tr>
+    <td>CSF</td>
+    <td>0.0–6.4</td>
+    <td>Coupling scaling factor for connections between nodes</td>
+  </tr>
+  <tr>
+    <td>Inverse speed</td>
+    <td>1/7</td>
+    <td>Scales delay for defined internode distances</td>
+  </tr>
+  <tr>
+    <td colspan='3'>Internode distances</td>
+  </tr>
+  <tr>
+    <td>TC</td>
+    <td>8.8</td>
+    <td>Thalamo-cortical distance</td>
+  </tr>
+  <tr>
+    <td>TR</td>
+    <td>0</td>
+    <td>Thalamo-reticular distance</td>
+  </tr>
+  <tr>
+    <td colspan='3'>Intrinsic connectivity (within nodes) *</td>
+  </tr>
+  <tr>
+    <td>K11</td>
+    <td>0.5</td>
+    <td>Excitatory—excitatory coupling</td>
+  </tr>
+  <tr>
+    <td>K21</td>
+    <td>0.5</td>
+    <td>Inhibitory-Excitatory coupling</td>
+  </tr>
+  <tr>
+    <td>K12</td>
+    <td>0.25</td>
+    <td>Excitatory-Inhibitory coupling</td>
+  </tr>
+  <tr>
+    <td colspan='3'>Extrinsic connectivity (between nodes)</td>
+  </tr>
+  <tr>
+    <td>TC</td>
+    <td>2</td>
+    <td>Thalamo-cortical coupling</td>
+  </tr>
+  <tr>
+    <td>TR</td>
+    <td>0.5</td>
+    <td>Thalamo-reticular coupling</td>
+  </tr>
+  <tr>
+    <td>CT</td>
+    <td>1</td>
+    <td>Cortico-thalamic coupling</td>
+  </tr>
+  <tr>
+    <td>CR</td>
+    <td>1</td>
+    <td>Cortico-reticular coupling</td>
+  </tr>
+  <tr>
+    <td>RT</td>
+    <td>-2</td>
+    <td>Reticulo-thalamic coupling</td>
+  </tr>
+  <tr>
+    <td colspan='3'>State variables</td>
+  </tr>
+  <tr>
+    <td>ξ</td>
+    <td></td>
+    <td>Membrane potential of EPs</td>
+  </tr>
+  <tr>
+    <td>η</td>
+    <td></td>
+    <td>Spiking variable of EPs</td>
+  </tr>
+  <tr>
+    <td>τ</td>
+    <td></td>
+    <td>Slow bursting variable of EPs</td>
+  </tr>
+  <tr>
+    <td>α , β , γ</td>
+    <td></td>
+    <td>Corresponding values for IPs</td>
+  </tr>
+</table>

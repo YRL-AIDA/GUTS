@@ -1,0 +1,2610 @@
+[
+  {
+    "cells": [
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Variables",
+        "pdf_text_content": "Variables",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Group 1 (%)",
+        "pdf_text_content": "Group 1 (%)",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Group 2 (%)",
+        "pdf_text_content": "Group 2 (%)",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "p value",
+        "pdf_text_content": "p value",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "xml_text_content": "Demographic factors",
+        "pdf_text_content": "Demographic factors",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Age (median, years)",
+        "pdf_text_content": "Age (median, years)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "62.0",
+        "pdf_text_content": "62.0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "59.8",
+        "pdf_text_content": "59.8",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.828 c",
+        "pdf_text_content": "0.828c",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Male sex",
+        "pdf_text_content": "Male sex",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "56.5",
+        "pdf_text_content": "56.5",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "54.0",
+        "pdf_text_content": "54.0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.791 a",
+        "pdf_text_content": "0.791a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Nosocomial infection",
+        "pdf_text_content": "Nosocomial infection",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "87.0",
+        "pdf_text_content": "87.0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "87.3",
+        "pdf_text_content": "87.3",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.958 a",
+        "pdf_text_content": "0.958a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Diabetes mellitus",
+        "pdf_text_content": "Diabetes mellitus",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "15.2",
+        "pdf_text_content": "15.2",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "28.6",
+        "pdf_text_content": "28.6",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.101 a",
+        "pdf_text_content": "0.101a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Chronic renal failure",
+        "pdf_text_content": "Chronic renal failure",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "6.5",
+        "pdf_text_content": "6.5",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "20.6",
+        "pdf_text_content": "20.6",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.040 a",
+        "pdf_text_content": "0.040a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "HIV infection",
+        "pdf_text_content": "HIV infection",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.0",
+        "pdf_text_content": "0.0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "7.9",
+        "pdf_text_content": "7.9",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.072 b",
+        "pdf_text_content": "0.072b",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Heart failure",
+        "pdf_text_content": "Heart failure",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2.2",
+        "pdf_text_content": "2.2",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "11.1",
+        "pdf_text_content": "11.1",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.135 b",
+        "pdf_text_content": "0.135b",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Liver disease",
+        "pdf_text_content": "Liver disease",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2.2",
+        "pdf_text_content": "2.2",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "9.7",
+        "pdf_text_content": "9.7",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.235 b",
+        "pdf_text_content": "0.235b",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Chronic obstructive pulmonary disease",
+        "pdf_text_content": "Chronic obstructive pulmonary disease",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "4.3",
+        "pdf_text_content": "4.3",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "25.4",
+        "pdf_text_content": "25.4",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.003 a",
+        "pdf_text_content": "0.003a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "xml_text_content": "Predisposing conditions",
+        "pdf_text_content": "Predisposing conditions",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Transfusion of blood products",
+        "pdf_text_content": "Transfusion of blood products",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "58.7",
+        "pdf_text_content": "58.7",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "46.0",
+        "pdf_text_content": "46.0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.191 a",
+        "pdf_text_content": "0.191a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Gastrointestinal bleeding",
+        "pdf_text_content": "Gastrointestinal bleeding",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "17.4",
+        "pdf_text_content": "17.4",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "20.6",
+        "pdf_text_content": "20.6",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.672 a",
+        "pdf_text_content": "0.672a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Mucositis",
+        "pdf_text_content": "Mucositis",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "6.5",
+        "pdf_text_content": "6.5",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.0",
+        "pdf_text_content": "0.0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.072 b",
+        "pdf_text_content": "0.072b",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Diarrhoea",
+        "pdf_text_content": "Diarrhoea",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "21.7",
+        "pdf_text_content": "21.7",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "33.3",
+        "pdf_text_content": "33.3",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.185 a",
+        "pdf_text_content": "0.185a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Ileus",
+        "pdf_text_content": "Ileus",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "41.3",
+        "pdf_text_content": "41.3",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "25.4",
+        "pdf_text_content": "25.4",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.079 a",
+        "pdf_text_content": "0.079a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Corticosteroids",
+        "pdf_text_content": "Corticosteroids",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "28.3",
+        "pdf_text_content": "28.3",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "46.0",
+        "pdf_text_content": "46.0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.060 a",
+        "pdf_text_content": "0.060a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Previous bacteraemia",
+        "pdf_text_content": "Previous bacteraemia",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "21.7",
+        "pdf_text_content": "21.7",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "27.0",
+        "pdf_text_content": "27.0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.531 a",
+        "pdf_text_content": "0.531a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Previous shock requiring vasopressors",
+        "pdf_text_content": "Previous shock requiring vasopressors",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "23.9",
+        "pdf_text_content": "23.9",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "31.7",
+        "pdf_text_content": "31.7",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.371 a",
+        "pdf_text_content": "0.371a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Previous stay in the intensive care unit",
+        "pdf_text_content": "Previous stay in the intensive care unit",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "45.7",
+        "pdf_text_content": "45.7",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "49.2",
+        "pdf_text_content": "49.2",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.714 a",
+        "pdf_text_content": "0.714a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "xml_text_content": "Invasive medical procedures",
+        "pdf_text_content": "Invasive medical procedures",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Central venous catheter",
+        "pdf_text_content": "Central venous catheter",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "82.6",
+        "pdf_text_content": "82.6",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "63.5",
+        "pdf_text_content": "63.5",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.029 a",
+        "pdf_text_content": "0.029a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Implanted port",
+        "pdf_text_content": "Implanted port",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "21.7",
+        "pdf_text_content": "21.7",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "0.0",
+        "pdf_text_content": "0.0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "<0.001 b",
+        "pdf_text_content": "<0.001b",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Nephrostomy",
+        "pdf_text_content": "Nephrostomy",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "6.5",
+        "pdf_text_content": "6.5",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "1.6",
+        "pdf_text_content": "1.6",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.308 b",
+        "pdf_text_content": "0.308b",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          25
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Mechanical ventilation",
+        "pdf_text_content": "Mechanical ventilation",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          25
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "41.3",
+        "pdf_text_content": "41.3",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          25
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "46.0",
+        "pdf_text_content": "46.0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          25
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.623 a",
+        "pdf_text_content": "0.623a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          26
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Jejunostomy",
+        "pdf_text_content": "Jejunostomy",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          26
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "10.9",
+        "pdf_text_content": "10.9",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          26
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "6.3",
+        "pdf_text_content": "6.3",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          26
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.489 b",
+        "pdf_text_content": "0.489b",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          27
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Urinary catheter",
+        "pdf_text_content": "Urinary catheter",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          27
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "69.6",
+        "pdf_text_content": "69.6",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          27
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "57.1",
+        "pdf_text_content": "57.1",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          27
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.186 a",
+        "pdf_text_content": "0.186a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          28
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Enteral feeding",
+        "pdf_text_content": "Enteral feeding",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          28
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "54.3",
+        "pdf_text_content": "54.3",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          28
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "54.0",
+        "pdf_text_content": "54.0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          28
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.969 a",
+        "pdf_text_content": "0.969a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          29
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Chest drainage",
+        "pdf_text_content": "Chest drainage",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          29
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "13.0",
+        "pdf_text_content": "13.0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          29
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "11.1",
+        "pdf_text_content": "11.1",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          29
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.759 a",
+        "pdf_text_content": "0.759a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          30
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Abdominal drainage",
+        "pdf_text_content": "Abdominal drainage",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          30
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "23.9",
+        "pdf_text_content": "23.9",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          30
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "12.7",
+        "pdf_text_content": "12.7",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          30
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.127 a",
+        "pdf_text_content": "0.127a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          31
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Parenteral nutrition",
+        "pdf_text_content": "Parenteral nutrition",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          31
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "28.3",
+        "pdf_text_content": "28.3",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          31
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "19.0",
+        "pdf_text_content": "19.0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          31
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.258 a",
+        "pdf_text_content": "0.258a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          32
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Haemodialysis",
+        "pdf_text_content": "Haemodialysis",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          32
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "6.5",
+        "pdf_text_content": "6.5",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          32
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "15.9",
+        "pdf_text_content": "15.9",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          32
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.137 a",
+        "pdf_text_content": "0.137a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          33
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Major surgery",
+        "pdf_text_content": "Major surgery",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          33
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "50.0",
+        "pdf_text_content": "50.0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          33
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "39.7",
+        "pdf_text_content": "39.7",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          33
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.284 a",
+        "pdf_text_content": "0.284a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          34
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Gastrointestinal surgery",
+        "pdf_text_content": "Gastrointestinal surgery",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          34
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "32.6",
+        "pdf_text_content": "32.6",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          34
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "14.3",
+        "pdf_text_content": "14.3",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          34
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.023 a",
+        "pdf_text_content": "0.023a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          35
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Neurosurgery",
+        "pdf_text_content": "Neurosurgery",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          35
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "0.0",
+        "pdf_text_content": "0.0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          35
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "3.2",
+        "pdf_text_content": "3.2",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          35
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.508 b",
+        "pdf_text_content": "0.508b",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          36
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Cardiothoracic surgery",
+        "pdf_text_content": "Cardiothoracic surgery",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          36
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "6.5",
+        "pdf_text_content": "6.5",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          36
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "9.5",
+        "pdf_text_content": "9.5",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          36
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.731 b",
+        "pdf_text_content": "0.731b",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          37
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "xml_text_content": "At candidaemia",
+        "pdf_text_content": "At candidaemia",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          38
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Shock requiring vasopressors",
+        "pdf_text_content": "Shock requiring vasopressors",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          38
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "13.0",
+        "pdf_text_content": "13.0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          38
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "28.6",
+        "pdf_text_content": "28.6",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          38
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.053 a",
+        "pdf_text_content": "0.053a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          39
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "APACHE II score (median)",
+        "pdf_text_content": "APACHE II score (median)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          39
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "15.0",
+        "pdf_text_content": "15.0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          39
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "16.5",
+        "pdf_text_content": "16.5",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          39
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.742 c",
+        "pdf_text_content": "0.742c",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          40
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Concomitant bacteraemia",
+        "pdf_text_content": "Concomitant bacteraemia",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          40
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "21.7",
+        "pdf_text_content": "21.7",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          40
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "19.0",
+        "pdf_text_content": "19.0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          40
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.730 a",
+        "pdf_text_content": "0.730a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          41
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "xml_text_content": "Antibiotic use",
+        "pdf_text_content": "Antibiotic use",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          42
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Duration (median, days)",
+        "pdf_text_content": "Duration (median, days)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          42
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "11.5",
+        "pdf_text_content": "11.5",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          42
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "12.0",
+        "pdf_text_content": "12.0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          42
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.513 c",
+        "pdf_text_content": "0.513c",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          43
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Number of antibiotics (median)",
+        "pdf_text_content": "Number of antibiotics (median)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          43
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "3.0",
+        "pdf_text_content": "3.0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          43
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "3.0",
+        "pdf_text_content": "3.0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          43
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.337 c",
+        "pdf_text_content": "0.337c",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          44
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Metronidazole or clindamycin",
+        "pdf_text_content": "Metronidazole or clindamycin",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          44
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "43.5",
+        "pdf_text_content": "43.5",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          44
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "27.0",
+        "pdf_text_content": "27.0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          44
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.072 a",
+        "pdf_text_content": "0.072a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          45
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "4 th generation cephalosporins",
+        "pdf_text_content": "4th generation cephalosporins",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          45
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "34.8",
+        "pdf_text_content": "34.8",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          45
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "31.7",
+        "pdf_text_content": "31.7",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          45
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.739 a",
+        "pdf_text_content": "0.739a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          46
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Glycopeptides",
+        "pdf_text_content": "Glycopeptides",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          46
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "23.9",
+        "pdf_text_content": "23.9",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          46
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "41.3",
+        "pdf_text_content": "41.3",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          46
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.059 a",
+        "pdf_text_content": "0.059a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          47
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Carbapenems",
+        "pdf_text_content": "Carbapenems",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          47
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "10.0",
+        "pdf_text_content": "10.0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          47
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "27.0",
+        "pdf_text_content": "27.0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          47
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.038 a",
+        "pdf_text_content": "0.038a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          48
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "xml_text_content": "Candida species",
+        "pdf_text_content": "Candida species",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          49
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Candida albicans",
+        "pdf_text_content": "Candida albicans",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          49
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "60.9",
+        "pdf_text_content": "60.9",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          49
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "49.2",
+        "pdf_text_content": "49.2",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          49
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.227 a",
+        "pdf_text_content": "0.227a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          50
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Candida parapsilosis",
+        "pdf_text_content": "Candida parapsilosis",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          50
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "17.4",
+        "pdf_text_content": "17.4",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          50
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "22.2",
+        "pdf_text_content": "22.2",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          50
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.535 a",
+        "pdf_text_content": "0.535a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          51
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Candida tropicalis",
+        "pdf_text_content": "Candida tropicalis",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          51
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "10.9",
+        "pdf_text_content": "10.9",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          51
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "12.7",
+        "pdf_text_content": "12.7",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          51
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.771 a",
+        "pdf_text_content": "0.771a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          52
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "xml_text_content": "Candida isolation from sites other than blood",
+        "pdf_text_content": "Candida isolation from sites other than blood",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          53
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Catheter",
+        "pdf_text_content": "Catheter",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          53
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "17.4",
+        "pdf_text_content": "17.4",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          53
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "7.9",
+        "pdf_text_content": "7.9",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          53
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.133 a",
+        "pdf_text_content": "0.133a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          54
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Urinary",
+        "pdf_text_content": "Urinary",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          54
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "19.5",
+        "pdf_text_content": "19.5",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          54
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "27.0",
+        "pdf_text_content": "27.0",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          54
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.048 a",
+        "pdf_text_content": "0.048a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          55
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Breakthrough candidaemia",
+        "pdf_text_content": "Breakthrough candidaemia",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          55
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "6.5",
+        "pdf_text_content": "6.5",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          55
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "4.8",
+        "pdf_text_content": "4.8",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          55
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.696 b",
+        "pdf_text_content": "0.696b",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          56
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Antifungal treatment",
+        "pdf_text_content": "Antifungal treatment",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          56
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "71.7",
+        "pdf_text_content": "71.7",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          56
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "71.4",
+        "pdf_text_content": "71.4",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          56
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.972 a",
+        "pdf_text_content": "0.972a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          57
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Death during hospitalization",
+        "pdf_text_content": "Death during hospitalization",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          57
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "58.7",
+        "pdf_text_content": "58.7",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          57
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "55.6",
+        "pdf_text_content": "55.6",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          57
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.744 a",
+        "pdf_text_content": "0.744a",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          58
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Total (n)",
+        "pdf_text_content": "Total (n)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          58
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "46",
+        "pdf_text_content": "46",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          58
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "63",
+        "pdf_text_content": "63",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          58
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "109",
+        "pdf_text_content": "109",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      }
+    ],
+    "structure_id": "PMC1431538_table_1",
+    "pdf_file_name": "1471-2334-6-50.pdf",
+    "split": "test"
+  }
+]

@@ -1,0 +1,126 @@
+<table border='1' cellspacing='0' cellpadding='5'>
+  <tr>
+    <td colspan='2'>Data: scalar value of points in discrete volume data</td>
+  </tr>
+  <tr>
+    <td colspan='2'>Result: evaluation results of the implicit function</td>
+  </tr>
+  <tr>
+    <td colspan='2'>Function: ImplicitSurFunc(px, py, pz)</td>
+  </tr>
+  <tr>
+    <td>01</td>
+    <td>int flr_x, flr_y, flr_z</td>
+  </tr>
+  <tr>
+    <td>02</td>
+    <td>float fracx, fracy, fracz</td>
+  </tr>
+  <tr>
+    <td>03</td>
+    <td>float v000,v001,v010,v011,v100,v101,v110,v111</td>
+  </tr>
+  <tr>
+    <td>04</td>
+    <td>float v00,v01,v10,v11,v0,v1</td>
+  </tr>
+  <tr>
+    <td>05</td>
+    <td>float vvv;</td>
+  </tr>
+  <tr>
+    <td>06</td>
+    <td>flr_x≔ abs(floor(px))</td>
+  </tr>
+  <tr>
+    <td>07</td>
+    <td>flr_y≔ abs(floor(py))</td>
+  </tr>
+  <tr>
+    <td>08</td>
+    <td>flr_z≔ abs(floor(pz));</td>
+  </tr>
+  <tr>
+    <td>09</td>
+    <td>fracx≔ px—(int)px</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>fracy≔ py—(int)py</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>fracz≔ pz—(int)pz;</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>v000≔ data[flr_x][flr_y][flr_z]</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>v001≔ data[flr_x][flr_y][flr_z+1]</td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>v010≔ data[flr_x][flr_y+1][flr_z]</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>v011≔ data[flr_x][flr_y+1][flr_z+1]</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>v100≔ data[flr_x+1][flr_y][flr_z]</td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td>v101≔ data[flr_x+1][flr_y][flr_z+1]</td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td>v110≔ data[flr_x+1][flr_y+1][flr_z]</td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>v111≔ data[flr_x+1][flr_y+1][flr_z+1];</td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>v00 = v000+fracz*(v001-v000)</td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>v01 = v010+fracz*(v011-v010)</td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>v10 = v100+fracz*(v101-v100)</td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td>v11 = v110+fracz*(v111-v110);</td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td>v0 = v00+fracy*(v01-v00)</td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td>v1 = v10+fracy*(v11-v10);</td>
+  </tr>
+  <tr>
+    <td rowspan='2'>26</td>
+    <td>v = v0+v1;</td>
+  </tr>
+  <tr>
+    <td>/* or we can have one line as</td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td>vvv≔ v000*(1-fracx)*(1-fracy)*(1-fracz)+ v100*fracx*(1-fracy)*(1-fracz)+ v010*(1-fracx)*fracy*(1-fracz)+ v001*(1-fracx)*(1-fracy)*fracz+ v110*fracx*fracy*(1-fracz)+ v101*fracx*(1-fracy)*fracz+ v011*(1-fracx)*fracy*fracz+ v111*fracx*fracy*fracz;*/</td>
+  </tr>
+  <tr>
+    <td>28</td>
+    <td>return vvv</td>
+  </tr>
+</table>

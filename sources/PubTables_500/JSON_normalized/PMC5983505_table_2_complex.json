@@ -1,0 +1,928 @@
+[
+  {
+    "cells": [
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          1,
+          2
+        ],
+        "xml_text_content": "MD1",
+        "pdf_text_content": "MD1",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0,
+          1
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "MD2",
+        "pdf_text_content": "MD2",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0,
+          1
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "MD3",
+        "pdf_text_content": "MD3",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0,
+          1
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "A&C1",
+        "pdf_text_content": "A&C1",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0,
+          1
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "A&C2",
+        "pdf_text_content": "A&C2",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          7,
+          8
+        ],
+        "xml_text_content": "B1",
+        "pdf_text_content": "B1",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0,
+          1
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "B2",
+        "pdf_text_content": "B2",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          10,
+          11
+        ],
+        "xml_text_content": "B3",
+        "pdf_text_content": "B3",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Pref.",
+        "pdf_text_content": "Pref.",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Non pref.",
+        "pdf_text_content": "Non pref.",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Best leg",
+        "pdf_text_content": "Best leg",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "Other leg",
+        "pdf_text_content": "Other leg",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          10
+        ],
+        "xml_text_content": "Best leg",
+        "pdf_text_content": "Best leg",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          11
+        ],
+        "xml_text_content": "Other leg",
+        "pdf_text_content": "Other leg",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "xml_text_content": "Pilot",
+        "pdf_text_content": "Pilot",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Skew (SE)",
+        "pdf_text_content": "Skew (SE)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2.81 (0.40)",
+        "pdf_text_content": "2.81 (0.40)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "1.78 (0.40)",
+        "pdf_text_content": "1.78 (0.40)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "3.65 (0.40)",
+        "pdf_text_content": "3.65 (0.40)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "4.20 (0.40)",
+        "pdf_text_content": "4.20 (0.40)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "-0.60 (0.40)",
+        "pdf_text_content": "-0.60 (0.40)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "-0.29 (0.40)",
+        "pdf_text_content": "-0.29 (0.40)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "-1.00 (0.40)",
+        "pdf_text_content": "-1.00 (0.40)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "-0.30 (0.40)",
+        "pdf_text_content": "-0.30 (0.40)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "-2.57 (0.40)",
+        "pdf_text_content": "-2.57 (0.40)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          10
+        ],
+        "xml_text_content": "-4.59 (0.40)",
+        "pdf_text_content": "-4.59 (0.40)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          11
+        ],
+        "xml_text_content": "-3.52 (0.40)",
+        "pdf_text_content": "-3.52 (0.40)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Shapiro-Wilk Df = 35 (p)",
+        "pdf_text_content": "Shapiro-Wilk Df = 35 (p)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": ".743 (.001)",
+        "pdf_text_content": ".743 (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": ".867 (.001)",
+        "pdf_text_content": ".867 (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": ".645 (.001)",
+        "pdf_text_content": ".645 (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": ".468 (.001)",
+        "pdf_text_content": ".468 (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": ".946 (.085)",
+        "pdf_text_content": ".946 (.085)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": ".955 (.162)",
+        "pdf_text_content": ".955 (.162)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": ".756 (.001)",
+        "pdf_text_content": ".756 (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": ".870 (.001)",
+        "pdf_text_content": ".870 (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": ".464 (.001)",
+        "pdf_text_content": ".464 (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          10
+        ],
+        "xml_text_content": ".289 (.001)",
+        "pdf_text_content": ".289 (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          11
+        ],
+        "xml_text_content": ".366 (.001)",
+        "pdf_text_content": ".366 (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Kolmogorov-Smirnov Df = 35 (p)",
+        "pdf_text_content": "Kolmogorov-Smirnov Df = 35 (p)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": ".172 (.011)",
+        "pdf_text_content": ".172 (.011)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": ".187, (.035)",
+        "pdf_text_content": ".187, (.035)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": ".210 (.001)",
+        "pdf_text_content": ".210 (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": ".330 (.001)",
+        "pdf_text_content": ".330 (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": ".148 (.50)",
+        "pdf_text_content": ".148 (.50)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": ".145 (.60)",
+        "pdf_text_content": ".145 (.60)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": ".285 (.001)",
+        "pdf_text_content": ".285 (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": ".230 (.001)",
+        "pdf_text_content": ".230 (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": ".484 (.001)",
+        "pdf_text_content": ".484 (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          10
+        ],
+        "xml_text_content": ".517 (.001)",
+        "pdf_text_content": ".517 (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          11
+        ],
+        "xml_text_content": ".510 (.001)",
+        "pdf_text_content": ".510 (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "X 2 (Df) (p)",
+        "pdf_text_content": "X2 (Df) (p)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "6(4), (.155)",
+        "pdf_text_content": "6(4), (.155)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "4(5), (.464)",
+        "pdf_text_content": "4(5), (.464)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "8(5), (.149)",
+        "pdf_text_content": "8(5), (.149)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "23(2), (.05)",
+        "pdf_text_content": "23(2), (.05)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "2(4), (.73)",
+        "pdf_text_content": "2(4), (.73)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "0.45(4), (.97)",
+        "pdf_text_content": "0.45(4), (.97)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "174(5), (.001)",
+        "pdf_text_content": "174(5), (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "157(5) (.001)",
+        "pdf_text_content": "157(5) (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "107(3), (.001)",
+        "pdf_text_content": "107(3), (.001)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          10
+        ],
+        "xml_text_content": "5(1), (.035)",
+        "pdf_text_content": "5(1), (.035)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          11
+        ],
+        "xml_text_content": "7(1), (.007)",
+        "pdf_text_content": "7(1), (.007)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "% at ceiling",
+        "pdf_text_content": "% at ceiling",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "N/A",
+        "pdf_text_content": "N/A",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "N/A",
+        "pdf_text_content": "N/A",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "N/A",
+        "pdf_text_content": "N/A",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "66",
+        "pdf_text_content": "66",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "2.8",
+        "pdf_text_content": "2.8",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "5.7",
+        "pdf_text_content": "5.7",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "48",
+        "pdf_text_content": "48",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "37",
+        "pdf_text_content": "37",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "83",
+        "pdf_text_content": "83",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          10
+        ],
+        "xml_text_content": "91",
+        "pdf_text_content": "91",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          11
+        ],
+        "xml_text_content": "88",
+        "pdf_text_content": "88",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      }
+    ],
+    "structure_id": "PMC5983505_table_2",
+    "pdf_file_name": "pone.0198426.pdf",
+    "split": "test"
+  }
+]

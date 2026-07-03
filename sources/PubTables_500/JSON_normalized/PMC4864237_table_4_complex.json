@@ -1,0 +1,587 @@
+[
+  {
+    "cells": [
+      {
+        "row_nums": [
+          0,
+          1,
+          2
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Neuroimaging Outcome",
+        "pdf_text_content": "Neuroimaging Outcome",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0,
+          1,
+          2
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "No. of participants",
+        "pdf_text_content": "No. of participants",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          2,
+          3,
+          4
+        ],
+        "xml_text_content": "Serum 25(OH)D, nmol/L",
+        "pdf_text_content": "Serum 25(OH)D, nmol/L",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0,
+          1,
+          2
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "p -value for linear trend",
+        "pdf_text_content": "p-value for linear trend",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1,
+          2
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "≥50 OR",
+        "pdf_text_content": "�50 OR",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1,
+          2
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "≥25 to <50 OR (95% CI)",
+        "pdf_text_content": "�25 to <50 OR (95% CI)",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1,
+          2
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "<25 OR (95% CI)",
+        "pdf_text_content": "<25 OR (95% CI)",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "xml_text_content": "White matter grade",
+        "pdf_text_content": "White matter grade",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Model A a",
+        "pdf_text_content": "Model Aa",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1,018",
+        "pdf_text_content": "1,018",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "1 (Reference)",
+        "pdf_text_content": "1 (Reference)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.75 (0.51–1.10)",
+        "pdf_text_content": "0.75 (0.51–1.10)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.41 (0.70–2.85)",
+        "pdf_text_content": "1.41 (0.70–2.85)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "0.75",
+        "pdf_text_content": "0.75",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Model B b",
+        "pdf_text_content": "Model Bb",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "989",
+        "pdf_text_content": "989",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "1 (Reference)",
+        "pdf_text_content": "1 (Reference)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.76 (0.51–1.13)",
+        "pdf_text_content": "0.76 (0.51–1.13)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.29 (0.62–2.70)",
+        "pdf_text_content": "1.29 (0.62–2.70)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "0.65",
+        "pdf_text_content": "0.65",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "xml_text_content": "Ventricular grade",
+        "pdf_text_content": "Ventricular grade",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Model A a",
+        "pdf_text_content": "Model Aa",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "995",
+        "pdf_text_content": "995",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "1 (Reference)",
+        "pdf_text_content": "1 (Reference)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.63 (0.38–1.04)",
+        "pdf_text_content": "0.63 (0.38–1.04)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.34 (0.58–3.10)",
+        "pdf_text_content": "1.34 (0.58–3.10)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "0.48",
+        "pdf_text_content": "0.48",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Model B b",
+        "pdf_text_content": "Model Bb",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "966",
+        "pdf_text_content": "966",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "1 (Reference)",
+        "pdf_text_content": "1 (Reference)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.71 (0.41–1.20)",
+        "pdf_text_content": "0.71 (0.41–1.20)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.49 (0.60–3.66)",
+        "pdf_text_content": "1.49 (0.60–3.66)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "0.78",
+        "pdf_text_content": "0.78",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "xml_text_content": "Infarcts",
+        "pdf_text_content": "Infarcts",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Model A a",
+        "pdf_text_content": "Model Aa",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1,652",
+        "pdf_text_content": "1,652",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "1 (Reference)",
+        "pdf_text_content": "1 (Reference)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "1.02 (0.78–1.34)",
+        "pdf_text_content": "1.02 (0.78–1.34)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.98 (1.18–3.34)",
+        "pdf_text_content": "1.98 (1.18–3.34)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "0.08",
+        "pdf_text_content": "0.08",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Model B b",
+        "pdf_text_content": "Model Bb",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1,609",
+        "pdf_text_content": "1,609",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "1 (Reference)",
+        "pdf_text_content": "1 (Reference)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "0.98 (0.74–1.30)",
+        "pdf_text_content": "0.98 (0.74–1.30)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "1.91 (1.12–3.27)",
+        "pdf_text_content": "1.91 (1.12–3.27)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "0.15",
+        "pdf_text_content": "0.15",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      }
+    ],
+    "structure_id": "PMC4864237_table_4",
+    "pdf_file_name": "pone.0154896.pdf",
+    "split": "test"
+  }
+]

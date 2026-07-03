@@ -1,0 +1,5430 @@
+[
+  {
+    "cells": [
+      {
+        "row_nums": [
+          0,
+          1
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Author (Ref)",
+        "pdf_text_content": "Author (Ref)",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0,
+          1
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Year",
+        "pdf_text_content": "Year",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0,
+          1
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Country",
+        "pdf_text_content": "Country",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0,
+          1
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Ethnicity",
+        "pdf_text_content": "Ethnicity",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0,
+          1
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "Case",
+        "pdf_text_content": "Case",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0,
+          1
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "Control",
+        "pdf_text_content": "Control",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "xml_text_content": "Whether has genotype distribution information",
+        "pdf_text_content": "Whether has genotype distribution information",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "GSTM1",
+        "pdf_text_content": "GSTM1",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "GSTT1",
+        "pdf_text_content": "GSTT1",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "Dual genes",
+        "pdf_text_content": "Dual genes",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "Tobaccoconsumption",
+        "pdf_text_content": "Tobacco consumption",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Jahnke et al. (23)",
+        "pdf_text_content": "Jahnke et al. (23)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1996",
+        "pdf_text_content": "1996",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Germany",
+        "pdf_text_content": "Germany",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "European",
+        "pdf_text_content": "European",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "269",
+        "pdf_text_content": "269",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "216",
+        "pdf_text_content": "216",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Park et al. (24)",
+        "pdf_text_content": "Park et al. (24)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1997",
+        "pdf_text_content": "1997",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "USA",
+        "pdf_text_content": "USA",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "European",
+        "pdf_text_content": "European",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "133",
+        "pdf_text_content": "133",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "133",
+        "pdf_text_content": "133",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "González et al. (25)",
+        "pdf_text_content": "Gonza´lez et al. (25)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1998",
+        "pdf_text_content": "1998",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Spain",
+        "pdf_text_content": "Spain",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "European",
+        "pdf_text_content": "European",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "75",
+        "pdf_text_content": "75",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "200",
+        "pdf_text_content": "200",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Oude Ophuis et al. (13)",
+        "pdf_text_content": "Oude Ophuis et al. (13)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1998",
+        "pdf_text_content": "1998",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Netherlands",
+        "pdf_text_content": "Netherlands",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "European",
+        "pdf_text_content": "European",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "185",
+        "pdf_text_content": "185",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "207",
+        "pdf_text_content": "207",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Discarded",
+        "pdf_text_content": "Discarded",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Discarded",
+        "pdf_text_content": "Discarded",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Cheng et al. (26)",
+        "pdf_text_content": "Cheng et al. (26)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1999",
+        "pdf_text_content": "1999",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "USA",
+        "pdf_text_content": "USA",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "European",
+        "pdf_text_content": "European",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "162",
+        "pdf_text_content": "162",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "315",
+        "pdf_text_content": "315",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Katoh et al. (27)",
+        "pdf_text_content": "Katoh et al. (27)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1999",
+        "pdf_text_content": "1999",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Japan",
+        "pdf_text_content": "Japan",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Asian",
+        "pdf_text_content": "Asian",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "92",
+        "pdf_text_content": "92",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "147",
+        "pdf_text_content": "147",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Morita et al. (28)",
+        "pdf_text_content": "Morita et al. (28)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1999",
+        "pdf_text_content": "1999",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Japan",
+        "pdf_text_content": "Japan",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Asian",
+        "pdf_text_content": "Asian",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "145",
+        "pdf_text_content": "145",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "164",
+        "pdf_text_content": "164",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Nazar-Stewart et al. (29)",
+        "pdf_text_content": "Nazar-Stewart et al. (29)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1999",
+        "pdf_text_content": "1999",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "USA",
+        "pdf_text_content": "USA",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "European",
+        "pdf_text_content": "European",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "48",
+        "pdf_text_content": "48",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "144",
+        "pdf_text_content": "144",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Sato et al. (30)",
+        "pdf_text_content": "Sato et al. (30)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1999",
+        "pdf_text_content": "1999",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Japan",
+        "pdf_text_content": "Japan",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Asian",
+        "pdf_text_content": "Asian",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "142",
+        "pdf_text_content": "142",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "142",
+        "pdf_text_content": "142",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Tanimoto et al. (31)",
+        "pdf_text_content": "Tanimoto et al. (31)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "1999",
+        "pdf_text_content": "1999",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Japan",
+        "pdf_text_content": "Japan",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Asian",
+        "pdf_text_content": "Asian",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "100",
+        "pdf_text_content": "100",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "100",
+        "pdf_text_content": "100",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Hamel et al. (32)",
+        "pdf_text_content": "Hamel et al. (32)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2000",
+        "pdf_text_content": "2000",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Canada",
+        "pdf_text_content": "Canada",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "European",
+        "pdf_text_content": "European",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "90",
+        "pdf_text_content": "90",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "90",
+        "pdf_text_content": "90",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Olshan et al. (33)",
+        "pdf_text_content": "Olshan et al. (33)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2000",
+        "pdf_text_content": "2000",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "USA",
+        "pdf_text_content": "USA",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "European",
+        "pdf_text_content": "European",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "182",
+        "pdf_text_content": "182",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "202",
+        "pdf_text_content": "202",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Hahn et al. (34)",
+        "pdf_text_content": "Hahn et al. (34)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2002",
+        "pdf_text_content": "2002",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Germany",
+        "pdf_text_content": "Germany",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "European",
+        "pdf_text_content": "European",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "94",
+        "pdf_text_content": "94",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "92",
+        "pdf_text_content": "92",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "To-Figureras et al. (35)",
+        "pdf_text_content": "To-Figureras et al. (35)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2002",
+        "pdf_text_content": "2002",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Spain",
+        "pdf_text_content": "Spain",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "European",
+        "pdf_text_content": "European",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "204",
+        "pdf_text_content": "204",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "203",
+        "pdf_text_content": "203",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Gronau et al. (36)",
+        "pdf_text_content": "Gronau et al. (36)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2003",
+        "pdf_text_content": "2003",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Germany",
+        "pdf_text_content": "Germany",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "European",
+        "pdf_text_content": "European",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "187",
+        "pdf_text_content": "187",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "139",
+        "pdf_text_content": "139",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Drummond et al. (37)",
+        "pdf_text_content": "Drummond et al. (37)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2004",
+        "pdf_text_content": "2004",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Brazil",
+        "pdf_text_content": "Brazil",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "South American",
+        "pdf_text_content": "South American",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "70",
+        "pdf_text_content": "70",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "82",
+        "pdf_text_content": "82",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Evans et al. (38)",
+        "pdf_text_content": "Evans et al. (38)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2004",
+        "pdf_text_content": "2004",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "USA",
+        "pdf_text_content": "USA",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "European",
+        "pdf_text_content": "European",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "283",
+        "pdf_text_content": "283",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "208",
+        "pdf_text_content": "208",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Li et al. (39)",
+        "pdf_text_content": "Li et al. (39)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2004",
+        "pdf_text_content": "2004",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "China",
+        "pdf_text_content": "China",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Asian",
+        "pdf_text_content": "Asian",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "89",
+        "pdf_text_content": "89",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "164",
+        "pdf_text_content": "164",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Drummond et al. (40)",
+        "pdf_text_content": "Drummond et al. (40)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2005",
+        "pdf_text_content": "2005",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Brazil",
+        "pdf_text_content": "Brazil",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "South American",
+        "pdf_text_content": "South American",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "87",
+        "pdf_text_content": "87",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "81",
+        "pdf_text_content": "81",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Gajecka et al. (41)",
+        "pdf_text_content": "Gajecka et al. (41)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2005",
+        "pdf_text_content": "2005",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Poland",
+        "pdf_text_content": "Poland",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "European",
+        "pdf_text_content": "European",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "292",
+        "pdf_text_content": "292",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "321",
+        "pdf_text_content": "321",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Acar et al. (42)",
+        "pdf_text_content": "Acar et al. (42)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2006",
+        "pdf_text_content": "2006",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Turkey",
+        "pdf_text_content": "Turkey",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Asian",
+        "pdf_text_content": "Asian",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "110",
+        "pdf_text_content": "110",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "197",
+        "pdf_text_content": "197",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          22
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Biselli et al. (10)",
+        "pdf_text_content": "Biselli et al. (10)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2006",
+        "pdf_text_content": "2006",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Brazil",
+        "pdf_text_content": "Brazil",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "South American",
+        "pdf_text_content": "South American",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "60",
+        "pdf_text_content": "60",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "60",
+        "pdf_text_content": "60",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          23
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Gatta's et al. (43)",
+        "pdf_text_content": "Gatta’s et al. (43)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2006",
+        "pdf_text_content": "2006",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Brazil",
+        "pdf_text_content": "Brazil",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "South American",
+        "pdf_text_content": "South American",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "103",
+        "pdf_text_content": "103",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "102",
+        "pdf_text_content": "102",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          24
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          25
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Oude Ophuis et al. (44)",
+        "pdf_text_content": "Oude Ophuis et al. (44)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          25
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2006",
+        "pdf_text_content": "2006",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          25
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Netherlands",
+        "pdf_text_content": "Netherlands",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          25
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "European",
+        "pdf_text_content": "European",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          25
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "185",
+        "pdf_text_content": "185",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          25
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "285",
+        "pdf_text_content": "285",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          25
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          25
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          25
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          25
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          26
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Peters et al. (45)",
+        "pdf_text_content": "Peters et al. (45)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          26
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2006",
+        "pdf_text_content": "2006",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          26
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "USA",
+        "pdf_text_content": "USA",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          26
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "European",
+        "pdf_text_content": "European",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          26
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "692",
+        "pdf_text_content": "692",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          26
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "753",
+        "pdf_text_content": "753",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          26
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          26
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          26
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          26
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          27
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Sharma et al. (46)",
+        "pdf_text_content": "Sharma et al. (46)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          27
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2006",
+        "pdf_text_content": "2006",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          27
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "India",
+        "pdf_text_content": "India",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          27
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Asian",
+        "pdf_text_content": "Asian",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          27
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "40",
+        "pdf_text_content": "40",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          27
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "87",
+        "pdf_text_content": "87",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          27
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          27
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          27
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          27
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          28
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Sugimura et al. (47)",
+        "pdf_text_content": "Sugimura et al. (47)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          28
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2006",
+        "pdf_text_content": "2006",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          28
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Japan",
+        "pdf_text_content": "Japan",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          28
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Asian",
+        "pdf_text_content": "Asian",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          28
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "122",
+        "pdf_text_content": "122",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          28
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "241",
+        "pdf_text_content": "241",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          28
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          28
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          28
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          28
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          29
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Anatharaman et al. (48)",
+        "pdf_text_content": "Anatharaman et al. (48)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          29
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2007",
+        "pdf_text_content": "2007",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          29
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "India",
+        "pdf_text_content": "India",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          29
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Asian",
+        "pdf_text_content": "Asian",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          29
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "451",
+        "pdf_text_content": "451",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          29
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "727",
+        "pdf_text_content": "727",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          29
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          29
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          29
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          29
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          30
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Cha et al. (49)",
+        "pdf_text_content": "Cha et al. (49)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          30
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2007",
+        "pdf_text_content": "2007",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          30
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Korea",
+        "pdf_text_content": "Korea",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          30
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Asian",
+        "pdf_text_content": "Asian",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          30
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "72",
+        "pdf_text_content": "72",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          30
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "209",
+        "pdf_text_content": "209",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          30
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          30
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          30
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          30
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          31
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Suzen et al. (8)",
+        "pdf_text_content": "Suzen et al. (8)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          31
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2007",
+        "pdf_text_content": "2007",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          31
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Turkey",
+        "pdf_text_content": "Turkey",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          31
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Asian",
+        "pdf_text_content": "Asian",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          31
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "98",
+        "pdf_text_content": "98",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          31
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "120",
+        "pdf_text_content": "120",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          31
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          31
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          31
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          31
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          32
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Boccia et al. (9)",
+        "pdf_text_content": "Boccia et al. (9)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          32
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2008",
+        "pdf_text_content": "2008",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          32
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Italy",
+        "pdf_text_content": "Italy",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          32
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "European",
+        "pdf_text_content": "European",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          32
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "210",
+        "pdf_text_content": "210",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          32
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "245",
+        "pdf_text_content": "245",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          32
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          32
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          32
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          32
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          33
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Buch et al. (50)",
+        "pdf_text_content": "Buch et al. (50)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          33
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2008",
+        "pdf_text_content": "2008",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          33
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "USA",
+        "pdf_text_content": "USA",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          33
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "European",
+        "pdf_text_content": "European",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          33
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "196",
+        "pdf_text_content": "196",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          33
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "414",
+        "pdf_text_content": "414",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          33
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          33
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          33
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          33
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          34
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Harth et al. (51)",
+        "pdf_text_content": "Harth et al. (51)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          34
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2008",
+        "pdf_text_content": "2008",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          34
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Germany",
+        "pdf_text_content": "Germany",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          34
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "European",
+        "pdf_text_content": "European",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          34
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "312",
+        "pdf_text_content": "312",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          34
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "300",
+        "pdf_text_content": "300",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          34
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          34
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          34
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          34
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          35
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Hatagima et al. (52)",
+        "pdf_text_content": "Hatagima et al. (52)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          35
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2008",
+        "pdf_text_content": "2008",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          35
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Brazil",
+        "pdf_text_content": "Brazil",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          35
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "South American",
+        "pdf_text_content": "South American",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          35
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "231",
+        "pdf_text_content": "231",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          35
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "212",
+        "pdf_text_content": "212",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          35
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          35
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          35
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          35
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          36
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Losi-Guembarovski et al. (53)",
+        "pdf_text_content": "Losi-Guembarovski et al. (53)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          36
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2008",
+        "pdf_text_content": "2008",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          36
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Brazil",
+        "pdf_text_content": "Brazil",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          36
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "South American",
+        "pdf_text_content": "South American",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          36
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "91",
+        "pdf_text_content": "91",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          36
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "81",
+        "pdf_text_content": "81",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          36
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          36
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          36
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          36
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          37
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Amtha et al. (54)",
+        "pdf_text_content": "Amtha et al. (54)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          37
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2009",
+        "pdf_text_content": "2009",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          37
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Indonesia",
+        "pdf_text_content": "Indonesia",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          37
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Asian",
+        "pdf_text_content": "Asian",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          37
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "81",
+        "pdf_text_content": "81",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          37
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "162",
+        "pdf_text_content": "162",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          37
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          37
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          37
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          37
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          38
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Li et al. (55)",
+        "pdf_text_content": "Li et al. (55)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          38
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2009",
+        "pdf_text_content": "2009",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          38
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "China",
+        "pdf_text_content": "China",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          38
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Asian",
+        "pdf_text_content": "Asian",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          38
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "76",
+        "pdf_text_content": "76",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          38
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "76",
+        "pdf_text_content": "76",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          38
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          38
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          38
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          38
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          39
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Chatzimichalis et al. (56)",
+        "pdf_text_content": "Chatzimichalis et al. (56)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          39
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2010",
+        "pdf_text_content": "2010",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          39
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Greek",
+        "pdf_text_content": "Greek",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          39
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "European",
+        "pdf_text_content": "European",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          39
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "88",
+        "pdf_text_content": "88",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          39
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "102",
+        "pdf_text_content": "102",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          39
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          39
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          39
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          39
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          40
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Leme et al. (57)",
+        "pdf_text_content": "Leme et al. (57)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          40
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2010",
+        "pdf_text_content": "2010",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          40
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Brazil",
+        "pdf_text_content": "Brazil",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          40
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "South American",
+        "pdf_text_content": "South American",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          40
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "100",
+        "pdf_text_content": "100",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          40
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "100",
+        "pdf_text_content": "100",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          40
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          40
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          40
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          40
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          41
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Sam et al. (58)",
+        "pdf_text_content": "Sam et al. (58)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          41
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2010",
+        "pdf_text_content": "2010",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          41
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "India",
+        "pdf_text_content": "India",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          41
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Asian",
+        "pdf_text_content": "Asian",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          41
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "408",
+        "pdf_text_content": "408",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          41
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "220",
+        "pdf_text_content": "220",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          41
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          41
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          41
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          41
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          42
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Soucek et al. (59)",
+        "pdf_text_content": "Soucek et al. (59)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          42
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2010",
+        "pdf_text_content": "2010",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          42
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Czech",
+        "pdf_text_content": "Czech",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          42
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "European",
+        "pdf_text_content": "European",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          42
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "122",
+        "pdf_text_content": "122",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          42
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "179",
+        "pdf_text_content": "179",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          42
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          42
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          42
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          42
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          43
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Lourenço et al. (6)",
+        "pdf_text_content": "Lourenc¸o et al. (6)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          43
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2011",
+        "pdf_text_content": "2011",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          43
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "Brazil",
+        "pdf_text_content": "Brazil",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          43
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "South American",
+        "pdf_text_content": "South American",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          43
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "142",
+        "pdf_text_content": "142",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          43
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "142",
+        "pdf_text_content": "142",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          43
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          43
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          43
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          43
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          44
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Ruwali et al. (5)",
+        "pdf_text_content": "Ruwali et al. (5)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          44
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2011",
+        "pdf_text_content": "2011",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          44
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "India",
+        "pdf_text_content": "India",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          44
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Asian",
+        "pdf_text_content": "Asian",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          44
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "500",
+        "pdf_text_content": "500",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          44
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "500",
+        "pdf_text_content": "500",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          44
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          44
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          44
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          44
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          45
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Shukla et al. (60)",
+        "pdf_text_content": "Shukla et al. (60)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          45
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "2012",
+        "pdf_text_content": "2012",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          45
+        ],
+        "column_nums": [
+          2
+        ],
+        "xml_text_content": "India",
+        "pdf_text_content": "India",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          45
+        ],
+        "column_nums": [
+          3
+        ],
+        "xml_text_content": "Asian",
+        "pdf_text_content": "Asian",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          45
+        ],
+        "column_nums": [
+          4
+        ],
+        "xml_text_content": "150",
+        "pdf_text_content": "150",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          45
+        ],
+        "column_nums": [
+          5
+        ],
+        "xml_text_content": "141",
+        "pdf_text_content": "141",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          45
+        ],
+        "column_nums": [
+          6
+        ],
+        "xml_text_content": "Yes",
+        "pdf_text_content": "Yes",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          45
+        ],
+        "column_nums": [
+          7
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          45
+        ],
+        "column_nums": [
+          8
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          45
+        ],
+        "column_nums": [
+          9
+        ],
+        "xml_text_content": "No",
+        "pdf_text_content": "No",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      }
+    ],
+    "structure_id": "PMC3471998_table_0",
+    "pdf_file_name": "pone.0047579.pdf",
+    "split": "test"
+  }
+]

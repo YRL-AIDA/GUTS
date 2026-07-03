@@ -1,0 +1,119 @@
+<table border='1' cellspacing='0' cellpadding='5'>
+  <tr>
+    <th colspan='2'>Mechanism considered</th>
+    <th>y i ( t )</th>
+    <th>k</th>
+    <th>θ</th>
+    <th>Modified model parameter</th>
+  </tr>
+  <tr>
+    <th colspan='6'>A. One mechanism at a time ( Fig 3 )</th>
+  </tr>
+  <tr>
+    <th>b</th>
+    <th>Degradation of IKK</th>
+    <th>y b ( t )</th>
+    <th>1</th>
+    <th>0.01</th>
+    <th>k deg</th>
+  </tr>
+  <tr>
+    <td>c</td>
+    <td>Inhibition of IKK activation</td>
+    <td>y c ( t )</td>
+    <td>1</td>
+    <td>0.0065</td>
+    <td>k 1</td>
+  </tr>
+  <tr>
+    <td>d</td>
+    <td>Inhibition of IκBα phosphorylation</td>
+    <td>y d ( t )</td>
+    <td>1</td>
+    <td>0.01</td>
+    <td>a 3</td>
+  </tr>
+  <tr>
+    <td>e</td>
+    <td>Inhibition of nuclear import of NF-κB</td>
+    <td>y e ( t )</td>
+    <td>1</td>
+    <td>0.05</td>
+    <td>i 1</td>
+  </tr>
+  <tr>
+    <td>f</td>
+    <td>Inhibition of nuclear transport (both ways)</td>
+    <td>y f ( t )</td>
+    <td>1</td>
+    <td>0.05</td>
+    <td>i 1 , i 1a , e 1a , e 2a ,</td>
+  </tr>
+  <tr>
+    <td>g</td>
+    <td>Inhibition of transcription</td>
+    <td>y g ( t )</td>
+    <td>1</td>
+    <td>0.3</td>
+    <td>c 1 , c 2 , c 1a , c 2a</td>
+  </tr>
+  <tr>
+    <td>h</td>
+    <td>Induction of transcription</td>
+    <td>y h ( t )</td>
+    <td>1</td>
+    <td>0.3</td>
+    <td>c 1 , c 2 , c 1a , c 2a</td>
+  </tr>
+  <tr>
+    <td>i</td>
+    <td>Inhibition of translation</td>
+    <td>y i ( t )</td>
+    <td>1</td>
+    <td>0.3</td>
+    <td>c 4 , c 4a</td>
+  </tr>
+  <tr>
+    <td colspan='6'>B. Multiple mechanisms contributing at the same time ( Fig 7 )</td>
+  </tr>
+  <tr>
+    <td>b*+c</td>
+    <td>Degradation of IKK (constant) + inhibition of IKK activation</td>
+    <td>y c ( t )</td>
+    <td>1</td>
+    <td>0.013</td>
+    <td>k 1</td>
+  </tr>
+  <tr>
+    <td>b*+d</td>
+    <td>Degradation of IKK (constant) + inhibition of IκBα phosphorylation</td>
+    <td>y d ( t )</td>
+    <td>1</td>
+    <td>0.018</td>
+    <td>a 3</td>
+  </tr>
+  <tr>
+    <td>b*+e</td>
+    <td>Degradation of IKK (constant) + inhibition of nuclear import of NF-κB</td>
+    <td>y e ( t )</td>
+    <td>1</td>
+    <td>0.075</td>
+    <td>i 1</td>
+  </tr>
+  <tr>
+    <td>b*+c+e</td>
+    <td>Degradation of IKK (constant) + inhibition of IKK activation + inhibition of nuclear import of NF-κB</td>
+    <td>y c ( t ) y e ( t )</td>
+    <td>1 1</td>
+    <td>0.026 0.18</td>
+    <td>k 1 i 1</td>
+  </tr>
+  <tr>
+    <td>b*+d+e</td>
+    <td>Degradation of IKK (constant) + inhibition of IκBα phosphorylation + inhibition of nuclear import of NF-κB</td>
+    <td>y d ( t ) y e ( t )</td>
+    <td>1 1</td>
+    <td>0.036 0.3</td>
+    <td>a 3 i 1</td>
+  </tr>
+</table>

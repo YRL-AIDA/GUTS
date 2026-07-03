@@ -1,0 +1,427 @@
+[
+  {
+    "cells": [
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Variable",
+        "pdf_text_content": "Variable",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          0
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Description",
+        "pdf_text_content": "Description",
+        "is_column_header": true,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          1
+        ],
+        "column_nums": [
+          0,
+          1
+        ],
+        "xml_text_content": "Remotely sensed data",
+        "pdf_text_content": "Remotely sensed data",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Calcite concentration (mol/m3)",
+        "pdf_text_content": "Calcite concentration (mol/m3)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          2
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "The concentration of CaCO 3",
+        "pdf_text_content": "The concentration of CaCO3",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Chlorophyll A concentration maximum (mg/m3)",
+        "pdf_text_content": "Chlorophyll A concentration maximum (mg/m3)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "The concentration of the photosynthetic pigment chlorophyll A",
+        "pdf_text_content": "The concentration of the photosynthetic pigment chlorophyll A",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          4
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Chlorophyll A concentration mean (mg/m3)",
+        "pdf_text_content": "Chlorophyll A concentration mean (mg/m3)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          5
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Chlorophyll A concentration minimum (mg/m3)",
+        "pdf_text_content": "Chlorophyll A concentration minimum (mg/m3)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          6
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Chlorophyll A concentration range (mg/m3)",
+        "pdf_text_content": "Chlorophyll A concentration range (mg/m3)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Diffuse attenuation coefficient at 490 nm (m -1) maximum",
+        "pdf_text_content": "Diffuse attenuation coefficient at 490 nm (m -1) maximum",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          7,
+          8,
+          9
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Indicator of water clarity",
+        "pdf_text_content": "Indicator of water clarity",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          8
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Diffuse attenuation coefficient at 490 nm (m -1) mean",
+        "pdf_text_content": "Diffuse attenuation coefficient at 490 nm (m -1) mean",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          9
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Diffuse attenuation coefficient at 490 nm (m -1) minimum",
+        "pdf_text_content": "Diffuse attenuation coefficient at 490 nm (m -1) minimum",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Photosynthetically Available Radiation (Einstein/m2/day)Mean and maximum values",
+        "pdf_text_content": "Photosynthetically Available Radiation (Einstein/ m2/day)Mean and maximum values",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          10
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "The quantum energy flux from the sun",
+        "pdf_text_content": "The quantum energy flux from the sun",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Sea surface temperature (°C) maximum",
+        "pdf_text_content": "Sea surface temperature (°C) maximum",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          11,
+          12,
+          13,
+          14
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "The temperature of water at the ocean surface (topmost meter of the ocean water column).",
+        "pdf_text_content": "The temperature of water at the ocean surface (topmost meter of the ocean water column).",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          12
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Sea surface temperature (°C) mean",
+        "pdf_text_content": "Sea surface temperature (°C) mean",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          13
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Sea surface temperature (°C) minimum",
+        "pdf_text_content": "Sea surface temperature (°C) minimum",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          14
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Sea surface temperature (°C) range",
+        "pdf_text_content": "Sea surface temperature (°C) range",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          15
+        ],
+        "column_nums": [
+          0,
+          1
+        ],
+        "xml_text_content": "In situ measured oceanographic data",
+        "pdf_text_content": "In situ measured oceanographic data",
+        "is_column_header": false,
+        "is_projected_row_header": true
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Dissolved oxygen (ml/l)",
+        "pdf_text_content": "Dissolved oxygen (ml/l)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          16
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "O2 concentration in water",
+        "pdf_text_content": "O2 concentration in water",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Nitrate (μmole/l)",
+        "pdf_text_content": "Nitrate (μmole/l)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          17
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "This layer contains both [NO 3 ] and [NO 3 + NO 2 ] data",
+        "pdf_text_content": "This layer contains both [NO3] and [NO3 + NO2] data",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "pH",
+        "pdf_text_content": "pH",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          18
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Measure of the acidity",
+        "pdf_text_content": "Measure of the acidity",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Phosphate (μmole/l)",
+        "pdf_text_content": "Phosphate (μmole/l)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          19
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Reactive ortho-phosphate concentration [HPO 4  -2 ]",
+        "pdf_text_content": "Reactive ortho-phosphate concentration [HPO4 -2]",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Salinity (PSS)",
+        "pdf_text_content": "Salinity (PSS)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          20
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "Dissolved salt content",
+        "pdf_text_content": "Dissolved salt content",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          0
+        ],
+        "xml_text_content": "Silicate (μmole/l)",
+        "pdf_text_content": "Silicate (μmole/l)",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      },
+      {
+        "row_nums": [
+          21
+        ],
+        "column_nums": [
+          1
+        ],
+        "xml_text_content": "The concentration of silicate or ortho-silicic acid [Si(OH)4]",
+        "pdf_text_content": "The concentration of silicate or ortho-silicic acid [Si (OH)4]",
+        "is_column_header": false,
+        "is_projected_row_header": false
+      }
+    ],
+    "structure_id": "PMC4651326_table_0",
+    "pdf_file_name": "pone.0140162.pdf",
+    "split": "test"
+  }
+]
