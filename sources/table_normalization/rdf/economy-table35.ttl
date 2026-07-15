@@ -15,7 +15,7 @@ eco:region a rdf:Property ;
     rdfs:domain eco:SalesRecord ;
     rdfs:range xsd:string ;
     rdfs:label "Region"@en, "Регион"@ru ;
-    rdfs:comment "The sales region or distribution channel"@en, "Регион продаж или канал сбыта@ru .
+    rdfs:comment "The sales region or distribution channel"@en, "Регион продаж или канал сбыта"@ru .
 
 eco:productCategory a rdf:Property ;
     rdfs:domain eco:SalesRecord ;

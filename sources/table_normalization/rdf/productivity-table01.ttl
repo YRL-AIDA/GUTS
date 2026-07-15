@@ -41,10 +41,10 @@ prd:code a rdf:Property ;
     rdfs:label "Code"@en , "Код"@ru ;
     rdfs:comment "The internal system identifier"@en , "Внутренний системный идентификатор"@ru .
 
-prd:quarterAYear ago a rdf:Property ;
+prd:yearAgoQuarter a rdf:Property ;
     rdfs:domain prd:LaborProductivityAssessmentRevision ;
     rdfs:range xsd:decimal ;
-    rdfs:label "Quarter a year ago"@en , "Квартал год назад"@ru ;
+    rdfs:label "A quarter of a year ago"@en , "Квартал год назад"@ru ;
     rdfs:comment "Percent change on quarter a year ago"@en , "Изменение в процентах по сравнению с аналогичным кварталом прошлого года"@ru .
 
 prd:previousQuarter a rdf:Property ;

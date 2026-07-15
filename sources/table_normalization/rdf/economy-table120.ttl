@@ -36,7 +36,7 @@ eco:roomNumber a rdf:Property ;
 eco:invoiceNumber a rdf:Property ;
     rdfs:domain eco:CustomerInvoiceReport ;
     rdfs:range xsd:string ;
-    rdfs:label "Invoice number@en, "Номер счета"@ru ;
+    rdfs:label "Invoice number"@en, "Номер счета"@ru ;
     rdfs:comment "Unique identifier for the invoice"@en, "Уникальный идентификатор счета"@ru .
 
 eco:date a rdf:Property ;
@@ -68,11 +68,6 @@ eco:commissionAmount a rdf:Property ;
     rdfs:range xsd:decimal ;
     rdfs:label "Commission amount"@en, "Сумма комиссии"@ru ;
     rdfs:comment "Commission amount in British pounds sterling for the invoice"@en, "Сумма комиссии в фунтах стерлингов для счета"@ru .
-
-
-
-
-
 
 eco:company a rdf:Property ;
     rdfs:domain eco:CustomerInvoiceSummary ;

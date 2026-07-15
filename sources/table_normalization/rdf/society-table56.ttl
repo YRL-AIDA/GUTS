@@ -59,7 +59,7 @@ soc:violenceStatus a rdf:Property ;
     rdfs:label "Violence status"@en , "Статус насилия"@ru ;
     rdfs:comment "Whether the respondent reported facing violence"@en , "Сообщал ли респондент о столкновении с насилием"@ru .
 
-soc:employmentType of deaths a rdf:Property ;
+soc:employmentType a rdf:Property ;
     rdfs:domain soc:DetailViolenceObservation ;
     rdfs:range xsd:string ;
     rdfs:label "Employment type"@en , "Тип занятости"@ru ;

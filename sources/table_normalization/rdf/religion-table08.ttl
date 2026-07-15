@@ -16,8 +16,8 @@ rel:EstimatedOddsRatio a rdfs:Class ;
 # ==================== Object Properties ====================
 
 rel:hasEstimateResult a rdf:Property ;
-    rdfs:domain hl:LogisticRegression ;
-    rdfs:range hl:EstimatedOddsRatio ;
+    rdfs:domain rel:LogisticRegression ;
+    rdfs:range rel:EstimatedOddsRatio ;
     rdfs:label "Estimate result"@en , "Результат оценки"@ru ;
     rdfs:comment "Logistic regression result for a specific category and model"@en , "Результат логистической регрессии для конкретной категории и модели"@ru .
 

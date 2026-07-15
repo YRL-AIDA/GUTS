@@ -61,38 +61,38 @@ emp:totalEmployeesNumber a rdf:Property ;
     rdfs:label "Total number of employees"@en, "Общее количество занятых"@ru ;
     rdfs:comment "The total employment value for all sectors in the specified region for the year"@en, "Общее значение занятости для всех секторов в указанном регионе за год"@ru .
 
-eco:dataOwner a rdf:Property ;
-    rdfs:domain eco:StatisticsData ;
+emp:dataOwner a rdf:Property ;
+    rdfs:domain emp:StatisticsData ;
     rdfs:range xsd:string ;
     rdfs:label "Data owner"@en, "Владелец данных"@ru ;
     rdfs:comment "Owner of employment statistics data"@en, "Владелец статистических данных о занятости"@ru .
 
-eco:dataOwnerLink a rdf:Property ;
-    rdfs:domain eco:StatisticsData ;
+emp:dataOwnerLink a rdf:Property ;
+    rdfs:domain emp:StatisticsData ;
     rdfs:range xsd:string ;
     rdfs:label "Link to data owner"@en, "Ссылка на владельца данных"@ru ;
     rdfs:comment "Link to the owner of the employment statistics data"@en, "Ссылка на владельца статистических данных о занятости"@ru .
 
-eco:dataSource a rdf:Property ;
-    rdfs:domain eco:StatisticsData ;
+emp:dataSource a rdf:Property ;
+    rdfs:domain emp:StatisticsData ;
     rdfs:range xsd:string ;
     rdfs:label "Data source"@en, "Источник данных"@ru ;
     rdfs:comment "Source of employment statistics data"@en, "Источник статистических данных о занятости"@ru .
 
-eco:dataSourceLink a rdf:Property ;
-    rdfs:domain eco:StatisticsData ;
+emp:dataSourceLink a rdf:Property ;
+    rdfs:domain emp:StatisticsData ;
     rdfs:range xsd:string ;
     rdfs:label "Link to data source"@en, "Ссылка на источник данных"@ru ;
     rdfs:comment "Link to source of employment statistics data"@en, "Ссылка на источник статистических данных о занятости"@ru .
 
-eco:dates a rdf:Property ;
-    rdfs:domain eco:StatisticsData ;
+emp:dates a rdf:Property ;
+    rdfs:domain emp:StatisticsData ;
     rdfs:range xsd:string ;
     rdfs:label "Dates"@en, "Даты"@ru ;
     rdfs:comment "Financial observation dates"@en, "Финансовые даты наблюдений"@ru .
 
-eco:updateCycle a rdf:Property ;
-    rdfs:domain eco:StatisticsData ;
+emp:updateCycle a rdf:Property ;
+    rdfs:domain emp:StatisticsData ;
     rdfs:range xsd:string ;
     rdfs:label "Update cycle"@en, "Цикл обновления"@ru ;
     rdfs:comment "Employment statistics data update cycle"@en, "Цикл обновления статистических данных о занятости"@ru .

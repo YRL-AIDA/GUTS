@@ -35,7 +35,7 @@ soc:scenario a rdf:Property ;
     rdfs:label "Scenario"@en , "Сценарий"@ru ;
     rdfs:comment "The scenario of population change as a result of growth, aging, or an epidemiological situation"@en , "Сценарий изменения населения в результате роста, старения или эпидемиологической обстановки"@ru .
 
-soc:expectedDeathNumber of deaths a rdf:Property ;
+soc:expectedDeathNumber a rdf:Property ;
     rdfs:domain soc:PopulationMortalityObservation ;
     rdfs:range xsd:integer ;
     rdfs:label "Number of deaths expected"@en , "Ожидаемое число смертей"@ru ;

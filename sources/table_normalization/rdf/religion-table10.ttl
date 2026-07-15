@@ -20,14 +20,14 @@ rel:ReligionSummary a rdfs:Class ;
 # ==================== Object Properties ====================
 
 rel:hasContractBreakdown a rdf:Property ;
-    rdfs:domain hl:ReligionSummary ;
-    rdfs:range hl:ContractBreakdown ;
+    rdfs:domain rel:ReligionSummary ;
+    rdfs:range rel:ContractBreakdown ;
     rdfs:label "Contract breakdown"@en , "Детализация контракта"@ru ;
     rdfs:comment "Relationship between contract breakdown and religion summary"@en , "Взаимосвязь детализации контракта со сводной статистикой религии"@ru .
 
 rel:hasAdjustmentFactor a rdf:Property ;
-    rdfs:domain hl:ReligionSummary ;
-    rdfs:range hl:AdjustmentFactor ;
+    rdfs:domain rel:ReligionSummary ;
+    rdfs:range rel:AdjustmentFactor ;
     rdfs:label "Adjustment factor"@en , "Поправочный коэффициент"@ru ;
     rdfs:comment "Relationship between adjustment factor and religion summary"@en , "Взаимосвязь коэффициента корректировки выборки со сводной статистикой религии"@ru .
 

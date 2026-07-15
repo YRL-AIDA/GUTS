@@ -39,7 +39,7 @@ eco:hasGeneralObservation a rdf:Property ;
     rdfs:domain eco:ConsumerPriceIndex ;
     rdfs:range eco:GeneralObservation ;
     rdfs:label "General observation"@en, "Общее наблюдение"@ru ;
-    rdfs:comment "The consumer price index includes general observations of changes"@en, "Индекс потребительских цен включает общие наблюдения изменений""@ru .
+    rdfs:comment "The consumer price index includes general observations of changes"@en, "Индекс потребительских цен включает общие наблюдения изменений"@ru .
 
 # ==================== Datatype Properties ====================
 

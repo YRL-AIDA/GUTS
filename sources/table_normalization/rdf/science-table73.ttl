@@ -7,7 +7,7 @@
 
 scn:PromoterFoldChangeMeasurement a rdfs:Class ;
     rdfs:label "Promoter fold change measurement"@en , "Измерение изменения кратности активности промотора"@ru ;
-    rdfs:comment ""Measurement of relative promoter Pr1 activity to Oct-1 transcription factor in dendritic cells under tumor necrosis factor stimulation"@en , "Измерение относительной активности промотора Pr1 к транскрипционному фактору Oct-1 в дендритных клетках при стимуляции фактором некроза опухолей"@ru .
+    rdfs:comment "Measurement of relative promoter Pr1 activity to Oct-1 transcription factor in dendritic cells under tumor necrosis factor stimulation"@en , "Измерение относительной активности промотора Pr1 к транскрипционному фактору Oct-1 в дендритных клетках при стимуляции фактором некроза опухолей"@ru .
 
 scn:PromoterFoldChangeSummary a rdfs:Class ;
     rdfs:label "Promoter fold change summary"@en , "Сводка изменений в экспрессии промотора"@ru ;

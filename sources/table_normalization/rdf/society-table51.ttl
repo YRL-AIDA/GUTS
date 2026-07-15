@@ -45,7 +45,7 @@ soc:craton a rdf:Property ;
     rdfs:domain soc:KimberliteLamproiteObservation ;
     rdfs:range xsd:string ;
     rdfs:label "Craton"@en , "Кратон"@ru ;
-    rdfs:comment "The name of the craton@en , "Название кратона"@ru .
+    rdfs:comment "The name of the craton"@en , "Название кратона"@ru .
 
 soc:age a rdf:Property ;
     rdfs:domain soc:KimberliteLamproiteObservation ;

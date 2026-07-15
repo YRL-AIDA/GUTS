@@ -36,7 +36,7 @@ hl:timeOfDay a rdf:Property ;
     rdfs:comment "Time of day: MORNING, AFTERNOON, EVENING"@en, "Период суток: УТРО, ДЕНЬ, ВЕЧЕР"@ru .
 
 hl:type a rdf:Property ;
-    rdfs:domain :Nutrition ;
+    rdfs:domain hl:Nutrition ;
     rdfs:range xsd:string ;
     rdfs:label "Type of nutrition"@en, "Тип питания"@ru ;
     rdfs:comment "Type of nutrition (e.g., FOOD, DRINK)"@en, "Тип питания (например, ЕДА, НАПИТОК)"@ru .

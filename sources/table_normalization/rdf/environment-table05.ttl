@@ -6,7 +6,7 @@
 # ==================== Classes ====================
 
 env:EnergySavingObservation a rdfs:Class ;
-    rdfs:label ""Energy saving observation"@en, "Наблюдение за экономией энергии"@ru ;
+    rdfs:label "Energy saving observation"@en, "Наблюдение за экономией энергии"@ru ;
     rdfs:comment "Estimated energy savings resulting from the installation of an energy efficiency measure"@en, "Предполагаемая экономия энергии в результате установки энергоэффективных мер"@ru .
 
 # ==================== Datatype Properties ====================

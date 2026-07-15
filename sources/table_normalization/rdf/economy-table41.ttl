@@ -15,9 +15,9 @@ eco:EligibilityCondition a rdfs:Class ;
 
 # ==================== Object Properties ====================
 
-hl:hasEligibilityCondition a rdf:Property ;
-    rdfs:domain hl:DealerIncentive ;
-    rdfs:range hl:EligibilityCondition ;
+eco:hasEligibilityCondition a rdf:Property ;
+    rdfs:domain eco:DealerIncentive ;
+    rdfs:range eco:EligibilityCondition ;
     rdfs:label "Eligibility condition"@en, "Условия соответствия требованиям"@ru ;
     rdfs:comment "Checking the conditions for compliance with the requirements for the incentive (bonus)"@en, "Проверка условий соответствия требованиям для премирования"@ru .
 

@@ -7,7 +7,7 @@
 
 scn:ImmuneMarkerMeasurement a rdfs:Class ;
     rdfs:label "Immune marker measurement"@en , "Измерение иммунных маркеров"@ru ;
-    rdfs:comment "Immune marker concentration measurement in mouse serum under Leishmania infection and various dendritic cell transfection conditions"@en , ""Измерение концентрации иммунного маркера в сыворотке крови мышей при инфекции лейшманией и различных условиях трансфекции дендритных клеток"@ru .
+    rdfs:comment "Immune marker concentration measurement in mouse serum under Leishmania infection and various dendritic cell transfection conditions"@en , "Измерение концентрации иммунного маркера в сыворотке крови мышей при инфекции лейшманией и различных условиях трансфекции дендритных клеток"@ru .
 
 scn:MeasurementAggregation a rdfs:Class ;
     rdfs:label "Measurement aggregation"@en , "Агрегирование измерений"@ru ;
