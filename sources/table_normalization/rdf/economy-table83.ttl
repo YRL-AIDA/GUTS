@@ -69,7 +69,7 @@ eco:credit a rdf:Property ;
     rdfs:domain eco:BankTransaction ;
     rdfs:range xsd:decimal ;
     rdfs:label "Credit amount"@en, "Сумма дохода"@ru ;
-    rdfs:comment "Amount credited to the account (deposit or income) in currency units"@en, ""Сумма, зачисленная на счет (депозит или доход) в денежных единицах@ru .
+    rdfs:comment "Amount credited to the account (deposit or income) in currency units"@en, "Сумма, зачисленная на счет (депозит или доход) в денежных единицах@ru .
 
 eco:balance a rdf:Property ;
     rdfs:domain eco:BankTransaction ;

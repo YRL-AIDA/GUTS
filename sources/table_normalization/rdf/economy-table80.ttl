@@ -20,7 +20,7 @@ eco:category a rdf:Property ;
 eco:item a rdf:Property ;
     rdfs:domain eco:AgriculturalProductPriceList ;
     rdfs:range xsd:string ;
-    rdfs:label "Item"@en, "Товарная единица@ru ;
+    rdfs:label "Item"@en, "Товарная единица"@ru ;
     rdfs:comment "Size or packaging specification for the produce item"@en, "Спецификация размера или упаковки для товара"@ru .
 
 eco:fob a rdf:Property ;

@@ -21,7 +21,7 @@ eco:menuItemName a rdf:Property ;
     rdfs:domain eco:RestaurantMenu ;
     rdfs:range xsd:string ;
     rdfs:label "Menu item name"@en, "Название пункта меню"@ru ;
-    rdfs:comment "Descriptive name of the specific dish or beverage as listed on the menu"@en, ""Описательное название конкретного блюда или напитка, указанное в меню"@ru .
+    rdfs:comment "Descriptive name of the specific dish or beverage as listed on the menu"@en, "Описательное название конкретного блюда или напитка, указанное в меню"@ru .
 
 eco:price a rdf:Property ;
     rdfs:domain eco:RestaurantMenu ;
