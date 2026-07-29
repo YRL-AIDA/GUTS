@@ -283,15 +283,3 @@ reference labels rather than as a large-scale training corpus.
 - [Aleksandr Yu. Yurin](mailto:j80@yandex.ru)
 
 ## References
-
-*Publication forthcoming — a citation to the accompanying paper will be added
-here upon publication.*
-
-This benchmark is derived from two existing corpora, which should also be cited
-when using GUTS:
-
-- B. Smock, R. Pesala, R. Abraham. *PubTables-1M: Towards Comprehensive Table
-  Extraction From Unstructured Documents.* CVPR, 2022.
-- P. Wu, Y. Yang, G. Zhu, et al. *RealHiTBench: A Comprehensive Realistic
-  Hierarchical Table Benchmark for Evaluating LLM-Based Table Analysis.*
-  Findings of ACL, 2025.
