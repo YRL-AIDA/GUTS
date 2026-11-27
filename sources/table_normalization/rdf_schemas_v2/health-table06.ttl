@@ -1,0 +1,36 @@
+@prefix hl: <http://example.org/health#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+hl:HealthAndSocialEmployment a rdfs:Class ;
+    rdfs:label "Health and social employment"@en, "Занятость в сфере здравоохранения и социального обеспечения"@ru ;
+    rdfs:comment "A record representing the density of practicing pharmacists per 1,000 inhabitants in a given country or economy, for a specific year"@en, "Запись, представляющая плотность практикующих фармацевтов на 1 000 жителей в данной стране или экономике за конкретный год"@ru .
+
+# ==================== Datatype Properties ====================
+
+hl:timePeriod a rdf:Property ;
+    rdfs:domain hl:HealthAndSocialEmployment ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+hl:referenceArea a rdf:Property ;
+    rdfs:domain hl:HealthAndSocialEmployment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Country"@en, "Страна"@ru ;
+    rdfs:comment "Country name"@en, "Наименование страны"@ru .
+
+hl:typeArea a rdf:Property ;
+    rdfs:domain hl:HealthAndSocialEmployment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Type of country's economy"@en, "Тип экономики страны"@ru ;
+    rdfs:comment "Economies of countries that are members of the Organisation for Economic Co-operation and Development (OECD)"@en, "Экономики стран, входящие в организацию экономического сотрудничества и развития (ОЭСР)"@ru .
+
+hl:physicianProportion a rdf:Property ;
+    rdfs:domain hl:HealthAndSocialEmployment ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Physician proportion"@en, "Доля врачей"@ru ;
+    rdfs:comment "The proportion of practicing pharmacists per 1000 inhabitants"@en, "Доля практикующих фармацевтов на 1000 жителей"@ru .

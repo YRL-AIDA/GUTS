@@ -1,0 +1,54 @@
+@prefix edu: <http://example.org/education#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+edu:MiddleSchoolsOfferingMath a rdfs:Class ;
+    rdfs:label "Middle schools offering math"@en, "Средние школы, предлагающие уроки математики"@ru ;
+    rdfs:comment "Information on US high schools showing the availability of algebra and geometry courses, broken down by state, course type, and metric type"@en, "Информация по средним школам США, представляющие доступность курсов алгебры и геометрии с детализацией по штату, типу курса и типу метрики"@ru .
+
+edu:State a rdfs:Class ;
+    rdfs:label "State"@en, "Штат"@ru ;
+    rdfs:comment "US state or the United States as a whole"@en, "Штат США или США в целом"@ru .
+
+# ==================== Object Properties ====================
+
+edu:hasCourseStatistics a rdf:Property ;
+    rdfs:domain edu:State ;
+    rdfs:range edu:MiddleSchoolsOfferingMath ;
+    rdfs:label "Course statistics"@en, "Статистика курсов"@ru ;
+    rdfs:comment "Course availability observed in the state"@en, "Наличие курсов в школах штата"@ru .
+
+# ==================== Datatype Properties ====================
+
+edu:state a rdf:Property ;
+    rdfs:domain edu:State ;
+    rdfs:range xsd:string ;
+    rdfs:label "State"@en, "Штат"@ru ;
+    rdfs:comment "The US state or aggregated region for which the statistic is reported"@en, "Штат США или регион, для которого представлены статистические данные"@ru .
+
+edu:schoolsReporting a rdf:Property ;
+    rdfs:domain edu:State ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Schools reporting"@en, "Отчитавшиеся школы"@ru ;
+    rdfs:comment "The number of schools in the state that submitted data for this report"@en, "Количество школ в штате, предоставивших данные для этого отчета"@ru .
+
+edu:courseType a rdf:Property ;
+    rdfs:domain edu:MiddleSchoolsOfferingMath ;
+    rdfs:range xsd:string ;
+    rdfs:label "Course type"@en, "Тип курса"@ru ;
+    rdfs:comment "The mathematics course type"@en, "Тип курса математики"@ru .
+
+edu:courseNumber a rdf:Property ;
+    rdfs:domain edu:MiddleSchoolsOfferingMath ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Course number"@en, "Количество курсов"@ru ;
+    rdfs:comment "Total number of mathematics courses of this type"@en, "Общее количество математических курсов данного типа"@ru .
+
+edu:schoolsNumber a rdf:Property ;
+    rdfs:domain edu:State ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of schools"@en, "Число школ"@ru ;
+    rdfs:comment "The total number of schools in the state"@en, "Общее количество школ в штате"@ru .

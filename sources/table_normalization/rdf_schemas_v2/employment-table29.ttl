@@ -1,0 +1,36 @@
+@prefix emp: <http://example.org/employment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+emp:SubnationalPublicEmployment a rdfs:Class ;
+    rdfs:label "Subnational public employment"@en, "Государственная занятость на субнациональном уровне"@ru ;
+    rdfs:comment "Aggregated and disaggregated subnational public employment for 2021"@en, "Сводные и детализированные данные о занятости в государственном секторе на субнациональном уровне за 2021 год"@ru .
+
+# ==================== Datatype Properties ====================
+
+emp:sex a rdf:Property ;
+    rdfs:domain emp:SubnationalPublicEmployment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sex"@en, "Пол"@ru ;
+    rdfs:comment "Sex category"@en, "Категория пола"@ru .
+
+emp:referenceArea a rdf:Property ;
+    rdfs:domain emp:SubnationalPublicEmployment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Country"@en, "Страна"@ru ;
+    rdfs:comment "Country name"@en, "Наименование страны"@ru .
+
+emp:institutionalSector a rdf:Property ;
+    rdfs:domain emp:SubnationalPublicEmployment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Institutional sector"@en, "Институциональный сектор"@ru ;
+    rdfs:comment "Name of the institutional sector of the subnational government"@en, "Название институционального сектора субнационального правительства"@ru .
+
+emp:subnationalPublicEmployees a rdf:Property ;
+    rdfs:domain emp:SubnationalPublicEmployment ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Subnational public employees"@en, "Государственные служащие субнационального уровня"@ru ;
+    rdfs:comment "Total number of civil servants at the subnational level"@en, "Общее количество государственных служащих на субнациональном уровне"@ru .

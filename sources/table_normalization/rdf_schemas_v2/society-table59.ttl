@@ -1,0 +1,42 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:InsolvencyMonitoring a rdfs:Class ;
+    rdfs:label "Insolvency monitoring"@en, "Мониторинг неплатежеспособности"@ru ;
+    rdfs:comment "Monitoring the number of individual insolvency cases by type of procedure and time period"@en, "Мониторинг количества дел об индивидуальной несостоятельности с разбивкой по типу процедуры и временному периоду"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:year a rdf:Property ;
+    rdfs:domain soc:InsolvencyMonitoring ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+soc:quarter a rdf:Property ;
+    rdfs:domain soc:InsolvencyMonitoring ;
+    rdfs:range xsd:string ;
+    rdfs:label "Quarter"@en, "Квартал"@ru ;
+    rdfs:comment "The quarter within the year (Q1, Q2, Q3, Q4), and null for annual records"@en, "Квартал в пределах года (Q1, Q2, Q3, Q4) и null для годовых записей"@ru .
+
+soc:bankruptcy a rdf:Property ;
+    rdfs:domain soc:InsolvencyMonitoring ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Bankruptcies"@en, "Банкротство"@ru ;
+    rdfs:comment "Number of bankruptcy orders granted"@en, "Количество вынесенных приказов о банкротстве"@ru .
+
+soc:debtReliefOrder a rdf:Property ;
+    rdfs:domain soc:InsolvencyMonitoring ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Debt relief orders"@en, "Постановления об освобождении от долгов"@ru ;
+    rdfs:comment "Number of debt relief orders issued"@en, "Количество выданных приказов о списании долгов"@ru .
+
+soc:individualVoluntaryArrangement a rdf:Property ;
+    rdfs:domain soc:InsolvencyMonitoring ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Individual voluntary arrangements"@en, "Индивидуальные добровольные соглашения"@ru ;
+    rdfs:comment "Number of individual voluntary arrangements"@en, "Количество зарегистрированных индивидуальных добровольных соглашений"@ru .

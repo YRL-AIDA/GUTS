@@ -1,0 +1,48 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:DigitalProductPriceList a rdfs:Class ;
+    rdfs:label "Digital product price list"@en, "Прайс-лист на цифровые продукты"@ru ;
+    rdfs:comment "Price list for digital products in a specific geographic region, indicating local currency and amount"@en, "Прайс-лист на цифровые продукты в определенном географическом регионе с указанием локальной валюты и суммы"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:recordNumber a rdf:Property ;
+    rdfs:domain eco:DigitalProductPriceList ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Record number"@en, "Номер записи"@ru ;
+    rdfs:comment "The record number of a digital product or service in the price list"@en, "Номер записи цифрового продукта или услуги в прайс-листе"@ru .
+
+eco:productCode a rdf:Property ;
+    rdfs:domain eco:DigitalProductPriceList ;
+    rdfs:range xsd:string ;
+    rdfs:label "Product code"@en, "код продукта"@ru ;
+    rdfs:comment "Unique symbolic identifier of the product"@en, "Уникальный символьный идентификатор продукта"@ru .
+
+eco:variant a rdf:Property ;
+    rdfs:domain eco:DigitalProductPriceList ;
+    rdfs:range xsd:string ;
+    rdfs:label "Variant"@en, "Вариант"@ru ;
+    rdfs:comment "A descriptive name for a variation of a digital product or service"@en, "Описательное название вариации цифрового продукта или услуги"@ru .
+
+eco:region a rdf:Property ;
+    rdfs:domain eco:DigitalProductPriceList ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region"@en, "Регион"@ru ;
+    rdfs:comment "The name of the region or sales market in which the product or service is offered"@en, "Название региона или рынка продаж, в котором предлагается продукт или услуга"@ru .
+
+eco:currencyCode a rdf:Property ;
+    rdfs:domain eco:DigitalProductPriceList ;
+    rdfs:range xsd:string ;
+    rdfs:label "Currency code"@en, "код валюты"@ru ;
+    rdfs:comment "Local currency identifier for the pricing region"@en, "Локальный идентификатор валюты для региона ценообразования"@ru .
+
+eco:localPrice a rdf:Property ;
+    rdfs:domain eco:DigitalProductPriceList ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Local price"@en, "локальная цена"@ru ;
+    rdfs:comment "Numeric price amount in the local currency"@en, "Числовое значение цены в локальной валюте"@ru .

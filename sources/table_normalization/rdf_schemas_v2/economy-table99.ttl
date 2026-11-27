@@ -1,0 +1,36 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:UKBuildingStatistic a rdfs:Class ;
+    rdfs:label "UK building statistic"@en, "Статистика зданий в Великобритании"@ru ;
+    rdfs:comment "Statistics on the number of buildings and end users in the United Kingdom (UK)"@en, "Статистические данные по количеству зданий и конечных потребителей в Великобритании"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:region a rdf:Property ;
+    rdfs:domain eco:UKBuildingStatistic ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region"@en, "Регион"@ru ;
+    rdfs:comment "Geographic region within the United Kingdom"@en, "Географический регион в пределах Великобритании"@ru .
+
+eco:buildingType a rdf:Property ;
+    rdfs:domain eco:UKBuildingStatistic ;
+    rdfs:range xsd:string ;
+    rdfs:label "Building type"@en, "Тип здания"@ru ;
+    rdfs:comment "Category of building or sector"@en, "Категория здания или сектора"@ru .
+
+eco:measurementMetric a rdf:Property ;
+    rdfs:domain eco:UKBuildingStatistic ;
+    rdfs:range xsd:string ;
+    rdfs:label "Measurement metric"@en, "Метрика измерения"@ru ;
+    rdfs:comment "Type of quantity measurement metric"@en, "Тип метрики измерения количества"@ru .
+
+eco:quantity a rdf:Property ;
+    rdfs:domain eco:UKBuildingStatistic ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Quantity"@en, "Количество"@ru ;
+    rdfs:comment "The numeric count value for the given region, building type, and metric"@en, "Числовое значение счета для заданного региона, типа здания и метрики"@ru .

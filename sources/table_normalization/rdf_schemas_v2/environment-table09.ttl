@@ -1,0 +1,36 @@
+@prefix env: <http://example.org/environment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+env:HouseholdExpend a rdfs:Class ;
+    rdfs:label "Household expend"@en, "Расходы домохозяйств"@ru ;
+    rdfs:comment "Average weekly expenditure on all goods and on fuel, light and power (£/wk) - UK figures"@en, "Средние недельные расходы на все товары, а также на топливо, освещение и электроэнергию (£/нед) — данные по Великобритании"@ru .
+
+# ==================== Datatype Properties ====================
+
+env:year a rdf:Property ;
+    rdfs:domain env:HouseholdExpend ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Year of statistical observation"@en, "Год статистического наблюдения"@ru .
+
+env:metric a rdf:Property ;
+    rdfs:domain env:HouseholdExpend ;
+    rdfs:range xsd:string ;
+    rdfs:label "Metric"@en, "Показатель"@ru ;
+    rdfs:comment "The name of the statistical metric being measured"@en, "Название измеряемого статистического показателя"@ru .
+
+env:priceCategory a rdf:Property ;
+    rdfs:domain env:HouseholdExpend ;
+    rdfs:range xsd:string ;
+    rdfs:label "Price category"@en, "Ценовая категория"@ru ;
+    rdfs:comment "Price category (measurement context)"@en, "Ценовая категория (контекст измерения)"@ru .
+
+env:averageWeeklyExpenditure a rdf:Property ;
+    rdfs:domain env:HouseholdExpend ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average weekly expenditure"@en, "Средние недельные расходы"@ru ;
+    rdfs:comment "The numerical value of the average weekly expenditure for the given observation"@en, "Числовое значение средне недельных расходов для заданного наблюдения"@ru .

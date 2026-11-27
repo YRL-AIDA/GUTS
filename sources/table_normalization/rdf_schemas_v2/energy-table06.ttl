@@ -1,0 +1,102 @@
+@prefix enr: <http://example.org/energy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+enr:FailureModeEffectsAnalysis a rdfs:Class ;
+    rdfs:label "Failure Mode and Effects Analysis (FMEA)"@en, "Анализ видов и последствий отказов"@ru ;
+    rdfs:comment "Failure Mode and Effects Analysis (FMEA) that describes the potential failure mode, its consequences, causes, and mitigation strategies for a specific system component"@en, "Анализ видов и последствий отказов, описывающий потенциальный режим отказа, его последствия, причины и стратегии смягчения для конкретного компонента системы"@ru .
+
+enr:Component a rdfs:Class ;
+    rdfs:label "Component"@en, "Компонент"@ru ;
+    rdfs:comment "System component with its function, technology class and novel aspects"@en, "Компонент системы с функцией, технологическим классом и особенностями применения"@ru .
+
+# ==================== Object Properties ====================
+
+enr:hasFailureMode a rdf:Property ;
+    rdfs:domain enr:Component ;
+    rdfs:range enr:FailureModeEffectsAnalysis ;
+    rdfs:label "Failure mode"@en, "Вид отказа"@ru ;
+    rdfs:comment "Failure mode analysed for the component"@en, "Вид отказа, проанализированный для компонента"@ru .
+
+# ==================== Datatype Properties ====================
+
+enr:riskId a rdf:Property ;
+    rdfs:domain enr:FailureModeEffectsAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label "Risk identifier"@en, "Идентификатор риска"@ru ;
+    rdfs:comment "A unique identifier for the specific risk scenario"@en, "Уникальный идентификатор конкретного сценария риска"@ru .
+
+enr:itemDescription a rdf:Property ;
+    rdfs:domain enr:Component ;
+    rdfs:range xsd:string ;
+    rdfs:label "Item description"@en, "Описание элемента"@ru ;
+    rdfs:comment "The name of the system component being analyzed"@en, "Название анализируемого компонента системы"@ru .
+
+enr:function a rdf:Property ;
+    rdfs:domain enr:Component ;
+    rdfs:range xsd:string ;
+    rdfs:label "Function"@en, "Функция"@ru ;
+    rdfs:comment "The intended function or purpose of the component within the system"@en, "Предназначенная функция или назначение компонента в системе"@ru .
+
+enr:techClass a rdf:Property ;
+    rdfs:domain enr:Component ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Technical class"@en, "Технический класс"@ru ;
+    rdfs:comment "The technical classification or category of the component"@en, "Техническая классификация или категория компонента"@ru .
+
+enr:novelAspects a rdf:Property ;
+    rdfs:domain enr:Component ;
+    rdfs:range xsd:string ;
+    rdfs:label "Novel aspects"@en, "Новые аспекты"@ru ;
+    rdfs:comment "Specific novel or unique aspects of the component's application"@en, "Специфические новые или уникальные аспекты применения компонента"@ru .
+
+enr:failureMode a rdf:Property ;
+    rdfs:domain enr:FailureModeEffectsAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label "Failure mode"@en, "Режим отказа"@ru ;
+    rdfs:comment "The specific way in which the component or system could fail"@en, "Конкретный способ, которым компонент или система могут выйти из строя"@ru .
+
+enr:failureEffects a rdf:Property ;
+    rdfs:domain enr:FailureModeEffectsAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label "Failure effects"@en, "Последствия отказа"@ru ;
+    rdfs:comment "The local, system-level, or overall consequences of the failure mode"@en, "Локальные, системные или общие последствия режима отказа"@ru .
+
+enr:failureCauses a rdf:Property ;
+    rdfs:domain enr:FailureModeEffectsAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label "Failure causes"@en, "Причины отказа"@ru ;
+    rdfs:comment "The underlying root causes that could trigger the failure mode"@en, "Базовые первопричины, которые могут вызвать режим отказа"@ru .
+
+enr:initialOperationMode a rdf:Property ;
+    rdfs:domain enr:FailureModeEffectsAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label "Initial mode of operation"@en, "Начальный режим работы"@ru ;
+    rdfs:comment "The operational state of the system before the failure occurs"@en, "Рабочее состояние системы до возникновения отказа"@ru .
+
+enr:riskReductionDesign a rdf:Property ;
+    rdfs:domain enr:FailureModeEffectsAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label "Risk reduction design"@en, "Меры снижения риска при проектировании"@ru ;
+    rdfs:comment "Design features or strategies implemented to prevent or mitigate the failure"@en, "Конструктивные особенности или стратегии, внедренные для предотвращения или смягчения отказа"@ru .
+
+enr:preventativeDetection a rdf:Property ;
+    rdfs:domain enr:FailureModeEffectsAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label "Preventative detection"@en, "Превентивное обнаружение"@ru ;
+    rdfs:comment "Methods or systems used to detect potential failures before they occur"@en, "Методы или системы, используемые для обнаружения потенциальных отказов до их возникновения"@ru .
+
+enr:postFailureDetection a rdf:Property ;
+    rdfs:domain enr:FailureModeEffectsAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label "Post failure detection"@en, "Обнаружение после отказа"@ru ;
+    rdfs:comment "Methods or systems used to identify and diagnose the failure after it has occurred"@en, "Методы или системы, используемые для идентификации и диагностики отказа после его возникновения"@ru .
+
+enr:postFailureRepairStrategy a rdf:Property ;
+    rdfs:domain enr:FailureModeEffectsAnalysis ;
+    rdfs:range xsd:string ;
+    rdfs:label "Post failure repair strategy"@en, "Стратегия ремонта после отказа"@ru ;
+    rdfs:comment "The planned strategy for repairing or replacing the component after a failure"@en, "Планируемая стратегия ремонта или замены компонента после отказа"@ru .

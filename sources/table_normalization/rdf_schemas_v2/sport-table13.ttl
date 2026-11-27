@@ -1,0 +1,78 @@
+@prefix sp: <http://example.org/sport#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+sp:BattingStatistics a rdfs:Class ;
+    rdfs:label "Batting statistics"@en, "Статистика отбивания"@ru ;
+    rdfs:comment "A baseball player's batting statistics against a specific opponent team during the 1978 Toronto Blue Jays season"@en, "Статистика отбивания бейсбольного игрока против конкретной команды-соперника в сезоне 1978 года команды Торонто Блю Джейс"@ru .
+
+# ==================== Datatype Properties ====================
+
+sp:playerNumber a rdf:Property ;
+    rdfs:domain sp:BattingStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Player number"@en, "Номер игрока"@ru ;
+    rdfs:comment "The jersey number of the player"@en, "Номер на форме игрока"@ru .
+
+sp:playerName a rdf:Property ;
+    rdfs:domain sp:BattingStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Player name"@en, "Имя игрока"@ru ;
+    rdfs:comment "Baseball player's name"@en, "Имя игрока в бейсбол"@ru .
+
+sp:opponent a rdf:Property ;
+    rdfs:domain sp:BattingStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Opponent"@en, "Соперник"@ru ;
+    rdfs:comment "Name of the opposing team"@en, "Название команды-соперника"@ru .
+
+sp:gamesPlayed a rdf:Property ;
+    rdfs:domain sp:BattingStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Games played"@en, "Сыграно игр"@ru ;
+    rdfs:comment "Number of games the player participated in against this opponent"@en, "Количество игр, в которых игрок участвовал против данного соперника"@ru .
+
+sp:atBats a rdf:Property ;
+    rdfs:domain sp:BattingStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "At bats"@en, "Выходы на биту"@ru ;
+    rdfs:comment "Number of official at-bats against this opponent"@en, "Количество официальных выходов на биту против данного соперника"@ru .
+
+sp:runs a rdf:Property ;
+    rdfs:domain sp:BattingStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of points"@en, "Количество очков"@ru ;
+    rdfs:comment "Number of points a player earns by running home"@en, "Количество очков, заработанных игроком путем пробежки до дома"@ru .
+
+sp:hits a rdf:Property ;
+    rdfs:domain sp:BattingStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Hits"@en, "Хиты"@ru ;
+    rdfs:comment "The number of hits achieved by the player against this opponent"@en, "Количество хитов, сделанных игроком против данного соперника"@ru .
+
+sp:rbi a rdf:Property ;
+    rdfs:domain sp:BattingStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Runs Batted In (RBI)"@en, "Набранные очки (RBI)"@ru ;
+    rdfs:comment "Number of Runs Batted In (RBI) by a player against a given opponent"@en, "Количество набранных игроком очков (RBI) против данного соперника"@ru .
+
+sp:doubles a rdf:Property ;
+    rdfs:domain sp:BattingStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Doubles"@en, "Даблы"@ru ;
+    rdfs:comment "Number of doubles hit by the player against this opponent"@en, "Количество даблов, сделанных игроком против данного соперника"@ru .
+
+sp:triples a rdf:Property ;
+    rdfs:domain sp:BattingStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Triples"@en, "Триплы"@ru ;
+    rdfs:comment "Number of triples hit by the player against this opponent"@en, "Количество триплов, сделанных игроком против данного соперника"@ru .
+
+sp:homeRuns a rdf:Property ;
+    rdfs:domain sp:BattingStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Home runs"@en, "Хоум-раны"@ru ;
+    rdfs:comment "Number of home runs hit by the player against this opponent"@en, "Количество хоум-ранов, сделанных игроком против данного соперника"@ru .

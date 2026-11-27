@@ -1,0 +1,36 @@
+@prefix edu: <http://example.org/education#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+edu:StudentAcademicPerformance a rdfs:Class ;
+    rdfs:label "Student academic performance"@en, "Академическая успеваемость учеников"@ru ;
+    rdfs:comment "Academic performance data of students representing their grades in a particular subject"@en, "Данные по академической успеваемости учеников, представляющие их оценки по определенному предмету"@ru .
+
+# ==================== Datatype Properties ====================
+
+edu:studentNumber a rdf:Property ;
+    rdfs:domain edu:StudentAcademicPerformance ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Student number"@en, "Номер ученика"@ru ;
+    rdfs:comment "The unique numeric identifier assigned to the student"@en, "Уникальный числовой идентификатор, присваиваемый ученику"@ru .
+
+edu:educationLevel a rdf:Property ;
+    rdfs:domain edu:StudentAcademicPerformance ;
+    rdfs:range xsd:string ;
+    rdfs:label "Education level"@en, "уровень образования"@ru ;
+    rdfs:comment "The level of education (School or University)"@en, "Уровень образования (школьное или университетское)"@ru .
+
+edu:subject a rdf:Property ;
+    rdfs:domain edu:StudentAcademicPerformance ;
+    rdfs:range xsd:string ;
+    rdfs:label "Subject"@en, "Предмет"@ru ;
+    rdfs:comment "The name of the school subject or university course"@en, "Название школьного предмета или университетского курса"@ru .
+
+edu:mark a rdf:Property ;
+    rdfs:domain edu:StudentAcademicPerformance ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Mark"@en, "Оценка"@ru ;
+    rdfs:comment "The numeric mark achieved by the student in the specified subject and education level"@en, "Числовая оценка, полученная учеником по указанному предмету и уровню образования"@ru .

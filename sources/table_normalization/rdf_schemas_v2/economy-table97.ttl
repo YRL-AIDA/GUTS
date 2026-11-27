@@ -1,0 +1,36 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:TeacherLoanForgiveness a rdfs:Class ;
+    rdfs:label "Teacher loan forgiveness"@en, "Программа прощения займов для учителей"@ru ;
+    rdfs:comment "Teacher loan forgiveness program data by loan program type and fiscal year"@en, "Данные по программе прощения займов для учителей в разбивке по типу кредитной программы и финансовому году"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:fiscalYear a rdf:Property ;
+    rdfs:domain eco:TeacherLoanForgiveness ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Fiscal year"@en, "Год"@ru ;
+    rdfs:comment "Fiscal year for the reporting period"@en, "Финансовый год отчетного периода"@ru .
+
+eco:loanProgram a rdf:Property ;
+    rdfs:domain eco:TeacherLoanForgiveness ;
+    rdfs:range xsd:string ;
+    rdfs:label "Loan program"@en, "Кредитная программа"@ru ;
+    rdfs:comment "Type of teacher loan forgiveness program"@en, "Тип программы прощения займов для учителей"@ru .
+
+eco:dollarsForgiven a rdf:Property ;
+    rdfs:domain eco:TeacherLoanForgiveness ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Dollars forgiven"@en, "Сумма прощенных платежей"@ru ;
+    rdfs:comment "Total amount of loan principal and interest forgiven, expressed in millions of US dollars"@en, "Общая сумма прощенной основной суммы и процентов по займам, выраженная в миллионах долларов США"@ru .
+
+eco:borrowers a rdf:Property ;
+    rdfs:domain eco:TeacherLoanForgiveness ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Borrowers"@en, "Заемщики"@ru ;
+    rdfs:comment "Number of borrowers who received loan forgiveness, expressed in thousands of individuals"@en, "Количество заемщиков, получивших прощение займа, выраженное в тысячах человек"@ru .

@@ -1,0 +1,30 @@
+@prefix env: <http://example.org/environment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+env:EnergyDemand a rdfs:Class ;
+    rdfs:label "Energy demand"@en, "Потребность в энергии"@ru ;
+    rdfs:comment "Statistics on energy requirements by fuel type"@en, "Статистические данные о потребности в энергии в зависимости от вида топлива"@ru .
+
+# ==================== Datatype Properties ====================
+
+env:year a rdf:Property ;
+    rdfs:domain env:EnergyDemand ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Year of statistical observation"@en, "Год статистического наблюдения"@ru .
+
+env:fuelType a rdf:Property ;
+    rdfs:domain env:EnergyDemand ;
+    rdfs:range xsd:string ;
+    rdfs:label "Fuel type"@en, "Вид топлива"@ru ;
+    rdfs:comment "The type of fuel for which the energy demand is measured"@en, "Вид топлива, для которого измеряется спрос на энергию"@ru .
+
+env:demandValue a rdf:Property ;
+    rdfs:domain env:EnergyDemand ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Demand value"@en, "Значение спроса"@ru ;
+    rdfs:comment "The numerical value of the energy demand for the specified fuel type and year"@en, "Числовое значение спроса на энергию для указанного вида топлива и года"@ru .

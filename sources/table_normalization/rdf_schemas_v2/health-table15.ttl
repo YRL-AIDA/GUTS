@@ -1,0 +1,42 @@
+@prefix hl: <http://example.org/health#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+hl:MicrobialSurvivalObservation a rdfs:Class ;
+    rdfs:label "Microbial survival observation"@en, "Наблюдение выживаемости микроорганизмов"@ru ;
+    rdfs:comment "A record of the survival of a microorganism on a surface on a given day of the experiment"@en, "Запись о выживаемости микроорганизма на поверхности в определённый день эксперимента"@ru .
+
+# ==================== Datatype Properties ====================
+
+hl:testOrganism a rdf:Property ;
+    rdfs:domain hl:MicrobialSurvivalObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Test organism"@en, "Тестируемый организм"@ru ;
+    rdfs:comment "Name of the microorganism"@en, "Название микроорганизма"@ru .
+
+hl:testMaterial a rdf:Property ;
+    rdfs:domain hl:MicrobialSurvivalObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Test material"@en, "Материал поверхности"@ru ;
+    rdfs:comment "Surface material"@en, "Материал поверхности"@ru .
+
+hl:day a rdf:Property ;
+    rdfs:domain hl:MicrobialSurvivalObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Day"@en, "День"@ru ;
+    rdfs:comment "Day of the experiment (0, 1, 3, etc.)"@en, "День эксперимента (0, 1, 3 и т.д.)"@ru .
+
+hl:averageLogCFU a rdf:Property ;
+    rdfs:domain hl:MicrobialSurvivalObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average log CFU/sample"@en, "Среднее значение логарифма КОЕ/образец"@ru ;
+    rdfs:comment "Mean log colony-forming units per sample"@en, "Среднее значение логарифма колониеобразующих единиц на образец"@ru .
+
+hl:standardDeviationLogCFU a rdf:Property ;
+    rdfs:domain hl:MicrobialSurvivalObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation of log CFU/sample"@en, "Стандартное отклонение лог КОЕ"@ru ;
+    rdfs:comment "Standard deviation of the logarithm of colony-forming units per sample"@en, "Стандартное отклонение логарифма колониеобразующих единиц на образец"@ru .

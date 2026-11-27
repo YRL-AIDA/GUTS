@@ -1,0 +1,48 @@
+@prefix edu: <http://example.org/education#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+edu:UnemploymentRateStatistics a rdfs:Class ;
+    rdfs:label "Unemployment rate statistics"@en, "Статистика уровня безработицы"@ru ;
+    rdfs:comment "Unemployment rate statistics of tertiary-educated adults, by field of study, tertiary educational attainment, age group and gender"@en, "Статистика уровня безработицы среди взрослых с высшим образованием по направлениям обучения, уровню высшего образования, возрастным группам и полу"@ru .
+
+# ==================== Datatype Properties ====================
+
+edu:timePeriod a rdf:Property ;
+    rdfs:domain edu:UnemploymentRateStatistics ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Time period"@en, "Временной период"@ru ;
+    rdfs:comment "The year of observation"@en, "Год наблюдения"@ru .
+
+edu:referenceArea a rdf:Property ;
+    rdfs:domain edu:UnemploymentRateStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Reference area"@en, "Регион"@ru ;
+    rdfs:comment "The country or aggregated region for which the statistic is reported"@en, "Страна или агрегированный регион, для которого представлена статистика"@ru .
+
+edu:typeArea a rdf:Property ;
+    rdfs:domain edu:UnemploymentRateStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Type of country's economy"@en, "Тип экономики страны"@ru ;
+    rdfs:comment "Economies of countries that are members of the Organisation for Economic Co-operation and Development (OECD)"@en, "Экономики стран, входящие в организацию экономического сотрудничества и развития (ОЭСР)"@ru .
+
+edu:educationField a rdf:Property ;
+    rdfs:domain edu:UnemploymentRateStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Education field"@en, "Область образования"@ru ;
+    rdfs:comment "Broad name for the field of education"@en, "Широкое название области образования"@ru .
+
+edu:labourForceStatus a rdf:Property ;
+    rdfs:domain edu:UnemploymentRateStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Labour force status"@en, "Статус рабочей силы"@ru ;
+    rdfs:comment "Brief description of labor force status"@en, "Краткое описание статуса рабочей силы"@ru .
+
+edu:unemploymentRate a rdf:Property ;
+    rdfs:domain edu:UnemploymentRateStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Unemployment rate"@en, "Уровень безработицы"@ru ;
+    rdfs:comment "The unemployment rate as a percentage of the labour force"@en, "Уровень безработицы в процентах от численности рабочей силы"@ru .

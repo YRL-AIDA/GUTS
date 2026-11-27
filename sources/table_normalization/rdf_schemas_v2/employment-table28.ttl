@@ -1,0 +1,36 @@
+@prefix emp: <http://example.org/employment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+emp:HospitalEmployment a rdfs:Class ;
+    rdfs:label "Hospital employment"@en, "Работа в больнице"@ru ;
+    rdfs:comment "Hospital employment statistics for a specific country and year"@en, "Статистика занятости в больницах для конкретной страны и года"@ru .
+
+# ==================== Datatype Properties ====================
+
+emp:timePeriod a rdf:Property ;
+    rdfs:domain emp:HospitalEmployment ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+emp:referenceArea a rdf:Property ;
+    rdfs:domain emp:HospitalEmployment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Country"@en, "Страна"@ru ;
+    rdfs:comment "Country name"@en, "Наименование страны"@ru .
+
+emp:typeArea a rdf:Property ;
+    rdfs:domain emp:HospitalEmployment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Type of country's economy"@en, "Тип экономики страны"@ru ;
+    rdfs:comment "Economies of countries that are members of the Organisation for Economic Co-operation and Development (OECD)"@en, "Экономики стран, входящие в организацию экономического сотрудничества и развития (ОЭСР)"@ru .
+
+emp:personsNumber a rdf:Property ;
+    rdfs:domain emp:HospitalEmployment ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of persons"@en, "Количество человек"@ru ;
+    rdfs:comment "Number of people employed in hospitals"@en, "Количество занятых людей в больницах"@ru .

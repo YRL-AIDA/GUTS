@@ -1,0 +1,36 @@
+@prefix hl: <http://example.org/health#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+hl:CovidIndiaObservation a rdfs:Class ;
+    rdfs:label "COVID India observation"@en, "Наблюдение по COVID-19 в Индии"@ru ;
+    rdfs:comment "COVID-19 observation for a specific state or union territory of India"@en, "Наблюдение по COVID-19 для конкретного штата или союзной территории Индии"@ru .
+
+# ==================== Datatype Properties ====================
+
+hl:state a rdf:Property ;
+    rdfs:domain hl:CovidIndiaObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "State"@en, "Штат"@ru ;
+    rdfs:comment "The name of the Indian state or union territory"@en, "Название штата или союзной территории Индии"@ru .
+
+hl:metric a rdf:Property ;
+    rdfs:domain hl:CovidIndiaObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Metric"@en, "Метрика"@ru ;
+    rdfs:comment "The type of COVID-19 measurement"@en, "Тип измерения COVID-19"@ru .
+
+hl:indicator a rdf:Property ;
+    rdfs:domain hl:CovidIndiaObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Indicator"@en, "Индикатор"@ru ;
+    rdfs:comment "Indicator of the highest or lowest value"@en, "Индикатор наибольшего или наименьшего значения"@ru .
+
+hl:value a rdf:Property ;
+    rdfs:domain hl:CovidIndiaObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Value"@en, "Значение"@ru ;
+    rdfs:comment "The numeric value of the metric for the given state"@en, "Числовое значение метрики для данного штата"@ru .

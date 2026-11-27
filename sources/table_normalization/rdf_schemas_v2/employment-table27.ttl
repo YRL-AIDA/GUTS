@@ -1,0 +1,48 @@
+@prefix emp: <http://example.org/employment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+emp:UnemploymentStatistics a rdfs:Class ;
+    rdfs:label "Unemployment statistics"@en, "Статистика безработицы"@ru ;
+    rdfs:comment "Annual averages of unemployed persons by occupation, and age group"@en, "Среднегодовые показатели безработицы по роду занятий и возрастным группам"@ru .
+
+# ==================== Datatype Properties ====================
+
+emp:year a rdf:Property ;
+    rdfs:domain emp:UnemploymentStatistics ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "The calendar year for which the statistic is reported"@en, "Календарный год, за который приводятся статистические данные"@ru .
+
+emp:sex a rdf:Property ;
+    rdfs:domain emp:UnemploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sex"@en, "Пол"@ru ;
+    rdfs:comment "Sex category"@en, "Категория пола"@ru .
+
+emp:ageGroup a rdf:Property ;
+    rdfs:domain emp:UnemploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Age group"@en, "Возрастная группа"@ru ;
+    rdfs:comment "The age group covered by the statistic"@en, "Возрастная группа, охватываемая данным статистическим показателем"@ru .
+
+emp:occupation a rdf:Property ;
+    rdfs:domain emp:UnemploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Occupation"@en, "Профессия"@ru ;
+    rdfs:comment "Occupation category"@en, "Категория профессии"@ru .
+
+emp:totalUnemployed a rdf:Property ;
+    rdfs:domain emp:UnemploymentStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total unemployed"@en, "Общее количество безработных"@ru ;
+    rdfs:comment "Total number of unemployed in thousands"@en, "Общая численность безработных в тысячах"@ru .
+
+emp:unemploymentRate a rdf:Property ;
+    rdfs:domain emp:UnemploymentStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Unemployment rate"@en, "Уровень безработицы"@ru ;
+    rdfs:comment "Unemployment rate for a specific demographic group"@en, "Уровень безработицы для конкретной демографической группы"@ru .

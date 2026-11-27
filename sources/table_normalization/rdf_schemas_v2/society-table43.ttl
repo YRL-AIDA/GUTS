@@ -1,0 +1,94 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:MitigationImpact a rdfs:Class ;
+    rdfs:label "Mitigation impact"@en, "Влияние мер по смягчению последствий"@ru ;
+    rdfs:comment "Impact of mitigation strategies on intervention coverage and risk of infection"@en, "Влияние стратегий по смягчению последствий на охват медицинскими мероприятиями и риск инфицирования"@ru .
+
+soc:MitigationStrategy a rdfs:Class ;
+    rdfs:label "Mitigation strategy"@en, "Стратегия смягчения"@ru ;
+    rdfs:comment "Mitigation strategy with its expected effects on visits, infection risk and coverage"@en, "Стратегия смягчения последствий и её ожидаемое влияние на посещения, риск заражения и охват"@ru .
+
+soc:Intervention a rdfs:Class ;
+    rdfs:label "Intervention"@en, "Вмешательство"@ru ;
+    rdfs:comment "Health intervention"@en, "Вмешательство в области здравоохранения"@ru .
+
+# ==================== Object Properties ====================
+
+soc:hasMitigationImpact a rdf:Property ;
+    rdfs:domain soc:MitigationStrategy ;
+    rdfs:range soc:MitigationImpact ;
+    rdfs:label "Mitigation impact"@en, "Влияние мер смягчения"@ru ;
+    rdfs:comment "Applicability of the strategy to an intervention"@en, "Применимость стратегии к вмешательству"@ru .
+
+soc:hasMitigationImpact a rdf:Property ;
+    rdfs:domain soc:Intervention ;
+    rdfs:range soc:MitigationImpact ;
+    rdfs:label "Mitigation impact"@en, "Влияние мер смягчения"@ru ;
+    rdfs:comment "Applicability of a strategy to the intervention"@en, "Применимость стратегии к вмешательству"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:strategyCategory a rdf:Property ;
+    rdfs:domain soc:MitigationStrategy ;
+    rdfs:range xsd:string ;
+    rdfs:label "Strategy category"@en, "Категория стратегии"@ru ;
+    rdfs:comment "The high-level category of the mitigation strategy"@en, "Категория верхнего уровня для стратегии смягчения"@ru .
+
+soc:strategyName a rdf:Property ;
+    rdfs:domain soc:MitigationStrategy ;
+    rdfs:range xsd:string ;
+    rdfs:label "Strategy name"@en, "Название стратегии"@ru ;
+    rdfs:comment "The specific name or description of the mitigation strategy"@en, "Конкретное название или описание стратегии смягчения"@ru .
+
+soc:visitsDecreasePercentage a rdf:Property ;
+    rdfs:domain soc:MitigationStrategy ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Visits decrease percentage"@en, "Процент снижения числа посещений"@ru ;
+    rdfs:comment "Estimated percentage decrease in number of health facility visits per Person per Intervention"@en, "Предполагаемое процентное снижение количества посещений медицинских учреждений на человека за одно вмешательство"@ru .
+
+soc:infectionRiskDecreasePercentage a rdf:Property ;
+    rdfs:domain soc:MitigationStrategy ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Infection risk decrease percentage"@en, "Процент снижения риска заражения"@ru ;
+    rdfs:comment "Percentage of decrease in infection or transmission risk for in-person visits that still take place in the remaining visits (for hygiene interventions only)"@en, "Процент снижения риска заражения или передачи инфекции при очных визитах, которые все еще проводятся в оставшихся визитах (только для мероприятий по гигиене)"@ru .
+
+soc:coverageIncreasePercentage a rdf:Property ;
+    rdfs:domain soc:MitigationStrategy ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Coverage increase percentage"@en, "Процент увеличения охвата"@ru ;
+    rdfs:comment "Estimated relative increase in coverage"@en, "Предполагаемое относительное увеличение охвата"@ru .
+
+soc:selected a rdf:Property ;
+    rdfs:domain soc:Intervention ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Selected"@en, "Выбранный"@ru ;
+    rdfs:comment "Flag indicating whether intervention is selected for analysis"@en, "Флаг, указывающий, выбрано ли вмешательство для анализа"@ru .
+
+soc:interventionNumber a rdf:Property ;
+    rdfs:domain soc:Intervention ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Intervention number"@en, "Номер вмешательства"@ru ;
+    rdfs:comment "Unique intervention identifier"@en, "Уникальный идентификатор вмешательства"@ru .
+
+soc:category a rdf:Property ;
+    rdfs:domain soc:Intervention ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en, "Категория"@ru ;
+    rdfs:comment "Intervention category"@en, "Категория вмешательства"@ru .
+
+soc:interventionName a rdf:Property ;
+    rdfs:domain soc:Intervention ;
+    rdfs:range xsd:string ;
+    rdfs:label "Intervention name"@en, "Название вмешательства"@ru ;
+    rdfs:comment "Specific intervention name"@en, "Конкретное название вмешательства"@ru .
+
+soc:applicable a rdf:Property ;
+    rdfs:domain soc:MitigationImpact ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Applicable"@en, "Применимый"@ru ;
+    rdfs:comment "Whether this mitigation strategy is applicable to intervention"@en, "Применима ли данная стратегия смягчения к вмешательству"@ru .

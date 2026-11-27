@@ -1,0 +1,42 @@
+@prefix geo: <http://example.org/geography#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+geo:GeographyClimateObservation a rdfs:Class ;
+    rdfs:label "Geography climate observation"@en, "Климатическое наблюдение по регионам"@ru ;
+    rdfs:comment "A climate observation representing cooling or heating degree days for a specific region and year"@en, "Климатическое наблюдение, представляющее градусо-дни охлаждения или отопления для конкретного региона и года"@ru .
+
+# ==================== Datatype Properties ====================
+
+geo:timePeriod a rdf:Property ;
+    rdfs:domain geo:GeographyClimateObservation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+geo:combinedReferenceArea a rdf:Property ;
+    rdfs:domain geo:GeographyClimateObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Combined reference area"@en, "Регион наблюдения"@ru ;
+    rdfs:comment "The name of the geographic region"@en, "Название географического региона"@ru .
+
+geo:regionLevel a rdf:Property ;
+    rdfs:domain geo:GeographyClimateObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region level"@en, "Уровень региона"@ru ;
+    rdfs:comment "The territorial level of the region according to OECD classification: TL2 (major regions) or TL3 (sub-regions)"@en, "Территориальный уровень региона согласно классификации ОЭСР: TL2 (крупные регионы) или TL3 (подрегионы)"@ru .
+
+geo:measure a rdf:Property ;
+    rdfs:domain geo:GeographyClimateObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Measure"@en, "Показатель"@ru ;
+    rdfs:comment "The type of climate measurement: cooling degree days or heating degree days"@en, "Тип климатического измерения: градусо-дни охлаждения или градусо-дни отопления"@ru .
+
+geo:value a rdf:Property ;
+    rdfs:domain geo:GeographyClimateObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Value"@en, "Значение"@ru ;
+    rdfs:comment "The number of degree days (cooling or heating) for the given region, measure, and year"@en, "Количество градусо-дней (охлаждения или отопления) для данного региона, показателя и года"@ru .

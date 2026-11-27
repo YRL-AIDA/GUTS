@@ -1,0 +1,88 @@
+@prefix emp: <http://example.org/employment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+emp:EmploymentStatistics a rdfs:Class ;
+    rdfs:label "Employment statistics"@en, "Статистика занятости"@ru ;
+    rdfs:comment "Employment statistics for a specific occupation or by combined gender and age group"@en, "Статистические данные по численности занятых работников для конкретной профессии или по совокупному признаку пола и возрастной группы"@ru .
+
+emp:AverageHoursStatistics a rdfs:Class ;
+    rdfs:label "Average hours statistics"@en, "Статистика среднего показателя часов"@ru ;
+    rdfs:comment "Statistics on average hours worked for a specific occupation or by gender and age group combined"@en, "Статистические данные по средним показателям часов работы для конкретной профессии или по совокупному признаку пола и возрастной группы"@ru .
+
+# ==================== Datatype Properties ====================
+
+emp:year a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "The calendar year for which the statistic is reported"@en, "Календарный год, за который приводятся статистические данные"@ru .
+
+emp:occupation a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Occupation"@en, "Профессия"@ru ;
+    rdfs:comment "Occupation category"@en, "Категория профессии"@ru .
+
+emp:sexAgeGroup a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sex and age group"@en, "Пол и возрастная группа"@ru ;
+    rdfs:comment "Combined attribute of sex and age group"@en, "Совокупный признак пола и возрастной группы"@ru .
+
+emp:hoursCategory a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Hours category"@en, "Категория часов"@ru ;
+    rdfs:comment "The weekly hours category"@en, "Категория еженедельных часов"@ru .
+
+emp:reasonCategory a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Reason category"@en, "Категория причины"@ru ;
+    rdfs:comment "The reason for working less than 35 hours"@en, "Причина работы менее 35 часов"@ru .
+
+emp:status a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Status"@en, "Статус"@ru ;
+    rdfs:comment "The usual work status for noneconomic reasons"@en, "Обычный статус занятости для неэкономических причин"@ru .
+
+emp:employedNumber a rdf:Property ;
+    rdfs:domain emp:EmploymentStatistics ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of employed"@en, "Количество занятых"@ru ;
+    rdfs:comment "The number of employed workers for a given occupation or by combined gender and age group"@en, "Численность занятых работников для данной профессии или по совокупному признаку пола и возрастной группы"@ru .
+
+emp:year a rdf:Property ;
+    rdfs:domain emp:AverageHoursStatistics ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "The calendar year for which the statistic is reported"@en, "Календарный год, за который приводятся статистические данные"@ru .
+
+emp:occupation a rdf:Property ;
+    rdfs:domain emp:AverageHoursStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Occupation"@en, "Профессия"@ru ;
+    rdfs:comment "Occupation category"@en, "Категория профессии"@ru .
+
+emp:sexAgeGroup a rdf:Property ;
+    rdfs:domain emp:AverageHoursStatistics ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sex and age group"@en, "Пол и возрастная группа"@ru ;
+    rdfs:comment "Combined attribute of sex and age group"@en, "Совокупный признак пола и возрастной группы"@ru .
+
+emp:averageHours a rdf:Property ;
+    rdfs:domain emp:AverageHoursStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average hours"@en, "Среднее количество часов"@ru ;
+    rdfs:comment "Average hours, total at work"@en, "Среднее количество рабочих часов, общее время работы"@ru .
+
+emp:fullTimeAverageHours a rdf:Property ;
+    rdfs:domain emp:AverageHoursStatistics ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Full time average hours"@en, "Среднее количество часов полный рабочий день"@ru ;
+    rdfs:comment "Average hours, persons who usually work full time"@en, "Среднее количество рабочих часов, для лиц, обычно работающих полный рабочий день"@ru .

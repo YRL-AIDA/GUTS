@@ -1,0 +1,42 @@
+@prefix hl: <http://example.org/health#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+hl:HealthAndSocialEmployment a rdfs:Class ;
+    rdfs:label "Health and social employment"@en, "Занятость в сфере здравоохранения и социального обеспечения"@ru ;
+    rdfs:comment "A record of the proportion of doctors of a particular category in a country for a particular year"@en, "Запись о доле врачей определённой категории в стране за конкретный год"@ru .
+
+# ==================== Datatype Properties ====================
+
+hl:timePeriod a rdf:Property ;
+    rdfs:domain hl:HealthAndSocialEmployment ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+hl:referenceArea a rdf:Property ;
+    rdfs:domain hl:HealthAndSocialEmployment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Country"@en, "Страна"@ru ;
+    rdfs:comment "Country name"@en, "Наименование страны"@ru .
+
+hl:typeArea a rdf:Property ;
+    rdfs:domain hl:HealthAndSocialEmployment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Type of country's economy"@en, "Тип экономики страны"@ru ;
+    rdfs:comment "Economies of countries that are members of the Organisation for Economic Co-operation and Development (OECD)"@en, "Экономики стран, входящие в организацию экономического сотрудничества и развития (ОЭСР)"@ru .
+
+hl:healthProfession a rdf:Property ;
+    rdfs:domain hl:HealthAndSocialEmployment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Health profession"@en, "Медицинская профессия"@ru ;
+    rdfs:comment "Category of medical professionals (e.g., Generalist medical practitioners)"@en, "Категория медицинских работников (например, Generalist medical practitioners)"@ru .
+
+hl:physicianProportion a rdf:Property ;
+    rdfs:domain hl:HealthAndSocialEmployment ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Value"@en, "Значение"@ru ;
+    rdfs:comment "The proportion of doctors per 1000 inhabitants"@en, "Доля врачей на 1000 жителей"@ru .

@@ -1,0 +1,48 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:MerchandisingReport a rdfs:Class ;
+    rdfs:label "Merchandising report"@en, "Отчет о мерчандайзинге"@ru ;
+    rdfs:comment "A report containing merchandising metrics and sales data for a specific type of product packaging in a specific retail location"@en, "Отчет, содержащий метрики мерчандайзинга и данные о движении продаж для конкретного типа упаковки товара в конкретной торговой локации"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:location a rdf:Property ;
+    rdfs:domain eco:MerchandisingReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Location"@en, "Расположение"@ru ;
+    rdfs:comment "Numeric identifier code of the store or retail location"@en, "Числовой идентификационный код магазина или торговой точки"@ru .
+
+eco:packType a rdf:Property ;
+    rdfs:domain eco:MerchandisingReport ;
+    rdfs:range xsd:string ;
+    rdfs:label "Pack type"@en, "Тип упаковки"@ru ;
+    rdfs:comment "Type of product packaging"@en, "Тип упаковки продукта"@ru .
+
+eco:capacity a rdf:Property ;
+    rdfs:domain eco:MerchandisingReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Capacity"@en, "Емкость"@ru ;
+    rdfs:comment "The shelf or display capacity measured in number of product units that can be accommodated"@en, "Вместимость стеллажей или витрин, измеряемая количеством единиц продукции, которые можно разместить"@ru .
+
+eco:totalUnitMovement a rdf:Property ;
+    rdfs:domain eco:MerchandisingReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total unit movement"@en, "Полное перемещение единиц"@ru ;
+    rdfs:comment "Total quantity of product units sold or moved during the reporting period"@en, "Общее количество проданных или перемещенных единиц продукции за отчетный период"@ru .
+
+eco:totalPFPFacings a rdf:Property ;
+    rdfs:domain eco:MerchandisingReport ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total PFP facings"@en, "Общее количество товара, размещенных лицевой стороной"@ru ;
+    rdfs:comment "Total number of Planogram Facing Positions (front-facing product placements) allocated to the product on shelf"@en, "Общее количество позиций на полке, указанных в планограмме (размещение товара лицевой стороной к покупателю)"@ru .
+
+eco:totalDollarMovement a rdf:Property ;
+    rdfs:domain eco:MerchandisingReport ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total dollar movement"@en, "Общее движение долларов"@ru ;
+    rdfs:comment "Total monetary value of product sales during the reporting period, expressed in USD"@en, "Общая денежная стоимость продаж продукции за отчетный период, выраженная в долларах США"@ru .

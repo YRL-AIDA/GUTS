@@ -1,0 +1,42 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:JSASanctionReasonOverview a rdfs:Class ;
+    rdfs:label "JSA sanction reason overview"@en, "Обзор причин санкций JSA"@ru ;
+    rdfs:comment "Overview of UK JSA sanction decision-making levels by specific reason and month, broken down by sanction decision-making level"@en, "Обзор уровня принятия решения по санкциям JSA в Великобритании по конкретной причине и месяцу, с разбивкой по уровню принятия решения о санкции"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:country a rdf:Property ;
+    rdfs:domain soc:JSASanctionReasonOverview ;
+    rdfs:range xsd:string ;
+    rdfs:label "Country"@en, "Страна"@ru ;
+    rdfs:comment "Name of the country in question"@en, "Название рассматриваемой страны"@ru .
+
+soc:sanctionLevel a rdf:Property ;
+    rdfs:domain soc:JSASanctionReasonOverview ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sanction level"@en, "Уровень санкции"@ru ;
+    rdfs:comment "The level of the sanction decision"@en, "Уровень решения о санкции"@ru .
+
+soc:reason a rdf:Property ;
+    rdfs:domain soc:JSASanctionReasonOverview ;
+    rdfs:range xsd:string ;
+    rdfs:label "Reason"@en, "Причина"@ru ;
+    rdfs:comment "The specific reason for the sanction decision"@en, "Конкретная причина решения о санкции"@ru .
+
+soc:date a rdf:Property ;
+    rdfs:domain soc:JSASanctionReasonOverview ;
+    rdfs:range xsd:gYearMonth ;
+    rdfs:label "Date"@en, "Дата"@ru ;
+    rdfs:comment "Calendar date of observation"@en, "Календарная дата наблюдения"@ru .
+
+soc:solutionNumber a rdf:Property ;
+    rdfs:domain soc:JSASanctionReasonOverview ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of decisions"@en, "Количество решений"@ru ;
+    rdfs:comment "The number of sanction decisions in combination of sanction level, reason, and date"@en, "Количество решений о санкциях в комбинации уровня санкции, причины и даты"@ru .

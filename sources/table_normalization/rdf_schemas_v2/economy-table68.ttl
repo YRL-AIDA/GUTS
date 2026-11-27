@@ -1,0 +1,42 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:RegionalProduct a rdfs:Class ;
+    rdfs:label "Regional product"@en, "Региональный продукт"@ru ;
+    rdfs:comment "Price list for digital products in a specific geographic region, indicating local currency and amount"@en, "Прайс-лист на цифровые продукты в определенном географическом регионе с указанием локальной валюты и суммы"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:region a rdf:Property ;
+    rdfs:domain eco:RegionalProduct ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region"@en, "Регион"@ru ;
+    rdfs:comment "Geographic market or sales region where the product is offered"@en, "Географический рынок или регион продаж, в котором предлагается продукт"@ru .
+
+eco:productCode a rdf:Property ;
+    rdfs:domain eco:RegionalProduct ;
+    rdfs:range xsd:string ;
+    rdfs:label "Product code"@en, "Код продукта"@ru ;
+    rdfs:comment "Unique alphanumeric identifier of a regional product"@en, "Уникальный буквенно-цифровой идентификатор регионального продукта"@ru .
+
+eco:productName a rdf:Property ;
+    rdfs:domain eco:RegionalProduct ;
+    rdfs:range xsd:string ;
+    rdfs:label "Product name"@en, "Название продукта"@ru ;
+    rdfs:comment "Name of the digital product or service"@en, "Название цифрового продукта или услуги"@ru .
+
+eco:currency a rdf:Property ;
+    rdfs:domain eco:RegionalProduct ;
+    rdfs:range xsd:string ;
+    rdfs:label "Currency"@en, "Валюта"@ru ;
+    rdfs:comment "Local currency identifier for the region"@en, "Локальный идентификатор валюты для региона"@ru .
+
+eco:localPrice a rdf:Property ;
+    rdfs:domain eco:RegionalProduct ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Local price"@en, "Локальная цена"@ru ;
+    rdfs:comment "Numeric price amount in the local currency"@en, "Числовое значение цены в локальной валюте"@ru .
