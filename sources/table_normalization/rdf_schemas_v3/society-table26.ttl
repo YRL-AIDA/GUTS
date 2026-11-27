@@ -1,0 +1,114 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix society: <http://example.org/society#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+society:ExcessCovidDeath a rdfs:Class ;
+    rdfs:label "Excess COVID death statistics"@en, "Статистика избыточной смертности от COVID"@ru ;
+    rdfs:comment "Observation of excess deaths from COVID-19 associated with maintaining essential maternal and child health services."@en, "Наблюдение избыточных смертей от COVID-19, связанных с поддержанием основных услуг в сфере здоровья матери и ребёнка."@ru .
+
+society:MitigationScenario a rdfs:Class ;
+    rdfs:label "Pandemic mitigation scenario"@en, "Сценарий смягчения последствий пандемии"@ru ;
+    rdfs:comment "Various scenarios for mitigating the consequences of the COVID-19 pandemic."@en, "Различные сценарии смягчения последствий пандемии COVID-19."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+society:hasMitigationScenario a rdf:Property ;
+    rdfs:domain society:ExcessCovidDeath ;
+    rdfs:range society:MitigationScenario ;
+    rdfs:label "Associated mitigation scenario"@en, "Связанный сценарий смягчения"@ru ;
+    rdfs:comment "Links core statistics on excess mortality from COVID to various scenarios for mitigating the consequences of the pandemic."@en, "Связывает основную статистику избыточной смертности от COVID с различными сценариями смягчения последствий пандемии."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+society:selected a rdf:Property ;
+    rdfs:domain society:ExcessCovidDeath ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Selection flag"@en, "Флаг выбора"@ru ;
+    rdfs:comment "Flag indicating whether the intervention is selected for analysis."@en, "Флаг, указывающий, выбрано ли вмешательство для анализа."@ru .
+
+society:interventionNumber a rdf:Property ;
+    rdfs:domain society:ExcessCovidDeath ;
+    rdfs:range xsd:string ;
+    rdfs:label "Intervention identifier"@en, "Идентификатор вмешательства"@ru ;
+    rdfs:comment "Unique identifier of the intervention."@en, "Уникальный идентификатор вмешательства."@ru .
+
+society:listNumber a rdf:Property ;
+    rdfs:domain society:ExcessCovidDeath ;
+    rdfs:range xsd:string ;
+    rdfs:label "LiST model number"@en, "Номер в модели LiST"@ru ;
+    rdfs:comment "Unique number of the intervention in the LiST model."@en, "Уникальный номер вмешательства в модели LiST."@ru .
+
+society:category a rdf:Property ;
+    rdfs:domain society:ExcessCovidDeath ;
+    rdfs:range xsd:string ;
+    rdfs:label "Intervention category"@en, "Категория вмешательства"@ru ;
+    rdfs:comment "Category to which the intervention belongs."@en, "Категория, к которой относится вмешательство."@ru .
+
+society:interventionName a rdf:Property ;
+    rdfs:domain society:ExcessCovidDeath ;
+    rdfs:range xsd:string ;
+    rdfs:label "Intervention title"@en, "Наименование вмешательства"@ru ;
+    rdfs:comment "Specific name of the intervention."@en, "Конкретное наименование вмешательства."@ru .
+
+society:patientsNumber a rdf:Property ;
+    rdfs:domain society:ExcessCovidDeath ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of patients served"@en, "Количество обслуженных пациентов"@ru ;
+    rdfs:comment "Number of patients receiving care because of mitigation measures."@en, "Количество пациентов, получающих помощь в связи с мерами смягчения."@ru .
+
+society:averageContactsNumber a rdf:Property ;
+    rdfs:domain society:ExcessCovidDeath ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average patient contacts"@en, "Среднее число контактов пациента"@ru ;
+    rdfs:comment "Average number of contacts between a patient and a healthcare provider."@en, "Среднее число контактов пациента с медицинским работником."@ru .
+
+society:averageContactsAfterNumber a rdf:Property ;
+    rdfs:domain society:ExcessCovidDeath ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average patient contacts after mitigation"@en, "Среднее число контактов пациента после смягчения"@ru ;
+    rdfs:comment "Average number of contacts between a patient and a healthcare provider after mitigation measures are applied."@en, "Среднее число контактов пациента с медицинским работником после применения мер смягчения."@ru .
+
+society:transmissionRiskReduction a rdf:Property ;
+    rdfs:domain society:ExcessCovidDeath ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Transmission risk reduction"@en, "Снижение риска передачи"@ru ;
+    rdfs:comment "Percentage by which transmission risk is reduced after mitigation measures."@en, "Процент, на который снижается риск передачи после применения мер смягчения."@ru .
+
+society:scenarioName a rdf:Property ;
+    rdfs:domain society:MitigationScenario ;
+    rdfs:range xsd:string ;
+    rdfs:label "Scenario title"@en, "Наименование сценария"@ru ;
+    rdfs:comment "Name of the pandemic mitigation scenario."@en, "Наименование сценария смягчения последствий пандемии."@ru .
+
+society:sarsCov2TransmissionRisk a rdf:Property ;
+    rdfs:domain society:MitigationScenario ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Residual SARS-CoV-2 transmission risk"@en, "Остаточный риск передачи SARS-CoV-2"@ru ;
+    rdfs:comment "Residual risk of SARS-CoV-2 transmission after mitigation measures have been applied."@en, "Остаточный риск передачи SARS-CoV-2 после применения мер смягчения."@ru .
+
+society:excessRisk a rdf:Property ;
+    rdfs:domain society:MitigationScenario ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Excess infection risk"@en, "Избыточный риск заражения"@ru ;
+    rdfs:comment "Additional risk of COVID-19 infection arising from contacts with the healthcare system."@en, "Дополнительный риск заражения COVID-19, возникающий из-за контактов с системой здравоохранения."@ru .
+
+society:excessInfections a rdf:Property ;
+    rdfs:domain society:MitigationScenario ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Additional infections"@en, "Дополнительные заражения"@ru ;
+    rdfs:comment "Number of additional COVID-19 infections associated with receiving healthcare services."@en, "Количество дополнительных случаев заражения COVID-19, связанных с получением медицинских услуг."@ru .
+
+society:excessDeaths a rdf:Property ;
+    rdfs:domain society:MitigationScenario ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Excess death count"@en, "Число избыточных смертей"@ru ;
+    rdfs:comment "Number of excess deaths from COVID-19 associated with receiving healthcare services."@en, "Количество избыточных смертей от COVID-19, связанных с получением медицинских услуг."@ru .

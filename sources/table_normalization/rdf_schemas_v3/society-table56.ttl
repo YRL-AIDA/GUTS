@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix society: <http://example.org/society#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+society:Variable a rdfs:Class ;
+    rdfs:label "Analyzed variable"@en, "Анализируемая переменная"@ru ;
+    rdfs:comment "Demographic or professional variable analyzed for association with experience of violence."@en, "Демографическая или профессиональная переменная, анализируемая на связь с опытом переживания насилия."@ru .
+
+society:ViolenceObservation a rdfs:Class ;
+    rdfs:label "Violence prevalence observation"@en, "Наблюдение распространённости насилия"@ru ;
+    rdfs:comment "Observation of violence prevalence for a group within a variable, broken down by violence status and facility employment type."@en, "Наблюдение распространённости насилия для группы внутри переменной с разбивкой по статусу насилия и типу занятости в учреждении."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+society:hasViolencePrevalenceMonitoring a rdf:Property ;
+    rdfs:domain society:Variable ;
+    rdfs:range society:ViolenceObservation ;
+    rdfs:label "Violence prevalence monitoring"@en, "Мониторинг распространённости насилия"@ru ;
+    rdfs:comment "Links a variable with observations of violence prevalence for each group within that variable."@en, "Связывает переменную с наблюдениями распространённости насилия для каждой группы внутри этой переменной."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+society:number a rdf:Property ;
+    rdfs:domain society:Variable ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Variable sequence number"@en, "Порядковый номер переменной"@ru ;
+    rdfs:comment "Sequential number identifying the variable in the analysis table."@en, "Порядковый номер, идентифицирующий переменную в таблице анализа."@ru .
+
+society:variableName a rdf:Property ;
+    rdfs:domain society:Variable ;
+    rdfs:range xsd:string ;
+    rdfs:label "Variable name"@en, "Наименование переменной"@ru ;
+    rdfs:comment "Name of the demographic or professional variable, such as age, gender, marital status, highest qualification, years of experience, or area of practice."@en, "Наименование демографической или профессиональной переменной, например возраст, пол, семейное положение, высшая квалификация, стаж работы или место практики."@ru .
+
+society:pValue a rdf:Property ;
+    rdfs:domain society:Variable ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Variable-level p-value"@en, "P-значение для переменной"@ru ;
+    rdfs:comment "P-value from statistical testing of the association between the variable and experience of violence."@en, "P-значение статистического теста связи между переменной и опытом переживания насилия."@ru .
+
+society:group a rdf:Property ;
+    rdfs:domain society:ViolenceObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Variable group"@en, "Группа переменной"@ru ;
+    rdfs:comment "Specific category or value within the variable, for example an age range, gender, marital status, qualification, experience range, or practice area."@en, "Конкретная категория или значение внутри переменной, например возрастной диапазон, пол, семейное положение, квалификация, диапазон стажа или место практики."@ru .
+
+society:violenceStatus a rdf:Property ;
+    rdfs:domain society:ViolenceObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Violence exposure status"@en, "Статус столкновения с насилием"@ru ;
+    rdfs:comment "Indicates whether respondents reported facing violence (D) or not facing violence (S)."@en, "Указывает, сообщили ли респонденты о столкновении с насилием (D) или об отсутствии такого опыта (S)."@ru .
+
+society:employmentType a rdf:Property ;
+    rdfs:domain society:ViolenceObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Facility employment type"@en, "Тип занятости в учреждении"@ru ;
+    rdfs:comment "Type of facility employment, such as government, private, or both."@en, "Тип занятости в учреждении: государственное, частное или оба типа."@ru .
+
+society:count a rdf:Property ;
+    rdfs:domain society:ViolenceObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Respondent count"@en, "Число респондентов"@ru ;
+    rdfs:comment "Absolute number of respondents for the combination of variable, group, violence status, and employment type."@en, "Абсолютное число респондентов для комбинации переменной, группы, статуса насилия и типа занятости."@ru .

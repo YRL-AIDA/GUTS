@@ -1,0 +1,88 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix economy: <http://example.org/economy#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+economy:Country a rdfs:Class ;
+    rdfs:label "Country"@en, "Страна"@ru ;
+    rdfs:comment "Country or group of countries for which development indicators are reported."@en, "Страна или группа стран, по которой приводятся показатели развития."@ru .
+
+economy:Measure a rdfs:Class ;
+    rdfs:label "Measure"@en, "Показатель"@ru ;
+    rdfs:comment "Development indicator defined by its name and unit of measure."@en, "Показатель развития, заданный названием и единицей измерения."@ru .
+
+economy:DevelopmentIndicator a rdfs:Class ;
+    rdfs:label "Development indicator"@en, "Показатель развития"@ru ;
+    rdfs:comment "Value of an Africa's Development Dynamics indicator for a country and year."@en, "Значение показателя «Динамики развития Африки» для страны и года."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+economy:hasDevelopmentIndicator a rdf:Property ;
+    rdfs:domain economy:Country ;
+    rdfs:range economy:DevelopmentIndicator ;
+    rdfs:label "Development indicators"@en, "Показатели развития"@ru ;
+    rdfs:comment "Links a country with its development indicators."@en, "Связывает страну с её показателями развития."@ru .
+
+economy:hasDevelopmentIndicator a rdf:Property ;
+    rdfs:domain economy:Measure ;
+    rdfs:range economy:DevelopmentIndicator ;
+    rdfs:label "Development indicators"@en, "Показатели развития"@ru ;
+    rdfs:comment "Links a measure with its values by country and year."@en, "Связывает показатель с его значениями по странам и годам."@ru .
+
+economy:hasSubarea a rdf:Property ;
+    rdfs:domain economy:Country ;
+    rdfs:range economy:Country ;
+    rdfs:label "Subareas"@en, "Входящие территории"@ru ;
+    rdfs:comment "Links a region with the countries included in it, such as Southern Africa with Angola."@en, "Связывает регион со входящими в него странами, например Южную Африку с Анголой."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+economy:countryName a rdf:Property ;
+    rdfs:domain economy:Country ;
+    rdfs:range xsd:string ;
+    rdfs:label "Country name"@en, "Название страны"@ru ;
+    rdfs:comment "Name of the country, region or group of countries."@en, "Название страны, региона или группы стран."@ru .
+
+economy:resourceStatus a rdf:Property ;
+    rdfs:domain economy:Country ;
+    rdfs:range xsd:string ;
+    rdfs:label "Resource status"@en, "Ресурсный статус"@ru ;
+    rdfs:comment "Asterisk mark of the country as given in the source table."@en, "Отметка страны звёздочкой, как в исходной таблице."@ru .
+
+economy:measureCategory a rdf:Property ;
+    rdfs:domain eco:Measure ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category of measure"@en, "Категория показателя"@ru ;
+    rdfs:comment "The primary measurable category of indicators for development dynamics."@en, "Основная измеряемая категория показателей динамики развития."@ru .
+
+economy:combinedMeasure a rdf:Property ;
+    rdfs:domain economy:Measure ;
+    rdfs:range xsd:string ;
+    rdfs:label "Combined measure"@en, "Сводный показатель"@ru ;
+    rdfs:comment "Name of the indicator, such as population or human development index."@en, "Название показателя, например население или индекс человеческого развития."@ru .
+
+economy:measureUnit a rdf:Property ;
+    rdfs:domain economy:Measure ;
+    rdfs:range xsd:string ;
+    rdfs:label "Unit of measure"@en, "Единица измерения"@ru ;
+    rdfs:comment "Unit in which the value is expressed, such as persons or percentage of population."@en, "Единица, в которой выражено значение, например человек или процент населения."@ru .
+
+economy:year a rdf:Property ;
+    rdfs:domain economy:DevelopmentIndicator ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of the value."@en, "Календарный год значения."@ru .
+
+economy:value a rdf:Property ;
+    rdfs:domain economy:DevelopmentIndicator ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Value"@en, "Значение"@ru ;
+    rdfs:comment "Numeric value of the indicator in its unit of measure."@en, "Числовое значение показателя в его единице измерения."@ru .

@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix economy: <http://example.org/economy#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+economy:Ledger a rdfs:Class ;
+    rdfs:label "Ledger entry"@en, "Запись бухгалтерской книги"@ru ;
+    rdfs:comment "Ledger line item containing product description, quantity, price, and total amount."@en, "Позиция бухгалтерской книги, содержащая описание товара, количество, цену и общую сумму."@ru .
+
+economy:Invoice a rdfs:Class ;
+    rdfs:label "Invoice record"@en, "Счёт на оплату"@ru ;
+    rdfs:comment "Invoice record with issue date and customer reference."@en, "Запись счёта с датой выставления и идентификатором клиента."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+economy:hasInvoiceLine a rdf:Property ;
+    rdfs:domain economy:Invoice ;
+    rdfs:range economy:Ledger ;
+    rdfs:label "Invoice line item"@en, "Позиция счёта"@ru ;
+    rdfs:comment "Links an invoice with one of its product line entries."@en, "Связывает счёт с одной из его позиций по товару."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+economy:date a rdf:Property ;
+    rdfs:domain economy:Invoice ;
+    rdfs:range xsd:date ;
+    rdfs:label "Invoice issue date"@en, "Дата выставления счёта"@ru ;
+    rdfs:comment "Date on which the invoice was issued."@en, "Дата выставления счёта."@ru .
+
+economy:invoiceNumber a rdf:Property ;
+    rdfs:domain economy:Invoice ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Invoice identifier"@en, "Номер счёта"@ru ;
+    rdfs:comment "Unique identifying number of the invoice."@en, "Уникальный номер счёта."@ru .
+
+economy:customerIdentifier a rdf:Property ;
+    rdfs:domain economy:Invoice ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Customer identifier"@en, "Идентификатор клиента"@ru ;
+    rdfs:comment "Identifier of the customer associated with this invoice."@en, "Идентификатор клиента, связанного с этим счётом."@ru .
+
+economy:serialNumber a rdf:Property ;
+    rdfs:domain economy:Ledger ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Line sequence number"@en, "Порядковый номер строки"@ru ;
+    rdfs:comment "Sequential line number of the entry within the invoice."@en, "Порядковый номер записи внутри счёта."@ru .
+
+economy:description a rdf:Property ;
+    rdfs:domain economy:Ledger ;
+    rdfs:range xsd:string ;
+    rdfs:label "Product description"@en, "Описание товара"@ru ;
+    rdfs:comment "Product name or descriptive text."@en, "Наименование или описание товара."@ru .
+
+economy:quantity a rdf:Property ;
+    rdfs:domain economy:Ledger ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Product quantity"@en, "Количество товара"@ru ;
+    rdfs:comment "Number of product units."@en, "Количество единиц товара."@ru .
+
+economy:rate a rdf:Property ;
+    rdfs:domain economy:Ledger ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Unit rate"@en, "Цена за единицу"@ru ;
+    rdfs:comment "Unit price of the product in the base currency."@en, "Цена одной единицы товара в базовой валюте."@ru .

@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix society: <http://example.org/society#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+society:HealthSystem a rdfs:Class ;
+    rdfs:label "Maternal and child health system"@en, "Система охраны здоровья матери и ребёнка"@ru ;
+    rdfs:comment "MNCH interventions described for each target population group."@en, "Мероприятия по охране здоровья матери и ребёнка (MNCH), описанные для каждой целевой группы населения."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+society:category a rdf:Property ;
+    rdfs:domain society:HealthSystem ;
+    rdfs:range xsd:string ;
+    rdfs:label "Target population category"@en, "Категория целевой группы населения"@ru ;
+    rdfs:comment "Category of the target population for which the intervention is intended."@en, "Категория целевой группы населения, для которой предназначено мероприятие."@ru .
+
+society:interventionName a rdf:Property ;
+    rdfs:domain society:HealthSystem ;
+    rdfs:range xsd:string ;
+    rdfs:label "Intervention name"@en, "Название мероприятия"@ru ;
+    rdfs:comment "Specific intervention name."@en, "Конкретное название мероприятия."@ru .
+
+society:expect a rdf:Property ;
+    rdfs:domain society:HealthSystem ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Expected LiST number"@en, "Ожидаемое значение LiST"@ru ;
+    rdfs:comment "Expected number of the intervention in the LiST model."@en, "Ожидаемое значение (номер) вмешательства в модели LiST."@ru .
+
+society:actual a rdf:Property ;
+    rdfs:domain society:HealthSystem ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Actual LiST number"@en, "Фактическое значение LiST"@ru ;
+    rdfs:comment "Actual number of the intervention recorded in the LiST model."@en, "Фактическое значение (номер) вмешательства, зафиксированное в модели LiST."@ru .
+
+society:status a rdf:Property ;
+    rdfs:domain society:HealthSystem ;
+    rdfs:range xsd:string ;
+    rdfs:label "Status"@en, "Статус"@ru ;
+    rdfs:comment "Status of the intervention category (whether or not it is part of the healthcare system)"@en, "Статус категории вмешательства (входит или нет в систему здравоохранения)"@ru .

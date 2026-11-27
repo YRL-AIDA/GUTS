@@ -1,0 +1,66 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix economy: <http://example.org/economy#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+economy:Cafe a rdfs:Class ;
+    rdfs:label "Cafe"@en, "Кафе"@ru ;
+    rdfs:comment "Cafe retail outlet."@en, "Торговая точка кафе."@ru .
+
+economy:DailySales a rdfs:Class ;
+    rdfs:label "Daily sales"@en, "Ежедневные продажи"@ru ;
+    rdfs:comment "Daily summary of total sales for a particular cafe."@en, "Ежедневная сводка общей суммы продаж по конкретному кафе."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+economy:hasDailySalesReport a rdf:Property ;
+    rdfs:domain economy:Cafe ;
+    rdfs:range economy:DailySales ;
+    rdfs:label "Daily sales report"@en, "Ежедневный отчет о продажах"@ru ;
+    rdfs:comment "Links the cafe outlet to daily sales data."@en, "Связывает торговую точку кафе с данными об ежедневных продажах."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+economy:cafeName a rdf:Property ;
+    rdfs:domain economy:Cafe ;
+    rdfs:range xsd:string ;
+    rdfs:label "Cafe name"@en, "Название кафе"@ru ;
+    rdfs:comment "Unique name or identifier of the cafe outlet in the daily sales report."@en, "Уникальное наименование или идентификатор торговой точки кафе в ежедневном отчёте о продажах."@ru .
+
+economy:location a rdf:Property ;
+    rdfs:domain economy:Cafe ;
+    rdfs:range xsd:string ;
+    rdfs:label "Location"@en, "Местонахождение"@ru ;
+    rdfs:comment "Location of the cafe outlet in the daily sales report."@en, "Местонахождение торговой точки кафе в ежедневном отчёте о продажах."@ru .
+
+economy:weeklyTarget a rdf:Property ;
+    rdfs:domain economy:Cafe ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Weekly target"@en, "Недельный план"@ru ;
+    rdfs:comment "Planned income amount in GBP for a specific category per week."@en, "Плановая сумма дохода в фунтах стерлингов для конкретной категории за неделю."@ru .
+
+economy:date a rdf:Property ;
+    rdfs:domain economy:DailySales ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date"@en, "Дата"@ru ;
+    rdfs:comment "Date of sale without indication of month and year."@en, "Дата продажи без указания месяца и года."@ru .
+
+economy:weekDay a rdf:Property ;
+    rdfs:domain economy:DailySales ;
+    rdfs:range xsd:string ;
+    rdfs:label "Week day"@en, "День недели"@ru ;
+    rdfs:comment "Name of the day of the week for recording a sales report."@en, "Название дня недели для записи отчёта о продажах."@ru .
+
+economy:salesAmount a rdf:Property ;
+    rdfs:domain economy:DailySales ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Daily sales revenue"@en, "Выручка за день"@ru ;
+    rdfs:comment "Actual sales revenue in monetary units for the cafe on the specified date."@en, "Фактическая выручка кафе в денежных единицах за указанную дату."@ru .

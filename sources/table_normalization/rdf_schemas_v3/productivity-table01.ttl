@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix productivity: <http://example.org/productivity#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+productivity:ProductivitySeries a rdfs:Class ;
+    rdfs:label "Productivity series"@en, "Ряд производительности"@ru ;
+    rdfs:comment "Labour productivity series identified by its code, defined by sector, measure and kind of percent change."@en, "Ряд производительности труда с кодом, заданный сектором, показателем и видом процентного изменения."@ru .
+
+productivity:ProductivityRevision a rdfs:Class ;
+    rdfs:label "Productivity revision"@en, "Пересмотр производительности"@ru ;
+    rdfs:comment "Revision of a productivity series since previously published estimates for a quarter."@en, "Пересмотр ряда производительности относительно ранее опубликованных оценок за квартал."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+productivity:hasRevision a rdf:Property ;
+    rdfs:domain productivity:ProductivitySeries ;
+    rdfs:range productivity:ProductivityRevision ;
+    rdfs:label "Revisions"@en, "Пересмотры"@ru ;
+    rdfs:comment "Links a productivity series with its revisions by quarter."@en, "Связывает ряд производительности с его пересмотрами по кварталам."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+productivity:code a rdf:Property ;
+    rdfs:domain productivity:ProductivitySeries ;
+    rdfs:range xsd:string ;
+    rdfs:label "Code"@en, "Код"@ru ;
+    rdfs:comment "Four-character code of the series as given in the table, such as A4YN."@en, "Четырёхзначный код ряда, как в таблице, например A4YN."@ru .
+
+productivity:sector a rdf:Property ;
+    rdfs:domain productivity:ProductivitySeries ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sector"@en, "Сектор"@ru ;
+    rdfs:comment "Sector of the economy: whole economy, manufacturing or services."@en, "Сектор экономики: вся экономика, обрабатывающая промышленность или услуги."@ru .
+
+productivity:metricName a rdf:Property ;
+    rdfs:domain productivity:ProductivitySeries ;
+    rdfs:range xsd:string ;
+    rdfs:label "Measure"@en, "Показатель"@ru ;
+    rdfs:comment "Labour productivity measure, such as output per worker or output per hour worked."@en, "Показатель производительности труда, например выпуск на работника или на отработанный час."@ru .
+
+productivity:changeType a rdf:Property ;
+    rdfs:domain productivity:ProductivitySeries ;
+    rdfs:range xsd:string ;
+    rdfs:label "Kind of change"@en, "Вид изменения"@ru ;
+    rdfs:comment "Kind of percent change: on quarter a year ago or on previous quarter."@en, "Вид процентного изменения: к кварталу год назад или к прошлому кварталу."@ru .
+
+productivity:year a rdf:Property ;
+    rdfs:domain productivity:ProductivityRevision ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of the quarter."@en, "Календарный год квартала."@ru .
+
+productivity:quarter a rdf:Property ;
+    rdfs:domain productivity:ProductivityRevision ;
+    rdfs:range xsd:string ;
+    rdfs:label "Quarter"@en, "Квартал"@ru ;
+    rdfs:comment "Quarter of the year: Q1, Q2, Q3 or Q4."@en, "Квартал года: Q1, Q2, Q3 или Q4."@ru .
+
+productivity:revision a rdf:Property ;
+    rdfs:domain productivity:ProductivityRevision ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Revision"@en, "Пересмотр"@ru ;
+    rdfs:comment "Revision of the percent change since previously published estimates."@en, "Пересмотр процентного изменения относительно ранее опубликованных оценок."@ru .

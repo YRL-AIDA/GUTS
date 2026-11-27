@@ -1,0 +1,106 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sport: <http://example.org/sport#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+sport:GameWeek a rdfs:Class ;
+    rdfs:label "Prediction game week"@en, "Игровой тур пула прогнозов"@ru ;
+    rdfs:comment "A game week in a football prediction pool, including match results, participant predictions, prize pot, and points."@en, "Игровой тур в пуле футбольных прогнозов, включающий результаты матчей, прогнозы участников, призовой фонд и очки."@ru .
+
+sport:MatchResult a rdfs:Class ;
+    rdfs:label "Football match result"@en, "Результат футбольного матча"@ru ;
+    rdfs:comment "Actual result of a football match within a game week, including scheduled day, teams, and final goals."@en, "Фактический результат футбольного матча в рамках игрового тура, включая запланированный день, команды и итоговые голы."@ru .
+
+sport:MatchScorePrediction a rdfs:Class ;
+    rdfs:label "Match score prediction"@en, "Прогноз счёта матча"@ru ;
+    rdfs:comment "A participant's predicted score for a football match in a prediction pool, including predicted goals and awarded points."@en, "Прогноз участника на счёт футбольного матча в пуле прогнозов, включая предсказанные голы и начисленные очки."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+sport:hasMatchResult a rdf:Property ;
+    rdfs:domain sport:GameWeek ;
+    rdfs:range sport:MatchResult ;
+    rdfs:label "Game week match results"@en, "Результаты матчей игрового тура"@ru ;
+    rdfs:comment "Links a game week with the actual results of matches played in that week."@en, "Связывает игровой тур с фактическими результатами матчей, сыгранных на этой неделе."@ru .
+
+sport:hasMatchScorePrediction a rdf:Property ;
+    rdfs:domain sport:MatchResult ;
+    rdfs:range sport:MatchScorePrediction ;
+    rdfs:label "Participant match prediction"@en, "Прогноз участника на матч"@ru ;
+    rdfs:comment "Links a match result with a participant's score prediction for that match."@en, "Связывает результат матча с прогнозом счёта участника на этот матч."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+sport:date a rdf:Property ;
+    rdfs:domain sport:GameWeek ;
+    rdfs:range xsd:date ;
+    rdfs:label "Game week date"@en, "Дата игрового тура"@ru ;
+    rdfs:comment "Date associated with the game week, for example the main match day."@en, "Дата, связанная с игровым туром, например основной день матчей."@ru .
+
+sport:prizePot a rdf:Property ;
+    rdfs:domain sport:GameWeek ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Prize pot (GBP)"@en, "Призовой фонд (фунты стерлингов)"@ru ;
+    rdfs:comment "Prize pot for the game week, expressed in GBP."@en, "Призовой фонд игрового тура, выраженный в фунтах стерлингов."@ru .
+
+sport:day a rdf:Property ;
+    rdfs:domain sport:MatchResult ;
+    rdfs:range xsd:string ;
+    rdfs:label "Match day"@en, "День матча"@ru ;
+    rdfs:comment "Scheduled day on which the match is played, such as Saturday or Sunday."@en, "Запланированный день проведения матча, например суббота или воскресенье."@ru .
+
+sport:homeTeam a rdf:Property ;
+    rdfs:domain sport:MatchResult ;
+    rdfs:range xsd:string ;
+    rdfs:label "Home team name"@en, "Название команды хозяев"@ru ;
+    rdfs:comment "Name of the team playing at home."@en, "Название команды, играющей дома."@ru .
+
+sport:awayTeam a rdf:Property ;
+    rdfs:domain sport:MatchResult ;
+    rdfs:range xsd:string ;
+    rdfs:label "Away team name"@en, "Название команды гостей"@ru ;
+    rdfs:comment "Name of the team playing away."@en, "Название команды, играющей в гостях."@ru .
+
+sport:homeGoals a rdf:Property ;
+    rdfs:domain sport:MatchResult ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Home team goals"@en, "Голы команды хозяев"@ru ;
+    rdfs:comment "Actual number of goals scored by the home team at full time."@en, "Фактическое количество голов, забитых командой хозяев к концу матча."@ru .
+
+sport:awayGoals a rdf:Property ;
+    rdfs:domain sport:MatchResult ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Away team goals"@en, "Голы команды гостей"@ru ;
+    rdfs:comment "Actual number of goals scored by the away team at full time."@en, "Фактическое количество голов, забитых командой гостей к концу матча."@ru .
+
+sport:participantName a rdf:Property ;
+    rdfs:domain sport:MatchScorePrediction ;
+    rdfs:range xsd:string ;
+    rdfs:label "Participant name"@en, "Имя участника"@ru ;
+    rdfs:comment "Name of the participant making the prediction in the pool."@en, "Имя участника, делающего прогноз в пуле."@ru .
+
+sport:predictedHomeGoals a rdf:Property ;
+    rdfs:domain sport:MatchScorePrediction ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Predicted home team goals"@en, "Прогноз голов команды хозяев"@ru ;
+    rdfs:comment "Number of goals the participant predicted the home team would score."@en, "Количество голов, которое участник предсказал для команды хозяев."@ru .
+
+sport:predictedAwayGoals a rdf:Property ;
+    rdfs:domain sport:MatchScorePrediction ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Predicted away team goals"@en, "Прогноз голов команды гостей"@ru ;
+    rdfs:comment "Number of goals the participant predicted the away team would score."@en, "Количество голов, которое участник предсказал для команды гостей."@ru .
+
+sport:pointsFromLastWeek a rdf:Property ;
+    rdfs:domain sport:MatchScorePrediction ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Points brought forward"@en, "Очки, перенесённые с прошлой недели"@ru ;
+    rdfs:comment "Total points brought forward from the previous week."@en, "Общая сумма очков, перенесённых с предыдущей недели."@ru .

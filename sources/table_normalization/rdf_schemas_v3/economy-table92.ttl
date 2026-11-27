@@ -1,0 +1,114 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix economy: <http://example.org/economy#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+economy:School a rdfs:Class ;
+    rdfs:label "School"@en, "Учебное заведение"@ru ;
+    rdfs:comment "Educational institution participating in federal student loan programs."@en, "Учебное заведение, участвующее в федеральных программах студенческих кредитов."@ru .
+
+economy:FFELLoan a rdfs:Class ;
+    rdfs:label "FFEL loan"@en, "Кредит FFEL"@ru ;
+    rdfs:comment "Volume of Federal Family Education Loans of a type at a school for a period."@en, "Объём кредитов по программе Federal Family Education Loans одного вида в учебном заведении за период."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+economy:hasFFELLoan a rdf:Property ;
+    rdfs:domain economy:School ;
+    rdfs:range economy:FFELLoan ;
+    rdfs:label "FFEL loans"@en, "Кредиты FFEL"@ru ;
+    rdfs:comment "Links a school with the FFEL loan volumes of its students."@en, "Связывает учебное заведение с объёмами кредитов FFEL его студентов."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+economy:opeId a rdf:Property ;
+    rdfs:domain economy:School ;
+    rdfs:range xsd:string ;
+    rdfs:label "OPE ID"@en, "Код OPE"@ru ;
+    rdfs:comment "Identifier assigned to the institution by the Office of Postsecondary Education."@en, "Идентификатор, присвоенный учебному заведению Управлением послесреднего образования (OPE)."@ru .
+
+economy:schoolName a rdf:Property ;
+    rdfs:domain economy:School ;
+    rdfs:range xsd:string ;
+    rdfs:label "School name"@en, "Название учебного заведения"@ru ;
+    rdfs:comment "Official name of the educational institution."@en, "Официальное название учебного заведения."@ru .
+
+economy:state a rdf:Property ;
+    rdfs:domain economy:School ;
+    rdfs:range xsd:string ;
+    rdfs:label "State"@en, "Штат"@ru ;
+    rdfs:comment "Two-letter code of the state where the school is located."@en, "Двухбуквенный код штата, в котором находится учебное заведение."@ru .
+
+economy:zipCode a rdf:Property ;
+    rdfs:domain economy:School ;
+    rdfs:range xsd:string ;
+    rdfs:label "ZIP code"@en, "Почтовый индекс"@ru ;
+    rdfs:comment "ZIP code of the school, which may include the four-digit extension."@en, "Почтовый индекс учебного заведения, возможно с четырёхзначным дополнением."@ru .
+
+economy:schoolType a rdf:Property ;
+    rdfs:domain economy:School ;
+    rdfs:range xsd:string ;
+    rdfs:label "School type"@en, "Тип учебного заведения"@ru ;
+    rdfs:comment "Ownership type of the institution, such as public, private or proprietary."@en, "Тип собственности учебного заведения, например государственное, частное или коммерческое."@ru .
+
+economy:awardYear a rdf:Property ;
+    rdfs:domain economy:FFELLoan ;
+    rdfs:range xsd:string ;
+    rdfs:label "Award year"@en, "Учебный год"@ru ;
+    rdfs:comment "Award year of the loans, such as 2009-2010."@en, "Учебный год выдачи кредитов, например 2009-2010."@ru .
+
+economy:periodStart a rdf:Property ;
+    rdfs:domain economy:FFELLoan ;
+    rdfs:range xsd:date ;
+    rdfs:label "Period start"@en, "Начало периода"@ru ;
+    rdfs:comment "First day of the reporting period."@en, "Первый день отчётного периода."@ru .
+
+economy:periodEnd a rdf:Property ;
+    rdfs:domain economy:FFELLoan ;
+    rdfs:range xsd:date ;
+    rdfs:label "Period end"@en, "Конец периода"@ru ;
+    rdfs:comment "Last day of the reporting period."@en, "Последний день отчётного периода."@ru .
+
+economy:loanType a rdf:Property ;
+    rdfs:domain economy:FFELLoan ;
+    rdfs:range xsd:string ;
+    rdfs:label "Loan type"@en, "Вид кредита"@ru ;
+    rdfs:comment "Type of the FFEL loan: subsidized, unsubsidized, parent PLUS or grad PLUS."@en, "Вид кредита FFEL: субсидированный, несубсидированный, родительский PLUS или аспирантский PLUS."@ru .
+
+economy:recipientsNumber a rdf:Property ;
+    rdfs:domain economy:FFELLoan ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Recipients"@en, "Получатели"@ru ;
+    rdfs:comment "Number of borrowers who received loans."@en, "Число заёмщиков, получивших кредиты."@ru .
+
+economy:loansOriginatedNumber a rdf:Property ;
+    rdfs:domain economy:FFELLoan ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Loans originated"@en, "Выдано кредитов"@ru ;
+    rdfs:comment "Number of loans originated during the period."@en, "Число кредитов, выданных за период."@ru .
+
+economy:loansOriginatedAmount a rdf:Property ;
+    rdfs:domain economy:FFELLoan ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Amount of loans originated"@en, "Сумма выданных кредитов"@ru ;
+    rdfs:comment "Total amount of loans originated during the period in dollars."@en, "Общая сумма кредитов, выданных за период, в долларах."@ru .
+
+economy:disbursementsNumber a rdf:Property ;
+    rdfs:domain economy:FFELLoan ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Disbursements"@en, "Выплаты"@ru ;
+    rdfs:comment "Number of disbursements of loan funds."@en, "Число выплат средств по кредитам."@ru .
+
+economy:disbursementsAmount a rdf:Property ;
+    rdfs:domain economy:FFELLoan ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Amount of disbursements"@en, "Сумма выплат"@ru ;
+    rdfs:comment "Total amount disbursed during the period in dollars."@en, "Общая сумма выплат за период в долларах."@ru .

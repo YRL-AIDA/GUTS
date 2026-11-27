@@ -1,0 +1,152 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix education: <http://example.org/education#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+education:College a rdfs:Class ;
+    rdfs:label "College"@en, "Колледж"@ru ;
+    rdfs:comment "An educational institution that carries out educational activities."@en, "Учебное заведение, осуществляющее образовательную деятельность."@ru .
+
+education:LearningOutcomesStatement a rdfs:Class ;
+    rdfs:label "Learning outcomes statement"@en, "Ведомость результатов обучения"@ru ;
+    rdfs:comment "Continuous assessment record showing a student's grades in a subject for an academic term."@en, "Запись текущего оценивания, содержащая баллы студента по предмету за учебный триместр."@ru .
+
+education:TestTask a rdfs:Class ;
+    rdfs:label "Test task assessment"@en, "Оценивание тестовой задачи"@ru ;
+    rdfs:comment "Assessment information for an individual test task."@en, "Сведения об оценивании отдельной тестовой задачи."@ru .
+
+education:Examination a rdfs:Class ;
+    rdfs:label "Examination assessment"@en, "Экзаменационное оценивание"@ru ;
+    rdfs:comment "General examination assessment data."@en, "Общие данные экзаменационного оценивания."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+education:hasLearningOutcomesStatement a rdf:Property ;
+    rdfs:domain education:College ;
+    rdfs:range education:LearningOutcomesStatement ;
+    rdfs:label "Record of learning outcomes"@en, "Запись результатов обучения"@ru ;
+    rdfs:comment "Links the college to records of student learning outcomes."@en, "Связывает колледж с ведомостями результатов обучения студентов."@ru .
+
+education:hasTestTask a rdf:Property ;
+    rdfs:domain education:LearningOutcomesStatement ;
+    rdfs:range education:TestTask ;
+    rdfs:label "Assessed test task"@en, "Оцененная тестовая задача"@ru ;
+    rdfs:comment "Links a learning outcomes statement with assessments for individual test tasks."@en, "Связывает ведомость результатов обучения с оцениванием отдельных тестовых задач."@ru .
+
+education:hasExamination a rdf:Property ;
+    rdfs:domain education:LearningOutcomesStatement ;
+    rdfs:range education:Examination ;
+    rdfs:label "Examination result"@en, "Результат экзамена"@ru ;
+    rdfs:comment "Links a learning outcomes statement with examination assessment data."@en, "Связывает ведомость результатов обучения с данными экзаменационного оценивания."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+education:collegeName a rdf:Property ;
+    rdfs:domain education:College ;
+    rdfs:range xsd:string ;
+    rdfs:label "College name"@en, "Наименование колледжа"@ru ;
+    rdfs:comment "Full name of the college where the student is studying."@en, "Полное наименование колледжа, в котором обучается студент."@ru .
+
+education:location a rdf:Property ;
+    rdfs:domain education:College ;
+    rdfs:range xsd:string ;
+    rdfs:label "College location"@en, "Местонахождение колледжа"@ru ;
+    rdfs:comment "Location of the college where the student is studying."@en, "Местонахождение колледжа, в котором обучается студент."@ru .
+
+education:trimester a rdf:Property ;
+    rdfs:domain education:LearningOutcomesStatement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Academic trimester"@en, "Академический триместр"@ru ;
+    rdfs:comment "Academic term within the session."@en, "Академический период в рамках учебного года."@ru .
+
+education:session a rdf:Property ;
+    rdfs:domain education:LearningOutcomesStatement ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Academic session"@en, "Учебная сессия"@ru ;
+    rdfs:comment "Academic year; the start year is used (e.g., 2018/19 -> 2018)."@en, "Учебный год; используется год начала (например, 2018/19 -> 2018)."@ru .
+
+education:class a rdf:Property ;
+    rdfs:domain education:LearningOutcomesStatement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Class or group identifier"@en, "Идентификатор класса или группы"@ru ;
+    rdfs:comment "Identifier of the class or grade group."@en, "Идентификатор класса или учебной группы."@ru .
+
+education:subject a rdf:Property ;
+    rdfs:domain education:LearningOutcomesStatement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Assessment subject"@en, "Предмет оценивания"@ru ;
+    rdfs:comment "Subject being assessed."@en, "Учебный предмет, по которому проводится оценивание."@ru .
+
+education:studentName a rdf:Property ;
+    rdfs:domain education:LearningOutcomesStatement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Student full name"@en, "Полное имя студента"@ru ;
+    rdfs:comment "Full name of the student."@en, "Полное имя студента."@ru .
+
+education:testName a rdf:Property ;
+    rdfs:domain education:TestTask ;
+    rdfs:range xsd:string ;
+    rdfs:label "Test name or identifier"@en, "Наименование или идентификатор теста"@ru ;
+    rdfs:comment "Name or identifier of a specific test."@en, "Наименование или идентификатор конкретного теста."@ru .
+
+education:score a rdf:Property ;
+    rdfs:domain education:TestTask ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Assessment score"@en, "Балл оценивания"@ru ;
+    rdfs:comment "Numeric score achieved by the student in the specified test."@en, "Числовой балл, полученный студентом в указанном тесте."@ru .
+
+education:maxScore a rdf:Property ;
+    rdfs:domain education:TestTask ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Maximum score"@en, "Максимальный балл"@ru ;
+    rdfs:comment "Maximum possible score for the test."@en, "Максимально возможный балл за тест."@ru .
+
+education:assignment a rdf:Property ;
+    rdfs:domain education:TestTask ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Assignment score"@en, "Балл за задание"@ru ;
+    rdfs:comment "Score awarded for a separate assignment or task."@en, "Балл, присвоенный за отдельное задание."@ru .
+
+education:maxAssignmentScore a rdf:Property ;
+    rdfs:domain education:TestTask ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Maximum assignment score"@en, "Максимальный балл за задание"@ru ;
+    rdfs:comment "Maximum possible score for the assignment."@en, "Максимально возможный балл за задание."@ru .
+
+education:position a rdf:Property ;
+    rdfs:domain education:TestTask ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Rank position"@en, "Место в рейтинге"@ru ;
+    rdfs:comment "Student's rank relative to peers for the corresponding aggregated score."@en, "Место студента в рейтинге относительно других студентов по соответствующему суммарному баллу."@ru .
+
+education:assessmentComponent a rdf:Property ;
+    rdfs:domain education:Examination ;
+    rdfs:range xsd:string ;
+    rdfs:label "Assessment component type"@en, "Тип компонента оценивания"@ru ;
+    rdfs:comment "Type of the assessment component."@en, "Тип компонента оценивания."@ru .
+
+education:score a rdf:Property ;
+    rdfs:domain education:Examination ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Assessment score"@en, "Балл оценивания"@ru ;
+    rdfs:comment "Numeric score achieved by the student in the specified assessment component."@en, "Числовой балл, полученный студентом в указанном компоненте оценивания."@ru .
+
+education:maxScore a rdf:Property ;
+    rdfs:domain education:Examination ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Maximum score"@en, "Максимальный балл"@ru ;
+    rdfs:comment "Maximum possible score for the assessment component."@en, "Максимально возможный балл за компонент оценивания."@ru .
+
+education:position a rdf:Property ;
+    rdfs:domain education:Examination ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Rank position"@en, "Место в рейтинге"@ru ;
+    rdfs:comment "Student's rank relative to peers for the corresponding aggregated score."@en, "Место студента в рейтинге относительно других студентов по соответствующему суммарному баллу."@ru .

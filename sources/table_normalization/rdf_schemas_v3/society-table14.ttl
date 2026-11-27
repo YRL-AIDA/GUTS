@@ -1,0 +1,35 @@
+@prefix society: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix society: <http://example.org/society#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+society:Supplementation a rdfs:Class ;
+    rdfs:label "Supplementation"@en, "Дополнительное пособие"@ru ;
+    rdfs:comment "Observation of recipients of supplementation payments in the United States by state, age category, and recipient category for 2003."@en, "Наблюдение за получателями дополнительных пособий в США по штату, возрастной категории и категории получателей за 2003 год."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+society:area a rdf:Property ;
+    rdfs:domain society:Supplementation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Observed state or area"@en, "Наблюдаемый штат или территория"@ru ;
+    rdfs:comment "State or area of the United States where the observation was conducted."@en, "Штат или территория США, где проводилось наблюдение."@ru .
+
+society:category a rdf:Property ;
+    rdfs:domain society:Supplementation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Recipient category classification"@en, "Классификация категорий получателей"@ru ;
+    rdfs:comment "Recipient category classification: total, diagnostic, age, or status."@en, "Классификация категорий получателей: общая, диагностическая, возрастная или статусная."@ru .
+
+society:number a rdf:Property ;
+    rdfs:domain society:Supplementation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Recipient count"@en, "Число получателей"@ru ;
+    rdfs:comment "Absolute number of supplementation recipients."@en, "Абсолютное число получателей дополнительного пособия."@ru .

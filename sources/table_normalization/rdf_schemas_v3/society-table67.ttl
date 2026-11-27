@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix society: <http://example.org/society#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+society:Country a rdfs:Class ;
+    rdfs:label "Country or economy"@en, "Страна или экономика"@ru ;
+    rdfs:comment "Reference area (country or economy) for which gestation-threshold observations are reported."@en, "Область отсчёта (страна или экономика), для которой приводятся наблюдения по пороговым значениям срока беременности."@ru .
+
+society:GestationPeriod a rdfs:Class ;
+    rdfs:label "Gestation threshold observation"@en, "Наблюдение по порогу срока беременности"@ru ;
+    rdfs:comment "Observation for a specific country and year under a specified gestation period or birthweight threshold."@en, "Наблюдение для конкретной страны и года при заданном пороговом значении срока беременности или массы тела при рождении."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+society:hasGestationPeriodMonitoring a rdf:Property ;
+    rdfs:domain society:Country ;
+    rdfs:range society:GestationPeriod ;
+    rdfs:label "Gestation period monitoring"@en, "Мониторинг за периодом беременности"@ru ;
+    rdfs:comment "Links a country or economy with its gestation-threshold observations by year."@en, "Связывает страну или экономику с наблюдениями по пороговым значениям срока беременности по годам."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+society:countryName a rdf:Property ;
+    rdfs:domain society:Country ;
+    rdfs:range xsd:string ;
+    rdfs:label "Country or economy name"@en, "Наименование страны или экономики"@ru ;
+    rdfs:comment "Name of the reference area (country or economy) for which data are reported."@en, "Наименование области отсчёта (страны или экономики), для которой представлены данные."@ru .
+
+society:typeCountry a rdf:Property ;
+    rdfs:domain society:Country ;
+    rdfs:range xsd:string ;
+    rdfs:label "Economy classification"@en, "Экономическая классификация"@ru ;
+    rdfs:comment "Economic grouping of the reference area, such as OECD member or Non-OECD economy."@en, "Экономическая группировка области отсчёта, например член ОЭСР или экономика, не входящая в ОЭСР."@ru .
+
+society:timePeriod a rdf:Property ;
+    rdfs:domain society:GestationPeriod ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Observation year"@en, "Год наблюдения"@ru ;
+    rdfs:comment "Calendar year for which the observation is reported."@en, "Календарный год, за который приводится наблюдение."@ru .
+
+society:thresholdType a rdf:Property ;
+    rdfs:domain society:GestationPeriod ;
+    rdfs:range xsd:string ;
+    rdfs:label "Gestation threshold type"@en, "Тип порога срока беременности"@ru ;
+    rdfs:comment "Type of gestational age or birthweight threshold applied, for example no minimum threshold or minimum threshold of 22 weeks (500 grams birthweight)."@en, "Тип применяемого порога гестационного возраста или массы тела при рождении, например отсутствие минимального порога либо минимальный порог 22 недели (500 г при рождении)."@ru .
+
+society:gestationPeriodThreshold a rdf:Property ;
+    rdfs:domain society:GestationPeriod ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Gestation threshold value"@en, "Числовой порог срока беременности"@ru ;
+    rdfs:comment "Numeric gestational age threshold in weeks, or equivalent birthweight threshold, associated with the threshold type."@en, "Числовой порог гестационного возраста в неделях или эквивалентный порог массы тела при рождении, связанный с типом порога."@ru .

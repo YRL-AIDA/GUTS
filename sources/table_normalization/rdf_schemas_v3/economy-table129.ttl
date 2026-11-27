@@ -1,0 +1,24 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:PersonColour a rdfs:Class ;
+    rdfs:label "Person colour"@en, "Цвет человека"@ru ;
+    rdfs:comment "Correlating a specific color to a specific person"@en, "Соотнесение определенного цвета для конкретного человека"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:name a rdf:Property ;
+    rdfs:domain eco:PersonColour ;
+    rdfs:range xsd:string ;
+    rdfs:label "Name"@en, "Имя"@ru ;
+    rdfs:comment "Full name of the person"@en, "Полное имя человека"@ru .
+
+eco:colour a rdf:Property ;
+    rdfs:domain eco:PersonColour ;
+    rdfs:range xsd:string ;
+    rdfs:label "Colour"@en, "Цвет"@ru ;
+    rdfs:comment "Name of the corresponding colour"@en, "Название соответствующего цвета"@ru .

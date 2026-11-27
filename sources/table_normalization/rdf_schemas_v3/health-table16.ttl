@@ -1,0 +1,54 @@
+@prefix hl: <http://example.org/health#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+hl:RecoveryTest a rdfs:Class ;
+    rdfs:label "Recovery test"@en, "Тест восстановления"@ru ;
+    rdfs:comment "Experimental test measuring microbial recovery efficiency"@en, "Экспериментальный тест для измерения эффективности восстановления микроорганизмов"@ru .
+
+# ==================== Datatype Properties ====================
+
+hl:spongeType a rdf:Property ;
+    rdfs:domain hl:RecoveryTest ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sponge type"@en, "Тип губки"@ru ;
+    rdfs:comment "Type of sampling sponge"@en, "Тип губки для отбора проб"@ru .
+
+hl:testOrganism a rdf:Property ;
+    rdfs:domain hl:RecoveryTest ;
+    rdfs:range xsd:string ;
+    rdfs:label "Test organism"@en, "Тестируемый организм"@ru ;
+    rdfs:comment "Name of the microorganism"@en, "Название микроорганизма"@ru .
+
+hl:testMaterial a rdf:Property ;
+    rdfs:domain hl:RecoveryTest ;
+    rdfs:range xsd:string ;
+    rdfs:label "Test material"@en, "Материал поверхности"@ru ;
+    rdfs:comment "Surface material"@en, "Материал поверхности"@ru .
+
+hl:log10RecoveryInoculationControl a rdf:Property ;
+    rdfs:domain hl:RecoveryTest ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Log10 recovery (inoculation control)"@en, "Логарифм восстановления по основанию 10 (контрольный образец после инокуляции)"@ru ;
+    rdfs:comment "The numerical value of microbial recovery on a decimal logarithmic scale for the control sample after inoculation"@en, "Числовое значение восстановления микроорганизмов в десятичном логарифмическом масштабе для контрольного образца после инокуляции"@ru .
+
+hl:log10RecoveryStandardDeviationInoculationControl a rdf:Property ;
+    rdfs:domain hl:RecoveryTest ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation of log10 recovery (inoculation control)"@en, "Стандартное отклонение логарифма восстановления по основанию 10 (контрольный образец после инокуляции)"@ru ;
+    rdfs:comment "Standard deviation of the numerical value of microbial recovery on a logarithmic scale for the control sample after inoculation"@en, "Стандартное отклонение числового значения восстановления микроорганизмов в десятичном логарифмическом масштабе для контрольного образца после инокуляции"@ru .
+
+hl:log10RecoveryTestSample a rdf:Property ;
+    rdfs:domain hl:RecoveryTest ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Log10 recovery (test sample)"@en, "Логарифм восстановления по основанию 10 (тестовый образец)"@ru ;
+    rdfs:comment "The numerical value of microbial recovery on a decimal logarithmic scale for a test sample"@en, "Числовое значение восстановления микроорганизмов в десятичном логарифмическом масштабе для тестового образца"@ru .
+
+hl:log10RecoveryStandardDeviationTestSample a rdf:Property ;
+    rdfs:domain hl:RecoveryTest ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Standard deviation of log10 recovery (test sample)"@en, "Стандартное отклонение логарифма восстановления по основанию 10 (тестовый образец)"@ru ;
+    rdfs:comment "Standard deviation of the numerical value of microbial recovery on a logarithmic scale for a test sample"@en, "Стандартное отклонение числового значения восстановления микроорганизмов в десятичном логарифмическом масштабе для тестового образца"@ru .

@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix welfare: <http://example.org/welfare#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+welfare:EmploymentCostIndex a rdfs:Class ;
+    rdfs:label "Employment cost index"@en, "Индекс стоимости рабочей силы"@ru ;
+    rdfs:comment "Observation of the Employment Cost Index for total compensation of civilian workers, disaggregated by occupational group and industry. Total compensation includes wages, salaries, and employer costs for employee benefits."@en, "Наблюдение индекса стоимости рабочей силы для общей компенсации гражданских работников, с разбивкой по профессиональным группам и отраслям. Общая компенсация включает заработную плату, оклады и расходы работодателей на льготы работников."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+welfare:criterionType a rdf:Property ;
+    rdfs:domain welfare:EmploymentCostIndex ;
+    rdfs:range xsd:string ;
+    rdfs:label "Criterion type"@en, "Тип критерия"@ru ;
+    rdfs:comment "Type of criterion used to break down the index, such as overall series, occupational group, or industry."@en, "Тип критерия, используемого для разбивки индекса, например общий ряд, профессиональная группа или отрасль."@ru .
+
+welfare:criterionName a rdf:Property ;
+    rdfs:domain welfare:EmploymentCostIndex ;
+    rdfs:range xsd:string ;
+    rdfs:label "Criterion name"@en, "Наименование критерия"@ru ;
+    rdfs:comment "Specific criterion value within the chosen criterion type, such as an occupational group or industry name."@en, "Конкретное значение выбранного типа критерия, например наименование профессиональной группы или отрасли."@ru .
+
+welfare:criterionNote a rdf:Property ;
+    rdfs:domain welfare:EmploymentCostIndex ;
+    rdfs:range xsd:string ;
+    rdfs:label "Criterion note"@en, "Примечание к критерию"@ru ;
+    rdfs:comment "Explanatory note or footnote disclosing the content, scope, or comparability of the criterion or series."@en, "Пояснительное примечание или сноска, раскрывающая содержание, охват или сопоставимость критерия либо ряда."@ru .
+
+welfare:measurementPeriod a rdf:Property ;
+    rdfs:domain welfare:EmploymentCostIndex ;
+    rdfs:range xsd:gYearMonth ;
+    rdfs:label "Measurement period"@en, "Отчётный период"@ru ;
+    rdfs:comment "Year and month for which the employment cost index is measured."@en, "Год и месяц, за который измерен индекс стоимости рабочей силы."@ru .
+
+welfare:costIndexValue a rdf:Property ;
+    rdfs:domain welfare:EmploymentCostIndex ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Employment cost index for benefits"@en, "Индекс стоимости рабочей силы для льгот"@ru ;
+    rdfs:comment "Not seasonally adjusted Employment Cost Index value for total compensation, with December 2005 equal to 100."@en, "Значение индекса стоимости рабочей силы для общей компенсации без сезонной корректировки; базовый уровень: декабрь 2005 г. = 100."@ru .
+
+welfare:threeMonthPercentChange a rdf:Property ;
+    rdfs:domain welfare:EmploymentCostIndex ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Three-month percent change"@en, "Процентное изменение за три месяца"@ru ;
+    rdfs:comment "Percent change for the three months ended at the measurement date."@en, "Процентное изменение за три месяца, завершившиеся датой измерения."@ru .
+
+welfare:twelveMonthPercentChange a rdf:Property ;
+    rdfs:domain welfare:EmploymentCostIndex ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Twelve-month percent change"@en, "Процентное изменение за двенадцать месяцев"@ru ;
+    rdfs:comment "Percent change for the twelve months ended at the measurement date."@en, "Процентное изменение за двенадцать месяцев, завершившиеся датой измерения."@ru .

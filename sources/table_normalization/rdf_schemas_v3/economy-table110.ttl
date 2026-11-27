@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix economy: <http://example.org/economy#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+economy:ProductBatch a rdfs:Class ;
+    rdfs:label "Product batch"@en, "Партия товара"@ru ;
+    rdfs:comment "Product item described by its batch name and quantity."@en, "Товарная позиция, описываемая наименованием партии и количеством."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+economy:item a rdf:Property ;
+    rdfs:domain economy:ProductBatch ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Item identifier"@en, "Идентификатор позиции"@ru ;
+    rdfs:comment "Numeric identifier of the product item."@en, "Числовой идентификатор товарной позиции."@ru .
+
+economy:batch a rdf:Property ;
+    rdfs:domain economy:ProductBatch ;
+    rdfs:range xsd:string ;
+    rdfs:label "Batch name or code"@en, "Наименование или код партии"@ru ;
+    rdfs:comment "Name or code designating the product batch."@en, "Наименование или код, обозначающий партию товара."@ru .
+
+economy:quantity a rdf:Property ;
+    rdfs:domain economy:ProductBatch ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Batch quantity"@en, "Количество в партии"@ru ;
+    rdfs:comment "Number of product units contained in the batch."@en, "Количество единиц товара, содержащихся в партии."@ru .
+
+economy:oldUnitPrice a rdf:Property ;
+    rdfs:domain economy:PriceComparison ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Previous unit price"@en, "Предыдущая цена за единицу"@ru ;
+    rdfs:comment "Unit price before the change, used for price comparison."@en, "Цена за единицу до изменения, используемая для сравнения цен."@ru .
+
+economy:newUnitPrice a rdf:Property ;
+    rdfs:domain economy:PriceComparison ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Updated unit price"@en, "Обновлённая цена за единицу"@ru ;
+    rdfs:comment "Unit price after the change, used for price comparison."@en, "Цена за единицу после изменения, используемая для сравнения цен."@ru .

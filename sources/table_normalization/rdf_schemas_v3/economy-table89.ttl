@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix economy: <http://example.org/economy#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+economy:LoanRepayment a rdfs:Class ;
+    rdfs:label "Loan repayment"@en, "Кредиты в погашении"@ru ;
+    rdfs:comment "Student loans of a program in repayment at the start of a fiscal quarter."@en, "Студенческие кредиты программы, находившиеся в погашении на начало финансового квартала."@ru .
+
+economy:LoanDefault a rdfs:Class ;
+    rdfs:label "Loan default"@en, "Дефолт по кредитам"@ru ;
+    rdfs:comment "Student loans entering default during a quarter by default category."@en, "Студенческие кредиты, ушедшие в дефолт за квартал, по категории дефолта."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+economy:hasLoanDefault a rdf:Property ;
+    rdfs:domain economy:LoanRepayment ;
+    rdfs:range economy:LoanDefault ;
+    rdfs:label "Loan defaults"@en, "Дефолты по кредитам"@ru ;
+    rdfs:comment "Links a repayment quarter with the loans entering default in it."@en, "Связывает квартал погашения с кредитами, ушедшими в дефолт в этом квартале."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+economy:loanProgram a rdf:Property ;
+    rdfs:domain economy:LoanRepayment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Loan program"@en, "Программа кредитов"@ru ;
+    rdfs:comment "Federal student loan program, such as Direct Loans."@en, "Федеральная программа студенческих кредитов, например Direct Loans."@ru .
+
+economy:fiscalYear a rdf:Property ;
+    rdfs:domain economy:LoanRepayment ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Fiscal year"@en, "Финансовый год"@ru ;
+    rdfs:comment "Federal fiscal year that begins on October 1 and ends on September 30."@en, "Федеральный финансовый год, который начинается 1 октября и заканчивается 30 сентября."@ru .
+
+economy:quarter a rdf:Property ;
+    rdfs:domain economy:LoanRepayment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Quarter"@en, "Квартал"@ru ;
+    rdfs:comment "Quarter of the fiscal year: Q1, Q2, Q3 or Q4."@en, "Квартал финансового года: Q1, Q2, Q3 или Q4."@ru .
+
+economy:dollarsInRepayment a rdf:Property ;
+    rdfs:domain economy:LoanRepayment ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Dollars in repayment (billions)"@en, "Сумма в погашении (млрд долл.)"@ru ;
+    rdfs:comment "Dollars in repayment from the previous quarter in billions."@en, "Сумма кредитов в погашении на конец предыдущего квартала в миллиардах долларов."@ru .
+
+economy:recipientsInRepayment a rdf:Property ;
+    rdfs:domain economy:LoanRepayment ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Recipients in repayment (thousands)"@en, "Заёмщики в погашении (тыс.)"@ru ;
+    rdfs:comment "Recipients in repayment from the previous quarter in thousands."@en, "Число заёмщиков в погашении на конец предыдущего квартала в тысячах."@ru .
+
+economy:defaultCategory a rdf:Property ;
+    rdfs:domain economy:LoanDefault ;
+    rdfs:range xsd:string ;
+    rdfs:label "Default category"@en, "Категория дефолта"@ru ;
+    rdfs:comment "Category of default: total, defaulting for the first time or for at least the second time; the total cannot be restored from the parts because its borrower count is unique."@en, "Категория дефолта: всего, впервые или повторно; итог нельзя восстановить из частей, потому что в нём число заёмщиков считается без повторов."@ru .
+
+economy:dollars a rdf:Property ;
+    rdfs:domain economy:LoanDefault ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Dollars (billions)"@en, "Сумма (млрд долл.)"@ru ;
+    rdfs:comment "Balance of loans entering default during the quarter in billions of dollars."@en, "Сумма кредитов, ушедших в дефолт за квартал, в миллиардах долларов."@ru .
+
+economy:borrowersNumber a rdf:Property ;
+    rdfs:domain economy:LoanDefault ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Borrowers (thousands)"@en, "Заёмщики (тыс.)"@ru ;
+    rdfs:comment "Number of borrowers whose loans entered default during the quarter in thousands."@en, "Число заёмщиков, чьи кредиты ушли в дефолт за квартал, в тысячах."@ru .

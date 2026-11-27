@@ -1,0 +1,42 @@
+@prefix env: <http://example.org/environment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+env:MineralEnergyResource a rdfs:Class ;
+    rdfs:label "Mineral and energy resources"@en, "Минеральные и энергетические ресурсы"@ru ;
+    rdfs:comment "Statistics representing the stock or flow of a particular mineral or energy resource of Canada for a given time period"@en, "Статистические данные, представляющие запас или поток конкретного минерального или энергетического ресурса Канады для данного временного периода"@ru .
+
+# ==================== Datatype Properties ====================
+
+env:timePeriod a rdf:Property ;
+    rdfs:domain env:MineralEnergyResource ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+env:resource a rdf:Property ;
+    rdfs:domain env:MineralEnergyResource ;
+    rdfs:range xsd:string ;
+    rdfs:label "Resource"@en, "Ресурс"@ru ;
+    rdfs:comment "The name of the specific mineral or energy resource being measured"@en, "Название конкретного минерального или энергетического ресурса, который измеряется"@ru .
+
+env:combinedMeasureUnit a rdf:Property ;
+    rdfs:domain env:MineralEnergyResource ;
+    rdfs:range xsd:string ;
+    rdfs:label "Combined unit of measure"@en, "Комбинированная единица измерения"@ru ;
+    rdfs:comment "Combined unit of measurement for the resource"@en, "Комбинированная единица измерения ресурса"@ru .
+
+env:stocksAndFlows a rdf:Property ;
+    rdfs:domain env:MineralEnergyResource ;
+    rdfs:range xsd:string ;
+    rdfs:label "Stocks and flows"@en, "Запасы и потоки"@ru ;
+    rdfs:comment "The specific metric of stock or flow being recorde"@en, "Конкретный показатель запаса или потока, который регистрируется"@ru .
+
+env:numericalValue a rdf:Property ;
+    rdfs:domain env:MineralEnergyResource ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Numerical value"@en, "Числовое значение"@ru ;
+    rdfs:comment "The numerical value of the stock or flow for the given resource and time period"@en, "Числовое значение запаса или потока для данного ресурса и временного периода"@ru .

@@ -1,0 +1,132 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix geography: <http://example.org/geography#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+geography:Lens a rdfs:Class ;
+    rdfs:label "Lens"@en, "Линза"@ru ;
+    rdfs:comment "Ore lens with the mine to which it belongs."@en, "Рудная линза с шахтой, к которой она относится."@ru .
+
+geography:RockMassQuality a rdfs:Class ;
+    rdfs:label "Rock mass quality"@en, "Качество скального массива"@ru ;
+    rdfs:comment "Q-system rock mass parameters recorded at a point of a drive."@en, "Параметры скального массива по системе Q, записанные в точке выработки."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+geography:hasRockMassQuality a rdf:Property ;
+    rdfs:domain geography:Lens ;
+    rdfs:range geography:RockMassQuality ;
+    rdfs:label "Rock mass quality records"@en, "Записи о качестве массива"@ru ;
+    rdfs:comment "Links a lens with the rock mass quality records made in it."@en, "Связывает линзу с записями о качестве скального массива в ней."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+geography:lensName a rdf:Property ;
+    rdfs:domain geography:Lens ;
+    rdfs:range xsd:string ;
+    rdfs:label "Lens name"@en, "Название линзы"@ru ;
+    rdfs:comment "Name or code of the lens, such as HOUGO."@en, "Название или код линзы, например HOUGO."@ru .
+
+geography:mine a rdf:Property ;
+    rdfs:domain geography:Lens ;
+    rdfs:range xsd:string ;
+    rdfs:label "Mine"@en, "Шахта"@ru ;
+    rdfs:comment "Code of the mine, such as GOSS or SCUD."@en, "Код шахты, например GOSS или SCUD."@ru .
+
+geography:date a rdf:Property ;
+    rdfs:domain geography:RockMassQuality ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date"@en, "Дата"@ru ;
+    rdfs:comment "Date of the record."@en, "Дата записи."@ru .
+
+geography:generalSource a rdf:Property ;
+    rdfs:domain geography:RockMassQuality ;
+    rdfs:range xsd:integer ;
+    rdfs:label "General source"@en, "General source"@ru ;
+    rdfs:comment "Value of the General source column as given in the table."@en, "Значение столбца General source, как в таблице."@ru .
+
+geography:driveType a rdf:Property ;
+    rdfs:domain geography:RockMassQuality ;
+    rdfs:range xsd:string ;
+    rdfs:label "Drive type"@en, "Выработка"@ru ;
+    rdfs:comment "Code of the drive, such as 21X."@en, "Код выработки, например 21X."@ru .
+
+geography:xCoordinate a rdf:Property ;
+    rdfs:domain geography:RockMassQuality ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "X"@en, "X"@ru ;
+    rdfs:comment "X coordinate of the point."@en, "Координата X точки."@ru .
+
+geography:yCoordinate a rdf:Property ;
+    rdfs:domain geography:RockMassQuality ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Y"@en, "Y"@ru ;
+    rdfs:comment "Y coordinate of the point."@en, "Координата Y точки."@ru .
+
+geography:zCoordinate a rdf:Property ;
+    rdfs:domain geography:RockMassQuality ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Z"@en, "Z"@ru ;
+    rdfs:comment "Z coordinate of the point."@en, "Координата Z точки."@ru .
+
+geography:stratigraphy a rdf:Property ;
+    rdfs:domain geography:RockMassQuality ;
+    rdfs:range xsd:string ;
+    rdfs:label "Stratigraphy"@en, "Стратиграфия"@ru ;
+    rdfs:comment "Stratigraphic code, such as GG6."@en, "Код стратиграфии, например GG6."@ru .
+
+geography:lithology a rdf:Property ;
+    rdfs:domain geography:RockMassQuality ;
+    rdfs:range xsd:string ;
+    rdfs:label "Lithology"@en, "Литология"@ru ;
+    rdfs:comment "Lithology code, such as SEDS."@en, "Код породы, например SEDS."@ru .
+
+geography:rqd a rdf:Property ;
+    rdfs:domain geography:RockMassQuality ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "RQD"@en, "RQD"@ru ;
+    rdfs:comment "Rock quality designation."@en, "Показатель качества породы RQD."@ru .
+
+geography:jn a rdf:Property ;
+    rdfs:domain geography:RockMassQuality ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Jn"@en, "Jn"@ru ;
+    rdfs:comment "Joint set number."@en, "Число систем трещин Jn."@ru .
+
+geography:jr a rdf:Property ;
+    rdfs:domain geography:RockMassQuality ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Jr"@en, "Jr"@ru ;
+    rdfs:comment "Joint roughness number."@en, "Шероховатость трещин Jr."@ru .
+
+geography:ja a rdf:Property ;
+    rdfs:domain geography:RockMassQuality ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Ja"@en, "Ja"@ru ;
+    rdfs:comment "Joint alteration number."@en, "Изменённость трещин Ja."@ru .
+
+geography:jw a rdf:Property ;
+    rdfs:domain geography:RockMassQuality ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Jw"@en, "Jw"@ru ;
+    rdfs:comment "Joint water reduction factor."@en, "Коэффициент обводнённости трещин Jw."@ru .
+
+geography:srf a rdf:Property ;
+    rdfs:domain geography:RockMassQuality ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "SRF"@en, "SRF"@ru ;
+    rdfs:comment "Stress reduction factor."@en, "Коэффициент напряжённого состояния SRF."@ru .
+
+geography:perimeterCondition a rdf:Property ;
+    rdfs:domain geography:RockMassQuality ;
+    rdfs:range xsd:string ;
+    rdfs:label "Perimeter condition"@en, "Состояние контура"@ru ;
+    rdfs:comment "Condition of the excavation perimeter as given in the table, such as Good or Fair."@en, "Состояние контура выработки, как в таблице, например Good или Fair."@ru .

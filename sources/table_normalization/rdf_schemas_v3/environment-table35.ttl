@@ -1,0 +1,36 @@
+@prefix env: <http://example.org/environment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+env:PathogenLRT a rdfs:Class ;
+    rdfs:label "Pathogen LRT"@en, "LRT патоген"@ru ;
+    rdfs:comment "A statistical record representing the Log Reduction Target (LRT) for a specific pathogen and metric, given an end use and source of water"@en, "Статистическая запись, представляющая целевой показатель снижения логарифма для конкретного патогена и метрики при заданном назначении использования и источнике воды"@ru .
+
+# ==================== Datatype Properties ====================
+
+env:endUse a rdf:Property ;
+    rdfs:domain env:PathogenLRT ;
+    rdfs:range xsd:string ;
+    rdfs:label "End use"@en, "Назначение использования"@ru ;
+    rdfs:comment "The intended end use of the water"@en, "Предназначенное назначение использования воды"@ru .
+
+env:waterSource a rdf:Property ;
+    rdfs:domain env:PathogenLRT ;
+    rdfs:range xsd:string ;
+    rdfs:label "Source of water"@en, "Источник воды"@ru ;
+    rdfs:comment "The source of the water being analyzed"@en, "Источник анализируемой воды"@ru .
+
+env:pathogen a rdf:Property ;
+    rdfs:domain env:PathogenLRT ;
+    rdfs:range xsd:string ;
+    rdfs:label "Pathogen"@en, "Патоген"@ru ;
+    rdfs:comment "The specific pathogen being measured"@en, "Конкретный патоген, который измеряется"@ru .
+
+env:lrtInf a rdf:Property ;
+    rdfs:domain env:PathogenLRT ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "LRT inf"@en, "LRT инф"@ru ;
+    rdfs:comment "The numerical or categorical value of the Log Reduction Target metric (LRT inf)"@en, "Числовое или категориальное значение целевого показателя снижения логарифмической нагрузки"@ru .

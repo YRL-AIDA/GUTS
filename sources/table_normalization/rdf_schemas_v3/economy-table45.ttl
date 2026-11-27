@@ -1,0 +1,262 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix economy: <http://example.org/economy#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+economy:IntercompanyTransaction a rdfs:Class ;
+    rdfs:label "Intercompany transaction"@en, "Внутрифирменные транзакция"@ru ;
+    rdfs:comment "Accounting entry data describing a financial transaction performed within a corporate group."@en, "Данные бухгалтерской проводки, описывающие финансовую операцию, выполненную внутри корпоративной группы."@ru .
+
+economy:Customer a rdfs:Class ;
+    rdfs:label "Customer"@en, "Клиент"@ru ;
+    rdfs:comment "Customer participating in intercompany transactions."@en, "Клиент, участвующий во внутригрупповых операциях."@ru .
+
+economy:AccountingDocument a rdfs:Class ;
+    rdfs:label "Accounting document"@en, "Бухгалтерский документ"@ru ;
+    rdfs:comment "Accounting document that groups one or more transaction line items."@en, "Бухгалтерский документ, объединяющий одну или несколько позиций транзакций."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+economy:hasTransaction a rdf:Property ;
+    rdfs:domain economy:Customer ;
+    rdfs:range economy:IntercompanyTransaction ;
+    rdfs:label "Related transaction"@en, "Связанная транзакция"@ru ;
+    rdfs:comment "Links a customer or vendor with an intercompany transaction involving that party."@en, "Связывает клиента или поставщика с внутригрупповой транзакцией, в которой участвует этот контрагент."@ru .
+
+economy:hasLineItem a rdf:Property ;
+    rdfs:domain economy:AccountingDocument ;
+    rdfs:range economy:IntercompanyTransaction ;
+    rdfs:label "Document line item"@en, "Позиция документа"@ru ;
+    rdfs:comment "Links an accounting document with one of its transaction line items."@en, "Связывает бухгалтерский документ с одной из его позиций транзакций."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+economy:igAccount a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "Intercompany general account code"@en, "Код внутрифирменного общего счёта"@ru ;
+    rdfs:comment "Identifier of the intercompany general ledger account."@en, "Идентификатор счёта внутрифирменной главной книги."@ru .
+
+economy:profitCenter a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "Profit center code"@en, "Код центра прибыли"@ru ;
+    rdfs:comment "Internal code of the profit center responsible for the transaction."@en, "Внутренний код центра прибыли, ответственного за транзакцию."@ru .
+
+economy:glAccount a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "General ledger account number"@en, "Номер счёта главной книги"@ru ;
+    rdfs:comment "General Ledger (GL) account number used to post the transaction."@en, "Номер счёта главной книги (GL), используемый для отражения транзакции."@ru .
+
+economy:reportingUnitABACUSBA a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "ABACUS BA reporting unit"@en, "Отчётное подразделение ABACUS BA"@ru ;
+    rdfs:comment "Code or identifier of the ABACUS BA reporting unit."@en, "Код или идентификатор отчётного подразделения ABACUS BA."@ru .
+
+economy:reportingUnitABACUSBU a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:integer ;
+    rdfs:label "ABACUS BU reporting unit"@en, "Отчётное подразделение ABACUS BU"@ru ;
+    rdfs:comment "Numeric identifier of the ABACUS BU reporting unit."@en, "Числовой идентификатор отчётного подразделения ABACUS BU."@ru .
+
+economy:igCode a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "Intercompany general code"@en, "Общий внутрифирменный код"@ru ;
+    rdfs:comment "General code used for intercompany processing."@en, "Общий код, используемый для внутрифирменной обработки."@ru .
+
+economy:counterpartyABACUSBACode a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "Counterparty ABACUS BA code"@en, "Код контрагента ABACUS BA"@ru ;
+    rdfs:comment "ABACUS BA code identifying the counterparty."@en, "Код контрагента в системе ABACUS BA."@ru .
+
+economy:usgpnode a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "USGP node code"@en, "Код узла USGP"@ru ;
+    rdfs:comment "USGP node identifier associated with the transaction."@en, "Идентификатор узла USGP, связанный с транзакцией."@ru .
+
+economy:documentItem a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Document item number"@en, "Номер позиции документа"@ru ;
+    rdfs:comment "Line item number inside the accounting document."@en, "Номер позиции внутри бухгалтерского документа."@ru .
+
+economy:currencyType a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "Currency code"@en, "Код валюты"@ru ;
+    rdfs:comment "Currency code for the transaction amount."@en, "Код валюты суммы транзакции."@ru .
+
+economy:amountInLocalCurrency a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Local currency amount"@en, "Сумма в местной валюте"@ru ;
+    rdfs:comment "Transaction amount expressed in the local currency of the posting entity."@en, "Сумма транзакции в местной валюте организации, отражающей операцию."@ru .
+
+economy:revenueAmountCumulative a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Cumulative revenue amount"@en, "Совокупная сумма выручки"@ru ;
+    rdfs:comment "Cumulative revenue amount recorded in DC."@en, "Совокупная сумма выручки, зафиксированная в DC."@ru .
+
+economy:exchangeRate a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Currency exchange rate"@en, "Обменный курс валюты"@ru ;
+    rdfs:comment "Exchange rate applied for currency conversion."@en, "Обменный курс, применяемый для конвертации валюты."@ru .
+
+economy:translatedAmount a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Reporting currency amount"@en, "Сумма в отчётной валюте"@ru ;
+    rdfs:comment "Transaction amount converted into the reporting currency using the exchange rate."@en, "Сумма транзакции, конвертированная в отчётную валюту с использованием обменного курса."@ru .
+
+economy:sopoDate a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:date ;
+    rdfs:label "Sales or purchase order date"@en, "Дата заказа на продажу или покупку"@ru ;
+    rdfs:comment "Date of the Sales Order (SO) or Purchase Order (PO) referenced by this transaction."@en, "Дата заказа на продажу (SO) или заказа на покупку (PO), на который ссылается транзакция."@ru .
+
+economy:sopoNumber a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Sales or purchase order number"@en, "Номер заказа на продажу или покупку"@ru ;
+    rdfs:comment "Number of the Sales Order (SO) or Purchase Order (PO) referenced by this transaction."@en, "Номер заказа на продажу (SO) или заказа на покупку (PO), на который ссылается транзакция."@ru .
+
+economy:orderItem a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Order item number"@en, "Номер позиции заказа"@ru ;
+    rdfs:comment "Line item number within the referenced order."@en, "Номер позиции внутри связанного заказа."@ru .
+
+economy:orderNumber a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Internal order number"@en, "Внутренний номер заказа"@ru ;
+    rdfs:comment "Internal order number used for tracking."@en, "Внутренний номер заказа, используемый для отслеживания."@ru .
+
+economy:salesperson a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Salesperson identifier"@en, "Идентификатор продавца"@ru ;
+    rdfs:comment "Identifier or number of the salesperson responsible for the transaction."@en, "Идентификатор или номер продавца, ответственного за транзакцию."@ru .
+
+economy:citNumber a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "CIT number"@en, "Номер CIT"@ru ;
+    rdfs:comment "CIT number associated with the transaction."@en, "Номер CIT, связанный с транзакцией."@ru .
+
+economy:customerPOorVenRefNumber a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "Customer order or vendor reference number"@en, "Номер заказа клиента или ссылочный номер поставщика"@ru ;
+    rdfs:comment "Customer purchase order number or vendor reference number."@en, "Номер заказа клиента или ссылочный номер поставщика."@ru .
+
+economy:abacusCITCodeAsPerICV a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "ABACUS CIT code per ICV"@en, "Код ABACUS CIT согласно ICV"@ru ;
+    rdfs:comment "CIT code according to InterCompany Verification mapping in the ABACUS system."@en, "Код CIT в соответствии с сопоставлением внутрифирменной проверки (ICV) в системе ABACUS."@ru .
+
+economy:abacusBUCodeAsPerICV a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "ABACUS BU code per ICV"@en, "Код ABACUS BU согласно ICV"@ru ;
+    rdfs:comment "Business unit code according to intercompany verification mapping in the ABACUS system."@en, "Код бизнес-единицы в соответствии с сопоставлением внутрифирменной проверки (ICV) в системе ABACUS."@ru .
+
+economy:abacusPGCodeAsPerICV a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:integer ;
+    rdfs:label "ABACUS PG code per ICV"@en, "Код ABACUS PG согласно ICV"@ru ;
+    rdfs:comment "PG code according to intercompany verification mapping in the ABACUS system."@en, "Код PG в соответствии с сопоставлением внутрифирменной проверки (ICV) в системе ABACUS."@ru .
+
+economy:abacusCodeAsPerNewICV a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "ABACUS code per new ICV"@en, "Код ABACUS согласно новой ICV"@ru ;
+    rdfs:comment "ABACUS code assigned according to the new ICV mapping."@en, "Код ABACUS, присвоенный согласно новому сопоставлению ICV."@ru .
+
+economy:citCodeAsPerNewICV a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "CIT code per new ICV"@en, "Код CIT согласно новой ICV"@ru ;
+    rdfs:comment "CIT code assigned according to the new ICV mapping."@en, "Код CIT, присвоенный согласно новому сопоставлению ICV."@ru .
+
+economy:buCodeAsPerNewICV a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "BU code per new ICV"@en, "Код бизнес-единицы согласно новой ICV"@ru ;
+    rdfs:comment "Business unit code assigned according to the new ICV mapping."@en, "Код бизнес-единицы, присвоенный согласно новому сопоставлению ICV."@ru .
+
+economy:pgCodeAsPerNewICV a rdf:Property ;
+    rdfs:domain economy:IntercompanyTransaction ;
+    rdfs:range xsd:integer ;
+    rdfs:label "PG code per new ICV"@en, "Код PG согласно новой ICV"@ru ;
+    rdfs:comment "PG code assigned according to the new ICV mapping."@en, "Код PG, присвоенный согласно новому сопоставлению ICV."@ru .
+
+economy:customerNumber a rdf:Property ;
+    rdfs:domain economy:Customer ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Customer number"@en, "Номер клиента"@ru ;
+    rdfs:comment "Unique identifier of the customer involved in the transaction."@en, "Уникальный идентификатор клиента, участвующего в транзакции."@ru .
+
+economy:customerName a rdf:Property ;
+    rdfs:domain economy:Customer ;
+    rdfs:range xsd:string ;
+    rdfs:label "Customer name"@en, "Наименование клиента"@ru ;
+    rdfs:comment "Name of the customer entity."@en, "Наименование юридического лица клиента."@ru .
+
+economy:countryCode a rdf:Property ;
+    rdfs:domain economy:Customer ;
+    rdfs:range xsd:string ;
+    rdfs:label "Country code"@en, "Код страны"@ru ;
+    rdfs:comment "ISO code of the country where the counterparty is registered."@en, "ISO-код страны регистрации контрагента."@ru .
+
+economy:documentNumber a rdf:Property ;
+    rdfs:domain economy:AccountingDocument ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Document number"@en, "Номер документа"@ru ;
+    rdfs:comment "Unique number identifying the accounting document and the related financial transaction."@en, "Уникальный номер, идентифицирующий бухгалтерский документ и связанную с ним финансовую транзакцию."@ru .
+
+economy:referenceNumber a rdf:Property ;
+    rdfs:domain economy:AccountingDocument ;
+    rdfs:range xsd:string ;
+    rdfs:label "Reference number"@en, "Ссылочный номер"@ru ;
+    rdfs:comment "Reference number associated with the document."@en, "Ссылочный номер, связанный с документом."@ru .
+
+economy:documentDate a rdf:Property ;
+    rdfs:domain economy:AccountingDocument ;
+    rdfs:range xsd:date ;
+    rdfs:label "Document date"@en, "Дата документа"@ru ;
+    rdfs:comment "Date on which the source document was created."@en, "Дата создания исходного документа."@ru .
+
+economy:invoiceDueDate a rdf:Property ;
+    rdfs:domain economy:AccountingDocument ;
+    rdfs:range xsd:date ;
+    rdfs:label "Invoice due date"@en, "Срок оплаты счёта"@ru ;
+    rdfs:comment "Date by which the invoice must be paid."@en, "Дата, до которой должен быть оплачен счёт."@ru .
+
+economy:postingDate a rdf:Property ;
+    rdfs:domain economy:AccountingDocument ;
+    rdfs:range xsd:date ;
+    rdfs:label "Posting date"@en, "Дата отражения в учёте"@ru ;
+    rdfs:comment "Date on which the transaction was posted to the general ledger."@en, "Дата отражения транзакции в главной бухгалтерской книге."@ru .
+
+economy:documentType a rdf:Property ;
+    rdfs:domain economy:AccountingDocument ;
+    rdfs:range xsd:string ;
+    rdfs:label "Document type code"@en, "Код типа документа"@ru ;
+    rdfs:comment "Code identifying the type of the accounting document."@en, "Код, определяющий тип бухгалтерского документа."@ru .

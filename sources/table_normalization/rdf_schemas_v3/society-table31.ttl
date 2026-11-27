@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix society: <http://example.org/society#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+society:FamilyPlanningCoverage a rdfs:Class ;
+    rdfs:label "Family planning coverage"@en, "Страховое покрытие услуг по планированию семьи"@ru ;
+    rdfs:comment "LiST input data on family planning coverage under mitigation measures."@en, "Входные данные модели LiST об охвате услугами по планированию семьи при мерах смягчения последствий."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+society:methodCategory a rdf:Property ;
+    rdfs:domain society:FamilyPlanningCoverage ;
+    rdfs:range xsd:string ;
+    rdfs:label "Contraceptive method category"@en, "Категория метода контрацепции"@ru ;
+    rdfs:comment "High-level category of the contraceptive method."@en, "Категория верхнего уровня для метода контрацепции."@ru .
+
+society:methodName a rdf:Property ;
+    rdfs:domain society:FamilyPlanningCoverage ;
+    rdfs:range xsd:string ;
+    rdfs:label "Contraceptive method name"@en, "Наименование метода контрацепции"@ru ;
+    rdfs:comment "Specific name or description of the contraceptive method."@en, "Конкретное наименование или описание метода контрацепции."@ru .
+
+society:year a rdf:Property ;
+    rdfs:domain society:FamilyPlanningCoverage ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Observation year"@en, "Год наблюдения"@ru ;
+    rdfs:comment "Calendar year of the observation."@en, "Календарный год наблюдения."@ru .
+
+society:coveragePercent a rdf:Property ;
+    rdfs:domain society:FamilyPlanningCoverage ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Coverage percentage"@en, "Процент охвата"@ru ;
+    rdfs:comment "Coverage percentage for the given method over the specified period."@en, "Процент охвата для данного метода за указанный период."@ru .

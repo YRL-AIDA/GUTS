@@ -1,0 +1,24 @@
+@prefix eco: <http://example.org/economy#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+eco:EmployeeTravelExpenseStatement a rdfs:Class ;
+    rdfs:label "Employee travel expense statement"@en, "Отчет о командировочных расходах сотрудников"@ru ;
+    rdfs:comment "Statement of employee travel expenses including car allowance for the period January 1 to September 30, 2023"@en, "Отчет о командировочных расходах сотрудников, включая компенсацию за использование служебного автомобиля, за период с 1 января по 30 сентября 2023 года"@ru .
+
+# ==================== Datatype Properties ====================
+
+eco:employeeName a rdf:Property ;
+    rdfs:domain eco:EmployeeTravelExpenseStatement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Employee name"@en, "Имя сотрудника"@ru ;
+    rdfs:comment "Full name of the employee"@en, "Полное имя сотрудника"@ru .
+
+eco:totalCarAllowance a rdf:Property ;
+    rdfs:domain eco:EmployeeTravelExpenseStatement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total car allowance"@en, "Общая сумма автомобильной компенсации"@ru ;
+    rdfs:comment "Total car allowance amount in the base currency for the employee during the reporting period"@en, "Общая сумма компенсации за использование автомобиля в базовой валюте для сотрудника за отчетный период"@ru .

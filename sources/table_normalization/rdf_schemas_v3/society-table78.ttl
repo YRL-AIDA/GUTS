@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix society: <http://example.org/society#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+society:Region a rdfs:Class ;
+    rdfs:label "Region"@en, "Регион"@ru ;
+    rdfs:comment "Geographic region, country, or territory for which confidence interval bounds of the women-to-men mortality rate ratio are reported."@en, "Географический регион, страна или территория, для которых приводятся границы доверительного интервала отношения показателей смертности женщин и мужчин."@ru .
+
+society:MusculoskeletalDisorderMortality a rdfs:Class ;
+    rdfs:label "Musculoskeletal disorder mortality statistics"@en, "Статистика смертности от заболеваний опорно-двигательного аппарата"@ru ;
+    rdfs:comment "Pooled age-standardized mortality rates for musculoskeletal disorders per million person-years, with 95% confidence intervals."@en, "Сводные стандартизированные по возрасту показатели смертности от заболеваний опорно-двигательного аппарата на миллион человеко-лет с 95%-м доверительным интервалом."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+society:hasMusculoskeletalDisorderMortality a rdf:Property ;
+    rdfs:domain society:Region ;
+    rdfs:range society:MusculoskeletalDisorderMortality ;
+    rdfs:label "Mortality observation"@en, "Наблюдение смертности"@ru ;
+    rdfs:comment "Links a region with a musculoskeletal disorder mortality observation."@en, "Связывает регион с наблюдением смертности от заболеваний опорно-двигательного аппарата."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+society:region a rdf:Property ;
+    rdfs:domain society:Region ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region name"@en, "Наименование региона"@ru ;
+    rdfs:comment "Name of the geographic region, country, or territory."@en, "Наименование географического региона, страны или территории."@ru .
+
+society:ratioLower a rdf:Property ;
+    rdfs:domain society:Region ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Ratio confidence lower bound"@en, "Нижняя граница доверительного интервала отношения"@ru ;
+    rdfs:comment "Lower bound of the confidence interval for the women-to-men mortality rate ratio."@en, "Нижняя граница доверительного интервала отношения показателей смертности женщин и мужчин."@ru .
+
+society:ratioUpper a rdf:Property ;
+    rdfs:domain society:Region ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Ratio confidence upper bound"@en, "Верхняя граница доверительного интервала отношения"@ru ;
+    rdfs:comment "Upper bound of the confidence interval for the women-to-men mortality rate ratio."@en, "Верхняя граница доверительного интервала отношения показателей смертности женщин и мужчин."@ru .
+
+society:sex a rdf:Property ;
+    rdfs:domain society:MusculoskeletalDisorderMortality ;
+    rdfs:range xsd:string ;
+    rdfs:label "Sex category"@en, "Категория пола"@ru ;
+    rdfs:comment "Sex category for which the mortality rate is reported."@en, "Категория пола, для которой приводится показатель смертности."@ru .
+
+society:rate a rdf:Property ;
+    rdfs:domain society:MusculoskeletalDisorderMortality ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Mortality rate"@en, "Показатель смертности"@ru ;
+    rdfs:comment "Age-standardized musculoskeletal disorder mortality rate."@en, "Стандартизированный по возрасту показатель смертности от заболеваний опорно-двигательного аппарата."@ru .
+
+society:lowerBound a rdf:Property ;
+    rdfs:domain society:MusculoskeletalDisorderMortality ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Mortality rate lower bound"@en, "Нижняя граница показателя смертности"@ru ;
+    rdfs:comment "Lower bound of the confidence interval for the mortality rate."@en, "Нижняя граница доверительного интервала показателя смертности."@ru .
+
+society:upperBound a rdf:Property ;
+    rdfs:domain society:MusculoskeletalDisorderMortality ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Mortality rate upper bound"@en, "Верхняя граница показателя смертности"@ru ;
+    rdfs:comment "Upper bound of the confidence interval for the mortality rate."@en, "Верхняя граница доверительного интервала показателя смертности."@ru .

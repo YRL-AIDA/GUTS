@@ -1,0 +1,170 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix health: <http://example.org/health#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+health:FoodItem a rdfs:Class ;
+    rdfs:label "Food item"@en, "Продукт"@ru ;
+    rdfs:comment "Food or drink with its serving and nutritional values."@en, "Еда или напиток с размером порции и пищевой ценностью."@ru .
+
+health:Meal a rdfs:Class ;
+    rdfs:label "Meal"@en, "Приём пищи"@ru ;
+    rdfs:comment "Food item eaten or drunk at a date and time of day."@en, "Продукт, съеденный или выпитый в определённый день и время суток."@ru .
+
+health:PhysicalActivity a rdfs:Class ;
+    rdfs:label "Physical activity"@en, "Физическая активность"@ru ;
+    rdfs:comment "Exercise done at a date and time of day."@en, "Упражнение, выполненное в определённый день и время суток."@ru .
+
+health:BodyWeightObservation a rdfs:Class ;
+    rdfs:label "Body weight observation"@en, "Наблюдение за весом тела"@ru ;
+    rdfs:comment "Body weight recorded at a date and time of day."@en, "Вес тела, записанный в определённый день и время суток."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+health:hasMeal a rdf:Property ;
+    rdfs:domain health:FoodItem ;
+    rdfs:range health:Meal ;
+    rdfs:label "Meals"@en, "Приёмы пищи"@ru ;
+    rdfs:comment "Links a food item with the meals in which it was eaten or drunk."@en, "Связывает продукт с приёмами пищи, в которых его съели или выпили."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+health:foodName a rdf:Property ;
+    rdfs:domain health:FoodItem ;
+    rdfs:range xsd:string ;
+    rdfs:label "Food name"@en, "Название продукта"@ru ;
+    rdfs:comment "Description of the food or drink, such as roast beef or wheat toast."@en, "Описание еды или напитка, например ростбиф или пшеничный тост."@ru .
+
+health:foodCategory a rdf:Property ;
+    rdfs:domain health:FoodItem ;
+    rdfs:range xsd:string ;
+    rdfs:label "Food category"@en, "Категория продукта"@ru ;
+    rdfs:comment "Food category, such as fruits, grains or beer."@en, "Категория продукта, например фрукты, крупы или пиво."@ru .
+
+health:servingUnit a rdf:Property ;
+    rdfs:domain health:FoodItem ;
+    rdfs:range xsd:string ;
+    rdfs:label "Serving"@en, "Порция"@ru ;
+    rdfs:comment "Serving size written together with its unit, such as 2 cups or 6 oz."@en, "Размер порции вместе с единицей измерения, например 2 чашки или 6 унций."@ru .
+
+health:itemType a rdf:Property ;
+    rdfs:domain health:FoodItem ;
+    rdfs:range xsd:string ;
+    rdfs:label "Item type"@en, "Тип продукта"@ru ;
+    rdfs:comment "Kind of food item, food or drink."@en, "Вид продукта: еда или напиток."@ru .
+
+health:kcal a rdf:Property ;
+    rdfs:domain health:FoodItem ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Calories"@en, "Калории"@ru ;
+    rdfs:comment "Energy value of one serving in kilocalories."@en, "Энергетическая ценность одной порции в килокалориях."@ru .
+
+health:fat a rdf:Property ;
+    rdfs:domain health:FoodItem ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Fat (g)"@en, "Жиры (г)"@ru ;
+    rdfs:comment "Fat content of one serving in grams."@en, "Содержание жиров в одной порции в граммах."@ru .
+
+health:carb a rdf:Property ;
+    rdfs:domain health:FoodItem ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Carbohydrates (g)"@en, "Углеводы (г)"@ru ;
+    rdfs:comment "Carbohydrate content of one serving in grams."@en, "Содержание углеводов в одной порции в граммах."@ru .
+
+health:prot a rdf:Property ;
+    rdfs:domain health:FoodItem ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Protein (g)"@en, "Белки (г)"@ru ;
+    rdfs:comment "Protein content of one serving in grams."@en, "Содержание белков в одной порции в граммах."@ru .
+
+health:date a rdf:Property ;
+    rdfs:domain health:Meal ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date"@en, "Дата"@ru ;
+    rdfs:comment "Date of the meal."@en, "Дата приёма пищи."@ru .
+
+health:timeOfDay a rdf:Property ;
+    rdfs:domain health:Meal ;
+    rdfs:range xsd:string ;
+    rdfs:label "Time of day"@en, "Время суток"@ru ;
+    rdfs:comment "Time of day: morning, afternoon or evening."@en, "Время суток: утро, день или вечер."@ru .
+
+health:date a rdf:Property ;
+    rdfs:domain health:PhysicalActivity ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date"@en, "Дата"@ru ;
+    rdfs:comment "Date of the activity."@en, "Дата занятия."@ru .
+
+health:timeOfDay a rdf:Property ;
+    rdfs:domain health:PhysicalActivity ;
+    rdfs:range xsd:string ;
+    rdfs:label "Time of day"@en, "Время суток"@ru ;
+    rdfs:comment "Time of day: morning, afternoon or evening."@en, "Время суток: утро, день или вечер."@ru .
+
+health:activityType a rdf:Property ;
+    rdfs:domain health:PhysicalActivity ;
+    rdfs:range xsd:string ;
+    rdfs:label "Activity type"@en, "Вид активности"@ru ;
+    rdfs:comment "Activity type, such as running, weightlifting or yoga."@en, "Вид активности, например бег, силовые упражнения или йога."@ru .
+
+health:activityDescription a rdf:Property ;
+    rdfs:domain health:PhysicalActivity ;
+    rdfs:range xsd:string ;
+    rdfs:label "Activity description"@en, "Описание занятия"@ru ;
+    rdfs:comment "Free description of the activity, such as morning run in park or bicep curls."@en, "Свободное описание занятия, например утренняя пробежка в парке или сгибания на бицепс."@ru .
+
+health:durationMin a rdf:Property ;
+    rdfs:domain health:PhysicalActivity ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Duration (min)"@en, "Длительность (мин)"@ru ;
+    rdfs:comment "Activity duration in minutes."@en, "Длительность занятия в минутах."@ru .
+
+health:distanceMiles a rdf:Property ;
+    rdfs:domain health:PhysicalActivity ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Distance (miles)"@en, "Расстояние (мили)"@ru ;
+    rdfs:comment "Distance covered in miles."@en, "Пройденное расстояние в милях."@ru .
+
+health:weightLbs a rdf:Property ;
+    rdfs:domain health:PhysicalActivity ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Working weight (lbs)"@en, "Рабочий вес (фунты)"@ru ;
+    rdfs:comment "Working weight in pounds for strength exercises."@en, "Рабочий вес в фунтах для силовых упражнений."@ru .
+
+health:reps a rdf:Property ;
+    rdfs:domain health:PhysicalActivity ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Repetitions"@en, "Повторы"@ru ;
+    rdfs:comment "Number of repetitions per set."@en, "Число повторов в подходе."@ru .
+
+health:sets a rdf:Property ;
+    rdfs:domain health:PhysicalActivity ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Sets"@en, "Подходы"@ru ;
+    rdfs:comment "Number of sets."@en, "Число подходов."@ru .
+
+health:date a rdf:Property ;
+    rdfs:domain health:BodyWeightObservation ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date"@en, "Дата"@ru ;
+    rdfs:comment "Date of the weigh-in."@en, "Дата взвешивания."@ru .
+
+health:timeOfDay a rdf:Property ;
+    rdfs:domain health:BodyWeightObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Time of day"@en, "Время суток"@ru ;
+    rdfs:comment "Time of day: morning, afternoon or evening."@en, "Время суток: утро, день или вечер."@ru .
+
+health:bodyWeight a rdf:Property ;
+    rdfs:domain health:BodyWeightObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Body weight (lbs)"@en, "Вес тела (фунты)"@ru ;
+    rdfs:comment "Body weight in pounds."@en, "Вес тела в фунтах."@ru .

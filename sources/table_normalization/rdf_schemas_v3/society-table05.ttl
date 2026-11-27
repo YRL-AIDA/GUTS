@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix society: <http://example.org/society#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+society:ODPPractitionerSurvey a rdfs:Class ;
+    rdfs:label "ODP practitioner survey report"@en, "Опрос специалистов ODP"@ru ;
+    rdfs:comment "ODP practitioner survey report containing a simple question and accompanying instructions."@en, "Отчёт об опросе специалистов ODP, содержащий простой вопрос и сопутствующие инструкции."@ru .
+
+society:AnswerOption a rdfs:Class ;
+    rdfs:label "Answer option"@en, "Вариант ответа"@ru ;
+    rdfs:comment "Predefined answer option for a complex question."@en, "Предопределённый вариант ответа на сложный вопрос."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+society:hasAnswerOption a rdf:Property ;
+    rdfs:domain society:ODPPractitionerSurvey ;
+    rdfs:range society:AnswerOption ;
+    rdfs:label "Complex question answer option"@en, "Вариант ответа на сложный вопрос"@ru ;
+    rdfs:comment "Links a survey report with an answer option for a complex question."@en, "Связывает отчёт об опросе с вариантом ответа на сложный вопрос."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+society:timePeriod a rdf:Property ;
+    rdfs:domain society:ODPPractitionerSurvey ;
+    rdfs:range xsd:gYearMonth ;
+    rdfs:label "Survey month and year"@en, "Месяц и год опроса"@ru ;
+    rdfs:comment "Month and year when the survey was conducted (e.g., June 2019)."@en, "Месяц и год проведения опроса (например, июнь 2019)."@ru .
+
+society:participant a rdf:Property ;
+    rdfs:domain society:ODPPractitionerSurvey ;
+    rdfs:range xsd:string ;
+    rdfs:label "Survey participant name"@en, "Имя участника опроса"@ru ;
+    rdfs:comment "Full name of the survey participant."@en, "Полное имя участника опроса."@ru .
+
+society:question a rdf:Property ;
+    rdfs:domain society:ODPPractitionerSurvey ;
+    rdfs:range xsd:string ;
+    rdfs:label "Survey question"@en, "Вопрос опроса"@ru ;
+    rdfs:comment "Question posed in the survey."@en, "Вопрос, заданный в опросе."@ru .
+
+society:instruction a rdf:Property ;
+    rdfs:domain society:ODPPractitionerSurvey ;
+    rdfs:range xsd:string ;
+    rdfs:label "Report usage instruction"@en, "Инструкция по использованию отчёта"@ru ;
+    rdfs:comment "Instructions explaining how to use the report."@en, "Инструкции, объясняющие, как использовать отчёт."@ru .
+
+society:answer a rdf:Property ;
+    rdfs:domain society:ODPPractitionerSurvey ;
+    rdfs:range xsd:string ;
+    rdfs:label "Free-form answer"@en, "Свободный ответ"@ru ;
+    rdfs:comment "Detailed, free-form response provided for a survey question."@en, "Развёрнутый ответ в свободной форме, предусмотренный на вопрос из опроса."@ru .
+
+society:answerOptionName a rdf:Property ;
+    rdfs:domain society:AnswerOption ;
+    rdfs:range xsd:string ;
+    rdfs:label "Answer option description"@en, "Описание варианта ответа"@ru ;
+    rdfs:comment "Description of the answer option for a complex question."@en, "Описание варианта ответа на сложный вопрос."@ru .
+
+society:answerOptionValue a rdf:Property ;
+    rdfs:domain society:AnswerOption ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Selected answer option value"@en, "Выбранное значение варианта ответа"@ru ;
+    rdfs:comment "Value of the answer option selected or provided by the survey participant."@en, "Значение варианта ответа, выбранное или указанное участником опроса."@ru .

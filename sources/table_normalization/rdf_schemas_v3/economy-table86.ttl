@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix economy: <http://example.org/economy#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+economy:PriceIndexItem a rdfs:Class ;
+    rdfs:label "Price index item"@en, "Позиция индекса цен"@ru ;
+    rdfs:comment "Food item of the consumer price index with its relative importance and place in the hierarchy."@en, "Продуктовая позиция индекса потребительских цен с её весом и местом в иерархии."@ru .
+
+economy:PriceChange a rdfs:Class ;
+    rdfs:label "Price change"@en, "Изменение цены"@ru ;
+    rdfs:comment "Percent change of a price index item for a kind of change and period, observed or forecast."@en, "Процентное изменение позиции индекса цен для вида изменения и периода, фактическое или прогнозное."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+economy:hasSubitem a rdf:Property ;
+    rdfs:domain economy:PriceIndexItem ;
+    rdfs:range economy:PriceIndexItem ;
+    rdfs:label "Subitems"@en, "Подпозиции"@ru ;
+    rdfs:comment "Links a price index item with the narrower items included in it, such as food at home with meats."@en, "Связывает позицию индекса цен с входящими в неё более узкими позициями, например продукты для дома с мясом."@ru .
+
+economy:hasPriceChange a rdf:Property ;
+    rdfs:domain economy:PriceIndexItem ;
+    rdfs:range economy:PriceChange ;
+    rdfs:label "Price changes"@en, "Изменения цены"@ru ;
+    rdfs:comment "Links a price index item with its percent changes."@en, "Связывает позицию индекса цен с её процентными изменениями."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+economy:itemName a rdf:Property ;
+    rdfs:domain economy:PriceIndexItem ;
+    rdfs:range xsd:string ;
+    rdfs:label "Item name"@en, "Название позиции"@ru ;
+    rdfs:comment "Name of the food item of the index, such as all food or beef and veal."@en, "Название продуктовой позиции индекса, например все продукты или говядина и телятина."@ru .
+
+economy:relativeImportance a rdf:Property ;
+    rdfs:domain economy:PriceIndexItem ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Relative importance (%)"@en, "Вес в корзине (%)"@ru ;
+    rdfs:comment "Relative importance of the item in the food index in percent."@en, "Вес позиции в продуктовом индексе в процентах."@ru .
+
+economy:measurementCategory a rdf:Property ;
+    rdfs:domain economy:PriceChange ;
+    rdfs:range xsd:string ;
+    rdfs:label "Kind of change"@en, "Вид изменения"@ru ;
+    rdfs:comment "Kind of percent change as written in the table, such as month-to-month, year-over-year, annual, 20-year historical average or prediction interval."@en, "Вид процентного изменения, как в таблице, например за месяц, за год, годовое, среднее за 20 лет или интервал прогноза."@ru .
+
+economy:timePeriod a rdf:Property ;
+    rdfs:domain economy:PriceChange ;
+    rdfs:range xsd:string ;
+    rdfs:label "Time period"@en, "Период"@ru ;
+    rdfs:comment "Period of the change as written in the table, such as August 2024 to September 2024, 2004–2023 or 2025."@en, "Период изменения, как в таблице, например August 2024 to September 2024, 2004–2023 или 2025."@ru .
+
+economy:measurementVariant a rdf:Property ;
+    rdfs:domain economy:PriceChange ;
+    rdfs:range xsd:string ;
+    rdfs:label "Variant"@en, "Вариант"@ru ;
+    rdfs:comment "Bound of the prediction interval: lower, mid or upper; empty for observed changes."@en, "Граница интервала прогноза: нижняя, середина или верхняя; пусто для фактических изменений."@ru .
+
+economy:percentChange a rdf:Property ;
+    rdfs:domain economy:PriceChange ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percent change"@en, "Изменение (%)"@ru ;
+    rdfs:comment "Percent change of the price index item."@en, "Процентное изменение позиции индекса цен."@ru .

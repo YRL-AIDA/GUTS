@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix religion: <http://example.org/religion#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+religion:ZeroHoursContract a rdfs:Class ;
+    rdfs:label "Zero hours contract"@en, "Договор без гарантированных часов"@ru ;
+    rdfs:comment "Counts of workers with and without a zero hours contract by religion."@en, "Число работников с договором без гарантированных часов и без него по религиям."@ru .
+
+religion:EconomicActivity a rdfs:Class ;
+    rdfs:label "Economic activity"@en, "Экономическая активность"@ru ;
+    rdfs:comment "Counts of people by individual outcome and reported economic activity."@en, "Число людей по типу ответа на опрос и сообщённой экономической активности."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+religion:regionName a rdf:Property ;
+    rdfs:domain religion:ZeroHoursContract ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region"@en, "Регион"@ru ;
+    rdfs:comment "Area label as written in the table, such as AJ19 England and Wales."@en, "Обозначение территории, как в таблице, например AJ19 England and Wales."@ru .
+
+religion:religionName a rdf:Property ;
+    rdfs:domain religion:ZeroHoursContract ;
+    rdfs:range xsd:string ;
+    rdfs:label "Religion"@en, "Религия"@ru ;
+    rdfs:comment "Religious group as given in the table, such as Christian or Muslim."@en, "Религиозная группа, как в таблице, например Christian или Muslim."@ru .
+
+religion:zeroHours a rdf:Property ;
+    rdfs:domain religion:ZeroHoursContract ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Zero hours contract"@en, "Договор без гарантированных часов"@ru ;
+    rdfs:comment "Flag indicating whether the workers have a zero hours contract."@en, "Признак того, есть ли у работников договор без гарантированных часов."@ru .
+
+religion:countWeighted a rdf:Property ;
+    rdfs:domain religion:ZeroHoursContract ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Count"@en, "Число"@ru ;
+    rdfs:comment "Weighted count of workers."@en, "Взвешенное число работников."@ru .
+
+religion:countUnweighted a rdf:Property ;
+    rdfs:domain religion:ZeroHoursContract ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Unweighted count"@en, "Невзвешенное число"@ru ;
+    rdfs:comment "Unweighted count of respondents."@en, "Невзвешенное число опрошенных."@ru .
+
+religion:regionName a rdf:Property ;
+    rdfs:domain religion:EconomicActivity ;
+    rdfs:range xsd:string ;
+    rdfs:label "Region"@en, "Регион"@ru ;
+    rdfs:comment "Area label as written in the table, such as AJ19 England and Wales."@en, "Обозначение территории, как в таблице, например AJ19 England and Wales."@ru .
+
+religion:individualOutcome a rdf:Property ;
+    rdfs:domain religion:EconomicActivity ;
+    rdfs:range xsd:string ;
+    rdfs:label "Individual outcome"@en, "Тип ответа"@ru ;
+    rdfs:comment "Individual outcome of the survey, such as personal response or proxy response."@en, "Тип ответа на опрос, например личный ответ или ответ за другого."@ru .
+
+religion:economicActivityType a rdf:Property ;
+    rdfs:domain religion:EconomicActivity ;
+    rdfs:range xsd:string ;
+    rdfs:label "Economic activity type"@en, "Тип экономической активности"@ru ;
+    rdfs:comment "Reported economic activity, such as in employment or ILO unemployed."@en, "Сообщённая экономическая активность, например занят или безработный по методике МОТ."@ru .
+
+religion:workerCount a rdf:Property ;
+    rdfs:domain religion:EconomicActivity ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Count"@en, "Число"@ru ;
+    rdfs:comment "Count of people with the individual outcome and economic activity."@en, "Число людей с данным типом ответа и экономической активностью."@ru .

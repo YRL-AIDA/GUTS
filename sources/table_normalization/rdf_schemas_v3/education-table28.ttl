@@ -1,0 +1,54 @@
+@prefix edu: <http://example.org/education#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+edu:ExperimentalMeasurement a rdfs:Class ;
+    rdfs:label "Experimental measurement"@en, "Экспериментальное измерение"@ru ;
+    rdfs:comment "An experimental measurement of participant assessment in an educational intervention study comparing computer-based and traditional instructional methods"@en, "Экспериментальное измерение оценки для участника в исследовании образовательного вмешательства, сравнивающем методы компьютерного и традиционного обучения"@ru .
+
+edu:Participant a rdfs:Class ;
+    rdfs:label "Participant"@en, "Участник"@ru ;
+    rdfs:comment "Participant of the experiment with the group and condition"@en, "Участник эксперимента с группой и условием"@ru .
+
+# ==================== Object Properties ====================
+
+edu:hasMeasurement a rdf:Property ;
+    rdfs:domain edu:Participant ;
+    rdfs:range edu:ExperimentalMeasurement ;
+    rdfs:label "Measurement"@en, "Измерение"@ru ;
+    rdfs:comment "Measurement of the participant"@en, "Измерение участника"@ru .
+
+# ==================== Datatype Properties ====================
+
+edu:measurementNumber a rdf:Property ;
+    rdfs:domain edu:ExperimentalMeasurement ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Measurement number "@en, "Номер измерения"@ru ;
+    rdfs:comment "The sequential number of the measurement/session/task"@en, "Порядковый номер измерения/сессии/задания"@ru .
+
+edu:score a rdf:Property ;
+    rdfs:domain edu:ExperimentalMeasurement ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Score"@en, "Оценка"@ru ;
+    rdfs:comment "The numeric score achieved by the participant for the specified measurement"@en, "Числовой балл, полученный участником за указанное измерение"@ru .
+
+edu:wpId a rdf:Property ;
+    rdfs:domain edu:Participant ;
+    rdfs:range xsd:integer ;
+    rdfs:label "WP id"@en, "Идентификатор участника"@ru ;
+    rdfs:comment "The unique identifier for the participant or observation unit in the experiment"@en, "Уникальный идентификатор участника или наблюдательной единицы в эксперименте"@ru .
+
+edu:teachingGroup a rdf:Property ;
+    rdfs:domain edu:Participant ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Teaching group"@en, "Учебная группа"@ru ;
+    rdfs:comment "The numeric code of the teaching group to which the participant was assigned"@en, "Числовой код учебной группы, к которой был приписан участник"@ru .
+
+edu:condition a rdf:Property ;
+    rdfs:domain edu:Participant ;
+    rdfs:range xsd:string ;
+    rdfs:label "Condition"@en, "Условие"@ru ;
+    rdfs:comment "The experimental condition"@en, "Условия эксперимента"@ru .

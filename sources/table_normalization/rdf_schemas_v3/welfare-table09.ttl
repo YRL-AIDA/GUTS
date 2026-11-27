@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix welfare: <http://example.org/welfare#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+welfare:CostIndexSeries a rdfs:Class ;
+    rdfs:label "Cost index series"@en, "Ряд индекса стоимости"@ru ;
+    rdfs:comment "Series of the Employment Cost Index defined by its breakdown."@en, "Ряд индекса стоимости рабочей силы, заданный разрезом."@ru .
+
+welfare:CostIndex a rdfs:Class ;
+    rdfs:label "Cost index"@en, "Индекс стоимости"@ru ;
+    rdfs:comment "Value and percent changes of an Employment Cost Index series at a date."@en, "Значение и процентные изменения ряда индекса стоимости рабочей силы на дату."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+welfare:hasCostIndex a rdf:Property ;
+    rdfs:domain welfare:CostIndexSeries ;
+    rdfs:range welfare:CostIndex ;
+    rdfs:label "Cost index values"@en, "Значения индекса"@ru ;
+    rdfs:comment "Links an index series with its values over time."@en, "Связывает ряд индекса с его значениями во времени."@ru .
+
+welfare:hasSubseries a rdf:Property ;
+    rdfs:domain welfare:CostIndexSeries ;
+    rdfs:range welfare:CostIndexSeries ;
+    rdfs:label "Subseries"@en, "Подряды"@ru ;
+    rdfs:comment "Links an index series with the narrower series nested in it, such as an industry with its subindustries."@en, "Связывает ряд индекса с вложенными в него более узкими рядами, например отрасль с её подотраслями."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+welfare:criterionType a rdf:Property ;
+    rdfs:domain welfare:CostIndexSeries ;
+    rdfs:range xsd:string ;
+    rdfs:label "Criterion type"@en, "Тип разреза"@ru ;
+    rdfs:comment "Type of the breakdown, such as occupational group or industry."@en, "Тип разреза, например профессиональная группа или отрасль."@ru .
+
+welfare:criterionName a rdf:Property ;
+    rdfs:domain welfare:CostIndexSeries ;
+    rdfs:range xsd:string ;
+    rdfs:label "Criterion name"@en, "Значение разреза"@ru ;
+    rdfs:comment "Value of the breakdown, such as a specific occupational group or industry."@en, "Значение разреза, например конкретная профессиональная группа или отрасль."@ru .
+
+welfare:date a rdf:Property ;
+    rdfs:domain welfare:CostIndex ;
+    rdfs:range xsd:gYearMonth ;
+    rdfs:label "Date"@en, "Дата"@ru ;
+    rdfs:comment "Month and year of the index."@en, "Месяц и год индекса."@ru .
+
+welfare:indexValue a rdf:Property ;
+    rdfs:domain welfare:CostIndex ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Index value"@en, "Значение индекса"@ru ;
+    rdfs:comment "Value of the Employment Cost Index with December 2005 equal to 100."@en, "Значение индекса стоимости рабочей силы, декабрь 2005 года равен 100."@ru .
+
+welfare:threeMonthPercentChange a rdf:Property ;
+    rdfs:domain welfare:CostIndex ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "3-month percent change"@en, "Изменение за 3 месяца (%)"@ru ;
+    rdfs:comment "Percent change for the three months ended at the date."@en, "Процентное изменение за три месяца, закончившиеся на дату."@ru .
+
+welfare:twelveMonthPercentChange a rdf:Property ;
+    rdfs:domain welfare:CostIndex ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "12-month percent change"@en, "Изменение за 12 месяцев (%)"@ru ;
+    rdfs:comment "Percent change for the twelve months ended at the date."@en, "Процентное изменение за двенадцать месяцев, закончившиеся на дату."@ru .

@@ -1,0 +1,48 @@
+@prefix env: <http://example.org/environment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+env:VegetationObservation a rdfs:Class ;
+    rdfs:label "Vegetation observation"@en, "Наблюдение за растительностью"@ru ;
+    rdfs:comment "Observation of herbaceous vegetation cover in a forest plot, characterized by forest type, fire treatment, replicate, season, and year"@en, "Наблюдение за покрытием травянистой растительности на лесном участке, охарактеризованное типом леса, типом огневого воздействия, повторностью, сезоном и годом"@ru .
+
+# ==================== Datatype Properties ====================
+
+env:forestType a rdf:Property ;
+    rdfs:domain env:VegetationObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Forest type"@en, "Тип леса"@ru ;
+    rdfs:comment "Type of forest where the observation was made"@en, "Тип леса, в котором проводилось наблюдение"@ru .
+
+env:fire a rdf:Property ;
+    rdfs:domain env:VegetationObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Fire treatment"@en, "Огневое воздействие"@ru ;
+    rdfs:comment "Fire treatment applied to the plot"@en, "Огневое воздействие на участок"@ru .
+
+env:replicate a rdf:Property ;
+    rdfs:domain env:VegetationObservation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Replicate"@en, "Повторность"@ru ;
+    rdfs:comment "Replicate number of the experimental plot"@en, "Номер повторности экспериментального участка"@ru .
+
+env:season a rdf:Property ;
+    rdfs:domain env:VegetationObservation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Season"@en, "Сезон"@ru ;
+    rdfs:comment "Season when the vegetation observation was conducted"@en, "Сезон, в который проводилось наблюдение за растительностью"@ru .
+
+env:year a rdf:Property ;
+    rdfs:domain env:VegetationObservation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Year when the vegetation observation was conducted"@en, "Год, в который проводилось наблюдение за растительностью"@ru .
+
+env:percentCoverHerbaceousVegetation a rdf:Property ;
+    rdfs:domain env:VegetationObservation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percent cover herbaceous vegetation"@en, "Процент покрытия травянистой растительности"@ru ;
+    rdfs:comment "Percentage of ground covered by herbaceous vegetation in the observation plot"@en, "Процент площади земли, покрытой травянистой растительностью на участке наблюдения"@ru .

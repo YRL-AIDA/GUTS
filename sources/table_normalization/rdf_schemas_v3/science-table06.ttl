@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix science: <http://example.org/science#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+science:LiverBiopsyConcentration a rdfs:Class ;
+    rdfs:label "Liver biopsy concentration"@en, "Концентрация в биопсии печени"@ru ;
+    rdfs:comment "Measurement record of antiretroviral drug concentration in a liver biopsy sample obtained by IR-MALDESI mass spectrometry imaging."@en, "Запись измерения концентрации антиретровирусного препарата в образце биопсии печени, полученная методом ИК-МАЛДЕЗИ масс-спектрометрической визуализации."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+science:antiretroviralRegimen a rdf:Property ;
+    rdfs:domain science:LiverBiopsyConcentration ;
+    rdfs:range xsd:string ;
+    rdfs:label "Antiretroviral regimen"@en, "Антиретровирусная схема"@ru ;
+    rdfs:comment "Name of the antiretroviral regimen or drug abbreviation (e.g., FTC, TFV, EFV, RPV, 3TC)."@en, "Наименование антиретровирусной схемы или аббревиатура препарата (например, FTC, TFV, EFV, RPV, 3TC)."@ru .
+
+science:concentration a rdf:Property ;
+    rdfs:domain science:LiverBiopsyConcentration ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Drug concentration (µg/g)"@en, "Концентрация препарата (мкг/г)"@ru ;
+    rdfs:comment "Measured analyte concentration expressed in micrograms per gram of liver tissue (µg/g)."@en, "Измеренная концентрация аналита, выраженная в микрограммах на грамм печёночной ткани (мкг/г)."@ru .
+
+science:sampleSpecificLLOQ a rdf:Property ;
+    rdfs:domain science:LiverBiopsyConcentration ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Sample-specific LLOQ (fg/voxel)"@en, "Индивидуальный нижний предел количественного определения (фг/воксель)"@ru ;
+    rdfs:comment "Lower limit of quantification applicable to this sample, expressed in femtograms per voxel (fg/voxel)."@en, "Нижний предел количественного определения, применимый к данному образцу, выраженный в фемтограммах на воксель (фг/воксель)."@ru .
+
+science:status a rdf:Property ;
+    rdfs:domain science:LiverBiopsyConcentration ;
+    rdfs:range xsd:string ;
+    rdfs:label "Result status"@en, "Статус результата"@ru ;
+    rdfs:comment "Status of the measurement result, for example actual value (actual), below quantification limit (BLQ), or not reported (NR)."@en, "Статус результата измерения, например фактическое значение (actual), ниже предела количественного определения (BLQ) или не представлено (NR)."@ru .
+
+science:pearsonCorrelation a rdf:Property ;
+    rdfs:domain science:LiverBiopsyConcentration ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Pearson correlation value"@en, "Значение корреляции Пирсона"@ru ;
+    rdfs:comment "Pearson correlation coefficient comparing liver concentration with plasma concentration."@en, "Коэффициент корреляции Пирсона, сопоставляющий концентрацию в печени с концентрацией в плазме."@ru .

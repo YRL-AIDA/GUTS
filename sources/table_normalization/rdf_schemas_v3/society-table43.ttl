@@ -1,0 +1,106 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix society: <http://example.org/society#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+society:MitigationStrategy a rdfs:Class ;
+    rdfs:label "Mitigation strategy"@en, "Стратегия смягчения"@ru ;
+    rdfs:comment "A specific modification or strategy implemented to ensure the continued and safer delivery of healthcare services during a pandemic, such as promoting hygiene, physical distancing, or mask usage."@en, "Конкретная модификация или стратегия, внедряемая для обеспечения непрерывного и более безопасного оказания медицинских услуг во время пандемии (например, соблюдение гигиены, физическое дистанцирование или использование масок)."@ru .
+
+society:HealthcareIntervention a rdfs:Class ;
+    rdfs:label "Healthcare intervention"@en, "Медицинское вмешательство"@ru ;
+    rdfs:comment "A specific maternal, newborn, or child health intervention (e.g., family planning, antenatal care, vaccinations) whose coverage or delivery method is being evaluated within the model."@en, "Конкретное медицинское вмешательство в сфере охраны здоровья матери, новорождённого и ребёнка (например, планирование семьи, дородовой уход, вакцинация), охват или способ оказания которого подлежит оценке в рамках модели."@ru .
+
+society:MitigationImpact a rdfs:Class ;
+    rdfs:label "Impact of mitigation strategy on intervention"@en, "Влияние стратегии смягчения на медицинское вмешательство"@ru ;
+    rdfs:comment "A matrix cell value representing the quantitative or qualitative impact of a specific mitigation strategy on a particular healthcare intervention, such as changes in visit frequency, infection risk, or coverage improvement."@en, "Значение ячейки матрицы, представляющее количественное или качественное влияние конкретной стратегии смягчения на определённое медицинское вмешательство (например, изменение частоты посещений, риска инфицирования или прирост охвата)."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+society:hasMitigationImpact a rdf:Property ;
+    rdfs:domain society:MitigationStrategy ;
+    rdfs:range society:MitigationImpact ;
+    rdfs:label "Impact matrix linkage"@en, "Связь с матрицей влияния"@ru ;
+    rdfs:comment "Associates either a mitigation strategy with a specific impact assessment record in the matrix."@en, "Связывает стратегию смягчения с конкретной записью оценки влияния в матрице."@ru .
+
+society:hasMitigationImpact a rdf:Property ;
+    rdfs:domain society:HealthcareIntervention ;
+    rdfs:range society:MitigationImpact ;
+    rdfs:label "Impact matrix linkage"@en, "Связь с матрицей влияния"@ru ;
+    rdfs:comment "Associates either a healthcare intervention with a specific impact assessment record in the matrix."@en, "Связывает медицинское вмешательство с конкретной записью оценки влияния в матрице."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+society:strategyCategory a rdf:Property ;
+    rdfs:domain society:MitigationStrategy ;
+    rdfs:range xsd:string ;
+    rdfs:label "Strategy modification category"@en, "Категория модификации стратегии"@ru ;
+    rdfs:comment "High-level classification of the mitigation approach, such as general service adjustments, environmental hygiene, or behavioral promotion."@en, "Классификация подхода к смягчению последствий верхнего уровня, например, общие корректировки услуг, гигиена окружающей среды или продвижение безопасного поведения."@ru .
+
+society:strategyName a rdf:Property ;
+    rdfs:domain society:MitigationStrategy ;
+    rdfs:range xsd:string ;
+    rdfs:label "Strategy name"@en, "Наименование стратегии"@ru ;
+    rdfs:comment "Detailed name or description of the specific modification implemented to ensure safer healthcare delivery (e.g., 'Maintain healthy environments - Handwashing')."@en, "Подробное наименование или описание конкретной модификации, внедрённой для обеспечения более безопасного оказания медицинской помощи (например, 'Поддержание здоровой среды — мытьё рук')."@ru .
+
+society:visitsDecreasePercentage a rdf:Property ;
+    rdfs:domain society:MitigationStrategy ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Estimated decrease in facility visits (%)"@en, "Ожидаемое снижение посещений медучреждений (%)"@ru ;
+    rdfs:comment "Estimated percentage decrease in the number of in-person health facility visits per person due to the implementation of this strategy."@en, "Ожидаемое процентное снижение количества очных посещений медицинских учреждений на одного человека в результате внедрения данной стратегии."@ru .
+
+society:infectionRiskDecreasePercentage a rdf:Property ;
+    rdfs:domain society:MitigationStrategy ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Infection risk reduction for remaining visits (%)"@en, "Снижение риска инфицирования при сохранённых визитах (%)"@ru ;
+    rdfs:comment "For hygiene-focused interventions only: the estimated percentage decrease in infection or transmission risk during the in-person visits that still take place."@en, "Только для мероприятий, направленных на гигиену: оценочное процентное снижение риска заражения или передачи инфекции во время очных визитов, которые всё ещё проводятся."@ru .
+
+society:coverageIncreasePercentage a rdf:Property ;
+    rdfs:domain society:MitigationStrategy ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Estimated relative coverage increase (%)"@en, "Ожидаемый относительный прирост охвата (%)"@ru ;
+    rdfs:comment "Estimated relative percentage increase in intervention coverage achieved by applying this mitigation strategy."@en, "Оценочный относительный процентный прирост охвата медицинским вмешательством, достигаемый за счёт применения данной стратегии смягчения."@ru .
+
+society:interventionNumber a rdf:Property ;
+    rdfs:domain society:HealthcareIntervention ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Intervention sequence number"@en, "Порядковый номер вмешательства"@ru ;
+    rdfs:comment "Unique sequential identifier for the healthcare intervention within the model's matrix (e.g., 1 to 71)."@en, "Уникальный порядковый идентификатор медицинского вмешательства в матрице модели (например, от 1 до 71)."@ru .
+
+society:category a rdf:Property ;
+    rdfs:domain society:HealthcareIntervention ;
+    rdfs:range xsd:string ;
+    rdfs:label "Intervention domain"@en, "Область медицинского вмешательства"@ru ;
+    rdfs:comment "Broad clinical domain to which the intervention belongs, such as Family Planning, Antenatal Care, Delivery Care, Newborn Care, Vaccines, Child Health, or Malnutrition."@en, "Широкая клиническая область, к которой относится вмешательство: планирование семьи, дородовой уход, помощь при родах, уход за новорождёнными, вакцины, здоровье ребёнка или лечение недоедания."@ru .
+
+society:interventionName a rdf:Property ;
+    rdfs:domain society:HealthcareIntervention ;
+    rdfs:range xsd:string ;
+    rdfs:label "Specific intervention title"@en, "Название конкретного вмешательства"@ru ;
+    rdfs:comment "Exact clinical name of the intervention being tracked (e.g., 'FP - Pills', 'Antenatal care (at least 4 visits)', 'BCG - Single dose')."@en, "Точное клиническое название отслеживаемого вмешательства (например, 'Планирование семьи — таблетки', 'Дородовой уход (минимум 4 визита)', 'БЦЖ — однократная доза')."@ru .
+
+society:selected a rdf:Property ;
+    rdfs:domain society:HealthcareIntervention ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Analysis selection flag"@en, "Флаг выбора для анализа"@ru ;
+    rdfs:comment "Boolean flag indicating whether this specific intervention is currently selected for inclusion in the impact analysis."@en, "Логический флаг, указывающий, выбрано ли данное конкретное вмешательство для включения в текущий анализ влияния."@ru .
+
+society:influenceCategory a rdf:Property ;
+    rdfs:domain society:MitigationImpact ;
+    rdfs:range xsd:string ;
+    rdfs:label "Impact metric type"@en, "Тип метрики влияния"@ru ;
+    rdfs:comment "The specific dimension of impact being measured in the matrix cell, such as cumulative impact on visits, impact on infection risk, cumulative impact on coverage, or percentage improvement in coverage."@en, "Конкретное измерение влияния, оцениваемое в ячейке матрицы: кумулятивное влияние на количество посещений, влияние на риск инфицирования, кумулятивное влияние на охват или процентное улучшение охвата."@ru .
+
+society:applicationSignificance a rdf:Property ;
+    rdfs:domain society:MitigationImpact ;
+    rdfs:range xsd:string ;
+    rdfs:label "Impact magnitude or status"@en, "Величина или статус влияния"@ru ;
+    rdfs:comment "The value recorded in the matrix intersection, representing the percentage of impact, a multiplier, or a status marker (e.g., 'x' for not applicable) showing how the strategy affects the intervention."@en, "Значение, зафиксированное на пересечении матрицы, представляющее процент влияния, множитель или маркер статуса (например, 'x' для неприменимости), показывающий, как стратегия влияет на вмешательство."@ru .

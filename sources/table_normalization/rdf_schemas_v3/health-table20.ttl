@@ -1,0 +1,30 @@
+@prefix hl: <http://example.org/health#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+hl:BlendedExpenditure a rdfs:Class ;
+    rdfs:label "Blended expenditure"@en, "Смешанные расходы"@ru ;
+    rdfs:comment "Health care spending record for a specific year and category (billions of current dollars)"@en, "Запись о расходах на здравоохранение за конкретный год и категорию (миллиарды долларов)"@ru .
+
+# ==================== Datatype Properties ====================
+
+hl:year a rdf:Property ;
+    rdfs:domain hl:BlendedExpenditure ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of expenditure observation"@en, "Календарный год наблюдения расходов"@ru .
+
+hl:blendedAccount a rdf:Property ;
+    rdfs:domain hl:BlendedExpenditure ;
+    rdfs:range xsd:string ;
+    rdfs:label "Blended account"@en, "Смешанный счет"@ru ;
+    rdfs:comment "Expenditure category (e.g. Infectious and parasitic diseases or Neoplasms)"@en, "Категория расходов (например, Инфекционные и паразитарные заболевания или Новообразования)"@ru .
+
+hl:amount a rdf:Property ;
+    rdfs:domain hl:BlendedExpenditure ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Amount"@en, "Сумма"@ru ;
+    rdfs:comment "Total expenditures in billions of current dollars"@en, "Сумма расходов в миллиардах долларов США"@ru .

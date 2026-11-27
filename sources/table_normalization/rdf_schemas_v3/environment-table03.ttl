@@ -1,0 +1,42 @@
+@prefix env: <http://example.org/environment#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+env:CorrelationMatrix a rdfs:Class ;
+    rdfs:label "Correlation matrix"@en, "Матрица корреляции"@ru ;
+    rdfs:comment "The statistical relationship (Pearson correlation and p-value) between two variables at a specific time resolution"@en, "Статистическая взаимосвязь (корреляция Пирсона и p-значение) между двумя переменными для определенного временного разрешения"@ru .
+
+# ==================== Datatype Properties ====================
+
+env:timeResolution a rdf:Property ;
+    rdfs:domain env:CorrelationMatrix ;
+    rdfs:range xsd:string ;
+    rdfs:label "Time resolution"@en, "Временное разрешение"@ru ;
+    rdfs:comment "The time interval or resolution for which the correlation was calculated"@en, "Временной интервал или разрешение, для которого была рассчитана корреляция"@ru .
+
+env:variableRow a rdf:Property ;
+    rdfs:domain env:CorrelationMatrix ;
+    rdfs:range xsd:string ;
+    rdfs:label "Variable row"@en, "Переменная строки"@ru ;
+    rdfs:comment "The name of the variable represented by the row in the original matrix"@en, "Название переменной, представленной строкой в исходной матрице"@ru .
+
+env:variableColumn a rdf:Property ;
+    rdfs:domain env:CorrelationMatrix ;
+    rdfs:range xsd:string ;
+    rdfs:label "Variable column"@en, "Переменная столбца"@ru ;
+    rdfs:comment "The name of the variable represented by the column in the original matrix"@en, "Название переменной, представленной столбцом в исходной матрице"@ru .
+
+env:pearsonCorrelationCoefficient a rdf:Property ;
+    rdfs:domain env:CorrelationMatrix ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Pearson correlation coefficient"@en, "Коэффициент корреляции Пирсона"@ru ;
+    rdfs:comment "Pearson correlation coefficient value for the variable pair"@en, "Значение коэффициента корреляции Пирсона для пары переменных"@ru .
+
+env:pValue a rdf:Property ;
+    rdfs:domain env:CorrelationMatrix ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Statistical significance (p-value)"@en, "Статистическая значимость (p-значение)"@ru ;
+    rdfs:comment "Statistical significance (p-value) of the correlation between the variable pair"@en, "Статистическая значимость (p-значение) корреляции между парой переменных"@ru .

@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix society: <http://example.org/society#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+society:Country a rdfs:Class ;
+    rdfs:label "Country"@en, "Страна"@ru ;
+    rdfs:comment "Reference area representing a country."@en, "Область отсчёта, представляющая страну."@ru .
+
+society:FutureWellBeing a rdfs:Class ;
+    rdfs:label "Future well-being statistics"@en, "Статистические данные о будущем благополучии"@ru ;
+    rdfs:comment "Statistical observation of future well-being indicators by country."@en, "Статистическое наблюдение показателей будущего благополучия по странам."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+society:hasObservationCountry a rdf:Property ;
+    rdfs:domain society:Country ;
+    rdfs:range society:FutureWellBeing ;
+    rdfs:label "Country observation"@en, "Наблюдение по стране"@ru ;
+    rdfs:comment "Links a country with an indicator observation recorded for a particular year."@en, "Связывает страну с записью наблюдения показателя за определённый год."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+society:referenceArea a rdf:Property ;
+    rdfs:domain society:Country ;
+    rdfs:range xsd:string ;
+    rdfs:label "Reference area name"@en, "Наименование области отсчёта"@ru ;
+    rdfs:comment "Name of the reference area, which is a country."@en, "Наименование области отсчёта (страны)."@ru .
+
+society:typeArea a rdf:Property ;
+    rdfs:domain society:Country ;
+    rdfs:range xsd:string ;
+    rdfs:label "Economy classification"@en, "Классификация экономики"@ru ;
+    rdfs:comment "Economy classification of countries that are members of the Organisation for Economic Co-operation and Development (OECD)."@en, "Классификация экономик стран, входящих в Организацию экономического сотрудничества и развития (ОЭСР)."@ru .
+
+society:timePeriod a rdf:Property ;
+    rdfs:domain society:FutureWellBeing ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+society:domain a rdf:Property ;
+    rdfs:domain society:FutureWellBeing ;
+    rdfs:range xsd:string ;
+    rdfs:label "Well-being domain"@en, "Область благополучия"@ru ;
+    rdfs:comment "Capital domain associated with the well-being indicator."@en, "Область капитала, к которому относится показатель благополучия."@ru .
+
+society:measure a rdf:Property ;
+    rdfs:domain society:FutureWellBeing ;
+    rdfs:range xsd:string ;
+    rdfs:label "Well-being measure"@en, "Показатель благополучия"@ru ;
+    rdfs:comment "Specific well-being measure or indicator being observed."@en, "Конкретная мера или индикатор благополучия, наблюдаемый в записи."@ru .
+
+society:measureUnit a rdf:Property ;
+    rdfs:domain society:FutureWellBeing ;
+    rdfs:range xsd:string ;
+    rdfs:label "Measurement unit"@en, "Единица измерения"@ru ;
+    rdfs:comment "Measurement unit in which the indicator value is expressed."@en, "Единица измерения, в которой выражается значение показателя."@ru .
+
+society:value a rdf:Property ;
+    rdfs:domain society:FutureWellBeing ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Indicator value"@en, "Значение показателя"@ru ;
+    rdfs:comment "Numeric value of the observed indicator."@en, "Числовое значение наблюдаемого показателя."@ru .

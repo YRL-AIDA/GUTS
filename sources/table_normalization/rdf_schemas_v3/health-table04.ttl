@@ -1,0 +1,42 @@
+@prefix hl: <http://example.org/health#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+hl:HealthAndSocialMeasurement a rdfs:Class ;
+    rdfs:label "Measurement in health and social care"@en, "Измерения в сфере здравоохранения и социального обеспечения"@ru ;
+    rdfs:comment "A record presenting the results of a measurement in health and social care by country or economy for a specific year"@en, "Запись, представляющая результаты измерения в сфере здравоохранения и социального обеспечения с разбивкой по стране или экономике за конкретный год"@ru .
+
+# ==================== Datatype Properties ====================
+
+hl:timePeriod a rdf:Property ;
+    rdfs:domain hl:HealthAndSocialMeasurement ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+hl:referenceArea a rdf:Property ;
+    rdfs:domain hl:HealthAndSocialMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Country"@en, "Страна"@ru ;
+    rdfs:comment "Country name"@en, "Наименование страны"@ru .
+
+hl:typeArea a rdf:Property ;
+    rdfs:domain hl:HealthAndSocialMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Type of country's economy"@en, "Тип экономики страны"@ru ;
+    rdfs:comment "Economies of countries that are members of the Organisation for Economic Co-operation and Development (OECD)"@en, "Экономики стран, входящие в организацию экономического сотрудничества и развития (ОЭСР)"@ru .
+
+hl:measurementUnit a rdf:Property ;
+    rdfs:domain hl:HealthAndSocialMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Unit of measurement"@en, "Единица измерения"@ru ;
+    rdfs:comment "Combined unit of measure"@en, "Комбинированная единица измерения"@ru .
+
+hl:measurementValue a rdf:Property ;
+    rdfs:domain hl:HealthAndSocialMeasurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Value of measurement"@en, "Значение измерения"@ru ;
+    rdfs:comment "The specific meaning of a certain dimension in the field of health and social care"@en, "Конкретное значение некоторого измерения в сфере здравоохранения и социального обеспечения"@ru .

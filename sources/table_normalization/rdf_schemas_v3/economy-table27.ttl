@@ -1,0 +1,96 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix economy: <http://example.org/economy#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+economy:Measure a rdfs:Class ;
+    rdfs:label "Measure"@en, "Показатель"@ru ;
+    rdfs:comment "Definition of a statistical measure by its unit, adjustment, price base, transformation and country."@en, "Определение статистического показателя через единицу измерения, поправку, базу цен, преобразование и страну."@ru .
+
+economy:NationalAccountTransaction a rdfs:Class ;
+    rdfs:label "National account transaction"@en, "Статья национальных счетов"@ru ;
+    rdfs:comment "Item of the national accounts, such as gross domestic product or exports of goods."@en, "Статья национальных счетов, например валовой внутренний продукт или экспорт товаров."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+economy:hasNationalAccountTransaction a rdf:Property ;
+    rdfs:domain economy:Measure ;
+    rdfs:range economy:NationalAccountTransaction ;
+    rdfs:label "National account transaction"@en, "Статья национальных счетов"@ru ;
+    rdfs:comment "Links a statistical indicator, along with its quarterly values, to a national accounts item."@en, "Связывает статистический показатель с квартальными значениями со статьей национальных счетов."@ru .
+
+economy:hasSubtransaction a rdf:Property ;
+    rdfs:domain economy:NationalAccountTransaction ;
+    rdfs:range economy:NationalAccountTransaction ;
+    rdfs:label "Subtransactions"@en, "Подстатьи"@ru ;
+    rdfs:comment "Links a national accounts transaction with the narrower transactions nested in it, such as exports with exports of goods."@en, "Связывает статью национальных счетов с вложенными в неё более узкими статьями, например экспорт с экспортом товаров."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+economy:countryName a rdf:Property ;
+    rdfs:domain economy:Measure ;
+    rdfs:range xsd:string ;
+    rdfs:label "Country name"@en, "Название страны"@ru ;
+    rdfs:comment "Name of the country or economy."@en, "Название страны или экономики."@ru .
+
+economy:combinedMeasure a rdf:Property ;
+    rdfs:domain economy:Measure ;
+    rdfs:range xsd:string ;
+    rdfs:label "Combined unit of measure"@en, "Сводная единица измерения"@ru ;
+    rdfs:comment "Combined unit of the measure with base period, multiplier and currency, such as 2015, Millions, Euro."@en, "Сводная единица показателя с базовым периодом, множителем и валютой, например 2015, Millions, Euro."@ru .
+
+economy:measureUnit a rdf:Property ;
+    rdfs:domain economy:Measure ;
+    rdfs:range xsd:string ;
+    rdfs:label "Unit of measure"@en, "Единица измерения"@ru ;
+    rdfs:comment "Unit in which the value is expressed, such as national currency or percentage change."@en, "Единица, в которой выражено значение, например национальная валюта или процентное изменение."@ru .
+
+economy:adjustment a rdf:Property ;
+    rdfs:domain economy:Measure ;
+    rdfs:range xsd:string ;
+    rdfs:label "Adjustment"@en, "Поправка"@ru ;
+    rdfs:comment "Type of statistical adjustment applied to the data, such as calendar and seasonal adjustment."@en, "Вид статистической поправки, применённой к данным, например календарная и сезонная."@ru .
+
+economy:priceBase a rdf:Property ;
+    rdfs:domain economy:Measure ;
+    rdfs:range xsd:string ;
+    rdfs:label "Price base"@en, "База цен"@ru ;
+    rdfs:comment "Price basis used for valuation, such as current prices or chain linked volume."@en, "Ценовая база оценки, например текущие цены или цепные объёмы."@ru .
+
+economy:transformation a rdf:Property ;
+    rdfs:domain economy:Measure ;
+    rdfs:range xsd:string ;
+    rdfs:label "Transformation"@en, "Преобразование"@ru ;
+    rdfs:comment "Data transformation applied, such as annual levels or growth rate over one year."@en, "Применённое преобразование данных, например годовой уровень или темп роста за год."@ru .
+
+economy:transactionName a rdf:Property ;
+    rdfs:domain economy:NationalAccountTransaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "Transaction name"@en, "Название статьи"@ru ;
+    rdfs:comment "Name of the national accounts transaction, such as final consumption expenditure of general government."@en, "Название статьи национальных счетов, например расходы государства на конечное потребление."@ru .
+
+economy:year a rdf:Property ;
+    rdfs:domain economy:NationalAccountTransaction ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of the value."@en, "Календарный год значения."@ru .
+
+economy:quarter a rdf:Property ;
+    rdfs:domain economy:NationalAccountTransaction ;
+    rdfs:range xsd:string ;
+    rdfs:label "Quarter"@en, "Квартал"@ru ;
+    rdfs:comment "Quarter of the year: Q1, Q2, Q3 or Q4."@en, "Квартал года: Q1, Q2, Q3 или Q4."@ru .
+
+economy:value a rdf:Property ;
+    rdfs:domain economy:NationalAccountTransaction ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Value"@en, "Значение"@ru ;
+    rdfs:comment "Numeric value of the transaction in the unit of the measure."@en, "Числовое значение статьи в единицах показателя."@ru .

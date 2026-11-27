@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix economy: <http://example.org/economy#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+economy:Location a rdfs:Class ;
+    rdfs:label "Location"@en, "Территория"@ru ;
+    rdfs:comment "Geographic area identified by its official code, such as a country, region or local authority."@en, "Территория с официальным кодом, например страна, регион или район местного самоуправления."@ru .
+
+economy:IndividualInsolvency a rdfs:Class ;
+    rdfs:label "Individual insolvency"@en, "Несостоятельность физических лиц"@ru ;
+    rdfs:comment "Individual insolvency rate for a location and year."@en, "Частота несостоятельности физических лиц для территории и года."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+economy:hasIndividualInsolvency a rdf:Property ;
+    rdfs:domain economy:Location ;
+    rdfs:range economy:IndividualInsolvency ;
+    rdfs:label "Individual insolvencies"@en, "Несостоятельность физических лиц"@ru ;
+    rdfs:comment "Links a location with its individual insolvency rates by year."@en, "Связывает территорию с частотой несостоятельности физических лиц по годам."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+economy:code a rdf:Property ;
+    rdfs:domain economy:Location ;
+    rdfs:range xsd:string ;
+    rdfs:label "Code"@en, "Код"@ru ;
+    rdfs:comment "Official statistical code of the location, such as E12000001."@en, "Официальный статистический код территории, например E12000001."@ru .
+
+economy:locationName a rdf:Property ;
+    rdfs:domain economy:Location ;
+    rdfs:range xsd:string ;
+    rdfs:label "Location name"@en, "Название территории"@ru ;
+    rdfs:comment "Name of the location."@en, "Название территории."@ru .
+
+economy:geography a rdf:Property ;
+    rdfs:domain economy:Location ;
+    rdfs:range xsd:string ;
+    rdfs:label "Geography"@en, "Тип территории"@ru ;
+    rdfs:comment "Type of the location as given in the table, such as region, county or London borough."@en, "Тип территории, как в таблице, например регион, графство или лондонский боро."@ru .
+
+economy:year a rdf:Property ;
+    rdfs:domain economy:IndividualInsolvency ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of the rate."@en, "Календарный год, к которому относится частота."@ru .
+
+economy:voluntaryArrangementsRate a rdf:Property ;
+    rdfs:domain economy:IndividualInsolvency ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Voluntary arrangement rate"@en, "Частота добровольных соглашений"@ru ;
+    rdfs:comment "Individual voluntary arrangements per 10,000 adults in the year."@en, "Индивидуальные добровольные соглашения с кредиторами на 10 000 взрослых за год."@ru .

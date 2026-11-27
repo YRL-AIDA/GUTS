@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sport: <http://example.org/sport#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+sport:Runner a rdfs:Class ;
+    rdfs:label "Race participant"@en, "Участник забега"@ru ;
+    rdfs:comment "Participant registered for the race, identified by bib number, full name, and club."@en, "Участник забега, идентифицируемый нагрудным номером, полным именем и клубом."@ru .
+
+sport:RaceResult a rdfs:Class ;
+    rdfs:label "Race award result"@en, "Результат награждения в забеге"@ru ;
+    rdfs:comment "Record of an award result for a race participant, including award category position, category code, finish time, and overall position."@en, "Запись результата награждения участника забега, включая место в категории награждения, код категории, время финиша и общую позицию."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+sport:hasRaceAwardResult a rdf:Property ;
+    rdfs:domain sport:Runner ;
+    rdfs:range sport:RaceResult ;
+    rdfs:label "Runner award result"@en, "Результат награждения бегуна"@ru ;
+    rdfs:comment "Links a runner with an award result received in the race."@en, "Связывает бегуна с результатом награждения, полученным на забеге."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+sport:number a rdf:Property ;
+    rdfs:domain sport:Runner ;
+    rdfs:range xsd:string ;
+    rdfs:label "Bib number"@en, "Нагрудный номер"@ru ;
+    rdfs:comment "Bib number uniquely identifying a participant within the race."@en, "Нагрудный номер, уникально идентифицирующий участника в рамках забега."@ru .
+
+sport:fullName a rdf:Property ;
+    rdfs:domain sport:Runner ;
+    rdfs:range xsd:string ;
+    rdfs:label "Runner full name"@en, "Полное имя бегуна"@ru ;
+    rdfs:comment "Full name of the race participant, combining forename and surname."@en, "Полное имя участника забега, объединяющее имя и фамилию."@ru .
+
+sport:club a rdf:Property ;
+    rdfs:domain sport:Runner ;
+    rdfs:range xsd:string ;
+    rdfs:label "Running club or team"@en, "Беговой клуб или команда"@ru ;
+    rdfs:comment "Name of the running club or team represented by the participant."@en, "Название бегового клуба или команды, которую представляет участник."@ru .
+
+sport:categoryPosition a rdf:Property ;
+    rdfs:domain sport:RaceResult ;
+    rdfs:range xsd:string ;
+    rdfs:label "Award category position"@en, "Место в категории награждения"@ru ;
+    rdfs:comment "Award designation indicating place and category, for example 1st Male, 2nd Male, or 1st M40."@en, "Обозначение награды, указывающее место и категорию, например 1st Male, 2nd Male или 1st M40."@ru .
+
+sport:categoryCode a rdf:Property ;
+    rdfs:domain sport:RaceResult ;
+    rdfs:range xsd:string ;
+    rdfs:label "Age/gender category code"@en, "Код возрастно-гендерной категории"@ru ;
+    rdfs:comment "Symbolic code of the participant's race category, such as M, F, M40, or F45."@en, "Символьный код категории участника забега, например M, F, M40 или F45."@ru .
+
+sport:finishTime a rdf:Property ;
+    rdfs:domain sport:RaceResult ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Finish time (minutes)"@en, "Время финиша (минуты)"@ru ;
+    rdfs:comment "Participant's finish time in minutes, expressed as a decimal value."@en, "Время финиша участника в минутах, выраженное десятичным числом."@ru .
+
+sport:finishingPosition a rdf:Property ;
+    rdfs:domain sport:RaceResult ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Overall finishing position"@en, "Общая позиция на финише"@ru ;
+    rdfs:comment "Participant's finishing position among all competitors, regardless of category."@en, "Позиция участника на финише среди всех соревнующихся, независимо от категории."@ru .

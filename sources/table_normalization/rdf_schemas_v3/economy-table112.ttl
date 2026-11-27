@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix economy: <http://example.org/economy#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+economy:ProductItem a rdfs:Class ;
+    rdfs:label "Product line item"@en, "Товарная позиция"@ru ;
+    rdfs:comment "Product item record showing quantity, unit price, and total cost."@en, "Запись товарной позиции с указанием количества, цены за единицу и общей стоимости."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+economy:item a rdf:Property ;
+    rdfs:domain economy:ProductItem ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Item identifier"@en, "Идентификатор позиции"@ru ;
+    rdfs:comment "Numeric identifier of the product item."@en, "Числовой идентификатор товарной позиции."@ru .
+
+economy:brand a rdf:Property ;
+    rdfs:domain economy:ProductItem ;
+    rdfs:range xsd:string ;
+    rdfs:label "Brand and product specification"@en, "Бренд и спецификация товара"@ru ;
+    rdfs:comment "Product specification details, including brand, size, and country of origin."@en, "Спецификация товара, включающая бренд, размер и страну происхождения."@ru .
+
+economy:quantity a rdf:Property ;
+    rdfs:domain economy:ProductItem ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Item quantity"@en, "Количество позиции"@ru ;
+    rdfs:comment "Number of units for the product item."@en, "Количество единиц товарной позиции."@ru .
+
+economy:price a rdf:Property ;
+    rdfs:domain economy:ProductItem ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Unit price"@en, "Цена за единицу"@ru ;
+    rdfs:comment "Price per single unit of the product item."@en, "Цена за одну единицу товарной позиции."@ru .

@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix society: <http://example.org/society#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+society:Supplementation a rdfs:Class ;
+    rdfs:label "Supplementation"@en, "Дополнительное пособие"@ru ;
+    rdfs:comment "Observation record describing supplementation recipients in the United States by year, recipient category, and payment type."@en, "Запись наблюдения, описывающая получателей дополнительных пособий в США по году, категории получателей и типу выплат."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+society:year a rdf:Property ;
+    rdfs:domain society:Supplementation ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Observed fiscal year"@en, "Отчётный финансовый год"@ru ;
+    rdfs:comment "Fiscal year covered by the observation."@en, "Финансовый год, охватываемый наблюдением."@ru .
+
+society:recipientCategory a rdf:Property ;
+    rdfs:domain society:Supplementation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category of supplementation recipients"@en, "Категория получателей дополнительного пособия"@ru ;
+    rdfs:comment "Classification category for supplementation recipients."@en, "Классификационная категория получателей дополнительного пособия."@ru .
+
+society:federalSSI a rdf:Property ;
+    rdfs:domain society:Supplementation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Federal SSI recipient count"@en, "Число получателей федерального SSI"@ru ;
+    rdfs:comment "Number of individuals receiving Federal Supplemental Security Income (SSI)."@en, "Число лиц, получающих Федеральный дополнительный доход по социальному обеспечению (SSI)."@ru .
+
+society:federallyAdministeredStateSupplementation a rdf:Property ;
+    rdfs:domain society:Supplementation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Federally administered state supplementation count"@en, "Число получателей федерально администрируемых доплат штатов"@ru ;
+    rdfs:comment "Number of individuals receiving state supplementation payments administered at the federal level."@en, "Число лиц, получающих дополнительные выплаты штатов, администрируемые на федеральном уровне."@ru .

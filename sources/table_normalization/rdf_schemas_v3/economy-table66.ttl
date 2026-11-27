@@ -1,0 +1,90 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix economy: <http://example.org/economy#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+economy:Advertisement a rdfs:Class ;
+    rdfs:label "Advertisement"@en, "Рекламное объявление"@ru ;
+    rdfs:comment "Advertisement bought in a magazine issue with its size and total cost."@en, "Рекламное объявление, купленное в номере журнала, с размером и общей стоимостью."@ru .
+
+economy:AdvertisingPlacement a rdfs:Class ;
+    rdfs:label "Advertising placement"@en, "Размещение рекламы"@ru ;
+    rdfs:comment "Announcement of an event placed within an advertisement, with its size."@en, "Анонс события, размещённый в рекламном объявлении, с его размером."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+economy:hasAdvertisingPlacement a rdf:Property ;
+    rdfs:domain economy:Advertisement ;
+    rdfs:range economy:AdvertisingPlacement ;
+    rdfs:label "Advertising placements"@en, "Размещения"@ru ;
+    rdfs:comment "Links an advertisement with the event announcements placed in it."@en, "Связывает рекламное объявление с размещёнными в нём анонсами событий."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+economy:magazine a rdf:Property ;
+    rdfs:domain economy:Advertisement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Magazine"@en, "Журнал"@ru ;
+    rdfs:comment "Name of the magazine in which the advertisement is published."@en, "Название журнала, в котором опубликовано объявление."@ru .
+
+economy:issueDate a rdf:Property ;
+    rdfs:domain economy:Advertisement ;
+    rdfs:range xsd:date ;
+    rdfs:label "Issue date"@en, "Дата номера"@ru ;
+    rdfs:comment "Date of the magazine issue."@en, "Дата выхода номера журнала."@ru .
+
+economy:adSize a rdf:Property ;
+    rdfs:domain economy:Advertisement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Advertisement size"@en, "Размер объявления"@ru ;
+    rdfs:comment "Size of the advertisement as a share of the page, such as 2/5 Page."@en, "Размер объявления в долях страницы, например 2/5 Page."@ru .
+
+economy:adCost a rdf:Property ;
+    rdfs:domain economy:Advertisement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Advertisement cost"@en, "Стоимость объявления"@ru ;
+    rdfs:comment "Total cost of the advertisement."@en, "Общая стоимость рекламного объявления."@ru .
+
+economy:jobNumber a rdf:Property ;
+    rdfs:domain economy:AdvertisingPlacement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Job number"@en, "Номер заказа"@ru ;
+    rdfs:comment "Alphanumeric identifier of the advertising job."@en, "Буквенно-цифровой идентификатор рекламного заказа."@ru .
+
+economy:artist a rdf:Property ;
+    rdfs:domain economy:AdvertisingPlacement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Artist"@en, "Артист"@ru ;
+    rdfs:comment "Name of the artist, band or event being advertised."@en, "Имя артиста, название группы или события, которое рекламируется."@ru .
+
+economy:venue a rdf:Property ;
+    rdfs:domain economy:AdvertisingPlacement ;
+    rdfs:range xsd:string ;
+    rdfs:label "Venue"@en, "Площадка"@ru ;
+    rdfs:comment "Name of the venue of the advertised event."@en, "Название площадки рекламируемого события."@ru .
+
+economy:date a rdf:Property ;
+    rdfs:domain economy:AdvertisingPlacement ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date"@en, "Дата"@ru ;
+    rdfs:comment "Date of the advertised event."@en, "Дата рекламируемого события."@ru .
+
+economy:column a rdf:Property ;
+    rdfs:domain economy:AdvertisingPlacement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Width (columns)"@en, "Ширина (колонки)"@ru ;
+    rdfs:comment "Width of the placement in column units of the magazine layout."@en, "Ширина размещения в колонках макета журнала."@ru .
+
+economy:height a rdf:Property ;
+    rdfs:domain economy:AdvertisingPlacement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Height (mm)"@en, "Высота (мм)"@ru ;
+    rdfs:comment "Height of the placement in millimetres."@en, "Высота размещения в миллиметрах."@ru .

@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix education: <http://example.org/education#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+education:EducationalStage a rdfs:Class ;
+    rdfs:label "Educational stage"@en, "Ступень школьного обучения"@ru ;
+    rdfs:comment "Stage of general education used to group pupils according to the grade they are enrolled in."@en, "Ступень общего образования, служащая для группировки учащихся по классу, в котором они обучаются."@ru .
+
+education:StudentRetention a rdfs:Class ;
+    rdfs:label "Pupil retention (grade repetition) statistics"@en, "Статистика оставления учащихся на второй год"@ru ;
+    rdfs:comment "Headcounts and shares of public-school pupils held back in the same grade, disaggregated by race/ethnicity, disability status, English-language proficiency, gender, and grade for the 2011–12 school year."@en, "Численность и доля учащихся государственных школ, оставленных на повторное обучение в том же классе, с разбивкой по расовой/этнической принадлежности, наличию инвалидности, уровню владения английским языком, полу и классу за 2011–12 учебный год."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+education:hasStatistics a rdf:Property ;
+    rdfs:domain education:EducationalStage ;
+    rdfs:range education:StudentRetention ;
+    rdfs:label "Retention statistics for the grade"@en, "Статистика повторного обучения по классу"@ru ;
+    rdfs:comment "Connects a grade level with the retention statistics compiled for pupils studying in that grade."@en, "Связывает ступень обучения со статистикой оставления на второй год, составленной для учащихся этого класса."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+education:grade a rdf:Property ;
+    rdfs:domain education:EducationalStage ;
+    rdfs:range xsd:string ;
+    rdfs:label "Grade designation"@en, "Обозначение класса"@ru ;
+    rdfs:comment "Grade level to which the reported retention data refer."@en, "Класс (ступень обучения), к которому относятся приводимые данные о повторном обучении."@ru .
+
+education:schoolsNumber a rdf:Property ;
+    rdfs:domain education:EducationalStage ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Count of reporting schools"@en, "Число школ, представивших данные"@ru ;
+    rdfs:comment "How many schools submitted information covering this grade level."@en, "Количество школ, представивших информацию по данному уровню обучения."@ru .
+
+education:percentSchoolsReporting a rdf:Property ;
+    rdfs:domain education:EducationalStage ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Reporting coverage of schools (%)"@en, "Охват школ, представивших данные (%)"@ru ;
+    rdfs:comment "Share, expressed in percent, of schools teaching this grade that took part in submitting data."@en, "Доля в процентах школ, ведущих обучение в данном классе, которые участвовали в предоставлении данных."@ru .
+
+education:gender a rdf:Property ;
+    rdfs:domain education:StudentRetention ;
+    rdfs:range xsd:string ;
+    rdfs:label "Student gender category"@en, "Категория пола учащегося"@ru ;
+    rdfs:comment "Gender category of the pupils whose retention is reflected in the record."@en, "Категория пола учащихся, чьё оставление на второй год отражено в записи."@ru .
+
+education:demographicDimension a rdf:Property ;
+    rdfs:domain education:StudentRetention ;
+    rdfs:range xsd:string ;
+    rdfs:label "Demographic breakdown characteristic"@en, "Признак демографической разбивки"@ru ;
+    rdfs:comment "Characteristic along which retention figures are disaggregated, such as race/ethnicity, disability status, or English-language proficiency."@en, "Признак, по которому выполняется разбивка показателей повторного обучения: расовая/этническая принадлежность, наличие инвалидности или уровень владения английским языком."@ru .
+
+education:demographicCategory a rdf:Property ;
+    rdfs:domain education:StudentRetention ;
+    rdfs:range xsd:string ;
+    rdfs:label "Value of the demographic characteristic"@en, "Значение демографического признака"@ru ;
+    rdfs:comment "Particular value of the chosen demographic dimension, for example a specific ethnic group or a language-proficiency level."@en, "Конкретное значение выбранного демографического признака, например определённая этническая группа или уровень владения языком."@ru .
+
+education:number a rdf:Property ;
+    rdfs:domain education:StudentRetention ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Count of retained pupils"@en, "Число учащихся, оставленных на второй год"@ru ;
+    rdfs:comment "Number of pupils held back in the grade for the combination of demographic characteristics described by the record."@en, "Количество учащихся, оставленных на второй год в данном классе для сочетания демографических характеристик, описанных записью."@ru .

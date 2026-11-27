@@ -1,0 +1,420 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix economy: <http://example.org/economy#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+economy:Equipment a rdfs:Class ;
+    rdfs:label "Office equipment"@en, "Оргтехника"@ru ;
+    rdfs:comment "Registry record describing a unit of office equipment managed by the organization."@en, "Запись реестра, описывающая единицу оргтехники, которой управляет организация."@ru .
+
+economy:Supplier a rdfs:Class ;
+    rdfs:label "Supplier"@en, "Поставщик"@ru ;
+    rdfs:comment "Organization or vendor from which office equipment was received."@en, "Организация или поставщик, от которого поступило офисное оборудование."@ru .
+
+economy:PriceList a rdfs:Class ;
+    rdfs:label "Price list"@en, "Прайс-лист"@ru ;
+    rdfs:comment "Pricing information for office equipment obtained from a supplier, including quantity and cost."@en, "Ценовая информация об офисном оборудовании, полученном от поставщика, включая количество и стоимость."@ru .
+
+economy:Employee a rdfs:Class ;
+    rdfs:label "Employee"@en, "Сотрудник"@ru ;
+    rdfs:comment "Person employed by the organization who may request or use office equipment."@en, "Физическое лицо, работающее в организации и имеющее возможность запрашивать или использовать оргтехнику."@ru .
+
+economy:Requisition a rdfs:Class ;
+    rdfs:label "Requisition"@en, "Заявка"@ru ;
+    rdfs:comment "Formalized request for office equipment needed by a user."@en, "Оформленный запрос на оргтехнику, необходимую пользователю."@ru .
+
+economy:Location a rdfs:Class ;
+    rdfs:label "Location"@en, "Местоположение"@ru ;
+    rdfs:comment "Organizational placement of office equipment, including branch, department, and location code."@en, "Организационное место размещения оргтехники, включая филиал, отдел и код места."@ru .
+
+economy:Transfer a rdfs:Class ;
+    rdfs:label "Transfer"@en, "Перевод"@ru ;
+    rdfs:comment "Record of equipment being moved or handed over to another user or place."@en, "Запись о перемещении или передаче техники другому пользователю либо в другое место."@ru .
+
+economy:TechnicalMaintenance a rdfs:Class ;
+    rdfs:label "Technical maintenance"@en, "Техническое обслуживание"@ru ;
+    rdfs:comment "Information about technical maintenance, configuration, and access parameters of office equipment."@en, "Сведения о техническом обслуживании, конфигурации и параметрах доступа к оргтехнике."@ru .
+
+economy:AssetDisposal a rdfs:Class ;
+    rdfs:label "Asset disposal"@en, "Утилизация оборудования"@ru ;
+    rdfs:comment "Information about decommissioning, disposal, or write-off of office equipment."@en, "Сведения о выводе из эксплуатации, утилизации или списании оргтехники."@ru .
+
+economy:LicenseSupplier a rdfs:Class ;
+    rdfs:label "License supplier"@en, "Поставщик лицензий"@ru ;
+    rdfs:comment "Vendor that supplies software licenses to the organization."@en, "Поставщик, предоставляющий организации лицензии на программное обеспечение."@ru .
+
+economy:Software a rdfs:Class ;
+    rdfs:label "Software"@en, "Программное обеспечение"@ru ;
+    rdfs:comment "Specific software product that is licensed or used by the organization."@en, "Конкретный программный продукт, на который получена лицензия или который используется организацией."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+economy:hasEquipmentSupply a rdf:Property ;
+    rdfs:domain economy:Supplier ;
+    rdfs:range economy:Equipment ;
+    rdfs:label "Supplied equipment"@en, "Поставленное оборудование"@ru ;
+    rdfs:comment "Associates a supplier record with the equipment supplied by that supplier."@en, "Связывает запись о поставщике с оборудованием, поставленным этим поставщиком."@ru .
+
+economy:hasEquipmentPriceList a rdf:Property ;
+    rdfs:domain economy:PriceList ;
+    rdfs:range economy:Equipment ;
+    rdfs:label "Equipment in price list"@en, "Оборудование в прайс-листе"@ru ;
+    rdfs:comment "Associates a price-list entry with the equipment covered by that pricing record."@en, "Связывает позицию прайс-листа с оборудованием, к которому относятся эти ценовые условия."@ru .
+
+economy:hasEquipmentRequisition a rdf:Property ;
+    rdfs:domain economy:Requisition ;
+    rdfs:range economy:Equipment ;
+    rdfs:label "Equipment in requisition"@en, "Оборудование по заявке"@ru ;
+    rdfs:comment "Associates a requisition with the equipment specified in that requisition."@en, "Связывает заявку с оборудованием, указанным в этой заявке."@ru .
+
+economy:hasEquipmentLocation a rdf:Property ;
+    rdfs:domain economy:Location ;
+    rdfs:range economy:Equipment ;
+    rdfs:label "Equipment at location"@en, "Оборудование в месте размещения"@ru ;
+    rdfs:comment "Associates a location with the office equipment currently placed there."@en, "Связывает место размещения с оргтехникой, которая находится там в данный момент."@ru .
+
+economy:hasEquipmentTransfer a rdf:Property ;
+    rdfs:domain economy:Transfer ;
+    rdfs:range economy:Equipment ;
+    rdfs:label "Equipment being transferred"@en, "Передаваемое оборудование"@ru ;
+    rdfs:comment ""@en, ""@ru .
+
+economy:hasEquipmentTechnicalMaintenance a rdf:Property ;
+    rdfs:domain economy:TechnicalMaintenance ;
+    rdfs:range economy:Equipment ;
+    rdfs:label "Equipment under maintenance"@en, "Оборудование на обслуживании"@ru ;
+    rdfs:comment "Associates a maintenance record with the equipment to which the maintenance relates."@en, "Связывает запись об обслуживании с оборудованием, к которому относится это обслуживание."@ru .
+
+economy:hasEquipmentAssetDisposal a rdf:Property ;
+    rdfs:domain economy:AssetDisposal ;
+    rdfs:range economy:Equipment ;
+    rdfs:label "Equipment subject to disposal"@en, "Оборудование, подлежащее выбытию"@ru ;
+    rdfs:comment "Associates a disposal record with the equipment subject to disposal."@en, "Связывает запись о выбытии с оборудованием, подлежащим выбытию."@ru .
+
+economy:hasEquipmentLicenseSupplier a rdf:Property ;
+    rdfs:domain economy:LicenseSupplier ;
+    rdfs:range economy:Equipment ;
+    rdfs:label "License supplier for equipment"@en, "Поставщик лицензий для оборудования"@ru ;
+    rdfs:comment "Associates a license supplier with equipment whose software licensing is provided by that supplier."@en, "Связывает поставщика лицензий с оборудованием, для которого этот поставщик предоставляет лицензии на программное обеспечение."@ru .
+
+economy:hasSubmittedRequisition a rdf:Property ;
+    rdfs:domain economy:Employee ;
+    rdfs:range economy:Requisition ;
+    rdfs:label "Requisition initiated by employee"@en, "Заявка, инициированная сотрудником"@ru ;
+    rdfs:comment "Associates an employee with the requisition that the employee created or submitted."@en, "Связывает сотрудника с заявкой, которую он создал или подал."@ru .
+
+economy:hasIncomingTransfer a rdf:Property ;
+    rdfs:domain economy:Location ;
+    rdfs:range economy:Transfer ;
+    rdfs:label "Incoming equipment transfer"@en, "Входящая передача оборудования"@ru ;
+    rdfs:comment "Associates a location with transfer records that bring equipment into that location."@en, "Связывает место с записями о перемещении, в результате которого оборудование поступает в это место."@ru .
+
+economy:hasSoftwareLicense a rdf:Property ;
+    rdfs:domain economy:LicenseSupplier ;
+    rdfs:range economy:Software ;
+    rdfs:label "Supplied software license"@en, "Предоставленная лицензия на ПО"@ru ;
+    rdfs:comment "Associates a license supplier with software products for which licenses are supplied."@en, "Связывает поставщика лицензий с программными продуктами, на которые предоставляются лицензии."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+economy:brand a rdf:Property ;
+    rdfs:domain economy:Equipment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Brand"@en, "Марка"@ru ;
+    rdfs:comment "Manufacturer or brand under which the equipment is produced."@en, "Производитель или торговая марка, под которой выпущено оборудование."@ru .
+
+economy:description a rdf:Property ;
+    rdfs:domain economy:Equipment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Description"@en, "Описание"@ru ;
+    rdfs:comment "Brief textual description of the equipment type or purpose."@en, "Краткое текстовое описание типа или назначения оборудования."@ru .
+
+economy:category a rdf:Property ;
+    rdfs:domain economy:Equipment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Category"@en, "Категория"@ru ;
+    rdfs:comment "Top-level classification used to group equipment."@en, "Классификация верхнего уровня, используемая для группировки оборудования."@ru .
+
+economy:modelNumber a rdf:Property ;
+    rdfs:domain economy:Equipment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Model number"@en, "Номер модели"@ru ;
+    rdfs:comment "Model number or manufacturer code identifying the equipment."@en, "Номер модели или код производителя, идентифицирующий оборудование."@ru .
+
+economy:serialNumber a rdf:Property ;
+    rdfs:domain economy:Equipment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Serial number"@en, "Серийный номер"@ru ;
+    rdfs:comment "Unique serial number assigned to the unit by the manufacturer."@en, "Уникальный серийный номер, присвоенный единице оборудования производителем."@ru .
+
+economy:albTagNumber a rdf:Property ;
+    rdfs:domain economy:Equipment ;
+    rdfs:range xsd:string ;
+    rdfs:label "ALB tag number"@en, "Инвентарный номер"@ru ;
+    rdfs:comment "Internal inventory tag or asset number assigned to the equipment."@en, "Внутренний инвентарный номер или номер актива, присвоенный оборудованию."@ru .
+
+economy:stockItem a rdf:Property ;
+    rdfs:domain economy:Equipment ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Stock item"@en, "Товар в наличии"@ru ;
+    rdfs:comment "Indicates whether the equipment is managed as a stock item."@en, "Указывает, учитывается ли оборудование как складская позиция."@ru .
+
+economy:supplierName a rdf:Property ;
+    rdfs:domain economy:Supplier ;
+    rdfs:range xsd:string ;
+    rdfs:label "Supplier name"@en, "Название поставщика"@ru ;
+    rdfs:comment "Name of the supplier that provided the office equipment."@en, "Наименование поставщика, предоставившего оргтехнику."@ru .
+
+economy:orderNoteDate a rdf:Property ;
+    rdfs:domain economy:Supplier ;
+    rdfs:range xsd:date ;
+    rdfs:label "Order note date"@en, "Дата примечания к заказу"@ru ;
+    rdfs:comment "Date on which the purchase order note for the equipment was created."@en, "Дата создания примечания к заказу на покупку оборудования."@ru .
+
+economy:orderNoteNumber a rdf:Property ;
+    rdfs:domain economy:Supplier ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Order note number"@en, "Номер примечания к заказу"@ru ;
+    rdfs:comment "Reference number of the purchase order note for the equipment."@en, "Регистрационный номер примечания к заказу на покупку оборудования."@ru .
+
+economy:dateDelivered a rdf:Property ;
+    rdfs:domain economy:Supplier ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date delivered"@en, "Дата доставки"@ru ;
+    rdfs:comment "Date on which the equipment was delivered by the supplier."@en, "Дата, когда оборудование было доставлено поставщиком."@ru .
+
+economy:deliveryNoteNumber a rdf:Property ;
+    rdfs:domain economy:Supplier ;
+    rdfs:range xsd:string ;
+    rdfs:label "Delivery note number"@en, "Номер накладной"@ru ;
+    rdfs:comment "Number of the consignment or delivery note accompanying the equipment."@en, "Номер товарно-транспортной или расходной накладной, сопровождавшей оборудование."@ru .
+
+economy:invoiceDate a rdf:Property ;
+    rdfs:domain economy:Supplier ;
+    rdfs:range xsd:date ;
+    rdfs:label "Invoice date"@en, "Дата выставления счета"@ru ;
+    rdfs:comment "Date of the invoice issued for the equipment order."@en, "Дата счёта, выставленного за заказ оборудования."@ru .
+
+economy:invoiceNumber a rdf:Property ;
+    rdfs:domain economy:Supplier ;
+    rdfs:range xsd:string ;
+    rdfs:label "Invoice number"@en, "Номер счета-фактуры"@ru ;
+    rdfs:comment "Reference number of the supplier invoice for the equipment."@en, "Номер счёта поставщика на оплату оборудования."@ru .
+
+economy:condition a rdf:Property ;
+    rdfs:domain economy:PriceList ;
+    rdfs:range xsd:string ;
+    rdfs:label "Condition"@en, "Состояние"@ru ;
+    rdfs:comment "Physical or operational condition of the equipment recorded in the price list."@en, "Физическое или эксплуатационное состояние оборудования, зафиксированное в прайс-листе."@ru .
+
+economy:quantity a rdf:Property ;
+    rdfs:domain economy:PriceList ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Quantity"@en, "Количество"@ru ;
+    rdfs:comment "Number of items in the price-list entry; usually 1 for uniquely serialized equipment."@en, "Количество позиций в записи прайс-листа; обычно равно 1 для оборудования с уникальным серийным номером."@ru .
+
+economy:unitPrice a rdf:Property ;
+    rdfs:domain economy:PriceList ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Unit price"@en, "Цена за единицу товара"@ru ;
+    rdfs:comment "Cost of one unit of the equipment."@en, "Стоимость одной единицы оборудования."@ru .
+
+economy:totalPriceExcludingVat a rdf:Property ;
+    rdfs:domain economy:PriceList ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total price excluding VAT"@en, "Общая цена без НДС"@ru ;
+    rdfs:comment "Total cost of the equipment before VAT is added."@en, "Общая стоимость оборудования до добавления НДС."@ru .
+
+economy:vat a rdf:Property ;
+    rdfs:domain economy:PriceList ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "VAT"@en, "НДС"@ru ;
+    rdfs:comment "Value-added tax amount applicable to the equipment price."@en, "Сумма налога на добавленную стоимость, относящаяся к цене оборудования."@ru .
+
+economy:totalPriceIncludingVat a rdf:Property ;
+    rdfs:domain economy:PriceList ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total price including VAT"@en, "Общая цена с НДС"@ru ;
+    rdfs:comment "Total cost of the equipment including VAT."@en, "Общая стоимость оборудования с учётом НДС."@ru .
+
+economy:employeeName a rdf:Property ;
+    rdfs:domain economy:Employee ;
+    rdfs:range xsd:string ;
+    rdfs:label "Employee name"@en, "Имя сотрудника"@ru ;
+    rdfs:comment "Full name of the employee."@en, "Полное имя сотрудника."@ru .
+
+economy:branch a rdf:Property ;
+    rdfs:domain economy:Employee ;
+    rdfs:range xsd:string ;
+    rdfs:label "Branch"@en, "Филиал"@ru ;
+    rdfs:comment "Branch where the employee works or to which the employee is assigned."@en, "Филиал, в котором работает сотрудник или к которому он прикреплён."@ru .
+
+economy:department a rdf:Property ;
+    rdfs:domain economy:Employee ;
+    rdfs:range xsd:string ;
+    rdfs:label "Department"@en, "Отдел"@ru ;
+    rdfs:comment "Department where the employee works or to which the employee is assigned."@en, "Отдел, в котором работает сотрудник или к которому он прикреплён."@ru .
+
+economy:jobTitle a rdf:Property ;
+    rdfs:domain economy:Employee ;
+    rdfs:range xsd:string ;
+    rdfs:label "Job title"@en, "Должность"@ru ;
+    rdfs:comment "Job position held by the employee."@en, "Должность, занимаемая сотрудником."@ru .
+
+economy:dateRequested a rdf:Property ;
+    rdfs:domain economy:Requisition ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date requested"@en, "Дата запроса"@ru ;
+    rdfs:comment "Date on which the user requested the equipment."@en, "Дата, когда пользователь запросил оборудование."@ru .
+
+economy:status a rdf:Property ;
+    rdfs:domain economy:Requisition ;
+    rdfs:range xsd:string ;
+    rdfs:label "Status"@en, "Статус"@ru ;
+    rdfs:comment "Current status of the equipment request."@en, "Текущий статус запроса на оборудование."@ru .
+
+economy:branch a rdf:Property ;
+    rdfs:domain economy:Location ;
+    rdfs:range xsd:string ;
+    rdfs:label "Branch"@en, "Филиал"@ru ;
+    rdfs:comment "Branch where the equipment is currently placed."@en, "Филиал, в котором оборудование размещено в настоящее время."@ru .
+
+economy:department a rdf:Property ;
+    rdfs:domain economy:Location ;
+    rdfs:range xsd:string ;
+    rdfs:label "Department"@en, "Отдел"@ru ;
+    rdfs:comment "Department where the equipment is currently placed."@en, "Отдел, в котором оборудование размещено в настоящее время."@ru .
+
+economy:locationCode a rdf:Property ;
+    rdfs:domain economy:Location ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Location code"@en, "Код местоположения"@ru ;
+    rdfs:comment "Code identifying the current placement of the equipment."@en, "Код, идентифицирующий текущее место размещения оборудования."@ru .
+
+economy:dateTransferred a rdf:Property ;
+    rdfs:domain economy:Transfer ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date transferred"@en, "Дата передачи"@ru ;
+    rdfs:comment "Date on which the equipment was transferred to the new user."@en, "Дата передачи оборудования новому пользователю."@ru .
+
+economy:newUser a rdf:Property ;
+    rdfs:domain economy:Transfer ;
+    rdfs:range xsd:string ;
+    rdfs:label "New user"@en, "Новый пользователь"@ru ;
+    rdfs:comment "User who receives the transferred equipment."@en, "Пользователь, получающий переданное оборудование."@ru .
+
+economy:stockItem a rdf:Property ;
+    rdfs:domain economy:Transfer ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Stock item"@en, "Товар на складе"@ru ;
+    rdfs:comment "Indicates whether the transferred equipment is treated as a stock item."@en, "Указывает, рассматривается ли перемещаемое оборудование как складская позиция."@ru .
+
+economy:technicianName a rdf:Property ;
+    rdfs:domain economy:TechnicalMaintenance ;
+    rdfs:range xsd:string ;
+    rdfs:label "Technician name"@en, "Имя техника"@ru ;
+    rdfs:comment "Name of the technician performing the maintenance or setup."@en, "Имя технического специалиста, выполняющего обслуживание или настройку."@ru .
+
+economy:setupDate a rdf:Property ;
+    rdfs:domain economy:TechnicalMaintenance ;
+    rdfs:range xsd:date ;
+    rdfs:label "Setup date"@en, "Дата настройки"@ru ;
+    rdfs:comment "Date on which the equipment setup or maintenance was performed."@en, "Дата выполнения настройки или обслуживания оборудования."@ru .
+
+economy:computerName a rdf:Property ;
+    rdfs:domain economy:TechnicalMaintenance ;
+    rdfs:range xsd:string ;
+    rdfs:label "Computer name"@en, "Имя компьютера"@ru ;
+    rdfs:comment "Network or system name assigned to the computer."@en, "Сетевое или системное имя, присвоенное компьютеру."@ru .
+
+economy:powerOnPassword a rdf:Property ;
+    rdfs:domain economy:TechnicalMaintenance ;
+    rdfs:range xsd:string ;
+    rdfs:label "Power on password"@en, "Пароль для включения питания"@ru ;
+    rdfs:comment "Password required when powering on the equipment."@en, "Пароль, требуемый при включении оборудования."@ru .
+
+economy:encryptionPassword a rdf:Property ;
+    rdfs:domain economy:TechnicalMaintenance ;
+    rdfs:range xsd:string ;
+    rdfs:label "Encryption password"@en, "Пароль шифрования"@ru ;
+    rdfs:comment "Password used for data encryption on the equipment."@en, "Пароль, используемый для шифрования данных на оборудовании."@ru .
+
+economy:dateDisposed a rdf:Property ;
+    rdfs:domain economy:AssetDisposal ;
+    rdfs:range xsd:date ;
+    rdfs:label "Date disposed"@en, "Дата уничтожения"@ru ;
+    rdfs:comment "Date on which the equipment was disposed of or destroyed."@en, "Дата, когда оборудование было утилизировано или уничтожено."@ru .
+
+economy:disposalMethod a rdf:Property ;
+    rdfs:domain economy:AssetDisposal ;
+    rdfs:range xsd:string ;
+    rdfs:label "Disposal method"@en, "Метод утилизации"@ru ;
+    rdfs:comment "Method used to dispose of the equipment."@en, "Способ, использованный для выбытия оборудования."@ru .
+
+economy:disposalProceeds a rdf:Property ;
+    rdfs:domain economy:AssetDisposal ;
+    rdfs:range xsd:string ;
+    rdfs:label "Proceeds of disposal"@en, "Поступления от реализации"@ru ;
+    rdfs:comment "Proceeds received from disposal or sale of the equipment."@en, "Поступления, полученные от выбытия или реализации оборудования."@ru .
+
+economy:reasonForDisposal a rdf:Property ;
+    rdfs:domain economy:AssetDisposal ;
+    rdfs:range xsd:string ;
+    rdfs:label "Reason for disposal"@en, "Причина удаления"@ru ;
+    rdfs:comment "Reason why the equipment was disposed of."@en, "Причина выбытия оборудования."@ru .
+
+economy:supplierName a rdf:Property ;
+    rdfs:domain economy:LicenseSupplier ;
+    rdfs:range xsd:string ;
+    rdfs:label "Supplier name"@en, "Название поставщика"@ru ;
+    rdfs:comment "Name of the software license supplier."@en, "Наименование поставщика лицензий на программное обеспечение."@ru .
+
+economy:orderNoteDate a rdf:Property ;
+    rdfs:domain economy:LicenseSupplier ;
+    rdfs:range xsd:date ;
+    rdfs:label "Order note date"@en, "Дата заказа"@ru ;
+    rdfs:comment "Date on which the software license order was created."@en, "Дата создания заказа на лицензии на программное обеспечение."@ru .
+
+economy:orderNoteNumber a rdf:Property ;
+    rdfs:domain economy:LicenseSupplier ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Order note number"@en, "Номер заказа"@ru ;
+    rdfs:comment "Reference number of the software license order."@en, "Регистрационный номер заказа на лицензии на программное обеспечение."@ru .
+
+economy:invoiceDate a rdf:Property ;
+    rdfs:domain economy:LicenseSupplier ;
+    rdfs:range xsd:date ;
+    rdfs:label "Invoice date"@en, "Дата счета"@ru ;
+    rdfs:comment "Date of the invoice issued for the software licenses."@en, "Дата счёта, выставленного за лицензии на программное обеспечение."@ru .
+
+economy:invoiceNumber a rdf:Property ;
+    rdfs:domain economy:LicenseSupplier ;
+    rdfs:range xsd:string ;
+    rdfs:label "Invoice number"@en, "Номер счета"@ru ;
+    rdfs:comment "Reference number of the invoice for the software licenses."@en, "Номер счёта, выставленного за лицензии на программное обеспечение."@ru .
+
+economy:cost a rdf:Property ;
+    rdfs:domain economy:LicenseSupplier ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Cost"@en, "Стоимость"@ru ;
+    rdfs:comment "Total cost of the software licenses."@en, "Общая стоимость лицензий на программное обеспечение."@ru .
+
+economy:softwareName a rdf:Property ;
+    rdfs:domain economy:SoftwareLicense ;
+    rdfs:range xsd:string ;
+    rdfs:label "Software name"@en, "Название программного обеспечения"@ru ;
+    rdfs:comment "Name of the software product associated with the license."@en, "Название программного продукта, связанного с лицензией."@ru .
+
+economy:softwareNumber a rdf:Property ;
+    rdfs:domain economy:SoftwareLicense ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Software number"@en, "Количество программного обеспечения"@ru ;
+    rdfs:comment "Number of licensed copies of the software product."@en, "Количество лицензионных копий программного продукта."@ru .

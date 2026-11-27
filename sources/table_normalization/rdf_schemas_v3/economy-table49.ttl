@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix economy: <http://example.org/economy#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+economy:StockItem a rdfs:Class ;
+    rdfs:label "Inventory stock item"@en, "Складская товарная позиция"@ru ;
+    rdfs:comment "Product item in inventory identified by a stock code."@en, "Товарная позиция в системе учёта запасов, идентифицируемая кодом товара."@ru .
+
+economy:Warehouse a rdfs:Class ;
+    rdfs:label "Warehouse"@en, "Склад"@ru ;
+    rdfs:comment "Stock data for a specific product in a specific warehouse bin, including quantity, cost, and weight."@en, "Данные об остатке конкретного товара в конкретной складской ячейке, включая количество, стоимость и вес."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+economy:hasInventory a rdf:Property ;
+    rdfs:domain economy:StockItem ;
+    rdfs:range economy:Warehouse ;
+    rdfs:label "Item inventory record"@en, "Запись остатка товара"@ru ;
+    rdfs:comment "Links a stock item with inventory stock data in a warehouse bin."@en, "Связывает товарную позицию с данными об остатках в складской ячейке."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+economy:stockCode a rdf:Property ;
+    rdfs:domain economy:StockItem ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Stock item code"@en, "Код товарной позиции"@ru ;
+    rdfs:comment "Unique numeric identifier of a product item in the inventory system."@en, "Уникальный числовой идентификатор товарной позиции в системе учёта запасов."@ru .
+
+economy:description a rdf:Property ;
+    rdfs:domain economy:StockItem ;
+    rdfs:range xsd:string ;
+    rdfs:label "Product description"@en, "Описание продукта"@ru ;
+    rdfs:comment "Commercial name or descriptive text of the product."@en, "Коммерческое наименование или описательный текст продукта."@ru .
+
+economy:supplierClass a rdf:Property ;
+    rdfs:domain economy:StockItem ;
+    rdfs:range xsd:string ;
+    rdfs:label "Supplier class code"@en, "Код класса поставщика"@ru ;
+    rdfs:comment "Supplier class and unit of measure code associated with the stock item."@en, "Код класса поставщика и единицы измерения, связанные с товарной позицией."@ru .
+
+economy:cumulativeCostCenter a rdf:Property ;
+    rdfs:domain economy:StockItem ;
+    rdfs:range xsd:string ;
+    rdfs:label "Cumulative cost center code"@en, "Код накопительного центра затрат"@ru ;
+    rdfs:comment "Cumulative cost center or base unit code used for inventory accounting."@en, "Код накопительного центра затрат или базовой единицы, используемый для учёта запасов."@ru .
+
+economy:averageCost a rdf:Property ;
+    rdfs:domain economy:StockItem ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average unit cost"@en, "Средняя стоимость единицы"@ru ;
+    rdfs:comment "Average cost per single product unit, used for inventory valuation."@en, "Средняя стоимость одной единицы продукта, используемая для оценки запасов."@ru .
+
+economy:warehouseBin a rdf:Property ;
+    rdfs:domain economy:Warehouse ;
+    rdfs:range xsd:string ;
+    rdfs:label "Warehouse bin code"@en, "Код складской ячейки"@ru ;
+    rdfs:comment "Code of the warehouse bin or storage location where inventory is physically stored."@en, "Код складской ячейки или места хранения, где физически размещены запасы."@ru .
+
+economy:onHand a rdf:Property ;
+    rdfs:domain economy:Warehouse ;
+    rdfs:range xsd:integer ;
+    rdfs:label "On-hand quantity"@en, "Количество в наличии"@ru ;
+    rdfs:comment "Current quantity of product units physically available in the specified warehouse bin."@en, "Текущее количество единиц продукта, физически доступных в указанной складской ячейке."@ru .
+
+economy:totalMass a rdf:Property ;
+    rdfs:domain economy:Warehouse ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total inventory mass"@en, "Общая масса запасов"@ru ;
+    rdfs:comment "Total weight or mass of inventory stored in this bin, expressed in the system mass unit."@en, "Общий вес или масса запасов, хранящихся в этой ячейке, выраженные в системной единице массы."@ru .

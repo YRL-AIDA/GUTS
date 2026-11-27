@@ -1,0 +1,84 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix economy: <http://example.org/economy#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+economy:Order a rdfs:Class ;
+    rdfs:label "Order"@en, "Заказ"@ru ;
+    rdfs:comment "Order details associated with a specific operational group and size."@en, "Сведения о заказе, связанные с конкретной операционной группой и размером."@ru .
+
+economy:Case a rdfs:Class ;
+    rdfs:label "Case"@en, "Кейс"@ru ;
+    rdfs:comment "A specific line item within an order, including the part number, its category, cost, and quantity."@en, "Конкретный кейс в заказе, включающий номер детали, его категорию, стоимость и количество."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+economy:hasOrderLineItem a rdf:Property ;
+    rdfs:domain economy:Order ;
+    rdfs:range economy:Case ;
+    rdfs:label "Order line item"@en, "Позиция заказа"@ru ;
+    rdfs:comment "Ordered part within the operation group."@en, "Деталь, заказанная в операционной группе."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+economy:caseNumber a rdf:Property ;
+    rdfs:domain economy:Order ;
+    rdfs:range xsd:string ;
+    rdfs:label "Case identifier"@en, "Идентификатор кейса"@ru ;
+    rdfs:comment "Unique identifier of a case or order batch."@en, "Уникальный идентификатор кейса или партии заказов."@ru .
+
+economy:operationGroupNumber a rdf:Property ;
+    rdfs:domain economy:Order ;
+    rdfs:range xsd:string ;
+    rdfs:label "Operation group number"@en, "Номер операционной группы"@ru ;
+    rdfs:comment "Identifier of a specific operational group."@en, "Идентификатор определенной операционной группы."@ru .
+
+economy:systemSize a rdf:Property ;
+    rdfs:domain economy:Order ;
+    rdfs:range xsd:string ;
+    rdfs:label "System size specification"@en, "Спецификация размера системы"@ru ;
+    rdfs:comment "Specification describing the system size."@en, "Спецификация, описывающая размер системы."@ru .
+
+economy:unit a rdf:Property ;
+    rdfs:domain economy:Order ;
+    rdfs:range xsd:string ;
+    rdfs:label "Measurement unit"@en, "Единица измерения"@ru ;
+    rdfs:comment "Unit of measurement used for the system size."@en, "Единица измерения, используемая для размера системы."@ru .
+
+economy:currency a rdf:Property ;
+    rdfs:domain economy:Order ;
+    rdfs:range xsd:string ;
+    rdfs:label "Currency symbol"@en, "Символ валюты"@ru ;
+    rdfs:comment "Currency symbol used for cost values."@en, "Символ валюты, используемый для значений стоимости."@ru .
+
+economy:category a rdf:Property ;
+    rdfs:domain economy:Case ;
+    rdfs:range xsd:string ;
+    rdfs:label "Product category"@en, "Категория продукта"@ru ;
+    rdfs:comment "Identifier of the product category."@en, "Идентификатор категории продукта."@ru .
+
+economy:partNumber a rdf:Property ;
+    rdfs:domain economy:Case ;
+    rdfs:range xsd:string ;
+    rdfs:label "Part or article number"@en, "Номер детали или артикул"@ru ;
+    rdfs:comment "Unique part number or article number of the ordered item."@en, "Уникальный номер детали или артикул заказанной позиции."@ru .
+
+economy:cost a rdf:Property ;
+    rdfs:domain economy:Case ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Unit cost"@en, "Стоимость единицы"@ru ;
+    rdfs:comment "Unit cost of the part in the specified currency."@en, "Стоимость одной единицы детали в указанной валюте."@ru .
+
+economy:quantity a rdf:Property ;
+    rdfs:domain economy:Case ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Ordered quantity"@en, "Заказанное количество"@ru ;
+    rdfs:comment "Number of ordered units of the part."@en, "Количество заказанных единиц детали."@ru .

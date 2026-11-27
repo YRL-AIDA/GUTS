@@ -1,0 +1,66 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix environment: <http://example.org/environment#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+environment:Animal a rdfs:Class ;
+    rdfs:label "Animal"@en, "Животное"@ru ;
+    rdfs:comment "Laboratory mouse with its genotype, experimental group and treatment."@en, "Лабораторная мышь с её генотипом, экспериментальной группой и препаратом."@ru .
+
+environment:ForcedSwimTest a rdfs:Class ;
+    rdfs:label "Forced swim test"@en, "Тест принудительного плавания"@ru ;
+    rdfs:comment "Immobility time and latency to immobility of an animal in the forced swim test."@en, "Время неподвижности и задержка до неподвижности животного в тесте принудительного плавания."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+environment:hasForcedSwimTest a rdf:Property ;
+    rdfs:domain environment:Animal ;
+    rdfs:range environment:ForcedSwimTest ;
+    rdfs:label "Forced swim test"@en, "Тест принудительного плавания"@ru ;
+    rdfs:comment "Links an animal with its forced swim test results."@en, "Связывает животное с его результатами теста принудительного плавания."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+environment:animalId a rdf:Property ;
+    rdfs:domain environment:Animal ;
+    rdfs:range xsd:string ;
+    rdfs:label "Animal identifier"@en, "Идентификатор животного"@ru ;
+    rdfs:comment "Identifier of the animal in the experiment."@en, "Идентификатор животного в эксперименте."@ru .
+
+environment:genotype a rdf:Property ;
+    rdfs:domain environment:Animal ;
+    rdfs:range xsd:string ;
+    rdfs:label "Genotype"@en, "Генотип"@ru ;
+    rdfs:comment "Genotype of the animal, such as wild type or FGF2 knockout."@en, "Генотип животного, например дикий тип или нокаут по гену FGF2."@ru .
+
+environment:group a rdf:Property ;
+    rdfs:domain environment:Animal ;
+    rdfs:range xsd:string ;
+    rdfs:label "Group"@en, "Группа"@ru ;
+    rdfs:comment "Experimental group to which the animal belongs, control or stress."@en, "Экспериментальная группа животного: контроль или стресс."@ru .
+
+environment:treatment a rdf:Property ;
+    rdfs:domain environment:Animal ;
+    rdfs:range xsd:string ;
+    rdfs:label "Treatment"@en, "Препарат"@ru ;
+    rdfs:comment "Pharmacological treatment applied to the animal, vehicle or fluoxetine."@en, "Препарат, который получало животное: растворитель или флуоксетин."@ru .
+
+environment:timeImmobile a rdf:Property ;
+    rdfs:domain environment:ForcedSwimTest ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Time immobile (s)"@en, "Время неподвижности (с)"@ru ;
+    rdfs:comment "Duration of immobility during the test in seconds."@en, "Длительность неподвижности во время теста в секундах."@ru .
+
+environment:latencyToImmobility a rdf:Property ;
+    rdfs:domain environment:ForcedSwimTest ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Latency to immobility (s)"@en, "Задержка до неподвижности (с)"@ru ;
+    rdfs:comment "Time before the first onset of immobility in seconds."@en, "Время до первого наступления неподвижности в секундах."@ru .

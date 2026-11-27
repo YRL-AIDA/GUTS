@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix economy: <http://example.org/economy#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+economy:LabourAccounting a rdfs:Class ;
+    rdfs:label "Labour accounting"@en, "Учёт труда"@ru ;
+    rdfs:comment "Recording sales of work performed under repair orders."@en, "Учёт продаж работ по ремонтным заказам."@ru .
+
+economy:RepairRequest a rdfs:Class ;
+    rdfs:label "Repair request"@en, "Заявка на ремонт"@ru ;
+    rdfs:comment "Repair order request."@en, "Заявка на ремонтный заказ."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+economy:roNumber a rdf:Property ;
+    rdfs:domain economy:LabourAccounting ;
+    rdfs:range xsd:string ;
+    rdfs:label "R/O number"@en, "Номер ремонтного заказа"@ru ;
+    rdfs:comment "Repair order number."@en, "Номер ремонтного заказа."@ru .
+
+economy:salesAmount a rdf:Property ;
+    rdfs:domain economy:LabourAccounting ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Sales amount"@en, "Сумма продаж"@ru ;
+    rdfs:comment "Sales amount for the labour."@en, "Сумма продажи за выполненную работу."@ru .
+
+economy:hoursCharged a rdf:Property ;
+    rdfs:domain economy:LabourAccounting ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Hours charged"@en, "Списанные часы"@ru ;
+    rdfs:comment "Labour hours charged."@en, "Количество списанных часов работ."@ru .
+
+economy:tech a rdf:Property ;
+    rdfs:domain economy:LabourAccounting ;
+    rdfs:range xsd:string ;
+    rdfs:label "Tech"@en, "Техник"@ru ;
+    rdfs:comment "Technician code. Stored as string to preserve leading zeros."@en, "Код техника. Хранится как строка для сохранения ведущих нулей."@ru .
+
+economy:grossPercent a rdf:Property ;
+    rdfs:domain economy:LabourAccounting ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "% gross"@en, "Процент валовой прибыли"@ru ;
+    rdfs:comment "Gross profit percentage."@en, "Процент валовой прибыли."@ru .
+
+economy:ordersNumber a rdf:Property ;
+    rdfs:domain economy:RepairRequest ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of orders"@en, "Количество заявок"@ru ;
+    rdfs:comment "Number of repair orders."@en, "Количество заявок на ремонт."@ru .

@@ -1,0 +1,155 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix society: <http://example.org/society#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+society:OlivineDataCompilation a rdfs:Class ;
+    rdfs:label "Olivine data compilation"@en, "Сборник данных по оливину"@ru ;
+    rdfs:comment "A record compiling olivine geochemical data for a specific kimberlite or lamproite locality, including lithology, country, craton position, age, and statistical summaries of core and rim compositions."@en, "Запись, объединяющая геохимические данные по оливину для конкретного месторождения кимберлита или лампроита, включая литологию, страну, положение относительно кратона, возраст, а также статистические сводки состава ядер и краёв зёрен оливина."@ru .
+
+society:OlivineCoreSubstance a rdfs:Class ;
+    rdfs:label "Olivine core substance data"@en, "Данные по веществу в ядрах оливина"@ru ;
+    rdfs:comment "Statistical summary of a specific chemical substance (e.g., Mg#, Cr2O3, MnO, NiO, CaO) measured in the cores of olivine grains from a locality."@en, "Статистическая сводка по конкретному химическому веществу (например, Mg#, Cr2O3, MnO, NiO, CaO), измеренному в ядрах зёрен оливина из месторождения."@ru .
+
+society:OlivineRimSubstance a rdfs:Class ;
+    rdfs:label "Olivine rim substance data"@en, "Данные по веществу по краям оливина"@ru ;
+    rdfs:comment "Statistical summary of a specific chemical substance measured in the rims of olivine grains from a locality."@en, "Статистическая сводка по конкретному химическому веществу, измеренному по краям зёрен оливина из месторождения."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+society:hasOlivineCoreSubstance a rdf:Property ;
+    rdfs:domain society:OlivineDataCompilation ;
+    rdfs:range society:OlivineCoreSubstance ;
+    rdfs:label "Core substance composition"@en, "Состав вещества в ядрах"@ru ;
+    rdfs:comment "Links an olivine data compilation record to the statistical data of a substance measured in olivine cores."@en, "Связывает запись сборника данных по оливину со статистическими данными по веществу, измеренному в ядрах оливина."@ru .
+
+society:hasOlivineRimSubstance a rdf:Property ;
+    rdfs:domain society:OlivineDataCompilation ;
+    rdfs:range society:OlivineRimSubstance ;
+    rdfs:label "Rim substance composition"@en, "Состав вещества по краям"@ru ;
+    rdfs:comment "Links an olivine data compilation record to the statistical data of a substance measured in olivine rims."@en, "Связывает запись сборника данных по оливину со статистическими данными по веществу, измеренному по краям оливина."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+society:localityType a rdf:Property ;
+    rdfs:domain society:OlivineDataCompilation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Locality group type"@en, "Тип группы месторождений"@ru ;
+    rdfs:comment "The broad geological grouping or category of the locality, such as 'South Africa orangeites', 'West Africa', or 'Lac De Gras kimberlites'."@en, "Широкая геологическая группировка или категория месторождения, например, 'Оранжеты Южной Африки', 'Западная Африка' или 'Кимберлиты Лак-де-Гра'."@ru .
+
+society:locality a rdf:Property ;
+    rdfs:domain society:OlivineDataCompilation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Locality name"@en, "Название месторождения"@ru ;
+    rdfs:comment "The specific name of the kimberlite, lamproite, or related locality."@en, "Конкретное название месторождения кимберлита, лампроита или связанной с ними породы."@ru .
+
+society:lithology a rdf:Property ;
+    rdfs:domain society:OlivineDataCompilation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Lithology (rock type)"@en, "Литология (тип породы)"@ru ;
+    rdfs:comment "The rock type of the locality, such as olivine lamproite, kimberlite, orangeite, or aillikite."@en, "Тип породы месторождения, например, оливиновый лампроит, кимберлит, оранжит или айликикит."@ru .
+
+society:country a rdf:Property ;
+    rdfs:domain society:OlivineDataCompilation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Country"@en, "Страна"@ru ;
+    rdfs:comment "The country where the locality is located."@en, "Страна, в которой расположено месторождение."@ru .
+
+society:position a rdf:Property ;
+    rdfs:domain society:OlivineDataCompilation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Craton position"@en, "Положение относительно кратона"@ru ;
+    rdfs:comment "The tectonic position of the locality relative to the craton, such as on craton, craton margin, or off craton."@en, "Тектоническое положение месторождения относительно кратона: на кратоне, на краю кратона или за пределами кратона."@ru .
+
+society:age a rdf:Property ;
+    rdfs:domain society:OlivineDataCompilation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Age (Ma)"@en, "Возраст (млн лет)"@ru ;
+    rdfs:comment "The geological age of the kimberlite or lamproite in millions of years (Ma)."@en, "Геологический возраст кимберлита или лампроита в миллионах лет (Ma)."@ru .
+
+society:ageReference a rdf:Property ;
+    rdfs:domain society:OlivineDataCompilation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Age determination reference"@en, "Ссылка на определение возраста"@ru ;
+    rdfs:comment "Bibliographic reference for the age determination of the locality."@en, "Библиографическая ссылка на источник определения возраста месторождения."@ru .
+
+society:coreNumber a rdf:Property ;
+    rdfs:domain society:OlivineDataCompilation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of olivine cores"@en, "Количество ядер оливина"@ru ;
+    rdfs:comment "The number of olivine core analyses used to calculate the core statistics."@en, "Количество анализов ядер оливина, использованных для расчёта статистики по ядрам."@ru .
+
+society:rimNumber a rdf:Property ;
+    rdfs:domain society:OlivineDataCompilation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of olivine rims"@en, "Количество краёв оливина"@ru ;
+    rdfs:comment "The number of olivine rim analyses used to calculate the rim statistics."@en, "Количество анализов краёв оливина, использованных для расчёта статистики по краям."@ru .
+
+society:reference a rdf:Property ;
+    rdfs:domain society:OlivineDataCompilation ;
+    rdfs:range xsd:string ;
+    rdfs:label "Composition data reference"@en, "Ссылка на данные по составу"@ru ;
+    rdfs:comment "Bibliographic reference for the olivine composition data."@en, "Библиографическая ссылка на источник данных по составу оливина."@ru .
+
+society:coreFractionBelow90 a rdf:Property ;
+    rdfs:domain society:OlivineDataCompilation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Fraction of cores with Mg# below 90"@en, "Доля ядер с Mg# ниже 90"@ru ;
+    rdfs:comment "The fraction of olivine cores with a magnesium number (Mg#) below 90. This metric is specific to the Mg# parameter."@en, "Доля ядер оливина с магниевым числом (Mg#) ниже 90. Данная метрика специфична для параметра Mg#."@ru .
+
+society:coreName a rdf:Property ;
+    rdfs:domain society:OlivineCoreSubstance ;
+    rdfs:range xsd:string ;
+    rdfs:label "Name of the substance in the cores"@en, "Название вещества в ядрах"@ru ;
+    rdfs:comment "The name of the chemical substance or parameter measured in olivine cores (e.g., Mg#, Cr2O3, MnO, NiO, CaO)."@en, "Название химического вещества или параметра, измеренного в ядрах оливина (например, Mg#, Cr2O3, MnO, NiO, CaO)."@ru .
+
+society:coreMedian a rdf:Property ;
+    rdfs:domain society:OlivineCoreSubstance ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Core substance median"@en, "Медиана вещества в ядрах"@ru ;
+    rdfs:comment "The median value of the substance in olivine cores."@en, "Медианное значение вещества в ядрах оливина."@ru .
+
+society:coreMean a rdf:Property ;
+    rdfs:domain society:OlivineCoreSubstance ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Core substance mean"@en, "Среднее значение вещества в ядрах"@ru ;
+    rdfs:comment "The mean content of the substance in olivine cores. For Mg#, this is the mean magnesium number; for oxides, it is typically in wt%."@en, "Среднее содержание вещества в ядрах оливина. Для Mg# это среднее магниевое число; для оксидов обычно выражается в массовых процентах (мас.%)."@ru .
+
+society:coreStandardDeviation a rdf:Property ;
+    rdfs:domain society:OlivineCoreSubstance ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Core substance standard deviation"@en, "Стандартное отклонение вещества в ядрах"@ru ;
+    rdfs:comment "The standard deviation of the substance content in olivine cores."@en, "Стандартное отклонение содержания вещества в ядрах оливина."@ru .
+
+society:coreMax a rdf:Property ;
+    rdfs:domain society:OlivineCoreSubstance ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Core substance maximum"@en, "Максимум вещества в ядрах"@ru ;
+    rdfs:comment "The maximum value of the substance in olivine cores."@en, "Максимальное значение вещества в ядрах оливина."@ru .
+
+society:rimName a rdf:Property ;
+    rdfs:domain society:OlivineRimSubstance ;
+    rdfs:range xsd:string ;
+    rdfs:label "Name of the substance in the rims"@en, "Название вещества по краям"@ru ;
+    rdfs:comment "The name of the chemical substance or parameter measured in olivine rims (e.g., Mg#, Cr2O3, MnO, NiO, CaO)."@en, "Название химического вещества или параметра, измеренного по краям оливина (например, Mg#, Cr2O3, MnO, NiO, CaO)."@ru .
+
+society:rimMean a rdf:Property ;
+    rdfs:domain society:OlivineRimSubstance ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Rim substance mean"@en, "Среднее значение вещества по краям"@ru ;
+    rdfs:comment "The mean content of the substance in olivine rims. For Mg#, this is the mean magnesium number."@en,
+                 "Среднее содержание вещества по краям оливина. Для Mg# это среднее магниевое число."@ru .
+
+society:rimStandardDeviation a rdf:Property ;
+    rdfs:domain society:OlivineRimSubstance ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Rim substance standard deviation"@en, "Стандартное отклонение вещества по краям"@ru ;
+    rdfs:comment "The standard deviation of the substance content in olivine rims."@en, "Стандартное отклонение содержания вещества по краям оливина."@ru .

@@ -1,0 +1,42 @@
+@prefix fd: <http://example.org/food#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+fd:FoodExpenditureSeries a rdfs:Class ;
+    rdfs:label "Food expenditure series"@en, "Серия данных о расходах на продукты питания"@ru ;
+    rdfs:comment "Food expenditure series per capita sales of food for all purchasers with taxes and tips, by State (U.S. Dollars)"@en, "Данные о расходах на продукты питания на душу населения: объем продаж продуктов питания для всех покупателей с учетом налогов и чаевых, по штатам (доллары США)"@ru .
+
+# ==================== Datatype Properties ====================
+
+fd:year a rdf:Property ;
+    rdfs:domain fd:FoodExpenditureSeries ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+fd:state a rdf:Property ;
+    rdfs:domain fd:FoodExpenditureSeries ;
+    rdfs:range xsd:string ;
+    rdfs:label "State"@en, "Штат"@ru ;
+    rdfs:comment "The name of the U.S. state"@en, "Название штата США"@ru .
+
+fd:foodCategory a rdf:Property ;
+    rdfs:domain fd:FoodExpenditureSeries ;
+    rdfs:range xsd:string ;
+    rdfs:label "Food category"@en, "Категория питания"@ru ;
+    rdfs:comment "The category of food: FAH (Food at Home), FAFH (Food Away from Home), or All food"@en, "Категория питания: FAH (продукты для дома), FAFH (питание вне дома) или All food (все продукты)"@ru .
+
+fd:priceType a rdf:Property ;
+    rdfs:domain fd:FoodExpenditureSeries ;
+    rdfs:range xsd:string ;
+    rdfs:label "Price type"@en, "Тип цены"@ru ;
+    rdfs:comment "The type of price adjustment"@en, "Тип корректировки цены"@ru .
+
+fd:salesVolume a rdf:Property ;
+    rdfs:domain fd:FoodExpenditureSeries ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Sales volume"@en, "Объем продаж"@ru ;
+    rdfs:comment "The numeric value of per capita food sales for the given state"@en, "Числовое значение продаж продовольствия на душу населения для данного штата"@ru .

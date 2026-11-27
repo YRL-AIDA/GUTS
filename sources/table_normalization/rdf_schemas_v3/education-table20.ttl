@@ -1,0 +1,84 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix education: <http://example.org/education#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+education:HighSchool a rdfs:Class ;
+    rdfs:label "High school"@en, "Старшая школа"@ru ;
+    rdfs:comment "Educational institution classified as a transfer high school."@en, "Образовательное учреждение, классифицируемое как старшая школа переводного типа."@ru .
+
+education:SchoolEnvironment a rdfs:Class ;
+    rdfs:label "School environment"@en, "Школьная среда"@ru ;
+    rdfs:comment "Assessment data for the school environment, including the overall score and dimension-level comparisons against peer groups and city benchmarks."@en, "Данные оценки школьной среды, включая общий балл и сравнение по показателям с группами аналогичных школ и городскими ориентирами."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+education:hasAssessment a rdf:Property ;
+    rdfs:domain education:HighSchool ;
+    rdfs:range education:SchoolEnvironment ;
+    rdfs:label "School environment assessment"@en, "Оценка школьной среды"@ru ;
+    rdfs:comment "Links a school with an assessment value for a particular dimension."@en, "Связывает школу с оценкой по конкретному показателю."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+education:dbn a rdf:Property ;
+    rdfs:domain education:HighSchool ;
+    rdfs:range xsd:string ;
+    rdfs:label "DBN school code"@en, "Код школы DBN"@ru ;
+    rdfs:comment "Unique alphanumeric DBN identifier of the school."@en, "Уникальный буквенно-цифровой идентификатор школы в формате DBN."@ru .
+
+education:schoolName a rdf:Property ;
+    rdfs:domain education:HighSchool ;
+    rdfs:range xsd:string ;
+    rdfs:label "Official school name"@en, "Официальное наименование школы"@ru ;
+    rdfs:comment "Official name of the educational institution."@en, "Официальное наименование образовательного учреждения."@ru .
+
+education:environmentScore a rdf:Property ;
+    rdfs:domain education:HighSchool ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Overall environment score"@en, "Общий балл школьной среды"@ru ;
+    rdfs:comment "Overall numeric score for the school environment, typically on a 0–15 scale."@en, "Общий числовой балл школьной среды, обычно по шкале от 0 до 15."@ru .
+
+education:environmentGrade a rdf:Property ;
+    rdfs:domain education:HighSchool ;
+    rdfs:range xsd:string ;
+    rdfs:label "Environment letter grade"@en, "Буквенная оценка среды"@ru ;
+    rdfs:comment "Letter grade summarizing the environment score (A, B, C, D, or F)."@en, "Буквенная оценка, обобщающая балл школьной среды (A, B, C, D или F)."@ru .
+
+education:dimension a rdf:Property ;
+    rdfs:domain education:SchoolEnvironment ;
+    rdfs:range xsd:string ;
+    rdfs:label "School environment dimension"@en, "Показатель школьной среды"@ru ;
+    rdfs:comment "Aspect of the school environment being assessed."@en, "Аспект школьной среды, подлежащий оценке."@ru .
+
+education:dimensionValue a rdf:Property ;
+    rdfs:domain education:SchoolEnvironment ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Dimension value"@en, "Значение показателя"@ru ;
+    rdfs:comment "Value recorded for the school on the dimension."@en, "Значение, зафиксированное для школы по данному показателю."@ru .
+
+education:comparisonScope a rdf:Property ;
+    rdfs:domain education:SchoolEnvironment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Comparison reference group"@en, "Группа для сравнения"@ru ;
+    rdfs:comment "Reference group used for comparison, such as peer schools or the city as a whole."@en, "Группа, используемая для сравнения, например аналогичные школы или город в целом."@ru .
+
+education:minRange a rdf:Property ;
+    rdfs:domain education:SchoolEnvironment ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Minimum range bound"@en, "Нижняя граница диапазона"@ru ;
+    rdfs:comment "Lower bound of the value range for the given dimension and comparison scope."@en, "Нижняя граница диапазона значений для заданного показателя и области сравнения."@ru .
+
+education:maxRange a rdf:Property ;
+    rdfs:domain education:SchoolEnvironment ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Maximum range bound"@en, "Верхняя граница диапазона"@ru ;
+    rdfs:comment "Upper bound of the value range for the given dimension and comparison scope."@en, "Верхняя граница диапазона значений для заданного показателя и области сравнения."@ru .

@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix employment: <http://example.org/employment#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+employment:PopulationEmployment a rdfs:Class ;
+    rdfs:label "Population employment"@en, "Занятость населения"@ru ;
+    rdfs:comment "Employment status of a population group in a year, in thousands of persons."@en, "Статус занятости группы населения за год, в тысячах человек."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+employment:ageGroup a rdf:Property ;
+    rdfs:domain employment:PopulationEmployment ;
+    rdfs:range xsd:string ;
+    rdfs:label "Age group"@en, "Возрастная группа"@ru ;
+    rdfs:comment "Age group as given in the table, such as 16 years of age and over."@en, "Возрастная группа, как в таблице, например 16 years of age and over."@ru .
+
+employment:year a rdf:Property ;
+    rdfs:domain employment:PopulationEmployment ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of the annual average."@en, "Календарный год годового среднего."@ru .
+
+employment:agricultureEmployedNumber a rdf:Property ;
+    rdfs:domain employment:PopulationEmployment ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Employed in agriculture"@en, "Занятые в сельском хозяйстве"@ru ;
+    rdfs:comment "Number of persons employed in agriculture, in thousands."@en, "Число занятых в сельском хозяйстве, тыс. чел."@ru .
+
+employment:nonagriculturalEmployedNumber a rdf:Property ;
+    rdfs:domain employment:PopulationEmployment ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Employed in nonagricultural industries"@en, "Занятые вне сельского хозяйства"@ru ;
+    rdfs:comment "Number of persons employed in nonagricultural industries, in thousands."@en, "Число занятых вне сельского хозяйства, тыс. чел."@ru .
+
+employment:unemployedNumber a rdf:Property ;
+    rdfs:domain employment:PopulationEmployment ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Unemployed"@en, "Безработные"@ru ;
+    rdfs:comment "Number of unemployed persons, in thousands."@en, "Число безработных, тыс. чел."@ru .
+
+employment:notInLaborForceNumber a rdf:Property ;
+    rdfs:domain employment:PopulationEmployment ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Not in labor force"@en, "Вне рабочей силы"@ru ;
+    rdfs:comment "Number of persons not in the labor force, in thousands."@en, "Число лиц, не входящих в рабочую силу, тыс. чел."@ru .

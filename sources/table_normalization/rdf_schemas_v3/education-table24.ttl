@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix education: <http://example.org/education#> .
+
+#-------------------------------------------
+# Classes
+#-------------------------------------------
+
+education:State a rdfs:Class ;
+    rdfs:label "US state or national total"@en, "Штат США или показатель по стране"@ru ;
+    rdfs:comment "A U.S. state or the United States as a whole."@en, "Штат США либо Соединённые Штаты в целом."@ru .
+
+education:MathematicsSchools a rdfs:Class ;
+    rdfs:label "Mathematics schools"@en, "Математические школы"@ru ;
+    rdfs:comment "Statistical data on the availability of algebra and geometry courses in U.S. schools."@en, "Статистические данные о доступности курсов алгебры и геометрии в школах США."@ru .
+
+#-------------------------------------------
+# Object Properties
+#-------------------------------------------
+
+education:hasMathCourseStatistics a rdf:Property ;
+    rdfs:domain education:State ;
+    rdfs:range education:MathematicsSchools ;
+    rdfs:label "Math course availability statistics"@en, "Статистика доступности математических курсов"@ru ;
+    rdfs:comment "Connects a state entity with the statistical records detailing the availability of mathematics courses in its schools."@en, "Связывает сущность штата со статистическими записями, детализирующими доступность курсов математики в его школах."@ru .
+
+#-------------------------------------------
+# Datatype Properties
+#-------------------------------------------
+
+education:state a rdf:Property ;
+    rdfs:domain education:State ;
+    rdfs:range xsd:string ;
+    rdfs:label "State or region name"@en, "Наименование штата или региона"@ru ;
+    rdfs:comment "Name of the U.S. state or aggregated national region for which the educational statistics are reported."@en, "Название штата США или агрегированного национального региона, для которого представлены статистические данные об образовании."@ru .
+
+education:schoolsNumber a rdf:Property ;
+    rdfs:domain education:State ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Total school count"@en, "Общее число школ"@ru ;
+    rdfs:comment "Total number of middle schools operating within the specified state or region."@en, "Общее количество средних школ, функционирующих в указанном штате или регионе."@ru .
+
+education:schoolsReporting a rdf:Property ;
+    rdfs:domain education:State ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Count of reporting schools"@en, "Число отчитавшихся школ"@ru ;
+    rdfs:comment "Number of educational institutions in the state that successfully submitted data for this specific report."@en, "Количество образовательных учреждений в штате, успешно предоставивших данные для данного конкретного отчёта."@ru .
+
+education:subjectCategory a rdf:Property ;
+    rdfs:domain education:MathematicsSchools ;
+    rdfs:range xsd:string ;
+    rdfs:label "Mathematics subject category"@en, "Категория математической дисциплины"@ru ;
+    rdfs:comment "Specific type or name of the mathematics course being tracked, such as algebra or geometry."@en, "Конкретный тип или название отслеживаемого курса математики, например, алгебра или геометрия."@ru .
+
+education:courseNumber a rdf:Property ;
+    rdfs:domain education:MathematicsSchools ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of available courses"@en, "Количество доступных курсов"@ru ;
+    rdfs:comment "Total count of classes or course sections of the specified mathematics type offered by the reporting schools."@en, "Общее количество классов или учебных секций указанного типа математики, предлагаемых отчитавшимися школами."@ru .

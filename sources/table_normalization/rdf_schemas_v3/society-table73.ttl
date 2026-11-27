@@ -1,0 +1,42 @@
+@prefix soc: <http://example.org/society#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==================== Classes ====================
+
+soc:JSASanctionSurvey a rdfs:Class ;
+    rdfs:label "JSA sanction survey"@en, "Обзор санкций JSA"@ru ;
+    rdfs:comment "A survey of JSA sanction decision level"@en, "Обзор уровня принятия решения по санкциям JSA"@ru .
+
+# ==================== Datatype Properties ====================
+
+soc:year a rdf:Property ;
+    rdfs:domain soc:JSASanctionSurvey ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "Year"@en, "Год"@ru ;
+    rdfs:comment "Calendar year of observation"@en, "Календарный год наблюдения"@ru .
+
+soc:month a rdf:Property ;
+    rdfs:domain soc:JSASanctionSurvey ;
+    rdfs:range xsd:string ;
+    rdfs:label "Month"@en, "Месяц"@ru ;
+    rdfs:comment "Calendar month of observation"@en, "Календарный месяц наблюдения"@ru .
+
+soc:nonAdverseDecisions a rdf:Property ;
+    rdfs:domain soc:JSASanctionSurvey ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Non-adverse decisions"@en, "Благоприятные решения"@ru ;
+    rdfs:comment "A non-adverse decision is a decision found in favour of the claimant, i.e. a sanction or disallowance is not applied"@en, "Благоприятное решение — это решение, принятое в пользу заявителя, т.е. санкция или отказ в выплате не применяются"@ru .
+
+soc:adverseDecisions a rdf:Property ;
+    rdfs:domain soc:JSASanctionSurvey ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Adverse decisions"@en, "Неблагоприятные решения"@ru ;
+    rdfs:comment "An adverse decision is a decision found against the claimant, i.e. a sanction or disallowance is applied"@en, "Неблагоприятное решение — это решение, принятое против заявителя, т.е. санкция или отказ в выплате применяются"@ru .
+
+soc:cancelledDecisions a rdf:Property ;
+    rdfs:domain soc:JSASanctionSurvey ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Cancelled decisions"@en, "Отмененные решения"@ru ;
+    rdfs:comment "A cancelled decision can occur in specific circumstances e.g. the claimant stops claiming before they actually committed the sanctionable failure"@en, "Отмененное решение может быть принято при определенных обстоятельствах, например, истец прекращает предъявлять претензии до того, как он фактически совершил санкционируемое нарушение"@ru .
